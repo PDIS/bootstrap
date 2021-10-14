@@ -1526,12 +1526,13 @@ The animation effect of this component is dependent on the <code>prefers-reduced
         <span class="nc">.offcanvas</span> <span class="p">{</span>
           <span class="na">position</span><span class="o">:</span> <span class="ni">inherit</span><span class="p">;</span>
           <span class="na">bottom</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
-          <span class="na">z-index</span><span class="o">:</span> <span class="mi">1000</span><span class="p">;</span>
+          <span class="na">z-index</span><span class="o">:</span> <span class="ni">auto</span><span class="p">;</span>
           <span class="na">flex-grow</span><span class="o">:</span> <span class="mi">1</span><span class="p">;</span>
           <span class="na">visibility</span><span class="o">:</span> <span class="ni">visible</span> <span class="k">!important</span><span class="p">;</span> <span class="c1">// stylelint-disable-line declaration-no-important
 </span><span class="c1"></span>          <span class="na">background-color</span><span class="o">:</span> <span class="ni">transparent</span><span class="p">;</span>
           <span class="na">border-right</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
           <span class="na">border-left</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+          <span class="k">@include</span><span class="nd"> box-shadow</span><span class="p">(</span><span class="ni">none</span><span class="p">);</span>
           <span class="k">@include</span><span class="nd"> transition</span><span class="p">(</span><span class="ni">none</span><span class="p">);</span>
           <span class="na">transform</span><span class="o">:</span> <span class="ni">none</span><span class="p">;</span>
         <span class="p">}</span>

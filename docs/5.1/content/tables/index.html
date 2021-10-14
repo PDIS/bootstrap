@@ -938,8 +938,11 @@
     <span class="nv">$hover-bg</span><span class="o">:</span> <span class="nf">mix</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="nv">$background</span><span class="o">,</span> <span class="nf">percentage</span><span class="p">(</span><span class="nv">$table-hover-bg-factor</span><span class="p">));</span>
     <span class="nv">$striped-bg</span><span class="o">:</span> <span class="nf">mix</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="nv">$background</span><span class="o">,</span> <span class="nf">percentage</span><span class="p">(</span><span class="nv">$table-striped-bg-factor</span><span class="p">));</span>
     <span class="nv">$active-bg</span><span class="o">:</span> <span class="nf">mix</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="nv">$background</span><span class="o">,</span> <span class="nf">percentage</span><span class="p">(</span><span class="nv">$table-active-bg-factor</span><span class="p">));</span>
+    <span class="nv">$border-color</span><span class="o">:</span> <span class="nf">mix</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="nv">$background</span><span class="o">,</span> <span class="nf">percentage</span><span class="p">(</span><span class="nv">$table-border-factor</span><span class="p">));</span>
 
+    <span class="na">--#{$variable-prefix}table-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$color</span><span class="si">}</span><span class="p">;</span>
     <span class="na">--#{$variable-prefix}table-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$background</span><span class="si">}</span><span class="p">;</span>
+    <span class="na">--#{$variable-prefix}table-border-color</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$border-color</span><span class="si">}</span><span class="p">;</span>
     <span class="na">--#{$variable-prefix}table-striped-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$striped-bg</span><span class="si">}</span><span class="p">;</span>
     <span class="na">--#{$variable-prefix}table-striped-color</span><span class="o">:</span> <span class="si">#{</span><span class="nf">color-contrast</span><span class="p">(</span><span class="nv">$striped-bg</span><span class="p">)</span><span class="si">}</span><span class="p">;</span>
     <span class="na">--#{$variable-prefix}table-active-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$active-bg</span><span class="si">}</span><span class="p">;</span>
@@ -947,8 +950,8 @@
     <span class="na">--#{$variable-prefix}table-hover-bg</span><span class="o">:</span> <span class="si">#{</span><span class="nv">$hover-bg</span><span class="si">}</span><span class="p">;</span>
     <span class="na">--#{$variable-prefix}table-hover-color</span><span class="o">:</span> <span class="si">#{</span><span class="nf">color-contrast</span><span class="p">(</span><span class="nv">$hover-bg</span><span class="p">)</span><span class="si">}</span><span class="p">;</span>
 
-    <span class="na">color</span><span class="o">:</span> <span class="nv">$color</span><span class="p">;</span>
-    <span class="na">border-color</span><span class="o">:</span> <span class="nf">mix</span><span class="p">(</span><span class="nv">$color</span><span class="o">,</span> <span class="nv">$background</span><span class="o">,</span> <span class="nf">percentage</span><span class="p">(</span><span class="nv">$table-border-factor</span><span class="p">));</span>
+    <span class="na">color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="si">#{</span><span class="nv">$variable-prefix</span><span class="si">}</span><span class="ni">table</span><span class="o">-</span><span class="ni">color</span><span class="p">);</span>
+    <span class="na">border-color</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="si">#{</span><span class="nv">$variable-prefix</span><span class="si">}</span><span class="ni">table</span><span class="o">-</span><span class="n">border-color</span><span class="p">);</span>
   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
