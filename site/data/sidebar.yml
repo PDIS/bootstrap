@@ -2,14 +2,20 @@
 # The logic for the sidebar generation is in "site/layouts/partials/docs-sidebar.html".
 
 - title: 風格
+  name: style
   pages:
     - title: 無障礙
+      name: accessibility
     - title: 顏色
+      name: color
     - title: 文字屬性
+      name: typography
 
 - title: 元件
+  name: components
   pages:
     - title: 導覽列
+      name: navbar
 # - title: Getting started
 #   pages:
 #     - title: Introduction
