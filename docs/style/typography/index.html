@@ -10,9 +10,9 @@
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.1">
 
-<title>無障礙/可近用性 (Accessibility) · Bootstrap v5.1</title>
+<title>文字屬性 (Typography) · Bootstrap v5.1</title>
 
-<link rel="canonical" href="https://getbootstrap.com/docs/%E9%A2%A8%E6%A0%BC/%E7%84%A1%E9%9A%9C%E7%A4%99/">
+<link rel="canonical" href="https://getbootstrap.com/docs/style/typography/">
 
 
 
@@ -40,13 +40,13 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="無障礙/可近用性 (Accessibility)">
+<meta name="twitter:title" content="文字屬性 (Typography)">
 <meta name="twitter:description" content="The most popular HTML, CSS, and JS library in the world.">
 <meta name="twitter:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://getbootstrap.com/docs/%E9%A2%A8%E6%A0%BC/%E7%84%A1%E9%9A%9C%E7%A4%99/">
-<meta property="og:title" content="無障礙/可近用性 (Accessibility)">
+<meta property="og:url" content="https://getbootstrap.com/docs/style/typography/">
+<meta property="og:title" content="文字屬性 (Typography)">
 <meta property="og:description" content="The most popular HTML, CSS, and JS library in the world.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
@@ -118,32 +118,32 @@
     <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
     <li class="mb-1">
       <button class="btn d-inline-flex align-items-center rounded collapsed"
-        data-bs-toggle="collapse" data-bs-target="#d489bc40609f6089b34f4df985abdf0fb99651d4-collapse"
-        aria-expanded="false" >
+        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="false"
+        >
         風格
       </button>
 
-      <div class="collapse" id="d489bc40609f6089b34f4df985abdf0fb99651d4-collapse">
+      <div class="collapse" id="style-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
-          <li><a href="/docs/%E9%A2%A8%E6%A0%BC/%E7%84%A1%E9%9A%9C%E7%A4%99/" class="d-inline-flex align-items-center rounded"
+          <li><a href="/docs/style/accessibility/" class="d-inline-flex align-items-center rounded"
               >無障礙</a></li>
-          <li><a href="/docs/%E9%A2%A8%E6%A0%BC/%E9%A1%8F%E8%89%B2/" class="d-inline-flex align-items-center rounded"
+          <li><a href="/docs/style/color/" class="d-inline-flex align-items-center rounded"
               >顏色</a></li>
-          <li><a href="/docs/%E9%A2%A8%E6%A0%BC/%E6%96%87%E5%AD%97%E5%B1%AC%E6%80%A7/" class="d-inline-flex align-items-center rounded"
+          <li><a href="/docs/style/typography/" class="d-inline-flex align-items-center rounded"
               >文字屬性</a></li>
         </ul>
       </div>
     </li>
     <li class="mb-1">
       <button class="btn d-inline-flex align-items-center rounded collapsed"
-        data-bs-toggle="collapse" data-bs-target="#d7ee93bec54f71e802f41d1a22ddc1ad3cd469d7-collapse"
-        aria-expanded="false" >
+        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false"
+        >
         元件
       </button>
 
-      <div class="collapse" id="d7ee93bec54f71e802f41d1a22ddc1ad3cd469d7-collapse">
+      <div class="collapse" id="components-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
-          <li><a href="/docs/%E5%85%83%E4%BB%B6/%E5%B0%8E%E8%A6%BD%E5%88%97/" class="d-inline-flex align-items-center rounded"
+          <li><a href="/docs/components/navbar/" class="d-inline-flex align-items-center rounded"
               >導覽列</a></li>
         </ul>
       </div>
@@ -157,7 +157,7 @@
     <div class="bd-intro ps-lg-4">
       <div class="d-md-flex flex-md-row align-items-left justify-content-between">
         
-        <h1 class="bd-title" id="content">無障礙/可近用性 (Accessibility)</h1>
+        <h1 class="bd-title" id="content">文字屬性 (Typography)</h1>
       </div>
       <p class="bd-lead"></p>
       <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
@@ -169,22 +169,25 @@
       <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#規範">規範</a></li>
-    <li><a href="#概述">概述</a></li>
-    <li><a href="#原則">原則</a></li>
-    <li><a href="#色彩對比度">色彩對比度</a>
+    <li><a href="#字體-typeface">字體 (Typeface)</a></li>
+    <li><a href="#字型-font">字型 (Font)</a>
       <ul>
-        <li><a href="#文字對比度">文字對比度</a></li>
-        <li><a href="#色彩對比度與對比度一制性">色彩對比度與對比度一制性</a></li>
-      </ul>
-    </li>
-    <li><a href="#鍵盤">鍵盤</a>
-      <ul>
-        <li><a href="#tab-鍵-tab-key">Tab 鍵 (Tab key)</a></li>
-        <li><a href="#方向鍵-directional-arrows">方向鍵 (Directional arrows)</a></li>
-        <li><a href="#輸入鍵-enter-key">輸入鍵 (Enter key)</a></li>
-        <li><a href="#空白鍵-space-key">空白鍵 (Space key)</a></li>
-        <li><a href="#esc-鍵-escape-key">ESC 鍵 (Escape key)</a></li>
+        <li><a href="#標題-heading">標題 (Heading)</a></li>
+        <li><a href="#段落-paragraph">段落 (Paragraph)</a></li>
+        <li><a href="#字重-font-weight">字重 (Font weight)</a>
+          <ul>
+            <li><a href="#bold-text">Bold text</a></li>
+          </ul>
+        </li>
+        <li><a href="#顏色-color">顏色 (Color)</a></li>
+        <li><a href="#連結-links">連結 (Links)</a></li>
+        <li><a href="#列表-lists">列表 (Lists)</a>
+          <ul>
+            <li><a href="#項目符號列表-unordered-list">項目符號列表 (unordered list)</a></li>
+            <li><a href="#編號列表-numbered">編號列表 (Numbered)</a></li>
+          </ul>
+        </li>
+        <li><a href="#所有字型大小-all-font-sizes">所有字型大小 (All font sizes)</a></li>
       </ul>
     </li>
   </ul>
@@ -195,45 +198,38 @@
     <div class="bd-content ps-lg-4">
       
 
-      <h2 id="規範">規範</h2>
-<p>在製作與設計數位系統時，必須遵守數位系統的無障礙規範。</p>
-<h2 id="概述">概述</h2>
-<p>無障礙 (Accessibility) 的意涵為盡可能讓更多人使用你所做出的數位系統。這邊的更多人包括身心障礙者，但也包括其他群體，例如不善於閱讀長篇幅文字的人、或是不善使用行動裝置的人、身處在網速較慢地段的人。</p>
-<p>一般來說，我們會認為這屬於身心障礙者的範疇，但它其實會涵蓋其他群體：像是使用行動設備、或者網速很慢的人。</p>
-<h2 id="原則">原則</h2>
-<p>在製作社為系統時，應秉持以下原則：</p>
-<ul>
-<li>避免低色彩對比度、小型文字或是小型圖標的視覺設計</li>
-<li>將鍵盤操作最佳化</li>
-<li>優先採用乾淨的架構、訊息整理方式，並盡量將長篇幅的文字分段處理</li>
-<li>避免將太多資訊擠在單一頁面</li>
-<li>做響應式設計，確保所設計的介面在每個螢幕尺寸上皆可識讀</li>
-<li>不過度依賴顏色區別資訊，而應使用適當的文字或圖標示意</li>
-</ul>
-<h2 id="色彩對比度">色彩對比度</h2>
-<p>顏色對比度是易讀性的一個重要因素。 對比度的範圍可以從 1:1 到 21:1，其中 21 是最高級別的對比度和最佳易讀性。 白底黑字的比例為 21:1。</p>
-<h3 id="文字對比度">文字對比度</h3>
-<p>根據 W3C 的建議，小於 18 px 的常體與 小於 14 px 的粗體文字，應與其底色對比度大於 4.5:1，以滿足 AA 標準。</p>
-<h3 id="色彩對比度與對比度一制性">色彩對比度與對比度一制性</h3>
-<p>除了符合色彩對比度的規範以外，選定一致的色彩對比度也有助於我們在選用不同的背景和文字顏色時仍然保持一致感。</p>
-<h2 id="鍵盤">鍵盤</h2>
-<p>一個無障礙的數位系統設計，應能滿足使用者在不需操作滑鼠的情境下，仍能順利單用鍵盤完成任務。用鍵盤應足夠對所有提供的功能與服務進行操作。</p>
-<h3 id="tab-鍵-tab-key">Tab 鍵 (Tab key)</h3>
-<p>Tab 鍵又成製表鍵（tabulator key）或表格鍵（tabular key），用以將焦點 (focus) 推進到下一個連結 (lin)、表單輸入欄位 (input field) 或按鈕 (button)。</p>
-<h3 id="方向鍵-directional-arrows">方向鍵 (Directional arrows)</h3>
-<p>方向鍵又稱上下左右鍵，通常用於上下左右在選單之間移動、調整音量大小聲等。根據介面上顯示的方向，垂直移動時使用上/下鍵，水平移動時使用左/右鍵。</p>
-<h3 id="輸入鍵-enter-key">輸入鍵 (Enter key)</h3>
-<p>按下輸入鍵時，會啟動所焦點的連結或按鈕並執行與連結或按鈕相關的操作，通常會被帶到新的頁面或送出表單。</p>
-<h3 id="空白鍵-space-key">空白鍵 (Space key)</h3>
-<p>空白鍵可被用來選取複選框 (checkbox) 或取消選取復選框中的元素。</p>
-<h3 id="esc-鍵-escape-key">ESC 鍵 (Escape key)</h3>
-<p>空白鍵可以關閉現有的互動視窗 (modal)，選單 (menu) or 下拉式選單 (dropdown menu)。
-Escape closes the current modal, menu or dropdown menu and returns to the element that opened it.</p>
-<hr>
-<p>直接參考
-<a href="https://design.gs.com/foundation/accessibility">https://design.gs.com/foundation/accessibility</a></p>
-<p>加：
-驗證碼直接使用語音驗證，非常不建議使用圖形辨識碼。</p>
+      <h2 id="字體-typeface">字體 (Typeface)</h2>
+<p>沒有規定字體，但建議不採用標楷體。</p>
+<p>根據國發會網站管理規範指出：政府機關的文件習慣以標楷體編排，但小字型的標楷體 在螢幕顯示往往不夠清楚，建議網頁設計者或網頁內容維護者在製作網頁時，取消原訂公文的標楷體格式，檔案或列印版本的公文則另行提供。</p>
+<p>本設計系統採用的中文字體是 <a href="https://fonts.google.com/noto/specimen/Noto+Sans+TC?query=Noto+Sans">Noto Sans TC</a>，英文字體則是 <a href="https://fonts.google.com/noto/specimen/Noto+Sans?query=Noto+Sans">Noto Sans</a>。</p>
+<h2 id="字型-font">字型 (Font)</h2>
+<h3 id="標題-heading">標題 (Heading)</h3>
+<p>are used in product-based UI designs such as panels, cards, and menus.
+<img class="img-fluid" src="https://i.imgur.com/TGeSaD3.png"></p>
+<h3 id="段落-paragraph">段落 (Paragraph)</h3>
+<p>The default paragraph font size is 16px on large screens and 14px on small screens.
+<img class="img-fluid" src="https://i.imgur.com/EAV4yga.png"></p>
+<h3 id="字重-font-weight">字重 (Font weight)</h3>
+<p>As with the font size, you can add a font weight override class to any other typographic class or element to change the font weight to regular or bold weight.</p>
+<h4 id="bold-text">Bold text</h4>
+<p>You can use bold to emphasise particular words in a transaction. Use it to highlight critical information that users need to refer to or you’ve seen them miss.</p>
+<p>For example, “Your reference number is ABC12345678. Use this to track your application. Updates will be sent to <a href="mailto:name@example.com">name@example.com</a>“</p>
+<p>Use bold sparingly. Overuse will make it difficult for users to know which parts of your content they need to pay the most attention to.
+<img class="img-fluid" src="https://i.imgur.com/2bac9Yo.png" ></p>
+<h3 id="顏色-color">顏色 (Color)</h3>
+<p>The Goldman Sachs Design System has several pre-built color tokens that should be used for most text colors. If other colors need to be used, the color choice should consider accessiblity and legibility. Reference the Color foundation section for additional guidance.
+<img class="img-fluid" src="https://i.imgur.com/m7VGhbd.png" ></p>
+<h3 id="連結-links">連結 (Links)</h3>
+<p>Text links provide a way to navigate to another section or page and can displayed as standalone items or displayed inline within a sentence or paragraph.
+<img class="img-fluid" src="https://i.imgur.com/s3BmRUI.png" ></p>
+<h3 id="列表-lists">列表 (Lists)</h3>
+<p>Bulleted lists are used when items should be grouped together but have no inherent order. When using a bulleted list, it is recommended that the text for each bullet is not longer than two sentences.</p>
+<h4 id="項目符號列表-unordered-list">項目符號列表 (unordered list)</h4>
+<p><img class="img-fluid" src="https://i.imgur.com/mqr2hPb.png" ></p>
+<h4 id="編號列表-numbered">編號列表 (Numbered)</h4>
+<p><img class="img-fluid" src="https://i.imgur.com/mqr2hPb.png" ></p>
+<h3 id="所有字型大小-all-font-sizes">所有字型大小 (All font sizes)</h3>
+<p><img class="img-fluid" src="https://i.imgur.com/EOQ7oL9.png" ></p>
 
     </div>
   </main>

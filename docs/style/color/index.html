@@ -10,9 +10,9 @@
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.1">
 
-<title>文字屬性 (Typography) · Bootstrap v5.1</title>
+<title>顏色 (Color) · Bootstrap v5.1</title>
 
-<link rel="canonical" href="https://getbootstrap.com/docs/%E9%A2%A8%E6%A0%BC/%E6%96%87%E5%AD%97%E5%B1%AC%E6%80%A7/">
+<link rel="canonical" href="https://getbootstrap.com/docs/style/color/">
 
 
 
@@ -40,13 +40,13 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="文字屬性 (Typography)">
+<meta name="twitter:title" content="顏色 (Color)">
 <meta name="twitter:description" content="The most popular HTML, CSS, and JS library in the world.">
 <meta name="twitter:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://getbootstrap.com/docs/%E9%A2%A8%E6%A0%BC/%E6%96%87%E5%AD%97%E5%B1%AC%E6%80%A7/">
-<meta property="og:title" content="文字屬性 (Typography)">
+<meta property="og:url" content="https://getbootstrap.com/docs/style/color/">
+<meta property="og:title" content="顏色 (Color)">
 <meta property="og:description" content="The most popular HTML, CSS, and JS library in the world.">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
@@ -118,32 +118,32 @@
     <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
     <li class="mb-1">
       <button class="btn d-inline-flex align-items-center rounded collapsed"
-        data-bs-toggle="collapse" data-bs-target="#d489bc40609f6089b34f4df985abdf0fb99651d4-collapse"
-        aria-expanded="false" >
+        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="false"
+        >
         風格
       </button>
 
-      <div class="collapse" id="d489bc40609f6089b34f4df985abdf0fb99651d4-collapse">
+      <div class="collapse" id="style-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
-          <li><a href="/docs/%E9%A2%A8%E6%A0%BC/%E7%84%A1%E9%9A%9C%E7%A4%99/" class="d-inline-flex align-items-center rounded"
+          <li><a href="/docs/style/accessibility/" class="d-inline-flex align-items-center rounded"
               >無障礙</a></li>
-          <li><a href="/docs/%E9%A2%A8%E6%A0%BC/%E9%A1%8F%E8%89%B2/" class="d-inline-flex align-items-center rounded"
+          <li><a href="/docs/style/color/" class="d-inline-flex align-items-center rounded"
               >顏色</a></li>
-          <li><a href="/docs/%E9%A2%A8%E6%A0%BC/%E6%96%87%E5%AD%97%E5%B1%AC%E6%80%A7/" class="d-inline-flex align-items-center rounded"
+          <li><a href="/docs/style/typography/" class="d-inline-flex align-items-center rounded"
               >文字屬性</a></li>
         </ul>
       </div>
     </li>
     <li class="mb-1">
       <button class="btn d-inline-flex align-items-center rounded collapsed"
-        data-bs-toggle="collapse" data-bs-target="#d7ee93bec54f71e802f41d1a22ddc1ad3cd469d7-collapse"
-        aria-expanded="false" >
+        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false"
+        >
         元件
       </button>
 
-      <div class="collapse" id="d7ee93bec54f71e802f41d1a22ddc1ad3cd469d7-collapse">
+      <div class="collapse" id="components-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
-          <li><a href="/docs/%E5%85%83%E4%BB%B6/%E5%B0%8E%E8%A6%BD%E5%88%97/" class="d-inline-flex align-items-center rounded"
+          <li><a href="/docs/components/navbar/" class="d-inline-flex align-items-center rounded"
               >導覽列</a></li>
         </ul>
       </div>
@@ -157,7 +157,7 @@
     <div class="bd-intro ps-lg-4">
       <div class="d-md-flex flex-md-row align-items-left justify-content-between">
         
-        <h1 class="bd-title" id="content">文字屬性 (Typography)</h1>
+        <h1 class="bd-title" id="content">顏色 (Color)</h1>
       </div>
       <p class="bd-lead"></p>
       <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
@@ -169,25 +169,42 @@
       <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#字體-typeface">字體 (Typeface)</a></li>
-    <li><a href="#字型-font">字型 (Font)</a>
+    <li><a href="#規範">規範</a>
       <ul>
-        <li><a href="#標題-heading">標題 (Heading)</a></li>
-        <li><a href="#段落-paragraph">段落 (Paragraph)</a></li>
-        <li><a href="#字重-font-weight">字重 (Font weight)</a>
+        <li><a href="#色彩對比度">色彩對比度</a></li>
+      </ul>
+    </li>
+    <li><a href="#參考顏色">參考顏色</a>
+      <ul>
+        <li><a href="#文字-text">文字 (Text)</a>
           <ul>
-            <li><a href="#bold-text">Bold text</a></li>
+            <li><a href="#預設文字色-primary-text-color">預設文字色 (Primary text color)</a></li>
+            <li><a href="#次要文字色-secondary-text-color">次要文字色 (Secondary text color)</a></li>
+            <li><a href="#背景色-background-color">背景色 (Background color)</a></li>
           </ul>
         </li>
-        <li><a href="#顏色-color">顏色 (Color)</a></li>
-        <li><a href="#連結-links">連結 (Links)</a></li>
-        <li><a href="#列表-lists">列表 (Lists)</a>
+        <li><a href="#連結-link">連結 (Link)</a>
           <ul>
-            <li><a href="#項目符號列表-unordered-list">項目符號列表 (unordered list)</a></li>
-            <li><a href="#編號列表-numbered">編號列表 (Numbered)</a></li>
+            <li><a href="#預設-default">預設 (Default)</a></li>
+            <li><a href="#hover-中文-hover">[hover 中文] (Hover)</a></li>
+            <li><a href="#visited-中文-visited">[visited 中文] (Visited)</a></li>
           </ul>
         </li>
-        <li><a href="#所有字型大小-all-font-sizes">所有字型大小 (All font sizes)</a></li>
+        <li><a href="#邊框-border">邊框 (Border)</a>
+          <ul>
+            <li><a href="#預設邊框-default-border">[預設邊框] (Default border)</a></li>
+            <li><a href="#輸入欄位框-input-border">輸入欄位框 (Input border)</a></li>
+          </ul>
+        </li>
+        <li><a href="#聚焦狀態-focus-state">聚焦狀態 (Focus state)</a>
+          <ul>
+            <li><a href="#聚焦背景-focused-background">聚焦背景 (Focused background)</a></li>
+            <li><a href="#聚焦文字-focused-text">聚焦文字 (Focused text)</a></li>
+          </ul>
+        </li>
+        <li><a href="#成功狀態-success-state">成功狀態 (Success state)</a></li>
+        <li><a href="#錯誤狀態-error-state">錯誤狀態 (Error state)</a></li>
+        <li><a href="#品牌顏色-brand-color">品牌顏色 (Brand color)</a></li>
       </ul>
     </li>
   </ul>
@@ -198,39 +215,135 @@
     <div class="bd-content ps-lg-4">
       
 
-      <h2 id="字體-typeface">字體 (Typeface)</h2>
-<p>沒有規定字體，但建議不採用標楷體。</p>
-<p>根據國發會網站管理規範指出：政府機關的文件習慣以標楷體編排，但小字型的標楷體 在螢幕顯示往往不夠清楚，建議網頁設計者或網頁內容維護者在製作網頁時，取消原訂公文的標楷體格式，檔案或列印版本的公文則另行提供。</p>
-<p>本設計系統採用的中文字體是 <a href="https://fonts.google.com/noto/specimen/Noto+Sans+TC?query=Noto+Sans">Noto Sans TC</a>，英文字體則是 <a href="https://fonts.google.com/noto/specimen/Noto+Sans?query=Noto+Sans">Noto Sans</a>。</p>
-<h2 id="字型-font">字型 (Font)</h2>
-<h3 id="標題-heading">標題 (Heading)</h3>
-<p>are used in product-based UI designs such as panels, cards, and menus.
-<img class="img-fluid" src="https://i.imgur.com/TGeSaD3.png"></p>
-<h3 id="段落-paragraph">段落 (Paragraph)</h3>
-<p>The default paragraph font size is 16px on large screens and 14px on small screens.
-<img class="img-fluid" src="https://i.imgur.com/EAV4yga.png"></p>
-<h3 id="字重-font-weight">字重 (Font weight)</h3>
-<p>As with the font size, you can add a font weight override class to any other typographic class or element to change the font weight to regular or bold weight.</p>
-<h4 id="bold-text">Bold text</h4>
-<p>You can use bold to emphasise particular words in a transaction. Use it to highlight critical information that users need to refer to or you’ve seen them miss.</p>
-<p>For example, “Your reference number is ABC12345678. Use this to track your application. Updates will be sent to <a href="mailto:name@example.com">name@example.com</a>“</p>
-<p>Use bold sparingly. Overuse will make it difficult for users to know which parts of your content they need to pay the most attention to.
-<img class="img-fluid" src="https://i.imgur.com/2bac9Yo.png" ></p>
-<h3 id="顏色-color">顏色 (Color)</h3>
-<p>The Goldman Sachs Design System has several pre-built color tokens that should be used for most text colors. If other colors need to be used, the color choice should consider accessiblity and legibility. Reference the Color foundation section for additional guidance.
-<img class="img-fluid" src="https://i.imgur.com/m7VGhbd.png" ></p>
-<h3 id="連結-links">連結 (Links)</h3>
-<p>Text links provide a way to navigate to another section or page and can displayed as standalone items or displayed inline within a sentence or paragraph.
-<img class="img-fluid" src="https://i.imgur.com/s3BmRUI.png" ></p>
-<h3 id="列表-lists">列表 (Lists)</h3>
-<p>Bulleted lists are used when items should be grouped together but have no inherent order. When using a bulleted list, it is recommended that the text for each bullet is not longer than two sentences.</p>
-<h4 id="項目符號列表-unordered-list">項目符號列表 (unordered list)</h4>
-<p><img class="img-fluid" src="https://i.imgur.com/mqr2hPb.png" ></p>
-<h4 id="編號列表-numbered">編號列表 (Numbered)</h4>
-<p><img class="img-fluid" src="https://i.imgur.com/mqr2hPb.png" ></p>
-<h3 id="所有字型大小-all-font-sizes">所有字型大小 (All font sizes)</h3>
-<p><img class="img-fluid" src="https://i.imgur.com/EOQ7oL9.png" ></p>
+      <h2 id="規範">規範</h2>
+<h3 id="色彩對比度">色彩對比度</h3>
+<p>在替所製作的數位系統選用色彩時，我們必須符合色彩對比度 WCAG AA 等級或更高級別。以下列出幾個可以用來檢查對比度是否足夠的工具：
+<a href="https://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333">Snook.ca 顏色對比檢查</a>，<a href="https://webaim.org/resources/contrastchecker/">Webaim 顏色對比檢查器</a>、<a href="https://www.tpgi.com/color-contrast-checker/">TPG 顏色對比分析器</a>、<a href="https://contrast-ratio.com">對比度網站-Contrast ratio</a> 或 <a href="https://support.google.com/accessibility/android/answer/6376570?hl=en-GB">Android 無障礙掃描工具</a>。</p>
+<p>要注意的是，字型大小也會是影響對比度的變因。舉例來說，有時雖然文字色與背景色通過上述色彩對比度檢測，但若文字的字型縮小時，雖顏色不變，可能必須得將字重加大才能通過對比度檢測。您可以使用下列工具來檢查：<a href="https://color.adobe.com/create/color-contrast-analyzer">Adobe 色彩對比度分析器</a>。</p>
+<h2 id="參考顏色">參考顏色</h2>
+<p>我們挑選出一組顏色作為參考，以下的顏色組合已經符合色彩對比度的規定。</p>
+<h3 id="文字-text">文字 (Text)</h3>
+<h4 id="預設文字色-primary-text-color">預設文字色 (Primary text color)</h4>
+<pre tabindex="0"><code class="language-graphviz" data-lang="graphviz">digraph hierarchy {
 
+nodesep=1.0 // increases the separation between nodes
+
+node [color=&quot;#121212&quot;,style=filled, shape=circle] //All nodes will this shape and colour
+
+&quot;#121212&quot;
+}
+</code></pre><h4 id="次要文字色-secondary-text-color">次要文字色 (Secondary text color)</h4>
+<pre tabindex="0"><code class="language-graphviz" data-lang="graphviz">digraph hierarchy {
+
+nodesep=1.0 // increases the separation between nodes
+
+node [color=&quot;#5D5F60&quot;,style=filled, shape=circle] //All nodes will this shape and colour
+
+&quot;#5D5F60&quot;
+}
+</code></pre><h4 id="背景色-background-color">背景色 (Background color)</h4>
+<pre tabindex="0"><code class="language-graphviz" data-lang="graphviz">digraph hierarchy {
+
+nodesep=1.0 // increases the separation between nodes
+
+node [color=&quot;#FFFFFF&quot;,style=filled, shape=circle] //All nodes will this shape and colour
+
+&quot;#FFFFFF&quot;
+}
+</code></pre><h3 id="連結-link">連結 (Link)</h3>
+<h4 id="預設-default">預設 (Default)</h4>
+<pre tabindex="0"><code class="language-graphviz" data-lang="graphviz">digraph hierarchy {
+
+nodesep=1.0 // increases the separation between nodes
+
+node [color=&quot;#005AA8&quot;,style=filled, shape=circle] //All nodes will this shape and colour
+
+&quot;#005AA8&quot;
+}
+</code></pre><h4 id="hover-中文-hover">[hover 中文] (Hover)</h4>
+<pre tabindex="0"><code class="language-graphviz" data-lang="graphviz">digraph hierarchy {
+
+nodesep=1.0 // increases the separation between nodes
+
+node [color=&quot;#003C70&quot;,style=filled, shape=circle] //All nodes will this shape and colour
+
+&quot;#003C70&quot;
+}
+</code></pre><h4 id="visited-中文-visited">[visited 中文] (Visited)</h4>
+<pre tabindex="0"><code class="language-graphviz" data-lang="graphviz">digraph hierarchy {
+
+nodesep=1.0 // increases the separation between nodes
+
+node [color=&quot;#E57246&quot;,style=filled, shape=circle] //All nodes will this shape and colour
+
+&quot;#E57246&quot;
+}
+</code></pre><h3 id="邊框-border">邊框 (Border)</h3>
+<h4 id="預設邊框-default-border">[預設邊框] (Default border)</h4>
+<pre tabindex="0"><code class="language-graphviz" data-lang="graphviz">digraph hierarchy {
+
+nodesep=1.0 // increases the separation between nodes
+
+node [color=&quot;#C1C2C3&quot;,style=filled, shape=circle] //All nodes will this shape and colour
+
+&quot;#C1C2C3&quot;
+}
+</code></pre><h4 id="輸入欄位框-input-border">輸入欄位框 (Input border)</h4>
+<pre tabindex="0"><code class="language-graphviz" data-lang="graphviz">digraph hierarchy {
+
+nodesep=1.0 // increases the separation between nodes
+
+node [color=&quot;#121212&quot;,style=filled, shape=circle] //All nodes will this shape and colour
+
+&quot;#121212&quot;
+}
+</code></pre><h3 id="聚焦狀態-focus-state">聚焦狀態 (Focus state)</h3>
+<h4 id="聚焦背景-focused-background">聚焦背景 (Focused background)</h4>
+<pre tabindex="0"><code class="language-graphviz" data-lang="graphviz">digraph hierarchy {
+
+nodesep=1.0 // increases the separation between nodes
+
+node [color=&quot;#F9A602&quot;,style=filled, shape=circle] //All nodes will this shape and colour
+
+&quot;#F9A602&quot;
+}
+</code></pre><h4 id="聚焦文字-focused-text">聚焦文字 (Focused text)</h4>
+<pre tabindex="0"><code class="language-graphviz" data-lang="graphviz">digraph hierarchy {
+
+nodesep=1.0 // increases the separation between nodes
+
+node [color=&quot;#3B1200&quot;,style=filled, shape=circle] //All nodes will this shape and colour
+
+&quot;#3B1200&quot;
+}
+</code></pre><h3 id="成功狀態-success-state">成功狀態 (Success state)</h3>
+<pre tabindex="0"><code class="language-graphviz" data-lang="graphviz">digraph hierarchy {
+
+nodesep=1.0 // increases the separation between nodes
+
+node [color=&quot;#4BA979&quot;,style=filled, shape=circle] //All nodes will this shape and colour
+
+&quot;#4BA979&quot;
+}
+</code></pre><h3 id="錯誤狀態-error-state">錯誤狀態 (Error state)</h3>
+<pre tabindex="0"><code class="language-graphviz" data-lang="graphviz">digraph hierarchy {
+
+nodesep=1.0 // increases the separation between nodes
+
+node [color=&quot;#AB361D&quot;,style=filled, shape=circle] //All nodes will this shape and colour
+
+&quot;#AB361D&quot;
+}
+</code></pre><h3 id="品牌顏色-brand-color">品牌顏色 (Brand color)</h3>
+<pre tabindex="0"><code class="language-graphviz" data-lang="graphviz">digraph hierarchy {
+
+nodesep=1.0 // increases the separation between nodes
+
+node [color=&quot;#005AA8&quot;,style=filled, shape=circle] //All nodes will this shape and colour
+
+&quot;#005AA8&quot;
+}
+</code></pre>
     </div>
   </main>
 </div>
