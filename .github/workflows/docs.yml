@@ -31,3 +31,9 @@ jobs:
 
       - name: Test docs
         run: npm run docs
+        
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: _site
