@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css");
+
 html,
 body {
   font-family: "Noto Sans", "Noto Sans TC", sans-serif !important;
@@ -46,4 +48,8 @@ body {
   font-size: 1rem;
   background-image: none;
   vertical-align: -webkit-baseline-middle;
+}
+
+.bg-footer {
+  background-color: #C1C2C3;
 }

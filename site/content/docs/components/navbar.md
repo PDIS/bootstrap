@@ -10,7 +10,7 @@ toc: true
 「只」把網站最重要的目的放在頁首。
 
 頁首可以分為三個區塊，每一區塊應有其適合放置的元素。
-<img src="https://i.imgur.com/ymHyMJb.png" width="800">
+<img class="img-fluid" src="https://i.imgur.com/ymHyMJb.png" >
 
 1. 頁首主列
    最常見的頁首主列為 Logo 放置處，網站功能明確且主要服務選單少於（或等於）三項時，頁首主列上可以直接將所有服務列出。反之，若網站為多功能網站，可預見服務選單多於三項時，建議將服務選項挪至頁首副列。
@@ -69,7 +69,7 @@ toc: true
       <span class="navbar-brand h2 m-3" href="#">機關名稱</span>
       <form class="d-flex">
          <input type="text" class="form-control" placeholder="搜尋" aria-label="搜尋" aria-describedby="button-addon2">
-         <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+         <button class="btn btn-outline-secondary bg-custom text-white" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
       </form>
    </div>
    <div class="container-fluid">
@@ -513,7 +513,7 @@ toc: true
       <span class="navbar-brand h2 m-3" href="#">機關名稱</span>
       <form class="d-flex">
          <input type="text" class="form-control" placeholder="搜尋" aria-label="搜尋" aria-describedby="button-addon2">
-         <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+         <button class="btn btn-outline-secondary bg-custom text-white" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
       </form>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon text-white">選單</span>
@@ -606,13 +606,13 @@ toc: true
 
 手機上的頁首應保持將機關 Logo 靠左。不論 Logo 為方形或長形，一律靠左。頁首右側放置漢堡選單 (hammburger button)。另外，依據需求，網站開發者或是機關可以自行決定是否在手機版的頁首上放入搜尋框。
 
-<img src="https://i.imgur.com/OxDKdx2.png" width="800">
+<img class="img-fluid" src="https://i.imgur.com/OxDKdx2.png" >
 
 ### 頁尾
 
 頁尾也如同頁首的概念，分成三個區塊。
 
-<img src="https://i.imgur.com/LnTRapg.png" width="800">
+<img class="img-fluid" src="https://i.imgur.com/LnTRapg.png" >
 
 1. 返回上方
 
@@ -631,63 +631,44 @@ toc: true
 {{< example >}}
 
 <div class="container-fluid">
-  <footer>
-    <div class="row">
-      <div class="col-2">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
+   <footer>
+      <div class="row bg-light">
+         <!-- <div class="navbar-menu" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link navbar-link-item" href="#">服務項目</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link navbar-link-item" href="#">服務項目</a>
+               </li>
+            </ul>
+         </div> -->
       </div>
-
-      <div class="col-2">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
+      <div class="row bg-footer p-3">
+         <div class="col-4 d-flex justify-content-center align-items-center">
+            <div class="row" >
+               <div class="col-4">
+                  <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" class="img-fluid" alt="">
+               </div>
+                <div class="col-8 align-self-center">
+                  <p class="h4">機關名稱</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-4">
+            <div class="row">
+               <p>地址 : 地址地址地址地址地址地址地址 電話 : 1234567</p>
+            </div>
+            <div class="row">
+               <a href="#" >政府網站資料開放宣告</a>
+               <a href="#" >市民信箱</a>
+               <a href="#" >隱私權及資訊安全政策</a>
+            </div>
+         </div>
+         <div class="col-4 align-self-center">
+            <img src="https://accessibility.ncc.gov.tw/ImagesUploads/e367c753-b88e-4a08-a167-84d54029a88a.jpg" class="img-fluid" alt="">
+         </div>
       </div>
-
-      <div class="col-2">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-        </ul>
-      </div>
-
-      <div class="col-4 offset-1">
-        <form>
-          <h5>Subscribe to our newsletter</h5>
-          <p>Monthly digest of whats new and exciting from us.</p>
-          <div class="d-flex w-100 gap-2">
-            <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-            <button class="btn btn-primary" type="button">Subscribe</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="d-flex justify-content-between py-4 my-4 border-top">
-      <p>&copy; 2021 Company, Inc. All rights reserved.</p>
-      <ul class="list-unstyled d-flex">
-        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-      </ul>
-    </div>
-
   </footer>
 </div>
 
@@ -695,16 +676,62 @@ toc: true
 
 ### 基本頁尾加返回上方
 
-![](https://i.imgur.com/rZXwwWg.png)
+{{< example >}}
+
+<div class="container-fluid">
+   <footer>
+      <div class="row bg-white text-center">
+         <div class="col-12">
+            <button class="btn">
+               <i class="bi bi-arrow-up-circle-fill" style="font-size: 1.1rem; color: cornflowerblue;"></i>
+               <a href="#" class="link-primary">回上方</a>
+            </button>
+         </div>
+      </div>
+      <div class="row bg-light">
+         <!-- <div class="navbar-menu" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link navbar-link-item" href="#">服務項目</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link navbar-link-item" href="#">服務項目</a>
+               </li>
+            </ul>
+         </div> -->
+      </div>
+      <div class="row bg-footer p-3">
+         <div class="col-4 d-flex justify-content-center align-items-center">
+            <div class="row" >
+               <div class="col-4">
+                  <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" class="img-fluid" alt="">
+               </div>
+                <div class="col-8 align-self-center">
+                  <p class="h4">機關名稱</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-4">
+            <div class="row">
+               <p>地址 : 地址地址地址地址地址地址地址 電話 : 1234567</p>
+            </div>
+            <div class="row">
+               <a href="#" >政府網站資料開放宣告</a>
+               <a href="#" >市民信箱</a>
+               <a href="#" >隱私權及資訊安全政策</a>
+            </div>
+         </div>
+         <div class="col-4 align-self-center">
+            <img src="https://accessibility.ncc.gov.tw/ImagesUploads/e367c753-b88e-4a08-a167-84d54029a88a.jpg" class="img-fluid" alt="">
+         </div>
+      </div>
+  </footer>
+</div>
+
+{{< /example >}}
 
 ### 頁尾含所有服務
 
-![](https://i.imgur.com/h0pUIul.png)
-
 ### 常見服務與社群媒體
 
-![](https://i.imgur.com/dx1rUvW.png)
-
 ### 頁尾含所有服務與社群媒體
-
-![](https://i.imgur.com/5oUaxh7.png)
