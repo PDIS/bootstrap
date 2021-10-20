@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Toggle floats on any element, across any breakpoint, using our responsive float utilities.">
+<meta name="description" content="做版面配置時，若參考同一套基準，可以幫助我們設計具有一致性的視覺體驗的介面。以下為此設計系統關於版面配置的建議，作為數位系統製作與設計時的參考。">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.1">
 
-<title>Float · Bootstrap v5.1</title>
+<title>版面配置 (Layout) · Bootstrap v5.1</title>
 
-<link rel="canonical" href="https://getbootstrap.com/docs/5.1/utilities/float/">
+<link rel="canonical" href="https://getbootstrap.com/docs/style/layout/">
 
 
 
@@ -40,14 +40,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="Float">
-<meta name="twitter:description" content="Toggle floats on any element, across any breakpoint, using our responsive float utilities.">
+<meta name="twitter:title" content="版面配置 (Layout)">
+<meta name="twitter:description" content="做版面配置時，若參考同一套基準，可以幫助我們設計具有一致性的視覺體驗的介面。以下為此設計系統關於版面配置的建議，作為數位系統製作與設計時的參考。">
 <meta name="twitter:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://getbootstrap.com/docs/5.1/utilities/float/">
-<meta property="og:title" content="Float">
-<meta property="og:description" content="Toggle floats on any element, across any breakpoint, using our responsive float utilities.">
+<meta property="og:url" content="https://getbootstrap.com/docs/style/layout/">
+<meta property="og:title" content="版面配置 (Layout)">
+<meta property="og:description" content="做版面配置時，若參考同一套基準，可以幫助我們設計具有一致性的視覺體驗的介面。以下為此設計系統關於版面配置的建議，作為數位系統製作與設計時的參考。">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
@@ -117,20 +117,20 @@
   <aside class="bd-sidebar">
     <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
     <li class="mb-1">
-      <button class="btn d-inline-flex align-items-center rounded collapsed"
-        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="false"
-        >
+      <button class="btn d-inline-flex align-items-center rounded"
+        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="true"
+         aria-current="true" >
         風格
       </button>
 
-      <div class="collapse" id="style-collapse">
+      <div class="collapse show" id="style-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
           <li><a href="/docs/style/accessibility/" class="d-inline-flex align-items-center rounded"
               >無障礙</a></li>
           <li><a href="/docs/style/color/" class="d-inline-flex align-items-center rounded"
               >顏色</a></li>
-          <li><a href="/docs/style/layout/" class="d-inline-flex align-items-center rounded"
-              >版面配置</a></li>
+          <li><a href="/docs/style/layout/" class="d-inline-flex align-items-center rounded active"
+               aria-current="page" >版面配置</a></li>
           <li><a href="/docs/style/typography/" class="d-inline-flex align-items-center rounded"
               >文字屬性</a></li>
           <li><a href="/docs/style/spacing/" class="d-inline-flex align-items-center rounded"
@@ -163,9 +163,9 @@
     <div class="bd-intro ps-lg-4">
       <div class="d-md-flex flex-md-row align-items-left justify-content-between">
         
-        <h1 class="bd-title" id="content">Float</h1>
+        <h1 class="bd-title" id="content">版面配置 (Layout)</h1>
       </div>
-      <p class="bd-lead">Toggle floats on any element, across any breakpoint, using our responsive float utilities.</p>
+      <p class="bd-lead">做版面配置時，若參考同一套基準，可以幫助我們設計具有一致性的視覺體驗的介面。以下為此設計系統關於版面配置的建議，作為數位系統製作與設計時的參考。</p>
       <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
 
     </div>
@@ -175,11 +175,20 @@
       <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#overview">Overview</a></li>
-    <li><a href="#responsive">Responsive</a></li>
-    <li><a href="#sass">Sass</a>
+    <li><a href="#概述">概述</a>
       <ul>
-        <li><a href="#utilities-api">Utilities API</a></li>
+        <li><a href="#基本配置">基本配置</a></li>
+        <li><a href="#容器-containers">容器 (Containers)</a>
+          <ul>
+            <li><a href="#固定容器--流動容器-fixed--fluid-container">固定容器 &amp; 流動容器 (Fixed &amp; Fluid container)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#響應式排版-responsive-layout">響應式排版 (Responsive layout)</a>
+      <ul>
+        <li><a href="#欄位-間隙-外邊距-columns-gutters-margins">欄位, 間隙, 外邊距 (Columns, Gutters, Margins)</a></li>
+        <li><a href="#斷點-breakpoints">斷點 (Breakpoints)</a></li>
       </ul>
     </li>
   </ul>
@@ -190,62 +199,37 @@
     <div class="bd-content ps-lg-4">
       
 
-      <h2 id="overview">Overview</h2>
-<p>These utility classes float an element to the left or right, or disable floating, based on the current viewport size using the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">CSS <code>float</code> property</a>. <code>!important</code> is included to avoid specificity issues. These use the same viewport breakpoints as our grid system. Please be aware float utilities have no effect on flex items.</p>
-<div class="bd-example">
-<div class="float-start">Float start on all viewport sizes</div><br>
-<div class="float-end">Float end on all viewport sizes</div><br>
-<div class="float-none">Don't float on all viewport sizes</div>
-</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;float-start&#34;</span><span class="p">&gt;</span>Float start on all viewport sizes<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;float-end&#34;</span><span class="p">&gt;</span>Float end on all viewport sizes<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;float-none&#34;</span><span class="p">&gt;</span>Don&#39;t float on all viewport sizes<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
-<h2 id="responsive">Responsive</h2>
-<p>Responsive variations also exist for each <code>float</code> value.</p>
-<div class="bd-example">
-<div class="float-sm-start">Float start on viewports sized SM (small) or wider</div><br>
-<div class="float-md-start">Float start on viewports sized MD (medium) or wider</div><br>
-<div class="float-lg-start">Float start on viewports sized LG (large) or wider</div><br>
-<div class="float-xl-start">Float start on viewports sized XL (extra-large) or wider</div><br>
-</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;float-sm-start&#34;</span><span class="p">&gt;</span>Float start on viewports sized SM (small) or wider<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;float-md-start&#34;</span><span class="p">&gt;</span>Float start on viewports sized MD (medium) or wider<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;float-lg-start&#34;</span><span class="p">&gt;</span>Float start on viewports sized LG (large) or wider<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;float-xl-start&#34;</span><span class="p">&gt;</span>Float start on viewports sized XL (extra-large) or wider<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span></code></pre></div>
-<p>Here are all the support classes:</p>
+      <h2 id="概述">概述</h2>
+<p>在做版面配置時，建議採用以 4 為倍數的網格與間距系統。在各種螢幕尺寸上，採用同樣以 4 為倍數的參考基準，可以幫助我們設計具有一致性的視覺體驗的介面。</p>
+<h3 id="基本配置">基本配置</h3>
+<p>配置版面時，物件彼此之間的間距可以採用 4 像素 (4px) 或是 8 像素 (8px) 為倍數的間距系統。當在決定比較大規模的版面配置時，建議以 8 像素為基礎的間距系統來思考，而在決定較為細緻的物件內的版面配置時（例如製作按鈕 Button、圖標 Icon 時），建議以 4 像素為基礎思考。</p>
+<h3 id="容器-containers">容器 (Containers)</h3>
+<p>在介面設計上，容器指的是一個可以容納一定範圍所有元件的概念。容器大致上可以分類為兩種：固定容器 (fixed container) 和 流動容器 (fluid container)。若使用固定容器，通常內容物會在延展到一個最大值之後停止延展，而通常這個最大寬度為 1280 px。若使用流動容器，隨著對不同視窗斷點 (break point) 拉伸，容器內的所有物件會延展並且佔滿整個視窗寬度。容器的選用通常會與斷點搭配。一般建議在設計大螢幕的介面使用固定容器，小螢幕則使用流動容器。</p>
+<h4 id="固定容器--流動容器-fixed--fluid-container">固定容器 &amp; 流動容器 (Fixed &amp; Fluid container)</h4>
 <ul>
-<li><code>.float-start</code></li>
-<li><code>.float-end</code></li>
-<li><code>.float-none</code></li>
-<li><code>.float-sm-start</code></li>
-<li><code>.float-sm-end</code></li>
-<li><code>.float-sm-none</code></li>
-<li><code>.float-md-start</code></li>
-<li><code>.float-md-end</code></li>
-<li><code>.float-md-none</code></li>
-<li><code>.float-lg-start</code></li>
-<li><code>.float-lg-end</code></li>
-<li><code>.float-lg-none</code></li>
-<li><code>.float-xl-start</code></li>
-<li><code>.float-xl-end</code></li>
-<li><code>.float-xl-none</code></li>
-<li><code>.float-xxl-start</code></li>
-<li><code>.float-xxl-end</code></li>
-<li><code>.float-xxl-none</code></li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> Fixed Container
+<img class="img-fluid" src="https://i.imgur.com/pIUHJed.png" ></p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> Fluid Container
+<img class="img-fluid" src="https://i.imgur.com/3zLdXcQ.png" ></p>
+</li>
 </ul>
-
-<h2 id="sass">Sass</h2>
-<h3 id="utilities-api">Utilities API</h3>
-<p>Float utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/docs/5.1/utilities/api/#using-the-api">Learn how to use the utilities API.</a></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss">    <span class="s2">&#34;float&#34;</span><span class="nd">:</span> <span class="o">(</span>
-      <span class="nt">responsive</span><span class="nd">:</span> <span class="nt">true</span><span class="o">,</span>
-      <span class="nt">property</span><span class="nd">:</span> <span class="nt">float</span><span class="o">,</span>
-      <span class="nt">values</span><span class="nd">:</span> <span class="o">(</span>
-        <span class="nt">start</span><span class="nd">:</span> <span class="nt">left</span><span class="o">,</span>
-        <span class="nt">end</span><span class="nd">:</span> <span class="nt">right</span><span class="o">,</span>
-        <span class="nt">none</span><span class="nd">:</span> <span class="nt">none</span><span class="o">,</span>
-      <span class="o">)</span>
-    <span class="o">),</span>
-    </code></pre></div>
-
+<h2 id="響應式排版-responsive-layout">響應式排版 (Responsive layout)</h2>
+<h3 id="欄位-間隙-外邊距-columns-gutters-margins">欄位, 間隙, 外邊距 (Columns, Gutters, Margins)</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Columns, Gutters, Margins
+<img class="img-fluid" src="https://i.imgur.com/3ktORVm.png" ></li>
+</ul>
+<h3 id="斷點-breakpoints">斷點 (Breakpoints)</h3>
+<p>斷點用於控制版面配置，在不同的設備或視窗大小進行響應式變化。我們列出以下的斷點作為使用本設計系統時的設計參考。斷點是響應式開發的基礎，一般實作上，我們會使用斷點來控制在特定尺寸視窗或設備上的版面配置。</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 斷點 (Breakpoints)
+<img class="img-fluid" src="https://i.imgur.com/RTdYjkJ.png" ></li>
+</ul>
+<pre tabindex="0"><code>之後表格再更新，先使用bootstrap的截圖版
+</code></pre>
     </div>
   </main>
 </div>

@@ -412,6 +412,9 @@
     <loc>https://getbootstrap.com/docs/5.1/examples/cheatsheet-rtl/</loc>
   </url>
   <url>
+    <loc>https://getbootstrap.com/docs/components/card/</loc>
+  </url>
+  <url>
     <loc>https://getbootstrap.com/docs/components/navbar/</loc>
   </url>
   <url>
@@ -419,6 +422,12 @@
   </url>
   <url>
     <loc>https://getbootstrap.com/docs/style/accessibility/</loc>
+  </url>
+  <url>
+    <loc>https://getbootstrap.com/docs/style/layout/</loc>
+  </url>
+  <url>
+    <loc>https://getbootstrap.com/docs/style/spacing/</loc>
   </url>
   <url>
     <loc>https://getbootstrap.com/docs/style/color/</loc>

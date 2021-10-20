@@ -117,20 +117,24 @@
   <aside class="bd-sidebar">
     <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
     <li class="mb-1">
-      <button class="btn d-inline-flex align-items-center rounded collapsed"
-        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="false"
-        >
+      <button class="btn d-inline-flex align-items-center rounded"
+        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="true"
+         aria-current="true" >
         風格
       </button>
 
-      <div class="collapse" id="style-collapse">
+      <div class="collapse show" id="style-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
           <li><a href="/docs/style/accessibility/" class="d-inline-flex align-items-center rounded"
               >無障礙</a></li>
           <li><a href="/docs/style/color/" class="d-inline-flex align-items-center rounded"
               >顏色</a></li>
-          <li><a href="/docs/style/typography/" class="d-inline-flex align-items-center rounded"
-              >文字屬性</a></li>
+          <li><a href="/docs/style/layout/" class="d-inline-flex align-items-center rounded"
+              >版面配置</a></li>
+          <li><a href="/docs/style/typography/" class="d-inline-flex align-items-center rounded active"
+               aria-current="page" >文字屬性</a></li>
+          <li><a href="/docs/style/spacing/" class="d-inline-flex align-items-center rounded"
+              >間距</a></li>
         </ul>
       </div>
     </li>
@@ -145,6 +149,8 @@
         <ul class="list-unstyled fw-normal pb-1 small">
           <li><a href="/docs/components/navbar/" class="d-inline-flex align-items-center rounded"
               >導覽列</a></li>
+          <li><a href="/docs/components/card/" class="d-inline-flex align-items-center rounded"
+              >卡片</a></li>
         </ul>
       </div>
     </li>
@@ -205,31 +211,51 @@
 <h2 id="字型-font">字型 (Font)</h2>
 <h3 id="標題-heading">標題 (Heading)</h3>
 <p>are used in product-based UI designs such as panels, cards, and menus.
-<img class="img-fluid" src="https://i.imgur.com/TGeSaD3.png"></p>
+<img class="img-fluid" src="https://i.imgur.com/sakrJ0R.png"></p>
 <h3 id="段落-paragraph">段落 (Paragraph)</h3>
 <p>The default paragraph font size is 16px on large screens and 14px on small screens.
-<img class="img-fluid" src="https://i.imgur.com/EAV4yga.png"></p>
-<h3 id="字重-font-weight">字重 (Font weight)</h3>
+<img class="img-fluid" src="https://i.imgur.com/WjYWk1X.png"></p>
+<p>:::warning
+[will update]
+ps. What are the paragraph line height settings in Bootstrap? 1.5
+:::</p>
+<pre tabindex="0"><code>$line-height-1:            1;
+$line-height-base:            1.5; ***
+$line-height-sm:              1.25;
+$line-height-lg:              2;
+
+&quot;line-height&quot;: (
+      property: line-height,
+      class: lh,
+      values: (
+        1: 1,
+        sm: $line-height-sm,
+        base: $line-height-base,
+        lg: $line-height-lg,
+      )
+    ),
+</code></pre><h3 id="字重-font-weight">字重 (Font weight)</h3>
 <p>As with the font size, you can add a font weight override class to any other typographic class or element to change the font weight to regular or bold weight.</p>
 <h4 id="bold-text">Bold text</h4>
 <p>You can use bold to emphasise particular words in a transaction. Use it to highlight critical information that users need to refer to or you’ve seen them miss.</p>
 <p>For example, “Your reference number is ABC12345678. Use this to track your application. Updates will be sent to <a href="mailto:name@example.com">name@example.com</a>“</p>
 <p>Use bold sparingly. Overuse will make it difficult for users to know which parts of your content they need to pay the most attention to.
-<img class="img-fluid" src="https://i.imgur.com/2bac9Yo.png" ></p>
+<img class="img-fluid" src="https://i.imgur.com/8HMPKoe.png" ></p>
 <h3 id="顏色-color">顏色 (Color)</h3>
 <p>The Goldman Sachs Design System has several pre-built color tokens that should be used for most text colors. If other colors need to be used, the color choice should consider accessiblity and legibility. Reference the Color foundation section for additional guidance.
-<img class="img-fluid" src="https://i.imgur.com/m7VGhbd.png" ></p>
+<img class="img-fluid" src="https://i.imgur.com/9CERV1v.png" ></p>
 <h3 id="連結-links">連結 (Links)</h3>
-<p>Text links provide a way to navigate to another section or page and can displayed as standalone items or displayed inline within a sentence or paragraph.
-<img class="img-fluid" src="https://i.imgur.com/s3BmRUI.png" ></p>
+<p>Text links provide a way to navigate to another section or page and can displayed as standalone items or displayed inline within a sentence or paragraph.</p>
+<p><img class="img-fluid" src="https://i.imgur.com/UFUHY3b.png" ></p>
+<p><img class="img-fluid" src="https://i.imgur.com/MUhoduJ.png" ></p>
 <h3 id="列表-lists">列表 (Lists)</h3>
 <p>Bulleted lists are used when items should be grouped together but have no inherent order. When using a bulleted list, it is recommended that the text for each bullet is not longer than two sentences.</p>
 <h4 id="項目符號列表-unordered-list">項目符號列表 (unordered list)</h4>
-<p><img class="img-fluid" src="https://i.imgur.com/mqr2hPb.png" ></p>
+<p><img class="img-fluid" src="https://i.imgur.com/yEzTwvl.png" ></p>
 <h4 id="編號列表-numbered">編號列表 (Numbered)</h4>
 <p><img class="img-fluid" src="https://i.imgur.com/mqr2hPb.png" ></p>
 <h3 id="所有字型大小-all-font-sizes">所有字型大小 (All font sizes)</h3>
-<p><img class="img-fluid" src="https://i.imgur.com/EOQ7oL9.png" ></p>
+<p><img class="img-fluid" src="https://i.imgur.com/0j3Twki.png" ></p>
 
     </div>
   </main>

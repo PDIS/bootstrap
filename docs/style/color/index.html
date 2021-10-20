@@ -117,20 +117,24 @@
   <aside class="bd-sidebar">
     <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
     <li class="mb-1">
-      <button class="btn d-inline-flex align-items-center rounded collapsed"
-        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="false"
-        >
+      <button class="btn d-inline-flex align-items-center rounded"
+        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="true"
+         aria-current="true" >
         風格
       </button>
 
-      <div class="collapse" id="style-collapse">
+      <div class="collapse show" id="style-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
           <li><a href="/docs/style/accessibility/" class="d-inline-flex align-items-center rounded"
               >無障礙</a></li>
-          <li><a href="/docs/style/color/" class="d-inline-flex align-items-center rounded"
-              >顏色</a></li>
+          <li><a href="/docs/style/color/" class="d-inline-flex align-items-center rounded active"
+               aria-current="page" >顏色</a></li>
+          <li><a href="/docs/style/layout/" class="d-inline-flex align-items-center rounded"
+              >版面配置</a></li>
           <li><a href="/docs/style/typography/" class="d-inline-flex align-items-center rounded"
               >文字屬性</a></li>
+          <li><a href="/docs/style/spacing/" class="d-inline-flex align-items-center rounded"
+              >間距</a></li>
         </ul>
       </div>
     </li>
@@ -145,6 +149,8 @@
         <ul class="list-unstyled fw-normal pb-1 small">
           <li><a href="/docs/components/navbar/" class="d-inline-flex align-items-center rounded"
               >導覽列</a></li>
+          <li><a href="/docs/components/card/" class="d-inline-flex align-items-center rounded"
+              >卡片</a></li>
         </ul>
       </div>
     </li>
