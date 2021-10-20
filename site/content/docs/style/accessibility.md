@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: 無障礙/可近用性 (Accessibility)
-group: 風格
+group: style
 toc: true
 ---
 

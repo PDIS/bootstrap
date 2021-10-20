@@ -8,14 +8,20 @@
       name: accessibility
     - title: 顏色
       name: color
+    - title: 版面配置
+      name: layout
     - title: 文字屬性
       name: typography
+    - title: 間距
+      name: spacing
 
 - title: 元件
   name: components
   pages:
     - title: 導覽列
       name: navbar
+    - title: 卡片
+      name: card
 # - title: Getting started
 #   pages:
 #     - title: Introduction

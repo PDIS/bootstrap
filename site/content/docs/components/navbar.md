@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: 導覽 - 頁首與頁尾 (header & footer)
-group: 元件
+group: components
 toc: true
 ---
 
