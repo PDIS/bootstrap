@@ -3,7 +3,23 @@
 html,
 body {
   font-family: "Noto Sans", "Noto Sans TC", sans-serif !important;
-  text-underline-offset: 0.1em;
+  //text-underline-offset: 0.1em;
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin-bottom: 1em;
+  line-height: 1.2;
 }
 
 .bg-custom {
@@ -51,5 +67,5 @@ body {
 }
 
 .bg-footer {
-  background-color: #C1C2C3;
+  background-color: #c1c2c3;
 }
