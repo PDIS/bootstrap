@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="手風琴是一種可以展開與隱藏更多資訊的列表。">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.88.1">
+
+<meta name="docsearch:language" content="en">
+<meta name="docsearch:version" content="5.1">
+
+<title>手風琴 (Accordion) · Bootstrap v5.1</title>
+
+<link rel="canonical" href="https://getbootstrap.com/docs/components/accordion/">
+
+
+
+<!-- Bootstrap core CSS -->
+<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<link href="/docs/5.1/assets/css/docs.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@getbootstrap">
+<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:title" content="手風琴 (Accordion)">
+<meta name="twitter:description" content="手風琴是一種可以展開與隱藏更多資訊的列表。">
+<meta name="twitter:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
+
+<!-- Facebook -->
+<meta property="og:url" content="https://getbootstrap.com/docs/components/accordion/">
+<meta property="og:title" content="手風琴 (Accordion)">
+<meta property="og:description" content="手風琴是一種可以展開與隱藏更多資訊的列表。">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
+
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-146052-10', 'getbootstrap.com');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+  </head>
+  <body>
+    <div class="skippy visually-hidden-focusable overflow-hidden">
+  <div class="container-xl">
+    <a class="d-inline-flex p-2 m-1" href="#content">Skip to main content</a>
+    <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a>
+  </div>
+</div>
+
+
+    <header class="navbar navbar-expand-md navbar-dark bd-navbar">
+  <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
+    <a class="navbar-brand p-0 me-2" href="/" aria-label="Bootstrap">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"/></svg>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar"
+      aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="bdNavbar">
+      <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2" href="/"
+            onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2 active" aria-current="true"
+            href="/docs/style/accessibility"
+            onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">文件</a>
+        </li>
+        
+      </ul>
+
+      <hr class="d-md-none text-white-50">
+
+      
+    </div>
+  </nav>
+</header>
+
+
+    
+
+
+
+<div class="container-xxl my-md-4 bd-layout">
+  <aside class="bd-sidebar">
+    <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
+    <li class="mb-1">
+      <button class="btn d-inline-flex align-items-center rounded collapsed"
+        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="false"
+        >
+        風格
+      </button>
+
+      <div class="collapse" id="style-collapse">
+        <ul class="list-unstyled fw-normal pb-1 small">
+          <li><a href="/docs/style/accessibility/" class="d-inline-flex align-items-center rounded"
+              >無障礙</a></li>
+          <li><a href="/docs/style/color/" class="d-inline-flex align-items-center rounded"
+              >顏色</a></li>
+          <li><a href="/docs/style/layout/" class="d-inline-flex align-items-center rounded"
+              >版面配置</a></li>
+          <li><a href="/docs/style/typography/" class="d-inline-flex align-items-center rounded"
+              >文字屬性</a></li>
+          <li><a href="/docs/style/spacing/" class="d-inline-flex align-items-center rounded"
+              >間距</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mb-1">
+      <button class="btn d-inline-flex align-items-center rounded"
+        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="true"
+         aria-current="true" >
+        元件
+      </button>
+
+      <div class="collapse show" id="components-collapse">
+        <ul class="list-unstyled fw-normal pb-1 small">
+          <li><a href="/docs/components/navbar/" class="d-inline-flex align-items-center rounded"
+              >導覽列</a></li>
+          <li><a href="/docs/components/card/" class="d-inline-flex align-items-center rounded"
+              >卡片</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+  </aside>
+
+  <main class="bd-main order-1">
+    <div class="bd-intro ps-lg-4">
+      <div class="d-md-flex flex-md-row align-items-left justify-content-between">
+        
+        <h1 id="content">手風琴 (Accordion)</h1>
+      </div>
+      <h2>手風琴是一種可以展開與隱藏更多資訊的列表。</h2>
+      <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
+
+    </div>
+
+    
+    <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+      <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#about-the-accordion-component">About the accordion component</a></li>
+        <li><a href="#guidance">Guidance</a>
+          <ul>
+            <li><a href="#when-to-use-the-accordion-component">When to use the accordion component</a></li>
+            <li><a href="#when-to-consider-something-else">When to consider something else</a></li>
+            <li><a href="#手風琴易用性-accordion-usability">手風琴易用性 Accordion Usability</a></li>
+          </ul>
+        </li>
+        <li><a href="#component">Component</a>
+          <ul>
+            <li><a href="#基本款手風琴-basic-accordion">基本款手風琴 Basic accordion</a></li>
+            <li><a href="#多層手風琴-layered-accordion">多層手風琴 Layered accordion</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+
+    <div class="bd-content ps-lg-4">
+      
+
+      <h3 id="about-the-accordion-component">About the accordion component</h3>
+<p>手風琴 (accordion) 是一種可以展開與隱藏更多資訊的列表，展開後的資訊可以是純文字、另一頁面、也可以是更深層的手風琴 (layered accordion) 。</p>
+<h3 id="guidance">Guidance</h3>
+<h4 id="when-to-use-the-accordion-component">When to use the accordion component</h4>
+<ul>
+<li><strong>切換隱藏或顯示大量文字內容。</strong> 當列表上的說明文字多到一個量，可以使用手風琴內部分文字收納隱藏起來，讓使用者自行點擊切換顯示更多文字內容或是隱藏部分文字內容。</li>
+<li><strong>以短句標題總結大量文字內容。</strong> 當頁面上的文字內容可以用某個短句子總結時，且使用者不一定需要這些大篇幅的文字資訊時，可以使用手風琴幫助收納資訊，讓使用者僅以短句標題先初步瀏覽總結，再自行選擇是否展開以查看更多。（列如：問答集，使用者不一定需要知道每個問題的答案，但可以透過問題本身自行選擇想要觀看某條目的答案）。</li>
+</ul>
+<h4 id="when-to-consider-something-else">When to consider something else</h4>
+<ul>
+<li><strong>標題過於豐富。</strong> 當標題內容較難以文字簡單呈現時，請考慮使用其他文件，例如可以包含標題、內文、圖片、按鈕的卡片元件 (card component) 。</li>
+<li><strong>內容過於簡單。</strong> 手風琴的互動會增加使用者的認知負荷 (cognitive load) 和互動成本 (interaction cost)，所以當內容簡短到不需要以標題做壓縮時，請考慮直接將文字排版，不需要使用手風琴收納。</li>
+<li><strong>預設使用者詳讀全文。</strong> 當您希望使用者詳讀所有內容時，請勿假設使用者會點開所有手風琴的內容，請考慮捨棄使用手風琴而改以使用簡單乾淨的文字排版，協助使用者閱讀內容。</li>
+</ul>
+<h4 id="手風琴易用性-accordion-usability">手風琴易用性 Accordion Usability</h4>
+<ul>
+<li><strong>圖標一致性。</strong> 手風琴上的圖標按鈕應一致，展開按鈕應選用同一種，收納按鈕也應選用同一種。</li>
+<li><strong>風格差異。</strong> 使用者應要能夠容易辨識出手風琴展開時與收納時的風格差異。</li>
+</ul>
+<h3 id="component">Component</h3>
+<h4 id="基本款手風琴-basic-accordion">基本款手風琴 Basic accordion</h4>
+<p>基本款手風琴包含標題與可以點擊的展開按鈕 (+) ，展開後該按鈕則會被替換回另一個可以點擊的收納按鈕 (-) 。除了預設的正負圖標以外，您也可以使用展開與收納按鈕也可以選擇箭頭圖標。展開後的列表樣式與展開前的樣式應有差距，讓使用者可以迅速的辨認出展開或未展開狀態。</p>
+<h4 id="多層手風琴-layered-accordion">多層手風琴 Layered accordion</h4>
+<p>有的時候手風琴裡面還有一層手風琴，強烈建議不同層的手風情使用不同的圖標按鈕 (icon button) 與樣式以利區分。</p>
+
+    </div>
+  </main>
+</div>
+
+
+    <footer class="bd-footer py-5 mt-5 bg-light">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-3 mb-3">
+        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"/></svg>
+          <span class="fs-5">Bootstrap</span>
+        </a>
+        <ul class="list-unstyled small text-muted">
+          <li class="mb-2">Designed and built with all the love in the world by the <a href="/docs/5.1/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+          <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
+          <li class="mb-2">Currently v5.1.3.</li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+        <h5>Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="/">Home</a></li>
+          <li class="mb-2"><a href="/docs/5.1/">Docs</a></li>
+          <li class="mb-2"><a href="/docs/5.1/examples/">Examples</a></li>
+          <li class="mb-2"><a href="https://themes.getbootstrap.com/">Themes</a></li>
+          <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Guides</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="/docs/5.1/getting-started/">Getting started</a></li>
+          <li class="mb-2"><a href="/docs/5.1/examples/starter-template/">Starter template</a></li>
+          <li class="mb-2"><a href="/docs/5.1/getting-started/webpack/">Webpack</a></li>
+          <li class="mb-2"><a href="/docs/5.1/getting-started/parcel/">Parcel</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Projects</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap">Bootstrap 5</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/icons">Icons</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/rfs">RFS</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap-npm-starter">npm starter</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Community</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions">Discussions</a></li>
+          <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
+          <li class="mb-2"><a href="https://opencollective.com/bootstrap">Open Collective</a></li>
+          <li class="mb-2"><a href="https://bootstrap-slack.herokuapp.com/">Slack</a></li>
+          <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+
+<script src="/docs/5.1/assets/js/docs.min.js"></script>
+
+
+    
+
+  </body>
+</html>
