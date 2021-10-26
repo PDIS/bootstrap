@@ -265,6 +265,28 @@ toc: true
 
 圖片在內文左邊。
 
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col">
+    <div class="card" >
+      <div class="row g-0 align-items-center">
+        <div class="col-md-4">
+          {{< placeholder width="100%" height="250" text="圖片" class="img-fluid rounded-start" >}}
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">標題文字</h5>
+            <p class="card-text">此部分為卡片之內文。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{< /example >}}
+
 #### 橫式卡片加按鈕 Landscape card with buttons
 
 圖片在內文左邊，按鈕若在上方使用圖示按鈕，若在下方則於內文對齊。日期與標籤則在按鈕的對面。
@@ -272,6 +294,55 @@ toc: true
 #### 文字卡 Masonry card
 
 純文字的卡片，若有圖片則為背景。若使用背景圖片時請注意色彩對比度。
+
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card text-black bg-white border-dark">
+      <div class="card-body">
+        <h5 class="card-title">服務項目</h5>
+        <p class="card-text">此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card text-white bg-primary">
+      <div class="card-body">
+        <h5 class="card-title">服務項目</h5>
+        <p class="card-text">此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card text-white bg-primary">
+      <div class="card-body">
+        <h5 class="card-title">服務項目</h5>
+        <p class="card-text">此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card">
+    <div class="card-header">服務項目類別</div>
+      <div class="card-body text-black bg-white">
+        <h5 class="card-title">服務項目</h5>
+        <p class="card-text">此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{< /example >}}
 
 #### 卡片加列表 Card with list group
 
