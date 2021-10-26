@@ -123,6 +123,40 @@ toc: true
 
 框線的選擇有無框線、有框線、陰影。選擇無框線的卡片風格時，請注意元件本身與背景的色彩對比度。
 
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <div class="card border-0">
+      {{< placeholder width="100%" height="180" class="card-img-top" text="圖片" >}}
+      <div class="card-body">
+        <h5 class="card-title">標題文字</h5>
+        <p class="card-text">此部分為卡片之內文。</p>
+      </div>
+    </div>
+  </div>
+    <div class="col-md-4">
+    <div class="card">
+      {{< placeholder width="100%" height="180" class="card-img-top" text="圖片" >}}
+      <div class="card-body">
+        <h5 class="card-title">標題文字</h5>
+        <p class="card-text">此部分為卡片之內文。</p>
+      </div>
+    </div>
+  </div>
+    <div class="col-md-4">
+    <div class="card shadow-sm">
+      {{< placeholder width="100%" height="180" class="card-img-top" text="圖片" >}}
+      <div class="card-body">
+        <h5 class="card-title">標題文字</h5>
+        <p class="card-text">此部分為卡片之內文。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{< /example >}}
+
 #### 一般卡片加按鈕 Card with button
 
 按鈕的位置與內文對齊。
@@ -158,9 +192,70 @@ toc: true
 
 按鈕若與標題同時在圖片上方，用圖標按鈕呈現。
 
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-baseline">
+        <h5 class="card-title">
+          標題文字            
+          </h5>
+            <button class="btn">
+              <i class="bi bi-arrow-right"></i>
+            </button></div>
+        <p class="card-text">此部分為卡片之內文。</p>
+      </div>
+      {{< placeholder width="100%" height="180" class="card-img-top" text="圖片" >}}
+    </div>
+  </div>
+</div>
+
+{{< /example >}}
+
 #### 一般卡片加標籤與日期 Card with tag and date
 
 標籤與日期在標題上方。
+
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <div class="card">
+      {{< placeholder width="100%" height="180" class="card-img-top" text="圖片" >}}
+      <div class="card-body">
+        <div class="badge-row">
+          <span class="badge bg-warning text-dark">tag</span>
+          <span class="badge bg-warning text-dark">tag</span>
+          <span class="badge bg-warning text-dark">tag</span>
+        </div>
+        <p>110-10-31</p>
+        <h5>標題文字</h5>
+        <p class="card-text">此部分為卡片之內文。</p>
+        <a href="#" class="btn btn-primary">前往報名</a>
+      </div>
+    </div>
+  </div>
+    <div class="col-md-4">
+    <div class="card">
+      {{< placeholder width="100%" height="180" class="card-img-top" text="圖片" >}}
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <p>110-10-31</p>
+          <div>
+            <span class="badge bg-warning text-dark">tag</span>
+          </div>
+        </div>
+        <h5>標題文字</h5>
+        <p class="card-text">此部分為卡片之內文。</p>
+        <a href="#" class="btn btn-primary">前往報名</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{< /example >}}
 
 #### 標題優先卡片加標籤與日期 Title-first card with tag and date
 
