@@ -6,7 +6,7 @@ body {
   //text-underline-offset: 0.1em;
 }
 
-h6,
+/* h6,
 .h6,
 h5,
 .h5,
@@ -20,7 +20,7 @@ h1,
 .h1 {
   margin-bottom: 1em;
   line-height: 1.2;
-}
+} */
 
 .bg-custom {
   background-color: #005aa8 !important;
@@ -71,11 +71,23 @@ h1,
 }
 
 .badge {
-  margin-right: 0.5em;
+  margin: 0 0.25rem;
+  padding: 0.5rem;
+}
+
+.badge-start {
+  margin-left: 0;
+}
+
+.badge-end {
+  margin-right: 0;
 }
 
 .badge-row {
   margin-bottom: 1rem;
+}
+
+.badge-collections {
 }
 
 .gov-badge {
@@ -85,11 +97,13 @@ h1,
 
 .icon-btn {
   -webkit-text-stroke: thin;
+  padding-right: 0;
 }
 
 .card-header {
   background-color: $gray-400;
   font-weight: 500;
+  padding: 1rem 1.5rem 1rem 1.5rem;
 }
 
 .card-body {
@@ -97,10 +111,15 @@ h1,
 }
 
 .card-title {
+  margin-bottom: 1rem;
   font-weight: 500;
 }
 
 .card-text {
+  color: #6b6b6b;
+}
+
+.card-date {
   color: #6b6b6b;
 }
 
@@ -109,9 +128,71 @@ h1,
 }
 
 .card-list-link {
-  margin-left: 0.25em;
+  margin-left: 0.5em;
 }
 
 .card-bg-gary {
   background-color: $gray-100;
+}
+
+.text-card {
+  @extend .card;
+  @extend .border-dark;
+}
+
+.text-card-body {
+  padding: 1.5rem;
+}
+
+.text-card-title {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.text-card-text {
+  color: #121212;
+  margin-bottom: 0;
+}
+
+.list-card-body {
+  padding: 1.5rem;
+}
+
+.list-card-title {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.list-card-text {
+  color: #121212;
+  margin-bottom: 1rem;
+}
+
+.list-card-extra-link {
+  margin: 0 0.5rem;
+}
+
+.list-card-extra-link-start {
+  margin-right: 0.5rem;
+}
+
+.list-card-extra-link-end {
+  margin-left: 0.5rem;
+}
+
+.list-card-item-text {
+  display: inline;
+  margin-left: 0.5em;
+}
+
+.list-card-with-extra-link {
+  margin-bottom: -0.5rem;
+}
+
+.list-group-item {
+  padding: 0.75rem 1.5rem;
+}
+
+.list-group-end {
+  margin-bottom: 0.5rem;
 }
