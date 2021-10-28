@@ -25,14 +25,17 @@
 
 // Load Bootstrap variables and mixins
 @import "../../../scss/functions";
+
+@import "custom-variables";
+
 @import "../../../scss/variables";
 @import "../../../scss/mixins";
 
-// fusv-disable
+/* // fusv-disable
 $enable-grid-classes: false; // stylelint-disable-line scss/dollar-variable-default
 $enable-cssgrid: true; // stylelint-disable-line scss/dollar-variable-default
 // fusv-enable
-@import "../../../scss/grid";
+@import "../../../scss/grid"; */
 
 // Load docs components
 @import "variables";
@@ -58,5 +61,7 @@ $enable-cssgrid: true; // stylelint-disable-line scss/dollar-variable-default
 @import "syntax";
 @import "anchor";
 @import "algolia";
+
+@import "scss/bootstrap.scss";
 
 @import "custom";

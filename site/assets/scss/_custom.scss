@@ -71,9 +71,47 @@ h1,
 }
 
 .badge {
-  margin-right: 0.5em
+  margin-right: 0.5em;
 }
 
 .badge-row {
-  margin-bottom: 1rem;  
+  margin-bottom: 1rem;
+}
+
+.gov-badge {
+  @extend .badge;
+  @extend .bg-secondary-light;
+}
+
+.icon-btn {
+  -webkit-text-stroke: thin;
+}
+
+.card-header {
+  background-color: $gray-400;
+  font-weight: 500;
+}
+
+.card-body {
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.card-title {
+  font-weight: 500;
+}
+
+.card-text {
+  color: #6b6b6b;
+}
+
+.bg-card-img {
+  background-image: url("../img/bg-text-card.png");
+}
+
+.card-list-link {
+  margin-left: 0.25em;
+}
+
+.card-bg-gary {
+  background-color: $gray-100;
 }

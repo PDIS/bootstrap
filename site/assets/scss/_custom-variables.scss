@@ -1,0 +1,17 @@
+$primary: #005aa8;
+$secondary: #f9a602;
+$success: #4ba979;
+$info: #3e2a00;
+$warning: #e35d6a;
+$danger: #ab361d;
+$primary-dark: #003c70;
+$primary-light: #9cd1ff;
+$secondary-dark: #3e2a00;
+$secondary-light: #fedc98;
+
+$custom-colors: (
+  "primary-dark": $primary-dark,
+  "primary-light": $primary-light,
+  "secondary-dark": $secondary-dark,
+  "secondary-light": $secondary-light,
+);

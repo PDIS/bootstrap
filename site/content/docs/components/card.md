@@ -50,7 +50,7 @@ toc: true
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
     <div class="card">
-      {{< placeholder width="100%" height="180" class="card-img-top" text="圖片" >}}
+    <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
         <p class="card-text">此部分為卡片之內文。</p>
@@ -202,7 +202,7 @@ toc: true
         <h5 class="card-title">
           標題文字            
           </h5>
-            <button class="btn">
+            <button class="btn text-primary icon-btn">
               <i class="bi bi-arrow-right"></i>
             </button></div>
         <p class="card-text">此部分為卡片之內文。</p>
@@ -226,9 +226,9 @@ toc: true
       {{< placeholder width="100%" height="180" class="card-img-top" text="圖片" >}}
       <div class="card-body">
         <div class="badge-row">
-          <span class="badge bg-warning text-dark">tag</span>
-          <span class="badge bg-warning text-dark">tag</span>
-          <span class="badge bg-warning text-dark">tag</span>
+          <span class="badge bg-secondary-light text-dark">標籤</span>
+          <span class="badge bg-secondary-light text-dark">標籤</span>
+          <span class="badge bg-secondary-light text-dark">標籤</span>
         </div>
         <p>110-10-31</p>
         <h5>標題文字</h5>
@@ -244,7 +244,7 @@ toc: true
         <div class="d-flex justify-content-between">
           <p>110-10-31</p>
           <div>
-            <span class="badge bg-warning text-dark">tag</span>
+            <span class="badge bg-secondary-light text-dark">標籤</span>
           </div>
         </div>
         <h5>標題文字</h5>
@@ -260,6 +260,56 @@ toc: true
 #### 標題優先卡片加標籤與日期 Title-first card with tag and date
 
 標籤與日期在圖片上方或下方，呼籲按鈕則放在圖片對面。
+
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <p>110-10-31</p>
+          <div>
+            <span class="badge bg-secondary-light text-dark">標籤</span>
+            <span class="badge bg-secondary-light text-dark">標籤</span>
+            <span class="badge bg-secondary-light text-dark">標籤</span>
+          </div>
+        </div>
+        <h5 class="card-title">標題文字</h5>
+      </div>
+      {{< placeholder width="100%" height="180" class="card-img-top" text="圖片" >}}
+      <div class="card-body">
+        <p class="card-text">此部分為卡片之內文。</p>
+        <a href="#" class="btn btn-primary">前往報名</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-baseline">
+        <h5 class="card-title">
+          標題文字            
+        </h5>
+        <button class="btn text-primary icon-btn">
+          <i class="bi bi-arrow-right"></i>
+        </button></div>
+        <p class="card-text">此部分為卡片之內文。</p>
+      </div>
+      {{< placeholder width="100%" height="180" class="card-img-top" text="圖片" >}}
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <p>110-10-31</p>
+          <div>
+            <span class="badge bg-secondary-light text-dark">標籤</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{< /example >}}
 
 #### 橫式卡片 Landscape card
 
@@ -291,6 +341,69 @@ toc: true
 
 圖片在內文左邊，按鈕若在上方使用圖示按鈕，若在下方則於內文對齊。日期與標籤則在按鈕的對面。
 
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col">
+    <div class="card" >
+      <div class="row g-0 align-items-center">
+        <div class="col-md-4">
+          {{< placeholder width="100%" height="250" text="圖片" class="img-fluid rounded-start" >}}
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p>110-10-31</p>
+              <div>
+                <span class="badge bg-secondary-light text-dark">標籤</span>
+                <span class="badge bg-secondary-light text-dark">標籤</span>
+              </div>
+            </div>
+            <h5 class="card-title">標題文字</h5>
+            <p class="card-text">此部分為卡片之內文。</p>
+            <a href="#" class="btn btn-primary">前往報名</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col">
+    <div class="card" >
+      <div class="row g-0 align-items-center">
+        <div class="col-md-4">
+          {{< placeholder width="100%" height="250" text="圖片" class="img-fluid rounded-start" >}}
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-baseline">
+              <h5 class="card-title">
+                標題文字            
+              </h5>
+              <button class="btn text-primary icon-btn">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+            <p class="card-text">此部分為卡片之內文。</p>
+            <div class="badge-row">
+              <span class="badge bg-secondary-light text-dark">標籤</span>
+              <span class="badge bg-secondary-light text-dark">標籤</span>
+              <span class="badge bg-secondary-light text-dark">標籤</span>
+              <span class="badge bg-secondary-light text-dark">標籤</span>
+            </div>
+            <p>110-10-31</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{{< /example >}}
+
 #### 文字卡 Masonry card
 
 純文字的卡片，若有圖片則為背景。若使用背景圖片時請注意色彩對比度。
@@ -310,7 +423,7 @@ toc: true
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="card text-white bg-primary">
+    <div class="card text-white bg-primary-dark">
       <div class="card-body">
         <h5 class="card-title">服務項目</h5>
         <p class="card-text">此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
@@ -321,7 +434,7 @@ toc: true
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="card text-white bg-primary">
+    <div class="card text-white bg-card-img">
       <div class="card-body">
         <h5 class="card-title">服務項目</h5>
         <p class="card-text">此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
@@ -333,7 +446,7 @@ toc: true
 <div class="row d-flex justify-content-center">
   <div class="col-6">
     <div class="card">
-    <div class="card-header">服務項目類別</div>
+      <div class="card-header bg-text-card-header">服務項目類別</div>
       <div class="card-body text-black bg-white">
         <h5 class="card-title">服務項目</h5>
         <p class="card-text">此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
@@ -347,3 +460,46 @@ toc: true
 #### 卡片加列表 Card with list group
 
 卡片內容需要以列表呈現時，可以使用此元件。
+
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-5">
+    <div class="card">
+      <div class="card-header bg-text-card-header">服務項目類別</div>
+      <div class="card-body">
+        <h5 class="card-title">標題</h5>
+        <p class="card-text">卡片內文或補充說明。</p>
+        <p class="card-text">1. 文字列表</p>
+        <p class="card-text">2. 文字列表</p>
+        <a href="#" class="btn btn-primary">前往報名</a>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><i class="bi bi-award text-primary"></i><a href="#" class="card-list-link">列表</a></li>
+        <li class="list-group-item"><i class="bi bi-award text-primary"></i><a href="#" class="card-list-link">列表</a></li>
+        <li class="list-group-item"><i class="bi bi-award text-primary"></i><a href="#" class="card-list-link">列表</a></li>
+        <li class="list-group-item"><i class="bi bi-award text-primary"></i><a href="#" class="card-list-link">列表</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div class="card">
+      <div class="card-header bg-text-card-header">服務項目類別</div>
+      <div class="card-body card-bg-gary">
+        <h5 class="card-title">標題</h5>
+        <p class="card-text">卡片內文或補充說明。</p>
+        <p class="card-text">1. 文字列表</p>
+        <p class="card-text">2. 文字列表</p>
+        <a href="#" class="btn btn-primary">前往報名</a>
+      </div>
+      <ul class="list-group list-group-flush border-0">
+        <li class="list-group-item border-0"><i class="bi bi-award text-primary"></i><a href="#" class="card-list-link">列表</a></li>
+        <li class="list-group-item border-0"><i class="bi bi-award text-primary"></i><a href="#" class="card-list-link">列表</a></li>
+        <li class="list-group-item border-0"><i class="bi bi-award text-primary"></i><a href="#" class="card-list-link">列表</a></li>
+        <li class="list-group-item border-0"><i class="bi bi-award text-primary"></i><a href="#" class="card-list-link">列表</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{{< /example >}}
