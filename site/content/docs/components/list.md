@@ -39,34 +39,177 @@ toc: true
 
 {{< example >}}
 
-<ul class="list-group">
-  <li class="list-group-item">標題<div>副標題或內文簡單闡述</div></li>
-  <li class="list-group-item">A second item</li>
-  <li class="list-group-item">A third item</li>
-  <li class="list-group-item">A fourth item</li>
-  <li class="list-group-item">And a fifth one</li>
-</ul>
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-no-border">項目</li>
+      <li class="list-group-item list-group-item-no-border">項目</li>
+      <li class="list-group-item list-group-item-no-border">項目</li>
+    </ul>
+  </div>
+</div>
+
 {{< /example >}}
 
 #### 框線 Border
 
 可以選擇使用框線。
 
+{{< example >}}
+
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+
+{{< /example >}}
+
 #### 連結 Links
 
 當使用者可以點選列表中的文字到另一頁面時，請使用連結風格 (link style)。
+
+{{< example >}}
+
+<div class="row">
+  <div class="col-md-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+   <div class="col-md-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<a href="#" class="list-group-item-link">副標題或內文簡單闡述</a></li>
+    </ul>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-md-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray list-group-item-bullet">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+   <div class="col-md-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray list-group-item-bullet">標題：<a href="#" class="list-group-item-link">副標題或內文簡單闡述</a></li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-md-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-newline-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+   <div class="col-md-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<a href="#" class="list-group-item-newline-link">副標題或內文簡單闡述</a></li>
+    </ul>
+  </div>
+</div>
+
+{{< /example >}}
 
 #### 文字對齊 Text Alignment
 
 標題與內文可以同行，也可以將內文放在標題下一行。
 
+{{< example >}}
+
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-newline-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+
+{{< /example >}}
+
 #### 項目符號 Bullet
 
 在標題前面，您也可以選擇加上項目符號。
 
+{{< example >}}
+
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray list-group-item-bullet">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+
+{{< /example >}}
+
 #### 內文長度 Content length
 
 內文比較長時，請在句尾用省略號 （…），並將所顯示的文字放在一行內顯示，請勿顯示超過一行。
+
+{{< example >}}
+
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">課程代碼<p class="list-group-item-newline-subheader">PCENTER110100901</p></li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+      <div>
+      <p class="list-group-item-newline-subheader">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落太長的部分會消失」 </p>
+      </div>
+      </li>
+    </ul>
+  </div>
+</div>
+{{< /example >}}
 
 #### 圖標列表 Icon list
 
