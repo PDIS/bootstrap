@@ -242,30 +242,281 @@
 <p>基本款列表包含標題與內文。您可以選擇隱藏內文成為更單純的項目列表。</p>
 <div class="bd-example">
 
-<ul class="list-group">
-  <li class="list-group-item">標題<div>副標題或內文簡單闡述</div></li>
-  <li class="list-group-item">A second item</li>
-  <li class="list-group-item">A third item</li>
-  <li class="list-group-item">A fourth item</li>
-  <li class="list-group-item">And a fifth one</li>
-</ul>
-</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item&#34;</span><span class="p">&gt;</span>A second item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item&#34;</span><span class="p">&gt;</span>A third item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item&#34;</span><span class="p">&gt;</span>A fourth item<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item&#34;</span><span class="p">&gt;</span>And a fifth one<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></code></pre></div>
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-no-border">項目</li>
+      <li class="list-group-item list-group-item-no-border">項目</li>
+      <li class="list-group-item list-group-item-no-border">項目</li>
+    </ul>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-no-border&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-no-border&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-no-border&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-no-border&#34;</span><span class="p">&gt;</span>項目<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-no-border&#34;</span><span class="p">&gt;</span>項目<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-no-border&#34;</span><span class="p">&gt;</span>項目<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <h4 id="框線-border">框線 Border</h4>
 <p>可以選擇使用框線。</p>
+<div class="bd-example">
+
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-no-border&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-no-border&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-no-border&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <h4 id="連結-links">連結 Links</h4>
 <p>當使用者可以點選列表中的文字到另一頁面時，請使用連結風格 (link style)。</p>
+<div class="bd-example">
+
+<div class="row">
+  <div class="col-md-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+   <div class="col-md-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<a href="#" class="list-group-item-link">副標題或內文簡單闡述</a></li>
+    </ul>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-md-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray list-group-item-bullet">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+   <div class="col-md-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray list-group-item-bullet">標題：<a href="#" class="list-group-item-link">副標題或內文簡單闡述</a></li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-md-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-newline-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+   <div class="col-md-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<a href="#" class="list-group-item-newline-link">副標題或內文簡單闡述</a></li>
+    </ul>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-link&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray list-group-item-bullet&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray list-group-item-bullet&#34;</span><span class="p">&gt;</span>標題：<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-link&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-newline-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-newline-link&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <h4 id="文字對齊-text-alignment">文字對齊 Text Alignment</h4>
 <p>標題與內文可以同行，也可以將內文放在標題下一行。</p>
+<div class="bd-example">
+
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-newline-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-newline-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <h4 id="項目符號-bullet">項目符號 Bullet</h4>
 <p>在標題前面，您也可以選擇加上項目符號。</p>
+<div class="bd-example">
+
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray list-group-item-bullet">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray list-group-item-bullet&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-subheader&#34;</span><span class="p">&gt;</span>副標題或內文簡單闡述<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <h4 id="內文長度-content-length">內文長度 Content length</h4>
 <p>內文比較長時，請在句尾用省略號 （…），並將所顯示的文字放在一行內顯示，請勿顯示超過一行。</p>
+<div class="bd-example">
+
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">課程代碼<p class="list-group-item-newline-subheader">PCENTER110100901</p></li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-gray">歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+      <div>
+      <p class="list-group-item-newline-subheader">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落太長的部分會消失」 </p>
+      </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray&#34;</span><span class="p">&gt;</span>課程代碼<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-newline-subheader&#34;</span><span class="p">&gt;</span>PCENTER110100901<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group list-group-flush&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item list-group-item-gray&#34;</span><span class="p">&gt;</span>歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+      <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-item-newline-subheader&#34;</span><span class="p">&gt;</span>交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落太長的部分會消失」 <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <h4 id="圖標列表-icon-list">圖標列表 Icon list</h4>
 <p>項目文字前可以使用圖標 (icon) 作為開頭。列表前所用的圖標儘量用來幫助使用者分類用，並且所選用的圖標的正面性或負面性應與文字內容相符。另外，圖標列表也運用在統計圖表中的圖例 (legend) 使用。請注意，為了幫助使用者辨別列表與手風琴元件，我們強烈建議在選用圖標時，請避免使用上下方向箭頭或是正負加減符號。</p>
 <h4 id="有序列表與無序列表-ordered-list-and-unordered-list">有序列表與無序列表 Ordered list and Unordered list</h4>
