@@ -3,24 +3,20 @@
 html,
 body {
   font-family: "Noto Sans", "Noto Sans TC", sans-serif !important;
-  //text-underline-offset: 0.1em;
 }
 
-/* h6,
-.h6,
-h5,
-.h5,
-h4,
-.h4,
-h3,
-.h3,
-h2,
-.h2,
-h1,
-.h1 {
-  margin-bottom: 1em;
-  line-height: 1.2;
-} */
+a {
+  text-underline-offset: 0.1em;
+}
+
+a:visited {
+  color: $secondary-dark;
+}
+
+a:active {
+  background-color: $primary;
+  color: $secondary-light;
+}
 
 .bg-custom {
   background-color: #005aa8 !important;
@@ -243,4 +239,64 @@ h1,
 
 .list-group-icon {
   margin-right: 0.5rem;
+}
+
+.list-item {
+  display: block;
+  margin: 0;
+  padding: 0.5rem 0;
+  i {
+    margin-right: 0.5rem;
+  }
+}
+
+.list-item-ordered {
+  display: list-item;
+  margin: 0 1.25rem;
+}
+
+.list-item-subheader {
+  display: inline;
+  margin-left: 0.5rem;
+  color: #6b6b6b;
+}
+
+.list-item-bottom-border {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-width: 0 0 1px;
+}
+
+.list-item-link {
+  margin-left: 0.5rem;
+}
+
+.list-item-twoline {
+  * {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+.text-blue-300 {
+  color: $blue-300;
+}
+
+.text-pink-300 {
+  color: $pink-300;
+}
+
+.text-purple-300 {
+  color: $purple-300;
+}
+
+.trad-chinese-formal {
+  list-style: trad-chinese-formal;
+}
+
+.trad-chinese-informal {
+  list-style: trad-chinese-informal;
+}
+
+.nested-list {
+  padding: 0 1rem;
 }

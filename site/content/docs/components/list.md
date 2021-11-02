@@ -40,21 +40,21 @@ toc: true
 {{< example >}}
 
 <div class="row">
-  <div class="col-md-4">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
-      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
-      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+  <div class="col">
+    <ul>
+      <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
 </div>
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-no-border">項目</li>
-      <li class="list-group-item list-group-item-no-border">項目</li>
-      <li class="list-group-item list-group-item-no-border">項目</li>
+    <ul>
+      <li class="list-item ">標題</li>
+      <li class="list-item ">標題</li>
+      <li class="list-item ">標題</li>
     </ul>
   </div>
 </div>
@@ -69,20 +69,20 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
-      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
-      <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    <ul>
+      <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
 </div>
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
-      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
-      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    <ul>
+      <li class="list-item  list-item-bottom-border">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-item  list-item-bottom-border">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
+      <li class="list-item  list-item-bottom-border">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
 </div>
@@ -97,39 +97,39 @@ toc: true
 
 <div class="row">
   <div class="col-md-6">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    <ul>
+      <li class="list-item ">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
-   <div class="col-md-6">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-gray">標題<a href="#" class="list-group-item-link">副標題或內文簡單闡述</a></li>
-    </ul>
-  </div>
-</div>
-<br />
-<div class="row">
-  <div class="col-md-6">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-gray list-group-item-bullet">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
-    </ul>
-  </div>
-   <div class="col-md-6">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-gray list-group-item-bullet">標題：<a href="#" class="list-group-item-link">副標題或內文簡單闡述</a></li>
+    <div class="col-md-6">
+    <ul>
+      <li class="list-item ">標題<a href="#" class="list-item-link">副標題或內文簡單闡述</a></li>
     </ul>
   </div>
 </div>
 <br/>
 <div class="row">
   <div class="col-md-6">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-newline-subheader">副標題或內文簡單闡述</p></li>
+    <ul>
+      <li class="list-item list-item-ordered">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
-   <div class="col-md-6">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-gray">標題<a href="#" class="list-group-item-newline-link">副標題或內文簡單闡述</a></li>
+  <div class="col-md-6">
+    <ul>
+      <li class="list-item list-item-ordered">標題<a href="#" class="list-item-link">副標題或內文簡單闡述</a></li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-md-6">
+    <ul>
+      <li class="list-item list-item-twoline">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <ul>
+      <li class="list-item list-item-twoline">標題<a href="#" class="list-item-link">副標題或內文簡單闡述</a></li>
     </ul>
   </div>
 </div>
@@ -144,16 +144,16 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    <ul>
+      <li class="list-item ">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
 </div>
-<br />
+<br/>
 <div class="row">
   <div class="col">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-newline-subheader">副標題或內文簡單闡述</p></li>
+    <ul>
+      <li class="list-item  list-item-twoline">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
 </div>
@@ -168,16 +168,16 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-gray">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    <ul>
+      <li class="list-item ">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
 </div>
-<br />
+<br/>
 <div class="row">
   <div class="col">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-gray list-group-item-bullet">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
+    <ul>
+      <li class="list-item list-item-ordered">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
 </div>
@@ -192,23 +192,22 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-gray">課程代碼<p class="list-group-item-newline-subheader">PCENTER110100901</p></li>
+    <ul>
+      <li class="list-item  list-item-twoline">課程代碼<p class="list-item-subheader">PCENTER110100901</p></li>
     </ul>
   </div>
 </div>
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-gray">歡迎來部落走走 交通部觀光局邀您來當「部落客」！
-      <div>
-        <p class="list-group-item-newline-subheader truncate">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落觀光嘉年華」</p>
-      </div>
+    <ul>
+      <li class="list-item  list-item-twoline">歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+        <p class="list-item-subheader truncate">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落觀光嘉年華」</p>
       </li>
     </ul>
   </div>
 </div>
+
 {{< /example >}}
 
 #### 圖標列表 Icon list
@@ -219,22 +218,32 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-no-border"><i class="bi bi-check-circle-fill text-success list-group-icon"></i>請攜帶健保卡</li>
-      <li class="list-group-item list-group-item-no-border"><i class="bi bi-check-circle-fill text-success list-group-icon"></i>請配戴口罩</li>
-      <li class="list-group-item list-group-item-no-border"><i class="bi bi-check-circle-fill text-success list-group-icon"></i>請與工作人員保持兩公尺距離</li>
-      <li class="list-group-item list-group-item-no-border"><i class="bi bi-x-circle-fill text-danger list-group-icon"></i>請勿飲食</li>
+    <ul>
+      <li class="list-item "><i class="bi bi-check-circle-fill text-success"></i>請攜帶健保卡</li>
+      <li class="list-item "><i class="bi bi-check-circle-fill text-success"></i>請配戴口罩</li>
+      <li class="list-item "><i class="bi bi-check-circle-fill text-success"></i>請與工作人員保持兩公尺距離</li>
+      <li class="list-item "><i class="bi bi-check-circle-fill text-danger"></i>請勿飲食</li>
     </ul>
   </div>
 </div>
 <br />
 <div class="row">
   <div class="col">
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item list-group-item-no-border"><i class="bi bi-download"></i><a href="#" class="list-group-item-link">下載說明文件</a></li>
-      <li class="list-group-item list-group-item-no-border"><i class="bi bi-download"></i><a href="#" class="list-group-item-link">下載議程時間表</a></li>      
-      <li class="list-group-item list-group-item-no-border"><i class="bi bi-download"></i><a href="#" class="list-group-item-link">下載圖檔</a></li>      
-      <li class="list-group-item list-group-item-no-border"><i class="bi bi-download"></i><a href="#" class="list-group-item-link">下載報名表格</a></li>
+    <ul>
+      <li class="list-item "><i class="bi bi-download"></i><a href="#" class="list-item-link">下載說明文件</a></li>
+      <li class="list-item "><i class="bi bi-download"></i><a href="#" class="list-item-link">下載議程時間表</a></li>
+      <li class="list-item "><i class="bi bi-download"></i><a href="#" class="list-item-link">下載圖檔</a></li>
+      <li class="list-item "><i class="bi bi-download"></i><a href="#" class="list-item-link">下載報名表格</a></li>
+    </ul>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-md-6">
+    <ul class="d-flex justify-content-between">
+      <li class="list-item "><i class="bi bi-square-fill text-pink-300"></i>15-18歲</li>
+      <li class="list-item "><i class="bi bi-square-fill text-blue-300"></i>19-30歲</li>
+      <li class="list-item "><i class="bi bi-square-fill text-purple-300"></i>31 歲（含）以上</li>
     </ul>
   </div>
 </div>
@@ -245,9 +254,106 @@ toc: true
 
 當您需要呈現文字的排名、重要性、層級或步驟時，請使用有序列表。當您需要呈現文字並沒有特定的排名或順序時，請使用無序列表。
 
+{{< example >}}
+
+<div class="row">
+  <div class="col">
+    <ol>
+      <li class="list-item list-item-ordered">標題</li>
+      <li class="list-item list-item-ordered">標題</li>
+      <li class="list-item list-item-ordered">標題</li>
+    </ol>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col">
+    <ul>
+      <li class="list-item list-item-ordered">標題</li>
+      <li class="list-item list-item-ordered">標題</li>
+      <li class="list-item list-item-ordered">標題</li>
+    </ul>
+  </div>
+</div>
+
+{{< /example >}}
+
 #### 有序列表 Ordered list
 
 有序列表的預設排序方式
+
+{{< example >}}
+
+<div class="row">
+  <div class="col-md-4">
+    <ol class="trad-chinese-informal">
+      <li class="list-item list-item-ordered">標題</li>
+      <li class="list-item list-item-ordered">標題</li>
+      <li class="list-item list-item-ordered">標題</li>
+    </ol>
+  </div>
+  <div class="col-md-4">
+    <ol type="A">
+      <li class="list-item list-item-ordered">標題</li>
+      <li class="list-item list-item-ordered">標題</li>
+      <li class="list-item list-item-ordered">標題</li>
+    </ol>
+  </div>
+  <div class="col-md-4">
+    <ol>
+      <li class="list-item list-item-ordered">標題</li>
+      <li class="list-item list-item-ordered">標題</li>
+      <li class="list-item list-item-ordered">標題</li>
+    </ol>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-md-4">
+    <ol class="trad-chinese-informal">
+      <li class="list-item list-item-ordered list-item-twoline">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
+    </ol>
+  </div>
+  <div class="col-md-4">
+    <ol type="A">
+      <li class="list-item list-item-ordered list-item-twoline">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
+    </ol>
+  </div>
+  <div class="col-md-4">
+    <ol>
+      <li class="list-item list-item-ordered list-item-twoline">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
+    </ol>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-md-4">
+    <ol class="trad-chinese-formal">
+      <li class="list-item list-item-ordered">標題</li>
+      <ol class="trad-chinese-informal">
+        <li class="list-item list-item-ordered">標題</li>
+      </ol>
+    </ol>
+  </div>
+  <div class="col-md-4">
+    <ol type="A">
+      <li class="list-item list-item-ordered">標題</li>
+      <ol type="a" class="nested-list">
+        <li class="list-item list-item-ordered">標題</li>
+      </ol>
+    </ol>
+  </div>
+  <div class="col-md-4">
+    <ol>
+      <li class="list-item list-item-ordered">標題</li>
+      <ol class="nested-list">
+        <li class="list-item list-item-ordered">標題</li>
+      </ol>
+    </ol>
+  </div>
+</div>
+
+{{< /example >}}
 
 #### 單行、雙行、多行時序列表 single-line, double-line and multi-line time ordered list
 
