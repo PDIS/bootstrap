@@ -40,7 +40,7 @@ toc: true
 {{< example >}}
 
 <div class="row">
-  <div class="col">
+  <div class="col-md-4">
     <ul class="list-group list-group-flush">
       <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
       <li class="list-group-item list-group-item-no-border">標題<p class="list-group-item-subheader">副標題或內文簡單闡述</p></li>
@@ -203,7 +203,7 @@ toc: true
     <ul class="list-group list-group-flush">
       <li class="list-group-item list-group-item-gray">歡迎來部落走走 交通部觀光局邀您來當「部落客」！
       <div>
-      <p class="list-group-item-newline-subheader">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落太長的部分會消失」 </p>
+        <p class="list-group-item-newline-subheader truncate">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落觀光嘉年華」</p>
       </div>
       </li>
     </ul>
@@ -214,6 +214,32 @@ toc: true
 #### 圖標列表 Icon list
 
 項目文字前可以使用圖標 (icon) 作為開頭。列表前所用的圖標儘量用來幫助使用者分類用，並且所選用的圖標的正面性或負面性應與文字內容相符。另外，圖標列表也運用在統計圖表中的圖例 (legend) 使用。請注意，為了幫助使用者辨別列表與手風琴元件，我們強烈建議在選用圖標時，請避免使用上下方向箭頭或是正負加減符號。
+
+{{< example >}}
+
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-no-border"><i class="bi bi-check-circle-fill text-success list-group-icon"></i>請攜帶健保卡</li>
+      <li class="list-group-item list-group-item-no-border"><i class="bi bi-check-circle-fill text-success list-group-icon"></i>請配戴口罩</li>
+      <li class="list-group-item list-group-item-no-border"><i class="bi bi-check-circle-fill text-success list-group-icon"></i>請與工作人員保持兩公尺距離</li>
+      <li class="list-group-item list-group-item-no-border"><i class="bi bi-x-circle-fill text-danger list-group-icon"></i>請勿飲食</li>
+    </ul>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item list-group-item-no-border"><i class="bi bi-download"></i><a href="#" class="list-group-item-link">下載說明文件</a></li>
+      <li class="list-group-item list-group-item-no-border"><i class="bi bi-download"></i><a href="#" class="list-group-item-link">下載議程時間表</a></li>      
+      <li class="list-group-item list-group-item-no-border"><i class="bi bi-download"></i><a href="#" class="list-group-item-link">下載圖檔</a></li>      
+      <li class="list-group-item list-group-item-no-border"><i class="bi bi-download"></i><a href="#" class="list-group-item-link">下載報名表格</a></li>
+    </ul>
+  </div>
+</div>
+
+{{< /example >}}
 
 #### 有序列表與無序列表 Ordered list and Unordered list
 

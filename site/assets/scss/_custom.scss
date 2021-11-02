@@ -223,8 +223,8 @@ h1,
 }
 
 .list-group-item-bullet::before {
-  content: "●";
-  margin-right: 0.75rem;
+  content: "•";
+  margin-right: 0.25rem;
 }
 
 .list-group-item-newline-subheader {
@@ -233,4 +233,14 @@ h1,
 
 .list-group-item-newline-link {
   display: block;
+}
+
+.truncate {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.list-group-icon {
+  margin-right: 0.5rem;
 }
