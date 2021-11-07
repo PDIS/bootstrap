@@ -39,7 +39,7 @@ toc: true
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         有參加農保，以後可以領老農津貼嗎？要怎麼申請？每個月可以領多少錢？
       </button>
     </h2>
@@ -53,7 +53,7 @@ toc: true
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         請領要件
       </button>
     </h2>
@@ -64,7 +64,7 @@ toc: true
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         Household Registration Act 戶籍法英譯本
       </button>
     </h2>
@@ -75,11 +75,61 @@ toc: true
   </div>
    <div class="accordion-item">
     <h2 class="accordion-header" id="headingFour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
         戶籍法施行細則（104.07.10 修正）
       </button>
     </h2>
     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<div class="accordion" id="accordionExample2">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+        有參加農保，以後可以領老農津貼嗎？要怎麼申請？每個月可以領多少錢？
+      </button>
+    </h2>
+    <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
+      <div class="accordion-body">
+        <p>ㄧ、</p>
+        <p>二、如果您符合以上申領條件，請於年滿65歲當月主動檢附國民身分證、農會信用部或郵局存簿及印章，至您所屬的基層農會提出申請。</p>
+        <p>三、經審查合格，每個月可以領取7,550元或3,775元。 </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+        請領要件
+      </button>
+    </h2>
+    <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample2">
+      <div class="accordion-body">
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+        Household Registration Act 戶籍法英譯本
+      </button>
+    </h2>
+    <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2" data-bs-parent="#accordionExample2">
+      <div class="accordion-body">
+      </div>
+    </div>
+  </div>
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
+        戶籍法施行細則（104.07.10 修正）
+      </button>
+    </h2>
+    <div id="collapseFour2" class="accordion-collapse collapse" aria-labelledby="headingFour2" data-bs-parent="#accordionExample2">
       <div class="accordion-body">
       </div>
     </div>
@@ -91,3 +141,155 @@ toc: true
 #### 多層手風琴 Layered accordion
 
 有的時候手風琴裡面還有一層手風琴，強烈建議不同層的手風情使用不同的圖標按鈕 (icon button) 與樣式以利區分。
+
+{{< example >}}
+
+<div class="accordion" id="accordionExample3">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne3">
+      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+        有參加農保，以後可以領老農津貼嗎？要怎麼申請？每個月可以領多少錢？
+      </button>
+    </h2>
+    <div id="collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne3" data-bs-parent="#accordionExample3">
+      <div class="accordion-body">
+        <p>ㄧ、</p>
+        <p>二、如果您符合以上申領條件，請於年滿65歲當月主動檢附國民身分證、農會信用部或郵局存簿及印章，至您所屬的基層農會提出申請。</p>
+        <p>三、經審查合格，每個月可以領取7,550元或3,775元。 </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo3">
+      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
+        請領要件
+      </button>
+    </h2>
+    <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3" data-bs-parent="#accordionExample3">
+      <div class="accordion" id="accordionSecondLayer">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSecondLayerOne">
+            <button class="accordion-button-base-second-layer collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerOne" aria-expanded="true" aria-controls="collapseSecondLayerOne">
+              勞保生育給付
+            </button>
+          </h2>
+          <div id="collapseSecondLayerOne" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerOne" data-bs-parent="#accordionSecondLayer">
+            <div class="accordion-body-second-layer">
+              <p>按被保險人分娩或 ...</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSecondLayerTwo">
+            <button class="accordion-button-base-second-layer collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerTwo" aria-expanded="true" aria-controls="collapseSecondLayerTwo">
+              國保生育給付
+            </button>
+          </h2>
+          <div id="collapseSecondLayerTwo" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerTwo" data-bs-parent="#accordionSecondLayer">
+            <div class="accordion-body-second-layer">
+              <p>按被保險人分娩或 ...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree3">
+      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+        Household Registration Act 戶籍法英譯本
+      </button>
+    </h2>
+    <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3" data-bs-parent="#accordionExample3">
+      <div class="accordion-body">
+      </div>
+    </div>
+  </div>
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour3">
+      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour3" aria-expanded="false" aria-controls="collapseFour3">
+        戶籍法施行細則（104.07.10 修正）
+      </button>
+    </h2>
+    <div id="collapseFour3" class="accordion-collapse collapse" aria-labelledby="headingFour3" data-bs-parent="#accordionExample3">
+      <div class="accordion-body">
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<div class="accordion" id="accordionExample4">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
+        有參加農保，以後可以領老農津貼嗎？要怎麼申請？每個月可以領多少錢？
+      </button>
+    </h2>
+    <div id="collapseOne4" class="accordion-collapse collapse" aria-labelledby="headingOne4" data-bs-parent="#accordionExample4">
+      <div class="accordion-body">
+        <p>ㄧ、</p>
+        <p>二、如果您符合以上申領條件，請於年滿65歲當月主動檢附國民身分證、農會信用部或郵局存簿及印章，至您所屬的基層農會提出申請。</p>
+        <p>三、經審查合格，每個月可以領取7,550元或3,775元。 </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
+        請領要件
+      </button>
+    </h2>
+    <div id="collapseTwo4" class="accordion-collapse collapse" aria-labelledby="headingTwo4" data-bs-parent="#accordionExample4">
+      <div class="accordion" id="accordionSecondLayer2">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSecondLayerOne2">
+            <button class="accordion-button-second-layer collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerOne2" aria-expanded="true" aria-controls="collapseSecondLayerOne2">
+              勞保生育給付
+            </button>
+          </h2>
+          <div id="collapseSecondLayerOne2" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerOne2" data-bs-parent="#accordionSecondLayer2">
+            <div class="accordion-body-second-layer">
+              <p>按被保險人分娩或 ...</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSecondLayerTwo2">
+            <button class="accordion-button-second-layer collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerTwo2" aria-expanded="true" aria-controls="collapseSecondLayerTwo2">
+              國保生育給付
+            </button>
+          </h2>
+          <div id="collapseSecondLayerTwo2" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerTw2o" data-bs-parent="#accordionSecondLayer2">
+            <div class="accordion-body-second-layer">
+              <p>按被保險人分娩或 ...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+        Household Registration Act 戶籍法英譯本
+      </button>
+    </h2>
+    <div id="collapseThree4" class="accordion-collapse collapse" aria-labelledby="headingThree4" data-bs-parent="#accordionExample4">
+      <div class="accordion-body">
+      </div>
+    </div>
+  </div>
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">
+        戶籍法施行細則（104.07.10 修正）
+      </button>
+    </h2>
+    <div id="collapseFour4" class="accordion-collapse collapse" aria-labelledby="headingFour4" data-bs-parent="#accordionExample4">
+      <div class="accordion-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+{{</ example >}}

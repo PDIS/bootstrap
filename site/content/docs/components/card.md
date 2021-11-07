@@ -125,31 +125,33 @@ toc: true
 
 {{< example >}}
 
-<div class="row d-flex justify-content-center">
-  <div class="col-md-4">
-    <div class="card border-0">
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
-      <div class="card-body">
-        <h5 class="card-title">標題文字</h5>
-        <p class="card-text">此部分為卡片之內文。</p>
+<div class="container" style="padding: 1rem; background: #F8F9FA">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-4">
+      <div class="card border-0">
+        <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+        <div class="card-body">
+          <h5 class="card-title">標題文字</h5>
+          <p class="card-text">此部分為卡片之內文。</p>
+        </div>
       </div>
     </div>
-  </div>
-    <div class="col-md-4">
-    <div class="card">
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
-      <div class="card-body">
-        <h5 class="card-title">標題文字</h5>
-        <p class="card-text">此部分為卡片之內文。</p>
+      <div class="col-md-4">
+      <div class="card">
+        <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+        <div class="card-body">
+          <h5 class="card-title">標題文字</h5>
+          <p class="card-text">此部分為卡片之內文。</p>
+        </div>
       </div>
     </div>
-  </div>
-    <div class="col-md-4">
-    <div class="card shadow-sm">
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
-      <div class="card-body">
-        <h5 class="card-title">標題文字</h5>
-        <p class="card-text">此部分為卡片之內文。</p>
+      <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+        <div class="card-body">
+          <h5 class="card-title">標題文字</h5>
+          <p class="card-text">此部分為卡片之內文。</p>
+        </div>
       </div>
     </div>
   </div>

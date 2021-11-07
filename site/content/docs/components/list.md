@@ -78,7 +78,7 @@ toc: true
 </div>
 <br/>
 <div class="row">
-  <div class="col">
+  <div class="col-8 col-lg-6">
     <ul>
       <li class="list-item  list-item-bottom-border">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
       <li class="list-item  list-item-bottom-border">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
@@ -96,12 +96,12 @@ toc: true
 {{< example >}}
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-lg-6">
     <ul>
       <li class="list-item ">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
-    <div class="col-md-6">
+    <div class="col-lg-6">
     <ul>
       <li class="list-item ">標題<a href="#" class="list-item-link">副標題或內文簡單闡述</a></li>
     </ul>
@@ -109,12 +109,12 @@ toc: true
 </div>
 <br/>
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-lg-6">
     <ul>
       <li class="list-item list-item-ordered">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
-  <div class="col-md-6">
+  <div class="col-lg-6">
     <ul>
       <li class="list-item list-item-ordered">標題<a href="#" class="list-item-link">副標題或內文簡單闡述</a></li>
     </ul>
@@ -122,12 +122,12 @@ toc: true
 </div>
 <br/>
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-lg-6">
     <ul>
       <li class="list-item list-item-twoline">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
-  <div class="col-md-6">
+  <div class="col-lg-6">
     <ul>
       <li class="list-item list-item-twoline">標題<a href="#" class="list-item-link">副標題或內文簡單闡述</a></li>
     </ul>
@@ -193,7 +193,7 @@ toc: true
 <div class="row">
   <div class="col">
     <ul>
-      <li class="list-item  list-item-twoline">課程代碼<p class="list-item-subheader">PCENTER110100901</p></li>
+      <li class="list-item list-item-twoline">課程代碼<p class="list-item-subheader">PCENTER110100901</p></li>
     </ul>
   </div>
 </div>
@@ -201,8 +201,8 @@ toc: true
 <div class="row">
   <div class="col">
     <ul>
-      <li class="list-item  list-item-twoline">歡迎來部落走走 交通部觀光局邀您來當「部落客」！
-        <p class="list-item-subheader truncate">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落觀光嘉年華」</p>
+      <li class="list-item list-item-twoline">歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+        <p class="list-item-subheader">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落觀光嘉年華」</p>
       </li>
     </ul>
   </div>
@@ -239,7 +239,7 @@ toc: true
 </div>
 <br />
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-lg-6">
     <ul class="d-flex justify-content-between">
       <li class="list-item "><i class="bi bi-square-fill text-pink-300"></i>15-18歲</li>
       <li class="list-item "><i class="bi bi-square-fill text-blue-300"></i>19-30歲</li>
@@ -285,21 +285,21 @@ toc: true
 {{< example >}}
 
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-lg-4">
     <ol class="trad-chinese-informal">
       <li class="list-item list-item-ordered">標題</li>
       <li class="list-item list-item-ordered">標題</li>
       <li class="list-item list-item-ordered">標題</li>
     </ol>
   </div>
-  <div class="col-md-4">
+  <div class="col-lg-4">
     <ol type="A">
       <li class="list-item list-item-ordered">標題</li>
       <li class="list-item list-item-ordered">標題</li>
       <li class="list-item list-item-ordered">標題</li>
     </ol>
   </div>
-  <div class="col-md-4">
+  <div class="col-lg-4">
     <ol>
       <li class="list-item list-item-ordered">標題</li>
       <li class="list-item list-item-ordered">標題</li>
@@ -309,17 +309,17 @@ toc: true
 </div>
 <br/>
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-lg-4">
     <ol class="trad-chinese-informal">
       <li class="list-item list-item-ordered list-item-twoline">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ol>
   </div>
-  <div class="col-md-4">
+  <div class="col-lg-4">
     <ol type="A">
       <li class="list-item list-item-ordered list-item-twoline">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ol>
   </div>
-  <div class="col-md-4">
+  <div class="col-lg-4">
     <ol>
       <li class="list-item list-item-ordered list-item-twoline">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ol>
@@ -327,7 +327,7 @@ toc: true
 </div>
 <br/>
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-lg-4">
     <ol class="trad-chinese-formal">
       <li class="list-item list-item-ordered">標題</li>
       <ol class="trad-chinese-informal">
@@ -335,7 +335,7 @@ toc: true
       </ol>
     </ol>
   </div>
-  <div class="col-md-4">
+  <div class="col-lg-4">
     <ol type="A">
       <li class="list-item list-item-ordered">標題</li>
       <ol type="a" class="nested-list">
@@ -343,7 +343,7 @@ toc: true
       </ol>
     </ol>
   </div>
-  <div class="col-md-4">
+  <div class="col-lg-4">
     <ol>
       <li class="list-item list-item-ordered">標題</li>
       <ol class="nested-list">
@@ -359,14 +359,166 @@ toc: true
 
 雙行的情況下，時間與標題同行。多行的情況下，時間在標題上方一行。
 
+{{< example >}}
+
+<div class="row">
+  <div class="col">
+    <ul>
+      <li class="time-list-item">
+        <div class="time-list-item-date">2021-10-25</div>
+        <div class="time-list-item-content">
+          歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col">
+    <ul>
+      <li class="time-list-item">
+        <div class="time-list-item-date">2021-10-25</div>
+        <div class="time-list-item-content">
+          歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+          <p class="time-list-item-subheader">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落觀光嘉年華」</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col">
+    <ul>
+      <li class="time-list-item-multiline">
+        <div class="time-list-item-date">2021-10-25</div>
+        <div class="time-list-item-content">
+          歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+          <p class="time-list-item-subheader">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落觀光嘉年華」</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{{< /example >}}
+
 #### 時序列表加分類標籤 Time ordered list with categorisation tags
 
 時序列表加上分類標籤時，依據行數適合將標籤放在不同位置。
+
+{{< example >}}
+
+<div class="row">
+  <div class="col">
+    <ul>
+      <li class="time-list-item">
+        <div class="time-list-item-date">2021-10-25</div>
+        <span class="badge bg-red-400 time-list-middle-badge">Primary</span>
+        <div class="time-list-item-content">
+          歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col">
+    <ul>
+      <li class="time-list-item d-flex justify-content-between">
+        <div class="time-list-item-date">2021-10-25</div>
+        <div class="time-list-item-content">
+          歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+        </div>
+        <span class="badge bg-red-400">Primary</span>
+      </li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col">
+    <ul>
+      <li class="time-list-item-multiline">
+        <div class="time-list-item-date">2021-10-25<span class="badge bg-red-400">Primary</span></div>
+        <div class="time-list-item-content">
+          歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+          <p class="time-list-item-subheader">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落觀光嘉年華」</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{{< /example >}}
 
 #### 單行時序列表 (time ordered list) vs 列表加時間戳記 (ordered list with timestamp)
 
 有些情況下，列表的排序方式是以時間為主的；也有些情況下，時間戳記僅作為輔助資訊。
 
+{{< example >}}
+
+<div class="row">
+  <div class="col">
+    <ul>
+      <li class="time-list-item">
+        <div class="time-list-item-date">2021-10-25</div>
+        <div class="time-list-item-content">
+          歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col">
+    <ul>
+      <li class="time-list-item d-flex justify-content-between">
+        <div class="time-list-item-content">
+          歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+        </div>
+        <div class="time-list-item-date">2021-10-25</div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{{< /example >}}
+
 #### 單行、多行列表加時間戳記 Single-line and multi-line ordered list with timestamp
 
 當時間雖用於排序，但不作為使用者解讀資訊的主要依據時，時間戳記的位置依據單行或多行有所不同。單行時時間戳記放在內文後面，多行時時間戳記放在內文下面。
+
+{{< example >}}
+
+<div class="row">
+  <div class="col">
+    <ul>
+      <li class="time-list-item d-flex justify-content-between">
+        <div class="time-list-item-content">
+          歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+        </div>
+        <div class="time-list-item-date">2021-10-25</div>
+      </li>
+    </ul>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col">
+    <ul>
+      <li class="time-list-item-multiline">
+        <div class="time-list-item-content">
+          歡迎來部落走走 交通部觀光局邀您來當「部落客」！
+          <p class="time-list-item-subheader" style="margin:0">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落觀光嘉年華」</p>
+          2021-10-25
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{{< /example >}}
