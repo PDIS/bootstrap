@@ -442,7 +442,7 @@ toc: true
   <div class="col">
     <ul>
       <li class="time-list-item-multiline">
-        <div class="time-list-item-date">2021-10-25<span class="badge bg-red-400">Primary</span></div>
+        <div class="time-list-item-date">2021-10-25<span class="badge bg-red-400" style="margin-left: 0.75rem">Primary</span></div>
         <div class="time-list-item-content">
           歡迎來部落走走 交通部觀光局邀您來當「部落客」！
           <p class="time-list-item-subheader">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落觀光嘉年華」</p>
