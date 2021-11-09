@@ -26,6 +26,8 @@
       name: list
     - title: 手風琴
       name: accordion
+    - title: 側邊欄
+      name: sidebar
 # - title: Getting started
 #   pages:
 #     - title: Introduction

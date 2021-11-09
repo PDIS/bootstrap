@@ -294,6 +294,10 @@ a:active {
   background-color: $red-400;
 }
 
+.bg-gray-100 {
+  background-color: $gray-100;
+}
+
 .trad-chinese-formal {
   list-style: trad-chinese-formal;
 }
@@ -385,4 +389,154 @@ a:active {
 .accordion-body-second-layer {
   @extend .accordion-body;
   padding-left: 3rem;
+}
+
+.sidebar-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: $accordion-button-padding-y $accordion-button-padding-x;
+  @include font-size($font-size-base);
+  color: $accordion-button-color;
+  text-align: left; // Reset button style
+  background-color: $accordion-button-bg;
+  border: 0;
+  @include border-radius(0);
+  overflow-anchor: none;
+  @include transition($accordion-transition);
+  font-weight: 500;
+
+  &:not(.collapsed) {
+    color: $primary;
+    background-color: $white;
+    box-shadow: inset 0 ($accordion-border-width * -1) 0 $accordion-border-color;
+
+    &::after {
+      background-image: escape-svg(
+        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$accordion-icon-color}' class='bi bi-chevron-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>")
+      );
+      transform: rotate(90deg);
+    }
+  }
+
+  &::after {
+    flex-shrink: 0;
+    width: $accordion-icon-width;
+    height: $accordion-icon-width;
+    margin-left: auto;
+    content: "";
+    background-image: escape-svg(
+      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$accordion-icon-color}' class='bi bi-chevron-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>")
+    );
+    background-repeat: no-repeat;
+    background-size: $accordion-icon-width;
+    @include transition($accordion-icon-transition);
+    &:hover {
+      color: white;
+    }
+  }
+
+  &:hover {
+    z-index: 2;
+    background-color: $primary;
+    color: white;
+    &::after {
+      background-image: escape-svg(
+        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$accordion-icon-active-color}' class='bi bi-chevron-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>")
+      );
+    }
+  }
+
+  &:focus {
+    z-index: 3;
+    border-color: $accordion-button-focus-border-color;
+    outline: 0;
+    box-shadow: $accordion-button-focus-box-shadow;
+  }
+}
+
+.sidebar-header {
+  margin-bottom: 0;
+}
+
+.sidebar-item {
+  background-color: $accordion-bg;
+  border: $accordion-border-width solid $accordion-border-color;
+
+  &:first-of-type {
+    @include border-top-radius($accordion-border-radius);
+
+    .sidebar-button {
+      @include border-top-radius($accordion-inner-border-radius);
+    }
+  }
+
+  &:not(:first-of-type) {
+    border-top: 0;
+  }
+
+  &:last-of-type {
+    @include border-bottom-radius($accordion-border-radius);
+
+    .sidebar-button {
+      &.collapsed {
+        @include border-bottom-radius($accordion-inner-border-radius);
+      }
+    }
+
+    .sidebar-collapse {
+      @include border-bottom-radius($accordion-border-radius);
+    }
+  }
+}
+
+.sidebar-body {
+  padding: $accordion-body-padding-y $accordion-body-padding-x;
+}
+
+.sidebar-second-layer {
+  border-top: solid;
+  border-bottom: solid;
+  border-width: thin;
+  border-color: $primary;
+}
+
+.sidebar-second-layer-item {
+}
+
+.sidebar-second-layer-button {
+  @extend .sidebar-button;
+  padding-left: 2rem;
+  background-color: $gray-100;
+  border: 0;
+}
+
+.sidebar-link {
+  @extend .list-group-item;
+  @extend .list-group-item-action;
+  padding-left: 3rem;
+  color: $primary;
+  text-decoration: underline;
+  font-weight: 500;
+  &:active {
+    background-color: $secondary-light;
+    color: $primary;
+  }
+  &:hover {
+    z-index: 1;
+    color: $primary-dark;
+    text-decoration: underline;
+    background-color: white;
+  }
+  &:focus {
+    color: $primary-dark;
+    text-decoration: underline;
+  }
+}
+
+.active.sidebar-link {
+  color: $primary;
+  background-color: $secondary-light;
+  border-left: solid;
 }
