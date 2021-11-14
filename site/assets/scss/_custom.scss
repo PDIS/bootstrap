@@ -237,8 +237,12 @@ a:active {
   white-space: nowrap;
 }
 
-.list-group-icon {
+.icon {
   margin-right: 0.5rem;
+}
+
+.list-group-icon {
+  @extend .icon;
 }
 
 .list-item {
@@ -392,25 +396,12 @@ a:active {
 }
 
 .sidebar-button {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: $accordion-button-padding-y $accordion-button-padding-x;
-  @include font-size($font-size-base);
-  color: $accordion-button-color;
-  text-align: left; // Reset button style
-  background-color: $accordion-button-bg;
-  border: 0;
-  @include border-radius(0);
-  overflow-anchor: none;
-  @include transition($accordion-transition);
+  @extend .accordion-button;
   font-weight: 500;
 
   &:not(.collapsed) {
     color: $primary;
     background-color: $white;
-    box-shadow: inset 0 ($accordion-border-width * -1) 0 $accordion-border-color;
 
     &::after {
       background-image: escape-svg(
@@ -421,17 +412,9 @@ a:active {
   }
 
   &::after {
-    flex-shrink: 0;
-    width: $accordion-icon-width;
-    height: $accordion-icon-width;
-    margin-left: auto;
-    content: "";
     background-image: escape-svg(
       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$accordion-icon-color}' class='bi bi-chevron-right' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>")
     );
-    background-repeat: no-repeat;
-    background-size: $accordion-icon-width;
-    @include transition($accordion-icon-transition);
     &:hover {
       color: white;
     }
@@ -447,13 +430,6 @@ a:active {
       );
     }
   }
-
-  &:focus {
-    z-index: 3;
-    border-color: $accordion-button-focus-border-color;
-    outline: 0;
-    box-shadow: $accordion-button-focus-box-shadow;
-  }
 }
 
 .sidebar-header {
@@ -461,34 +437,7 @@ a:active {
 }
 
 .sidebar-item {
-  background-color: $accordion-bg;
-  border: $accordion-border-width solid $accordion-border-color;
-
-  &:first-of-type {
-    @include border-top-radius($accordion-border-radius);
-
-    .sidebar-button {
-      @include border-top-radius($accordion-inner-border-radius);
-    }
-  }
-
-  &:not(:first-of-type) {
-    border-top: 0;
-  }
-
-  &:last-of-type {
-    @include border-bottom-radius($accordion-border-radius);
-
-    .sidebar-button {
-      &.collapsed {
-        @include border-bottom-radius($accordion-inner-border-radius);
-      }
-    }
-
-    .sidebar-collapse {
-      @include border-bottom-radius($accordion-border-radius);
-    }
-  }
+  @extend .accordion-item;
 }
 
 .sidebar-body {
@@ -519,6 +468,7 @@ a:active {
   color: $primary;
   text-decoration: underline;
   font-weight: 500;
+  border: 0;
   &:active {
     background-color: $secondary-light;
     color: $primary;
@@ -539,4 +489,31 @@ a:active {
   color: $primary;
   background-color: $secondary-light;
   border-left: solid;
+}
+
+.select {
+  @extend .form-select;
+  background: $gray-100;
+  border: 1px solid #121212;
+
+  &:hover {
+    color: $primary-dark;
+    border-color: $primary-dark;
+  }
+
+  &:active,
+  &:focus {
+    color: $secondary-light;
+    background-color: $primary;
+    border: 2px solid #fedc98;
+    box-shadow: none;
+  }
+}
+
+.sidebar-dense {
+  .sidebar-button,
+  .sidebar-second-layer-button,
+  .sidebar-link {
+    height: 2.5rem;
+  }
 }
