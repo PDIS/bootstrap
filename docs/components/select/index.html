@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Commonly asked questions about Bootstrap&rsquo;s open source license.">
+<meta name="description" content="讓使用者從長清單選項中做一個選擇。">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.1">
 
-<title>License FAQs · Bootstrap v5.1</title>
+<title>下拉式選單 Select · Bootstrap v5.1</title>
 
-<link rel="canonical" href="https://getbootstrap.com/docs/5.1/about/license/">
+<link rel="canonical" href="https://getbootstrap.com/docs/components/select/">
 
 
 
@@ -39,14 +39,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="License FAQs">
-<meta name="twitter:description" content="Commonly asked questions about Bootstrap&rsquo;s open source license.">
+<meta name="twitter:title" content="下拉式選單 Select">
+<meta name="twitter:description" content="讓使用者從長清單選項中做一個選擇。">
 <meta name="twitter:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://getbootstrap.com/docs/5.1/about/license/">
-<meta property="og:title" content="License FAQs">
-<meta property="og:description" content="Commonly asked questions about Bootstrap&rsquo;s open source license.">
+<meta property="og:url" content="https://getbootstrap.com/docs/components/select/">
+<meta property="og:title" content="下拉式選單 Select">
+<meta property="og:description" content="讓使用者從長清單選項中做一個選擇。">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
@@ -138,13 +138,13 @@
       </div>
     </li>
     <li class="mb-1">
-      <button class="btn d-inline-flex align-items-center rounded collapsed"
-        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false"
-        >
+      <button class="btn d-inline-flex align-items-center rounded"
+        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="true"
+         aria-current="true" >
         元件
       </button>
 
-      <div class="collapse" id="components-collapse">
+      <div class="collapse show" id="components-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
           <li><a href="/docs/components/navbar/" class="d-inline-flex align-items-center rounded"
               >導覽列</a></li>
@@ -156,8 +156,8 @@
               >手風琴</a></li>
           <li><a href="/docs/components/sidebar/" class="d-inline-flex align-items-center rounded"
               >側邊欄</a></li>
-          <li><a href="/docs/components/select/" class="d-inline-flex align-items-center rounded"
-              >下拉式選單</a></li>
+          <li><a href="/docs/components/select/" class="d-inline-flex align-items-center rounded active"
+               aria-current="page" >下拉式選單</a></li>
         </ul>
       </div>
     </li>
@@ -170,45 +170,80 @@
     <div class="bd-intro ps-lg-4">
       <div class="d-md-flex flex-md-row align-items-left justify-content-between">
         
-        <h1 id="content" style="font-weight: 900;">License FAQs</h1>
+        <h1 id="content" style="font-weight: 900;">下拉式選單 Select</h1>
       </div>
-      <h2 style="margin-top: 0.5rem;">Commonly asked questions about Bootstrap&rsquo;s open source license.</h2>
+      <h2 style="margin-top: 0.5rem;">讓使用者從長清單選項中做一個選擇。</h2>
       <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
 
       <hr>
     </div>
 
     
+    <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+      <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#關於下拉式選單">關於下拉式選單</a></li>
+        <li><a href="#guidance">Guidance</a>
+          <ul>
+            <li><a href="#when-to-use-the-select-component">When to use the select component</a></li>
+            <li><a href="#usability">Usability</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+          </ul>
+        </li>
+        <li><a href="#component">Component</a>
+          <ul>
+            <li><a href="#基本款">基本款</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
 
     <div class="bd-content ps-lg-4">
       
 
-      <p>Bootstrap is released under the MIT license and is copyright 2021 Twitter. Boiled down to smaller chunks, it can be described with the following conditions.</p>
-<h2 id="it-requires-you-to">It requires you to:</h2>
+      <h3 id="關於下拉式選單">關於下拉式選單</h3>
+<p>使用下拉式選單 (Select) 時，我們一律使用原生的選擇功能表 <code>&lt;select&gt;</code> 作為設計的起點。我們建議採用的自定義樣式覆蓋下拉式選單按鈕 (Dropdown button) 的風格，讓整體風格更一致。此覆蓋的風格僅限於 <code>&lt;select&gt;</code> 的風格，下拉式選單的選單本身 (Dropdown menu) 則無法修改。這是因為瀏覽器的限制無法修改 <code>&lt;option&gt;</code> 的風格。</p>
+<h3 id="guidance">Guidance</h3>
+<h4 id="when-to-use-the-select-component">When to use the select component</h4>
+<p>在本設計系統中，當使用者需要做篩選的行為或是在表單中回答問題時，請使用下拉式選單 (Select)。</p>
 <ul>
-<li>Keep the license and copyright notice included in Bootstrap&rsquo;s CSS and JavaScript files when you use them in your works</li>
+<li><strong>篩選行為。</strong> 使用者在多個選項中做單一選擇，選擇的目的可能是用來排序看到的內容，或過濾、篩選看到的內容。</li>
+<li><strong>回答問題。</strong> 使用者在多個選項中做出單一或多個選擇，選擇的目的是用來回答問題，系統可以從而儲存使用者所選擇的答案。</li>
 </ul>
-<h2 id="it-permits-you-to">It permits you to:</h2>
+<h4 id="usability">Usability</h4>
 <ul>
-<li>Freely download and use Bootstrap, in whole or in part, for personal, private, company internal, or commercial purposes</li>
-<li>Use Bootstrap in packages or distributions that you create</li>
-<li>Modify the source code</li>
-<li>Grant a sublicense to modify and distribute Bootstrap to third parties not included in the license</li>
+<li><strong>選項請勿太少。</strong> 選項過少，例如少於三項時，請考慮在頁面上直接用 radio 或 checkbox 展開選項。</li>
+<li><strong>選項請勿太多。</strong> 選項過多，例如多於十項時，請再度檢視資訊架構，並審查是否有可能將問題拆解。當然，若問題無法輕易拆解時，則可以忽略此提醒。例如當請使用者選擇所縣市時，選項中必定列有全台二十二縣市時，則可以忽略本易用性建議。</li>
+<li><strong>選項內容相近的放在附近。</strong> 選項內容中，若有內容相近的選項請放在附近，或是使用 <code>&lt;optgroup&gt;</code> 分類。</li>
+<li><strong>提示文字。</strong> 提示文字請使用明確且簡短可供使用者參考的指令，以動詞開頭為佳，例如：「選擇縣市」。請注意，使用提示文字而非預設選項的下拉選單，也代表著使用者被期待做一個選擇。</li>
+<li><strong>預設選項。</strong> 當網頁內容需要依據下拉式選單的預設選項而連動時，且畫面在沒有預設選項的情況下呈現會有困難時，應給予下拉選單一個預設選項。請注意，有預設選項的下拉式選單也代表使用者沒有必須得做一個選擇的必要。</li>
 </ul>
-<h2 id="it-forbids-you-to">It forbids you to:</h2>
-<ul>
-<li>Hold the authors and license owners liable for damages as Bootstrap is provided without warranty</li>
-<li>Hold the creators or copyright holders of Bootstrap liable</li>
-<li>Redistribute any piece of Bootstrap without proper attribution</li>
-<li>Use any marks owned by Twitter in any way that might state or imply that Twitter endorses your distribution</li>
-<li>Use any marks owned by Twitter in any way that might state or imply that you created the Twitter software in question</li>
-</ul>
-<h2 id="it-does-not-require-you-to">It does not require you to:</h2>
-<ul>
-<li>Include the source of Bootstrap itself, or of any modifications you may have made to it, in any redistribution you may assemble that includes it</li>
-<li>Submit changes that you make to Bootstrap back to the Bootstrap project (though such feedback is encouraged)</li>
-</ul>
-<p>The full Bootstrap license is located <a href="https://github.com/twbs/bootstrap/blob/v5.1.3/LICENSE">in the project repository</a> for more information.</p>
+<h4 id="accessibility">Accessibility</h4>
+<h3 id="component">Component</h3>
+<h4 id="基本款">基本款</h4>
+<p>基本款包含標題、按鈕與選單。使用預設的選擇功能表 <code>&lt;select&gt;</code> 實作。</p>
+<div class="bd-example">
+
+<select class="select" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;select&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Default select example&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">selected</span><span class="p">&gt;</span>Open this select menu<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>One<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>Two<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>Three<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span></code></pre></div>
 
     </div>
   </main>

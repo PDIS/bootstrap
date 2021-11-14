@@ -156,6 +156,8 @@
               >手風琴</a></li>
           <li><a href="/docs/components/sidebar/" class="d-inline-flex align-items-center rounded active"
                aria-current="page" >側邊欄</a></li>
+          <li><a href="/docs/components/select/" class="d-inline-flex align-items-center rounded"
+              >下拉式選單</a></li>
         </ul>
       </div>
     </li>
@@ -179,14 +181,67 @@
     
     <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
       <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
-      <nav id="TableOfContents"></nav>
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#關於側邊欄">關於側邊欄</a></li>
+        <li><a href="#guidance">Guidance</a>
+          <ul>
+            <li><a href="#when-to-use-the-sidebar-component">When to use the sidebar component</a></li>
+            <li><a href="#when-to-consider-something-else">When to consider something else</a></li>
+            <li><a href="#usability">Usability</a></li>
+          </ul>
+        </li>
+        <li><a href="#component">Component</a>
+          <ul>
+            <li><a href="#基本款---default--small">基本款 - Default &amp; Small</a></li>
+            <li><a href="#側欄主標題">側欄主標題</a></li>
+            <li><a href="#展開全部">展開全部</a></li>
+            <li><a href="#指標-indicator-位置">指標 (indicator) 位置</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
     
 
     <div class="bd-content ps-lg-4">
       
 
-      <div class="bd-example">
+      <h3 id="關於側邊欄">關於側邊欄</h3>
+<p>側邊欄為導覽用的元件，通常與頂部導覽搭配使用，適合當網站資訊架構較為複雜、層級較多時使用。側邊欄可以呈現一到三層級的選項，第一層級的選項最少五項。根據米勒定律 (Miller’s law) 一般人短期記憶中能容納的物體數量為七加減二，所以第一層級的選項也請儘量維持在九項以下。第二層級沒有特別規定，但若超過九項時，請審慎考慮網站的架構規劃。第三層級因為已到達直接呈現後點擊的用途，連結數量上並沒有一定限制。</p>
+<h3 id="guidance">Guidance</h3>
+<h4 id="when-to-use-the-sidebar-component">When to use the sidebar component</h4>
+<ul>
+<li><strong>呈現一到三層級的導覽架構。</strong> 側邊欄至少一層且第一層級至少五項，層級數目則至多三層。</li>
+<li><strong>呈現網站分區中的次層級導覽。</strong> 當網站有明顯分區且次層級較多時，善用側邊欄輔助頂部導覽列。</li>
+<li><strong>有層級的常用服務之快速導覽。</strong> 當網站有明顯較常用的服務存在且多於五項又有層級架構時，利用側邊欄作為整個網站的快速導覽。</li>
+</ul>
+<h4 id="when-to-consider-something-else">When to consider something else</h4>
+<ul>
+<li><strong>小網站。</strong> 當網站架構簡單、層級數少時，不需用到側邊欄。</li>
+<li><strong>已有導覽存在。</strong> 當網站架構簡單，頂部導覽即可有效的引導使用者時，不需用到側邊欄。</li>
+<li><strong>需要用文字標題以外的元素描述時。</strong> 當文字標題不足以描述使用者即將前往的頁面時，請考慮用其他元件，例如卡片。</li>
+<li><strong>數量少的常用服務之快速導覽。</strong> 當有替常用服務做快速導覽的需求時，若層級簡單則不需用到側邊欄，可以考慮使用其他元件如卡片，橫向呈列常見服務。</li>
+<li><strong>選項為僅供瀏覽但不可以點擊的資訊。</strong> 當列出的選項僅為瀏覽用但不為導覽用時，請勿使用導覽列。</li>
+</ul>
+<h4 id="usability">Usability</h4>
+<ul>
+<li><strong>文字標題簡短。</strong> 請保持文字標題簡短易懂，且在單行呈現文字標題。</li>
+<li><strong>用狀態呈現目前選擇。</strong> 利用風格區別已選擇或未選擇的選項，通常使用狀態 (actvie state) 來區別。</li>
+<li><strong>側邊欄內比較不常用的選擇放在比較下方。</strong> 使用者的注意力會從側邊欄的選項中從上至下瀏覽，因此為了幫助使用者方便且迅速的到達對的頁面，請將比較不常見的選擇放在欄位較為下方的位置。</li>
+<li><strong>請勿用過於華麗的特效展開、收納導覽列。</strong> 導覽的用除在於幫助使用者找到對的頁面與內容，請勿將導覽列的風格或視覺做得過於花俏反而喧賓奪主，影響使用者的注意力。</li>
+<li><strong>請勿在側邊欄呈現跟其他導覽列完全一樣的內容。</strong> 當側邊欄與頂部導覽列同時存在時，側邊欄的存在目的為輔助頂部導覽列，完全將頂部導覽列的內容全部複製到側邊欄。</li>
+<li><strong>請勿為了填滿空間而使用側邊欄。</strong> 側邊欄的存在目的為導覽，當頁面很簡單乾淨時，切勿為了填滿空間而執意製作一個側邊導覽列。空白空間的存在可以幫助使用者將注意力放在對的地方。</li>
+<li><strong>請勿只以圖標 (icon) 呈現側邊欄。</strong> 側邊欄的存在目的為導覽，且應能幫助使用者迅速地看到欲點擊選項。勿為省略文字標題，而只以圖標暗示。請勿讓使用者花額外時間猜測圖標背後代表的意義。</li>
+</ul>
+<h3 id="component">Component</h3>
+<h4 id="基本款---default--small">基本款 - Default &amp; Small</h4>
+<p>基本款的側邊欄有舒適行高 (comfortable height) 與壓縮行高 (compact height) 兩種選擇，請依據網站空間自行調配。</p>
+<div class="bd-example">
 
 <div class="row">
   <div class="col-md-6">
@@ -226,6 +281,83 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headertwo">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapsetwo" class="sidebar-collapse collapse" aria-labelledby="headertwo" data-bs-parent="#sidebar">
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headerthree">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapsethree" class="sidebar-collapse collapse" aria-labelledby="headerthree" data-bs-parent="#sidebar">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="sidebar-dense" id="sidebardense">
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headeronedense">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseonedense" aria-expanded="true" aria-controls="collapseonedense">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapseonedense" class="sidebar-collapse collapse" aria-labelledby="headeronedense" data-bs-parent="#sidebardense">
+          <div class="sidebar-second-layer" id="sidebarsecondlayerdense">
+            <div class="sidebar-second-layer-item">
+              <h2 class="sidebar-header" id="secondlayerheaderonedense">
+                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseonedense" aria-expanded="true" aria-controls="secondlayercollapseonedense">
+                  可展開第二層標題
+                </button>
+              </h2>
+              <div id="secondlayercollapseonedense" class="sidebar-collapse collapse" aria-labelledby="secondlayerheaderonedense" data-bs-parent="#sidebarsecondlayerdense">
+              </div>
+            </div>
+            <div class="sidebar-second-layer-item">
+              <h2 class="sidebar-header" id="secondlayerheadertwodense">
+                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwodense" aria-expanded="true" aria-controls="secondlayercollapsetwodense">
+                  可展開第二層標題
+                </button>
+              </h2>
+              <div id="secondlayercollapsetwodense" class="sidebar-collapse collapse" aria-labelledby="secondlayerheadertwodense" data-bs-parent="#sidebarsecondlayerdense">
+                <div class="list-group">
+                  <a href="#" class="sidebar-link">
+                    可點擊服務連結
+                  </a>
+                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headertwodense">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwodense" aria-expanded="true" aria-controls="collapsetwodense">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapsetwodense" class="sidebar-collapse collapse" aria-labelledby="headertwodense" data-bs-parent="#sidebardense">
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headerthreedense">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethreedense" aria-expanded="true" aria-controls="collapsethreedense">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapsethreedense" class="sidebar-collapse collapse" aria-labelledby="headerthreedense" data-bs-parent="#sidebardense">
         </div>
       </div>
     </div>
@@ -270,6 +402,735 @@
               <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
             <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
           <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headertwo&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapsetwo&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapsetwo&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapsetwo&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headertwo&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebar&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headerthree&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapsethree&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapsethree&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapsethree&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headerthree&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebar&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-dense&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sidebardense&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headeronedense&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseonedense&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseonedense&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseonedense&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headeronedense&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebardense&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sidebarsecondlayerdense&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayerheaderonedense&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#secondlayercollapseonedense&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;secondlayercollapseonedense&#34;</span><span class="p">&gt;</span>
+                  可展開第二層標題
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayercollapseonedense&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;secondlayerheaderonedense&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebarsecondlayerdense&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayerheadertwodense&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#secondlayercollapsetwodense&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;secondlayercollapsetwodense&#34;</span><span class="p">&gt;</span>
+                  可展開第二層標題
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayercollapsetwodense&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;secondlayerheadertwodense&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebarsecondlayerdense&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group&#34;</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>
+                    可點擊服務連結
+                  <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link active&#34;</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>瀏覽中服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>可點擊服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>可點擊服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headertwodense&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapsetwodense&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapsetwodense&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapsetwodense&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headertwodense&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebardense&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headerthreedense&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapsethreedense&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapsethreedense&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapsethreedense&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headerthreedense&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebardense&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="側欄主標題">側欄主標題</h4>
+<p>側欄上方可以放置一行主標題文字，概述側欄內容，例如：常用服務、快速導覽。</p>
+<div class="bd-example">
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="sidebar" id="sidebar2">
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headerone2">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone2" aria-expanded="true" aria-controls="collapseone2">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapseone2" class="sidebar-collapse collapse" aria-labelledby="headerone2" data-bs-parent="#sidebar2">
+          <div class="sidebar-second-layer" id="sidebarsecondlayer2">
+            <div class="sidebar-second-layer-item">
+              <h2 class="sidebar-header" id="secondlayerheaderone2">
+                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseone2" aria-expanded="true" aria-controls="secondlayercollapseone2">
+                  可展開第二層標題
+                </button>
+              </h2>
+              <div id="secondlayercollapseone2" class="sidebar-collapse collapse" aria-labelledby="secondlayerheaderone2" data-bs-parent="#sidebarsecondlayer2">
+              </div>
+            </div>
+            <div class="sidebar-second-layer-item">
+              <h2 class="sidebar-header" id="secondlayerheadertwo2">
+                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwo2" aria-expanded="true" aria-controls="secondlayercollapsetwo2">
+                  可展開第二層標題
+                </button>
+              </h2>
+              <div id="secondlayercollapsetwo2" class="sidebar-collapse collapse" aria-labelledby="secondlayerheadertwo2" data-bs-parent="#sidebarsecondlayer2">
+                <div class="list-group">
+                  <a href="#" class="sidebar-link">
+                    可點擊服務連結
+                  </a>
+                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headertwo2">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo2" aria-expanded="true" aria-controls="collapsetwo2">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapsetwo2" class="sidebar-collapse collapse" aria-labelledby="headertwo2" data-bs-parent="#sidebar2">
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headerthree2">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree2" aria-expanded="true" aria-controls="collapsethree2">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapsethree2" class="sidebar-collapse collapse" aria-labelledby="headerthree2" data-bs-parent="#sidebar2">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h4>側欄主標題</h4>
+    <div class="sidebar" id="title-sidebar">
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headerone3">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone3" aria-expanded="true" aria-controls="collapseone3">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapseone3" class="sidebar-collapse collapse" aria-labelledby="headerone3" data-bs-parent="#title-sidebar">
+          <div class="sidebar-second-layer" id="sidebarsecondlayer3">
+            <div class="sidebar-second-layer-item">
+              <h2 class="sidebar-header" id="secondlayerheaderone3">
+                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseone3" aria-expanded="true" aria-controls="secondlayercollapseone3">
+                  可展開第二層標題
+                </button>
+              </h2>
+              <div id="secondlayercollapseone3" class="sidebar-collapse collapse" aria-labelledby="secondlayerheaderone3" data-bs-parent="#sidebarsecondlayer3">
+              </div>
+            </div>
+            <div class="sidebar-second-layer-item">
+              <h2 class="sidebar-header" id="secondlayerheadertwo3">
+                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwo3" aria-expanded="true" aria-controls="secondlayercollapsetwo3">
+                  可展開第二層標題
+                </button>
+              </h2>
+              <div id="secondlayercollapsetwo3" class="sidebar-collapse collapse" aria-labelledby="secondlayerheadertwo3" data-bs-parent="#sidebarsecondlayer3">
+                <div class="list-group">
+                  <a href="#" class="sidebar-link">
+                    可點擊服務連結
+                  </a>
+                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headertwo3">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo3" aria-expanded="true" aria-controls="collapsetwo3">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapsetwo3" class="sidebar-collapse collapse" aria-labelledby="headertwo3" data-bs-parent="#title-sidebar">
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headerthree3">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree3" aria-expanded="true" aria-controls="collapsethree3">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapsethree3" class="sidebar-collapse collapse" aria-labelledby="headerthree3" data-bs-parent="#title-sidebar">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sidebar2&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headerone2&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseone2&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseone2&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseone2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headerone2&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebar2&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sidebarsecondlayer2&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayerheaderone2&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#secondlayercollapseone2&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;secondlayercollapseone2&#34;</span><span class="p">&gt;</span>
+                  可展開第二層標題
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayercollapseone2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;secondlayerheaderone2&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebarsecondlayer2&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayerheadertwo2&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#secondlayercollapsetwo2&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;secondlayercollapsetwo2&#34;</span><span class="p">&gt;</span>
+                  可展開第二層標題
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayercollapsetwo2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;secondlayerheadertwo2&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebarsecondlayer2&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group&#34;</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>
+                    可點擊服務連結
+                  <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link active&#34;</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>瀏覽中服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>可點擊服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>可點擊服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headertwo2&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapsetwo2&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapsetwo2&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapsetwo2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headertwo2&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebar2&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headerthree2&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapsethree2&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapsethree2&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapsethree2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headerthree2&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebar2&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>側欄主標題<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;title-sidebar&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headerone3&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseone3&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseone3&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseone3&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headerone3&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#title-sidebar&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sidebarsecondlayer3&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayerheaderone3&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#secondlayercollapseone3&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;secondlayercollapseone3&#34;</span><span class="p">&gt;</span>
+                  可展開第二層標題
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayercollapseone3&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;secondlayerheaderone3&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebarsecondlayer3&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayerheadertwo3&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#secondlayercollapsetwo3&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;secondlayercollapsetwo3&#34;</span><span class="p">&gt;</span>
+                  可展開第二層標題
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayercollapsetwo3&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;secondlayerheadertwo3&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebarsecondlayer3&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group&#34;</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>
+                    可點擊服務連結
+                  <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link active&#34;</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>瀏覽中服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>可點擊服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>可點擊服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headertwo3&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapsetwo3&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapsetwo3&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapsetwo3&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headertwo3&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#title-sidebar&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headerthree3&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapsethree3&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapsethree3&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapsethree3&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headerthree3&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#title-sidebar&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="展開全部">展開全部</h4>
+<p>您可以依需求選擇性加上「展開全部」的功能，以用來一次展開所有層級，方便導覽。</p>
+<div class="bd-example">
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="d-flex justify-content-between">
+      <h4>側欄主標題</h4>
+      <a href="#" OnClick='Collapse()'>展開全部</a>
+    </div>
+    <div class="sidebar" id="js-sidebar">
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="js-headerone">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-collapseone" aria-expanded="true" aria-controls="js-collapseone">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="js-collapseone" class="sidebar-collapse collapse" aria-labelledby="js-headerone" data-bs-parent="#js-sidebar">
+          <div class="sidebar-second-layer" id="js-sidebarsecondlayer">
+            <div class="sidebar-second-layer-item">
+              <h2 class="sidebar-header" id="js-secondlayerheaderone">
+                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-secondlayercollapseone" aria-expanded="true" aria-controls="js-secondlayercollapseone">
+                  可展開第二層標題
+                </button>
+              </h2>
+              <div id="js-secondlayercollapseone" class="sidebar-collapse collapse" aria-labelledby="js-secondlayerheaderone" data-bs-parent="#js-sidebarsecondlayer">
+              </div>
+            </div>
+            <div class="sidebar-second-layer-item">
+              <h2 class="sidebar-header" id="js-secondlayerheadertwo">
+                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-secondlayercollapsetwo" aria-expanded="true" aria-controls="js-secondlayercollapsetwo">
+                  可展開第二層標題
+                </button>
+              </h2>
+              <div id="js-secondlayercollapsetwo" class="sidebar-collapse collapse" aria-labelledby="js-secondlayerheadertwo" data-bs-parent="#js-sidebarsecondlayer">
+                <div class="list-group">
+                  <a href="#" class="sidebar-link">
+                    可點擊服務連結
+                  </a>
+                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="js-headertwo">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-collapsetwo" aria-expanded="true" aria-controls="js-collapsetwo">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="js-collapsetwo" class="sidebar-collapse collapse" aria-labelledby="js-headertwo" data-bs-parent="#js-sidebar">
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="js-headerthree">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-collapsethree" aria-expanded="true" aria-controls="js-collapsethree">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="js-collapsethree" class="sidebar-collapse collapse" aria-labelledby="js-headerthree" data-bs-parent="#js-sidebar">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+const Collapse = () => {
+  var container = document.querySelector("#js-sidebar")
+  var collapseElementList = [].slice.call(container.querySelectorAll('.collapse'))
+  var collapseList = collapseElementList.map(function (collapseEl) {
+    return new bootstrap.Collapse(collapseEl)
+  })
+}
+
+</script>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex justify-content-between&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>側欄主標題<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">OnClick</span><span class="o">=</span><span class="s">&#39;Collapse()&#39;</span><span class="p">&gt;</span>展開全部<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;js-sidebar&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;js-headerone&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#js-collapseone&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;js-collapseone&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;js-collapseone&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;js-headerone&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#js-sidebar&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;js-sidebarsecondlayer&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;js-secondlayerheaderone&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#js-secondlayercollapseone&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;js-secondlayercollapseone&#34;</span><span class="p">&gt;</span>
+                  可展開第二層標題
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;js-secondlayercollapseone&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;js-secondlayerheaderone&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#js-sidebarsecondlayer&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;js-secondlayerheadertwo&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#js-secondlayercollapsetwo&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;js-secondlayercollapsetwo&#34;</span><span class="p">&gt;</span>
+                  可展開第二層標題
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;js-secondlayercollapsetwo&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;js-secondlayerheadertwo&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#js-sidebarsecondlayer&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group&#34;</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>
+                    可點擊服務連結
+                  <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link active&#34;</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>瀏覽中服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>可點擊服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>可點擊服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;js-headertwo&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#js-collapsetwo&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;js-collapsetwo&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;js-collapsetwo&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;js-headertwo&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#js-sidebar&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;js-headerthree&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#js-collapsethree&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;js-collapsethree&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;js-collapsethree&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;js-headerthree&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#js-sidebar&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="kr">const</span> <span class="nx">Collapse</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">container</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&#34;#js-sidebar&#34;</span><span class="p">)</span>
+  <span class="kd">var</span> <span class="nx">collapseElementList</span> <span class="o">=</span> <span class="p">[].</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">container</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.collapse&#39;</span><span class="p">))</span>
+  <span class="kd">var</span> <span class="nx">collapseList</span> <span class="o">=</span> <span class="nx">collapseElementList</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">collapseEl</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Collapse</span><span class="p">(</span><span class="nx">collapseEl</span><span class="p">)</span>
+  <span class="p">})</span>
+<span class="p">}</span>
+
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="指標-indicator-位置">指標 (indicator) 位置</h4>
+<p>預設的箭頭指標預設為靠右對齊，文字標題左側則可以加上簡單且風格一致的圖標 (icon)。
+您也可以選擇不用圖標輔助文字標題，並將箭頭指標靠左對齊。</p>
+<div class="bd-example">
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="sidebar" id="indicator-sidebar">
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="indicator-headerone">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-collapseone" aria-expanded="true" aria-controls="indicator-collapseone">
+            <i class="bi bi-house-door-fill icon"></i>可展開第一層標題
+          </button>
+        </h2>
+        <div id="indicator-collapseone" class="sidebar-collapse collapse" aria-labelledby="indicator-headerone" data-bs-parent="#indicator-sidebar">
+          <div class="sidebar-second-layer" id="indicator-sidebarsecondlayer">
+            <div class="sidebar-second-layer-item">
+              <h2 class="sidebar-header" id="indicator-secondlayerheaderone">
+                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-secondlayercollapseone" aria-expanded="true" aria-controls="indicator-secondlayercollapseone">
+                  <i class="bi bi-credit-card-2-front icon"></i>可展開第二層標題
+                </button>
+              </h2>
+              <div id="indicator-secondlayercollapseone" class="sidebar-collapse collapse" aria-labelledby="indicator-secondlayerheaderone" data-bs-parent="#indicator-sidebarsecondlayer">
+              </div>
+            </div>
+            <div class="sidebar-second-layer-item">
+              <h2 class="sidebar-header" id="secondlayerheadertwo">
+                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-secondlayercollapsetwo" aria-expanded="true" aria-controls="indicator-secondlayercollapsetwo">
+                  <i class="bi bi-clipboard icon"></i>可展開第二層標題
+                </button>
+              </h2>
+              <div id="indicator-secondlayercollapsetwo" class="sidebar-collapse collapse" aria-labelledby="indicator-secondlayerheadertwo" data-bs-parent="#indicator-sidebarsecondlayer">
+                <div class="list-group">
+                  <a href="#" class="sidebar-link">
+                    可點擊服務連結
+                  </a>
+                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="indicator-headertwo">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-collapsetwo" aria-expanded="true" aria-controls="indicator-collapsetwo">
+            <i class="bi bi-puzzle-fill icon"></i>可展開第一層標題
+          </button>
+        </h2>
+        <div id="indicator-collapsetwo" class="sidebar-collapse collapse" aria-labelledby="indicator-headertwo" data-bs-parent="#indicator-sidebar">
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="indicator-headerthree">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-collapsethree" aria-expanded="true" aria-controls="indicator-collapsethree">
+            <i class="bi bi-inboxes icon"></i>可展開第一層標題
+          </button>
+        </h2>
+        <div id="indicator-collapsethree" class="sidebar-collapse collapse" aria-labelledby="indicator-headerthree" data-bs-parent="#indicator-sidebar">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headerone">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="true" aria-controls="collapseone">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapseone" class="sidebar-collapse collapse" aria-labelledby="headerone" data-bs-parent="#sidebar">
+          <div class="sidebar-second-layer" id="sidebarsecondlayer">
+            <div class="sidebar-second-layer-item">
+              <h2 class="sidebar-header" id="secondlayerheaderone">
+                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseone" aria-expanded="true" aria-controls="secondlayercollapseone">
+                  可展開第二層標題
+                </button>
+              </h2>
+              <div id="secondlayercollapseone" class="sidebar-collapse collapse" aria-labelledby="secondlayerheaderone" data-bs-parent="#sidebarsecondlayer">
+              </div>
+            </div>
+            <div class="sidebar-second-layer-item">
+              <h2 class="sidebar-header" id="secondlayerheadertwo">
+                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwo" aria-expanded="true" aria-controls="secondlayercollapsetwo">
+                  可展開第二層標題
+                </button>
+              </h2>
+              <div id="secondlayercollapsetwo" class="sidebar-collapse collapse" aria-labelledby="secondlayerheadertwo" data-bs-parent="#sidebarsecondlayer">
+                <div class="list-group">
+                  <a href="#" class="sidebar-link">
+                    可點擊服務連結
+                  </a>
+                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headertwo">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapsetwo" class="sidebar-collapse collapse" aria-labelledby="headertwo" data-bs-parent="#sidebar">
+        </div>
+      </div>
+      <div class="sidebar-item">
+        <h2 class="sidebar-header" id="headerthree">
+          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+            可展開第一層標題
+          </button>
+        </h2>
+        <div id="collapsethree" class="sidebar-collapse collapse" aria-labelledby="headerthree" data-bs-parent="#sidebar">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;indicator-sidebar&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;indicator-headerone&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#indicator-collapseone&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;indicator-collapseone&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-house-door-fill icon&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;indicator-collapseone&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;indicator-headerone&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#indicator-sidebar&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;indicator-sidebarsecondlayer&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;indicator-secondlayerheaderone&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#indicator-secondlayercollapseone&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;indicator-secondlayercollapseone&#34;</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-credit-card-2-front icon&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>可展開第二層標題
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;indicator-secondlayercollapseone&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;indicator-secondlayerheaderone&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#indicator-sidebarsecondlayer&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayerheadertwo&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#indicator-secondlayercollapsetwo&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;indicator-secondlayercollapsetwo&#34;</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-clipboard icon&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>可展開第二層標題
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;indicator-secondlayercollapsetwo&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;indicator-secondlayerheadertwo&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#indicator-sidebarsecondlayer&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group&#34;</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>
+                    可點擊服務連結
+                  <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link active&#34;</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>瀏覽中服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>可點擊服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>可點擊服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;indicator-headertwo&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#indicator-collapsetwo&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;indicator-collapsetwo&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-puzzle-fill icon&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;indicator-collapsetwo&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;indicator-headertwo&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#indicator-sidebar&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;indicator-headerthree&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#indicator-collapsethree&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;indicator-collapsethree&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-inboxes icon&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;indicator-collapsethree&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;indicator-headerthree&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#indicator-sidebar&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sidebar&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headerone&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseone&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseone&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseone&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headerone&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebar&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;sidebarsecondlayer&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayerheaderone&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#secondlayercollapseone&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;secondlayercollapseone&#34;</span><span class="p">&gt;</span>
+                  可展開第二層標題
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayercollapseone&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;secondlayerheaderone&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebarsecondlayer&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayerheadertwo&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-second-layer-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#secondlayercollapsetwo&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;secondlayercollapsetwo&#34;</span><span class="p">&gt;</span>
+                  可展開第二層標題
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;secondlayercollapsetwo&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;secondlayerheadertwo&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebarsecondlayer&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group&#34;</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>
+                    可點擊服務連結
+                  <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link active&#34;</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>瀏覽中服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>可點擊服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-link&#34;</span><span class="p">&gt;</span>可點擊服務連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headertwo&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapsetwo&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapsetwo&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapsetwo&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headertwo&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebar&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headerthree&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapsethree&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapsethree&#34;</span><span class="p">&gt;</span>
+            可展開第一層標題
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapsethree&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headerthree&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#sidebar&#34;</span><span class="p">&gt;</span>
         <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
       <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
@@ -339,7 +1200,8 @@
   </div>
 </footer>
 
-    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
