@@ -491,25 +491,6 @@ a:active {
   border-left: solid;
 }
 
-.select {
-  @extend .form-select;
-  background: $gray-100;
-  border: 1px solid #121212;
-
-  &:hover {
-    color: $primary-dark;
-    border-color: $primary-dark;
-  }
-
-  &:active,
-  &:focus {
-    color: $secondary-light;
-    background-color: $primary;
-    border: 2px solid #fedc98;
-    box-shadow: none;
-  }
-}
-
 .sidebar-dense {
   .sidebar-button,
   .sidebar-second-layer-button,
@@ -653,4 +634,30 @@ a:active {
   @extend .sidebar-button-badge;
   @extend .rounded-pill;
   padding: 0.25rem;
+}
+
+.select {
+  @extend .form-select;
+  border: 1px solid #121212;
+
+  &:hover {
+    color: $primary-dark;
+    border-color: $primary-dark;
+  }
+
+  &:active,
+  &:focus {
+    color: $secondary-light;
+    background-color: $primary;
+    border: 2px solid #fedc98;
+    box-shadow: none;
+  }
+}
+
+.option {
+  background: $gray-100;
+  color: black;
+  &:active,
+  &:focus {
+  }
 }

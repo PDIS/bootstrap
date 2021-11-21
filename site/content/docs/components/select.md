@@ -37,11 +37,36 @@ toc: true
 
 {{< example >}}
 
-<select class="select" aria-label="Default select example">
-  <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <label for="example1" class="form-label h6">問題/標題</label>
+    <select class="select" id="example1" aria-label="example1">
+      <option class="option" selected>請選擇一個選項</option>
+      <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+    </select>
+  </div>
+</div>
+
+{{< /example >}}
+
+#### 標題位置
+
+標題在上或是標題在左
+
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <label for="example2" class="form-label h6">問題/標題</label>
+    <select class="select" id="example2" aria-label="example2">
+      <option class="option" selected>請選擇一個選項</option>
+      <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+    </select>
+  </div>
+</div>
 
 {{< /example >}}
