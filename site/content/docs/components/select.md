@@ -67,6 +67,181 @@ toc: true
       <option class="option" value="3">選項三</option>
     </select>
   </div>
+  <div class="col-md-4">
+    <div class="d-flex align-items-center">
+      <label for="example3" class="horizontal-label">問題/標題</label>
+      <select class="select" id="example3" aria-label="example3">
+        <option class="option" selected>請選擇一個選項</option>
+        <option class="option" value="1">選項一</option>
+        <option class="option" value="2">選項二</option>
+        <option class="option" value="3">選項三</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+{{< /example >}}
+
+#### 提示文字 vs 預設選項
+
+提示文字的位置所放的文字預設為供使用者參考的指令，例如：「選取出生縣市」，但在某些情況，當頁面的內容需要有預設選項時，則直接放預設選項，例如：「台北市」。請注意，使用提示文字而非預設選項時，代表著使用者被期待做一個選擇，反之則代表沒有必須得做一個選擇的必要，可以直接讓下拉選單的狀態保留在選取預設選項即可。
+
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <label for="example4" class="form-label h6">出生縣市</label>
+    <select class="select" id="example4" aria-label="example4">
+      <option class="option" selected>選取出生縣市</option>
+      <option class="option" value="1">台北市</option>
+      <option class="option" value="2">新北市</option>
+      <option class="option" value="3">高雄市</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+      <label for="example5" class="form-label h6">所在縣市</label>
+      <select class="select" id="example5" aria-label="example5">
+        <option class="option" value="1">台北市</option>
+        <option class="option" value="2">新北市</option>
+        <option class="option" value="3">高雄市</option>
+      </select>
+  </div>
+</div>
+
+{{< /example >}}
+
+#### 捲軸 scrollbar
+
+當選項數目較多，通常多於七項以上時可以考慮使用 scrollbar。當項目內容超過九項以上時，強烈建議使用 scrollbar。
+
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <label for="example6" class="form-label h6">問題/標題</label>
+    <select class="select" id="example6" aria-label="example6">
+      <option class="option" selected>請選擇一個選項</option>
+      <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+      <option class="option" value="4">選項四</option>
+      <option class="option" value="5">選項五</option>
+      <option class="option" value="6">選項六</option>
+      <option class="option" value="7">選項七</option>
+              <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+      <option class="option" value="4">選項四</option>
+      <option class="option" value="5">選項五</option>
+      <option class="option" value="6">選項六</option>
+      <option class="option" value="7">選項七</option>
+              <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+      <option class="option" value="4">選項四</option>
+      <option class="option" value="5">選項五</option>
+      <option class="option" value="6">選項六</option>
+      <option class="option" value="7">選項七</option>
+    </select>
+  </div>
+</div>
+
+{{< /example >}}
+
+#### 選項組 optgroup
+
+當選項內容有層級分類時，可以使用選項組。
+
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <label for="example7" class="form-label h6">問題/標題</label>
+    <select class="select" id="example7" aria-label="example7">
+      <option class="option" selected>請選擇一個選項</option>
+      <optgroup class="optgroup" label="分類一">
+        <option class="option" value="1">選項一</option>
+        <option class="option" value="2">選項二</option>
+        <option class="option" value="3">選項三</option>
+        <option class="option" value="4">選項四</option>
+      </optgroup>
+      <optgroup class="optgroup" label="分類二">
+        <option class="option" value="5">選項一</option>
+        <option class="option" value="6">選項二</option>
+        <option class="option" value="7">選項三</option>
+        <option class="option" value="8">選項四</option>
+      </optgroup>
+    </select>
+  </div>
+</div>
+
+{{< /example >}}
+
+#### 下拉選單組 select group
+
+有序且多個下拉選單的組合，通常會需要先針對一個下拉選單做選擇，且其選擇值會影響到下一個下拉選單的內容。
+
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <label for="example8" class="form-label h6">問題/標題</label>
+    <select class="select" id="example8" aria-label="example8" onchange="ShowSelect2()">
+      <option class="option" value="0" selected>請選擇一個選項</option>
+      <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <label for="example9" class="form-label h6">問題/標題</label>
+    <select class="select" id="example9" aria-label="example9" disabled onchange="ShowSelect3()">
+      <option class="option" value="0" selected>請選擇一個選項</option>
+      <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <label for="example10" class="form-label h6">問題/標題</label>
+    <select class="select" id="example10" aria-label="example10" disabled>
+      <option class="option" value="0" selected>請選擇一個選項</option>
+      <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+    </select>
+  </div>
+</div>
+
+<script>
+  const ShowSelect2 = () => {
+    document.getElementById("example8").value !== '0' ? document.getElementById("example9").disabled = false : document.getElementById("example9").disabled = true
+  }
+
+  const ShowSelect3 = () => {
+    document.getElementById("example9").value !== '0' ? document.getElementById("example10").disabled = false : document.getElementById("example10").disabled = true
+  }
+</script>
+
+{{< /example >}}
+
+#### 下拉選單搭配輸入框 select affected input feild
+
+下拉選單與輸入框的組合，通常會需要先針對下拉選單做選擇，且其選擇值會影響到與其搭配的輸入框可輸入的內容。
+
+{{< example >}}
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-6">
+    <label for="example11" class="form-label h6">問題/標題</label>
+    <select class="select" id="example11" aria-label="example11">
+      <option class="option" selected>請選擇一個選項</option>
+      <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+    </select>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
 </div>
 
 {{< /example >}}

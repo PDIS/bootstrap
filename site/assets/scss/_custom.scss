@@ -657,7 +657,16 @@ a:active {
 .option {
   background: $gray-100;
   color: black;
-  &:active,
-  &:focus {
-  }
 }
+
+.horizontal-label {
+  @extend .h6;
+  width: -webkit-fill-available;
+  margin-bottom: 0;
+}
+
+.optgroup {
+  background: $gray-100;
+  color: #6b6b6b !important;
+}
+ 
