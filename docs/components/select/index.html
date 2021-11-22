@@ -197,6 +197,11 @@
           <ul>
             <li><a href="#基本款">基本款</a></li>
             <li><a href="#標題位置">標題位置</a></li>
+            <li><a href="#提示文字-vs-預設選項">提示文字 vs 預設選項</a></li>
+            <li><a href="#捲軸-scrollbar">捲軸 scrollbar</a></li>
+            <li><a href="#選項組-optgroup">選項組 optgroup</a></li>
+            <li><a href="#下拉選單組-select-group">下拉選單組 select group</a></li>
+            <li><a href="#下拉選單搭配輸入框-select-affected-input-feild">下拉選單搭配輸入框 select affected input feild</a></li>
           </ul>
         </li>
       </ul>
@@ -269,6 +274,17 @@
       <option class="option" value="3">選項三</option>
     </select>
   </div>
+  <div class="col-md-4">
+    <div class="d-flex align-items-center">
+      <label for="example3" class="horizontal-label">問題/標題</label>
+      <select class="select" id="example3" aria-label="example3">
+        <option class="option" selected>請選擇一個選項</option>
+        <option class="option" value="1">選項一</option>
+        <option class="option" value="2">選項二</option>
+        <option class="option" value="3">選項三</option>
+      </select>
+    </div>
+  </div>
 </div>
 
 </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
@@ -280,6 +296,280 @@
       <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>選項二<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>選項三<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-4&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-items-center&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;example3&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;horizontal-label&#34;</span><span class="p">&gt;</span>問題/標題<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;select&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;example3&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;example3&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">selected</span><span class="p">&gt;</span>請選擇一個選項<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>選項一<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>選項二<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>選項三<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="提示文字-vs-預設選項">提示文字 vs 預設選項</h4>
+<p>提示文字的位置所放的文字預設為供使用者參考的指令，例如：「選取出生縣市」，但在某些情況，當頁面的內容需要有預設選項時，則直接放預設選項，例如：「台北市」。請注意，使用提示文字而非預設選項時，代表著使用者被期待做一個選擇，反之則代表沒有必須得做一個選擇的必要，可以直接讓下拉選單的狀態保留在選取預設選項即可。</p>
+<div class="bd-example">
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <label for="example4" class="form-label h6">出生縣市</label>
+    <select class="select" id="example4" aria-label="example4">
+      <option class="option" selected>選取出生縣市</option>
+      <option class="option" value="1">台北市</option>
+      <option class="option" value="2">新北市</option>
+      <option class="option" value="3">高雄市</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+      <label for="example5" class="form-label h6">所在縣市</label>
+      <select class="select" id="example5" aria-label="example5">
+        <option class="option" value="1">台北市</option>
+        <option class="option" value="2">新北市</option>
+        <option class="option" value="3">高雄市</option>
+      </select>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-4&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;example4&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-label h6&#34;</span><span class="p">&gt;</span>出生縣市<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;select&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;example4&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;example4&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">selected</span><span class="p">&gt;</span>選取出生縣市<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>台北市<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>新北市<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>高雄市<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-4&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;example5&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-label h6&#34;</span><span class="p">&gt;</span>所在縣市<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;select&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;example5&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;example5&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>台北市<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>新北市<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>高雄市<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="捲軸-scrollbar">捲軸 scrollbar</h4>
+<p>當選項數目較多，通常多於七項以上時可以考慮使用 scrollbar。當項目內容超過九項以上時，強烈建議使用 scrollbar。</p>
+<div class="bd-example">
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <label for="example6" class="form-label h6">問題/標題</label>
+    <select class="select" id="example6" aria-label="example6">
+      <option class="option" selected>請選擇一個選項</option>
+      <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+      <option class="option" value="4">選項四</option>
+      <option class="option" value="5">選項五</option>
+      <option class="option" value="6">選項六</option>
+      <option class="option" value="7">選項七</option>
+              <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+      <option class="option" value="4">選項四</option>
+      <option class="option" value="5">選項五</option>
+      <option class="option" value="6">選項六</option>
+      <option class="option" value="7">選項七</option>
+              <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+      <option class="option" value="4">選項四</option>
+      <option class="option" value="5">選項五</option>
+      <option class="option" value="6">選項六</option>
+      <option class="option" value="7">選項七</option>
+    </select>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-4&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;example6&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-label h6&#34;</span><span class="p">&gt;</span>問題/標題<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;select&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;example6&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;example6&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">selected</span><span class="p">&gt;</span>請選擇一個選項<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>選項一<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>選項二<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>選項三<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;4&#34;</span><span class="p">&gt;</span>選項四<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;5&#34;</span><span class="p">&gt;</span>選項五<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;6&#34;</span><span class="p">&gt;</span>選項六<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;7&#34;</span><span class="p">&gt;</span>選項七<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>選項一<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>選項二<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>選項三<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;4&#34;</span><span class="p">&gt;</span>選項四<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;5&#34;</span><span class="p">&gt;</span>選項五<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;6&#34;</span><span class="p">&gt;</span>選項六<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;7&#34;</span><span class="p">&gt;</span>選項七<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>選項一<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>選項二<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>選項三<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;4&#34;</span><span class="p">&gt;</span>選項四<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;5&#34;</span><span class="p">&gt;</span>選項五<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;6&#34;</span><span class="p">&gt;</span>選項六<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;7&#34;</span><span class="p">&gt;</span>選項七<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="選項組-optgroup">選項組 optgroup</h4>
+<p>當選項內容有層級分類時，可以使用選項組。</p>
+<div class="bd-example">
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <label for="example7" class="form-label h6">問題/標題</label>
+    <select class="select" id="example7" aria-label="example7">
+      <option class="option" selected>請選擇一個選項</option>
+      <optgroup class="optgroup" label="分類一">
+        <option class="option" value="1">選項一</option>
+        <option class="option" value="2">選項二</option>
+        <option class="option" value="3">選項三</option>
+        <option class="option" value="4">選項四</option>
+      </optgroup>
+      <optgroup class="optgroup" label="分類二">
+        <option class="option" value="5">選項一</option>
+        <option class="option" value="6">選項二</option>
+        <option class="option" value="7">選項三</option>
+        <option class="option" value="8">選項四</option>
+      </optgroup>
+    </select>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-4&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;example7&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-label h6&#34;</span><span class="p">&gt;</span>問題/標題<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;select&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;example7&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;example7&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">selected</span><span class="p">&gt;</span>請選擇一個選項<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">optgroup</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;optgroup&#34;</span> <span class="na">label</span><span class="o">=</span><span class="s">&#34;分類一&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>選項一<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>選項二<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>選項三<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;4&#34;</span><span class="p">&gt;</span>選項四<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">optgroup</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">optgroup</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;optgroup&#34;</span> <span class="na">label</span><span class="o">=</span><span class="s">&#34;分類二&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;5&#34;</span><span class="p">&gt;</span>選項一<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;6&#34;</span><span class="p">&gt;</span>選項二<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;7&#34;</span><span class="p">&gt;</span>選項三<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;8&#34;</span><span class="p">&gt;</span>選項四<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">optgroup</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="下拉選單組-select-group">下拉選單組 select group</h4>
+<p>有序且多個下拉選單的組合，通常會需要先針對一個下拉選單做選擇，且其選擇值會影響到下一個下拉選單的內容。</p>
+<div class="bd-example">
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <label for="example8" class="form-label h6">問題/標題</label>
+    <select class="select" id="example8" aria-label="example8" onchange="ShowSelect2()">
+      <option class="option" value="0" selected>請選擇一個選項</option>
+      <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <label for="example9" class="form-label h6">問題/標題</label>
+    <select class="select" id="example9" aria-label="example9" disabled onchange="ShowSelect3()">
+      <option class="option" value="0" selected>請選擇一個選項</option>
+      <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <label for="example10" class="form-label h6">問題/標題</label>
+    <select class="select" id="example10" aria-label="example10" disabled>
+      <option class="option" value="0" selected>請選擇一個選項</option>
+      <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+    </select>
+  </div>
+</div>
+
+<script>
+  const ShowSelect2 = () => {
+    document.getElementById("example8").value !== '0' ? document.getElementById("example9").disabled = false : document.getElementById("example9").disabled = true
+  }
+
+  const ShowSelect3 = () => {
+    document.getElementById("example9").value !== '0' ? document.getElementById("example10").disabled = false : document.getElementById("example10").disabled = true
+  }
+</script>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-4&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;example8&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-label h6&#34;</span><span class="p">&gt;</span>問題/標題<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;select&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;example8&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;example8&#34;</span> <span class="na">onchange</span><span class="o">=</span><span class="s">&#34;ShowSelect2()&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">selected</span><span class="p">&gt;</span>請選擇一個選項<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>選項一<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>選項二<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>選項三<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-4&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;example9&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-label h6&#34;</span><span class="p">&gt;</span>問題/標題<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;select&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;example9&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;example9&#34;</span> <span class="na">disabled</span> <span class="na">onchange</span><span class="o">=</span><span class="s">&#34;ShowSelect3()&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">selected</span><span class="p">&gt;</span>請選擇一個選項<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>選項一<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>選項二<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>選項三<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-4&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;example10&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-label h6&#34;</span><span class="p">&gt;</span>問題/標題<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;select&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;example10&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;example10&#34;</span> <span class="na">disabled</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;0&#34;</span> <span class="na">selected</span><span class="p">&gt;</span>請選擇一個選項<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>選項一<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>選項二<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>選項三<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kr">const</span> <span class="nx">ShowSelect2</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example8&#34;</span><span class="p">).</span><span class="nx">value</span> <span class="o">!==</span> <span class="s1">&#39;0&#39;</span> <span class="o">?</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example9&#34;</span><span class="p">).</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">false</span> <span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example9&#34;</span><span class="p">).</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">true</span>
+  <span class="p">}</span>
+
+  <span class="kr">const</span> <span class="nx">ShowSelect3</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example9&#34;</span><span class="p">).</span><span class="nx">value</span> <span class="o">!==</span> <span class="s1">&#39;0&#39;</span> <span class="o">?</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example10&#34;</span><span class="p">).</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">false</span> <span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example10&#34;</span><span class="p">).</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">true</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="下拉選單搭配輸入框-select-affected-input-feild">下拉選單搭配輸入框 select affected input feild</h4>
+<p>下拉選單與輸入框的組合，通常會需要先針對下拉選單做選擇，且其選擇值會影響到與其搭配的輸入框可輸入的內容。</p>
+<div class="bd-example">
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-6">
+    <label for="example11" class="form-label h6">問題/標題</label>
+    <select class="select" id="example11" aria-label="example11">
+      <option class="option" selected>請選擇一個選項</option>
+      <option class="option" value="1">選項一</option>
+      <option class="option" value="2">選項二</option>
+      <option class="option" value="3">選項三</option>
+    </select>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;example11&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-label h6&#34;</span><span class="p">&gt;</span>問題/標題<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;select&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;example11&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;example11&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">selected</span><span class="p">&gt;</span>請選擇一個選項<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;1&#34;</span><span class="p">&gt;</span>選項一<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>選項二<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>選項三<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;exampleFormControlInput1&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;name@example.com&#34;</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 
