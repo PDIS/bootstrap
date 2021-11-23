@@ -215,11 +215,11 @@ toc: true
 
 <script>
   const ShowSelect2 = () => {
-    document.getElementById("example8").value !== '0' ? document.getElementById("example9").disabled = false : document.getElementById("example9").disabled = true
+    document.getElementById("example8").value !== '0' ? document.getElementById("example9").disabled = false : document.getElementById("example9").disabled = true; document.getElementById("example9").value = '0'; document.getElementById("example10").disabled = true; document.getElementById("example10").value = '0'
   }
 
   const ShowSelect3 = () => {
-    document.getElementById("example9").value !== '0' ? document.getElementById("example10").disabled = false : document.getElementById("example10").disabled = true
+    document.getElementById("example9").value !== '0' ? document.getElementById("example10").disabled = false : document.getElementById("example10").disabled = true; document.getElementById("example10").value = '0'
   }
 </script>
 
@@ -232,7 +232,8 @@ toc: true
 {{< example >}}
 
 <div class="row d-flex justify-content-center">
-  <div class="col-md-6">
+  <div class="col-12 d-flex flex-row">
+  <div>
     <label for="example11" class="form-label h6">問題/標題</label>
     <select class="select" id="example11" aria-label="example11">
       <option class="option" selected>請選擇一個選項</option>
@@ -240,7 +241,10 @@ toc: true
       <option class="option" value="2">選項二</option>
       <option class="option" value="3">選項三</option>
     </select>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="d-flex align-items-end">
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+    </div>
   </div>
 </div>
 
