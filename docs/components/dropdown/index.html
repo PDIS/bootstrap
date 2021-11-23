@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements.">
+<meta name="description" content="讓使用者從多個頁面選項中做一個或選擇，並跳轉到其選擇的頁面。">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.1">
 
-<title>Vertical alignment · Bootstrap v5.1</title>
+<title>導覽列下拉選單 Navigation Dropdowns · Bootstrap v5.1</title>
 
-<link rel="canonical" href="https://getbootstrap.com/docs/5.1/utilities/vertical-align/">
+<link rel="canonical" href="https://getbootstrap.com/docs/components/dropdown/">
 
 
 
@@ -39,14 +39,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="Vertical alignment">
-<meta name="twitter:description" content="Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements.">
+<meta name="twitter:title" content="導覽列下拉選單 Navigation Dropdowns">
+<meta name="twitter:description" content="讓使用者從多個頁面選項中做一個或選擇，並跳轉到其選擇的頁面。">
 <meta name="twitter:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://getbootstrap.com/docs/5.1/utilities/vertical-align/">
-<meta property="og:title" content="Vertical alignment">
-<meta property="og:description" content="Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements.">
+<meta property="og:url" content="https://getbootstrap.com/docs/components/dropdown/">
+<meta property="og:title" content="導覽列下拉選單 Navigation Dropdowns">
+<meta property="og:description" content="讓使用者從多個頁面選項中做一個或選擇，並跳轉到其選擇的頁面。">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
@@ -138,13 +138,13 @@
       </div>
     </li>
     <li class="mb-1">
-      <button class="btn d-inline-flex align-items-center rounded collapsed"
-        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false"
-        >
+      <button class="btn d-inline-flex align-items-center rounded"
+        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="true"
+         aria-current="true" >
         元件
       </button>
 
-      <div class="collapse" id="components-collapse">
+      <div class="collapse show" id="components-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
           <li><a href="/docs/components/navbar/" class="d-inline-flex align-items-center rounded"
               >導覽列</a></li>
@@ -158,8 +158,8 @@
               >側邊欄</a></li>
           <li><a href="/docs/components/select/" class="d-inline-flex align-items-center rounded"
               >下拉式選單</a></li>
-          <li><a href="/docs/components/dropdown/" class="d-inline-flex align-items-center rounded"
-              >導覽列下拉選單</a></li>
+          <li><a href="/docs/components/dropdown/" class="d-inline-flex align-items-center rounded active"
+               aria-current="page" >導覽列下拉選單</a></li>
         </ul>
       </div>
     </li>
@@ -172,71 +172,100 @@
     <div class="bd-intro ps-lg-4">
       <div class="d-md-flex flex-md-row align-items-left justify-content-between">
         
-        <h1 id="content" style="font-weight: 900;">Vertical alignment</h1>
+        <h1 id="content" style="font-weight: 900;">導覽列下拉選單 Navigation Dropdowns</h1>
       </div>
-      <h2 style="margin-top: 0.5rem;">Easily change the vertical alignment of inline, inline-block, inline-table, and table cell elements.</h2>
+      <h2 style="margin-top: 0.5rem;">讓使用者從多個頁面選項中做一個或選擇，並跳轉到其選擇的頁面。</h2>
       <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
 
       <hr>
     </div>
 
     
+    <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+      <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#關於導覽列下拉選單">關於導覽列下拉選單</a></li>
+        <li><a href="#guidance">Guidance</a>
+          <ul>
+            <li><a href="#when-to-use-the-select-component">When to use the select component</a></li>
+            <li><a href="#when-to-consider-something-else">When to consider something else</a></li>
+            <li><a href="#usability">Usability</a></li>
+            <li><a href="#accessbility">Accessbility</a></li>
+          </ul>
+        </li>
+        <li><a href="#component">Component</a>
+          <ul>
+            <li><a href="#滿版">滿版</a></li>
+            <li><a href="#單欄式下拉">單欄式下拉</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
 
     <div class="bd-content ps-lg-4">
       
 
-      <p>Change the alignment of elements with the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align"><code>vertical-alignment</code></a> utilities. Please note that vertical-align only affects inline, inline-block, inline-table, and table cell elements.</p>
-<p>Choose from <code>.align-baseline</code>, <code>.align-top</code>, <code>.align-middle</code>, <code>.align-bottom</code>, <code>.align-text-bottom</code>, and <code>.align-text-top</code> as needed.</p>
-<p>To vertically center non-inline content (like <code>&lt;div&gt;</code>s and more), use our <a href="/docs/5.1/utilities/flex/#align-items">flex box utilities</a>.</p>
-<p>With inline elements:</p>
+      <h3 id="關於導覽列下拉選單">關於導覽列下拉選單</h3>
+<p>導覽列的下拉選單是導覽的延伸。與常駐的導覽列不同，導覽列下拉選單是短暫的存在，依據使用者的互動輸入，觸發展開選單內容，並可以再次出發收納選單內容。使用者在選單展開時，可以從多個選項中做出單一選擇，選擇的目的是用來前往別的分頁。到達新的分頁後，下拉選單則自動收納起來，整個網頁回到原導覽列的常駐狀態。</p>
+<h3 id="guidance">Guidance</h3>
+<h4 id="when-to-use-the-select-component">When to use the select component</h4>
+<p>當導覽列有需要用到下拉式選單收納頁面連結，總數量不至於過多且層級（不含導覽列）不超過兩層時，請妥善利用導覽列下拉選單。</p>
+<h4 id="when-to-consider-something-else">When to consider something else</h4>
+<ul>
+<li><strong>選項過少。</strong> 當連結數目不多，例如小於 3，且導覽列空間足夠時，建議直接將連結展開放置在導覽列上，供使用者一目了然的瀏覽並選擇想要前往的頁面。</li>
+<li><strong>選項過多。</strong> 當選單內的項目太多，例如超過 15 項時，請先主動重新檢視網站的資訊架構。若無法更動，請參考 sidebar 搭配 header navigation 的呈現方式，避免用單一導覽列下拉選單一次收納過多資訊。否則，將過多內容收納在一處將會增加使用者的查找負擔。</li>
+<li><strong>選單數目過多。</strong> 當導覽列上的導覽列下拉選單數量過多，甚至導覽列上每個連結都是用下拉選單呈現時，請參考 sidebar 搭配 header navigation 的呈現方式。</li>
+</ul>
+<h4 id="usability">Usability</h4>
+<ul>
+<li><strong>導覽列與下拉選單風格應一致。</strong> 導覽列與其下拉選單皆為導覽用，其風格應一致，幫助使用者的潛在認知，降低額外學習成本。</li>
+<li><strong>導覽列與下拉選單底色區別。</strong> 建議在導覽列的底色與下拉選單的底色使用不同顏色以作區別。因為下拉選單是暫時出現且蓋過背後網頁內容的元件，與常駐的導覽列顏色稍作區別，能幫助使用者在瀏覽網頁時的潛在認知。</li>
+<li><strong>避免不要的特效。</strong> 下拉選單的內容可以直接覆蓋在原網頁的內容之上，請避免另外製作非必要的特效，例如逐項展開選單，或將網頁內容下推等。</li>
+<li><strong>避免選項數量過多。</strong> 建議不要放超過 15 個選擇。</li>
+</ul>
+<h4 id="accessbility">Accessbility</h4>
+<ul>
+<li><strong>避免使用 hover 。</strong> 請避免用 hover 觸發展開選單，儘量使用 click 觸發，以減少視覺負擔。</li>
+</ul>
+<h3 id="component">Component</h3>
+<h4 id="滿版">滿版</h4>
+<p>當第二層級項目多 (&gt; 7) 時，意即選單內容項目較多，適合使用滿版的形式將所有項目列出。同樣情況，當還有次層級時，滿版形式的導覽列下拉式選單也適用，可以再將次層級的項目也逐一列出。惟當次層級的項目也過多時，請重新檢視資訊架構，或考慮轉用 sidebar 搭配 header navigation 的呈現方式。</p>
 <div class="bd-example">
-<span class="align-baseline">baseline</span>
-<span class="align-top">top</span>
-<span class="align-middle">middle</span>
-<span class="align-bottom">bottom</span>
-<span class="align-text-top">text-top</span>
-<span class="align-text-bottom">text-bottom</span>
-</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-baseline&#34;</span><span class="p">&gt;</span>baseline<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-top&#34;</span><span class="p">&gt;</span>top<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-middle&#34;</span><span class="p">&gt;</span>middle<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-bottom&#34;</span><span class="p">&gt;</span>bottom<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-text-top&#34;</span><span class="p">&gt;</span>text-top<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-text-bottom&#34;</span><span class="p">&gt;</span>text-bottom<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span></code></pre></div>
-<p>With table cells:</p>
-<div class="bd-example">
-<table style="height: 100px;">
-  <tbody>
-    <tr>
-      <td class="align-baseline">baseline</td>
-      <td class="align-top">top</td>
-      <td class="align-middle">middle</td>
-      <td class="align-bottom">bottom</td>
-      <td class="align-text-top">text-top</td>
-      <td class="align-text-bottom">text-bottom</td>
-    </tr>
-  </tbody>
-</table>
-</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">table</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;height: 100px;&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-baseline&#34;</span><span class="p">&gt;</span>baseline<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-top&#34;</span><span class="p">&gt;</span>top<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-middle&#34;</span><span class="p">&gt;</span>middle<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-bottom&#34;</span><span class="p">&gt;</span>bottom<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-text-top&#34;</span><span class="p">&gt;</span>text-top<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-text-bottom&#34;</span><span class="p">&gt;</span>text-bottom<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre></div>
-<h2 id="sass">Sass</h2>
-<h3 id="utilities-api">Utilities API</h3>
-<p>Vertical align utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/docs/5.1/utilities/api/#using-the-api">Learn how to use the utilities API.</a></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss">    <span class="s2">&#34;align&#34;</span><span class="nd">:</span> <span class="o">(</span>
-      <span class="nt">property</span><span class="nd">:</span> <span class="nt">vertical-align</span><span class="o">,</span>
-      <span class="nt">class</span><span class="nd">:</span> <span class="nt">align</span><span class="o">,</span>
-      <span class="nt">values</span><span class="nd">:</span> <span class="nt">baseline</span> <span class="nt">top</span> <span class="nt">middle</span> <span class="nt">bottom</span> <span class="nt">text-bottom</span> <span class="nt">text-top</span>
-    <span class="o">),</span>
-    </code></pre></div>
+
+<div class="govtw-dropdown">
+  <button class="dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    服務項目名稱
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
+    <li><a class="dropdown-item" href="#">寬度隨最長的內容文字調整</a></li>
+    <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
+    <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
+    <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
+  </ul>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;govtw-dropdown&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-btn&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dropdownMenuButton1&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;dropdown&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span><span class="p">&gt;</span>
+    服務項目名稱
+  <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-menu&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;dropdownMenuButton1&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>服務項目子項目<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>寬度隨最長的內容文字調整<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>服務項目子項目<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>服務項目子項目<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>服務項目子項目<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="單欄式下拉">單欄式下拉</h4>
+<p>當第二層級項目少 (&lt; 7) 時，意即選單內容項目較少，適合使用單欄式下拉的形式將所有項目列出。同樣情況，當次層級項目少 (&lt;7) 時，點選箭頭圖標展開次層級選單。若次層級項目較多時，請重新檢視資訊架構，並考慮轉用 sidebar 搭配 header navigation 的呈現方式。</p>
 
     </div>
   </main>

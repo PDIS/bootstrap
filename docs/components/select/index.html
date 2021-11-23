@@ -158,6 +158,8 @@
               >側邊欄</a></li>
           <li><a href="/docs/components/select/" class="d-inline-flex align-items-center rounded active"
                aria-current="page" >下拉式選單</a></li>
+          <li><a href="/docs/components/dropdown/" class="d-inline-flex align-items-center rounded"
+              >導覽列下拉選單</a></li>
         </ul>
       </div>
     </li>
@@ -496,11 +498,11 @@
 
 <script>
   const ShowSelect2 = () => {
-    document.getElementById("example8").value !== '0' ? document.getElementById("example9").disabled = false : document.getElementById("example9").disabled = true
+    document.getElementById("example8").value !== '0' ? document.getElementById("example9").disabled = false : document.getElementById("example9").disabled = true; document.getElementById("example9").value = '0'; document.getElementById("example10").disabled = true; document.getElementById("example10").value = '0'
   }
 
   const ShowSelect3 = () => {
-    document.getElementById("example9").value !== '0' ? document.getElementById("example10").disabled = false : document.getElementById("example10").disabled = true
+    document.getElementById("example9").value !== '0' ? document.getElementById("example10").disabled = false : document.getElementById("example10").disabled = true; document.getElementById("example10").value = '0'
   }
 </script>
 
@@ -536,11 +538,11 @@
 
 <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
   <span class="kr">const</span> <span class="nx">ShowSelect2</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example8&#34;</span><span class="p">).</span><span class="nx">value</span> <span class="o">!==</span> <span class="s1">&#39;0&#39;</span> <span class="o">?</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example9&#34;</span><span class="p">).</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">false</span> <span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example9&#34;</span><span class="p">).</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">true</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example8&#34;</span><span class="p">).</span><span class="nx">value</span> <span class="o">!==</span> <span class="s1">&#39;0&#39;</span> <span class="o">?</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example9&#34;</span><span class="p">).</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">false</span> <span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example9&#34;</span><span class="p">).</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example9&#34;</span><span class="p">).</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span><span class="p">;</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example10&#34;</span><span class="p">).</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example10&#34;</span><span class="p">).</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
   <span class="p">}</span>
 
   <span class="kr">const</span> <span class="nx">ShowSelect3</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example9&#34;</span><span class="p">).</span><span class="nx">value</span> <span class="o">!==</span> <span class="s1">&#39;0&#39;</span> <span class="o">?</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example10&#34;</span><span class="p">).</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">false</span> <span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example10&#34;</span><span class="p">).</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">true</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example9&#34;</span><span class="p">).</span><span class="nx">value</span> <span class="o">!==</span> <span class="s1">&#39;0&#39;</span> <span class="o">?</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example10&#34;</span><span class="p">).</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">false</span> <span class="o">:</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example10&#34;</span><span class="p">).</span><span class="nx">disabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;example10&#34;</span><span class="p">).</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
   <span class="p">}</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></div>
 <h4 id="下拉選單搭配輸入框-select-affected-input-feild">下拉選單搭配輸入框 select affected input feild</h4>
@@ -548,7 +550,8 @@
 <div class="bd-example">
 
 <div class="row d-flex justify-content-center">
-  <div class="col-md-6">
+  <div class="col-12 d-flex flex-row">
+  <div>
     <label for="example11" class="form-label h6">問題/標題</label>
     <select class="select" id="example11" aria-label="example11">
       <option class="option" selected>請選擇一個選項</option>
@@ -556,12 +559,16 @@
       <option class="option" value="2">選項二</option>
       <option class="option" value="3">選項三</option>
     </select>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="d-flex align-items-end">
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+    </div>
   </div>
 </div>
 
 </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-12 d-flex flex-row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;example11&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-label h6&#34;</span><span class="p">&gt;</span>問題/標題<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;select&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;example11&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;example11&#34;</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">selected</span><span class="p">&gt;</span>請選擇一個選項<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
@@ -569,7 +576,10 @@
       <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;2&#34;</span><span class="p">&gt;</span>選項二<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">option</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;option&#34;</span> <span class="na">value</span><span class="o">=</span><span class="s">&#34;3&#34;</span><span class="p">&gt;</span>選項三<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;email&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;exampleFormControlInput1&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;name@example.com&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex align-items-end&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;exampleFormControlInput1&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 
