@@ -36,7 +36,7 @@ toc: true
 
 {{< example >}}
 
-<div class="accordion" id="accordionExample">
+<div class="pdis-accordion" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -86,7 +86,7 @@ toc: true
   </div>
 </div>
 <br />
-<div class="accordion" id="accordionExample2">
+<div class="pdis-accordion" id="accordionExample2">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne2">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
@@ -144,7 +144,7 @@ toc: true
 
 {{< example >}}
 
-<div class="accordion" id="accordionExample3">
+<div class="pdis-accordion" id="accordionExample3">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne3">
       <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
@@ -218,7 +218,7 @@ toc: true
   </div>
 </div>
 <br />
-<div class="accordion" id="accordionExample4">
+<div class="pdis-accordion" id="accordionExample4">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne4">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">

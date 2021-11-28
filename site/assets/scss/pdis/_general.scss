@@ -1,0 +1,179 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css");
+
+html,
+body {
+  font-family: "Noto Sans", "Noto Sans TC", sans-serif !important;
+}
+
+a {
+  text-underline-offset: 0.1em;
+}
+
+a:visited {
+  color: $secondary-dark;
+}
+
+a:active {
+  background-color: $primary;
+  color: $secondary-light;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.display-inline {
+  display: inline;
+}
+
+.bg-custom {
+  background-color: #005aa8 !important;
+}
+
+.navbar-top {
+  width: 100%;
+  height: 1.5rem;
+  background-color: #005aa8;
+}
+
+.navbar-bottom {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #005aa8;
+}
+
+.navbar-menu {
+  justify-content: end;
+}
+
+.navbar-link-item {
+  font-weight: 500 !important;
+  color: #005aa8 !important;
+}
+
+.navbar-top-item {
+}
+
+.navbar-expand-lg {
+  flex-wrap: wrap !important;
+  justify-content: flex-start;
+}
+
+.navbar-toggler {
+  background-color: #005aa8;
+}
+
+.navbar-light .navbar-toggler-icon {
+  width: 100%;
+  font-size: 1rem;
+  background-image: none;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.bg-footer {
+  background-color: #c1c2c3;
+}
+
+.icon-btn {
+  -webkit-text-stroke: thin;
+  padding-right: 0;
+}
+
+.truncate {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-blue-300 {
+  color: $blue-300;
+}
+
+.text-pink-300 {
+  color: $pink-300;
+}
+
+.text-purple-300 {
+  color: $purple-300;
+}
+
+.bg-red-400 {
+  background-color: $red-400;
+}
+
+.bg-gray-100 {
+  background-color: $gray-100;
+}
+
+.trad-chinese-formal {
+  list-style: trad-chinese-formal;
+}
+
+.trad-chinese-informal {
+  list-style: trad-chinese-informal;
+}
+
+.select {
+  @extend .form-select;
+  border: 1px solid #121212;
+
+  &:hover {
+    color: $primary-dark;
+    border-color: $primary-dark;
+  }
+
+  &:active,
+  &:focus {
+    color: $secondary-light;
+    background-color: $primary;
+    border: 2px solid #fedc98;
+    box-shadow: none;
+  }
+}
+
+.option {
+  background: $gray-100;
+  color: black;
+}
+
+.horizontal-label {
+  @extend .h6;
+  width: -webkit-fill-available;
+  margin-bottom: 0;
+}
+
+.optgroup {
+  background: $gray-100;
+  color: #6b6b6b !important;
+}
+
+.govtw-dropdown {
+  .dropdown-btn {
+    @extend .btn;
+    @extend .btn-link;
+    @extend .dropdown-toggle;
+    &:active,
+    &:focus {
+      color: $secondary-light;
+      background-color: $primary;
+    }
+  }
+  .dropdown-menu {
+    border: 0;
+    border-left: solid;
+    border-color: $primary;
+    border-radius: 0;
+  }
+
+  .dropdown-item {
+    color: $primary;
+    &:hover {
+      color: $primary-dark;
+    }
+    &:active,
+    &:focus {
+      color: $secondary-light;
+      background-color: $primary;
+    }
+  }
+}
