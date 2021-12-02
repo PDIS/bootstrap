@@ -18,8 +18,8 @@
 - title: 元件
   name: components
   pages:
-    - title: 導覽列
-      name: navbar
+    - title: 頁首
+      name: header
     - title: 卡片
       name: card
     - title: 列表

@@ -41,7 +41,7 @@ toc: true
 
 {{< example >}}
 
-<div class="govtw-dropdown">
+<div class="dropdown">
   <button class="dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
     服務項目名稱
   </button>

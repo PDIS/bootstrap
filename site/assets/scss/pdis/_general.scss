@@ -146,34 +146,3 @@ a:active {
   background: $gray-100;
   color: #6b6b6b !important;
 }
-
-.govtw-dropdown {
-  .dropdown-btn {
-    @extend .btn;
-    @extend .btn-link;
-    @extend .dropdown-toggle;
-    &:active,
-    &:focus {
-      color: $secondary-light;
-      background-color: $primary;
-    }
-  }
-  .dropdown-menu {
-    border: 0;
-    border-left: solid;
-    border-color: $primary;
-    border-radius: 0;
-  }
-
-  .dropdown-item {
-    color: $primary;
-    &:hover {
-      color: $primary-dark;
-    }
-    &:active,
-    &:focus {
-      color: $secondary-light;
-      background-color: $primary;
-    }
-  }
-}
