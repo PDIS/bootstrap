@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="The most popular HTML, CSS, and JS library in the world.">
+<meta name="description" content="頁首是一個網站的第一印象，一個好的頁首能提供使用者一目瞭然的整理，幫助使用者對網站的架構與規模有概念。清楚的架構能夠幫助使用者辨認出所在位置，並且被迅速地引導到達特定頁面。另一方面，頁首也扮演者當使用者迷路時可以總是找到並回到的地方。">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.1">
 
-<title> · Bootstrap v5.1</title>
+<title>頁首 Header · Bootstrap v5.1</title>
 
 <link rel="canonical" href="https://getbootstrap.com/docs/components/header/">
 
@@ -39,14 +39,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="">
-<meta name="twitter:description" content="The most popular HTML, CSS, and JS library in the world.">
+<meta name="twitter:title" content="頁首 Header">
+<meta name="twitter:description" content="頁首是一個網站的第一印象，一個好的頁首能提供使用者一目瞭然的整理，幫助使用者對網站的架構與規模有概念。清楚的架構能夠幫助使用者辨認出所在位置，並且被迅速地引導到達特定頁面。另一方面，頁首也扮演者當使用者迷路時可以總是找到並回到的地方。">
 <meta name="twitter:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
 <meta property="og:url" content="https://getbootstrap.com/docs/components/header/">
-<meta property="og:title" content="">
-<meta property="og:description" content="The most popular HTML, CSS, and JS library in the world.">
+<meta property="og:title" content="頁首 Header">
+<meta property="og:description" content="頁首是一個網站的第一印象，一個好的頁首能提供使用者一目瞭然的整理，幫助使用者對網站的架構與規模有概念。清楚的架構能夠幫助使用者辨認出所在位置，並且被迅速地引導到達特定頁面。另一方面，頁首也扮演者當使用者迷路時可以總是找到並回到的地方。">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
@@ -67,7 +67,7 @@
     <div class="skippy visually-hidden-focusable overflow-hidden">
   <div class="container-xl">
     <a class="d-inline-flex p-2 m-1" href="#content">Skip to main content</a>
-    
+    <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a>
   </div>
 </div>
 
@@ -93,7 +93,7 @@
             onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2"
+          <a class="nav-link p-2 active" aria-current="true"
             href="/docs/style/accessibility"
             onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">文件</a>
         </li>
@@ -109,29 +109,209 @@
 
 
     
-  <header class="py-5 border-bottom">
-    <div class="container pt-md-1 pb-md-4">
-      <div class="row">
-        <div class="col-xl-8">
-          <h1 class="bd-title mt-0"></h1>
-          <p class="bd-lead"></p>
-          
-        </div>
-        <div class="col-xl-4 d-lg-flex justify-content-xl-end">
-          <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
 
-        </div>
+
+
+<div class="container-xxl my-md-4 bd-layout">
+  <aside class="bd-sidebar">
+    <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
+    <li class="mb-1">
+      <button class="btn d-inline-flex align-items-center rounded collapsed"
+        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="false"
+        >
+        風格
+      </button>
+
+      <div class="collapse" id="style-collapse">
+        <ul class="list-unstyled fw-normal pb-1 small">
+          <li><a href="/docs/style/accessibility/" class="d-inline-flex align-items-center rounded"
+              >無障礙</a></li>
+          <li><a href="/docs/style/color/" class="d-inline-flex align-items-center rounded"
+              >顏色</a></li>
+          <li><a href="/docs/style/layout/" class="d-inline-flex align-items-center rounded"
+              >版面配置</a></li>
+          <li><a href="/docs/style/typography/" class="d-inline-flex align-items-center rounded"
+              >文字屬性</a></li>
+          <li><a href="/docs/style/spacing/" class="d-inline-flex align-items-center rounded"
+              >間距</a></li>
+        </ul>
       </div>
+    </li>
+    <li class="mb-1">
+      <button class="btn d-inline-flex align-items-center rounded"
+        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="true"
+         aria-current="true" >
+        元件
+      </button>
+
+      <div class="collapse show" id="components-collapse">
+        <ul class="list-unstyled fw-normal pb-1 small">
+          <li><a href="/docs/components/header/" class="d-inline-flex align-items-center rounded active"
+               aria-current="page" >頁首</a></li>
+          <li><a href="/docs/components/card/" class="d-inline-flex align-items-center rounded"
+              >卡片</a></li>
+          <li><a href="/docs/components/list/" class="d-inline-flex align-items-center rounded"
+              >列表</a></li>
+          <li><a href="/docs/components/accordion/" class="d-inline-flex align-items-center rounded"
+              >手風琴</a></li>
+          <li><a href="/docs/components/sidebar/" class="d-inline-flex align-items-center rounded"
+              >側邊欄</a></li>
+          <li><a href="/docs/components/select/" class="d-inline-flex align-items-center rounded"
+              >下拉式選單</a></li>
+          <li><a href="/docs/components/dropdown/" class="d-inline-flex align-items-center rounded"
+              >導覽列下拉選單</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+  </aside>
+
+  <main class="bd-main order-1">
+    <div class="bd-intro ps-lg-4">
+      <div class="d-md-flex flex-md-row align-items-left justify-content-between">
+        
+        <h1 id="content" style="font-weight: 900;">頁首 Header</h1>
+      </div>
+      <h2 style="margin-top: 0.5rem;">頁首是一個網站的第一印象，一個好的頁首能提供使用者一目瞭然的整理，幫助使用者對網站的架構與規模有概念。清楚的架構能夠幫助使用者辨認出所在位置，並且被迅速地引導到達特定頁面。另一方面，頁首也扮演者當使用者迷路時可以總是找到並回到的地方。</h2>
+      <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
+
+      <hr>
     </div>
-  </header>
 
-  <main class="bd-content order-1 py-5" id="content">
-    <div class="container">
+    
+    <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+      <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#頁首易用性-header-usibility">頁首易用性 Header usibility</a>
+          <ul>
+            <li><a href="#基本頁首-base-header">基本頁首 Base header</a></li>
+            <li><a href="#變形-variation">變形 Variation</a></li>
+            <li><a href="#加搜尋列-with-search-bar">加搜尋列 with search bar</a></li>
+            <li><a href="#加連結與下拉選單-with-links-dropdown-list">加連結與下拉選單 with links dropdown list</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+
+    <div class="bd-content ps-lg-4">
       
 
-      
+      <h3 id="頁首易用性-header-usibility">頁首易用性 Header usibility</h3>
+<p>列出所有網站中的重要部分，放在頁首的連結區。
+若是大型網站，使用下拉選單收納較低層級的連結，輔助預覽。
+如果較低層級的連結之間彼此相關，且使用者必須在這些連結之間頻繁切換，請考慮使用側邊導航。
+使用簡短的文字，避免使用一般人難以理解的行話或術語。
+避免組織結構導航。不要在頁首直接列出您的機構的組織結構。相反地，根據由使用者最常用服務、最常點的連結來建構您的頁首。
+只將最重要的部分放在頁首。組織結構、服務一覽或是使用者較不常用但也存在的服務建議放在頁尾。
+強烈建議透過使用者訪談與測試與使用者一起研究頁首區塊的內容。</p>
+<p>此設計系統將頁首可以分為三個區塊，每一區塊應有其適合放置的元素。
+<strong>頁首主列</strong> 最常見的頁首主列為 Logo 放置處。頁首應只放重要的服務項目，其他使用者較不常用的服務應一律放在頁尾。
+<strong>頁首副列</strong> 當網站或是機關的服務項目較多時，建議將主列空出，並將服務項目分類、放到頁首副列。
+<strong>頁首上緣</strong> 當需要放置操控整個網站的控制連結（例如語言切換、文字大小調整）時，可以自行加進頁首上緣。</p>
+<h4 id="基本頁首-base-header">基本頁首 Base header</h4>
+<div class="bd-example">
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="50" height="40" class="d-inline-block">
+      標題
+    </a>
+  </div>
+</nav>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar navbar-light bg-light&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-fluid&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar-brand&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/docs/5.1/assets/brand/bootstrap-logo.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;50&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;40&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-inline-block&#34;</span><span class="p">&gt;</span>
+      標題
+    <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="變形-variation">變形 Variation</h4>
+<h4 id="加搜尋列-with-search-bar">加搜尋列 with search bar</h4>
+<div class="bd-example">
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="50" height="40" class="d-inline-block">
+      標題
+    </a>
+    <form class="d-flex">
+      <input type="text" class="form-control" placeholder="" aria-label="Username">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+    </form>
+  </div>
+</nav>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar navbar-light bg-light&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-fluid&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar-brand&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/docs/5.1/assets/brand/bootstrap-logo.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;50&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;40&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-inline-block&#34;</span><span class="p">&gt;</span>
+      標題
+    <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Username&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group-text&#34;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-search&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="加連結與下拉選單-with-links-dropdown-list">加連結與下拉選單 with links dropdown list</h4>
+<div class="bd-example">
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="50" height="40" class="d-inline-block">
+      標題
+    </a>
+  </div>
+  <div class="dropdown">
+    <button class="dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      服務項目名稱
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
+      <li><a class="dropdown-item" href="#">寬度隨最長的內容文字調整</a></li>
+      <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
+      <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
+      <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
+    </ul>
+  </div>
+</nav>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar navbar-light bg-light&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-fluid&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar-brand&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/docs/5.1/assets/brand/bootstrap-logo.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;50&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;40&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-inline-block&#34;</span><span class="p">&gt;</span>
+      標題
+    <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-btn&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dropdownMenuButton1&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;dropdown&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span><span class="p">&gt;</span>
+      服務項目名稱
+    <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-menu&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;dropdownMenuButton1&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>服務項目子項目<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>寬度隨最長的內容文字調整<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>服務項目子項目<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>服務項目子項目<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>服務項目子項目<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span></code></pre></div>
+
     </div>
   </main>
+</div>
 
 
     <footer class="bd-footer py-5 mt-5 bg-light">
@@ -196,12 +376,12 @@
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 
 <script src="/docs/5.1/assets/js/docs.min.js"></script>
 
 
     
-    
+
   </body>
 </html>

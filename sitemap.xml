@@ -4,9 +4,6 @@
     <loc>https://getbootstrap.com/docs/components/footer/</loc>
   </url>
   <url>
-    <loc>https://getbootstrap.com/docs/components/header/</loc>
-  </url>
-  <url>
     <loc>https://getbootstrap.com/docs/5.1/about/overview/</loc>
   </url>
   <url>
@@ -449,6 +446,9 @@
   </url>
   <url>
     <loc>https://getbootstrap.com/docs/style/spacing/</loc>
+  </url>
+  <url>
+    <loc>https://getbootstrap.com/docs/components/header/</loc>
   </url>
   <url>
     <loc>https://getbootstrap.com/docs/style/color/</loc>
