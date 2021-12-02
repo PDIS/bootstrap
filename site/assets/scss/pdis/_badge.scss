@@ -1,5 +1,4 @@
-.pdis-badge {
-  @extend .badge;
+.badge {
   margin: 0 0.25rem;
   padding: 0.5rem;
   &:first-child {
@@ -10,11 +9,6 @@
   }
 }
 
-.pdis-badge-collections {
+.badge-collections {
   margin-bottom: 1rem;
-}
-
-.gov-badge {
-  @extend .badge;
-  @extend .bg-secondary-light;
 }

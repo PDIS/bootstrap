@@ -41,7 +41,7 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
       <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
       <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
@@ -51,7 +51,7 @@ toc: true
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item">標題</li>
       <li class="list-item">標題</li>
       <li class="list-item">標題</li>
@@ -69,7 +69,7 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
       <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
       <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
@@ -79,7 +79,7 @@ toc: true
 <br/>
 <div class="row">
   <div class="col-8 col-lg-6">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item-bottom-border">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
       <li class="list-item-bottom-border">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
       <li class="list-item-bottom-border">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
@@ -97,12 +97,12 @@ toc: true
 
 <div class="row">
   <div class="col-lg-6">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
     <div class="col-lg-6">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item">標題<a href="#" class="list-item-link">副標題或內文簡單闡述</a></li>
     </ul>
   </div>
@@ -110,12 +110,12 @@ toc: true
 <br/>
 <div class="row">
   <div class="col-lg-6">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item-ordered">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
   <div class="col-lg-6">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item-ordered">標題<a href="#" class="list-item-link">副標題或內文簡單闡述</a></li>
     </ul>
   </div>
@@ -123,12 +123,12 @@ toc: true
 <br/>
 <div class="row">
   <div class="col-lg-6">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item-twoline">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
   <div class="col-lg-6">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item-twoline">標題<a href="#" class="list-item-link">副標題或內文簡單闡述</a></li>
     </ul>
   </div>
@@ -144,7 +144,7 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
@@ -152,7 +152,7 @@ toc: true
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item-twoline">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
@@ -168,7 +168,7 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
@@ -176,7 +176,7 @@ toc: true
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item-ordered">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ul>
   </div>
@@ -192,7 +192,7 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item-twoline">課程代碼<p class="list-item-subheader">PCENTER110100901</p></li>
     </ul>
   </div>
@@ -200,7 +200,7 @@ toc: true
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item-twoline">歡迎來部落走走 交通部觀光局邀您來當「部落客」！
         <p class="list-item-subheader truncate">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落觀光嘉年華」</p>
       </li>
@@ -218,7 +218,7 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item"><i class="bi bi-check-circle-fill text-success icon"></i>請攜帶健保卡</li>
       <li class="list-item"><i class="bi bi-check-circle-fill text-success icon"></i>請配戴口罩</li>
       <li class="list-item"><i class="bi bi-check-circle-fill text-success icon"></i>請與工作人員保持兩公尺距離</li>
@@ -229,7 +229,7 @@ toc: true
 <br />
 <div class="row">
   <div class="col">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item"><i class="bi bi-download"></i><a href="#">下載說明文件</a></li>
       <li class="list-item"><i class="bi bi-download"></i><a href="#">下載議程時間表</a></li>
       <li class="list-item"><i class="bi bi-download"></i><a href="#">下載圖檔</a></li>
@@ -240,7 +240,7 @@ toc: true
 <br />
 <div class="row">
   <div class="col-lg-8">
-    <ul class="pdis-list d-flex justify-content-between">
+    <ul class="list d-flex justify-content-between">
       <li class="list-item"><i class="bi bi-square-fill text-pink-300"></i>15-18歲</li>
       <li class="list-item"><i class="bi bi-square-fill text-blue-300"></i>19-30歲</li>
       <li class="list-item"><i class="bi bi-square-fill text-purple-300"></i>31 歲（含）以上</li>
@@ -258,7 +258,7 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ol class="pdis-list">
+    <ol class="list">
       <li class="list-item-ordered">標題</li>
       <li class="list-item-ordered">標題</li>
       <li class="list-item-ordered">標題</li>
@@ -268,7 +268,7 @@ toc: true
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="pdis-list">
+    <ul class="list">
       <li class="list-item-ordered">標題</li>
       <li class="list-item-ordered">標題</li>
       <li class="list-item-ordered">標題</li>
@@ -286,49 +286,49 @@ toc: true
 
 <div class="row">
   <div class="col-lg-4">
-    <ol class="pdis-list trad-chinese-informal">
+    <ol class="list trad-chinese-informal">
       <li class="list-item-ordered">標題</li>
       <li class="list-item-ordered">標題</li>
       <li class="list-item-ordered">標題</li>
     </ol>
   </div>
   <div class="col-lg-4">
-    <ol class="pdis-list" type="A">
+    <ol class="list" type="A">
       <li class="list-item-ordered">標題</li>
       <li class="list-item-ordered">標題</li>
       <li class="list-item-ordered">標題</li>
     </ol>
   </div>
   <div class="col-lg-4">
-    <ol class="pdis-list">
+    <ol class="list">
       <li class="list-item-ordered">標題</li>
       <li class="list-item-ordered">標題</li>
       <li class="list-item-ordered">標題</li>
-    </ol>
-  </div>
-</div>
-<br/>
-<div class="row">
-  <div class="col-lg-4">
-    <ol class="pdis-list trad-chinese-informal">
-      <li class="list-item-twoline-ordered">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
-    </ol>
-  </div>
-  <div class="col-lg-4">
-    <ol class="pdis-list" type="A">
-      <li class="list-item-twoline-ordered">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
-    </ol>
-  </div>
-  <div class="col-lg-4">
-    <ol class="pdis-list">
-      <li class="list-item-twoline-ordered">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
     </ol>
   </div>
 </div>
 <br/>
 <div class="row">
   <div class="col-lg-4">
-    <ol class="pdis-list trad-chinese-formal">
+    <ol class="list trad-chinese-informal">
+      <li class="list-item-twoline-ordered">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
+    </ol>
+  </div>
+  <div class="col-lg-4">
+    <ol class="list" type="A">
+      <li class="list-item-twoline-ordered">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
+    </ol>
+  </div>
+  <div class="col-lg-4">
+    <ol class="list">
+      <li class="list-item-twoline-ordered">標題<p class="list-item-subheader">副標題或內文簡單闡述</p></li>
+    </ol>
+  </div>
+</div>
+<br/>
+<div class="row">
+  <div class="col-lg-4">
+    <ol class="list trad-chinese-formal">
       <li class="list-item-ordered">標題</li>
       <ol class="trad-chinese-informal">
         <li class="list-item-ordered">標題</li>
@@ -336,7 +336,7 @@ toc: true
     </ol>
   </div>
   <div class="col-lg-4">
-    <ol class="pdis-list" type="A">
+    <ol class="list" type="A">
       <li class="list-item-ordered">標題</li>
       <ol type="a" class="nested-list">
         <li class="list-item-ordered">標題</li>
@@ -344,7 +344,7 @@ toc: true
     </ol>
   </div>
   <div class="col-lg-4">
-    <ol class="pdis-list">
+    <ol class="list">
       <li class="list-item-ordered">標題</li>
       <ol class="nested-list">
         <li class="list-item-ordered">標題</li>
@@ -363,7 +363,7 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="pdis-time-list">
+    <ul class="time-list">
       <li class="list-item">
         <div class="list-item-date">2021-10-25</div>
         <div class="list-item-content">
@@ -376,7 +376,7 @@ toc: true
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="pdis-time-list">
+    <ul class="time-list">
       <li class="list-item">
         <div class="list-item-date">2021-10-25</div>
         <div class="list-item-content">
@@ -390,7 +390,7 @@ toc: true
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="pdis-time-list">
+    <ul class="time-list">
       <li class="list-item-multiline">
         <div class="list-item-date">2021-10-25</div>
         <div class="list-item-content">
@@ -412,7 +412,7 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="pdis-time-list">
+    <ul class="time-list">
       <li class="list-item">
         <div class="list-item-date">2021-10-25</div>
         <span class="list-item-badge bg-red-400">Primary</span>
@@ -426,7 +426,7 @@ toc: true
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="pdis-time-list">
+    <ul class="time-list">
       <li class="list-item d-flex justify-content-between">
         <div class="list-item-date">2021-10-25</div>
         <div class="list-item-content">
@@ -440,7 +440,7 @@ toc: true
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="pdis-time-list">
+    <ul class="time-list">
       <li class="list-item-multiline">
         <div class="list-item-date">2021-10-25<span class="list-item-date-badge bg-red-400">Primary</span></div>
         <div class="list-item-content">
@@ -462,7 +462,7 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="pdis-time-list">
+    <ul class="time-list">
       <li class="list-item">
         <div class="list-item-date">2021-10-25</div>
         <div class="list-item-content">
@@ -475,7 +475,7 @@ toc: true
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="pdis-time-list">
+    <ul class="time-list">
       <li class="list-item d-flex justify-content-between">
         <div class="list-item-content">
           歡迎來部落走走 交通部觀光局邀您來當「部落客」！
@@ -496,7 +496,7 @@ toc: true
 
 <div class="row">
   <div class="col">
-    <ul class="pdis-time-list">
+    <ul class="time-list">
       <li class="list-item d-flex justify-content-between">
         <div class="list-item-content">
           歡迎來部落走走 交通部觀光局邀您來當「部落客」！
@@ -509,7 +509,7 @@ toc: true
 <br/>
 <div class="row">
   <div class="col">
-    <ul class="pdis-time-list">
+    <ul class="time-list">
       <li class="list-item-multiline">
         <div class="list-item-content">
           歡迎來部落走走 交通部觀光局邀您來當「部落客」！

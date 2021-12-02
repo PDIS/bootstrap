@@ -49,7 +49,7 @@ toc: true
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
-    <div class="pdis-card">
+    <div class="card">
     <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
@@ -69,7 +69,7 @@ toc: true
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
-    <div class="pdis-card">
+    <div class="card">
       <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
@@ -78,7 +78,7 @@ toc: true
     </div>
   </div>
   <div class="col-md-4">
-    <div class="pdis-card-text-center">
+    <div class="card-text-center">
       <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
@@ -98,7 +98,7 @@ toc: true
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
-    <div class="pdis-card">
+    <div class="card">
       <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
@@ -107,7 +107,7 @@ toc: true
     </div>
   </div>
   <div class="col-md-4">
-    <div class="pdis-card">
+    <div class="card">
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
         <p class="card-text">此部分為卡片之內文。</p>
@@ -128,7 +128,7 @@ toc: true
 <div class="container" style="padding: 1rem; background: #F8F9FA">
   <div class="row d-flex justify-content-center">
     <div class="col-md-4">
-      <div class="pdis-card-no-border">
+      <div class="card-borderless">
         <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
         <div class="card-body">
           <h5 class="card-title">標題文字</h5>
@@ -137,7 +137,7 @@ toc: true
       </div>
     </div>
       <div class="col-md-4">
-      <div class="pdis-card">
+      <div class="card">
         <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
         <div class="card-body">
           <h5 class="card-title">標題文字</h5>
@@ -146,7 +146,7 @@ toc: true
       </div>
     </div>
       <div class="col-md-4">
-      <div class="pdis-card-shadow">
+      <div class="card-shadow">
         <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
         <div class="card-body">
           <h5 class="card-title">標題文字</h5>
@@ -167,7 +167,7 @@ toc: true
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
-    <div class="pdis-card">
+    <div class="card">
       <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
@@ -177,7 +177,7 @@ toc: true
     </div>
   </div>
     <div class="col-md-4">
-    <div class="pdis-card-text-center">
+    <div class="card-text-center">
       <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
@@ -198,7 +198,7 @@ toc: true
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
-    <div class="pdis-card">
+    <div class="card">
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-baseline">
         <h5 class="card-title">
@@ -224,14 +224,14 @@ toc: true
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-5">
-    <div class="pdis-card">
+    <div class="card">
       <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
       <div class="card-body">
-        <div class="pdis-badge-collections">
-          <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
-          <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
-          <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
-          <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
+        <div class="badge-collections">
+          <span class="badge bg-secondary-light text-dark">標籤</span>
+          <span class="badge bg-secondary-light text-dark">標籤</span>
+          <span class="badge bg-secondary-light text-dark">標籤</span>
+          <span class="badge bg-secondary-light text-dark">標籤</span>
         </div>
         <p class="card-date">110-10-31</p>
         <h5 class="card-title">標題文字</h5>
@@ -241,13 +241,13 @@ toc: true
     </div>
   </div>
   <div class="col-md-5">
-    <div class="pdis-card">
+    <div class="card">
       <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <div class="d-flex justify-content-between">
           <p class="card-date">110-10-31</p>
           <div>
-            <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
+            <span class="badge bg-secondary-light text-dark">標籤</span>
           </div>
         </div>
         <h5 class="card-title">標題文字</h5>
@@ -268,14 +268,14 @@ toc: true
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-6">
-    <div class="pdis-card">
+    <div class="card">
       <div class="card-body">
         <div class="d-flex justify-content-between">
           <p class="card-date">110-10-31</p>
-          <div class="pdis-badge-collections">
-            <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
-            <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
-            <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
+          <div class="badge-collections">
+            <span class="badge bg-secondary-light text-dark">標籤</span>
+            <span class="badge bg-secondary-light text-dark">標籤</span>
+            <span class="badge bg-secondary-light text-dark">標籤</span>
           </div>
         </div>
         <h5 class="card-title">標題文字</h5>
@@ -288,7 +288,7 @@ toc: true
     </div>
   </div>
   <div class="col-md-6">
-    <div class="pdis-card">
+    <div class="card">
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-baseline">
         <h5 class="card-title">
@@ -304,7 +304,7 @@ toc: true
         <div class="d-flex justify-content-between">
           <p class="card-date">110-10-31</p>
           <div>
-            <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
+            <span class="badge bg-secondary-light text-dark">標籤</span>
           </div>
         </div>
       </div>
@@ -322,7 +322,7 @@ toc: true
 
 <div class="row d-flex justify-content-center">
   <div class="col">
-    <div class="pdis-card">
+    <div class="card">
       <div class="row g-0 align-items-center">
         <div class="col-md-4">
           <img src="/docs/5.1/assets/img/bg-card-crop.png" class="img-fluid rounded-start" alt="...">  
@@ -348,7 +348,7 @@ toc: true
 
 <div class="row d-flex justify-content-center">
   <div class="col">
-    <div class="pdis-card">
+    <div class="card">
       <div class="row g-0 align-items-center">
         <div class="col-md-4">
           <img src="/docs/5.1/assets/img/bg-card-crop.png" class="img-fluid rounded-start" alt="..."> 
@@ -358,8 +358,8 @@ toc: true
             <div class="d-flex justify-content-between">
               <p class="card-date">110-10-31</p>
               <div>
-                <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
-                <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
+                <span class="badge bg-secondary-light text-dark">標籤</span>
+                <span class="badge bg-secondary-light text-dark">標籤</span>
               </div>
             </div>
             <h5 class="card-title">標題文字</h5>
@@ -374,7 +374,7 @@ toc: true
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col">
-    <div class="pdis-card">
+    <div class="card">
       <div class="row g-0 align-items-center">
         <div class="col-md-4">
           <img src="/docs/5.1/assets/img/bg-card-crop.png" class="img-fluid rounded-start" alt="..."> 
@@ -390,11 +390,11 @@ toc: true
               </button>
             </div>
             <p class="card-text">此部分為卡片之內文。</p>
-            <div class="pdis-badge-collections">
-              <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
-              <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
-              <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
-              <span class="pdis-badge bg-secondary-light text-dark">標籤</span>
+            <div class="badge-collections">
+              <span class="badge bg-secondary-light text-dark">標籤</span>
+              <span class="badge bg-secondary-light text-dark">標籤</span>
+              <span class="badge bg-secondary-light text-dark">標籤</span>
+              <span class="badge bg-secondary-light text-dark">標籤</span>
             </div>
             <p class="card-date">110-10-31</p>
           </div>
@@ -414,7 +414,7 @@ toc: true
 
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="pdis-text-card text-black bg-white">
+    <div class="text-card text-black bg-white">
       <div class="card-body">
         <h4 class="card-title">服務項目</h4>
         <p class="card-text">此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
@@ -425,7 +425,7 @@ toc: true
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="pdis-text-card text-white bg-primary-dark">
+    <div class="text-card text-white bg-primary-dark">
       <div class="card-body">
         <h4 class="card-title">服務項目</h4>
         <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
@@ -436,7 +436,7 @@ toc: true
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="pdis-text-card text-white card-bg-img">
+    <div class="text-card text-white card-bg-img">
       <div class="card-body">
         <h4 class="card-title">服務項目</h4>
         <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
@@ -447,7 +447,7 @@ toc: true
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="pdis-text-card">
+    <div class="text-card">
       <div class="card-header">服務項目類別</div>
       <div class="card-body text-black bg-white">
         <h4 class="card-title">服務項目</h4>
@@ -467,7 +467,7 @@ toc: true
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-5">
-    <div class="pdis-list-card">
+    <div class="list-card">
       <div class="card-header">服務項目類別</div>
       <div class="card-body">
         <h4 class="card-title">標題</h4>
@@ -476,7 +476,7 @@ toc: true
         <p class="card-text">2. 文字列表</p>
         <a href="#" class="btn btn-primary">前往報名</a>
       </div>
-      <ul class="list-group list-group-flush">
+      <ul class="list-group">
         <li class="list-group-item"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
         <li class="list-group-item"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
         <li class="list-group-item"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
@@ -485,7 +485,7 @@ toc: true
     </div>
   </div>
   <div class="col-md-5">
-    <div class="pdis-list-card">
+    <div class="list-card">
       <div class="card-header">服務項目類別</div>
       <div class="card-body card-bg-gary">
         <h4 class="card-title">標題</h4>
@@ -494,11 +494,11 @@ toc: true
         <p class="card-text">2. 文字列表</p>
         <a href="#" class="btn btn-primary">前往報名</a>
       </div>
-      <ul class="list-group list-group-flush border-0">
-        <li class="list-group-item border-0"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item border-0"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item border-0"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item border-0 list-group-end"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
+      <ul class="list-group-borderless">
+        <li class="list-group-item-borderless"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item-borderless"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item-borderless"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item-borderless"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
       </ul>
     </div>
   </div>
@@ -506,7 +506,7 @@ toc: true
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-md-5">
-    <div class="pdis-list-card">
+    <div class="list-card">
       <div class="card-body">
         <h4 class="card-title">標題</h4>
         <p class="card-text">卡片內文或補充說明。</p>
@@ -514,7 +514,7 @@ toc: true
         <p class="card-text">2. 文字列表</p>
         <a href="#" class="btn btn-primary">前往報名</a>
       </div>
-      <ul class="list-group list-group-flush">
+      <ul class="list-group">
         <li class="list-group-item">列表</li>
         <li class="list-group-item">列表</li>
         <li class="list-group-item">列表</li>
@@ -524,7 +524,7 @@ toc: true
     </div>
   </div>
   <div class="col-md-5">
-    <div class="pdis-list-card">
+    <div class="list-card">
       <div class="card-header">服務項目類別</div>
       <img src="/docs/5.1/assets/img/bg-list-card.png" class="card-img-top" alt="...">  
       <div class="card-body card-bg-gary">
@@ -534,12 +534,12 @@ toc: true
         <p class="card-text">2. 文字列表</p>
         <a href="#" class="btn btn-primary">前往報名</a>
       </div>
-      <ul class="list-group list-group-flush border-0">
-        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
-        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
-        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
-        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
-        <li class="list-group-item border-0"><a href="#" class="card-extra-link">額外連結</a><a href="#" class="card-extra-link">額外連結</a><a href="#" class="card-extra-link">額外連結</a></li>
+      <ul class="list-group-borderless">
+        <li class="list-group-item-borderless"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
+        <li class="list-group-item-borderless"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
+        <li class="list-group-item-borderless"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
+        <li class="list-group-item-borderless"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
+        <li class="list-group-item-borderless"><a href="#" class="card-extra-link">額外連結</a><a href="#" class="card-extra-link">額外連結</a><a href="#" class="card-extra-link">額外連結</a></li>
       </ul>
     </div>
   </div>

@@ -65,8 +65,8 @@ $enable-cssgrid: true; // stylelint-disable-line scss/dollar-variable-default
 @import "scss/bootstrap.scss";
 
 @import "./pdis/general";
-@import "./pdis/pdis-card";
-@import "./pdis/pdis-badge";
-@import "./pdis/pdis-list";
-@import "./pdis/pdis-accordion";
-@import "./pdis/pdis-sidebar";
+@import "./pdis/card";
+@import "./pdis/badge";
+@import "./pdis/list";
+@import "./pdis/accordion";
+@import "./pdis/sidebar";

@@ -1,54 +1,4 @@
-.list-group-item {
-  padding: 0.75rem 1.5rem;
-}
-
-.list-group-end {
-  margin-bottom: 0.5rem;
-}
-
-.list-group-item-subheader {
-  display: inline;
-  margin-left: 0.5rem;
-  color: #6b6b6b;
-}
-
-.list-group-item-no-border {
-  border: 0;
-  background-color: #f8f9fa;
-}
-
-.list-group-item-gray {
-  background-color: #f8f9fa;
-}
-
-.list-group-item-link {
-  margin-left: 0.5rem;
-}
-
-.list-group-bullet {
-  list-style-type: disc !important;
-  padding-left: 1em !important;
-  margin-left: 1em;
-}
-
-.list-group-item-bullet::before {
-  content: "•";
-  margin-right: 0.25rem;
-}
-
-.list-group-item-newline-subheader {
-  color: #6b6b6b;
-}
-
-.list-group-item-newline-link {
-  display: block;
-}
-
-.list-group-icon {
-  @extend .icon;
-}
-
-.pdis-list {
+.list {
   .list-item {
     display: block;
     margin: 0;
@@ -98,8 +48,8 @@
   }
 }
 
-.pdis-time-list {
-  @extend .pdis-list;
+.time-list {
+  @extend .list;
   .list-item {
     display: flex;
   }
@@ -124,13 +74,13 @@
   }
 
   .list-item-badge {
-    @extend .pdis-badge;
+    @extend .badge;
     margin: 0;
     margin-right: 0.5rem;
   }
 
   .list-item-date-badge {
-    @extend .pdis-badge;
+    @extend .badge;
     margin-left: 0.5rem !important;
   }
 }

@@ -1,6 +1,4 @@
-.pdis-card {
-  @extend .card;
-
+.card {
   .card-header {
     background-color: $gray-400;
     font-weight: 500;
@@ -29,23 +27,23 @@
   }
 }
 
-.pdis-card-text-center {
-  @extend .pdis-card;
+.card-text-center {
+  @extend .card;
   @extend .text-center;
 }
 
-.pdis-card-no-border {
-  @extend .pdis-card;
+.card-borderless {
+  @extend .card;
   @extend .border-0;
 }
 
-.pdis-card-shadow {
-  @extend .pdis-card;
+.card-shadow {
+  @extend .card;
   @extend .shadow-sm;
 }
 
-.pdis-text-card {
-  @extend .pdis-card;
+.text-card {
+  @extend .card;
   @extend .border-dark;
 
   .card-body {
@@ -67,8 +65,8 @@
   background-image: url("../img/bg-text-card.png");
 }
 
-.pdis-list-card {
-  @extend .pdis-card;
+.list-card {
+  @extend .card;
 
   .card-body {
     padding: 1.5rem;
@@ -93,5 +91,34 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .list-group {
+    @extend .list-group-flush;
+
+    .list-group-item {
+      padding: 0.75rem 1.5rem;
+    }
+
+    .list-group-item-subheader {
+      display: inline;
+      margin-left: 0.5rem;
+      color: #6b6b6b;
+    }
+    
+    .list-group-item-borderless {
+      @extend .list-group-item;
+      @extend .border-0;
+
+      &:last-child {
+        margin-bottom: 0.5rem;
+      }
+    }
+  
+  }
+
+  .list-group-borderless {
+    @extend .list-group;
+    @extend .border-0;
   }
 }
