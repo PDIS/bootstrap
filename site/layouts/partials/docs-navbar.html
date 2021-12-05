@@ -12,26 +12,12 @@
     <div class="collapse navbar-collapse" id="bdNavbar">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if .IsHome }} active" aria-current="page{{ end }}" href="/"
-            onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+          <a class="nav-link p-2{{ if .IsHome }} active" aria-current="page{{ end }}" href="/">Home</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
           <a class="nav-link p-2{{ if eq .Page.Layout "docs" }} active" aria-current="true{{ end }}"
-            href="/docs/style/accessibility"
-            onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">文件</a>
+            href="/docs/">文件</a>
         </li>
-        <!--   <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if eq .Page.Title "Examples" }} active" aria-current="true{{ end }}" href="/docs/{{ .Site.Params.docs_version }}/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
-        </li>
-        <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2" href="{{ .Site.Params.icons }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');" target="_blank" rel="noopener">Icons</a>
-        </li>
-        <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2" href="{{ .Site.Params.themes }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Themes</a>
-        </li>
-        <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2" href="{{ .Site.Params.blog }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
-        </li> -->
       </ul>
 
       <hr class="d-md-none text-white-50">
