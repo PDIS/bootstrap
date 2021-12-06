@@ -1,6 +1,6 @@
-languageCode:           "en"
-title:                  "Bootstrap"
-baseURL:                "https://getbootstrap.com"
+languageCode:           "zh-tw"
+title:                  "PDIS Design System"
+baseURL:                "https://design.pdis.tw"
 enableInlineShortcodes: true
 
 markup:
@@ -51,8 +51,8 @@ params:
   current_ruby_version: "5.1.3"
   docs_version:         "5.1"
   rfs_version:          "v9.0.6"
-  github_org:           "https://github.com/twbs"
-  repo:                 "https://github.com/twbs/bootstrap"
+  github_org:           "https://github.com/PDIS"
+  repo:                 "https://github.com/PDIS/design-system"
   twitter:              "getbootstrap"
   slack:                "https://bootstrap-slack.herokuapp.com/"
   opencollective:       "https://opencollective.com/bootstrap"
