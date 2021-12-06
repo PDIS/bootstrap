@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="做版面配置時，若參考同一套基準，可以幫助我們設計具有一致性的視覺體驗的介面。以下為此設計系統關於版面配置的建議，作為數位系統製作與設計時的參考。">
+<meta name="description" content="行動裝置上的主要導覽">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.1">
 
-<title>版面配置 (Layout) · Bootstrap v5.1</title>
+<title>行動導覽 Mobile Navigation · Bootstrap v5.1</title>
 
-<link rel="canonical" href="https://getbootstrap.com/docs/style/layout/">
+<link rel="canonical" href="https://getbootstrap.com/docs/components/mobilenavigation/">
 
 
 
@@ -39,14 +39,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="版面配置 (Layout)">
-<meta name="twitter:description" content="做版面配置時，若參考同一套基準，可以幫助我們設計具有一致性的視覺體驗的介面。以下為此設計系統關於版面配置的建議，作為數位系統製作與設計時的參考。">
+<meta name="twitter:title" content="行動導覽 Mobile Navigation">
+<meta name="twitter:description" content="行動裝置上的主要導覽">
 <meta name="twitter:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://getbootstrap.com/docs/style/layout/">
-<meta property="og:title" content="版面配置 (Layout)">
-<meta property="og:description" content="做版面配置時，若參考同一套基準，可以幫助我們設計具有一致性的視覺體驗的介面。以下為此設計系統關於版面配置的建議，作為數位系統製作與設計時的參考。">
+<meta property="og:url" content="https://getbootstrap.com/docs/components/mobilenavigation/">
+<meta property="og:title" content="行動導覽 Mobile Navigation">
+<meta property="og:description" content="行動裝置上的主要導覽">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
@@ -116,20 +116,20 @@
   <aside class="bd-sidebar">
     <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
     <li class="mb-1">
-      <button class="btn d-inline-flex align-items-center rounded"
-        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="true"
-         aria-current="true" >
+      <button class="btn d-inline-flex align-items-center rounded collapsed"
+        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="false"
+        >
         風格
       </button>
 
-      <div class="collapse show" id="style-collapse">
+      <div class="collapse" id="style-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
           <li><a href="/docs/style/accessibility/" class="d-inline-flex align-items-center rounded"
               >無障礙</a></li>
           <li><a href="/docs/style/color/" class="d-inline-flex align-items-center rounded"
               >顏色</a></li>
-          <li><a href="/docs/style/layout/" class="d-inline-flex align-items-center rounded active"
-               aria-current="page" >版面配置</a></li>
+          <li><a href="/docs/style/layout/" class="d-inline-flex align-items-center rounded"
+              >版面配置</a></li>
           <li><a href="/docs/style/typography/" class="d-inline-flex align-items-center rounded"
               >文字屬性</a></li>
           <li><a href="/docs/style/spacing/" class="d-inline-flex align-items-center rounded"
@@ -138,13 +138,13 @@
       </div>
     </li>
     <li class="mb-1">
-      <button class="btn d-inline-flex align-items-center rounded collapsed"
-        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false"
-        >
+      <button class="btn d-inline-flex align-items-center rounded"
+        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="true"
+         aria-current="true" >
         元件
       </button>
 
-      <div class="collapse" id="components-collapse">
+      <div class="collapse show" id="components-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
           <li><a href="/docs/components/header/" class="d-inline-flex align-items-center rounded"
               >頁首</a></li>
@@ -160,8 +160,8 @@
               >下拉式選單</a></li>
           <li><a href="/docs/components/dropdown/" class="d-inline-flex align-items-center rounded"
               >導覽列下拉選單</a></li>
-          <li><a href="/docs/components/mobilenavigation/" class="d-inline-flex align-items-center rounded"
-              >行動導覽</a></li>
+          <li><a href="/docs/components/mobilenavigation/" class="d-inline-flex align-items-center rounded active"
+               aria-current="page" >行動導覽</a></li>
         </ul>
       </div>
     </li>
@@ -174,9 +174,9 @@
     <div class="bd-intro ps-lg-4">
       <div class="d-md-flex flex-md-row align-items-left justify-content-between">
         
-        <h1 id="content" style="font-weight: 900;">版面配置 (Layout)</h1>
+        <h1 id="content" style="font-weight: 900;">行動導覽 Mobile Navigation</h1>
       </div>
-      <h2 style="margin-top: 0.5rem;">做版面配置時，若參考同一套基準，可以幫助我們設計具有一致性的視覺體驗的介面。以下為此設計系統關於版面配置的建議，作為數位系統製作與設計時的參考。</h2>
+      <h2 style="margin-top: 0.5rem;">行動裝置上的主要導覽</h2>
       <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
 
       <hr>
@@ -186,37 +186,71 @@
     <div class="bd-content ps-lg-4">
       
 
-      <h2 id="概述">概述</h2>
-<p>在做版面配置時，建議採用以 4 為倍數的網格與間距系統。在各種螢幕尺寸上，採用同樣以 4 為倍數的參考基準，可以幫助我們設計具有一致性的視覺體驗的介面。</p>
-<h3 id="基本配置">基本配置</h3>
-<p>配置版面時，物件彼此之間的間距可以採用 4 像素 (4px) 或是 8 像素 (8px) 為倍數的間距系統。當在決定比較大規模的版面配置時，建議以 8 像素為基礎的間距系統來思考，而在決定較為細緻的物件內的版面配置時（例如製作按鈕 Button、圖標 Icon 時），建議以 4 像素為基礎思考。</p>
-<h3 id="容器-containers">容器 (Containers)</h3>
-<p>在介面設計上，容器指的是一個可以容納一定範圍所有元件的概念。容器大致上可以分類為兩種：固定容器 (fixed container) 和 流動容器 (fluid container)。若使用固定容器，通常內容物會在延展到一個最大值之後停止延展，而通常這個最大寬度為 1280 px。若使用流動容器，隨著對不同視窗斷點 (break point) 拉伸，容器內的所有物件會延展並且佔滿整個視窗寬度。容器的選用通常會與斷點搭配。一般建議在設計大螢幕的介面使用固定容器，小螢幕則使用流動容器。</p>
-<h4 id="固定容器--流動容器-fixed--fluid-container">固定容器 &amp; 流動容器 (Fixed &amp; Fluid container)</h4>
-<ul>
-<li>
-<p><input checked="" disabled="" type="checkbox"> Fixed Container
-<img class="img-fluid" src="https://i.imgur.com/pIUHJed.png" ></p>
-</li>
-<li>
-<p><input checked="" disabled="" type="checkbox"> Fluid Container
-<img class="img-fluid" src="https://i.imgur.com/3zLdXcQ.png" ></p>
-</li>
-</ul>
-<h2 id="響應式排版-responsive-layout">響應式排版 (Responsive layout)</h2>
-<h3 id="欄位-間隙-外邊距-columns-gutters-margins">欄位, 間隙, 外邊距 (Columns, Gutters, Margins)</h3>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> Columns, Gutters, Margins
-<img class="img-fluid" src="https://i.imgur.com/3ktORVm.png" ></li>
-</ul>
-<h3 id="斷點-breakpoints">斷點 (Breakpoints)</h3>
-<p>斷點用於控制版面配置，在不同的設備或視窗大小進行響應式變化。我們列出以下的斷點作為使用本設計系統時的設計參考。斷點是響應式開發的基礎，一般實作上，我們會使用斷點來控制在特定尺寸視窗或設備上的版面配置。</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> 斷點 (Breakpoints)
-<img class="img-fluid" src="https://i.imgur.com/RTdYjkJ.png" ></li>
-</ul>
-<pre tabindex="0"><code>之後表格再更新，先使用bootstrap的截圖版
-</code></pre>
+      <h3 id="關於行動導覽">關於行動導覽</h3>
+<p>在行動裝置如手機、平板上的空間較一般螢幕少，導覽元件的重要性也相對提高許多。如何在有限的空間內、有限的點擊次數內，協助使用者順利的找到相對應的服務，且不會迷航，即為行動導覽的主要功能與存在目的。</p>
+<h4 id="以服務與資訊出發的資訊架構">以「服務」與「資訊」出發的資訊架構</h4>
+<p>在一般政府機關的網站中，常常會按照組織架構分類服務項目，例如局處 A 提供服務項目 A1, A1, A3, 局處 B 提供項目 B1, B2, B3。在我們的設計系統中，我們相信民眾應該能夠直接、快速、簡便的找到自己想要到達服務，即便是在不需要知道整體組織結構的情況下。特別是在行動裝置上的使用，通常需要提供的是更即時、更直接的服務。
+因此，在我們的設計系統中，歸納出了在政府機關的行動導覽中較常出現的選單名稱：「服務」與「資訊」。「服務」為民眾可以直接進入，有直接需求的服務。這邊我們建議可以超越分組的限制，將所有以民眾的角度出發會常用到的服務列出，例如 A1, B1, A2, A3, B3。實際範例則為：「借還書」、「線上申辦借書證」等服務項目，儘管這兩項服務可能為不同分組負責。「資訊」則為提供民眾做為一般資訊查找用，且請儘量僅列出常用且可以想見會在行動中較長使用的資訊，例如：「圖書館位置」、「開館時間」等等。我們極力建議將機關所欲提供的資訊分為「服務」與「資訊」兩類，從這兩個選項出發，以利使用者能夠直接到達所需服務。</p>
+<h3 id="guidance">Guidance</h3>
+<h4 id="when-to-use-the-mobile-navigation-component">When to use the mobile navigation component</h4>
+<p>行動導覽提供行動裝置上的主要導覽。因為行動裝置上空間較為珍貴，通常不會有太多空間讓次要導覽（如：側邊欄）出現，所以行動導覽本身就是主要的導覽，也常常是唯一的導覽方式。</p>
+<h4 id="when-to-consider-something-else">When to consider something else</h4>
+<p><strong>架構過於繁雜。</strong> 當架構過於繁雜時，建議在製作網站之前先重新檢視資訊架構，刪除不必要在行動裝置上出現的資訊。
+<strong>架構過於簡單。</strong> 當架構過於簡單時，可以省略行動導覽的使用，而直接以單頁滾動的方式呈現資訊。</p>
+<h3 id="component">Component</h3>
+<h4 id="基本款-下拉式行動導覽-vs-側欄式行動導覽">基本款 下拉式行動導覽 vs 側欄式行動導覽</h4>
+<p>依據服務項目的多寡，基本款可以選擇下拉式行動導覽或側欄式行動導覽。下拉式行動導覽適合服務項目少的網站，包含元素有機關名稱、商標 (logo)、選單與搜尋按鈕，互動選單展開後則包含各式機關所屬服務以及語言切換。側欄式行動導覽適合服務項目多的網站，互動選單展開後則包含搜尋功能、語言切換功能以及所有服務項目。一般來說，服務項目七項以下為服務項目少，大於七項則為服務項目多。但機關可以依狀況自行決定，例如件服務項目第一層不足七項，但計算其子項目後大於七項，則仍可以使用側欄式行動導覽。</p>
+<div class="bd-example">
+
+<nav class="navbar bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="50" height="40" class="d-inline-block">
+    標題
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="bi bi-list menu-icon"></i>選單
+  </button>
+  <div class="collapse navbar-collapse" id="navbar1">
+  <div class="container-fluid">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="#">連結</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">連結</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">連結</a>
+      </li>
+    </ul>
+    </div>
+  </div>
+</nav>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar bg-light&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar-brand&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/docs/5.1/assets/brand/bootstrap-logo.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;50&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;40&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-inline-block&#34;</span><span class="p">&gt;</span>
+    標題
+  <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar-toggler&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#navbar1&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;navbar1&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Toggle navigation&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-list menu-icon&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>選單
+  <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;collapse navbar-collapse&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;navbar1&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-fluid&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;navbar-nav ms-auto mb-2 mb-lg-0&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-link&#34;</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;page&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-link&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;nav-link&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>連結<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span></code></pre></div>
+
     </div>
   </main>
 </div>
