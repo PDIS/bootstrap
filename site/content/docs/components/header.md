@@ -60,24 +60,35 @@ toc: true
 
 {{< example >}}
 
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="50" height="40" class="d-inline-block">
       標題
     </a>
-  </div>
-  <div class="dropdown">
-    <button class="dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-      服務項目名稱
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
-      <li><a class="dropdown-item" href="#">寬度隨最長的內容文字調整</a></li>
-      <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
-      <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
-      <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
-    </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">連結</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">連結</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            下拉式選單
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">連結</a></li>
+            <li><a class="dropdown-item" href="#">連結</a></li>
+            <li><a class="dropdown-item" href="#">連結</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 {{< /example >}}
