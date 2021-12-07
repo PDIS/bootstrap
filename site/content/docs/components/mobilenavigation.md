@@ -34,28 +34,84 @@ toc: true
 
 {{< example >}}
 
-<nav class="navbar bg-light">
-  <a class="navbar-brand" href="#">
-    <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="50" height="40" class="d-inline-block">
-    標題
-  </a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="bi bi-list menu-icon"></i>選單
-  </button>
-  <div class="collapse navbar-collapse" id="navbar1">
-  <div class="container-fluid">
-    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">連結</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">連結</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">連結</a>
-      </li>
-    </ul>
-    </div>
+<div class="row">
+  <div class="col-md-6">
+    <nav class="navbar bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="50" height="40" class="d-inline-block">
+        標題
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list menu-icon"></i>選單
+      </button>
+      <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">服務項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">服務項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">服務項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">服務項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">服務項目</a>
+          </li>
+        </ul>
+        <hr>
+        <div class="d-flex flex-row-reverse">
+          <a class="nav-link" href="#">中文/English</a>
+        </div>
+      </div>
+    </nav>
   </div>
-</nav>
+  <div class="col-md-6">
+    <nav class="navbar bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="50" height="40" class="d-inline-block">
+        標題
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <i class="bi bi-list menu-icon"></i>選單
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a class="offcanvas-title" id="offcanvasNavbarLabel"><i class="bi bi-house-fill icon"></i>回首頁</a>
+          <button type="button" class="btn-close btn-close-white  text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
 {{< /example >}}
