@@ -68,6 +68,7 @@
     <header class="navbar navbar-expand-md navbar-dark bd-navbar">
   <nav class="container-xxl flex-wrap" aria-label="Main navigation">
     <a class="navbar-brand p-0 me-2" href="/" aria-label="Bootstrap"><img src="/img/pdis-logo-final-inverse.png" width=40 height=40 alt="pdis logo">
+      <span class="text-black"> 設計系統 </span>
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar"
@@ -80,17 +81,35 @@
 
     <div class="collapse navbar-collapse" id="bdNavbar">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2" href="/">Home</a>
+          <a class="nav-link p-2"
+            href="/intro/">介紹</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2 active" aria-current="true"
-            href="/docs/">文件</a>
+          <a class="nav-link p-2"
+            href="/docs/style/">風格</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2"
+            href="/docs/components/">元件</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2 disabled text-muted"
+            href="/docs/">使用說明</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2 disabled text-muted"
+            href="/docs/">製作過程</a>
         </li>
       </ul>
 
       <hr class="d-md-none text-white-50">
 
+      <form class="bd-search position-relative ms-auto">
+        <input type="search" class="form-control" id="search-input" placeholder="Search docs..."
+          aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="5.1">
+      </form>
     </div>
   </nav>
 </header>
