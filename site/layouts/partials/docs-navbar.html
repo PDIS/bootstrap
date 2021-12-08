@@ -1,7 +1,8 @@
 <header class="navbar navbar-expand-md navbar-dark bd-navbar">
-  <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
+  <nav class="container-xxl flex-wrap" aria-label="Main navigation">
     <a class="navbar-brand p-0 me-2" href="/" aria-label="Bootstrap">
-      {{ partial "icons/bootstrap-white-fill.svg" (dict "class" "d-block my-1" "width" "40" "height" "32") }}
+      {{- $image := resources.Get "img/pdis-logo-final-inverse.png" -}}
+      <img src="{{ $image.RelPermalink }}" width=40 height=40 alt="pdis logo">
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar"
@@ -21,8 +22,8 @@
       </ul>
 
       <hr class="d-md-none text-white-50">
-
-      <!--       <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+<!--
+      <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
         <li class="nav-item col-6 col-md-auto">
           <a class="nav-link p-2" href="{{ .Site.Params.github_org }}" target="_blank" rel="noopener">
             {{ partial "icons/github.svg" (dict "class" "navbar-nav-svg d-inline-block align-text-top" "width" "36" "height" "36") }}
