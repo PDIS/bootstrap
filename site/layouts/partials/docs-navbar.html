@@ -3,6 +3,7 @@
     <a class="navbar-brand p-0 me-2" href="/" aria-label="Bootstrap">
       {{- $image := resources.Get "img/pdis-logo-final-inverse.png" -}}
       <img src="{{ $image.RelPermalink }}" width=40 height=40 alt="pdis logo">
+      <span class="text-black"> 設計系統 </span>
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar"
@@ -12,17 +13,33 @@
 
     <div class="collapse navbar-collapse" id="bdNavbar">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+<!--         <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2{{ if .IsHome }} active" aria-current="page{{ end }}" href="/"> Home </a>
+        </li> -->
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if .IsHome }} active" aria-current="page{{ end }}" href="/">Home</a>
+          <a class="nav-link p-2{{ if eq .Page.Title "PDIS 設計系統" }} active" aria-current="true{{ end }}"
+            href="/intro/">介紹</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if eq .Page.Layout "docs" }} active" aria-current="true{{ end }}"
-            href="/docs/">文件</a>
+          <a class="nav-link p-2{{ if eq .Page.Title "風格" }} active" aria-current="true{{ end }}"
+            href="/docs/style/">風格</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2{{ if eq .Page.Title "元件" }} active" aria-current="true{{ end }}"
+            href="/docs/components/">元件</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2 disabled text-muted"
+            href="/docs/">使用說明</a>
+        </li>
+        <li class="nav-item col-6 col-md-auto">
+          <a class="nav-link p-2 disabled text-muted"
+            href="/docs/">製作過程</a>
         </li>
       </ul>
 
       <hr class="d-md-none text-white-50">
-<!--
+<!-- 
       <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
         <li class="nav-item col-6 col-md-auto">
           <a class="nav-link p-2" href="{{ .Site.Params.github_org }}" target="_blank" rel="noopener">
@@ -49,9 +66,11 @@
           </a>
         </li>
       </ul>
-
-      <a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-3"
-        href="/docs/{{ .Site.Params.docs_version }}/getting-started/download/">Download</a> -->
+ -->
+      <form class="bd-search position-relative ms-auto">
+        <input type="search" class="form-control" id="search-input" placeholder="Search docs..."
+          aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="{{ .Site.Params.docs_version }}">
+      </form>
     </div>
   </nav>
 </header>
