@@ -146,3 +146,35 @@ a:active {
   background: $gray-100;
   color: #6b6b6b !important;
 }
+
+/* PDIS's local docs style */
+// mod from /scss/_navbar
+@include media-breakpoint-up(md) {
+  .navbar-expand-md .navbar-collapse {
+      flex-basis: 100%;
+  }
+}
+
+// mod from /site/assets/scss/_navbar
+.bd-navbar {
+  background-color: $gray-200;
+  .navbar-nav {
+    .nav-link {
+      color: rgba($primary, .85);
+
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+
+      &.active {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.navbar-size {
+  background-color: $gray-400;
+}
+/* END PDIS's local docs style */

@@ -1,9 +1,26 @@
+<div class=navbar-size>
+  <ul class="container-xxl text-end my-0">
+    <li class="d-inline">
+      <a href="#">A</a>
+    </li>
+    <li class="d-inline">
+      <a href="#">a</a>
+    </li>
+    <li class="d-inline">
+      <a href="#">English</a>
+    </li>
+  </ul>
+</div>
+
 <header class="navbar navbar-expand-md navbar-dark bd-navbar">
   <nav class="container-xxl flex-wrap" aria-label="Main navigation">
+
+    <div class="w-100"></div>
+
     <a class="navbar-brand p-0 me-2" href="/" aria-label="Bootstrap">
       {{- $image := resources.Get "img/pdis-logo-final-inverse.png" -}}
       <img class="rounded" src="{{ $image.RelPermalink }}" width=40 height=40 alt="pdis logo">
-      <span class="text-black"> 設計系統 </span>
+      <span class="ms-2 text-black"> 設計系統 </span>
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar"
@@ -11,13 +28,13 @@
       {{ partial "icons/hamburger.svg" (dict "class" "bi" "width" "32" "height" "32") }}
     </button>
 
-    <div class="collapse navbar-collapse" id="bdNavbar">
+    <div class="collapse navbar-collapse my-2" id="bdNavbar">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
 <!--         <li class="nav-item col-6 col-md-auto">
           <a class="nav-link p-2{{ if .IsHome }} active" aria-current="page{{ end }}" href="/"> Home </a>
         </li> -->
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if eq .Page.Title "PDIS 設計系統" }} active" aria-current="true{{ end }}"
+          <a class="nav-link p-2{{ if eq .Page.RelPermalink "/intro/" }} active" aria-current="true{{ end }}"
             href="/intro/">介紹</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
@@ -39,7 +56,7 @@
       </ul>
 
       <hr class="d-md-none text-white-50">
-<!-- 
+<!--
       <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
         <li class="nav-item col-6 col-md-auto">
           <a class="nav-link p-2" href="{{ .Site.Params.github_org }}" target="_blank" rel="noopener">
