@@ -35,11 +35,11 @@
             href="/intro/">介紹</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if eq .Page.Dir "docs\\style\\" }} active" aria-current="true{{ end }}"
+          <a class="nav-link p-2{{ if in .Page.CurrentSection "style" }} active" aria-current="true{{ end }}"
             href="/docs/style/">風格</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if eq .Page.Dir "docs\\components\\" }} active" aria-current="true{{ end }}"
+          <a class="nav-link p-2{{ if in .Page.CurrentSection "components" }} active" aria-current="true{{ end }}"
             href="/docs/components/">元件</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
