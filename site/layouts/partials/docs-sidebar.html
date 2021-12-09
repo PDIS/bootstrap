@@ -17,13 +17,13 @@
 
     {{- if $group.pages }}
     <li class="mb-1">
-      <button class="btn d-inline-flex align-items-center rounded{{/* if not $is_active_group }} collapsed{{ end */}}"
-        data-bs-toggle="collapse" data-bs-target="#{{ $group_slug}}-collapse" aria-expanded="{{/* $is_active_group */}}true"
+      <button class="btn d-inline-flex align-items-center rounded{{ if not $is_active_group }} collapsed{{ end }}"
+        data-bs-toggle="collapse" data-bs-target="#{{ $group_slug}}-collapse" aria-expanded="{{ $is_active_group }}"
         {{ if $is_active_group }} aria-current="true" {{ end }}>
         {{ $group.title }}
       </button>
 
-      <div class="collapse{{/* if $is_active_group }} show{{ end */}} show" id="{{ $group_slug }}-collapse">
+      <div class="collapse{{ if $is_active_group }} show{{ end }}" id="{{ $group_slug }}-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
           {{- range $doc := $group.pages -}}
           {{- $doc_slug := $doc.name | urlize -}}

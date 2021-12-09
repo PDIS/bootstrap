@@ -30,19 +30,16 @@
 
     <div class="collapse navbar-collapse my-2" id="bdNavbar">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
-<!--         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if .IsHome }} active" aria-current="page{{ end }}" href="/"> Home </a>
-        </li> -->
         <li class="nav-item col-6 col-md-auto">
           <a class="nav-link p-2{{ if eq .Page.RelPermalink "/intro/" }} active" aria-current="true{{ end }}"
             href="/intro/">介紹</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if eq .Page.Title "風格" }} active" aria-current="true{{ end }}"
+          <a class="nav-link p-2{{ if eq .Page.Dir "docs\\style\\" }} active" aria-current="true{{ end }}"
             href="/docs/style/">風格</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if eq .Page.Title "元件" }} active" aria-current="true{{ end }}"
+          <a class="nav-link p-2{{ if eq .Page.Dir "docs\\components\\" }} active" aria-current="true{{ end }}"
             href="/docs/components/">元件</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
