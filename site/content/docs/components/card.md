@@ -3,7 +3,6 @@ layout: docs
 title: 卡片 Card
 description: 卡片是一個常用來彙整或列舉資訊的呈現方式。
 group: components
-toc: true
 ---
 
 ### About the card component
