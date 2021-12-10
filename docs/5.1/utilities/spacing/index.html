@@ -67,24 +67,25 @@
 
     <div class=navbar-size>
   <ul class="container-xxl text-end my-0">
-    <li class="d-inline">
+    <li class="d-inline px-2" style="font-size: larger">
       <a href="#">A</a>
     </li>
-    <li class="d-inline">
-      <a href="#">a</a>
+    <li class="d-inline px-2">
+      <a href="#">A</a>
     </li>
-    <li class="d-inline">
-      <a href="#">English</a>
+    <li class="d-inline px-2" style="font-size: smaller">
+      <a href="#">A</a>
+    </li>
+    <li class="d-inline px-2">
+      <a href="#">English <i class="bi-chevron-down"></i> </a>
     </li>
   </ul>
 </div>
 
 <header class="navbar navbar-expand-md navbar-dark bd-navbar">
-  <nav class="container-xxl flex-wrap" aria-label="Main navigation">
+  <nav class="container-xxl flex-wrap my-md-2" aria-label="Main navigation">
 
-    <div class="w-100"></div>
-
-    <a class="navbar-brand p-0 me-2" href="/" aria-label="Bootstrap"><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=40 height=40 alt="pdis logo">
+    <a class="navbar-brand my-4" href="/" aria-label="brand"><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=40 height=40 alt="pdis logo">
       <span class="ms-2 text-black"> 設計系統 </span>
     </a>
 
@@ -96,7 +97,7 @@
 
     </button>
 
-    <div class="collapse navbar-collapse my-2" id="bdNavbar">
+    <div class="collapse navbar-collapse my-md-2" id="bdNavbar">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
         <li class="nav-item col-6 col-md-auto">
           <a class="nav-link p-2"
@@ -444,20 +445,27 @@
 </div>
 
 
-    <footer class="bd-footer py-5 mt-5 bg-light">
-  <div class="container py-5">
+    <footer class="bd-footer py-4 mt-4 bg-light">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-6 mb-3">
-        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap"><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=100 height=100 alt="pdis logo">
-          <div class="d-flex flex-column ms-2">
-            <div class="fs-3 fw-bold"> Public Digital Innovation Space </div>
-            <div class=""> hello@pdis.tw </div>
-          </div>
+      <div class="d-inline-flex align-items-center mb-2 col-lg-6">
+        <a class="link-dark text-decoration-none" href="/" aria-label="Bootstrap"><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=100 height=100 alt="pdis logo">
         </a>
-        <ul class="list-unstyled small text-muted">
-          
-          <li class="mb-2">Code licensed <a href="https://github.com/PDIS/design-system/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
-          
+        <div class="d-flex flex-column ms-2">
+          <div class="fs-3 fw-bold"> Public Digital Innovation Space </div>
+          <div class=""> hello@pdis.tw </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <ul class="d-flex justify-content-end align-items-end h-100">
+          <li class="d-inline mx-1">
+            <a href="#">隱私權及資訊安全政策</a>
+          </li>
+          <li class="d-inline mx-1">
+            <a href="#">政府網站資料開放宣告</a>
+          </li>
+          <li class="d-inline mx-1"><img src="/img/accessibility.jpg" width="100" alt="accessibility">
+          </li>
         </ul>
       </div>
 

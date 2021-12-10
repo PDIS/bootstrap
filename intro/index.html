@@ -67,24 +67,25 @@
 
     <div class=navbar-size>
   <ul class="container-xxl text-end my-0">
-    <li class="d-inline">
+    <li class="d-inline px-2" style="font-size: larger">
       <a href="#">A</a>
     </li>
-    <li class="d-inline">
-      <a href="#">a</a>
+    <li class="d-inline px-2">
+      <a href="#">A</a>
     </li>
-    <li class="d-inline">
-      <a href="#">English</a>
+    <li class="d-inline px-2" style="font-size: smaller">
+      <a href="#">A</a>
+    </li>
+    <li class="d-inline px-2">
+      <a href="#">English <i class="bi-chevron-down"></i> </a>
     </li>
   </ul>
 </div>
 
 <header class="navbar navbar-expand-md navbar-dark bd-navbar">
-  <nav class="container-xxl flex-wrap" aria-label="Main navigation">
+  <nav class="container-xxl flex-wrap my-md-2" aria-label="Main navigation">
 
-    <div class="w-100"></div>
-
-    <a class="navbar-brand p-0 me-2" href="/" aria-label="Bootstrap"><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=40 height=40 alt="pdis logo">
+    <a class="navbar-brand my-4" href="/" aria-label="brand"><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=40 height=40 alt="pdis logo">
       <span class="ms-2 text-black"> 設計系統 </span>
     </a>
 
@@ -96,7 +97,7 @@
 
     </button>
 
-    <div class="collapse navbar-collapse my-2" id="bdNavbar">
+    <div class="collapse navbar-collapse my-md-2" id="bdNavbar">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
         <li class="nav-item col-6 col-md-auto">
           <a class="nav-link p-2 active" aria-current="true"
@@ -132,123 +133,112 @@
 
 
     
-  <header class="py-5 border-bottom">
-    <div class="container pt-md-1 pb-md-4">
+  <header>
+    <div class="container pt-5 pd-md-1">
       <div class="row">
-        <div class="col-xl-8">
-          <h1 class="bd-title mt-0">PDIS 設計系統</h1>
+        <div class="col-xl-9 border-bottom">
+          <h5>介紹</h5>
+          <h1 class="bd-title mt-0 fw-bold">PDIS 設計系統</h1>
           <p class="bd-lead">一套可擴充的設計元件與開發規範，明確定義最小解法 ，並以視覺範例具象化。PDIS 設計系統的目的在於提供協助製作政府網站設計與開發的團隊一套工具，更有效率地做出對使用者友善的數位服務。</p>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="bd-content order-1 py-5" id="content">
+  <main class="bd-content order-1 py-4" id="content">
     <div class="container">
 
-      <h1>製作緣起</h1>
+      <h2 class="my-4 fw-bold">製作緣起</h2>
 
-      <h2>問題</h2>
+      <h3>問題</h3>
+      <p class="col-xl-7">PDIS 現階段的作業上，常會被交派製作數位系統，有時是緊急狀況（如： 1922），有時是稍微比較長期的再設計（如：青發署網站），也有時一次修改多個網站或給予建議（如：RAY）。這些作業流程上，其實多有重工之處。在這些經驗當中，我們也漸漸觀察到，若由政府推出的數位服務風格不一致、網站來源不易辨識，民眾容易產生不信任感，在遇到惡意網站時將難以分辨，因此我們開始思考如何增加政府網站的體驗一致性。</p>
 
-      <p class="col-xl-8">PDIS 現階段的作業上，常會被交派製作數位系統，有時是緊急狀況（如： 1922），有時是稍微比較長期的再設計（如：青發署網站），也有時一次修改多個網站或給予建議（如：RAY）。這些作業流程上，其實多有重工之處。在這些經驗當中，我們也漸漸觀察到，若由政府推出的數位服務風格不一致、網站來源不易辨識，民眾容易產生不信任感，在遇到惡意網站時將難以分辨，因此我們開始思考如何增加政府網站的體驗一致性。</p>
-
-      <h2>動機</h2>
-
+      <h3>動機</h3>
       <p>整理歸納出以下幾點理由後，我們決定著手製作一套設計系統：</p>
-
       <ul>
         <li>避免重工、重複編程</li>
         <li>改善數位系統製作流程</li>
         <li>提供政府網站的體驗一致性</li>
       </ul>
 
-      <h2>目標</h2>
+      <h3>目標</h3>
+      <p class="col-xl-7">國發會「政府數位服務指引」中明訂十三項參考，以「協助各機關發展跨域服務整合及落實以使用者為中心的服務設計，達成打造智慧政府的願景」。我們極為認同，因此 PDIS 以著手製作設計系統並開放源碼，作為各機關在製作數位系統時，可參考並加以運用、複製、修改的元件設計與開發規範。協助國發會已經發行的「政府數位服務指引」與「政府網站服務管理規範」，提供各機關進一步可直接參考的具體範例。</p>
 
-      <p class="col-xl-8">國發會「政府數位服務指引」中明訂十三項參考，以「協助各機關發展跨域服務整合及落實以使用者為中心的服務設計，達成打造智慧政府的願景」。我們極為認同，因此 PDIS 以著手製作設計系統並開放源碼，作為各機關在製作數位系統時，可參考並加以運用、複製、修改的元件設計與開發規範。協助國發會已經發行的「政府數位服務指引」與「政府網站服務管理規範」，提供各機關進一步可直接參考的具體範例。</p>
+      <hr class="invisible my-4">
 
-      <hr>
+      <h2 class="fw-bold">PDIS 設計系統</h2>
 
-      <h1>PDIS 設計系統</h1>
+      <p class="col-xl-7">PDIS (Public Digital Innovation Space) 又名公共數位創新空間，為唐鳳政委辦公室督導之創新空間。我們與國發會合作，共同開發一套台灣政府公部門數位服務適合使用的設計系統。PDIS 設計系統目前包含三個區塊：「使用規範」、「設計元件」與「開發手冊」。</p>
 
-      <p class="col-xl-8">PDIS (Public Digital Innovation Space) 又名公共數位創新空間，為唐鳳政委辦公室督導之創新空間。我們與國發會合作，共同開發一套台灣政府公部門數位服務適合使用的設計系統。PDIS 設計系統目前包含三個區塊：「使用規範」、「設計元件」與「開發手冊」。</p>
-
-      <div class="row my-4">
-        <div class="col-md-4">
-          <h2> 使用規範 Guidance </h2>
-          <p> 使用規範定義的是在選用設計元件時應注意的原則。 </p>
+      <div class="d-flex flex-wrap">
+        <div class="card col-md-3 m-2">
+          <div class="card-body">
+            <h5 class="card-title"> 使用規範 Guidance </h5>
+            <p class="card-text"> 使用規範定義的是在選用設計元件時應注意的原則。 </p>
+          </div><img class="card-img-bottom" src="/img/placeholder-1.png" alt="placeholder">
         </div>
-        <div class="col-md-4 order-md-1"><img src="/img/placeholder-1.png" alt="placeholder">
+        <div class="card col-md-3 m-2">
+          <div class="card-body">
+            <h5 class="card-title"> 設計元件 Component </h5>
+            <p class="card-text"> 設計元件裡詳列不同情境下適合使用的設計元件。設計元件本身皆符合設計規範。 </p>
+          </div><img class="card-img-bottom" src="/img/placeholder-2.png" alt="placeholder">
         </div>
-        <div class="col-md-4">
-          <h2> 設計元件 Component </h2>
-          <p> 設計元件裡詳列不同情境下適合使用的設計元件。設計元件本身皆符合設計規範。 </p>
+        <div class="card col-md-3 m-2">
+          <div class="card-body">
+            <h5 class="card-title"> 開發手冊 Manual </h5>
+            <p class="card-text"> 開發手冊中提供開發團隊環境設定的步驟以及在編程上應注意的細節。 </p>
+          </div><img class="card-img-bottom" src="/img/placeholder-2.png" alt="placeholder">
         </div>
-        <div class="col-md-4 order-md-1"><img src="/img/placeholder-2.png" alt="placeholder">
-        </div>
-        <div class="col-md-4">
-          <h2> 開發手冊 Manual </h2>
-          <p> 開發手冊中提供開發團隊環境設定的步驟以及在編程上應注意的細節。 </p>
-        </div>
-        <div class="col-md-4 order-md-1"><img src="/img/placeholder-3.svg" alt="placeholder">
-        </div>
-      </div>
+    </div>
 
       <p>目前 PDIS 設計系統在開發中，預計在未來進行實地測試、除錯並同步更新此三區塊。</p>
 
-      <hr>
+      <hr class="invisible my-4">
 
-      <h1>設計規範 Design Guideline</h1>
+      <h2 class="fw-bold">設計規範 Design Guideline</h2>
 
       <p>PDIS 的設計系統示範一套有用、好用、近用且可以活用的網頁元件設計。</p>
 
-      <div class="row">
-        <div class="col-md-6 col-xl-3">
-          <h2 class="text-center">
-            <p> 😃 </p>
-            <p> 有用 </p>
-            <p> Functional </p>
-          </h2>
-          <p class="text-center"> 可以解決問題。 </p>
+      <div class="row col-xl-7">
+        <div class="col-xl-6 my-xl-4">
+          <h3>
+            <p> 😃 有用 Functional </p>
+          </h3>
+          <p> 可以解決問題。 </p>
           <p> 沒有邏輯上的錯誤，可以直接使用。 </p>
         </div>
-        <div class="col-md-6 col-xl-3">
-          <h2 class="text-center">
-            <p> 👍 </p>
-            <p> 好用 </p>
-            <p> Useful </p>
-          </h2>
-          <p class="text-center"> 使用上容易。 </p>
+        <div class="col-xl-6 my-xl-4">
+          <h3>
+            <p> 👍 好用 Useful </p>
+          </h3>
+          <p> 使用上容易。 </p>
           <p> 幫助使用者更順暢的使用公共服務。 </p>
         </div>
-        <div class="col-md-6 col-xl-3">
-          <h2 class="text-center">
-            <p> 😎 </p>
-            <p> 近用 </p>
-            <p> Accessible </p>
-          </h2>
-          <p class="text-center"> 符合無障礙。 </p>
+        <div class="col-xl-6 my-xl-4">
+          <h3>
+            <p> 😎 近用 Accessible </p>
+          </h3>
+          <p> 符合無障礙。 </p>
           <p> 遵守無障礙規範，保障每位公民獲取資訊、接受服務的權利。 </p>
         </div>
-        <div class="col-md-6 col-xl-3">
-          <h2 class="text-center">
-            <p> 🙌 </p>
-            <p> 活用 </p>
-            <p> Flexible </p>
-          </h2>
-          <p class="text-center"> 可套用修改。 </p>
+        <div class="col-xl-6 my-xl-4">
+          <h3>
+            <p> 🙌 活用 Flexible </p>
+          </h3>
+          <p> 可套用修改。 </p>
           <p> 開發團隊可以套用並在一訂的範圍內自行修改樣式以符合機關需求。 </p>
         </div>
       </div>
 
-      <hr>
+      <hr class="invisible my-4">
 
-      <h1>如何使用 PDIS 設計系統？</h1>
+      <h2 class="fw-bold">如何使用 PDIS 設計系統？</h2>
 
-      <p class="col-xl-8">PDIS 的設計系統目前正在開發中，目前還不到可以完整運用的階段。我們正在收集願意配合的政府機關網站，迭代式透過與個政府部會機關合作、測試並修改設計系統的內容，以達成一套最符合網站製作團隊需求的設計系統。若您有興趣合作，請來信 hello@pdis.tw 並在標題上寫「PDIS 設計系統與網站製作合作洽談」並告知您的單位與預計可以合作的網站。</p>
+      <p class="col-xl-7">PDIS 的設計系統目前正在開發中，目前還不到可以完整運用的階段。我們正在收集願意配合的政府機關網站，迭代式透過與個政府部會機關合作、測試並修改設計系統的內容，以達成一套最符合網站製作團隊需求的設計系統。若您有興趣合作，請來信 hello@pdis.tw 並在標題上寫「PDIS 設計系統與網站製作合作洽談」並告知您的單位與預計可以合作的網站。</p>
 
-      <hr>
+      <hr class="invisible my-4">
 
-      <h1>如何協力 PDIS 設計系統？</h1>
+      <h2 class="fw-bold">如何協力 PDIS 設計系統？</h2>
 
       <p>查看目前進度：Github</p>
 
@@ -258,20 +248,27 @@
   </main>
 
 
-    <footer class="bd-footer py-5 mt-5 bg-light">
-  <div class="container py-5">
+    <footer class="bd-footer py-4 mt-4 bg-light">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-6 mb-3">
-        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap"><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=100 height=100 alt="pdis logo">
-          <div class="d-flex flex-column ms-2">
-            <div class="fs-3 fw-bold"> Public Digital Innovation Space </div>
-            <div class=""> hello@pdis.tw </div>
-          </div>
+      <div class="d-inline-flex align-items-center mb-2 col-lg-6">
+        <a class="link-dark text-decoration-none" href="/" aria-label="Bootstrap"><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=100 height=100 alt="pdis logo">
         </a>
-        <ul class="list-unstyled small text-muted">
-          
-          <li class="mb-2">Code licensed <a href="https://github.com/PDIS/design-system/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
-          
+        <div class="d-flex flex-column ms-2">
+          <div class="fs-3 fw-bold"> Public Digital Innovation Space </div>
+          <div class=""> hello@pdis.tw </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <ul class="d-flex justify-content-end align-items-end h-100">
+          <li class="d-inline mx-1">
+            <a href="#">隱私權及資訊安全政策</a>
+          </li>
+          <li class="d-inline mx-1">
+            <a href="#">政府網站資料開放宣告</a>
+          </li>
+          <li class="d-inline mx-1"><img src="/img/accessibility.jpg" width="100" alt="accessibility">
+          </li>
         </ul>
       </div>
 
