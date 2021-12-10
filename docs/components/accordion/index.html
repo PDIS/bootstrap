@@ -199,7 +199,7 @@
         
         <h1 id="content" style="font-weight: 900;">手風琴 (Accordion)</h1>
       </div>
-      <h2 style="margin-top: 0.5rem;">手風琴是一種可以展開與隱藏更多資訊的列表。</h2>
+      <p style="margin-top: 0.5rem;">手風琴是一種可以展開與隱藏更多資訊的列表。</p>
       <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
 
       <hr>
@@ -211,13 +211,13 @@
 
       <h3 id="about-the-accordion-component">About the accordion component</h3>
 <p>手風琴 (accordion) 是一種可以展開與隱藏更多資訊的列表，展開後的資訊可以是純文字、另一頁面、也可以是更深層的手風琴 (layered accordion) 。</p>
-<h3 id="guidance">Guidance</h3>
+<h3 id="使用規範">使用規範</h3>
 <h4 id="when-to-use-the-accordion-component">When to use the accordion component</h4>
 <ul>
 <li><strong>切換隱藏或顯示大量文字內容。</strong> 當列表上的說明文字多到一個量，可以使用手風琴內部分文字收納隱藏起來，讓使用者自行點擊切換顯示更多文字內容或是隱藏部分文字內容。</li>
 <li><strong>以短句標題總結大量文字內容。</strong> 當頁面上的文字內容可以用某個短句子總結時，且使用者不一定需要這些大篇幅的文字資訊時，可以使用手風琴幫助收納資訊，讓使用者僅以短句標題先初步瀏覽總結，再自行選擇是否展開以查看更多。（列如：問答集，使用者不一定需要知道每個問題的答案，但可以透過問題本身自行選擇想要觀看某條目的答案）。</li>
 </ul>
-<h4 id="when-to-consider-something-else">When to consider something else</h4>
+<h4 id="何時該考慮使用其他元件">何時該考慮使用其他元件</h4>
 <ul>
 <li><strong>標題過於豐富。</strong> 當標題內容較難以文字簡單呈現時，請考慮使用其他文件，例如可以包含標題、內文、圖片、按鈕的卡片元件 (card component) 。</li>
 <li><strong>內容過於簡單。</strong> 手風琴的互動會增加使用者的認知負荷 (cognitive load) 和互動成本 (interaction cost)，所以當內容簡短到不需要以標題做壓縮時，請考慮直接將文字排版，不需要使用手風琴收納。</li>
@@ -228,7 +228,7 @@
 <li><strong>圖標一致性。</strong> 手風琴上的圖標按鈕應一致，展開按鈕應選用同一種，收納按鈕也應選用同一種。</li>
 <li><strong>風格差異。</strong> 使用者應要能夠容易辨識出手風琴展開時與收納時的風格差異。</li>
 </ul>
-<h3 id="component">Component</h3>
+<h3 id="設計元件">設計元件</h3>
 <h4 id="基本款手風琴-basic-accordion">基本款手風琴 Basic accordion</h4>
 <p>基本款手風琴包含標題與可以點擊的展開按鈕 (+) ，展開後該按鈕則會被替換回另一個可以點擊的收納按鈕 (-) 。除了預設的正負圖標以外，您也可以使用展開與收納按鈕也可以選擇箭頭圖標。展開後的列表樣式與展開前的樣式應有差距，讓使用者可以迅速的辨認出展開或未展開狀態。</p>
 <div class="bd-example">
