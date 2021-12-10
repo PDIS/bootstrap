@@ -10,7 +10,7 @@ toc: true
 
 使用下拉式選單 (Select) 時，我們一律使用原生的選擇功能表 `<select>` 作為設計的起點。我們建議採用的自定義樣式覆蓋下拉式選單按鈕 (Dropdown button) 的風格，讓整體風格更一致。此覆蓋的風格僅限於 `<select>` 的風格，下拉式選單的選單本身 (Dropdown menu) 則無法修改。這是因為瀏覽器的限制無法修改 `<option>` 的風格。
 
-### Guidance
+### 使用規範
 
 #### When to use the select component
 
@@ -29,7 +29,7 @@ toc: true
 
 #### Accessibility
 
-### Component
+### 設計元件
 
 #### 基本款
 
