@@ -60,7 +60,7 @@ a:active {
 }
 
 .navbar-toggler {
-  background-color: #005aa8;
+  // background-color: #005aa8;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -157,7 +157,7 @@ a:active {
 
 // mod from /site/assets/scss/_navbar
 .bd-navbar {
-  background-color: $gray-200;
+  background-color: $gray-100;
   .navbar-nav {
     .nav-link {
       color: rgba($primary, .85);
@@ -172,9 +172,12 @@ a:active {
       }
     }
   }
+  .navbar-toggler {
+    color: $black;
+  }
 }
 
 .navbar-size {
-  background-color: $gray-400;
+  background-color: $gray-200;
 }
 /* END PDIS's local docs style */

@@ -1,23 +1,24 @@
 <div class=navbar-size>
   <ul class="container-xxl text-end my-0">
-    <li class="d-inline">
+    <li class="d-inline px-2" style="font-size: larger">
       <a href="#">A</a>
     </li>
-    <li class="d-inline">
-      <a href="#">a</a>
+    <li class="d-inline px-2">
+      <a href="#">A</a>
     </li>
-    <li class="d-inline">
-      <a href="#">English</a>
+    <li class="d-inline px-2" style="font-size: smaller">
+      <a href="#">A</a>
+    </li>
+    <li class="d-inline px-2">
+      <a href="#">English <i class="bi-chevron-down"></i> </a>
     </li>
   </ul>
 </div>
 
 <header class="navbar navbar-expand-md navbar-dark bd-navbar">
-  <nav class="container-xxl flex-wrap" aria-label="Main navigation">
+  <nav class="container-xxl flex-wrap my-md-2" aria-label="Main navigation">
 
-    <div class="w-100"></div>
-
-    <a class="navbar-brand p-0 me-2" href="/" aria-label="Bootstrap">
+    <a class="navbar-brand my-4" href="/" aria-label="brand">
       {{- $image := resources.Get "img/pdis-logo-final-inverse.png" -}}
       <img class="rounded" src="{{ $image.RelPermalink }}" width=40 height=40 alt="pdis logo">
       <span class="ms-2 text-black"> 設計系統 </span>
@@ -28,7 +29,7 @@
       {{ partial "icons/hamburger.svg" (dict "class" "bi" "width" "32" "height" "32") }}
     </button>
 
-    <div class="collapse navbar-collapse my-2" id="bdNavbar">
+    <div class="collapse navbar-collapse my-md-2" id="bdNavbar">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
         <li class="nav-item col-6 col-md-auto">
           <a class="nav-link p-2{{ if eq .Page.RelPermalink "/intro/" }} active" aria-current="true{{ end }}"
