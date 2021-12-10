@@ -148,27 +148,27 @@ a:active {
 }
 
 /* PDIS's local docs style */
-// mod from /scss/_navbar
+// mod from scss/_navbar
 @include media-breakpoint-up(md) {
   .navbar-expand-md .navbar-collapse {
       flex-basis: 100%;
   }
 }
 
-// mod from /site/assets/scss/_navbar
+// mod from site/assets/scss/_navbar
 .bd-navbar {
   background-color: $gray-100;
   .navbar-nav {
     .nav-link {
-      color: rgba($primary, .85);
+      color: rgba($link-color, .85);
 
       &:hover,
       &:focus {
-        color: $primary;
+        color: $link-color;
       }
 
       &.active {
-        color: $primary;
+        color: $link-color;
       }
     }
   }
@@ -180,4 +180,19 @@ a:active {
 .navbar-size {
   background-color: $gray-200;
 }
+
+// mod from site/assets/scss/_footer.scss
+.bd-footer {
+  a {
+    color: $link-color;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: $link-color;
+      text-decoration: underline;
+    }
+  }
+}
+
 /* END PDIS's local docs style */
