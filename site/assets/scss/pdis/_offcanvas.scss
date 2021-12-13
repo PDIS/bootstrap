@@ -10,3 +10,24 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.offcanvas-body {
+  .navbar-nav {
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+
+  p {
+    color: white;
+  }
+  hr {
+    border: 1px solid #ffffff;
+  }
+  .input-group {
+    margin-bottom: 0.75rem;
+  }
+  a {
+    color: white;
+  }
+}

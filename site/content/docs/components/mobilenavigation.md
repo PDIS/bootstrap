@@ -85,30 +85,59 @@ toc: true
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="Dropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                服務項目(擁有子項目)
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="Dropdown1">
+                <li><a class="dropdown-item" href="#">服務子項目</a></li>
+                <li><a class="dropdown-item" href="#">服務子項目</a></li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+              <a class="nav-link dropdown-toggle" href="#" id="Dropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                服務項目(擁有子項目)
               </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <ul class="dropdown-menu" aria-labelledby="Dropdown2">
+                <li><a class="dropdown-item" href="#">服務子項目</a></li>
+                <li><a class="dropdown-item" href="#">服務子項目</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="Dropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                服務項目(擁有子項目)
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="Dropdown3">
+                <li><a class="dropdown-item" href="#">服務子項目</a></li>
+                <li><a class="dropdown-item" href="#">服務子項目</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="Dropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                服務項目(擁有子項目)
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="Dropdown4">
+                <li><a class="dropdown-item" href="#">服務子項目</a></li>
+                <li><a class="dropdown-item" href="#">服務子項目</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="Dropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                服務項目(擁有子項目)
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="Dropdown5">
+                <li><a class="dropdown-item" href="#">服務子項目</a></li>
+                <li><a class="dropdown-item" href="#">服務子項目</a></li>
               </ul>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          <hr>
+          <p>搜尋關鍵字</p>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="" aria-label="Search">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+          </div>
+          <p>熱門搜尋：<a href="#">防疫政策</a></p>
         </div>
       </div>
     </nav>

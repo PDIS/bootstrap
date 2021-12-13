@@ -30,6 +30,7 @@
   color: white;
   border-radius: 0;
   align-self: stretch;
+  background-color: $primary-dark;
 }
 
 .menu-icon {
@@ -44,6 +45,20 @@
   color: white;
   padding: 1rem;
   .nav-link {
+    color: white;
+  }
+}
+
+.nav-item.dropdown {
+  .nav-link.dropdown-toggle {
+    color: white;
+  }
+
+  .dropdown-menu {
+    background: $primary;
+  }
+
+  .dropdown-item {
     color: white;
   }
 }
