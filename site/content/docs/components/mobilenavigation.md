@@ -84,7 +84,7 @@ toc: true
           <button type="button" class="btn-close btn-close-white  text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <ul class="navbar-nav justify-content-end flex-grow-1">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="Dropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 服務項目(擁有子項目)
@@ -143,4 +143,46 @@ toc: true
     </nav>
   </div>
 </div>
+{{< /example >}}
+
+{{< example >}}
+
+<div class="row">
+
+    <nav class="navbar navbar-expand-lg bg-light">
+                <a class="navbar-brand" href="#">
+        <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="50" height="40" class="d-inline-block">
+        標題
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list menu-icon"></i>選單
+      </button>
+      <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">服務項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">服務項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">服務項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">服務項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">服務項目</a>
+          </li>
+        </ul>
+        <hr>
+        <div class="d-flex flex-row-reverse">
+          <a class="nav-link" href="#">中文/English</a>
+        </div>
+      </div>
+
+    </nav>
+
+</div>
+
 {{< /example >}}

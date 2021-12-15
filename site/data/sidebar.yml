@@ -34,3 +34,5 @@
       name: dropdown
     - title: 行動導覽
       name: mobilenavigation
+    - title: 頁籤面板
+      name: tabs

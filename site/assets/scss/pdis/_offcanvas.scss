@@ -12,16 +12,22 @@
 }
 
 .offcanvas-body {
+  padding: 0;
   .navbar-nav {
     @media (max-width: 768px) {
       display: flex;
     }
   }
+  .nav-link.dropdown-toggle {
+    padding-left: 1rem;
+  }
 
   p {
+    padding-left: 1rem;
     color: white;
   }
   hr {
+    margin: 1rem 1rem;
     border: 1px solid #ffffff;
   }
   .input-group {
