@@ -1,0 +1,32 @@
+.nav-tabs {
+  border-bottom: 0;
+  .nav-item {
+    display: inline-block;
+  }
+
+  .nav-link {
+    border: 0;
+    text-decoration: none;
+
+    &.active {
+      color: $primary;
+      border-bottom: 1px solid $primary;
+    }
+  }
+}
+
+.nav-pills {
+  .nav-link {
+    text-decoration: none;
+
+    &.active {
+      color: $primary;
+      background: none;
+      border: 1px solid $primary;
+    }
+  }
+}
+
+.tab-content {
+  margin-top: 1rem;
+}

@@ -51,17 +51,233 @@ group: components
 
 基本款的頁籤面板包含頁籤、頁籤列表與內容面板。您也可以使用膠囊狀頁籤的變形。在這個元件中我們展示的是頁籤列表數量較少（內容不超過一行）的情境。頁籤寬度的設定預設為依文字長 (label-based) ，頁籤的寬度可以依文字長度改變。
 
+{{< example >}}
+
+<div class="row">
+  <div class="col-12">
+    <ul class="nav nav-tabs" id="tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tab1" data-bs-toggle="tab" data-bs-target="#content1" type="button" role="tab" aria-controls="tab1" aria-selected="true">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab2" data-bs-toggle="tab" data-bs-target="#content2" type="button" role="tab" aria-controls="tab2" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab3" data-bs-toggle="tab" data-bs-target="#content3" type="button" role="tab" aria-controls="tab3" aria-selected="false">頁籤項目</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="tabContent">
+      <div class="tab-pane fade show active" id="content1" role="tabpanel" aria-labelledby="content1">頁籤內容</div>
+      <div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="content2">頁籤內容</div>
+      <div class="tab-pane fade" id="content3" role="tabpanel" aria-labelledby="content3">頁籤內容</div>
+    </div>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-12">
+    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-tab1" data-bs-toggle="pill" data-bs-target="#pills-content1" type="button" role="tab" aria-controls="pills-tab1" aria-selected="true">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-tab2" data-bs-toggle="pill" data-bs-target="#pills-content2" type="button" role="tab" aria-controls="pills-tab2" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-tab3" data-bs-toggle="pill" data-bs-target="#pills-content3" type="button" role="tab" aria-controls="pills-tab3" aria-selected="false">頁籤項目</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-content1" role="tabpanel" aria-labelledby="pills-content1">頁籤內容</div>
+      <div class="tab-pane fade" id="pills-content2" role="tabpanel" aria-labelledby="pills-content2">頁籤內容</div>
+      <div class="tab-pane fade" id="pills-content3" role="tabpanel" aria-labelledby="pills-content3">頁籤內容</div>
+    </div>
+  </div>
+</div>
+
+{{< /example >}}
+
 #### 依版面寬 (screen based)
 
 版面寬度固定的情況下，頁籤的長度依版面款度等比例分配。有時也會稱依文字長 (label-based) 為堆疊式 (stacked) ，依版面寬 (screen based) 則為等分式 (distributed)。如果文字長度超過頁籤寬度而換行時，建議用其他頁籤設計，如：基本款頁籤。
+
+{{< example >}}
+
+<div class="row">
+  <div class="col-12">
+    <ul class="nav nav-tabs nav-fill" id="tab-fill" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tab1-fill" data-bs-toggle="tab" data-bs-target="#content1-fill" type="button" role="tab" aria-controls="tab1-fill" aria-selected="true">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab2-fill" data-bs-toggle="tab" data-bs-target="#content2-fill" type="button" role="tab" aria-controls="tab2-fill" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab3-fill" data-bs-toggle="tab" data-bs-target="#content3-fill" type="button" role="tab" aria-controls="tab3-fill" aria-selected="false">頁籤項目</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="tabContent-fill">
+      <div class="tab-pane fade show active" id="content1-fill" role="tabpanel" aria-labelledby="content1-fill">頁籤內容</div>
+      <div class="tab-pane fade" id="content2-fill" role="tabpanel" aria-labelledby="content2-fill">頁籤內容</div>
+      <div class="tab-pane fade" id="content3-fill" role="tabpanel" aria-labelledby="content3-fill">頁籤內容</div>
+    </div>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-12">
+    <ul class="nav nav-pills nav-fill" id="pills-tab-fill" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-tab1-fill" data-bs-toggle="pill" data-bs-target="#pills-content1-fill" type="button" role="tab" aria-controls="pills-tab1-fill" aria-selected="true">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-tab2-fill" data-bs-toggle="pill" data-bs-target="#pills-content2-fill" type="button" role="tab" aria-controls="pills-tab2-fill" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-tab3-fill" data-bs-toggle="pill" data-bs-target="#pills-content3-fill" type="button" role="tab" aria-controls="pills-tab3-fill" aria-selected="false">頁籤項目</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent-fill">
+      <div class="tab-pane fade show active" id="pills-content1-fill" role="tabpanel" aria-labelledby="pills-content1-fill">頁籤內容</div>
+      <div class="tab-pane fade" id="pills-content2-fill" role="tabpanel" aria-labelledby="pills-content2-fill">頁籤內容</div>
+      <div class="tab-pane fade" id="pills-content3-fill" role="tabpanel" aria-labelledby="pills-content3-fill">頁籤內容</div>
+    </div>
+  </div>
+</div>
+
+{{< /example >}}
 
 #### 頁籤圖標 (iconed tab)
 
 頁籤的文字前面可以加上簡單的圖標，方便使用者查找、瀏覽。
 
+{{< example >}}
+
+<div class="row">
+  <div class="col-12">
+    <ul class="nav nav-tabs" id="tab-icon" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tab1-icon" data-bs-toggle="tab" data-bs-target="#content1-icon" type="button" role="tab" aria-controls="tab1-icon" aria-selected="true"><i class="bi bi-box-seam icon"></i>寄包裹</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab2-icon" data-bs-toggle="tab" data-bs-target="#content2-icon" type="button" role="tab" aria-controls="tab2-icon" aria-selected="false"><i class="bi bi-envelope icon"></i>寄信件</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="tabContent-icon">
+      <div class="tab-pane fade show active" id="content1-icon" role="tabpanel" aria-labelledby="content1-icon">頁籤內容</div>
+      <div class="tab-pane fade" id="content2-icon" role="tabpanel" aria-labelledby="content2-icon">頁籤內容</div>
+    </div>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-12">
+    <ul class="nav nav-pills" id="pills-tab-icon" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-tab1-icon" data-bs-toggle="pill" data-bs-target="#pills-content1-icon" type="button" role="tab" aria-controls="pills-tab1-icon" aria-selected="true"><i class="bi bi-globe icon"></i>依地圖瀏覽</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-tab2-icon" data-bs-toggle="pill" data-bs-target="#pills-content2-icon" type="button" role="tab" aria-controls="pills-tab2-icon" aria-selected="false"><i class="bi bi-table icon"></i>依日期瀏覽</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-tab3-icon" data-bs-toggle="pill" data-bs-target="#pills-content3-icon" type="button" role="tab" aria-controls="pills-tab3-icon" aria-selected="false"><i class="bi bi-view-stacked icon"></i>依列表瀏覽</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-tab4-icon" data-bs-toggle="pill" data-bs-target="#pills-content4-icon" type="button" role="tab" aria-controls="pills-tab4-icon" aria-selected="false"><i class="bi bi-ui-checks-grid icon"></i>依主題瀏覽</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent-icon">
+      <div class="tab-pane fade show active" id="pills-content1-icon" role="tabpanel" aria-labelledby="pills-content1-icon">頁籤內容</div>
+      <div class="tab-pane fade" id="pills-content2-icon" role="tabpanel" aria-labelledby="pills-content2-icon">頁籤內容</div>
+      <div class="tab-pane fade" id="pills-content3-icon" role="tabpanel" aria-labelledby="pills-content3-icon">頁籤內容</div>
+      <div class="tab-pane fade" id="pills-content4-icon" role="tabpanel" aria-labelledby="pills-content4-icon">頁籤內容</div>
+    </div>
+  </div>
+</div>
+
+{{< /example >}}
+
 #### 多頁籤 滾動式 (scrollable-tabs) vs 磚牆式 (pill-bricks)
 
 當頁籤列表內容較多時，可將選用滾動式的頁籤面板，或是磚牆式的膠囊式頁籤延伸。磚牆式的好處是列表數量可以比較有機的增加，使用者仍然能夠一次看見所有的頁籤內容。滾動式的頁籤面板則必須將某幾個頁籤放在較低順位或藏起，因此使用者可能會在一開始看不到某幾個頁籤內容。
+
+{{< example >}}
+
+<div class="row">
+  <div class="col-12">
+    <ul class="nav nav-tabs" id="tab-scrollable" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tab1-scrollable" data-bs-toggle="tab" data-bs-target="#content1-scrollable" type="button" role="tab" aria-controls="tab1-scrollable" aria-selected="true">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab2-scrollable" data-bs-toggle="tab" data-bs-target="#content2-scrollable" type="button" role="tab" aria-controls="tab2-scrollable" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab3-scrollable" data-bs-toggle="tab" data-bs-target="#content3-scrollable" type="button" role="tab" aria-controls="tab3-scrollable" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab4-scrollable" data-bs-toggle="tab" data-bs-target="#content4-scrollable" type="button" role="tab" aria-controls="tab4-scrollable" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab5-scrollable" data-bs-toggle="tab" data-bs-target="#content5-scrollable" type="button" role="tab" aria-controls="tab5-scrollable" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab6-scrollable" data-bs-toggle="tab" data-bs-target="#content6-scrollable" type="button" role="tab" aria-controls="tab6-scrollable" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab7-scrollable" data-bs-toggle="tab" data-bs-target="#content7-scrollable" type="button" role="tab" aria-controls="tab7-scrollable" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab8-scrollable" data-bs-toggle="tab" data-bs-target="#content8-scrollable" type="button" role="tab" aria-controls="tab8-scrollable" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab9-scrollable" data-bs-toggle="tab" data-bs-target="#content9-scrollable" type="button" role="tab" aria-controls="tab9-scrollable" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab10-scrollable" data-bs-toggle="tab" data-bs-target="#content10-scrollable" type="button" role="tab" aria-controls="tab10-scrollable" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="tab11-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="tabContent-scrollable">
+      <div class="tab-pane fade show active" id="content1-scrollable" role="tabpanel" aria-labelledby="content1-scrollable">頁籤內容</div>
+      <div class="tab-pane fade" id="content2-scrollable" role="tabpanel" aria-labelledby="content2-scrollable">頁籤內容</div>
+      <div class="tab-pane fade" id="content3-scrollable" role="tabpanel" aria-labelledby="content3-scrollable">頁籤內容</div>
+      <div class="tab-pane fade" id="content4-scrollable" role="tabpanel" aria-labelledby="content4-scrollable">頁籤內容</div>
+      <div class="tab-pane fade" id="content5-scrollable" role="tabpanel" aria-labelledby="content5-scrollable">頁籤內容</div>
+      <div class="tab-pane fade" id="content6-scrollable" role="tabpanel" aria-labelledby="content6-scrollable">頁籤內容</div>
+      <div class="tab-pane fade" id="content7-scrollable" role="tabpanel" aria-labelledby="content7-scrollable">頁籤內容</div>
+      <div class="tab-pane fade" id="content8-scrollable" role="tabpanel" aria-labelledby="content8-scrollable">頁籤內容</div>
+      <div class="tab-pane fade" id="content9-scrollable" role="tabpanel" aria-labelledby="content9-scrollable">頁籤內容</div>
+      <div class="tab-pane fade" id="content10-scrollable" role="tabpanel" aria-labelledby="content10-scrollable">頁籤內容</div>
+      <div class="tab-pane fade" id="content11-scrollable" role="tabpanel" aria-labelledby="content11-scrollable">頁籤內容</div>
+    </div>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-12">
+    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-tab1" data-bs-toggle="pill" data-bs-target="#pills-content1" type="button" role="tab" aria-controls="pills-tab1" aria-selected="true">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-tab2" data-bs-toggle="pill" data-bs-target="#pills-content2" type="button" role="tab" aria-controls="pills-tab2" aria-selected="false">頁籤項目</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-tab3" data-bs-toggle="pill" data-bs-target="#pills-content3" type="button" role="tab" aria-controls="pills-tab3" aria-selected="false">頁籤項目</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-content1" role="tabpanel" aria-labelledby="pills-content1">頁籤內容</div>
+      <div class="tab-pane fade" id="pills-content2" role="tabpanel" aria-labelledby="pills-content2">頁籤內容</div>
+      <div class="tab-pane fade" id="pills-content3" role="tabpanel" aria-labelledby="pills-content3">頁籤內容</div>
+    </div>
+  </div>
+</div>
+
+{{< /example >}}
 
 #### 下拉式選單 (select)
 
