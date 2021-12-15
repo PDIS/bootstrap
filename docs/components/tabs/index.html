@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Control the opacity of elements.">
+<meta name="description" content="一種將網頁內容分群管理的容器">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.1">
 
-<title>Opacity · PDIS Design System v5.1</title>
+<title>頁籤面板 Tabs · PDIS Design System v5.1</title>
 
-<link rel="canonical" href="https://design.pdis.tw/docs/5.1/utilities/opacity/">
+<link rel="canonical" href="https://design.pdis.tw/docs/components/tabs/">
 
 
 
@@ -39,14 +39,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="Opacity">
-<meta name="twitter:description" content="Control the opacity of elements.">
+<meta name="twitter:title" content="頁籤面板 Tabs">
+<meta name="twitter:description" content="一種將網頁內容分群管理的容器">
 <meta name="twitter:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://design.pdis.tw/docs/5.1/utilities/opacity/">
-<meta property="og:title" content="Opacity">
-<meta property="og:description" content="Control the opacity of elements.">
+<meta property="og:url" content="https://design.pdis.tw/docs/components/tabs/">
+<meta property="og:title" content="頁籤面板 Tabs">
+<meta property="og:description" content="一種將網頁內容分群管理的容器">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
@@ -108,7 +108,7 @@
             href="/docs/style/">風格</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2"
+          <a class="nav-link p-2 active" aria-current="true"
             href="/docs/components/">元件</a>
         </li>
         <li class="nav-item col-6 col-md-auto">
@@ -161,13 +161,13 @@
       </div>
     </li>
     <li class="mb-1">
-      <button class="btn d-inline-flex align-items-center rounded collapsed"
-        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="false"
-        >
+      <button class="btn d-inline-flex align-items-center rounded"
+        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="true"
+         aria-current="true" >
         元件
       </button>
 
-      <div class="collapse" id="components-collapse">
+      <div class="collapse show" id="components-collapse">
         <ul class="list-unstyled fw-normal pb-1 small">
           <li><a href="/docs/components/header/" class="d-inline-flex align-items-center rounded"
               >頁首</a></li>
@@ -185,8 +185,8 @@
               >導覽列下拉選單</a></li>
           <li><a href="/docs/components/mobilenavigation/" class="d-inline-flex align-items-center rounded"
               >行動導覽</a></li>
-          <li><a href="/docs/components/tabs/" class="d-inline-flex align-items-center rounded"
-              >頁籤面板</a></li>
+          <li><a href="/docs/components/tabs/" class="d-inline-flex align-items-center rounded active"
+               aria-current="page" >頁籤面板</a></li>
         </ul>
       </div>
     </li>
@@ -196,11 +196,11 @@
   </aside>
 
   <main class="bd-main order-1">
-    <div class="bd-intro ps-lg-4"><h5>風格</h5><div class="d-md-flex flex-md-row align-items-left justify-content-between">
+    <div class="bd-intro ps-lg-4"><h5>元件</h5><div class="d-md-flex flex-md-row align-items-left justify-content-between">
         
-        <h1 id="content" style="font-weight: 900;">Opacity</h1>
+        <h1 id="content" style="font-weight: 900;">頁籤面板 Tabs</h1>
       </div>
-      <p style="margin-top: 0.5rem;">Control the opacity of elements.</p>
+      <p style="margin-top: 0.5rem;">一種將網頁內容分群管理的容器</p>
       <hr>
     </div>
 
@@ -208,31 +208,58 @@
     <div class="bd-content ps-lg-4">
       
 
-      <p>The <code>opacity</code> property sets the opacity level for an element. The opacity level describes the transparency level, where <code>1</code> is not transparent at all, <code>.5</code> is 50% visible, and <code>0</code> is completely transparent.</p>
-<p>Set the <code>opacity</code> of an element using <code>.opacity-{value}</code> utilities.</p>
-<div class="bd-example d-sm-flex">
-  <div class="opacity-100 p-3 m-2 bg-primary text-light fw-bold rounded">100%</div>
-  <div class="opacity-75 p-3 m-2 bg-primary text-light fw-bold rounded">75%</div>
-  <div class="opacity-50 p-3 m-2 bg-primary text-light fw-bold rounded">50%</div>
-  <div class="opacity-25 p-3 m-2 bg-primary text-light fw-bold rounded">25%</div>
-</div>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;opacity-100&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;opacity-75&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;opacity-50&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;opacity-25&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div><h3 id="utilities-api">Utilities API</h3>
-<p>Opacity utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a href="/docs/5.1/utilities/api/#using-the-api">Learn how to use the utilities API.</a></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss">    <span class="s2">&#34;opacity&#34;</span><span class="nd">:</span> <span class="o">(</span>
-      <span class="nt">property</span><span class="nd">:</span> <span class="nt">opacity</span><span class="o">,</span>
-      <span class="nt">values</span><span class="nd">:</span> <span class="o">(</span>
-        <span class="nt">0</span><span class="nd">:</span> <span class="nt">0</span><span class="o">,</span>
-        <span class="nt">25</span><span class="nd">:</span> <span class="nc">.25</span><span class="o">,</span>
-        <span class="nt">50</span><span class="nd">:</span> <span class="nc">.5</span><span class="o">,</span>
-        <span class="nt">75</span><span class="nd">:</span> <span class="nc">.75</span><span class="o">,</span>
-        <span class="nt">100</span><span class="nd">:</span> <span class="nt">1</span><span class="o">,</span>
-      <span class="o">)</span>
-    <span class="o">),</span>
-    </code></pre></div>
+      <h3 id="關於頁籤面板元件">關於頁籤面板元件</h3>
+<p>頁籤面板 (tabs) 常用於將相關的內容分成比較小的區塊以方便切換閱讀的焦點區塊，頁籤的切換並不會將使用者待到其他頁面，而是在同一頁面上切換內容面板上的不同資訊。頁籤面板含有三個元素：頁籤 (tab)、頁籤列表 (tab list)、與內容面板 (content panel)。每個頁籤上的文字為頁籤文字 (tab label)。</p>
+<p><img class="img-fluid" src="/docs/5.1/assets/img/tabs.png" ></p>
+<p>預設上，頁籤列表中會有一個選項預設為選定頁籤 (selected tab) ，列表中的其他選項則為未選定頁籤 (unselected tabs)。</p>
+<h3 id="使用規範">使用規範</h3>
+<h4 id="何時該使用頁籤面板">何時該使用頁籤面板</h4>
+<p>當有 2~9 個類別的資訊，且分類方式不易再更動。名稱較短、可預測，性質相近且放在起合乎邏輯時。特別是當類別名稱試放在頁籤面板上時，所有類別標籤可以寫在同一行。</p>
+<h4 id="何時該考慮使用其他元件">何時該考慮使用其他元件</h4>
+<ul>
+<li><strong>列表數量少於二。</strong> 當頁籤列表的數量只有一項時，可以不用頁籤面板，而改以其它方式呈現，例如：文字標題 (title)。</li>
+<li><strong>列表數量大於九。</strong> 當頁籤列表的數量超過九項時，可以不用頁籤面板，而改以其它方式呈現，例如：下拉式選單 (dropdown)。</li>
+</ul>
+<h4 id="頁籤面板易用性">頁籤面板易用性</h4>
+<ul>
+<li><strong>勿使用頁籤做為主要導覽。</strong> 頁籤是頁內導覽用，請勿過度依賴頁籤作為導覽。</li>
+<li><strong>列表行數保持在一行內最佳。</strong> 當頁籤列表的數量多到超過版面空間，必須超出寬幅或到達第二行時，請優先重新檢視資訊架構，做適度的文字或項目刪減。</li>
+<li><strong>頁籤文字使用簡單明確的短名詞。</strong> 文字請保持簡單、簡短，建議使用簡潔的短名詞，避免使用長文句以縮減文字長度。例如：「今日新聞」而非「點我看今日新聞」。建議字數儘量保持在四個字以內。</li>
+<li><strong>明確的區別選定頁籤 (selected tab) 與未選定頁籤 (unselected tab)。</strong> 選定頁籤應明確的與未選定頁籤做區隔。</li>
+<li><strong>勿使用圖標 (icon) 替代文字。</strong> 頁籤文字為必須存在的元素，請勿僅用圖標代替。</li>
+<li><strong>使用圖標 (icon) 時請與文字意思配合。</strong> 頁籤文字為必須存在的元素，一般不建議使用太多花俏的圖標使版面過於繁亂。若真的有幫助或必要的情況下，可用圖標來補充文字意涵，但請注意圖標與文字意涵應相互配合。</li>
+<li><strong>勿使用圖片在頁籤中。</strong> 頁籤是頁內導覽用，請勿用整張圖當作背景作為頁籤文字的替代。</li>
+<li><strong>請勿截斷文字。</strong></li>
+<li><strong>請先檢視資訊架構。</strong> Tab 數量太多時一行塞不下，請先檢視資訊架構，決定使用者是否應可：
+<ul>
+<li>一次看到所有 tab 的全部內容</li>
+<li>優先與排序高的 tab 互動</li>
+</ul>
+</li>
+</ul>
+<h4 id="頁籤面板近用性">頁籤面板近用性</h4>
+<ul>
+<li><strong>符合指引五(鍵盤可操作)：讓所有的功能都能透過鍵盤使用。</strong> 5.1（檢測等級 A）內容的所有功能都能透過鍵盤介面來操作，而且不能額外要求在限定時間內完成按鍵操作。特殊目的的網頁(例如遊戲網頁要求在特定時間內完成指定操作)不在此限。</li>
+<li>相關稽核評量碼
+<ul>
+<li>EV1050100：提供由鍵盤觸發的事件處理程式</li>
+<li>EV1050101：確認所有功能都能透過鍵盤介面來操作</li>
+</ul>
+</li>
+</ul>
+<h3 id="設計元件">設計元件</h3>
+<h4 id="基本款-頁籤式-tab-vs-膠囊狀頁籤-pill">基本款 頁籤式 (tab) vs 膠囊狀頁籤 (pill)</h4>
+<p>基本款的頁籤面板包含頁籤、頁籤列表與內容面板。您也可以使用膠囊狀頁籤的變形。在這個元件中我們展示的是頁籤列表數量較少（內容不超過一行）的情境。頁籤寬度的設定預設為依文字長 (label-based) ，頁籤的寬度可以依文字長度改變。</p>
+<h4 id="依版面寬-screen-based">依版面寬 (screen based)</h4>
+<p>版面寬度固定的情況下，頁籤的長度依版面款度等比例分配。有時也會稱依文字長 (label-based) 為堆疊式 (stacked) ，依版面寬 (screen based) 則為等分式 (distributed)。如果文字長度超過頁籤寬度而換行時，建議用其他頁籤設計，如：基本款頁籤。</p>
+<h4 id="頁籤圖標-iconed-tab">頁籤圖標 (iconed tab)</h4>
+<p>頁籤的文字前面可以加上簡單的圖標，方便使用者查找、瀏覽。</p>
+<h4 id="多頁籤-滾動式-scrollable-tabs-vs-磚牆式-pill-bricks">多頁籤 滾動式 (scrollable-tabs) vs 磚牆式 (pill-bricks)</h4>
+<p>當頁籤列表內容較多時，可將選用滾動式的頁籤面板，或是磚牆式的膠囊式頁籤延伸。磚牆式的好處是列表數量可以比較有機的增加，使用者仍然能夠一次看見所有的頁籤內容。滾動式的頁籤面板則必須將某幾個頁籤放在較低順位或藏起，因此使用者可能會在一開始看不到某幾個頁籤內容。</p>
+<h4 id="下拉式選單-select">下拉式選單 (select)</h4>
+<p>當您認為使用者應該不需要一次看到所有頁籤內容時，請考慮使用另一個元件：下拉式選單。</p>
+<h4 id="行動版頁籤導覽">行動版頁籤導覽</h4>
+<p>在行動裝置上，因為空間較為稀缺，我們建議從以下三種設計中擇一使用。從左至右分別為：下拉式選單、滾動式頁籤與磚牆式頁籤。</p>
 
     </div>
   </main>
