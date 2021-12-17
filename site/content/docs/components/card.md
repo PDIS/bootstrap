@@ -232,7 +232,7 @@ group: components
           <span class="badge bg-secondary-light text-dark">標籤</span>
           <span class="badge bg-secondary-light text-dark">標籤</span>
         </div>
-        <p class="card-date">110-10-31</p>
+        <p class="card-text">110-10-31</p>
         <h5 class="card-title">標題文字</h5>
         <p class="card-text">此部分為卡片之內文。</p>
         <a href="#" class="btn btn-primary">前往報名</a>
@@ -244,7 +244,7 @@ group: components
       <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <div class="d-flex justify-content-between">
-          <p class="card-date">110-10-31</p>
+          <p class="card-text">110-10-31</p>
           <div>
             <span class="badge bg-secondary-light text-dark">標籤</span>
           </div>
@@ -270,7 +270,7 @@ group: components
     <div class="card">
       <div class="card-body">
         <div class="d-flex justify-content-between">
-          <p class="card-date">110-10-31</p>
+          <p class="card-text">110-10-31</p>
           <div class="badge-collections">
             <span class="badge bg-secondary-light text-dark">標籤</span>
             <span class="badge bg-secondary-light text-dark">標籤</span>
@@ -301,7 +301,7 @@ group: components
       <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <div class="d-flex justify-content-between">
-          <p class="card-date">110-10-31</p>
+          <p class="card-text">110-10-31</p>
           <div>
             <span class="badge bg-secondary-light text-dark">標籤</span>
           </div>
@@ -355,7 +355,7 @@ group: components
         <div class="col-md-8">
           <div class="card-body">
             <div class="d-flex justify-content-between">
-              <p class="card-date">110-10-31</p>
+              <p class="card-text">110-10-31</p>
               <div>
                 <span class="badge bg-secondary-light text-dark">標籤</span>
                 <span class="badge bg-secondary-light text-dark">標籤</span>
@@ -395,7 +395,7 @@ group: components
               <span class="badge bg-secondary-light text-dark">標籤</span>
               <span class="badge bg-secondary-light text-dark">標籤</span>
             </div>
-            <p class="card-date">110-10-31</p>
+            <p class="card-text">110-10-31</p>
           </div>
         </div>
       </div>
