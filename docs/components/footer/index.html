@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="The most popular HTML, CSS, and JS library in the world.">
+<meta name="description" content="頁尾服務的是那些已到達頁面底部卻一無所獲的使用者。">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.1">
 
-<title> · PDIS Design System v5.1</title>
+<title>頁尾 Footer · PDIS Design System v5.1</title>
 
 <link rel="canonical" href="https://design.pdis.tw/docs/components/footer/">
 
@@ -39,14 +39,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="">
-<meta name="twitter:description" content="The most popular HTML, CSS, and JS library in the world.">
+<meta name="twitter:title" content="頁尾 Footer">
+<meta name="twitter:description" content="頁尾服務的是那些已到達頁面底部卻一無所獲的使用者。">
 <meta name="twitter:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
 <meta property="og:url" content="https://design.pdis.tw/docs/components/footer/">
-<meta property="og:title" content="">
-<meta property="og:description" content="The most popular HTML, CSS, and JS library in the world.">
+<meta property="og:title" content="頁尾 Footer">
+<meta property="og:description" content="頁尾服務的是那些已到達頁面底部卻一無所獲的使用者。">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
@@ -60,7 +60,7 @@
     <div class="skippy visually-hidden-focusable overflow-hidden">
   <div class="container-xl">
     <a class="d-inline-flex p-2 m-1" href="#content">Skip to main content</a>
-    
+    <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a>
   </div>
 </div>
 
@@ -133,29 +133,127 @@
 
 
     
-  <header class="py-5 border-bottom">
-    <div class="container pt-md-1 pb-md-4">
-      <div class="row">
-        <div class="col-xl-8">
-          <h1 class="bd-title mt-0"></h1>
-          <p class="bd-lead"></p>
-          
-        </div>
-        <div class="col-xl-4 d-lg-flex justify-content-xl-end">
-          <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
 
-        </div>
+
+<div class="container-xxl my-md-4 bd-layout">
+  <aside class="bd-sidebar">
+    <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
+    <li class="mb-1">
+      <button class="btn d-inline-flex align-items-center rounded collapsed"
+        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="false"
+        >
+        風格
+      </button>
+
+      <div class="collapse" id="style-collapse">
+        <ul class="list-unstyled fw-normal pb-1 small">
+          <li><a href="/docs/style/accessibility/" class="d-inline-flex align-items-center rounded"
+              >無障礙</a></li>
+          <li><a href="/docs/style/color/" class="d-inline-flex align-items-center rounded"
+              >顏色</a></li>
+          <li><a href="/docs/style/layout/" class="d-inline-flex align-items-center rounded"
+              >版面配置</a></li>
+          <li><a href="/docs/style/typography/" class="d-inline-flex align-items-center rounded"
+              >文字屬性</a></li>
+          <li><a href="/docs/style/spacing/" class="d-inline-flex align-items-center rounded"
+              >間距</a></li>
+        </ul>
       </div>
+    </li>
+    <li class="mb-1">
+      <button class="btn d-inline-flex align-items-center rounded"
+        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="true"
+         aria-current="true" >
+        元件
+      </button>
+
+      <div class="collapse show" id="components-collapse">
+        <ul class="list-unstyled fw-normal pb-1 small">
+          <li><a href="/docs/components/header/" class="d-inline-flex align-items-center rounded"
+              >頁首</a></li>
+          <li><a href="/docs/components/card/" class="d-inline-flex align-items-center rounded"
+              >卡片</a></li>
+          <li><a href="/docs/components/list/" class="d-inline-flex align-items-center rounded"
+              >列表</a></li>
+          <li><a href="/docs/components/accordion/" class="d-inline-flex align-items-center rounded"
+              >手風琴</a></li>
+          <li><a href="/docs/components/sidebar/" class="d-inline-flex align-items-center rounded"
+              >側邊欄</a></li>
+          <li><a href="/docs/components/select/" class="d-inline-flex align-items-center rounded"
+              >下拉式選單</a></li>
+          <li><a href="/docs/components/dropdown/" class="d-inline-flex align-items-center rounded"
+              >導覽列下拉選單</a></li>
+          <li><a href="/docs/components/mobilenavigation/" class="d-inline-flex align-items-center rounded"
+              >行動導覽</a></li>
+          <li><a href="/docs/components/tabs/" class="d-inline-flex align-items-center rounded"
+              >頁籤面板</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+  </aside>
+
+  <main class="bd-main order-1">
+    <div class="bd-intro ps-lg-4"><h5>元件</h5><div class="d-md-flex flex-md-row align-items-left justify-content-between">
+        
+        <h1 id="content" style="font-weight: 900;">頁尾 Footer</h1>
+      </div>
+      <p style="margin-top: 0.5rem;">頁尾服務的是那些已到達頁面底部卻一無所獲的使用者。</p>
+      <hr>
     </div>
-  </header>
 
-  <main class="bd-content order-1 py-5" id="content">
-    <div class="container">
+    
+    <div class="bd-content ps-lg-4">
       
 
-      
+      <h3 id="關於頁尾元件">關於頁尾元件</h3>
+<p>頁尾是網站使用者查找服務的最後一站。當整個頁面或網站上的導覽仍舊無法引導使用者到他想要使用的服務時，這是使用者可以來到頁尾做最後的尋找。</p>
+<h3 id="使用規範">使用規範</h3>
+<h4 id="何時該使用頁尾">何時該使用頁尾</h4>
+<p>每個網站都應該有頁尾。</p>
+<h4 id="如何選擇適合的頁尾">如何選擇適合的頁尾</h4>
+<p><strong>基本頁尾 Basic footer</strong> 當網站本身的功能較少時，例如任務型網站，則可以選擇使用簡單的基本頁尾即可。您可以依情況加上標章或是社群連結。
+<strong>展開頁尾 Extended footer</strong> 當網站本身的服務項目較多時，例如是一個機關的主要官網，則可以選擇展開頁尾。您可以依情況加上「回上方」的功能，並將項目連結選擇性展開或收納。</p>
+<h4 id="頁尾易用性">頁尾易用性</h4>
+<p><strong>規劃您的頁尾。</strong> 頁尾的內容應該能夠回答使用者關於一個網站或頁面的剩餘的問題（主要問題應都能在頁面內容中得到解答）。請謹慎的規劃頁尾的內容，設想使用者到達頁尾時還可能有哪些疑問，善加利用頁尾作為最後的解惑機會。
+<strong>頁尾不是頁首的拷貝。</strong> 頁尾的內容並不是將頁首所有連結拷貝下來即可，尤其在大型網站上，頁首已經含有許多且極大部分的連結了，請避免將所有連結再次複製到頁尾。
+<strong>避免放不常更新的社群媒體。</strong> 許多機關會在頁尾放社群媒體連結，但若你的有些社群媒體帳號已經不常更新，請避免將它再放到頁尾上，讓使用者做不必要的查找。
+<strong>使用簡短易懂的文字。</strong> 使用簡短的文字，避免使用一般人難以理解的行話或術語。 </p>
+<h3 id="設計元件">設計元件</h3>
+<h4 id="基本頁尾-base-footer">基本頁尾 Base footer</h4>
+<div class="bd-example">
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+</code></pre></div>
+<h4 id="基本頁尾加連結-base-footer-with-links">基本頁尾加連結 Base footer with links</h4>
+<div class="bd-example">
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+</code></pre></div>
+<h4 id="基本頁尾加標章-base-footer-with-labels">基本頁尾加標章 Base footer with labels</h4>
+<div class="bd-example">
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+</code></pre></div>
+<h4 id="基本頁尾加社群連結-base-footer-with-socials">基本頁尾加社群連結 Base footer with socials</h4>
+<div class="bd-example">
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+</code></pre></div>
+<h4 id="頁尾加服務項目連結-footer-with-service-links">頁尾加服務項目連結 Footer with service links</h4>
+<div class="bd-example">
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+</code></pre></div>
+<h4 id="頁尾加回上方控制-footer-with-back-to-top-control">頁尾加回上方控制 Footer with back to top control</h4>
+<div class="bd-example">
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+</code></pre></div>
+<h4 id="展開頁尾-extended-footer">展開頁尾 Extended Footer</h4>
+<div class="bd-example">
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+</code></pre></div>
+
     </div>
   </main>
+</div>
 
 
     <footer class="bd-footer py-4 mt-4 bg-light">
@@ -190,12 +288,12 @@
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 
 <script src="/docs/5.1/assets/js/docs.min.js"></script>
 
 
     
-    
+
   </body>
 </html>
