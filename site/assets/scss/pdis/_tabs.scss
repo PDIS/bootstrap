@@ -1,5 +1,12 @@
 .nav-tabs {
   border-bottom: 0;
+
+  .nav-tabs-wrapper {
+    white-space: nowrap;
+    display: flex;
+    overflow: hidden;
+  }
+
   .nav-item {
     display: inline-block;
   }
@@ -29,4 +36,8 @@
 
 .tab-content {
   margin-top: 1rem;
+}
+
+.nav-scroll {
+  flex-wrap: nowrap;
 }
