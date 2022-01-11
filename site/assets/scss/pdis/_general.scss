@@ -10,12 +10,12 @@ a {
 }
 
 a:visited {
-  color: $secondary-dark;
+  color: var(--bs-secondary-dark);
 }
 
 a:active {
-  background-color: $primary;
-  color: $secondary-light;
+  background-color: var(--bs-primary);
+  color: var(--bs-secondary-light);
 }
 
 .icon {
@@ -118,21 +118,21 @@ a:active {
   border: 1px solid #121212;
 
   &:hover {
-    color: $primary-dark;
-    border-color: $primary-dark;
+    color: var(--bs-primary-dark);
+    border-color: var(--bs-primary-dark);
   }
 
   &:active,
   &:focus {
-    color: $secondary-light;
-    background-color: $primary;
+    color: var(--bs-secondary-light);
+    background-color: var(--bs-primary);
     border: 2px solid #fedc98;
     box-shadow: none;
   }
 }
 
 .option {
-  background: $gray-100;
+  background: var(--bs-gray-100);
   color: black;
 }
 
@@ -143,7 +143,7 @@ a:active {
 }
 
 .optgroup {
-  background: $gray-100;
+  background: var(--bs-gray-100);
   color: #6b6b6b !important;
 }
 
@@ -157,7 +157,7 @@ a:active {
 
 // mod from site/assets/scss/_navbar
 .bd-navbar {
-  background-color: $gray-100;
+  background-color: var(--bs-gray-100);
   .navbar-nav {
     .nav-link {
       color: rgba($link-color, 0.85);

@@ -16,8 +16,8 @@
     text-decoration: none;
 
     &.active {
-      color: $primary;
-      border-bottom: 1px solid $primary;
+      color: var(--bs-primary);
+      border-bottom: 1px solid var(--bs-primary);
     }
   }
 }
@@ -27,9 +27,9 @@
     text-decoration: none;
 
     &.active {
-      color: $primary;
+      color: var(--bs-primary);
       background: none;
-      border: 1px solid $primary;
+      border: 1px solid var(--bs-primary);
     }
   }
 }

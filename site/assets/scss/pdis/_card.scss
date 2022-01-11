@@ -1,6 +1,6 @@
 .card {
   .card-header {
-    background-color: $gray-400;
+    background-color: var(--bs-gray-400);
     font-weight: 500;
     padding: 1rem 1.5rem 1rem 1.5rem;
   }
@@ -18,12 +18,8 @@
     color: #6b6b6b;
   }
 
-  .card-date {
-    color: #6b6b6b;
-  }
-
   .card-bg-gary {
-    background-color: $gray-100;
+    background-color: var(--bs-gray-100);
   }
 }
 
@@ -105,7 +101,7 @@
       margin-left: 0.5rem;
       color: #6b6b6b;
     }
-    
+
     .list-group-item-borderless {
       @extend .list-group-item;
       @extend .border-0;
@@ -114,7 +110,6 @@
         margin-bottom: 0.5rem;
       }
     }
-  
   }
 
   .list-group-borderless {

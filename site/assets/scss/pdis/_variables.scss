@@ -24,3 +24,16 @@ $accordion-icon-active-color: white;
 $sidebar-icon-color: black;
 $sidebar-icon-active-color: $primary;
 $sidebar-icon-hover-color: white;
+
+:root {
+  --bs-primary: #005aa8;
+  --bs-secondary: #f9a602;
+  --bs-success: #4ba979;
+  --bs-info: #3e2a00;
+  --bs-warning: #e35d6a;
+  --bs-danger: #ab361d;
+  --bs-primary-dark: #003c70;
+  --bs-primary-light: #9cd1ff;
+  --bs-secondary-dark: #3e2a00;
+  --bs-secondary-light: #fedc98;
+}

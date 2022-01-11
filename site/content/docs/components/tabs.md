@@ -147,7 +147,7 @@ group: components
 
 {{< /example >}}
 
-#### 頁籤圖標 (icon tab)
+#### 頁籤圖標 (iconed tab)
 
 頁籤的文字前面可以加上簡單的圖標，方便使用者查找、瀏覽。
 
