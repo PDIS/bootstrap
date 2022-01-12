@@ -10,7 +10,7 @@ toc: true
 
 側邊欄為導覽用的元件，通常與頂部導覽搭配使用，適合當網站資訊架構較為複雜、層級較多時使用。側邊欄可以呈現一到三層級的選項，第一層級的選項最少五項。根據米勒定律 (Miller’s law) 一般人短期記憶中能容納的物體數量為七加減二，所以第一層級的選項也請儘量維持在九項以下。第二層級沒有特別規定，但若超過九項時，請審慎考慮網站的架構規劃。第三層級因為已到達直接呈現後點擊的用途，連結數量上並沒有一定限制。
 
-<img class="img-fluid" src="../docs/5.1/assets/img/sidebar_illustration.png">
+<img class="img-fluid" src="../docs/5.1/assets/img/sidebar_illustration-2.png">
 
 ### 使用規範
 
