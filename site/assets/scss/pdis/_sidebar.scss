@@ -1,8 +1,4 @@
-.pdis-sidebar {
-}
-
 .sidebar-button {
-  @extend .accordion-button;
   font-weight: 500;
 
   &:not(.collapsed) {
@@ -42,10 +38,6 @@
   margin-bottom: 0;
 }
 
-.sidebar-item {
-  @extend .accordion-item;
-}
-
 .sidebar-body {
   padding: $accordion-body-padding-y $accordion-body-padding-x;
 }
@@ -57,19 +49,13 @@
   border-color: var(--bs-primary);
 }
 
-.sidebar-second-layer-item {
-}
-
 .sidebar-second-layer-button {
-  @extend .sidebar-button;
   padding-left: 2rem;
   background-color: var(--bs-gray-100);
   border: 0;
 }
 
 .sidebar-link {
-  @extend .list-group-item;
-  @extend .list-group-item-action;
   padding-left: 3rem;
   color: var(--bs-primary);
   text-decoration: underline;
@@ -160,7 +146,6 @@
 
 .sidebar-caret {
   .sidebar-button {
-    @extend .sidebar-item;
     &:not(.collapsed) {
       &::after {
         background-image: escape-svg(
@@ -186,7 +171,6 @@
 
 .sidebar-plus {
   .sidebar-button {
-    @extend .sidebar-item;
     &:not(.collapsed) {
       &::after {
         background-image: escape-svg(
@@ -213,31 +197,20 @@
 
 .sidebar-button-badge {
   @extend .badge;
-  @extend .bg-secondary;
-  @extend .text-dark;
   font-weight: 500;
   margin-right: 0.5rem;
   padding: 0.25rem 0.5rem;
 }
 
 .sidebar-button-container {
-  @extend .d-flex;
   width: inherit;
 }
 
 .sidebar-button-text {
-  @extend .flex-grow-1;
-  @extend .align-self-center;
   margin-bottom: 0;
-}
-
-.sidebar-button-icon {
-  @extend .icon;
-  @extend .align-self-center;
 }
 
 .sidebar-button-badge-round {
   @extend .sidebar-button-badge;
-  @extend .rounded-pill;
   padding: 0.25rem;
 }

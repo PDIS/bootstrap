@@ -49,9 +49,9 @@ toc: true
 <div class="row">
   <div class="col-md-6">
     <div class="sidebar" id="sidebar">
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headerone">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="true" aria-controls="collapseone">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="true" aria-controls="collapseone">
             可展開第一層標題
           </button>
         </h2>
@@ -59,7 +59,7 @@ toc: true
           <div class="sidebar-second-layer" id="sidebarsecondlayer">
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheaderone">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseone" aria-expanded="true" aria-controls="secondlayercollapseone">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseone" aria-expanded="true" aria-controls="secondlayercollapseone">
                   可展開第二層標題
                 </button>
               </h2>
@@ -68,36 +68,36 @@ toc: true
             </div>
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheadertwo">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwo" aria-expanded="true" aria-controls="secondlayercollapsetwo">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwo" aria-expanded="true" aria-controls="secondlayercollapsetwo">
                   可展開第二層標題
                 </button>
               </h2>
               <div id="secondlayercollapsetwo" class="sidebar-collapse collapse" aria-labelledby="secondlayerheadertwo" data-bs-parent="#sidebarsecondlayer">
                 <div class="list-group">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">
                     可點擊服務連結
                   </a>
-                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headertwo">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
             可展開第一層標題
           </button>
         </h2>
         <div id="collapsetwo" class="sidebar-collapse collapse" aria-labelledby="headertwo" data-bs-parent="#sidebar">
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headerthree">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
             可展開第一層標題
           </button>
         </h2>
@@ -108,9 +108,9 @@ toc: true
   </div>
   <div class="col-md-6">
     <div class="sidebar-dense" id="sidebardense">
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headeronedense">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseonedense" aria-expanded="true" aria-controls="collapseonedense">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseonedense" aria-expanded="true" aria-controls="collapseonedense">
             可展開第一層標題
           </button>
         </h2>
@@ -118,7 +118,7 @@ toc: true
           <div class="sidebar-second-layer" id="sidebarsecondlayerdense">
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheaderonedense">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseonedense" aria-expanded="true" aria-controls="secondlayercollapseonedense">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseonedense" aria-expanded="true" aria-controls="secondlayercollapseonedense">
                   可展開第二層標題
                 </button>
               </h2>
@@ -127,36 +127,36 @@ toc: true
             </div>
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheadertwodense">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwodense" aria-expanded="true" aria-controls="secondlayercollapsetwodense">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwodense" aria-expanded="true" aria-controls="secondlayercollapsetwodense">
                   可展開第二層標題
                 </button>
               </h2>
               <div id="secondlayercollapsetwodense" class="sidebar-collapse collapse" aria-labelledby="secondlayerheadertwodense" data-bs-parent="#sidebarsecondlayerdense">
                 <div class="list-group">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">
                     可點擊服務連結
                   </a>
-                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headertwodense">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwodense" aria-expanded="true" aria-controls="collapsetwodense">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwodense" aria-expanded="true" aria-controls="collapsetwodense">
             可展開第一層標題
           </button>
         </h2>
         <div id="collapsetwodense" class="sidebar-collapse collapse" aria-labelledby="headertwodense" data-bs-parent="#sidebardense">
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headerthreedense">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethreedense" aria-expanded="true" aria-controls="collapsethreedense">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethreedense" aria-expanded="true" aria-controls="collapsethreedense">
             可展開第一層標題
           </button>
         </h2>
@@ -178,9 +178,9 @@ toc: true
 <div class="row">
   <div class="col-md-6">
     <div class="sidebar" id="sidebar2">
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headerone2">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone2" aria-expanded="true" aria-controls="collapseone2">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone2" aria-expanded="true" aria-controls="collapseone2">
             可展開第一層標題
           </button>
         </h2>
@@ -188,7 +188,7 @@ toc: true
           <div class="sidebar-second-layer" id="sidebarsecondlayer2">
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheaderone2">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseone2" aria-expanded="true" aria-controls="secondlayercollapseone2">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseone2" aria-expanded="true" aria-controls="secondlayercollapseone2">
                   可展開第二層標題
                 </button>
               </h2>
@@ -197,36 +197,36 @@ toc: true
             </div>
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheadertwo2">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwo2" aria-expanded="true" aria-controls="secondlayercollapsetwo2">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwo2" aria-expanded="true" aria-controls="secondlayercollapsetwo2">
                   可展開第二層標題
                 </button>
               </h2>
               <div id="secondlayercollapsetwo2" class="sidebar-collapse collapse" aria-labelledby="secondlayerheadertwo2" data-bs-parent="#sidebarsecondlayer2">
                 <div class="list-group">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">
                     可點擊服務連結
                   </a>
-                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headertwo2">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo2" aria-expanded="true" aria-controls="collapsetwo2">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo2" aria-expanded="true" aria-controls="collapsetwo2">
             可展開第一層標題
           </button>
         </h2>
         <div id="collapsetwo2" class="sidebar-collapse collapse" aria-labelledby="headertwo2" data-bs-parent="#sidebar2">
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headerthree2">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree2" aria-expanded="true" aria-controls="collapsethree2">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree2" aria-expanded="true" aria-controls="collapsethree2">
             可展開第一層標題
           </button>
         </h2>
@@ -238,9 +238,9 @@ toc: true
   <div class="col-md-6">
     <h4>側欄主標題</h4>
     <div class="sidebar" id="title-sidebar">
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headerone3">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone3" aria-expanded="true" aria-controls="collapseone3">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone3" aria-expanded="true" aria-controls="collapseone3">
             可展開第一層標題
           </button>
         </h2>
@@ -248,7 +248,7 @@ toc: true
           <div class="sidebar-second-layer" id="sidebarsecondlayer3">
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheaderone3">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseone3" aria-expanded="true" aria-controls="secondlayercollapseone3">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseone3" aria-expanded="true" aria-controls="secondlayercollapseone3">
                   可展開第二層標題
                 </button>
               </h2>
@@ -257,36 +257,36 @@ toc: true
             </div>
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheadertwo3">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwo3" aria-expanded="true" aria-controls="secondlayercollapsetwo3">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwo3" aria-expanded="true" aria-controls="secondlayercollapsetwo3">
                   可展開第二層標題
                 </button>
               </h2>
               <div id="secondlayercollapsetwo3" class="sidebar-collapse collapse" aria-labelledby="secondlayerheadertwo3" data-bs-parent="#sidebarsecondlayer3">
                 <div class="list-group">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">
                     可點擊服務連結
                   </a>
-                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headertwo3">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo3" aria-expanded="true" aria-controls="collapsetwo3">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo3" aria-expanded="true" aria-controls="collapsetwo3">
             可展開第一層標題
           </button>
         </h2>
         <div id="collapsetwo3" class="sidebar-collapse collapse" aria-labelledby="headertwo3" data-bs-parent="#title-sidebar">
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headerthree3">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree3" aria-expanded="true" aria-controls="collapsethree3">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree3" aria-expanded="true" aria-controls="collapsethree3">
             可展開第一層標題
           </button>
         </h2>
@@ -312,9 +312,9 @@ toc: true
       <a href="#" OnClick='Collapse()'>展開全部</a>
     </div>
     <div class="sidebar" id="js-sidebar">
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="js-headerone">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-collapseone" aria-expanded="true" aria-controls="js-collapseone">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-collapseone" aria-expanded="true" aria-controls="js-collapseone">
             可展開第一層標題
           </button>
         </h2>
@@ -322,7 +322,7 @@ toc: true
           <div class="sidebar-second-layer" id="js-sidebarsecondlayer">
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="js-secondlayerheaderone">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-secondlayercollapseone" aria-expanded="true" aria-controls="js-secondlayercollapseone">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-secondlayercollapseone" aria-expanded="true" aria-controls="js-secondlayercollapseone">
                   可展開第二層標題
                 </button>
               </h2>
@@ -331,36 +331,36 @@ toc: true
             </div>
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="js-secondlayerheadertwo">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-secondlayercollapsetwo" aria-expanded="true" aria-controls="js-secondlayercollapsetwo">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-secondlayercollapsetwo" aria-expanded="true" aria-controls="js-secondlayercollapsetwo">
                   可展開第二層標題
                 </button>
               </h2>
               <div id="js-secondlayercollapsetwo" class="sidebar-collapse collapse" aria-labelledby="js-secondlayerheadertwo" data-bs-parent="#js-sidebarsecondlayer">
                 <div class="list-group">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">
                     可點擊服務連結
                   </a>
-                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="js-headertwo">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-collapsetwo" aria-expanded="true" aria-controls="js-collapsetwo">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-collapsetwo" aria-expanded="true" aria-controls="js-collapsetwo">
             可展開第一層標題
           </button>
         </h2>
         <div id="js-collapsetwo" class="sidebar-collapse collapse" aria-labelledby="js-headertwo" data-bs-parent="#js-sidebar">
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="js-headerthree">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-collapsethree" aria-expanded="true" aria-controls="js-collapsethree">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#js-collapsethree" aria-expanded="true" aria-controls="js-collapsethree">
             可展開第一層標題
           </button>
         </h2>
@@ -395,9 +395,9 @@ const Collapse = () => {
 <div class="row">
   <div class="col-md-6">
     <div class="sidebar" id="indicator-sidebar">
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="indicator-headerone">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-collapseone" aria-expanded="true" aria-controls="indicator-collapseone">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-collapseone" aria-expanded="true" aria-controls="indicator-collapseone">
             <i class="bi bi-house-door-fill icon"></i>可展開第一層標題
           </button>
         </h2>
@@ -405,7 +405,7 @@ const Collapse = () => {
           <div class="sidebar-second-layer" id="indicator-sidebarsecondlayer">
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="indicator-secondlayerheaderone">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-secondlayercollapseone" aria-expanded="true" aria-controls="indicator-secondlayercollapseone">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-secondlayercollapseone" aria-expanded="true" aria-controls="indicator-secondlayercollapseone">
                   <i class="bi bi-credit-card-2-front icon"></i>可展開第二層標題
                 </button>
               </h2>
@@ -414,36 +414,36 @@ const Collapse = () => {
             </div>
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheadertwo">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-secondlayercollapsetwo" aria-expanded="true" aria-controls="indicator-secondlayercollapsetwo">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-secondlayercollapsetwo" aria-expanded="true" aria-controls="indicator-secondlayercollapsetwo">
                   <i class="bi bi-clipboard icon"></i>可展開第二層標題
                 </button>
               </h2>
               <div id="indicator-secondlayercollapsetwo" class="sidebar-collapse collapse" aria-labelledby="indicator-secondlayerheadertwo" data-bs-parent="#indicator-sidebarsecondlayer">
                 <div class="list-group">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">
                     可點擊服務連結
                   </a>
-                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="indicator-headertwo">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-collapsetwo" aria-expanded="true" aria-controls="indicator-collapsetwo">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-collapsetwo" aria-expanded="true" aria-controls="indicator-collapsetwo">
             <i class="bi bi-puzzle-fill icon"></i>可展開第一層標題
           </button>
         </h2>
         <div id="indicator-collapsetwo" class="sidebar-collapse collapse" aria-labelledby="indicator-headertwo" data-bs-parent="#indicator-sidebar">
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="indicator-headerthree">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-collapsethree" aria-expanded="true" aria-controls="indicator-collapsethree">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indicator-collapsethree" aria-expanded="true" aria-controls="indicator-collapsethree">
             <i class="bi bi-inboxes icon"></i>可展開第一層標題
           </button>
         </h2>
@@ -454,9 +454,9 @@ const Collapse = () => {
   </div>
   <div class="col-md-6">
     <div class="sidebar-reversed" id="sidebar-reversed">
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headerone-reversed">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone-reversed" aria-expanded="true" aria-controls="collapseone-reversed">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone-reversed" aria-expanded="true" aria-controls="collapseone-reversed">
             可展開第一層標題
           </button>
         </h2>
@@ -464,7 +464,7 @@ const Collapse = () => {
           <div class="sidebar-second-layer" id="sidebarsecondlayer-reversed">
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheaderone-reversed">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseone-reversed" aria-expanded="true" aria-controls="secondlayercollapseone-reversed">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseone-reversed" aria-expanded="true" aria-controls="secondlayercollapseone-reversed">
                   可展開第二層標題
                 </button>
               </h2>
@@ -473,36 +473,36 @@ const Collapse = () => {
             </div>
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheadertwo-reversed">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwo" aria-expanded="true" aria-controls="secondlayercollapsetwo">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwo" aria-expanded="true" aria-controls="secondlayercollapsetwo">
                   可展開第二層標題
                 </button>
               </h2>
               <div id="secondlayercollapsetwo" class="sidebar-collapse collapse" aria-labelledby="secondlayerheadertwo-reversed" data-bs-parent="#sidebarsecondlayer-reversed">
                 <div class="list-group">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">
                     可點擊服務連結
                   </a>
-                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headertwo-reversed">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo-reversed" aria-expanded="true" aria-controls="collapsetwo-reversed">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo-reversed" aria-expanded="true" aria-controls="collapsetwo-reversed">
             可展開第一層標題
           </button>
         </h2>
         <div id="collapsetwo-reversed" class="sidebar-collapse collapse" aria-labelledby="headertwo-reversed" data-bs-parent="#sidebar-reversed">
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headerthree-reversed">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree-reversed" aria-expanded="true" aria-controls="collapsethree-reversed">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree-reversed" aria-expanded="true" aria-controls="collapsethree-reversed">
             可展開第一層標題
           </button>
         </h2>
@@ -524,9 +524,9 @@ const Collapse = () => {
 <div class="row">
   <div class="col-md-6">
     <div class="sidebar" id="icon-sidebar">
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="icon-headerone">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-collapseone" aria-expanded="true" aria-controls="icon-collapseone">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-collapseone" aria-expanded="true" aria-controls="icon-collapseone">
             <i class="bi bi-house-door-fill icon"></i>可展開第一層標題
           </button>
         </h2>
@@ -534,7 +534,7 @@ const Collapse = () => {
           <div class="sidebar-second-layer" id="icon-sidebarsecondlayer">
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="icon-secondlayerheaderone">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-secondlayercollapseone" aria-expanded="true" aria-controls="icon-secondlayercollapseone">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-secondlayercollapseone" aria-expanded="true" aria-controls="icon-secondlayercollapseone">
                   <i class="bi bi-credit-card-2-front icon"></i>可展開第二層標題
                 </button>
               </h2>
@@ -543,36 +543,36 @@ const Collapse = () => {
             </div>
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheadertwo">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-secondlayercollapsetwo" aria-expanded="true" aria-controls="icon-secondlayercollapsetwo">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-secondlayercollapsetwo" aria-expanded="true" aria-controls="icon-secondlayercollapsetwo">
                   <i class="bi bi-clipboard icon"></i>可展開第二層標題
                 </button>
               </h2>
               <div id="icon-secondlayercollapsetwo" class="sidebar-collapse collapse" aria-labelledby="icon-secondlayerheadertwo" data-bs-parent="#icon-sidebarsecondlayer">
                 <div class="list-group">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">
                     可點擊服務連結
                   </a>
-                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="icon-headertwo">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-collapsetwo" aria-expanded="true" aria-controls="icon-collapsetwo">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-collapsetwo" aria-expanded="true" aria-controls="icon-collapsetwo">
             <i class="bi bi-puzzle-fill icon"></i>可展開第一層標題
           </button>
         </h2>
         <div id="icon-collapsetwo" class="sidebar-collapse collapse" aria-labelledby="icon-headertwo" data-bs-parent="#icon-sidebar">
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="icon-headerthree">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-collapsethree" aria-expanded="true" aria-controls="icon-collapsethree">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-collapsethree" aria-expanded="true" aria-controls="icon-collapsethree">
             <i class="bi bi-inboxes icon"></i>可展開第一層標題
           </button>
         </h2>
@@ -594,9 +594,9 @@ const Collapse = () => {
 <div class="row">
   <div class="col-md-4">
     <div class="sidebar" id="base-indicator-sidebar">
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="base-indicator-headerone">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#base-indicator-collapseone" aria-expanded="true" aria-controls="base-indicator-collapseone">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#base-indicator-collapseone" aria-expanded="true" aria-controls="base-indicator-collapseone">
             可展開第一層標題
           </button>
         </h2>
@@ -604,7 +604,7 @@ const Collapse = () => {
           <div class="sidebar-second-layer" id="base-indicator-sidebarsecondlayer">
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="base-indicator-secondlayerheaderone">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#base-indicator-secondlayercollapseone" aria-expanded="true" aria-controls="base-indicator-secondlayercollapseone">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#base-indicator-secondlayercollapseone" aria-expanded="true" aria-controls="base-indicator-secondlayercollapseone">
                   可展開第二層標題
                 </button>
               </h2>
@@ -613,36 +613,36 @@ const Collapse = () => {
             </div>
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="base-indicator-secondlayerheadertwo">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#base-indicator-secondlayercollapsetwo" aria-expanded="true" aria-controls="base-indicator-secondlayercollapsetwo">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#base-indicator-secondlayercollapsetwo" aria-expanded="true" aria-controls="base-indicator-secondlayercollapsetwo">
                   可展開第二層標題
                 </button>
               </h2>
               <div id="base-indicator-secondlayercollapsetwo" class="sidebar-collapse collapse" aria-labelledby="base-indicator-secondlayerheadertwo" data-bs-parent="#base-indicator-sidebarsecondlayer">
                 <div class="list-group">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">
                     可點擊服務連結
                   </a>
-                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="base-indicator-headertwo">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#base-indicator-collapsetwo" aria-expanded="true" aria-controls="base-indicator-collapsetwo">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#base-indicator-collapsetwo" aria-expanded="true" aria-controls="base-indicator-collapsetwo">
             可展開第一層標題
           </button>
         </h2>
         <div id="base-indicator-collapsetwo" class="sidebar-collapse collapse" aria-labelledby="base-indicator-headertwo" data-bs-parent="#base-indicator-sidebar">
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="base-indicator-headerthree">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#base-indicator-collapsethree" aria-expanded="true" aria-controls="base-indicator-collapsethree">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#base-indicator-collapsethree" aria-expanded="true" aria-controls="base-indicator-collapsethree">
             可展開第一層標題
           </button>
         </h2>
@@ -653,9 +653,9 @@ const Collapse = () => {
   </div>
     <div class="col-md-4">
     <div class="sidebar-caret" id="caret-indicator-sidebar">
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="caret-indicator-headerone">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caret-indicator-collapseone" aria-expanded="true" aria-controls="caret-indicator-collapseone">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caret-indicator-collapseone" aria-expanded="true" aria-controls="caret-indicator-collapseone">
             可展開第一層標題
           </button>
         </h2>
@@ -663,7 +663,7 @@ const Collapse = () => {
           <div class="sidebar-second-layer" id="caret-indicator-sidebarsecondlayer">
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="caret-indicator-secondlayerheaderone">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caret-indicator-secondlayercollapseone" aria-expanded="true" aria-controls="caret-indicator-secondlayercollapseone">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caret-indicator-secondlayercollapseone" aria-expanded="true" aria-controls="caret-indicator-secondlayercollapseone">
                   可展開第二層標題
                 </button>
               </h2>
@@ -672,36 +672,36 @@ const Collapse = () => {
             </div>
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="caret-indicator-secondlayerheadertwo">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caret-indicator-secondlayercollapsetwo" aria-expanded="true" aria-controls="caret-indicator-secondlayercollapsetwo">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caret-indicator-secondlayercollapsetwo" aria-expanded="true" aria-controls="caret-indicator-secondlayercollapsetwo">
                   可展開第二層標題
                 </button>
               </h2>
               <div id="caret-indicator-secondlayercollapsetwo" class="sidebar-collapse collapse" aria-labelledby="caret-indicator-secondlayerheadertwo" data-bs-parent="#caret-indicator-sidebarsecondlayer">
                 <div class="list-group">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">
                     可點擊服務連結
                   </a>
-                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="caret-indicator-headertwo">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caret-indicator-collapsetwo" aria-expanded="true" aria-controls="caret-indicator-collapsetwo">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caret-indicator-collapsetwo" aria-expanded="true" aria-controls="caret-indicator-collapsetwo">
             可展開第一層標題
           </button>
         </h2>
         <div id="caret-indicator-collapsetwo" class="sidebar-collapse collapse" aria-labelledby="caret-indicator-headertwo" data-bs-parent="#caret-indicator-sidebar">
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="caret-indicator-headerthree">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caret-indicator-collapsethree" aria-expanded="true" aria-controls="caret-indicator-collapsethree">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caret-indicator-collapsethree" aria-expanded="true" aria-controls="caret-indicator-collapsethree">
             可展開第一層標題
           </button>
         </h2>
@@ -712,9 +712,9 @@ const Collapse = () => {
   </div>
     <div class="col-md-4">
     <div class="sidebar-plus" id="plus-indicator-sidebar">
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="plus-indicator-headerone">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plus-indicator-collapseone" aria-expanded="true" aria-controls="plus-indicator-collapseone">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plus-indicator-collapseone" aria-expanded="true" aria-controls="plus-indicator-collapseone">
             可展開第一層標題
           </button>
         </h2>
@@ -722,7 +722,7 @@ const Collapse = () => {
           <div class="sidebar-second-layer" id="plus-indicator-sidebarsecondlayer">
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="plus-indicator-secondlayerheaderone">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plus-indicator-secondlayercollapseone" aria-expanded="true" aria-controls="plus-indicator-secondlayercollapseone">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plus-indicator-secondlayercollapseone" aria-expanded="true" aria-controls="plus-indicator-secondlayercollapseone">
                   可展開第二層標題
                 </button>
               </h2>
@@ -731,36 +731,36 @@ const Collapse = () => {
             </div>
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="plus-indicator-secondlayerheadertwo">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plus-indicator-secondlayercollapsetwo" aria-expanded="true" aria-controls="plus-indicator-secondlayercollapsetwo">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plus-indicator-secondlayercollapsetwo" aria-expanded="true" aria-controls="plus-indicator-secondlayercollapsetwo">
                   可展開第二層標題
                 </button>
               </h2>
               <div id="plus-indicator-secondlayercollapsetwo" class="sidebar-collapse collapse" aria-labelledby="plus-indicator-secondlayerheadertwo" data-bs-parent="#plus-indicator-sidebarsecondlayer">
                 <div class="list-group">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">
                     可點擊服務連結
                   </a>
-                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="plus-indicator-headertwo">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plus-indicator-collapsetwo" aria-expanded="true" aria-controls="plus-indicator-collapsetwo">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plus-indicator-collapsetwo" aria-expanded="true" aria-controls="plus-indicator-collapsetwo">
             可展開第一層標題
           </button>
         </h2>
         <div id="plus-indicator-collapsetwo" class="sidebar-collapse collapse" aria-labelledby="plus-indicator-headertwo" data-bs-parent="#plus-indicator-sidebar">
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="plus-indicator-headerthree">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plus-indicator-collapsethree" aria-expanded="true" aria-controls="plus-indicator-collapsethree">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#plus-indicator-collapsethree" aria-expanded="true" aria-controls="plus-indicator-collapsethree">
             可展開第一層標題
           </button>
         </h2>
@@ -782,11 +782,11 @@ const Collapse = () => {
 <div class="row">
   <div class="col-md-6">
     <div class="sidebar-icon-label" id="icon-label-sidebar">
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="icon-headerone">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-label-collapseone" aria-expanded="true" aria-controls="icon-label-collapseone">
-            <div class="sidebar-button-container">
-              <i class="bi bi-house-door-fill sidebar-button-icon"></i><p class="sidebar-button-text">可展開第一層標題</p><span class="sidebar-button-badge">文字標籤</span>
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-label-collapseone" aria-expanded="true" aria-controls="icon-label-collapseone">
+            <div class="sidebar-button-container d-flex">
+              <i class="bi bi-house-door-fill icon"></i><p class="sidebar-button-text flex-grow-1 align-self-center">可展開第一層標題</p><span class="sidebar-button-badge bg-secondary text-dark">文字標籤</span>
             </div>
           </button>
         </h2>
@@ -794,7 +794,7 @@ const Collapse = () => {
           <div class="sidebar-second-layer" id="icon-label-sidebarsecondlayer">
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="icon-label-secondlayerheaderone">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-label-secondlayercollapseone" aria-expanded="true" aria-controls="icon-label-secondlayercollapseone">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-label-secondlayercollapseone" aria-expanded="true" aria-controls="icon-label-secondlayercollapseone">
                   <i class="bi bi-credit-card-2-front icon"></i>可展開第二層標題
                 </button>
               </h2>
@@ -803,39 +803,39 @@ const Collapse = () => {
             </div>
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheadertwo">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-label-secondlayercollapsetwo" aria-expanded="true" aria-controls="icon-label-secondlayercollapsetwo">
-                 <div class="sidebar-button-container">
-                  <i class="bi bi-clipboard sidebar-button-icon"></i><p class="sidebar-button-text">可展開第二層標題</p><span class="sidebar-button-badge-round">12</span>
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-label-secondlayercollapsetwo" aria-expanded="true" aria-controls="icon-label-secondlayercollapsetwo">
+                 <div class="sidebar-button-container d-flex">
+                  <i class="bi bi-clipboard icon"></i><p class="sidebar-button-text flex-grow-1 align-self-center">可展開第二層標題</p><span class="sidebar-button-badge-round rounded-pill">12</span>
                 </div>
               </h2>
               <div id="icon-label-secondlayercollapsetwo" class="sidebar-collapse collapse" aria-labelledby="icon-label-secondlayerheadertwo" data-bs-parent="#icon-label-sidebarsecondlayer">
                 <div class="list-group">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">
                     可點擊服務連結
                   </a>
-                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="icon-label-headertwo">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-label-collapsetwo" aria-expanded="true" aria-controls="icon-label-collapsetwo">
-            <div class="sidebar-button-container">
-              <i class="bi bi-puzzle-fill sidebar-button-icon"></i><p class="sidebar-button-text">可展開第一層標題</p><span class="sidebar-button-badge">文字標籤</span>
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-label-collapsetwo" aria-expanded="true" aria-controls="icon-label-collapsetwo">
+            <div class="sidebar-button-container d-flex">
+              <i class="bi bi-puzzle-fill icon"></i><p class="sidebar-button-text flex-grow-1 align-self-center">可展開第一層標題</p><span class="sidebar-button-badge bg-secondary text-dark">文字標籤</span>
             </div>
           </button>
         </h2>
         <div id="icon-label-collapsetwo" class="sidebar-collapse collapse" aria-labelledby="icon-label-headertwo" data-bs-parent="#icon-label-sidebar">
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="icon-label-headerthree">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-label-collapsethree" aria-expanded="true" aria-controls="icon-label-collapsethree">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#icon-label-collapsethree" aria-expanded="true" aria-controls="icon-label-collapsethree">
             <i class="bi bi-inboxes icon"></i>可展開第一層標題
           </button>
         </h2>
@@ -846,11 +846,11 @@ const Collapse = () => {
   </div>
   <div class="col-md-6">
     <div class="sidebar-reversed" id="sidebar-reversed-label">
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headerone-reversed-label">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone-reversed-label" aria-expanded="true" aria-controls="collapseone-reversed-label">
-            <div class="sidebar-button-container">
-             <p class="sidebar-button-text">可展開第一層標題</p><span class="sidebar-button-badge-round">12</span>
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone-reversed-label" aria-expanded="true" aria-controls="collapseone-reversed-label">
+            <div class="sidebar-button-container d-flex">
+             <p class="sidebar-button-text flex-grow-1 align-self-center">可展開第一層標題</p><span class="sidebar-button-badge-round rounded-pill">12</span>
             </div>
           </button>
         </h2>
@@ -858,7 +858,7 @@ const Collapse = () => {
           <div class="sidebar-second-layer" id="sidebarsecondlayer-reversed-label">
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheaderone-reversed-label">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseone-reversed-label" aria-expanded="true" aria-controls="secondlayercollapseone-reversed-label">
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapseone-reversed-label" aria-expanded="true" aria-controls="secondlayercollapseone-reversed-label">
                   可展開第二層標題
                 </button>
               </h2>
@@ -867,40 +867,40 @@ const Collapse = () => {
             </div>
             <div class="sidebar-second-layer-item">
               <h2 class="sidebar-header" id="secondlayerheadertwo-reversed-label">
-                <button class="sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwo" aria-expanded="true" aria-controls="secondlayercollapsetwo">
-                  <div class="sidebar-button-container">
-                    <p class="sidebar-button-text">可展開第二層標題</p><span class="sidebar-button-badge-round">12</span>
+                <button class="accordion-button sidebar-button sidebar-second-layer-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#secondlayercollapsetwo" aria-expanded="true" aria-controls="secondlayercollapsetwo">
+                  <div class="sidebar-button-container d-flex">
+                    <p class="sidebar-button-text flex-grow-1 align-self-center">可展開第二層標題</p><span class="sidebar-button-badge-round rounded-pill">12</span>
                   </div>
                 </button>
               </h2>
               <div id="secondlayercollapsetwo" class="sidebar-collapse collapse" aria-labelledby="secondlayerheadertwo-reversed-label" data-bs-parent="#sidebarsecondlayer-reversed-label">
                 <div class="list-group">
-                  <a href="#" class="sidebar-link">
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">
                     可點擊服務連結
                   </a>
-                  <a href="#" class="sidebar-link active" aria-current="true">瀏覽中服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
-                  <a href="#" class="sidebar-link">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action active" aria-current="true">瀏覽中服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
+                  <a href="#" class="sidebar-link list-group-item list-group-item-action">可點擊服務連結</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headertwo-reversed-label">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo-reversed-label" aria-expanded="true" aria-controls="collapsetwo-reversed-label">
-            <div class="sidebar-button-container">
-             <p class="sidebar-button-text">可展開第一層標題</p><span class="sidebar-button-badge-round">12</span>
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo-reversed-label" aria-expanded="true" aria-controls="collapsetwo-reversed-label">
+            <div class="sidebar-button-container d-flex">
+             <p class="sidebar-button-text flex-grow-1 align-self-center">可展開第一層標題</p><span class="sidebar-button-badge-round rounded-pill">12</span>
             </div>
           </button>
         </h2>
         <div id="collapsetwo-reversed-label" class="sidebar-collapse collapse" aria-labelledby="headertwo-reversed-label" data-bs-parent="#sidebar-reversed-label">
         </div>
       </div>
-      <div class="sidebar-item">
+      <div class="accordion-item">
         <h2 class="sidebar-header" id="headerthree-reversed-label">
-          <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree-reversed-label" aria-expanded="true" aria-controls="collapsethree-reversed-label">
+          <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree-reversed-label" aria-expanded="true" aria-controls="collapsethree-reversed-label">
             可展開第一層標題
           </button>
         </h2>
