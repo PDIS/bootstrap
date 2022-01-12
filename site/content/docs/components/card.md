@@ -77,7 +77,7 @@ group: components
     </div>
   </div>
   <div class="col-md-4">
-    <div class="card-text-center">
+    <div class="card text-center">
       <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
@@ -127,7 +127,7 @@ group: components
 <div class="container" style="padding: 1rem; background: #F8F9FA">
   <div class="row d-flex justify-content-center">
     <div class="col-md-4">
-      <div class="card-borderless">
+      <div class="card border-0">
         <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
         <div class="card-body">
           <h5 class="card-title">標題文字</h5>
@@ -145,7 +145,7 @@ group: components
       </div>
     </div>
       <div class="col-md-4">
-      <div class="card-shadow">
+      <div class="card shadow-sm">
         <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
         <div class="card-body">
           <h5 class="card-title">標題文字</h5>
@@ -176,7 +176,7 @@ group: components
     </div>
   </div>
     <div class="col-md-4">
-    <div class="card-text-center">
+    <div class="card text-center">
       <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
@@ -413,7 +413,7 @@ group: components
 
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="text-card text-black bg-white">
+    <div class="card text-card border-dark text-black bg-white">
       <div class="card-body">
         <h4 class="card-title">服務項目</h4>
         <p class="card-text">此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
@@ -424,7 +424,7 @@ group: components
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="text-card text-white bg-primary-dark">
+    <div class="card text-card border-dark text-white bg-primary-dark">
       <div class="card-body">
         <h4 class="card-title">服務項目</h4>
         <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
@@ -435,7 +435,7 @@ group: components
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="text-card text-white card-bg-img">
+    <div class="card text-card border-dark text-white card-bg-img">
       <div class="card-body">
         <h4 class="card-title">服務項目</h4>
         <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
@@ -446,9 +446,9 @@ group: components
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="text-card">
+    <div class="card text-card border-dark">
       <div class="card-header">服務項目類別</div>
-      <div class="card-body text-black bg-white">
+      <div class="card-body text-black">
         <h4 class="card-title">服務項目</h4>
         <p class="card-text">此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
       </div>
@@ -466,7 +466,7 @@ group: components
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-5">
-    <div class="list-card">
+    <div class="card list-card">
       <div class="card-header">服務項目類別</div>
       <div class="card-body">
         <h4 class="card-title">標題</h4>
@@ -475,7 +475,7 @@ group: components
         <p class="card-text">2. 文字列表</p>
         <a href="#" class="btn btn-primary">前往報名</a>
       </div>
-      <ul class="list-group">
+      <ul class="list-group list-group-flush">
         <li class="list-group-item"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
         <li class="list-group-item"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
         <li class="list-group-item"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
@@ -484,7 +484,7 @@ group: components
     </div>
   </div>
   <div class="col-md-5">
-    <div class="list-card">
+    <div class="card list-card">
       <div class="card-header">服務項目類別</div>
       <div class="card-body card-bg-gary">
         <h4 class="card-title">標題</h4>
@@ -493,11 +493,11 @@ group: components
         <p class="card-text">2. 文字列表</p>
         <a href="#" class="btn btn-primary">前往報名</a>
       </div>
-      <ul class="list-group-borderless">
-        <li class="list-group-item-borderless"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item-borderless"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item-borderless"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item-borderless"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
+      <ul class="list-group border-0">
+        <li class="list-group-item border-0"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item border-0"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item border-0"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item border-0"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
       </ul>
     </div>
   </div>
@@ -505,7 +505,7 @@ group: components
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-md-5">
-    <div class="list-card">
+    <div class="card list-card">
       <div class="card-body">
         <h4 class="card-title">標題</h4>
         <p class="card-text">卡片內文或補充說明。</p>
@@ -513,7 +513,7 @@ group: components
         <p class="card-text">2. 文字列表</p>
         <a href="#" class="btn btn-primary">前往報名</a>
       </div>
-      <ul class="list-group">
+      <ul class="list-group list-group-flush">
         <li class="list-group-item">列表</li>
         <li class="list-group-item">列表</li>
         <li class="list-group-item">列表</li>
@@ -523,7 +523,7 @@ group: components
     </div>
   </div>
   <div class="col-md-5">
-    <div class="list-card">
+    <div class="card list-card">
       <div class="card-header">服務項目類別</div>
       <img src="/docs/5.1/assets/img/bg-list-card.png" class="card-img-top" alt="...">  
       <div class="card-body card-bg-gary">
@@ -533,12 +533,12 @@ group: components
         <p class="card-text">2. 文字列表</p>
         <a href="#" class="btn btn-primary">前往報名</a>
       </div>
-      <ul class="list-group-borderless">
-        <li class="list-group-item-borderless"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
-        <li class="list-group-item-borderless"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
-        <li class="list-group-item-borderless"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
-        <li class="list-group-item-borderless"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
-        <li class="list-group-item-borderless"><a href="#" class="card-extra-link">額外連結</a><a href="#" class="card-extra-link">額外連結</a><a href="#" class="card-extra-link">額外連結</a></li>
+      <ul class="list-group border-0">
+        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
+        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
+        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
+        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
+        <li class="list-group-item border-0"><a href="#" class="card-extra-link">額外連結</a><a href="#" class="card-extra-link">額外連結</a><a href="#" class="card-extra-link">額外連結</a></li>
       </ul>
     </div>
   </div>
