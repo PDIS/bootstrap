@@ -670,26 +670,30 @@
   const containerWidth = scrollContainer.offsetWidth
   const wrapperWidth = scrollWrapper.offsetWidth
   
-  let tempWidth = wrapperWidth
-  let tempTranslate = 0
+  let currentWidth = wrapperWidth
+  let translateDistance = 0
 
   const Prev = () => {
-    if (tempTranslate != 0) {
-      const translateWidth = tempWidth % wrapperWidth
-      tempTranslate = translateWidth - tempTranslate
-      scrollContainer.style.transform = `translate(${tempTranslate}px)`
+    if (currentWidth > wrapperWidth) {
+      const translateWidth = currentWidth % wrapperWidth
+      console.log(translateWidth)
+      translateDistance = translateDistance - translateWidth
+      console.log(translateDistance)
+      scrollContainer.style.transform = `translate(-${translateDistance}px)`
       scrollContainer.style.transition = "all 1s"
-      tempWidth = tempWidth - translateWidth
+      currentWidth = currentWidth - translateDistance
+      console.log(currentWidth)
     }
   }
 
   const Next = () => {
-    if (tempWidth < containerWidth) {
-      const translateWidth = containerWidth % tempWidth
-      tempTranslate = tempTranslate + translateWidth
-      scrollContainer.style.transform = `translate(-${tempTranslate}px)`
+    if (currentWidth < containerWidth) {
+      const translateWidth = containerWidth % currentWidth
+      translateDistance = translateDistance + translateWidth
+      scrollContainer.style.transform = `translate(-${translateDistance}px)`
       scrollContainer.style.transition = "all 1s"
-      tempWidth = tempWidth + translateWidth
+      currentWidth = currentWidth + translateWidth
+      console.log(currentWidth)
     }
   }
 
@@ -857,26 +861,30 @@
   <span class="kr">const</span> <span class="nx">containerWidth</span> <span class="o">=</span> <span class="nx">scrollContainer</span><span class="p">.</span><span class="nx">offsetWidth</span>
   <span class="kr">const</span> <span class="nx">wrapperWidth</span> <span class="o">=</span> <span class="nx">scrollWrapper</span><span class="p">.</span><span class="nx">offsetWidth</span>
   
-  <span class="kd">let</span> <span class="nx">tempWidth</span> <span class="o">=</span> <span class="nx">wrapperWidth</span>
-  <span class="kd">let</span> <span class="nx">tempTranslate</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="kd">let</span> <span class="nx">currentWidth</span> <span class="o">=</span> <span class="nx">wrapperWidth</span>
+  <span class="kd">let</span> <span class="nx">translateDistance</span> <span class="o">=</span> <span class="mi">0</span>
 
   <span class="kr">const</span> <span class="nx">Prev</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">tempTranslate</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-      <span class="kr">const</span> <span class="nx">translateWidth</span> <span class="o">=</span> <span class="nx">tempWidth</span> <span class="o">%</span> <span class="nx">wrapperWidth</span>
-      <span class="nx">tempTranslate</span> <span class="o">=</span> <span class="nx">translateWidth</span> <span class="o">-</span> <span class="nx">tempTranslate</span>
-      <span class="nx">scrollContainer</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">transform</span> <span class="o">=</span> <span class="sb">`translate(</span><span class="si">${</span><span class="nx">tempTranslate</span><span class="si">}</span><span class="sb">px)`</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">currentWidth</span> <span class="o">&gt;</span> <span class="nx">wrapperWidth</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kr">const</span> <span class="nx">translateWidth</span> <span class="o">=</span> <span class="nx">currentWidth</span> <span class="o">%</span> <span class="nx">wrapperWidth</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">translateWidth</span><span class="p">)</span>
+      <span class="nx">translateDistance</span> <span class="o">=</span> <span class="nx">translateDistance</span> <span class="o">-</span> <span class="nx">translateWidth</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">translateDistance</span><span class="p">)</span>
+      <span class="nx">scrollContainer</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">transform</span> <span class="o">=</span> <span class="sb">`translate(-</span><span class="si">${</span><span class="nx">translateDistance</span><span class="si">}</span><span class="sb">px)`</span>
       <span class="nx">scrollContainer</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">transition</span> <span class="o">=</span> <span class="s2">&#34;all 1s&#34;</span>
-      <span class="nx">tempWidth</span> <span class="o">=</span> <span class="nx">tempWidth</span> <span class="o">-</span> <span class="nx">translateWidth</span>
+      <span class="nx">currentWidth</span> <span class="o">=</span> <span class="nx">currentWidth</span> <span class="o">-</span> <span class="nx">translateDistance</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">currentWidth</span><span class="p">)</span>
     <span class="p">}</span>
   <span class="p">}</span>
 
   <span class="kr">const</span> <span class="nx">Next</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="nx">tempWidth</span> <span class="o">&lt;</span> <span class="nx">containerWidth</span><span class="p">)</span> <span class="p">{</span>
-      <span class="kr">const</span> <span class="nx">translateWidth</span> <span class="o">=</span> <span class="nx">containerWidth</span> <span class="o">%</span> <span class="nx">tempWidth</span>
-      <span class="nx">tempTranslate</span> <span class="o">=</span> <span class="nx">tempTranslate</span> <span class="o">+</span> <span class="nx">translateWidth</span>
-      <span class="nx">scrollContainer</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">transform</span> <span class="o">=</span> <span class="sb">`translate(-</span><span class="si">${</span><span class="nx">tempTranslate</span><span class="si">}</span><span class="sb">px)`</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">currentWidth</span> <span class="o">&lt;</span> <span class="nx">containerWidth</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kr">const</span> <span class="nx">translateWidth</span> <span class="o">=</span> <span class="nx">containerWidth</span> <span class="o">%</span> <span class="nx">currentWidth</span>
+      <span class="nx">translateDistance</span> <span class="o">=</span> <span class="nx">translateDistance</span> <span class="o">+</span> <span class="nx">translateWidth</span>
+      <span class="nx">scrollContainer</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">transform</span> <span class="o">=</span> <span class="sb">`translate(-</span><span class="si">${</span><span class="nx">translateDistance</span><span class="si">}</span><span class="sb">px)`</span>
       <span class="nx">scrollContainer</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">transition</span> <span class="o">=</span> <span class="s2">&#34;all 1s&#34;</span>
-      <span class="nx">tempWidth</span> <span class="o">=</span> <span class="nx">tempWidth</span> <span class="o">+</span> <span class="nx">translateWidth</span>
+      <span class="nx">currentWidth</span> <span class="o">=</span> <span class="nx">currentWidth</span> <span class="o">+</span> <span class="nx">translateWidth</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">currentWidth</span><span class="p">)</span>
     <span class="p">}</span>
   <span class="p">}</span>
 
