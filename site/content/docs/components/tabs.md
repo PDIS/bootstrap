@@ -360,26 +360,30 @@ group: components
   const containerWidth = scrollContainer.offsetWidth
   const wrapperWidth = scrollWrapper.offsetWidth
   
-  let tempWidth = wrapperWidth
-  let tempTranslate = 0
+  let currentWidth = wrapperWidth
+  let translateDistance = 0
 
   const Prev = () => {
-    if (tempTranslate != 0) {
-      const translateWidth = tempWidth % wrapperWidth
-      tempTranslate = translateWidth - tempTranslate
-      scrollContainer.style.transform = `translate(${tempTranslate}px)`
+    if (currentWidth > wrapperWidth) {
+      const translateWidth = currentWidth % wrapperWidth
+      console.log(translateWidth)
+      translateDistance = translateDistance - translateWidth
+      console.log(translateDistance)
+      scrollContainer.style.transform = `translate(-${translateDistance}px)`
       scrollContainer.style.transition = "all 1s"
-      tempWidth = tempWidth - translateWidth
+      currentWidth = currentWidth - translateDistance
+      console.log(currentWidth)
     }
   }
 
   const Next = () => {
-    if (tempWidth < containerWidth) {
-      const translateWidth = containerWidth % tempWidth
-      tempTranslate = tempTranslate + translateWidth
-      scrollContainer.style.transform = `translate(-${tempTranslate}px)`
+    if (currentWidth < containerWidth) {
+      const translateWidth = containerWidth % currentWidth
+      translateDistance = translateDistance + translateWidth
+      scrollContainer.style.transform = `translate(-${translateDistance}px)`
       scrollContainer.style.transition = "all 1s"
-      tempWidth = tempWidth + translateWidth
+      currentWidth = currentWidth + translateWidth
+      console.log(currentWidth)
     }
   }
 

@@ -18,6 +18,14 @@ a:active {
   color: var(--bs-secondary-light);
 }
 
+.image {
+  width: 100%;
+  padding-bottom: 75%;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 100%;
+}
+
 .icon {
   margin-right: 0.5rem;
 }
@@ -95,6 +103,10 @@ a:active {
 
 .text-purple-300 {
   color: $purple-300;
+}
+
+.bg-primary-dark {
+  background-color: var(--bs-primary-dark);
 }
 
 .bg-red-400 {

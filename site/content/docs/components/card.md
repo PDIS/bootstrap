@@ -49,7 +49,7 @@ group: components
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
     <div class="card">
-    <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+    <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
         <p class="card-text">此部分為卡片之內文。</p>
@@ -69,7 +69,7 @@ group: components
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
     <div class="card">
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+      <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
         <p class="card-text">此部分為卡片之內文。</p>
@@ -78,7 +78,7 @@ group: components
   </div>
   <div class="col-md-4">
     <div class="card text-center">
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+      <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
         <p class="card-text">此部分為卡片之內文。</p>
@@ -98,7 +98,7 @@ group: components
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
     <div class="card">
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+      <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
         <p class="card-text">此部分為卡片之內文。</p>
@@ -111,7 +111,7 @@ group: components
         <h5 class="card-title">標題文字</h5>
         <p class="card-text">此部分為卡片之內文。</p>
       </div>
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+      <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
     </div>
   </div>
 </div>
@@ -128,7 +128,7 @@ group: components
   <div class="row d-flex justify-content-center">
     <div class="col-md-4">
       <div class="card border-0">
-        <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+        <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
         <div class="card-body">
           <h5 class="card-title">標題文字</h5>
           <p class="card-text">此部分為卡片之內文。</p>
@@ -137,7 +137,7 @@ group: components
     </div>
       <div class="col-md-4">
       <div class="card">
-        <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+        <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
         <div class="card-body">
           <h5 class="card-title">標題文字</h5>
           <p class="card-text">此部分為卡片之內文。</p>
@@ -146,7 +146,7 @@ group: components
     </div>
       <div class="col-md-4">
       <div class="card shadow-sm">
-        <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+        <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
         <div class="card-body">
           <h5 class="card-title">標題文字</h5>
           <p class="card-text">此部分為卡片之內文。</p>
@@ -167,7 +167,7 @@ group: components
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
     <div class="card">
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+      <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
         <p class="card-text">此部分為卡片之內文。</p>
@@ -177,7 +177,7 @@ group: components
   </div>
     <div class="col-md-4">
     <div class="card text-center">
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+      <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <h5 class="card-title">標題文字</h5>
         <p class="card-text">此部分為卡片之內文。</p>
@@ -208,7 +208,7 @@ group: components
             </button></div>
         <p class="card-text">此部分為卡片之內文。</p>
       </div>
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+      <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
     </div>
   </div>
 </div>
@@ -224,7 +224,7 @@ group: components
 <div class="row d-flex justify-content-center">
   <div class="col-md-5">
     <div class="card">
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+      <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <div class="badge-collections">
           <span class="badge bg-secondary-light text-dark">標籤</span>
@@ -241,7 +241,7 @@ group: components
   </div>
   <div class="col-md-5">
     <div class="card">
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+      <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <div class="d-flex justify-content-between">
           <p class="card-text">110-10-31</p>
@@ -279,7 +279,7 @@ group: components
         </div>
         <h5 class="card-title">標題文字</h5>
       </div>
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+      <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <p class="card-text">此部分為卡片之內文。</p>
         <a href="#" class="btn btn-primary float-end">前往報名</a>
@@ -298,7 +298,7 @@ group: components
         </button></div>
         <p class="card-text">此部分為卡片之內文。</p>
       </div>
-      <img src="/docs/5.1/assets/img/bg-card-crop.png" class="card-img-top" alt="...">  
+      <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <div class="d-flex justify-content-between">
           <p class="card-text">110-10-31</p>
@@ -324,7 +324,7 @@ group: components
     <div class="card">
       <div class="row g-0 align-items-center">
         <div class="col-md-4">
-          <img src="/docs/5.1/assets/img/bg-card-crop.png" class="img-fluid rounded-start" alt="...">  
+          <div class="image rounded-start" style="background: url('/docs/5.1/assets/img/bg-card.png')"></div>  
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -350,7 +350,7 @@ group: components
     <div class="card">
       <div class="row g-0 align-items-center">
         <div class="col-md-4">
-          <img src="/docs/5.1/assets/img/bg-card-crop.png" class="img-fluid rounded-start" alt="..."> 
+          <div class="image rounded-start" style="background: url('/docs/5.1/assets/img/bg-card.png')"></div>
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -376,7 +376,7 @@ group: components
     <div class="card">
       <div class="row g-0 align-items-center">
         <div class="col-md-4">
-          <img src="/docs/5.1/assets/img/bg-card-crop.png" class="img-fluid rounded-start" alt="..."> 
+          <div class="image rounded-start" style="background: url('/docs/5.1/assets/img/bg-card.png')"></div> 
         </div>
         <div class="col-md-8">
           <div class="card-body">
