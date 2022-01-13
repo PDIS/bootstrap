@@ -206,7 +206,7 @@ group: components
 <div class="row">
   <div class="col-12">
     <div class="nav nav-tabs nav-scroll" id="tab-scrollable" role="tablist">
-      <button type="button" class="btn" onclick="Prev()"><i class="bi bi-caret-left"></i></button>
+      <button type="button" class="btn tab-scrollable-btn" onclick="Prev()"><i class="bi bi-caret-left"></i></button>
       <div class="nav-tabs-wrapper">
         <div class="nav-tabs-content" id="tab-scrollable-content">
           <div class="nav-item" role="presentation">
@@ -243,28 +243,28 @@ group: components
             <button class="nav-link" id="tab11-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
           </div>
                     <div class="nav-item" role="presentation">
-            <button class="nav-link" id="tab11-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
+            <button class="nav-link" id="tab12-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab12-scrollable" aria-selected="false">頁籤項目</button>
           </div>
                     <div class="nav-item" role="presentation">
-            <button class="nav-link" id="tab11-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
+            <button class="nav-link" id="tab13-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab13-scrollable" aria-selected="false">頁籤項目</button>
           </div>
                     <div class="nav-item" role="presentation">
-            <button class="nav-link" id="tab11-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
+            <button class="nav-link" id="tab14-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab14-scrollable" aria-selected="false">頁籤項目</button>
           </div>
                     <div class="nav-item" role="presentation">
-            <button class="nav-link" id="tab11-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
+            <button class="nav-link" id="tab15-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab15-scrollable" aria-selected="false">頁籤項目</button>
           </div>
                     <div class="nav-item" role="presentation">
-            <button class="nav-link" id="tab11-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
+            <button class="nav-link" id="tab16-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
           </div>
                     <div class="nav-item" role="presentation">
-            <button class="nav-link" id="tab11-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
+            <button class="nav-link" id="tab17-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
           </div>
                     <div class="nav-item" role="presentation">
-            <button class="nav-link" id="tab11-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
+            <button class="nav-link" id="tab18-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
           </div>
                     <div class="nav-item" role="presentation">
-            <button class="nav-link" id="tab11-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
+            <button class="nav-link" id="tab19-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
           </div>
                     <div class="nav-item" role="presentation">
             <button class="nav-link" id="tab11-scrollable" data-bs-toggle="tab" data-bs-target="#content11-scrollable" type="button" role="tab" aria-controls="tab11-scrollable" aria-selected="false">頁籤項目</button>
@@ -286,7 +286,7 @@ group: components
           </div>
         </div>
       </div>
-      <button class="btn" onclick="Next()"><i class="bi bi-caret-right"></i></button>
+      <button class="btn tab-scrollable-btn" onclick="Next()"><i class="bi bi-caret-right"></i></button>
     </div>
     <div class="tab-content" id="tabContent-scrollable">
       <div class="tab-pane fade show active" id="content1-scrollable" role="tabpanel" aria-labelledby="content1-scrollable">頁籤內容</div>
@@ -365,14 +365,11 @@ group: components
 
   const Prev = () => {
     if (currentWidth > wrapperWidth) {
-      const translateWidth = currentWidth % wrapperWidth
-      console.log(translateWidth)
+      const translateWidth = (currentWidth - wrapperWidth) > wrapperWidth ? wrapperWidth : currentWidth - wrapperWidth
       translateDistance = translateDistance - translateWidth
-      console.log(translateDistance)
       scrollContainer.style.transform = `translate(-${translateDistance}px)`
       scrollContainer.style.transition = "all 1s"
-      currentWidth = currentWidth - translateDistance
-      console.log(currentWidth)
+      currentWidth = currentWidth - translateWidth
     }
   }
 
@@ -383,14 +380,8 @@ group: components
       scrollContainer.style.transform = `translate(-${translateDistance}px)`
       scrollContainer.style.transition = "all 1s"
       currentWidth = currentWidth + translateWidth
-      console.log(currentWidth)
     }
   }
-
-  scrollWrapper.addEventListener("wheel", (evt) => {
-      evt.preventDefault();
-      scrollWrapper.scrollLeft += evt.deltaY;
-  });
 
 </script>
 
@@ -399,6 +390,29 @@ group: components
 #### 下拉式選單 (select)
 
 當您認為使用者應該不需要一次看到所有頁籤內容時，請考慮使用另一個元件：下拉式選單。
+
+{{< example >}}
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="d-flex align-items-center">
+      <label for="select1" class="horizontal-label">頁籤標題</label>
+      <select class="select" id="select1" aria-label="select1">
+        <option class="option" selected>請選擇一個選項</option>
+        <option class="option" value="1">頁籤項目</option>
+        <option class="option" value="2">頁籤項目</option>
+        <option class="option" value="3">頁籤項目</option>
+        <option class="option" value="4">頁籤項目</option>
+        <option class="option" value="5">頁籤項目</option>
+        <option class="option" value="6">頁籤項目</option>
+        <option class="option" value="7">頁籤項目</option>
+        <option class="option" value="8">頁籤項目</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+{{< /example >}}
 
 #### 行動版頁籤導覽
 

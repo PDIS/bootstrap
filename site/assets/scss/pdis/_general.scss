@@ -18,6 +18,13 @@ a:active {
   color: var(--bs-secondary-light);
 }
 
+.tab-scrollable-btn {
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
 .image {
   width: 100%;
   padding-bottom: 75%;
