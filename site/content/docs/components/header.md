@@ -11,7 +11,7 @@ toc: true
 
 此設計系統將頁首可以分為三個區塊，每一區塊應有其適合放置的元素。
 
-<img src="/img/header_navigation_illustration.png" alt="" width="50" height="40" class="d-inline-block"/>
+<img class="img-fluid" src="/docs/5.1/assets/img/header_navigation_illustration-2.png">
 
 **頁首主列** 最常見的頁首主列為 Logo 放置處。頁首應只放重要的服務項目，其他使用者較不常用的服務應一律放在頁尾。
 
