@@ -90,7 +90,7 @@ $theme-colors: (
 ) !default;
 // scss-docs-end theme-colors-map
 
-$theme-colors: map-merge($theme-colors, $custom-colors);
+//$theme-colors: map-merge($theme-colors, $custom-colors);
 
 // scss-docs-start theme-colors-rgb
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
