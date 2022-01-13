@@ -1,0 +1,26 @@
+.form-select {
+  border: 1px solid #121212;
+
+  &:hover {
+    color: var(--bs-primary-dark);
+    border-color: var(--bs-primary-dark);
+  }
+
+  &:active,
+  &:focus {
+    color: var(--bs-secondary-light);
+    background-color: var(--bs-primary);
+    border: 2px solid #fedc98;
+    box-shadow: none;
+  }
+}
+
+option {
+  background: var(--bs-gray-100);
+  color: black;
+}
+
+optgroup {
+  background: var(--bs-gray-100);
+  color: #6b6b6b !important;
+}

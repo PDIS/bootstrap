@@ -132,38 +132,10 @@ a:active {
   list-style: trad-chinese-informal;
 }
 
-.select {
-  @extend .form-select;
-  border: 1px solid #121212;
-
-  &:hover {
-    color: var(--bs-primary-dark);
-    border-color: var(--bs-primary-dark);
-  }
-
-  &:active,
-  &:focus {
-    color: var(--bs-secondary-light);
-    background-color: var(--bs-primary);
-    border: 2px solid #fedc98;
-    box-shadow: none;
-  }
-}
-
-.option {
-  background: var(--bs-gray-100);
-  color: black;
-}
-
 .horizontal-label {
   @extend .h6;
   width: -webkit-fill-available;
   margin-bottom: 0;
-}
-
-.optgroup {
-  background: var(--bs-gray-100);
-  color: #6b6b6b !important;
 }
 
 /* PDIS's local docs style */

@@ -45,11 +45,11 @@ toc: true
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
     <label for="example1" class="form-label h6">問題/標題</label>
-    <select class="select" id="example1" aria-label="example1">
-      <option class="option" selected>請選擇一個選項</option>
-      <option class="option" value="1">選項一</option>
-      <option class="option" value="2">選項二</option>
-      <option class="option" value="3">選項三</option>
+    <select class="form-select" id="example1" aria-label="example1">
+      <option  selected>請選擇一個選項</option>
+      <option  value="1">選項一</option>
+      <option  value="2">選項二</option>
+      <option  value="3">選項三</option>
     </select>
   </div>
 </div>
@@ -63,23 +63,26 @@ toc: true
 {{< example >}}
 
 <div class="row d-flex justify-content-center">
-  <div class="col-md-4">
+  <div class="col-md-6">
     <label for="example2" class="form-label h6">問題/標題</label>
-    <select class="select" id="example2" aria-label="example2">
-      <option class="option" selected>請選擇一個選項</option>
-      <option class="option" value="1">選項一</option>
-      <option class="option" value="2">選項二</option>
-      <option class="option" value="3">選項三</option>
+    <select class="form-select" id="example2" aria-label="example2">
+      <option  selected>請選擇一個選項</option>
+      <option  value="1">選項一</option>
+      <option  value="2">選項二</option>
+      <option  value="3">選項三</option>
     </select>
   </div>
-  <div class="col-md-4">
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-md-6">
     <div class="d-flex align-items-center">
       <label for="example3" class="horizontal-label">問題/標題</label>
-      <select class="select" id="example3" aria-label="example3">
-        <option class="option" selected>請選擇一個選項</option>
-        <option class="option" value="1">選項一</option>
-        <option class="option" value="2">選項二</option>
-        <option class="option" value="3">選項三</option>
+      <select class="form-select" id="example3" aria-label="example3">
+        <option  selected>請選擇一個選項</option>
+        <option  value="1">選項一</option>
+        <option  value="2">選項二</option>
+        <option  value="3">選項三</option>
       </select>
     </div>
   </div>
@@ -96,19 +99,19 @@ toc: true
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
     <label for="example4" class="form-label h6">出生縣市</label>
-    <select class="select" id="example4" aria-label="example4">
-      <option class="option" selected>選取出生縣市</option>
-      <option class="option" value="1">台北市</option>
-      <option class="option" value="2">新北市</option>
-      <option class="option" value="3">高雄市</option>
+    <select class="form-select" id="example4" aria-label="example4">
+      <option  selected>選取出生縣市</option>
+      <option  value="1">台北市</option>
+      <option  value="2">新北市</option>
+      <option  value="3">高雄市</option>
     </select>
   </div>
   <div class="col-md-4">
       <label for="example5" class="form-label h6">所在縣市</label>
-      <select class="select" id="example5" aria-label="example5">
-        <option class="option" value="1">台北市</option>
-        <option class="option" value="2">新北市</option>
-        <option class="option" value="3">高雄市</option>
+      <select class="form-select" id="example5" aria-label="example5">
+        <option  value="1">台北市</option>
+        <option  value="2">新北市</option>
+        <option  value="3">高雄市</option>
       </select>
   </div>
 </div>
@@ -124,29 +127,29 @@ toc: true
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
     <label for="example6" class="form-label h6">問題/標題</label>
-    <select class="select" id="example6" aria-label="example6">
-      <option class="option" selected>請選擇一個選項</option>
-      <option class="option" value="1">選項一</option>
-      <option class="option" value="2">選項二</option>
-      <option class="option" value="3">選項三</option>
-      <option class="option" value="4">選項四</option>
-      <option class="option" value="5">選項五</option>
-      <option class="option" value="6">選項六</option>
-      <option class="option" value="7">選項七</option>
-              <option class="option" value="1">選項一</option>
-      <option class="option" value="2">選項二</option>
-      <option class="option" value="3">選項三</option>
-      <option class="option" value="4">選項四</option>
-      <option class="option" value="5">選項五</option>
-      <option class="option" value="6">選項六</option>
-      <option class="option" value="7">選項七</option>
-              <option class="option" value="1">選項一</option>
-      <option class="option" value="2">選項二</option>
-      <option class="option" value="3">選項三</option>
-      <option class="option" value="4">選項四</option>
-      <option class="option" value="5">選項五</option>
-      <option class="option" value="6">選項六</option>
-      <option class="option" value="7">選項七</option>
+    <select class="form-select" id="example6" aria-label="example6">
+      <option  selected>請選擇一個選項</option>
+      <option  value="1">選項一</option>
+      <option  value="2">選項二</option>
+      <option  value="3">選項三</option>
+      <option  value="4">選項四</option>
+      <option  value="5">選項五</option>
+      <option  value="6">選項六</option>
+      <option  value="7">選項七</option>
+      <option  value="1">選項一</option>
+      <option  value="2">選項二</option>
+      <option  value="3">選項三</option>
+      <option  value="4">選項四</option>
+      <option  value="5">選項五</option>
+      <option  value="6">選項六</option>
+      <option  value="7">選項七</option>
+      <option  value="1">選項一</option>
+      <option  value="2">選項二</option>
+      <option  value="3">選項三</option>
+      <option  value="4">選項四</option>
+      <option  value="5">選項五</option>
+      <option  value="6">選項六</option>
+      <option  value="7">選項七</option>
     </select>
   </div>
 </div>
@@ -162,19 +165,19 @@ toc: true
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
     <label for="example7" class="form-label h6">問題/標題</label>
-    <select class="select" id="example7" aria-label="example7">
-      <option class="option" selected>請選擇一個選項</option>
-      <optgroup class="optgroup" label="分類一">
-        <option class="option" value="1">選項一</option>
-        <option class="option" value="2">選項二</option>
-        <option class="option" value="3">選項三</option>
-        <option class="option" value="4">選項四</option>
+    <select class="form-select" id="example7" aria-label="example7">
+      <option  selected>請選擇一個選項</option>
+      <optgroup  label="分類一">
+        <option  value="1">選項一</option>
+        <option  value="2">選項二</option>
+        <option  value="3">選項三</option>
+        <option  value="4">選項四</option>
       </optgroup>
-      <optgroup class="optgroup" label="分類二">
-        <option class="option" value="5">選項一</option>
-        <option class="option" value="6">選項二</option>
-        <option class="option" value="7">選項三</option>
-        <option class="option" value="8">選項四</option>
+      <optgroup  label="分類二">
+        <option  value="5">選項一</option>
+        <option  value="6">選項二</option>
+        <option  value="7">選項三</option>
+        <option  value="8">選項四</option>
       </optgroup>
     </select>
   </div>
@@ -191,29 +194,29 @@ toc: true
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
     <label for="example8" class="form-label h6">問題/標題</label>
-    <select class="select" id="example8" aria-label="example8" onchange="ShowSelect2()">
-      <option class="option" value="0" selected>請選擇一個選項</option>
-      <option class="option" value="1">選項一</option>
-      <option class="option" value="2">選項二</option>
-      <option class="option" value="3">選項三</option>
+    <select class="form-select" id="example8" aria-label="example8" onchange="ShowSelect2()">
+      <option  value="0" selected>請選擇一個選項</option>
+      <option  value="1">選項一</option>
+      <option  value="2">選項二</option>
+      <option  value="3">選項三</option>
     </select>
   </div>
   <div class="col-md-4">
     <label for="example9" class="form-label h6">問題/標題</label>
-    <select class="select" id="example9" aria-label="example9" disabled onchange="ShowSelect3()">
-      <option class="option" value="0" selected>請選擇一個選項</option>
-      <option class="option" value="1">選項一</option>
-      <option class="option" value="2">選項二</option>
-      <option class="option" value="3">選項三</option>
+    <select class="form-select" id="example9" aria-label="example9" disabled onchange="ShowSelect3()">
+      <option  value="0" selected>請選擇一個選項</option>
+      <option  value="1">選項一</option>
+      <option  value="2">選項二</option>
+      <option  value="3">選項三</option>
     </select>
   </div>
   <div class="col-md-4">
     <label for="example10" class="form-label h6">問題/標題</label>
-    <select class="select" id="example10" aria-label="example10" disabled>
-      <option class="option" value="0" selected>請選擇一個選項</option>
-      <option class="option" value="1">選項一</option>
-      <option class="option" value="2">選項二</option>
-      <option class="option" value="3">選項三</option>
+    <select class="form-select" id="example10" aria-label="example10" disabled>
+      <option  value="0" selected>請選擇一個選項</option>
+      <option  value="1">選項一</option>
+      <option  value="2">選項二</option>
+      <option  value="3">選項三</option>
     </select>
   </div>
 </div>
@@ -240,11 +243,11 @@ toc: true
   <div class="col-12 d-flex flex-row">
   <div>
     <label for="example11" class="form-label h6">問題/標題</label>
-    <select class="select" id="example11" aria-label="example11">
-      <option class="option" selected>請選擇一個選項</option>
-      <option class="option" value="1">選項一</option>
-      <option class="option" value="2">選項二</option>
-      <option class="option" value="3">選項三</option>
+    <select class="form-select" id="example11" aria-label="example11">
+      <option  selected>請選擇一個選項</option>
+      <option  value="1">選項一</option>
+      <option  value="2">選項二</option>
+      <option  value="3">選項三</option>
     </select>
     </div>
     <div class="d-flex align-items-end">
