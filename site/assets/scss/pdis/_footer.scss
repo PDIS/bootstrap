@@ -1,0 +1,41 @@
+footer {
+	.nav {
+		justify-content: flex-end;
+
+		@media (max-width: 992px) { 
+			flex-direction: column;
+		}
+	}
+
+	.top-nav {
+		justify-content: center;
+
+		@media (max-width: 992px) { 
+			flex-direction: row;
+			justify-content: start;
+		}
+	}
+
+	.accessibility-container {
+		margin:1rem 0.5rem 1rem 0.75rem;
+		text-align: end;
+
+		@media (max-width: 992px) { 
+			text-align: start;
+		}
+	}
+
+	.social-container {
+		margin:1rem 0.5rem 1rem 0.75rem;
+		text-align: end;
+
+		@media (max-width: 992px) { 
+			text-align: start;
+		}
+	}
+
+	.footer-logo {
+		margin:1rem 0.5rem 1rem 0.75rem;
+	}
+	
+}

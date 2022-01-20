@@ -85,8 +85,17 @@ a:active {
   vertical-align: -webkit-baseline-middle;
 } */
 
-.bg-footer {
-  background-color: #c1c2c3;
+.social-icon {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child  {
+    margin-right: 0;
+  }
 }
 
 .icon-btn {
@@ -122,6 +131,10 @@ a:active {
 
 .bg-gray-100 {
   background-color: $gray-100;
+}
+
+.bg-gray-300 {
+  background-color: $gray-300;
 }
 
 .trad-chinese-formal {

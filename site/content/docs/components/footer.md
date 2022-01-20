@@ -23,13 +23,25 @@ toc: true
 **規劃您的頁尾。** 頁尾的內容應該能夠回答使用者關於一個網站或頁面的剩餘的問題（主要問題應都能在頁面內容中得到解答）。請謹慎的規劃頁尾的內容，設想使用者到達頁尾時還可能有哪些疑問，善加利用頁尾作為最後的解惑機會。
 **頁尾不是頁首的拷貝。** 頁尾的內容並不是將頁首所有連結拷貝下來即可，尤其在大型網站上，頁首已經含有許多且極大部分的連結了，請避免將所有連結再次複製到頁尾。
 **避免放不常更新的社群媒體。** 許多機關會在頁尾放社群媒體連結，但若你的有些社群媒體帳號已經不常更新，請避免將它再放到頁尾上，讓使用者做不必要的查找。
-**使用簡短易懂的文字。** 使用簡短的文字，避免使用一般人難以理解的行話或術語。 
+**使用簡短易懂的文字。** 使用簡短的文字，避免使用一般人難以理解的行話或術語。
 
 ### 設計元件
 
 #### 基本頁尾 Base footer
 
 {{< example >}}
+<footer class="bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="d-inline-flex align-items-center col-lg-6">
+				<img class="rounded" src="/img/pdis-logo-final-inverse.png" width="100" height="100" alt="pdis logo" />
+				<div class="d-flex flex-column ms-2">
+					<div class="fs-3 fw-bold"> Public Digital Innovation Space </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 {{< /example >}}
 
 #### 基本頁尾加連結 Base footer with links

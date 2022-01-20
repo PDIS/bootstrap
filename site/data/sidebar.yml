@@ -36,3 +36,5 @@
       name: mobilenavigation
     - title: 頁籤面板
       name: tabs
+    - title: 頁尾
+      name: footer
