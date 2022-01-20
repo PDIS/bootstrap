@@ -20,6 +20,7 @@
 
 <link href="/docs/5.1/assets/css/docs.css" rel="stylesheet">
 
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -187,6 +188,8 @@
               >行動導覽</a></li>
           <li><a href="/docs/components/tabs/" class="d-inline-flex align-items-center rounded"
               >頁籤面板</a></li>
+          <li><a href="/docs/components/footer/" class="d-inline-flex align-items-center rounded active"
+               aria-current="page" >頁尾</a></li>
         </ul>
       </div>
     </li>
@@ -220,11 +223,35 @@
 <p><strong>規劃您的頁尾。</strong> 頁尾的內容應該能夠回答使用者關於一個網站或頁面的剩餘的問題（主要問題應都能在頁面內容中得到解答）。請謹慎的規劃頁尾的內容，設想使用者到達頁尾時還可能有哪些疑問，善加利用頁尾作為最後的解惑機會。
 <strong>頁尾不是頁首的拷貝。</strong> 頁尾的內容並不是將頁首所有連結拷貝下來即可，尤其在大型網站上，頁首已經含有許多且極大部分的連結了，請避免將所有連結再次複製到頁尾。
 <strong>避免放不常更新的社群媒體。</strong> 許多機關會在頁尾放社群媒體連結，但若你的有些社群媒體帳號已經不常更新，請避免將它再放到頁尾上，讓使用者做不必要的查找。
-<strong>使用簡短易懂的文字。</strong> 使用簡短的文字，避免使用一般人難以理解的行話或術語。 </p>
+<strong>使用簡短易懂的文字。</strong> 使用簡短的文字，避免使用一般人難以理解的行話或術語。</p>
 <h3 id="設計元件">設計元件</h3>
 <h4 id="基本頁尾-base-footer">基本頁尾 Base footer</h4>
 <div class="bd-example">
+<footer class="bg-light">
+	<div class="container">
+		<div class="row">
+			<div class="d-inline-flex align-items-center col-lg-6">
+				<img class="rounded" src="/img/pdis-logo-final-inverse.png" width="100" height="100" alt="pdis logo" />
+				<div class="d-flex flex-column ms-2">
+					<div class="fs-3 fw-bold"> Public Digital Innovation Space </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+<span class="p">&lt;</span><span class="nt">footer</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bg-light&#34;</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-inline-flex align-items-center col-lg-6&#34;</span><span class="p">&gt;</span>
+				<span class="p">&lt;</span><span class="nt">img</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/img/pdis-logo-final-inverse.png&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;100&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;100&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;pdis logo&#34;</span> <span class="p">/&gt;</span>
+				<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex flex-column ms-2&#34;</span><span class="p">&gt;</span>
+					<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;fs-3 fw-bold&#34;</span><span class="p">&gt;</span> Public Digital Innovation Space <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+				<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+			<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+		<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+	<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
 </code></pre></div>
 <h4 id="基本頁尾加連結-base-footer-with-links">基本頁尾加連結 Base footer with links</h4>
 <div class="bd-example">
