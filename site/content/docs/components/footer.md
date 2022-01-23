@@ -29,20 +29,7 @@ toc: true
 
 #### 基本頁尾 Base footer
 
-{{< example >}}
-<footer class="bg-light">
-	<div class="container">
-		<div class="row">
-			<div class="d-inline-flex align-items-center col-lg-6">
-				<img class="rounded" src="/img/pdis-logo-final-inverse.png" width="100" height="100" alt="pdis logo" />
-				<div class="d-flex flex-column ms-2">
-					<div class="fs-3 fw-bold"> Public Digital Innovation Space </div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-{{< /example >}}
+<a href="/docs/examples/footers">範例連結</a>
 
 #### 基本頁尾加連結 Base footer with links
 

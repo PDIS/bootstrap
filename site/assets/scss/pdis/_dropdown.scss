@@ -1,8 +1,12 @@
 .dropdown {
+  .dropdown-toggle {
+    &:active,
+    &:focus {
+      color: var(--bs-secondary-light) !important;
+      background-color: var(--bs-primary) !important;
+    }
+  }
   .dropdown-btn {
-    @extend .btn;
-    @extend .btn-link;
-    @extend .dropdown-toggle;
     &:active,
     &:focus {
       color: var(--bs-secondary-light);
@@ -10,9 +14,7 @@
     }
   }
   .dropdown-menu {
-    border: 0;
-    border-left: solid;
-    border-color: var(--bs-primary);
+    border-left:1px var(--bs-primary) solid;
     border-radius: 0;
   }
 
