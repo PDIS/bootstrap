@@ -18,6 +18,10 @@ a:active {
   color: var(--bs-secondary-light);
 }
 
+.language-switch {
+  padding: 6px;
+}
+
 .tab-scrollable-btn {
   &:focus {
     outline: 0;
@@ -44,46 +48,6 @@ a:active {
 .bg-custom {
   background-color: #005aa8 !important;
 }
-
-/* .navbar-top {
-  width: 100%;
-  height: 1.5rem;
-  background-color: #005aa8;
-}
-
-.navbar-bottom {
-  width: 100%;
-  height: 0.1rem;
-  background-color: #005aa8;
-}
-
-.navbar-menu {
-  justify-content: end;
-}
-
-.navbar-link-item {
-  font-weight: 500 !important;
-  color: #005aa8 !important;
-}
-
-.navbar-top-item {
-}
-
-.navbar-expand-lg {
-  flex-wrap: wrap !important;
-  justify-content: flex-start;
-}
-
-.navbar-toggler {
-  background-color: #005aa8;
-}
-
-.navbar-light .navbar-toggler-icon {
-  width: 100%;
-  font-size: 1rem;
-  background-image: none;
-  vertical-align: -webkit-baseline-middle;
-} */
 
 .logo {
   margin:1rem 0.5rem 1rem 0.75rem;
@@ -134,11 +98,15 @@ a:active {
 }
 
 .bg-gray-100 {
-  background-color: $gray-100;
+  background-color: var(--bs-gray-100);
+}
+
+.bg-gray-200 {
+  background-color: var(--bs-gray-200);
 }
 
 .bg-gray-300 {
-  background-color: $gray-300;
+  background-color: var(--bs-gray-300);
 }
 
 .trad-chinese-formal {

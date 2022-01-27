@@ -6,12 +6,6 @@ layout: components-example
 <footer class="bg-light">
   <div class="container">
     <div class="row">
-      <a href="#" class="text-decoration-none text-center">
-        <i class="bi bi-arrow-up-circle"></i>
-        回上方
-      </a>
-    </div>
-    <div class="row">
       <ul class="nav top-nav">
         <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
         <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
