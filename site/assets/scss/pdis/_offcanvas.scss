@@ -1,39 +1,8 @@
-.offcanvas {
-  background: var(--bs-primary-dark);
-}
-
-.offcanvas-header {
+.offcanvas-home {
+  text-decoration: none;
 }
 
 .offcanvas-title {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.offcanvas-body {
-  padding: 0;
-  .navbar-nav {
-    @media (max-width: 768px) {
-      display: flex;
-    }
-  }
-  .nav-link.dropdown-toggle {
-    padding-left: 1rem;
-  }
-
-  p {
-    padding-left: 1rem;
-    color: white;
-  }
-  hr {
-    margin: 1rem 1rem;
-    border: 1px solid #ffffff;
-  }
-  .input-group {
-    margin-bottom: 0.75rem;
-  }
-  a {
-    color: white;
-  }
+  display: inline;
+  text-decoration: underline;
 }

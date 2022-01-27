@@ -38,12 +38,12 @@ toc: true
   <div class="col-md-6">
     <header>
       <div class="bg-gray-200">
-        <div class="container d-flex justify-content-end">
+        <div class="container d-flex justify-content-md-end justify-content-center">
           <a href="#" class="language-switch">中文/English</a>
         </div>
       </div>
       <nav class="navbar navbar-light bg-light">
-        <div class="container flex-wrap">
+        <div class="container flex-wrap align-items-stretch">
           <a class="navbar-brand d-flex align-items-center" href="#">
             <img src="/img/pdis-logo-final-inverse.png" width="32" height="32" alt="logo" class="rounded">
             <span class="navbar-title h3">標題</span>
@@ -53,44 +53,26 @@ toc: true
           </button>
           <div class="collapse navbar-collapse align-items-end" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  下拉式選單
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                  <li><a class="dropdown-item" href="#">子項目</a></li>
-                  <li><a class="dropdown-item" href="#">子項目</a></li>
-                  <li><a class="dropdown-item" href="#">子項目</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">服務項目(文字較多時)</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  下拉式選單
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                  <li><a class="dropdown-item" href="#">子項目</a></li>
-                  <li><a class="dropdown-item" href="#">子項目</a></li>
-                  <li><a class="dropdown-item" href="#">子項目</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">服務項目(文字較多時)</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  下拉式選單
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                  <li><a class="dropdown-item" href="#">子項目</a></li>
-                  <li><a class="dropdown-item" href="#">子項目</a></li>
-                  <li><a class="dropdown-item" href="#">子項目</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">服務項目(文字較多時)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">服務項目(文字較多時)</a>
               </li>
             </ul>
-            <div>
-              <div class="d-flex justify-content-end">
+            <div class="d-flex flex-column-reverse flex-md-column">
+              <div class="d-flex justify-content-md-end justify-content-start">
                 <p>熱門搜尋 :</p>
-                <a href="#">防疫政策</a>
-                <a href="#">申辦會員</a>
+                <a href="#" class="hot-searching">防疫政策</a>
+                <a href="#" class="hot-searching">申辦會員</a>
               </div>
-              <div class="input-group">
+              <div class="input-group searching">
                 <input class="form-control" type="search" placeholder="搜尋關鍵字" aria-label="Search">
                 <span class="input-group-text bg-primary text-white"><i class="bi bi-search"></i></span>
               </div>
@@ -101,6 +83,166 @@ toc: true
     </header>
   </div>
   <div class="col-md-6">
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid align-items-stretch">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="/img/pdis-logo-final-inverse.png" width="32" height="32" alt="logo" class="rounded">
+          <span class="navbar-title h3">標題</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <a class="offcanvas-home" href="#">
+              <i class="bi bi-house-fill"></i>
+              <h6 class="offcanvas-title" id="offcanvasNavbarLabel">回首頁</h6>
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  服務項目(擁有子項目)
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  服務項目(擁有子項目)
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  服務項目(擁有子項目)
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  服務項目(擁有子項目)
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  服務項目(擁有子項目)
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  服務項目(擁有子項目)
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown6">
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                  <li><a class="dropdown-item" href="#">子項目</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex flex-column-reverse flex-md-column">
+              <div class="d-flex justify-content-md-end justify-content-start">
+                <p>熱門搜尋 :</p>
+                <a href="#" class="hot-searching">防疫政策</a>
+                <a href="#" class="hot-searching">申辦會員</a>
+              </div>
+              <div class="input-group searching">
+                <input class="form-control" type="search" placeholder="搜尋關鍵字" aria-label="Search">
+                <span class="input-group-text bg-primary text-white"><i class="bi bi-search"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+{{< /example >}}
+
+#### 下拉式行動導覽 - 多語言切換
+
+當語言切換的功能高於選單中的其他服務項目時，例如機關本身有較多語言切換選擇時，或語言的切換對使用者來說是重要且常用的功能時，較適合使用此元件。
+
+{{< example >}}
+<div class="row">
+  <div class="col-md-6">
+    <header>
+      <div class="bg-gray-200">
+        <div class="container d-flex justify-content-md-end justify-content-center">
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" id="multilanguage" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            切換語言/Language
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="multilanguage">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">日本語</a></li>
+              <li><a class="dropdown-item" href="#">Deutsch</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-light bg-light">
+        <div class="container flex-wrap align-items-stretch">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="/img/pdis-logo-final-inverse.png" width="32" height="32" alt="logo" class="rounded">
+            <span class="navbar-title h3">標題</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-toggler-icon"></div>
+          </button>
+          <div class="collapse navbar-collapse align-items-end" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">服務項目(文字較多時)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">服務項目(文字較多時)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">服務項目(文字較多時)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">服務項目(文字較多時)</a>
+              </li>
+            </ul>
+            <div class="d-flex flex-column-reverse flex-md-column">
+              <div class="d-flex justify-content-md-end justify-content-start">
+                <p>熱門搜尋 :</p>
+                <a href="#" class="hot-searching">防疫政策</a>
+                <a href="#" class="hot-searching">申辦會員</a>
+              </div>
+              <div class="input-group searching">
+                <input class="form-control" type="search" placeholder="搜尋關鍵字" aria-label="Search">
+                <span class="input-group-text bg-primary text-white"><i class="bi bi-search"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
   </div>
 </div>
 {{< /example >}}

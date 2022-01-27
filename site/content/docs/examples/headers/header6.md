@@ -5,7 +5,7 @@ layout: components-example
 {{< example >}}
 <header>
   <div class="bg-gray-200">
-    <div class="container d-flex justify-content-end">
+    <div class="container d-flex justify-content-center justify-content-md-end">
       <a href="#" class="language-switch">中文/English</a>
     </div>
   </div>
