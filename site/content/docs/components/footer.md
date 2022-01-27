@@ -29,34 +29,28 @@ toc: true
 
 #### 基本頁尾 Base footer
 
-<a href="/docs/examples/footers">範例連結</a>
+<a href="/docs/examples/footers/footer1">範例連結</a>
 
 #### 基本頁尾加連結 Base footer with links
 
-{{< example >}}
-{{< /example >}}
+<a href="/docs/examples/footers/footer2">範例連結</a>
 
 #### 基本頁尾加標章 Base footer with labels
 
-{{< example >}}
-{{< /example >}}
+<a href="/docs/examples/footers/footer3">範例連結</a>
 
 #### 基本頁尾加社群連結 Base footer with socials
 
-{{< example >}}
-{{< /example >}}
+<a href="/docs/examples/footers/footer4">範例連結</a>
 
 #### 頁尾加服務項目連結 Footer with service links
 
-{{< example >}}
-{{< /example >}}
+<a href="/docs/examples/footers/footer5">範例連結</a>
 
 #### 頁尾加回上方控制 Footer with back to top control
 
-{{< example >}}
-{{< /example >}}
+<a href="/docs/examples/footers/footer6">範例連結</a>
 
 #### 展開頁尾 Extended Footer 
 
-{{< example >}}
-{{< /example >}}
+<a href="/docs/examples/footers/footer7">範例連結</a>

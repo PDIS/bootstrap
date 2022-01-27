@@ -34,87 +34,46 @@ toc: true
 
 #### 基本頁首 Base header
 
-{{< example >}}
+<a href="/docs/examples/headers/header1">範例連結</a>
 
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="50" height="40" class="d-inline-block">
-      標題
-    </a>
-  </div>
-</nav>
-
-{{< /example >}}
 
 #### 基本加搜尋列 with search bar
 
-{{< example >}}
-
-<nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="50" height="40" class="d-inline-block">
-      標題
-    </a>
-    <form class="d-flex">
-      <input type="text" class="form-control" placeholder="" aria-label="Username">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-    </form>
-  </div>
-</nav>
-{{< /example >}}
+<a href="/docs/examples/headers/header2">範例連結</a>
 
 #### 頁首加連結與下拉選單 Header with links and dropdown list
 
-{{< example >}}
-
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="50" height="40" class="d-inline-block">
-      標題
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="bi bi-list menu-icon"></i>選單
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">連結</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">連結</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            下拉式選單
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">連結</a></li>
-            <li><a class="dropdown-item" href="#">連結</a></li>
-            <li><a class="dropdown-item" href="#">連結</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-{{< /example >}}
+<a href="/docs/examples/headers/header3">範例連結</a>
 
 #### 頁首加許多連結 Header with many links
 頁首連結多於三項時，建議放入頁首副列
 
+<a href="/docs/examples/headers/header4">範例連結</a>
+
+#### 頁首加連結與下拉面板 Header with links and dropdown panel
+下拉選單除了上述的基本款，也可以選擇使用下拉面板的樣式。
+
+參考 導覽列下拉選單 Navigation Dropdowns | Design
 
 ### 範例 Example 
 
 #### 簡單任務型網站
 
+<a href="/docs/examples/headers/header5">範例連結</a>
+
 #### 大規模機關服務入口網
 
-#### 字級操控與語言切換
+<a href="/docs/examples/headers/header6">範例連結</a>
+
+#### 中英文語言切換
+
+<a href="/docs/examples/headers/header7">範例連結</a>
 
 #### 多國語言切換
 
+<a href="/docs/examples/headers/header8">範例連結</a>
+
 #### 機關名稱與服務名稱
+
+<a href="/docs/examples/headers/header9">範例連結</a>
 

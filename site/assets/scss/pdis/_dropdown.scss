@@ -5,6 +5,16 @@
       color: var(--bs-secondary-light) !important;
       background-color: var(--bs-primary) !important;
     }
+    &::after {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-top: 0;
+      border-right: 0.1rem solid;
+      border-bottom: 0.1rem solid;
+      border-left: 0;
+      transform: rotate(45deg);
+      margin-left: 0.5em;
+    }
   }
   .dropdown-btn {
     &:active,
