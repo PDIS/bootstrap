@@ -11,33 +11,55 @@ layout: components-example
         回上方
       </a>
     </div>
-    <div class="row">
-      <div class="col">
-        <ul class="nav flex-column">
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-        </ul>
-      </div>
-      <div class="col">
-        <ul class="nav flex-column">
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-        </ul>
-      </div>
-      <div class="col">
-        <ul class="nav flex-column">
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
-        </ul>
+    <div class="row justify-content-center">
+      <div class="col col-md-6">
+        <div class="row text-center">
+          <div class="col">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+            </ul>
+          </div>
+           <div class="col">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+            </ul>
+          </div>
+           <div class="col">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+            </ul>
+          </div>
+                 <div class="col">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+            </ul>
+          </div>
+                 <div class="col">
+            <ul class="nav flex-column">
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">項目連結</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row">

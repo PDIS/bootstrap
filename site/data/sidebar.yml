@@ -30,8 +30,6 @@
       name: sidebar
     - title: 下拉式選單
       name: select
-    - title: 導覽列下拉選單
-      name: dropdown
     - title: 行動導覽
       name: mobilenavigation
     - title: 頁籤面板
