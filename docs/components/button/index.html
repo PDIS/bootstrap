@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="讓使用者從多個頁面選項中做一個或選擇，並跳轉到其選擇的頁面。">
+<meta name="description" content="按鈕是個引人注意的可選擇區塊，引導使用者執行重要的行為。">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.1">
 
-<title>導覽列下拉選單 Navigation Dropdowns · PDIS Design System v5.1</title>
+<title>按鈕 Button · PDIS Design System v5.1</title>
 
-<link rel="canonical" href="https://design.pdis.tw/docs/components/dropdown/">
+<link rel="canonical" href="https://design.pdis.tw/docs/components/button/">
 
 
 
@@ -40,14 +40,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="導覽列下拉選單 Navigation Dropdowns">
-<meta name="twitter:description" content="讓使用者從多個頁面選項中做一個或選擇，並跳轉到其選擇的頁面。">
+<meta name="twitter:title" content="按鈕 Button">
+<meta name="twitter:description" content="按鈕是個引人注意的可選擇區塊，引導使用者執行重要的行為。">
 <meta name="twitter:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://design.pdis.tw/docs/components/dropdown/">
-<meta property="og:title" content="導覽列下拉選單 Navigation Dropdowns">
-<meta property="og:description" content="讓使用者從多個頁面選項中做一個或選擇，並跳轉到其選擇的頁面。">
+<meta property="og:url" content="https://design.pdis.tw/docs/components/button/">
+<meta property="og:title" content="按鈕 Button">
+<meta property="og:description" content="按鈕是個引人注意的可選擇區塊，引導使用者執行重要的行為。">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
@@ -188,8 +188,8 @@
               >頁籤面板</a></li>
           <li><a href="/docs/components/footer/" class="d-inline-flex align-items-center rounded"
               >頁尾</a></li>
-          <li><a href="/docs/components/button/" class="d-inline-flex align-items-center rounded"
-              >按鈕</a></li>
+          <li><a href="/docs/components/button/" class="d-inline-flex align-items-center rounded active"
+               aria-current="page" >按鈕</a></li>
         </ul>
       </div>
     </li>
@@ -201,9 +201,9 @@
   <main class="bd-main order-1">
     <div class="bd-intro ps-lg-4"><h5>元件</h5><div class="d-md-flex flex-md-row align-items-left justify-content-between">
         
-        <h1 id="content" style="font-weight: 900;">導覽列下拉選單 Navigation Dropdowns</h1>
+        <h1 id="content" style="font-weight: 900;">按鈕 Button</h1>
       </div>
-      <p style="margin-top: 0.5rem;">讓使用者從多個頁面選項中做一個或選擇，並跳轉到其選擇的頁面。</p>
+      <p style="margin-top: 0.5rem;">按鈕是個引人注意的可選擇區塊，引導使用者執行重要的行為。</p>
       <hr>
     </div>
 
@@ -211,60 +211,65 @@
     <div class="bd-content ps-lg-4">
       
 
-      <h3 id="關於導覽列下拉選單元件">關於導覽列下拉選單元件</h3>
-<p>導覽列的下拉選單是導覽的延伸。與常駐的導覽列不同，導覽列下拉選單是短暫的存在，依據使用者的互動輸入，觸發展開選單內容，並可以再次出發收納選單內容。使用者在選單展開時，可以從多個選項中做出單一選擇，選擇的目的是用來前往別的分頁。到達新的分頁後，下拉選單則自動收納起來，整個網頁回到原導覽列的常駐狀態。</p>
+      <h3 id="關於按鈕元件">關於按鈕元件</h3>
+<p>按鈕在視覺上是一個頁面上重要行為的引導，在動作是多個頁面間關鍵行為的集合。</p>
 <h3 id="使用規範">使用規範</h3>
-<h4 id="w何時該使用導覽列下拉選單">W何時該使用導覽列下拉選單</h4>
-<p>當導覽列有需要用到下拉式選單收納頁面連結，總數量不至於過多且層級（不含導覽列）不超過兩層時，請妥善利用導覽列下拉選單。</p>
+<h4 id="何時該使用按鈕">何時該使用按鈕</h4>
+<p>重要的行為應該用按鈕來顯示，例如「確認」、「下載」、「下一步」、「註冊」、「登出」等。</p>
 <h4 id="何時該考慮使用其他元件">何時該考慮使用其他元件</h4>
 <ul>
-<li><strong>選項過少。</strong> 當連結數目不多，例如小於 3，且導覽列空間足夠時，建議直接將連結展開放置在導覽列上，供使用者一目了然的瀏覽並選擇想要前往的頁面。</li>
-<li><strong>選項過多。</strong> 當選單內的項目太多，例如超過 15 項時，請先主動重新檢視網站的資訊架構。若無法更動，請參考 sidebar 搭配 header navigation 的呈現方式，避免用單一導覽列下拉選單一次收納過多資訊。否則，將過多內容收納在一處將會增加使用者的查找負擔。</li>
-<li><strong>選單數目過多。</strong> 當導覽列上的導覽列下拉選單數量過多，甚至導覽列上每個連結都是用下拉選單呈現時，請參考 sidebar 搭配 header navigation 的呈現方式。</li>
+<li>頁面之間的連結。當純粹想要從一個頁面連結到另外一個頁面時，請用一般的連結即可。</li>
+<li>當行為的重要性沒那麼高時。當某一行為的重要性在該頁面上沒那麼高時，可以使用文字連結按鈕，視覺上跟連結一樣，但操作上仍為按鈕。</li>
 </ul>
-<h4 id="導覽列下拉選單易用性">導覽列下拉選單易用性</h4>
+<h4 id="按鈕易用性">按鈕易用性</h4>
 <ul>
-<li><strong>導覽列與下拉選單風格應一致。</strong> 導覽列與其下拉選單皆為導覽用，其風格應一致，幫助使用者的潛在認知，降低額外學習成本。</li>
-<li><strong>導覽列與下拉選單底色區別。</strong> 建議在導覽列的底色與下拉選單的底色使用不同顏色以作區別。因為下拉選單是暫時出現且蓋過背後網頁內容的元件，與常駐的導覽列顏色稍作區別，能幫助使用者在瀏覽網頁時的潛在認知。</li>
-<li><strong>避免不要的特效。</strong> 下拉選單的內容可以直接覆蓋在原網頁的內容之上，請避免另外製作非必要的特效，例如逐項展開選單，或將網頁內容下推等。</li>
-<li><strong>避免選項數量過多。</strong> 建議不要放超過 15 個選擇。</li>
+<li>避免一頁中出現太多按鈕。按鈕的出現應該是該頁面中比較重要的行為，且按下之後會帶領使用者到另一個頁面，因此一頁中的按鈕不宜過多。</li>
+<li>按鈕文字應以動詞或動作為主。按鈕是引導使用者質性某重要行為的地方，因此請盡量用簡短明瞭的動作文字作為按鈕文字，如「送出」、「取消」等。</li>
+<li>可以選擇使用圖標。某些按鈕適合用圖標作為提示，例如「開新視窗」、「下載」等，但請適度使用。</li>
+<li>按鈕文字應保持在同一行。請勿將按鈕文字放到第二行。</li>
 </ul>
-<h4 id="導覽列下拉選單近用性">導覽列下拉選單近用性</h4>
+<h4 id="按鈕近用性">按鈕近用性</h4>
 <ul>
-<li><strong>避免使用 hover。</strong> 請避免用 hover 觸發展開選單，儘量使用 click 觸發，以減少視覺負擔。</li>
+<li>報讀軟體觸發按鈕與連結的方式不同。在使用報讀軟體時，按下空白鍵會觸發按鈕，按下 Enter 鍵會觸發連結。</li>
 </ul>
 <h3 id="設計元件">設計元件</h3>
-<h4 id="滿版">滿版</h4>
-<p>當第二層級項目多 (&gt; 7) 時，意即選單內容項目較多，適合使用滿版的形式將所有項目列出。同樣情況，當還有次層級時，滿版形式的導覽列下拉式選單也適用，可以再將次層級的項目也逐一列出。惟當次層級的項目也過多時，請重新檢視資訊架構，或考慮轉用 sidebar 搭配 header navigation 的呈現方式。</p>
+<h4 id="方角按鈕-vs-圓角按鈕">方角按鈕 vs 圓角按鈕</h4>
+<p>可以自行選用符合網站風格的按鈕樣式。</p>
 <div class="bd-example">
-
-<div class="dropdown">
-  <button class="dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    服務項目名稱
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
-    <li><a class="dropdown-item" href="#">寬度隨最長的內容文字調整</a></li>
-    <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
-    <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
-    <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
-  </ul>
-</div>
-
-</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-btn&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dropdownMenuButton1&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;dropdown&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span><span class="p">&gt;</span>
-    服務項目名稱
-  <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-menu&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;dropdownMenuButton1&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>服務項目子項目<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>寬度隨最長的內容文字調整<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>服務項目子項目<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>服務項目子項目<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>服務項目子項目<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
-<h4 id="單欄式下拉">單欄式下拉</h4>
-<p>當第二層級項目少 (&lt; 7) 時，意即選單內容項目較少，適合使用單欄式下拉的形式將所有項目列出。同樣情況，當次層級項目少 (&lt;7) 時，點選箭頭圖標展開次層級選單。若次層級項目較多時，請重新檢視資訊架構，並考慮轉用 sidebar 搭配 header navigation 的呈現方式。</p>
+  <button type="button" class="btn btn-primary">圓角按鈕</button>
+  <button type="button" class="btn rounded-0 btn-primary">方角按鈕</button>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;</span>圓角按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn rounded-0 btn-primary&#34;</span><span class="p">&gt;</span>方角按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="按鈕大小">按鈕大小</h4>
+<p>我們提供大、中、小三種不同尺寸的按鈕。</p>
+<div class="bd-example">
+  <button type="button" class="btn btn-primary btn-sm">預設按鈕 小</button>
+  <button type="button" class="btn btn-primary">預設按鈕 預設</button>
+  <button type="button" class="btn btn-primary btn-lg">預設按鈕 大</button>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary btn-sm&#34;</span><span class="p">&gt;</span>預設按鈕 小<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;</span>預設按鈕 預設<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary btn-lg&#34;</span><span class="p">&gt;</span>預設按鈕 大<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="框線樣式按鈕--vs-連結字按鈕">框線樣式按鈕  vs 連結字按鈕</h4>
+<p>同個頁面中，可以選用框線樣式的按鈕，與預設填滿顏色的按鈕作為區隔。當按鈕的行為重要性沒那麼高時，可以將樣式視覺上做得跟連結一樣。</p>
+<div class="bd-example">
+  <button type="button" class="btn btn-outline-primary">框線按鈕</button>
+  <button type="button" class="btn btn-link">連結字</button>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-outline-primary&#34;</span><span class="p">&gt;</span>框線按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-link&#34;</span><span class="p">&gt;</span>連結字<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="文字按鈕加圖標">文字按鈕加圖標</h4>
+<p>按鈕中放有圖標時，可以選用圖標在左或是圖標在右的按鈕樣式。</p>
+<div class="bd-example">
+  <button type="button" class="btn btn-primary">圖標在右<i class="bi bi-arrow-counterclockwise"></i></button>
+  <button type="button" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i>圖標在左</button>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;</span>圖標在右<span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-arrow-counterclockwise&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-arrow-counterclockwise&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>圖標在左<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="功能性按鈕">功能性按鈕</h4>
+<p>我們提供三種功能性按鈕：正向、警示與危險按鈕。</p>
+<div class="bd-example">
+  <button type="button" class="btn btn-success">正向按鈕</button>
+  <button type="button" class="btn btn-danger">危險按鈕</button>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-success&#34;</span><span class="p">&gt;</span>正向按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-danger&#34;</span><span class="p">&gt;</span>危險按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span></code></pre></div>
 
     </div>
   </main>
