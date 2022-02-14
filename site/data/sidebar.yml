@@ -36,3 +36,5 @@
       name: tabs
     - title: 頁尾
       name: footer
+    - title: 按鈕
+      name: button
