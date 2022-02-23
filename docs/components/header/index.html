@@ -138,63 +138,77 @@
 
 <div class="container-xxl my-md-4 bd-layout">
   <aside class="bd-sidebar">
-    <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation"><ul class="list-unstyled mb-0 py-3 pt-md-1">
-    <li class="mb-1">
-      <button class="btn d-inline-flex align-items-center rounded collapsed"
-        data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="false"
-        >
+    <div class="sidebar" id="sidebar">
+  <div class="accordion-item">
+    <h2 class="sidebar-header" id="style-header">
+      <button class="accordion-button sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="false"
+       aria-controls="style-collapse">
         風格
       </button>
-
-      <div class="collapse" id="style-collapse">
-        <ul class="list-unstyled fw-normal pb-1 small">
-          <li><a href="/docs/style/accessibility/" class="d-inline-flex align-items-center rounded"
-              >無障礙</a></li>
-          <li><a href="/docs/style/color/" class="d-inline-flex align-items-center rounded"
-              >顏色</a></li>
-          <li><a href="/docs/style/layout/" class="d-inline-flex align-items-center rounded"
-              >版面配置</a></li>
-          <li><a href="/docs/style/typography/" class="d-inline-flex align-items-center rounded"
-              >文字屬性</a></li>
-          <li><a href="/docs/style/spacing/" class="d-inline-flex align-items-center rounded"
-              >間距</a></li>
-        </ul>
+    </h2>
+    <div id="style-collapse" class="sidebar-collapse  collapse" aria-labelledby="style-header" data-bs-parent="#sidebar">
+      <div class="list-group">
+        <a href="/docs/style/accessibility/" class="sidebar-link list-group-item list-group-item-action " >
+          無障礙
+        </a>
+        <a href="/docs/style/color/" class="sidebar-link list-group-item list-group-item-action " >
+          顏色
+        </a>
+        <a href="/docs/style/layout/" class="sidebar-link list-group-item list-group-item-action " >
+          版面配置
+        </a>
+        <a href="/docs/style/typography/" class="sidebar-link list-group-item list-group-item-action " >
+          文字屬性
+        </a>
+        <a href="/docs/style/spacing/" class="sidebar-link list-group-item list-group-item-action " >
+          間距
+        </a>
       </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn d-inline-flex align-items-center rounded"
-        data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="true"
-         aria-current="true" >
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="sidebar-header" id="components-header">
+      <button class="accordion-button sidebar-button " type="button" data-bs-toggle="collapse" data-bs-target="#components-collapse" aria-expanded="true"
+       aria-current="true"  aria-controls="components-collapse">
         元件
       </button>
-
-      <div class="collapse show" id="components-collapse">
-        <ul class="list-unstyled fw-normal pb-1 small">
-          <li><a href="/docs/components/header/" class="d-inline-flex align-items-center rounded active"
-               aria-current="page" >頁首</a></li>
-          <li><a href="/docs/components/card/" class="d-inline-flex align-items-center rounded"
-              >卡片</a></li>
-          <li><a href="/docs/components/list/" class="d-inline-flex align-items-center rounded"
-              >列表</a></li>
-          <li><a href="/docs/components/accordion/" class="d-inline-flex align-items-center rounded"
-              >手風琴</a></li>
-          <li><a href="/docs/components/sidebar/" class="d-inline-flex align-items-center rounded"
-              >側邊欄</a></li>
-          <li><a href="/docs/components/select/" class="d-inline-flex align-items-center rounded"
-              >下拉式選單</a></li>
-          <li><a href="/docs/components/mobilenavigation/" class="d-inline-flex align-items-center rounded"
-              >行動導覽</a></li>
-          <li><a href="/docs/components/tabs/" class="d-inline-flex align-items-center rounded"
-              >頁籤面板</a></li>
-          <li><a href="/docs/components/footer/" class="d-inline-flex align-items-center rounded"
-              >頁尾</a></li>
-          <li><a href="/docs/components/button/" class="d-inline-flex align-items-center rounded"
-              >按鈕</a></li>
-        </ul>
+    </h2>
+    <div id="components-collapse" class="sidebar-collapse  show collapse" aria-labelledby="components-header" data-bs-parent="#sidebar">
+      <div class="list-group">
+        <a href="/docs/components/header/" class="sidebar-link list-group-item list-group-item-action active"  aria-current="true" >
+          頁首
+        </a>
+        <a href="/docs/components/card/" class="sidebar-link list-group-item list-group-item-action "  aria-current="true" >
+          卡片
+        </a>
+        <a href="/docs/components/list/" class="sidebar-link list-group-item list-group-item-action "  aria-current="true" >
+          列表
+        </a>
+        <a href="/docs/components/accordion/" class="sidebar-link list-group-item list-group-item-action "  aria-current="true" >
+          手風琴
+        </a>
+        <a href="/docs/components/sidebar/" class="sidebar-link list-group-item list-group-item-action "  aria-current="true" >
+          側邊欄
+        </a>
+        <a href="/docs/components/select/" class="sidebar-link list-group-item list-group-item-action "  aria-current="true" >
+          下拉式選單
+        </a>
+        <a href="/docs/components/mobilenavigation/" class="sidebar-link list-group-item list-group-item-action "  aria-current="true" >
+          行動導覽
+        </a>
+        <a href="/docs/components/tabs/" class="sidebar-link list-group-item list-group-item-action "  aria-current="true" >
+          頁籤面板
+        </a>
+        <a href="/docs/components/footer/" class="sidebar-link list-group-item list-group-item-action "  aria-current="true" >
+          頁尾
+        </a>
+        <a href="/docs/components/button/" class="sidebar-link list-group-item list-group-item-action "  aria-current="true" >
+          按鈕
+        </a>
       </div>
-    </li>
-  </ul>
-</nav>
+    </div>
+  </div>
+</div>
 
   </aside>
 
