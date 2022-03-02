@@ -2,11 +2,17 @@
 layout: docs
 title: 間距 (Spacing)
 group: style
-description: Consistent spacing of column width and height, margins, and padding maintain visual balance in our designs.The smaller spacers should be used on more detailed spacing of elements within components. The larger spacers should be used on layout spacing. 要是 4 或 8 的倍數
+description: 一致性的間距能建立視覺平衡，讓使用者能更容易地瀏覽網頁。使用一致性的間距能提高UI品質。
 toc: true
 ---
 
-## 配置間距 (Layout spacing)
+## 設計原則
+
+### 間距單位
+
+一間距單位為1rem(16px)。
+
+### 配置間距 (Layout spacing)
 
 元件與元件間的間距
 
