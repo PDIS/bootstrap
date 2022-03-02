@@ -233,23 +233,109 @@
 
       <h2 id="設計原則">設計原則</h2>
 <h3 id="間距單位">間距單位</h3>
-<p>一間距單位為1rem(16px)。</p>
-<h3 id="配置間距-layout-spacing">配置間距 (Layout spacing)</h3>
-<p>元件與元件間的間距</p>
-<p><img class="img-fluid" src="https://i.imgur.com/mZlBVEk.png" ></p>
-<h2 id="元件間距-component-spacing">元件間距 (Component spacing)</h2>
-<p>元件內的間距</p>
-<p><img class="img-fluid" src="https://i.imgur.com/sfF0oxj.png" ></p>
-<h2 id="文字間距-typography-spacing">文字間距 (Typography spacing)</h2>
-<p>文字與文字之間的間距</p>
-<p><img class="img-fluid" src="https://i.imgur.com/MrUjrdq.png" ></p>
-<pre tabindex="0"><code>Body text: 1rem (16px)
+<p>一間距單位($spacer)為1rem(16px)，以0.25rem(4px)為單位增減。</p>
+<h3 id="間距單位符號">間距單位符號</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Token</th>
+      <th scope="col">rem</th>
+      <th scope="col">px</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">$spacers-1</th>
+      <td>0.25</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th scope="row">$spacers-2</th>
+      <td>0.5</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th scope="row">$spacers-3</th>
+      <td>1</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th scope="row">$spacers-4</th>
+      <td>1.5</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <th scope="row">$spacers-5</th>
+      <td>3</td>
+      <td>48</td>
+    </tr>
+  </tbody>
+</table>
+<h3 id="使用間距單位符號">使用間距單位符號</h3>
+<p>我們沿用了bootstrap的函式如下：</p>
+<ul>
+<li>
+<p>屬性</p>
+<ul>
+<li>m - 設定 margin 的類別</li>
+<li>p - 設定 padding 的類別</li>
+</ul>
+</li>
+<li>
+<p>方向</p>
+<ul>
+<li>t - 設定 margin-top 或是 padding-top 的類別</li>
+<li>b - 設定 margin-bottom 或是 padding-bottom 的類別</li>
+<li>s - 在 LTR 設定 margin-left 或是 padding-left， RTL 設定 margin-right 或是 padding-right</li>
+<li>e - 在 LTR 設定 margin-right 或是 padding-right， RTL 設定 margin-left 或是 padding-left</li>
+<li>x - 同時設定 *-left 和 *-right</li>
+<li>y - 同時設定 *-top 和 *-bottom</li>
+<li>空白 - 同時設定 margin 或 padding 在元素的四個邊緣</li>
+</ul>
+</li>
+<li>
+<p>間距</p>
+<ul>
+<li>0 - 設定 margin 或是 padding 為 0</li>
+<li>1 - 設定 margin 或是 padding 為 $spacer * .25</li>
+<li>2 - 設定 margin 或是 padding 為 $spacer * .5</li>
+<li>3 - 設定 margin 或是 padding 為 $spacer</li>
+<li>4 - 設定 margin 或是 padding 為 $spacer * 1.5</li>
+<li>5 - 設定 margin 或是 padding 為 $spacer * 3</li>
+<li>auto - 設定 margin 為 auto</li>
+</ul>
+</li>
+</ul>
+<p>詳細資料可參考<a href="https://getbootstrap.com/docs/5.1/utilities/spacing/">bootstrap</a>。</p>
+<!-- ### 配置間距 (Layout spacing)
+
+元件與元件間的間距
+
+<img class="img-fluid" src="https://i.imgur.com/mZlBVEk.png" >
+
+## 元件間距 (Component spacing)
+
+元件內的間距
+
+<img class="img-fluid" src="https://i.imgur.com/sfF0oxj.png" >
+
+## 文字間距 (Typography spacing)
+
+文字與文字之間的間距
+
+<img class="img-fluid" src="https://i.imgur.com/MrUjrdq.png" >
+
+```
+Body text: 1rem (16px)
 Margin-top: 0
 Heading margin-botttom: .5 rem (8px)
 Paragraph margin-bottom: 1rem (16px)
-</code></pre><h2 id="間距集-spacing">間距集 (Spacing)</h2>
-<p>也可以繼續往上加，但一定要是 4 或 8 的倍數。
-<img class="img-fluid" src="https://i.imgur.com/EAk6Q4W.png" ></p>
+```
+
+## 間距集 (Spacing)
+
+也可以繼續往上加，但一定要是 4 或 8 的倍數。
+<img class="img-fluid" src="https://i.imgur.com/EAk6Q4W.png" > -->
 
     </div>
   </main>
