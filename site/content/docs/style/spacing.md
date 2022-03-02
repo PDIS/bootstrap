@@ -8,6 +8,8 @@ toc: true
 
 ## 設計原則
 
+我們沿用了bootstrap的間距設定為設計準則。
+
 ### 間距單位
 
 一間距單位($spacer)為1rem(16px)，以0.25rem(4px)為單位增減。
@@ -52,8 +54,6 @@ toc: true
 </table>
 
 ### 使用間距單位符號
-
-我們沿用了bootstrap的函式如下：
 
 - 屬性
   - m - 設定 margin 的類別
