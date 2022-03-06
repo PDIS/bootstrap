@@ -1,21 +1,35 @@
 .btn {
-  &:hover {
-    background-color: var(--bs-primary-dark);
-    text-decoration: underline;
+  &.btn-primary, &.btn-brand {
+    background-color: var(--bs-brand-base);
+  
+    &:hover {
+      background-color: var(--bs-brand-strong);
+      text-decoration: underline;
+    }
+  
+    &:active {
+      background-color: var(--bs-brand-strong);
+      box-shadow: none !important;
+    }
+  
+    &:focus {
+      color: var(--bs-accent-base);
+      background-color: var(--bs-brand-strong);
+      text-decoration: underline;
+      box-shadow: none !important;
+    }
   }
-
-  &:active {
-    background-color: var(--bs-primary);
-    border: 0;
-    box-shadow: none;
-  }
-
-  &:focus {
-    color: var(--bs-secondary-light);
-    background-color: var(--bs-primary);
-    text-decoration: underline;
-    border: 0;
-    box-shadow: none;
+  &.icon-btn {
+    -webkit-text-stroke: thin;
+    padding-right: 0;
+  
+    &:active {
+      box-shadow: none !important;
+    }
+  
+    &:focus {
+      box-shadow: none !important;
+    }
   }
 }
 

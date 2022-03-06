@@ -413,7 +413,7 @@ group: components
 
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="card text-card border-dark text-black bg-white">
+    <div class="card text-card border-dark bg-white">
       <div class="card-body">
         <h4 class="card-title">服務項目</h4>
         <p class="card-text">此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
@@ -424,7 +424,7 @@ group: components
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="card text-card border-dark text-white bg-primary-dark">
+    <div class="card text-card border-dark text-white bg-brand-strong">
       <div class="card-body">
         <h4 class="card-title">服務項目</h4>
         <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
@@ -473,7 +473,7 @@ group: components
         <p class="card-text">卡片內文或補充說明。</p>
         <p class="card-text">1. 文字列表</p>
         <p class="card-text">2. 文字列表</p>
-        <a href="#" class="btn btn-primary">前往報名</a>
+        <a href="#" class="btn btn-primary">按鈕</a>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
@@ -491,7 +491,7 @@ group: components
         <p class="card-text">卡片內文或補充說明。</p>
         <p class="card-text">1. 文字列表</p>
         <p class="card-text">2. 文字列表</p>
-        <a href="#" class="btn btn-primary">前往報名</a>
+        <a href="#" class="btn btn-primary">按鈕</a>
       </div>
       <ul class="list-group border-0">
         <li class="list-group-item border-0"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
@@ -511,7 +511,7 @@ group: components
         <p class="card-text">卡片內文或補充說明。</p>
         <p class="card-text">1. 文字列表</p>
         <p class="card-text">2. 文字列表</p>
-        <a href="#" class="btn btn-primary">前往報名</a>
+        <a href="#" class="btn btn-primary">按鈕</a>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">列表</li>
@@ -531,7 +531,7 @@ group: components
         <p class="card-text">卡片內文或補充說明。</p>
         <p class="card-text">1. 文字列表</p>
         <p class="card-text">2. 文字列表</p>
-        <a href="#" class="btn btn-primary">前往報名</a>
+        <a href="#" class="btn btn-primary">按鈕</a>
       </div>
       <ul class="list-group border-0">
         <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>

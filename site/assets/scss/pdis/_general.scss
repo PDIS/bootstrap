@@ -1,22 +1,36 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css");
 
-html,
+/* html,
 body {
   font-family: "Noto Sans", "Noto Sans TC", sans-serif !important;
-}
+} */
 
 a, .btn {
   text-underline-offset: 0.1em;
 }
 
-a:visited {
-  color: var(--bs-secondary-dark);
+a {
+  color: var(--bs-brand-base);
+
+  &:visited {
+    color: var(--bs-accent-base);
+  }
+
+  &:hover {
+    color: var(--bs-brand-strong);
+  }
+  
+  &:active {
+    color: var(--bs-brand-strong);
+  }
+
+  &:focus {
+    background-color: var(--bs-accent-base);
+    color: var(--bs-brand-strong);
+  }
 }
 
-a:active {
-  background-color: var(--bs-primary);
-  color: var(--bs-secondary-light);
-}
+
 
 .language-switch {
   padding: 6px;
@@ -66,49 +80,6 @@ a:active {
   }
 }
 
-.icon-btn {
-  -webkit-text-stroke: thin;
-  padding-right: 0;
-}
-
-.truncate {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.text-blue-300 {
-  color: $blue-300;
-}
-
-.text-pink-300 {
-  color: $pink-300;
-}
-
-.text-purple-300 {
-  color: $purple-300;
-}
-
-.bg-primary-dark {
-  background-color: var(--bs-primary-dark);
-}
-
-.bg-red-400 {
-  background-color: $red-400;
-}
-
-.bg-gray-100 {
-  background-color: var(--bs-gray-100);
-}
-
-.bg-gray-200 {
-  background-color: var(--bs-gray-200);
-}
-
-.bg-gray-300 {
-  background-color: var(--bs-gray-300);
-}
-
 .trad-chinese-formal {
   list-style: trad-chinese-formal;
 }
@@ -121,6 +92,10 @@ a:active {
   @extend .h6;
   width: -webkit-fill-available;
   margin-bottom: 0;
+}
+
+.hide {
+  display: none;
 }
 
 /* PDIS's local docs style */
@@ -181,4 +156,40 @@ a:active {
 
 .bg-secondary {
   background-color: var(--bs-accent-base) !important;
+}
+
+.bg-brand-strong {
+  background-color: var(--bs-brand-strong) !important;
+}
+
+.text-primary {
+  color: var(--bs-brand-base) !important;
+}
+
+.text-blue-300 {
+  color: $blue-300;
+}
+
+.text-pink-300 {
+  color: $pink-300;
+}
+
+.text-purple-300 {
+  color: $purple-300;
+}
+
+.bg-red-400 {
+  background-color: $red-400 !important;
+}
+
+.bg-gray-100 {
+  background-color: var(--bs-gray-100);
+}
+
+.bg-gray-200 {
+  background-color: var(--bs-gray-200);
+}
+
+.bg-gray-300 {
+  background-color: var(--bs-gray-300);
 }
