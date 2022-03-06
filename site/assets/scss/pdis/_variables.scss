@@ -1,5 +1,5 @@
-$primary: #005aa8;
-/* $secondary: #f9a602;
+/* $primary: #005aa8;
+$secondary: #f9a602;
 $success: #4ba979;
 $info: #3e2a00;
 $warning: #e35d6a;
@@ -16,24 +16,38 @@ $custom-colors: (
   "secondary-light": $secondary-light,
 ); */
 
-$accordion-button-active-bg: $primary;
+$accordion-button-active-bg: var(--bs-brand-base);
 $accordion-button-active-color: white;
-$accordion-icon-color: $primary;
+$accordion-icon-color: var(--bs-brand-base);
 $accordion-icon-active-color: white;
 
 $sidebar-icon-color: black;
-$sidebar-icon-active-color: $primary;
+$sidebar-icon-active-color: var(--bs-brand-base);
 $sidebar-icon-hover-color: white;
 
 :root {
-  --bs-primary: #005aa8 !important;
-  --bs-secondary: #f9a602 !important;
-  --bs-success: #4ba979 !important;
-  --bs-info: #3e2a00 !important;
-  --bs-warning: #e35d6a !important;
-  --bs-danger: #ab361d !important;
-  --bs-primary-dark: #003c70;
-  --bs-primary-light: #9cd1ff;
-  --bs-secondary-dark: #3e2a00;
-  --bs-secondary-light: #fedc98;
+  --bs-brand-base: #0969A2;
+  --bs-brand-strong: #011E4D;
+  --bs-accent-base: #FFB000;
+  --bs-accent-strong: #7A4400;
+  --bs-background-primary: #FEFEFE;
+  --bs-background-secondary: #F8F9FA;
+  --bs-background-tertiary: #E9ECEF;
+  --bs-text-primary: #121212;
+  --bs-text-secondary: #4D4D4D;
+  --bs-positive-base: #1A7C22;
+  --bs-positive-strong: #043B1D;
+  --bs-negative-base: #CE1E1E;
+  --bs-negative-strong: #620526;
+  --bs-warning-base: #FF5900;
+  --bs-warning-strong: #7A0B00;
+  --bs-information-base: #0077CC;
+  --bs-information-strong: #002261;
+  --bs-primary: var(--bs-brand-base) !important;
+  --bs-secondary: var(--bs-accent-base) !important;
+  --bs-success: var(--bs-positive-base) !important;
+  --bs-info: var(--bs-information-base) !important;
+  --bs-warning: var(--bs-warning-base) !important;
+  --bs-danger: var(--bs-negative-base) !important;
+  --bs-dark: var(--bs-text-primary) !important;
 }
