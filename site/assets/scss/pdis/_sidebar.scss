@@ -1,8 +1,16 @@
 .sidebar-button {
   font-weight: 500;
 
+  &:active {
+    box-shadow: none !important;
+  }
+
+  &:focus {
+    box-shadow: none !important;
+  }
+  
   &:not(.collapsed) {
-    color: var(--bs-primary);
+    color: var(--bs-brand-base);
     background-color: var(--bs-white);
 
     &::after {
@@ -24,7 +32,7 @@
 
   &:hover {
     z-index: 2;
-    background-color: var(--bs-primary);
+    background-color: var(--bs-brand-base);
     color: white;
     &::after {
       background-image: escape-svg(
@@ -46,7 +54,7 @@
   border-top: solid;
   border-bottom: solid;
   border-width: thin;
-  border-color: var(--bs-primary);
+  border-color: var(--bs-brand-base);
 }
 
 .sidebar-second-layer-button {
@@ -57,30 +65,31 @@
 
 .sidebar-link {
   padding-left: 3rem;
-  color: var(--bs-primary);
+  color: var(--bs-brand-base);
   text-decoration: underline;
   font-weight: 500;
   border: 0;
   &:active {
-    background-color: var(--bs-secondary-light);
-    color: var(--bs-primary);
+    background-color: var(--bs-accent-base);
+    color: var(--bs-brand-strong);
   }
   &:hover {
     z-index: 1;
-    color: var(--bs-primary-dark);
+    color: var(--bs-brand-strong);
     text-decoration: underline;
     background-color: white;
   }
   &:focus {
-    color: var(--bs-primary-dark);
+    color: var(--bs-brand-strong);
     text-decoration: underline;
   }
 }
 
 .active.sidebar-link {
-  color: var(--bs-primary);
-  background-color: var(--bs-secondary-light);
+  color: var(--bs-brand-strong);
+  background-color: var(--bs-accent-base);
   border-left: solid;
+  padding-left: calc(3rem - 3px);
 }
 
 .sidebar-dense {
