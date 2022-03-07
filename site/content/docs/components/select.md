@@ -136,20 +136,19 @@ toc: true
       <option  value="5">選項五</option>
       <option  value="6">選項六</option>
       <option  value="7">選項七</option>
-      <option  value="1">選項一</option>
-      <option  value="2">選項二</option>
-      <option  value="3">選項三</option>
-      <option  value="4">選項四</option>
-      <option  value="5">選項五</option>
-      <option  value="6">選項六</option>
-      <option  value="7">選項七</option>
-      <option  value="1">選項一</option>
-      <option  value="2">選項二</option>
-      <option  value="3">選項三</option>
-      <option  value="4">選項四</option>
-      <option  value="5">選項五</option>
-      <option  value="6">選項六</option>
-      <option  value="7">選項七</option>
+      <option  value="8">選項八</option>
+      <option  value="9">選項九</option>
+      <option  value="10">選項十</option>
+      <option  value="11">選項十一</option>
+      <option  value="12">選項十二</option>
+      <option  value="13">選項十三</option>
+      <option  value="14">選項十四</option>
+      <option  value="15">選項十五</option>
+      <option  value="16">選項十六</option>
+      <option  value="17">選項十七</option>
+      <option  value="18">選項十八</option>
+      <option  value="19">選項十九</option>
+      <option  value="20">選項二十</option>
     </select>
   </div>
 </div>

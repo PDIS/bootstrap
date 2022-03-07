@@ -208,7 +208,7 @@ group: components
             </button></div>
         <p class="card-text">此部分為卡片之內文。</p>
       </div>
-      <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
+      <img src="/docs/5.1/assets/img/bg-card.png" alt="...">  
     </div>
   </div>
 </div>

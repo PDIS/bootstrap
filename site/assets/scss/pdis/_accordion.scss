@@ -1,4 +1,13 @@
 .accordion {
+  .accordion-button {
+    &:active {
+      box-shadow: none !important;
+    }
+  
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
   .accordion-button-base {
     @extend .accordion-button;
     &:not(.collapsed) {

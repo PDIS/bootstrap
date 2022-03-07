@@ -16,13 +16,13 @@ $custom-colors: (
   "secondary-light": $secondary-light,
 ); */
 
-$accordion-button-active-bg: var(--bs-brand-base);
+$accordion-button-active-bg: #0969A2;
 $accordion-button-active-color: white;
-$accordion-icon-color: var(--bs-brand-base);
+$accordion-icon-color: #0969A2;
 $accordion-icon-active-color: white;
 
 $sidebar-icon-color: black;
-$sidebar-icon-active-color: var(--bs-brand-base);
+$sidebar-icon-active-color: #0969A2;
 $sidebar-icon-hover-color: white;
 
 :root {
