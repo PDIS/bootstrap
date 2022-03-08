@@ -37,8 +37,8 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-primary">圓角按鈕</button>
-    <button type="button" class="btn rounded-0 btn-primary">方角按鈕</button>
+    <button type="button" class="btn btn-brand">圓角按鈕</button>
+    <button type="button" class="btn rounded-0 btn-brand">方角按鈕</button>
   </div>
 </div>
 {{< /example >}}
@@ -50,9 +50,9 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-primary btn-sm">預設按鈕 小</button>
-    <button type="button" class="btn btn-primary">預設按鈕 預設</button>
-    <button type="button" class="btn btn-primary btn-lg">預設按鈕 大</button>
+    <button type="button" class="btn btn-brand btn-sm">預設按鈕 小</button>
+    <button type="button" class="btn btn-brand">預設按鈕 預設</button>
+    <button type="button" class="btn btn-brand btn-lg">預設按鈕 大</button>
   </div>
 </div>
 {{< /example >}}
@@ -64,7 +64,7 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-outline-primary">框線按鈕</button>
+    <button type="button" class="btn btn-outline-brand">框線按鈕</button>
     <button type="button" class="btn btn-outline-positive">正向按鈕</button>
     <button type="button" class="btn btn-outline-negative">危險按鈕</button>
     <button type="button" class="btn btn-outline-warning">警示按鈕</button>
@@ -81,8 +81,8 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-primary">圖標在右<i class="bi bi-arrow-counterclockwise"></i></button>
-    <button type="button" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i>圖標在左</button>
+    <button type="button" class="btn btn-brand">圖標在右<i class="bi bi-arrow-counterclockwise"></i></button>
+    <button type="button" class="btn btn-brand"><i class="bi bi-arrow-counterclockwise"></i>圖標在左</button>
   </div>
 </div>
 {{< /example >}}
@@ -94,9 +94,9 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-success">正向按鈕</button>
+    <button type="button" class="btn btn-positive">正向按鈕</button>
     <button type="button" class="btn btn-warning">警示按鈕</button>
-    <button type="button" class="btn btn-danger">危險按鈕</button>
+    <button type="button" class="btn btn-negative">危險按鈕</button>
     <button type="button" class="btn btn-info">資訊按鈕</button>
   </div>
 </div>

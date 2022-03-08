@@ -3,6 +3,7 @@
   &.btn-primary, &.btn-brand {
     background-color: var(--bs-brand-base);
     border-color: var(--bs-brand-base);
+    color: white;
   
     &:hover {
       background-color: var(--bs-brand-strong);
@@ -28,6 +29,7 @@
   &.btn-success, &.btn-positive {
     background-color: var(--bs-positive-base);
     border-color: var(--bs-positive-base);
+    color: white;
   
     &:hover {
       background-color: var(--bs-positive-strong);
@@ -53,6 +55,7 @@
   &.btn-danger, &.btn-negative {
     background-color: var(--bs-negative-base);
     border-color: var(--bs-negative-base);
+    color: white;
   
     &:hover {
       background-color: var(--bs-negative-strong);
