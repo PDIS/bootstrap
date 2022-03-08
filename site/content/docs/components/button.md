@@ -35,8 +35,12 @@ group: components
 可以自行選用符合網站風格的按鈕樣式。
 
 {{< example >}}
-  <button type="button" class="btn btn-primary">圓角按鈕</button>
-  <button type="button" class="btn rounded-0 btn-primary">方角按鈕</button>
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-primary">圓角按鈕</button>
+    <button type="button" class="btn rounded-0 btn-primary">方角按鈕</button>
+  </div>
+</div>
 {{< /example >}}
 
 #### 按鈕大小
@@ -44,9 +48,13 @@ group: components
 我們提供大、中、小三種不同尺寸的按鈕。
 
 {{< example >}}
-  <button type="button" class="btn btn-primary btn-sm">預設按鈕 小</button>
-  <button type="button" class="btn btn-primary">預設按鈕 預設</button>
-  <button type="button" class="btn btn-primary btn-lg">預設按鈕 大</button>
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-primary btn-sm">預設按鈕 小</button>
+    <button type="button" class="btn btn-primary">預設按鈕 預設</button>
+    <button type="button" class="btn btn-primary btn-lg">預設按鈕 大</button>
+  </div>
+</div>
 {{< /example >}}
 
 #### 框線樣式按鈕  vs 連結字按鈕
@@ -54,8 +62,16 @@ group: components
 同個頁面中，可以選用框線樣式的按鈕，與預設填滿顏色的按鈕作為區隔。當按鈕的行為重要性沒那麼高時，可以將樣式視覺上做得跟連結一樣。
 
 {{< example >}}
-  <button type="button" class="btn btn-outline-primary">框線按鈕</button>
-  <button type="button" class="btn btn-link">連結字</button>
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-outline-primary">框線按鈕</button>
+    <button type="button" class="btn btn-outline-positive">正向按鈕</button>
+    <button type="button" class="btn btn-outline-negative">危險按鈕</button>
+    <button type="button" class="btn btn-outline-warning">警示按鈕</button>
+    <button type="button" class="btn btn-outline-info">資訊按鈕</button>
+    <button type="button" class="btn btn-link">連結字</button>
+  </div>
+</div>
 {{< /example >}}
 
 #### 文字按鈕加圖標
@@ -63,8 +79,12 @@ group: components
 按鈕中放有圖標時，可以選用圖標在左或是圖標在右的按鈕樣式。
 
 {{< example >}}
-  <button type="button" class="btn btn-primary">圖標在右<i class="bi bi-arrow-counterclockwise"></i></button>
-  <button type="button" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i>圖標在左</button>
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-primary">圖標在右<i class="bi bi-arrow-counterclockwise"></i></button>
+    <button type="button" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i>圖標在左</button>
+  </div>
+</div>
 {{< /example >}}
 
 #### 功能性按鈕
@@ -72,6 +92,12 @@ group: components
 我們提供三種功能性按鈕：正向、警示與危險按鈕。
 
 {{< example >}}
-  <button type="button" class="btn btn-success">正向按鈕</button>
-  <button type="button" class="btn btn-danger">危險按鈕</button>
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-success">正向按鈕</button>
+    <button type="button" class="btn btn-warning">警示按鈕</button>
+    <button type="button" class="btn btn-danger">危險按鈕</button>
+    <button type="button" class="btn btn-info">資訊按鈕</button>
+  </div>
+</div>
 {{< /example >}}
