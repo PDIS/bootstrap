@@ -67,8 +67,6 @@ group: components
     <button type="button" class="btn btn-outline-brand">框線按鈕</button>
     <button type="button" class="btn btn-outline-positive">正向按鈕</button>
     <button type="button" class="btn btn-outline-negative">危險按鈕</button>
-    <button type="button" class="btn btn-outline-warning">警示按鈕</button>
-    <button type="button" class="btn btn-outline-info">資訊按鈕</button>
     <button type="button" class="btn btn-link">連結字</button>
   </div>
 </div>
@@ -89,15 +87,13 @@ group: components
 
 #### 功能性按鈕
 
-我們提供三種功能性按鈕：正向、警示與危險按鈕。
+我們提供兩種功能性按鈕：正向與危險按鈕。
 
 {{< example >}}
 <div class="row text-center">
   <div class="col">
     <button type="button" class="btn btn-positive">正向按鈕</button>
-    <button type="button" class="btn btn-warning">警示按鈕</button>
     <button type="button" class="btn btn-negative">危險按鈕</button>
-    <button type="button" class="btn btn-info">資訊按鈕</button>
   </div>
 </div>
 {{< /example >}}
