@@ -25,9 +25,6 @@
 
 // Load Bootstrap variables and mixins
 @import "../../../scss/functions";
-
-@import "./pdis/variables";
-
 @import "../../../scss/variables";
 @import "../../../scss/mixins";
 
@@ -64,6 +61,7 @@ $enable-cssgrid: true; // stylelint-disable-line scss/dollar-variable-default
 
 @import "scss/bootstrap.scss";
 
+@import "./pdis/variables";
 @import "./pdis/general";
 @import "./pdis/card";
 @import "./pdis/badge";

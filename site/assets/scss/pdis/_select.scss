@@ -5,15 +5,15 @@ $select-icon-active-color: #FFB000;
   border: 1px solid #121212;
   
   &:hover {
-    color: var(--bs-brand-strong);
-    border-color: var(--bs-brand-strong);
+    color: var(--brand-strong);
+    border-color: var(--brand-strong);
   }
 
   &:active,
   &:focus {
-    color: var(--bs-accent-base);
-    background-color: var(--bs-brand-base);
-    border: 2px solid var(--bs-accent-base);
+    color: var(--accent-base);
+    background-color: var(--brand-base);
+    border: 2px solid var(--accent-base);
     box-shadow: none;
     background-image: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$select-icon-active-color}' class='bi bi-chevron-down' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>"));
   }

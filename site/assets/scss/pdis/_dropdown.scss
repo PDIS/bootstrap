@@ -2,8 +2,8 @@
   .dropdown-toggle {
     &:active,
     &:focus {
-      color: var(--bs-accent-base) !important;
-      background-color: var(--bs-brand-base) !important;
+      color: var(--accent-base) !important;
+      background-color: var(--brand-base) !important;
     }
     &::after {
       width: 0.5rem;

@@ -1,26 +1,26 @@
 .btn {
 
   &.btn-primary, &.btn-brand {
-    background-color: var(--bs-brand-base);
-    border-color: var(--bs-brand-base);
+    background-color: var(--brand-base);
+    border-color: var(--brand-base);
     color: white;
   
     &:hover {
-      background-color: var(--bs-brand-strong);
-      border-color: var(--bs-brand-strong);
+      background-color: var(--brand-strong);
+      border-color: var(--brand-strong);
       text-decoration: underline;
     }
   
     &:active {
-      background-color: var(--bs-brand-strong);
-      border-color: var(--bs-brand-strong);
+      background-color: var(--brand-strong);
+      border-color: var(--brand-strong);
       box-shadow: none !important;
     }
   
     &:focus {
-      color: var(--bs-accent-base);
-      background-color: var(--bs-brand-strong);
-      border-color: var(--bs-accent-base);
+      color: var(--accent-base);
+      background-color: var(--brand-strong);
+      border-color: var(--accent-base);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -33,26 +33,26 @@
   }
 
   &.btn-success, &.btn-positive {
-    background-color: var(--bs-positive-base);
-    border-color: var(--bs-positive-base);
+    background-color: var(--positive-base);
+    border-color: var(--positive-base);
     color: white;
   
     &:hover {
-      background-color: var(--bs-positive-strong);
-      border-color: var(--bs-positive-strong);
+      background-color: var(--positive-strong);
+      border-color: var(--positive-strong);
       text-decoration: underline;
     }
   
     &:active {
-      background-color: var(--bs-positive-strong);
-      border-color: var(--bs-positive-strong);
+      background-color: var(--positive-strong);
+      border-color: var(--positive-strong);
       box-shadow: none !important;
     }
   
     &:focus {
-      color: var(--bs-accent-base);
-      background-color: var(--bs-positive-strong);
-      border-color: var(--bs-accent-base);
+      color: var(--accent-base);
+      background-color: var(--positive-strong);
+      border-color: var(--accent-base);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -65,26 +65,26 @@
   }
 
   &.btn-danger, &.btn-negative {
-    background-color: var(--bs-negative-base);
-    border-color: var(--bs-negative-base);
+    background-color: var(--negative-base);
+    border-color: var(--negative-base);
     color: white;
   
     &:hover {
-      background-color: var(--bs-negative-strong);
-      border-color: var(--bs-negative-strong);
+      background-color: var(--negative-strong);
+      border-color: var(--negative-strong);
       text-decoration: underline;
     }
   
     &:active {
-      background-color: var(--bs-negative-strong);
-      border-color: var(--bs-negative-strong);
+      background-color: var(--negative-strong);
+      border-color: var(--negative-strong);
       box-shadow: none !important;
     }
   
     &:focus {
-      color: var(--bs-accent-base);
-      background-color: var(--bs-negative-strong);
-      border-color: var(--bs-accent-base);
+      color: var(--accent-base);
+      background-color: var(--negative-strong);
+      border-color: var(--accent-base);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -114,9 +114,9 @@
     }
   
     &:focus {
-      color: var(--bs-accent-base);
+      color: var(--accent-base);
       background-color: var(--bs-warning-strong);
-      border-color: var(--bs-accent-base);
+      border-color: var(--accent-base);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -146,9 +146,9 @@
     }
   
     &:focus {
-      color: var(--bs-accent-base);
+      color: var(--accent-base);
       background-color: var(--bs-information-strong);
-      border-color: var(--bs-accent-base);
+      border-color: var(--accent-base);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -162,26 +162,26 @@
 
   &.btn-outline-primary, &.btn-outline-brand{
     background: none;
-    color: var(--bs-brand-base);
-    border-color: var(--bs-brand-base);
+    color: var(--brand-base);
+    border-color: var(--brand-base);
 
     &:hover {
-      color: var(--bs-brand-strong);
-      border-color: var(--bs-brand-strong);
+      color: var(--brand-strong);
+      border-color: var(--brand-strong);
       text-decoration: underline;
       background: none;
     }
   
     &:active {
-      color: var(--bs-brand-strong);
-      border-color: var(--bs-brand-strong);
+      color: var(--brand-strong);
+      border-color: var(--brand-strong);
       box-shadow: none !important;
       background: none;
     }
   
     &:focus {
-      color: var(--bs-brand-strong);
-      border-color: var(--bs-brand-strong);
+      color: var(--brand-strong);
+      border-color: var(--brand-strong);
       text-decoration: underline;
       box-shadow: none !important;
       background: none;
@@ -195,26 +195,26 @@
 
   &.btn-outline-success, &.btn-outline-positive{
     background: none;
-    color: var(--bs-positive-base);
-    border-color: var(--bs-positive-base);
+    color: var(--positive-base);
+    border-color: var(--positive-base);
 
     &:hover {
-      color: var(--bs-positive-strong);
-      border-color: var(--bs-positive-strong);
+      color: var(--positive-strong);
+      border-color: var(--positive-strong);
       text-decoration: underline;
       background: none;
     }
   
     &:active {
-      color: var(--bs-positive-strong);
-      border-color: var(--bs-positive-strong);
+      color: var(--positive-strong);
+      border-color: var(--positive-strong);
       box-shadow: none !important;
       background: none;
     }
   
     &:focus {
-      color: var(--bs-positive-strong);
-      border-color: var(--bs-positive-strong);
+      color: var(--positive-strong);
+      border-color: var(--positive-strong);
       text-decoration: underline;
       box-shadow: none !important;
       background: none;
@@ -228,26 +228,26 @@
 
   &.btn-outline-danger, &.btn-outline-negative{
     background: none;
-    color: var(--bs-negative-base);
-    border-color: var(--bs-negative-base);
+    color: var(--negative-base);
+    border-color: var(--negative-base);
 
     &:hover {
-      color: var(--bs-negative-strong);
-      border-color: var(--bs-negative-strong);
+      color: var(--negative-strong);
+      border-color: var(--negative-strong);
       text-decoration: underline;
       background: none;
     }
   
     &:active {
-      color: var(--bs-negative-strong);
-      border-color: var(--bs-negative-strong);
+      color: var(--negative-strong);
+      border-color: var(--negative-strong);
       box-shadow: none !important;
       background: none;
     }
   
     &:focus {
-      color: var(--bs-negative-strong);
-      border-color: var(--bs-negative-strong);
+      color: var(--negative-strong);
+      border-color: var(--negative-strong);
       text-decoration: underline;
       box-shadow: none !important;
       background: none;
@@ -326,22 +326,22 @@
   }
 
   &.btn-link {
-    color: var(--bs-brand-base);
+    color: var(--brand-base);
 
     &:hover {
       background: none;
-      color: var(--bs-brand-strong);
+      color: var(--brand-strong);
     }
 
     &:active {
       background: none;
       box-shadow: none;
-      color: var(--bs-brand-strong);
+      color: var(--brand-strong);
     }
 
     &:focus {
-      color: var(--bs-brand-strong);
-      background-color: var(--bs-accent-base);
+      color: var(--brand-strong);
+      background-color: var(--accent-base);
       text-decoration: underline;
       box-shadow: none;
     }

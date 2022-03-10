@@ -10,7 +10,7 @@
   }
   
   &:not(.collapsed) {
-    color: var(--bs-brand-base);
+    color: var(--brand-base);
     background-color: var(--bs-white);
 
     &::after {
@@ -32,7 +32,7 @@
 
   &:hover {
     z-index: 2;
-    background-color: var(--bs-brand-base);
+    background-color: var(--brand-base);
     color: white;
     &::after {
       background-image: escape-svg(
@@ -48,7 +48,7 @@
 
     &:hover {
       z-index: 2;
-      background-color: var(--bs-brand-base);
+      background-color: var(--brand-base);
       color: white;
       &::after {
         background-image: escape-svg(
@@ -72,38 +72,38 @@
   border-top: solid;
   border-bottom: solid;
   border-width: thin;
-  border-color: var(--bs-brand-base);
+  border-color: var(--brand-base);
 }
 
 .sidebar-link {
   padding-left: 3rem;
-  color: var(--bs-brand-base);
+  color: var(--brand-base);
   text-decoration: underline;
   font-weight: 500;
   border: 0;
   &:active {
-    background-color: var(--bs-accent-base);
-    color: var(--bs-brand-strong);
+    background-color: var(--accent-base);
+    color: var(--brand-strong);
   }
   &:hover {
     z-index: 1;
-    color: var(--bs-brand-strong);
+    color: var(--brand-strong);
     text-decoration: underline;
     background-color: white;
   }
   &:focus {
-    color: var(--bs-brand-strong);
+    color: var(--brand-strong);
     text-decoration: underline;
   }
 
   &:visited {
-    color: var(--bs-accent-strong);
+    color: var(--accent-strong);
   }
 }
 
 .active.sidebar-link {
-  color: var(--bs-brand-strong);
-  background-color: var(--bs-accent-base);
+  color: var(--brand-strong);
+  background-color: var(--accent-base);
   border-left: solid;
   padding-left: calc(3rem - 3px);
 }

@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap");
 
 /* html,
 body {
@@ -10,23 +11,23 @@ a, .btn {
 }
 
 a {
-  color: var(--bs-brand-base);
+  color: var(--brand-base);
 
   &:visited {
-    color: var(--bs-accent-strong);
+    color: var(--accent-strong);
   }
 
   &:hover {
-    color: var(--bs-brand-strong);
+    color: var(--brand-strong);
   }
   
   &:active {
-    color: var(--bs-brand-strong);
+    color: var(--brand-strong);
   }
 
   &:focus {
-    background-color: var(--bs-accent-base);
-    color: var(--bs-brand-strong);
+    background-color: var(--accent-base);
+    color: var(--brand-strong);
   }
 }
 
@@ -151,19 +152,19 @@ a {
 // need to delete
 
 .bg-primary {
-  background-color: var(--bs-brand-base) !important;
+  background-color: var(--brand-base) !important;
 }
 
 .bg-secondary {
-  background-color: var(--bs-accent-base) !important;
+  background-color: var(--accent-base) !important;
 }
 
 .bg-brand-strong {
-  background-color: var(--bs-brand-strong) !important;
+  background-color: var(--brand-strong) !important;
 }
 
 .text-primary {
-  color: var(--bs-brand-base) !important;
+  color: var(--brand-base) !important;
 }
 
 .text-blue-300 {
