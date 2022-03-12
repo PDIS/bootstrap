@@ -1,0 +1,153 @@
+$brand: #2c5ab4;
+$brand-strong: #03429c;
+$on-brand: #ffffff;
+$brand-container: #d8e2ff;
+$brand-container-strong: #afc6ff;
+$on-brand-container: #001847;
+
+$accent: #705d00;
+$accent-strong: #554600;
+$on-accent: #ffffff;
+$accent-container: #ffe25b;
+$accent-container-strong: #e7c400;
+$on-accent-container: #221b00;
+
+$positive: #286b2a;
+$positive-strong: #085314;
+$on-positive: #ffffff;
+$positive-container: #acf5a3;
+$positive-container-strong: #90d889;
+$on-positive-container: #012104;
+
+$negative: #ba1b1b;
+$negative-strong: #930006;
+$on-negative: #ffffff;
+$negative-container: #ffdad4;
+$negative-container-strong: #ffb4a9;
+$on-negative-container: #410001;
+
+$information: #006687;
+$information-strong: #004d67;
+$on-information: #ffffff;
+$information-container: #bee8ff;
+$information-container-strong: #6bd2ff;
+$on-information-container: #001e2b;
+
+$warning: #a53d00;
+$warning-strong: #7d2c00;
+$on-warning: #ffffff;
+$warning-container: #ffdbcb;
+$warning-container-strong: #ffb593;
+$on-warning-container: #360f00;
+
+$accordion-button-active-bg: #0969a2;
+$accordion-button-active-color: white;
+$accordion-icon-color: #0969a2;
+$accordion-icon-active-color: white;
+
+$sidebar-icon-color: black;
+$sidebar-icon-active-color: #0969a2;
+$sidebar-icon-hover-color: white;
+
+$link-color: $brand;
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$colors: (
+  "brand": (
+    "env_key": "brand",
+    "base": (
+      "normal": $brand,
+      "strong": $brand-strong,
+      "on": $on-brand,
+    ),
+    "container": (
+      "normal": $brand-container,
+      "strong": $brand-container-strong,
+      "on": $on-brand-container,
+    ),
+  ),
+  "accent": (
+    "env_key": "accent",
+    "base": (
+      "normal": $accent,
+      "strong": $accent-strong,
+      "on": $on-accent,
+    ),
+    "container": (
+      "normal": $accent-container,
+      "strong": $accent-container-strong,
+      "on": $on-accent-container,
+    ),
+  ),
+  "positive": (
+    "env_key": "positive",
+    "base": (
+      "normal": $positive,
+      "strong": $positive-strong,
+      "on": $on-positive,
+    ),
+    "container": (
+      "normal": $positive-container,
+      "strong": $positive-container-strong,
+      "on": $on-positive-container,
+    ),
+  ),
+  "negative": (
+    "env_key": "negative",
+    "base": (
+      "normal": $negative,
+      "strong": $negative-strong,
+      "on": $on-negative,
+    ),
+    "container": (
+      "normal": $negative-container,
+      "strong": $negative-container-strong,
+      "on": $on-negative-container,
+    ),
+  ),
+  "information": (
+    "env_key": "information",
+    "base": (
+      "normal": $information,
+      "strong": $information-strong,
+      "on": $on-information,
+    ),
+    "container": (
+      "normal": $information-container,
+      "strong": $information-container-strong,
+      "on": $on-information-container,
+    ),
+  ),
+  "warning": (
+    "env_key": "warning",
+    "base": (
+      "normal": $warning,
+      "strong": $warning-strong,
+      "on": $on-warning,
+    ),
+    "container": (
+      "normal": $warning-container,
+      "strong": $warning-container-strong,
+      "on": $on-warning-container,
+    ),
+  ),
+);
+
+$alias-colors: (
+  "primary": map.get($colors, "brand"),
+  "secondary": map.get($colors, "accent"),
+  "success": map.get($colors, "positive"),
+  "danger": map.get($colors, "negative"),
+  "info": map.get($colors, "information"),
+);

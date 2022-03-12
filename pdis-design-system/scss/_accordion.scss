@@ -3,13 +3,12 @@
     &:active {
       box-shadow: none !important;
     }
-  
+
     &:focus {
       box-shadow: none !important;
     }
   }
   .accordion-button-base {
-    @extend .accordion-button;
     &:not(.collapsed) {
       &::after {
         background-image: escape-svg(
@@ -24,7 +23,6 @@
     }
   }
   .accordion-button-base-second-layer {
-    @extend .accordion-button-base;
     padding-left: 3rem;
     &:not(.collapsed) {
       &::after {
@@ -41,7 +39,6 @@
   }
 
   .accordion-button-second-layer {
-    @extend .accordion-button;
     padding-left: 3rem;
     &:not(.collapsed) {
       &::after {
@@ -58,7 +55,6 @@
   }
 
   .accordion-body-second-layer {
-    @extend .accordion-body;
     padding-left: 3rem;
   }
 }

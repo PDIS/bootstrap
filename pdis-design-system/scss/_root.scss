@@ -1,0 +1,20 @@
+:root {
+  @each $name, $items in $colors {
+    --#{$name}: #{map.get($items, "base", "normal")};
+    --#{$name}-strong: #{map.get($items, "base", "strong")};
+    --on-#{$name}: #{map.get($items, "base", "on")};
+    --#{$name}-container: #{map.get($items, "container", "normal")};
+    --#{$name}-container-strong: #{map.get($items, "container", "strong")};
+    --on-#{$name}-container: #{map.get($items, "container", "on")};
+  }
+
+  --bs-primary: var(--brand);
+  --bs-secondary: var(--accent);
+  --bs-success: var(--positive);
+  --bs-info: var(--information);
+  --bs-warning: var(--warning);
+  --bs-danger: var(--negative);
+  /*   --bs-dark: var(--bs-text-primary) !important;
+  --bs-body-color: var(--bs-text-primary) !important; */
+  --bs-font-sans-serif: "Noto Sans", "Noto Sans TC", sans-serif;
+}

@@ -20,7 +20,7 @@ a {
   &:hover {
     color: var(--brand-strong);
   }
-  
+
   &:active {
     color: var(--brand-strong);
   }
@@ -90,7 +90,6 @@ a {
 }
 
 .horizontal-label {
-  @extend .h6;
   width: -webkit-fill-available;
   margin-bottom: 0;
 }
@@ -101,11 +100,12 @@ a {
 
 /* PDIS's local docs style */
 // mod from scss/_navbar
+/*
 @include media-breakpoint-up(md) {
   .navbar-expand-md .navbar-collapse {
     flex-basis: 100%;
   }
-}
+}*/
 
 // mod from site/assets/scss/_navbar
 .bd-navbar {
@@ -148,49 +148,3 @@ a {
 }
 
 /* END PDIS's local docs style */
-
-// need to delete
-
-.bg-primary {
-  background-color: var(--brand-base) !important;
-}
-
-.bg-secondary {
-  background-color: var(--accent-base) !important;
-}
-
-.bg-brand-strong {
-  background-color: var(--brand-strong) !important;
-}
-
-.text-primary {
-  color: var(--brand-base) !important;
-}
-
-.text-blue-300 {
-  color: $blue-300;
-}
-
-.text-pink-300 {
-  color: $pink-300;
-}
-
-.text-purple-300 {
-  color: $purple-300;
-}
-
-.bg-red-400 {
-  background-color: $red-400 !important;
-}
-
-.bg-gray-100 {
-  background-color: var(--bs-gray-100);
-}
-
-.bg-gray-200 {
-  background-color: var(--bs-gray-200);
-}
-
-.bg-gray-300 {
-  background-color: var(--bs-gray-300);
-}

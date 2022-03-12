@@ -58,20 +58,3 @@ $enable-cssgrid: true; // stylelint-disable-line scss/dollar-variable-default
 @import "syntax";
 @import "anchor";
 @import "algolia";
-
-@import "scss/bootstrap.scss";
-
-@import "./pdis/variables";
-@import "./pdis/general";
-@import "./pdis/card";
-@import "./pdis/badge";
-@import "./pdis/list";
-@import "./pdis/accordion";
-@import "./pdis/sidebar";
-@import "./pdis/dropdown";
-@import "./pdis/header";
-@import "./pdis/offcanvas";
-@import "./pdis/tabs";
-@import "./pdis/select";
-@import "./pdis/footer";
-@import "./pdis/button";

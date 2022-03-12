@@ -1,0 +1,67 @@
+@each $name, $items in map.merge($colors, $alias-colors) {
+  $env_key: map.get($items, "env_key");
+  .btn-#{$name} {
+    background-color: var(--#{$env_key});
+    border-color: var(--#{$env_key});
+    color: var(--on-#{$env_key});
+
+    &:hover {
+      background-color: var(--#{$env_key}-strong);
+      border-color: var(--#{$env_key}-strong);
+      text-decoration: underline;
+    }
+
+    &:active {
+      background-color: var(--#{$env_key}-strong);
+      border-color: var(--#{$env_key}-strong);
+      box-shadow: none !important;
+    }
+
+    &:focus {
+      color: var(--accent);
+      background-color: var(--#{$env_key}-strong);
+      border-color: var(--accent);
+      text-decoration: underline;
+      box-shadow: none !important;
+    }
+
+    &:disabled {
+      background-color: var(--bs-gray-200);
+      border-color: var(--bs-gray-200);
+      color: var(--bs-gray-500);
+    }
+  }
+
+  .btn-outline-#{$name} {
+    background: none;
+    color: var(--#{$env_key});
+    border-color: var(--#{$env_key});
+
+    &:hover {
+      color: var(--#{$env_key}-strong);
+      border-color: var(--#{$env_key}-strong);
+      text-decoration: underline;
+      background: none;
+    }
+
+    &:active {
+      color: var(--#{$env_key}-strong);
+      border-color: var(--#{$env_key}-strong);
+      box-shadow: none !important;
+      background: none;
+    }
+
+    &:focus {
+      color: var(--#{$env_key}-strong);
+      border-color: var(--#{$env_key}-strong);
+      text-decoration: underline;
+      box-shadow: none !important;
+      background: none;
+    }
+
+    &:disabled {
+      border-color: var(--bs-gray-500);
+      color: var(--bs-gray-500);
+    }
+  }
+}
