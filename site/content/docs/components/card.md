@@ -227,10 +227,10 @@ group: components
       <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <div class="badge-collections">
-          <span class="badge bg-secondary">標籤</span>
-          <span class="badge bg-secondary">標籤</span>
-          <span class="badge bg-secondary">標籤</span>
-          <span class="badge bg-secondary">標籤</span>
+          <span class="badge badge-secondary">標籤</span>
+          <span class="badge badge-secondary">標籤</span>
+          <span class="badge badge-secondary">標籤</span>
+          <span class="badge badge-secondary">標籤</span>
         </div>
         <p class="card-text">110-10-31</p>
         <h5 class="card-title">標題文字</h5>
@@ -246,7 +246,7 @@ group: components
         <div class="d-flex justify-content-between">
           <p class="card-text">110-10-31</p>
           <div>
-            <span class="badge bg-secondary">標籤</span>
+            <span class="badge badge-secondary">標籤</span>
           </div>
         </div>
         <h5 class="card-title">標題文字</h5>
@@ -272,9 +272,9 @@ group: components
         <div class="d-flex justify-content-between">
           <p class="card-text">110-10-31</p>
           <div class="badge-collections">
-            <span class="badge bg-secondary">標籤</span>
-            <span class="badge bg-secondary">標籤</span>
-            <span class="badge bg-secondary">標籤</span>
+            <span class="badge badge-secondary">標籤</span>
+            <span class="badge badge-secondary">標籤</span>
+            <span class="badge badge-secondary">標籤</span>
           </div>
         </div>
         <h5 class="card-title">標題文字</h5>
@@ -303,7 +303,7 @@ group: components
         <div class="d-flex justify-content-between">
           <p class="card-text">110-10-31</p>
           <div>
-            <span class="badge bg-secondary">標籤</span>
+            <span class="badge badge-secondary">標籤</span>
           </div>
         </div>
       </div>
@@ -357,8 +357,8 @@ group: components
             <div class="d-flex justify-content-between">
               <p class="card-text">110-10-31</p>
               <div>
-                <span class="badge bg-secondary">標籤</span>
-                <span class="badge bg-secondary">標籤</span>
+                <span class="badge badge-secondary">標籤</span>
+                <span class="badge badge-secondary">標籤</span>
               </div>
             </div>
             <h5 class="card-title">標題文字</h5>
@@ -390,10 +390,10 @@ group: components
             </div>
             <p class="card-text">此部分為卡片之內文。</p>
             <div class="badge-collections">
-              <span class="badge bg-secondary">標籤</span>
-              <span class="badge bg-secondary">標籤</span>
-              <span class="badge bg-secondary">標籤</span>
-              <span class="badge bg-secondary">標籤</span>
+              <span class="badge badge-secondary">標籤</span>
+              <span class="badge badge-secondary">標籤</span>
+              <span class="badge badge-secondary">標籤</span>
+              <span class="badge badge-secondary">標籤</span>
             </div>
             <p class="card-text">110-10-31</p>
           </div>
@@ -424,7 +424,7 @@ group: components
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="card text-card border-dark text-white bg-brand-strong">
+    <div class="card card-brand text-card border-dark">
       <div class="card-body">
         <h4 class="card-title">服務項目</h4>
         <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>

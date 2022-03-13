@@ -40,7 +40,7 @@
 }
 
 .card-bg-img {
-  background-image: url("../img/bg-text-card.png");
+  background-image: url("/docs/5.1/assets/img/bg-text-card.png");
 }
 
 .list-card {
@@ -85,5 +85,18 @@
         margin-bottom: 0.5rem;
       }
     }
+  }
+}
+
+@each $name, $items in map.merge($colors, $alias-colors) {
+  $env_key: map.get($items, "env_key"); 
+  .card-#{$name} {
+    background-color: var(--#{$env_key}-strong);
+    color: var(--on-#{$env_key});
+  }
+
+  .card-#{$name}-container {
+    background-color: var(--#{$env_key}-container-strong);
+    color: var(--on-#{$env_key}-container);
   }
 }

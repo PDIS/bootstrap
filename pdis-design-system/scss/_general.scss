@@ -11,7 +11,7 @@ a, .btn {
 }
 
 a {
-  color: var(--brand-base);
+  color: var(--brand);
 
   &:visited {
     color: var(--accent-strong);
@@ -26,7 +26,7 @@ a {
   }
 
   &:focus {
-    background-color: var(--accent-base);
+    background-color: var(--accent);
     color: var(--brand-strong);
   }
 }

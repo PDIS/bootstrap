@@ -64,4 +64,69 @@
       color: var(--bs-gray-500);
     }
   }
+
+  .btn-#{$name}-container {
+    background-color: var(--#{$env_key}-container);
+    border-color: var(--#{$env_key}-container);
+    color: var(--on-#{$env_key}-container);
+
+    &:hover {
+      background-color: var(--#{$env_key}-container-strong);
+      border-color: var(--#{$env_key}-container-strong);
+      text-decoration: underline;
+    }
+
+    &:active {
+      background-color: var(--#{$env_key}-container-strong);
+      border-color: var(--#{$env_key}-container-strong);
+      box-shadow: none !important;
+    }
+
+    &:focus {
+      color: var(--accent);
+      background-color: var(--#{$env_key}-container-strong);
+      border-color: var(--accent);
+      text-decoration: underline;
+      box-shadow: none !important;
+    }
+
+    &:disabled {
+      background-color: var(--bs-gray-200);
+      border-color: var(--bs-gray-200);
+      color: var(--bs-gray-500);
+    }
+  }
+
+  .btn-outline-#{$name}-container {
+    background: none;
+    color: var(--#{$env_key}-container);
+    border-color: var(--#{$env_key}-container);
+
+    &:hover {
+      color: var(--#{$env_key}-container-strong);
+      border-color: var(--#{$env_key}-container-strong);
+      text-decoration: underline;
+      background: none;
+    }
+
+    &:active {
+      color: var(--#{$env_key}-container-strong);
+      border-color: var(--#{$env_key}-container-strong);
+      box-shadow: none !important;
+      background: none;
+    }
+
+    &:focus {
+      color: var(--#{$env_key}-container-strong);
+      border-color: var(--#{$env_key}-container-strong);
+      text-decoration: underline;
+      box-shadow: none !important;
+      background: none;
+    }
+
+    &:disabled {
+      border-color: var(--bs-gray-500);
+      color: var(--bs-gray-500);
+    }
+  }
 }
