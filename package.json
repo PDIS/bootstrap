@@ -62,6 +62,7 @@
     "docs-vnu": "node build/vnu-jar.js",
     "docs-lint": "npm-run-all --aggregate-output --parallel docs-vnu docs-linkinator docs-spellcheck",
     "docs-serve": "hugo server --port 9001 --disableFastRender",
+    "docs-serve-with-cssCompile": "npm-run-all css-compile docs-serve",  
     "docs-serve-only": "npx sirv-cli _site --port 9001",
     "lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
     "update-deps": "ncu -u -x eslint,eslint-plugin-unicorn,globby,karma-browserstack-launcher && npm update && echo Manually update site/assets/js/vendor",
