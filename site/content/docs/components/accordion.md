@@ -39,7 +39,7 @@ toc: true
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <button class="accordion-button accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         有參加農保，以後可以領老農津貼嗎？要怎麼申請？每個月可以領多少錢？
       </button>
     </h2>
@@ -60,7 +60,7 @@ toc: true
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <button class="accordion-button accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         請領要件
       </button>
     </h2>
@@ -71,7 +71,7 @@ toc: true
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <button class="accordion-button accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         Household Registration Act 戶籍法英譯本
       </button>
     </h2>
@@ -82,7 +82,7 @@ toc: true
   </div>
    <div class="accordion-item">
     <h2 class="accordion-header" id="headingFour">
-      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      <button class="accordion-button accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
         戶籍法施行細則（104.07.10 修正）
       </button>
     </h2>

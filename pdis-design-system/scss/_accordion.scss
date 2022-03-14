@@ -11,15 +11,17 @@
   .accordion-button-base {
     &:not(.collapsed) {
       &::after {
-        background-image: escape-svg(
-          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$accordion-icon-active-color}' class='bi bi-dash-lg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/></svg>")
-        );
+        background-image: none;
+        content: "\f068"; /* fa-minus */
+        font-family: "FontAwesome";
+        text-align: center;
       }
     }
     &::after {
-      background-image: escape-svg(
-        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$accordion-icon-color}' class='bi bi-plus-lg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/></svg>")
-      );
+      background-image: none;
+      content: "\f067"; /* fa-add */
+      font-family: "FontAwesome";
+      text-align: center;
     }
   }
   .accordion-button-base-second-layer {

@@ -56,10 +56,18 @@
   box-shadow: none !important;
 }
 .accordion .accordion-button-base:not(.collapsed)::after {
-  background-image: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='white' class='bi bi-dash-lg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/></svg>"));
+  background-image: none;
+  content: "\f068";
+  /* fa-minus */
+  font-family: "FontAwesome";
+  text-align: center;
 }
 .accordion .accordion-button-base::after {
-  background-image: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#0969a2' class='bi bi-plus-lg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/></svg>"));
+  background-image: none;
+  content: "\f067";
+  /* fa-add */
+  font-family: "FontAwesome";
+  text-align: center;
 }
 .accordion .accordion-button-base-second-layer {
   padding-left: 3rem;
@@ -114,12 +122,13 @@
 .btn-brand:active {
   background-color: var(--brand-strong);
   border-color: var(--brand-strong);
+  color: var(--on-brand);
   box-shadow: none !important;
 }
 .btn-brand:focus {
-  color: var(--accent);
   background-color: var(--brand-strong);
   border-color: var(--accent);
+  color: var(--on-brand);
   text-decoration: underline;
   box-shadow: none !important;
 }
@@ -172,10 +181,11 @@
 .btn-brand-container:active {
   background-color: var(--brand-container-strong);
   border-color: var(--brand-container-strong);
+  color: var(--on-brand-container);
   box-shadow: none !important;
 }
 .btn-brand-container:focus {
-  color: var(--accent);
+  color: var(--on-brand-container);
   background-color: var(--brand-container-strong);
   border-color: var(--accent);
   text-decoration: underline;
@@ -201,12 +211,13 @@
 .btn-accent:active {
   background-color: var(--accent-strong);
   border-color: var(--accent-strong);
+  color: var(--on-accent);
   box-shadow: none !important;
 }
 .btn-accent:focus {
-  color: var(--accent);
   background-color: var(--accent-strong);
   border-color: var(--accent);
+  color: var(--on-accent);
   text-decoration: underline;
   box-shadow: none !important;
 }
@@ -259,10 +270,11 @@
 .btn-accent-container:active {
   background-color: var(--accent-container-strong);
   border-color: var(--accent-container-strong);
+  color: var(--on-accent-container);
   box-shadow: none !important;
 }
 .btn-accent-container:focus {
-  color: var(--accent);
+  color: var(--on-accent-container);
   background-color: var(--accent-container-strong);
   border-color: var(--accent);
   text-decoration: underline;
@@ -288,12 +300,13 @@
 .btn-positive:active {
   background-color: var(--positive-strong);
   border-color: var(--positive-strong);
+  color: var(--on-positive);
   box-shadow: none !important;
 }
 .btn-positive:focus {
-  color: var(--accent);
   background-color: var(--positive-strong);
   border-color: var(--accent);
+  color: var(--on-positive);
   text-decoration: underline;
   box-shadow: none !important;
 }
@@ -346,10 +359,11 @@
 .btn-positive-container:active {
   background-color: var(--positive-container-strong);
   border-color: var(--positive-container-strong);
+  color: var(--on-positive-container);
   box-shadow: none !important;
 }
 .btn-positive-container:focus {
-  color: var(--accent);
+  color: var(--on-positive-container);
   background-color: var(--positive-container-strong);
   border-color: var(--accent);
   text-decoration: underline;
@@ -375,12 +389,13 @@
 .btn-negative:active {
   background-color: var(--negative-strong);
   border-color: var(--negative-strong);
+  color: var(--on-negative);
   box-shadow: none !important;
 }
 .btn-negative:focus {
-  color: var(--accent);
   background-color: var(--negative-strong);
   border-color: var(--accent);
+  color: var(--on-negative);
   text-decoration: underline;
   box-shadow: none !important;
 }
@@ -433,10 +448,11 @@
 .btn-negative-container:active {
   background-color: var(--negative-container-strong);
   border-color: var(--negative-container-strong);
+  color: var(--on-negative-container);
   box-shadow: none !important;
 }
 .btn-negative-container:focus {
-  color: var(--accent);
+  color: var(--on-negative-container);
   background-color: var(--negative-container-strong);
   border-color: var(--accent);
   text-decoration: underline;
@@ -462,12 +478,13 @@
 .btn-information:active {
   background-color: var(--information-strong);
   border-color: var(--information-strong);
+  color: var(--on-information);
   box-shadow: none !important;
 }
 .btn-information:focus {
-  color: var(--accent);
   background-color: var(--information-strong);
   border-color: var(--accent);
+  color: var(--on-information);
   text-decoration: underline;
   box-shadow: none !important;
 }
@@ -520,10 +537,11 @@
 .btn-information-container:active {
   background-color: var(--information-container-strong);
   border-color: var(--information-container-strong);
+  color: var(--on-information-container);
   box-shadow: none !important;
 }
 .btn-information-container:focus {
-  color: var(--accent);
+  color: var(--on-information-container);
   background-color: var(--information-container-strong);
   border-color: var(--accent);
   text-decoration: underline;
@@ -549,12 +567,13 @@
 .btn-warning:active {
   background-color: var(--warning-strong);
   border-color: var(--warning-strong);
+  color: var(--on-warning);
   box-shadow: none !important;
 }
 .btn-warning:focus {
-  color: var(--accent);
   background-color: var(--warning-strong);
   border-color: var(--accent);
+  color: var(--on-warning);
   text-decoration: underline;
   box-shadow: none !important;
 }
@@ -607,10 +626,11 @@
 .btn-warning-container:active {
   background-color: var(--warning-container-strong);
   border-color: var(--warning-container-strong);
+  color: var(--on-warning-container);
   box-shadow: none !important;
 }
 .btn-warning-container:focus {
-  color: var(--accent);
+  color: var(--on-warning-container);
   background-color: var(--warning-container-strong);
   border-color: var(--accent);
   text-decoration: underline;
@@ -636,12 +656,13 @@
 .btn-primary:active {
   background-color: var(--brand-strong);
   border-color: var(--brand-strong);
+  color: var(--on-brand);
   box-shadow: none !important;
 }
 .btn-primary:focus {
-  color: var(--accent);
   background-color: var(--brand-strong);
   border-color: var(--accent);
+  color: var(--on-brand);
   text-decoration: underline;
   box-shadow: none !important;
 }
@@ -694,10 +715,11 @@
 .btn-primary-container:active {
   background-color: var(--brand-container-strong);
   border-color: var(--brand-container-strong);
+  color: var(--on-brand-container);
   box-shadow: none !important;
 }
 .btn-primary-container:focus {
-  color: var(--accent);
+  color: var(--on-brand-container);
   background-color: var(--brand-container-strong);
   border-color: var(--accent);
   text-decoration: underline;
@@ -723,12 +745,13 @@
 .btn-secondary:active {
   background-color: var(--accent-strong);
   border-color: var(--accent-strong);
+  color: var(--on-accent);
   box-shadow: none !important;
 }
 .btn-secondary:focus {
-  color: var(--accent);
   background-color: var(--accent-strong);
   border-color: var(--accent);
+  color: var(--on-accent);
   text-decoration: underline;
   box-shadow: none !important;
 }
@@ -781,10 +804,11 @@
 .btn-secondary-container:active {
   background-color: var(--accent-container-strong);
   border-color: var(--accent-container-strong);
+  color: var(--on-accent-container);
   box-shadow: none !important;
 }
 .btn-secondary-container:focus {
-  color: var(--accent);
+  color: var(--on-accent-container);
   background-color: var(--accent-container-strong);
   border-color: var(--accent);
   text-decoration: underline;
@@ -810,12 +834,13 @@
 .btn-success:active {
   background-color: var(--positive-strong);
   border-color: var(--positive-strong);
+  color: var(--on-positive);
   box-shadow: none !important;
 }
 .btn-success:focus {
-  color: var(--accent);
   background-color: var(--positive-strong);
   border-color: var(--accent);
+  color: var(--on-positive);
   text-decoration: underline;
   box-shadow: none !important;
 }
@@ -868,10 +893,11 @@
 .btn-success-container:active {
   background-color: var(--positive-container-strong);
   border-color: var(--positive-container-strong);
+  color: var(--on-positive-container);
   box-shadow: none !important;
 }
 .btn-success-container:focus {
-  color: var(--accent);
+  color: var(--on-positive-container);
   background-color: var(--positive-container-strong);
   border-color: var(--accent);
   text-decoration: underline;
@@ -897,12 +923,13 @@
 .btn-danger:active {
   background-color: var(--negative-strong);
   border-color: var(--negative-strong);
+  color: var(--on-negative);
   box-shadow: none !important;
 }
 .btn-danger:focus {
-  color: var(--accent);
   background-color: var(--negative-strong);
   border-color: var(--accent);
+  color: var(--on-negative);
   text-decoration: underline;
   box-shadow: none !important;
 }
@@ -955,10 +982,11 @@
 .btn-danger-container:active {
   background-color: var(--negative-container-strong);
   border-color: var(--negative-container-strong);
+  color: var(--on-negative-container);
   box-shadow: none !important;
 }
 .btn-danger-container:focus {
-  color: var(--accent);
+  color: var(--on-negative-container);
   background-color: var(--negative-container-strong);
   border-color: var(--accent);
   text-decoration: underline;
@@ -984,12 +1012,13 @@
 .btn-info:active {
   background-color: var(--information-strong);
   border-color: var(--information-strong);
+  color: var(--on-information);
   box-shadow: none !important;
 }
 .btn-info:focus {
-  color: var(--accent);
   background-color: var(--information-strong);
   border-color: var(--accent);
+  color: var(--on-information);
   text-decoration: underline;
   box-shadow: none !important;
 }
@@ -1042,10 +1071,11 @@
 .btn-info-container:active {
   background-color: var(--information-container-strong);
   border-color: var(--information-container-strong);
+  color: var(--on-information-container);
   box-shadow: none !important;
 }
 .btn-info-container:focus {
-  color: var(--accent);
+  color: var(--on-information-container);
   background-color: var(--information-container-strong);
   border-color: var(--accent);
   text-decoration: underline;
