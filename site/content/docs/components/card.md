@@ -424,17 +424,6 @@ group: components
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="card bg-brand text-card border-dark">
-      <div class="card-body">
-        <h4 class="card-title">服務項目</h4>
-        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
-      </div>
-    </div>
-  </div>
-</div>
-<br/>
-<div class="row d-flex justify-content-center">
-  <div class="col-6">
     <div class="card text-card border-dark text-white card-bg-img">
       <div class="card-body">
         <h4 class="card-title">服務項目</h4>
@@ -456,6 +445,144 @@ group: components
   </div>
 </div>
 
+{{< /example >}}
+
+#### 純色文字卡 Masonry card
+{{< example >}}
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-brand text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Brand Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-accent text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Accent Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-positive text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Positive Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-negative text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Negative Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-information text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Information Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-warning text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Warning Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{< /example >}}
+
+#### 淡色文字卡 Masonry card
+{{< example >}}
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-brand-container text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Brand Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-accent-container text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Accent Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-positive-container text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Positive Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-negative-container text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Negative Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-information-container text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Information Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-warning-container text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Warning Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
 {{< /example >}}
 
 #### 卡片加列表 Card with list group

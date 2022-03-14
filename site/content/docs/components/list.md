@@ -241,9 +241,9 @@ toc: true
 <div class="row">
   <div class="col-lg-8">
     <ul class="list d-flex justify-content-between">
-      <li class="list-item"><i class="bi bi-square-fill text-pink-300"></i>15-18歲</li>
-      <li class="list-item"><i class="bi bi-square-fill text-blue-300"></i>19-30歲</li>
-      <li class="list-item"><i class="bi bi-square-fill text-purple-300"></i>31 歲（含）以上</li>
+      <li class="list-item"><i class="bi bi-square-fill text-brand"></i>15-18歲</li>
+      <li class="list-item"><i class="bi bi-square-fill text-positive"></i>19-30歲</li>
+      <li class="list-item"><i class="bi bi-square-fill text-negative"></i>31 歲（含）以上</li>
     </ul>
   </div>
 </div>
