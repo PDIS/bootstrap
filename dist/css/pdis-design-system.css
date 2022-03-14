@@ -55,21 +55,14 @@
 .accordion .accordion-button:focus {
   box-shadow: none !important;
 }
-.accordion .accordion-button:not(.collapsed) {
-  color: var(--on-brand);
-  background-color: var(--brand);
-}
-.accordion .accordion-button.accordion-button-base:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' class='bi bi-dash-lg' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/%3e%3c/svg%3e");
-}
-.accordion .accordion-button.accordion-button-base::after {
+.accordion .accordion-button-base:not(.collapsed)::after {
   background-image: none;
   content: "\f068";
   /* fa-minus */
   font-family: "FontAwesome";
   text-align: center;
 }
-.accordion .accordion-button::after {
+.accordion .accordion-button-base::after {
   background-image: none;
   content: "\f067";
   /* fa-add */

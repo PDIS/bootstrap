@@ -7,20 +7,9 @@
     &:focus {
       box-shadow: none !important;
     }
-
+  }
+  .accordion-button-base {
     &:not(.collapsed) {
-      color: var(--on-brand);
-      background-color: var(--brand);
-    }
-
-    &.accordion-button-base {
-      &:not(.collapsed) {
-        &::after {
-          background-image: escape-svg(
-            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$accordion-icon-active-color}' class='bi bi-dash-lg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/></svg>")
-          );
-        }
-      }
       &::after {
         background-image: none;
         content: "\f068"; /* fa-minus */
