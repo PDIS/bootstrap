@@ -40,10 +40,8 @@ $warning-container: #ffdbcb;
 $warning-container-strong: #ffb593;
 $on-warning-container: #360f00;
 
-$accordion-button-active-bg: #0969a2;
-$accordion-button-active-color: white;
-$accordion-icon-color: #0969a2;
-$accordion-icon-active-color: white;
+$accordion-icon-color: $brand;
+$accordion-icon-active-color: $on-brand;
 
 $sidebar-icon-color: black;
 $sidebar-icon-active-color: #0969a2;
@@ -151,3 +149,38 @@ $color-envs: (
   "danger": "negative",
   "info": "information",
 );
+
+//escape svg function from bootstrap
+
+$escaped-characters: (
+  ("<", "%3c"),
+  (">", "%3e"),
+  ("#", "%23"),
+  ("(", "%28"),
+  (")", "%29")
+) !default;
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+@function escape-svg($string) {
+  @if str-index($string, "data:image/svg+xml") {
+    @each $char, $encoded in $escaped-characters {
+      // Do not escape the url brackets
+      @if str-index($string, "url(") == 1 {
+        $string: url("#{str-replace(str-slice($string, 6, -3), $char, $encoded)}");
+      } @else {
+        $string: str-replace($string, $char, $encoded);
+      }
+    }
+  }
+
+  @return $string;
+}
