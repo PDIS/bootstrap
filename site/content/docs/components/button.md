@@ -57,6 +57,35 @@ group: components
 </div>
 {{< /example >}}
 
+
+#### 功能性按鈕
+我們提供兩種功能性按鈕：正向與危險按鈕。
+
+{{< example >}}
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-brand">主色按鈕</button>
+    <button type="button" class="btn btn-positive">正面按鈕</button>
+    <button type="button" class="btn btn-negative">負面按鈕</button>
+  </div>
+</div>
+{{< /example >}}
+
+#### 淺色功能性按鈕
+
+我們提供兩種功能性按鈕：正向與危險按鈕。
+
+{{< example >}}
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-brand-container">主色按鈕</button>
+    <button type="button" class="btn btn-positive-container">正面按鈕</button>
+    <button type="button" class="btn btn-negative-container">負面按鈕</button>
+  </div>
+</div>
+{{< /example >}}
+
+
 #### 框線樣式按鈕  vs 連結字按鈕
 
 同個頁面中，可以選用框線樣式的按鈕，與預設填滿顏色的按鈕作為區隔。當按鈕的行為重要性沒那麼高時，可以將樣式視覺上做得跟連結一樣。
@@ -64,13 +93,14 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-outline-brand">框線按鈕</button>
-    <button type="button" class="btn btn-outline-positive">正向按鈕</button>
-    <button type="button" class="btn btn-outline-negative">危險按鈕</button>
+    <button type="button" class="btn btn-outline-brand">主色按鈕</button>
+    <button type="button" class="btn btn-outline-positive">正面按鈕</button>
+    <button type="button" class="btn btn-outline-negative">負面按鈕</button>
     <button type="button" class="btn btn-link">連結字</button>
   </div>
 </div>
 {{< /example >}}
+
 
 #### 文字按鈕加圖標
 
@@ -81,19 +111,6 @@ group: components
   <div class="col">
     <button type="button" class="btn btn-brand">圖標在右<i class="bi bi-arrow-counterclockwise"></i></button>
     <button type="button" class="btn btn-brand"><i class="bi bi-arrow-counterclockwise"></i>圖標在左</button>
-  </div>
-</div>
-{{< /example >}}
-
-#### 功能性按鈕
-
-我們提供兩種功能性按鈕：正向與危險按鈕。
-
-{{< example >}}
-<div class="row text-center">
-  <div class="col">
-    <button type="button" class="btn btn-positive">正向按鈕</button>
-    <button type="button" class="btn btn-negative">危險按鈕</button>
   </div>
 </div>
 {{< /example >}}
