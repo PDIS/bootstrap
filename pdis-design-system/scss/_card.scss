@@ -87,16 +87,3 @@
     }
   }
 }
-
-@each $name, $items in map.merge($colors, $alias-colors) {
-  $env_key: map.get($items, "env_key"); 
-  .card-#{$name} {
-    background-color: var(--#{$env_key}-strong);
-    color: var(--on-#{$env_key});
-  }
-
-  .card-#{$name}-container {
-    background-color: var(--#{$env_key}-container-strong);
-    color: var(--on-#{$env_key}-container);
-  }
-}

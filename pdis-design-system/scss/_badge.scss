@@ -15,18 +15,3 @@
 .badge-collections {
   margin-bottom: 1rem;
 }
-
-@each $name, $items in map.merge($colors, $alias-colors) {
-  $env_key: map.get($items, "env_key");
-  .badge-#{$name} {
-    background-color: var(--#{$env_key});
-    border-color: var(--#{$env_key});
-    color: var(--on-#{$env_key});
-  }
-
-  .badge-#{$name}-container {
-    background-color: var(--#{$env_key}-container);
-    border-color: var(--#{$env_key}-container);
-    color: var(--on-#{$env_key}-container);
-  }
-}

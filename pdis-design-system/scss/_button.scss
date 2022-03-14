@@ -1,25 +1,24 @@
-@each $name, $items in map.merge($colors, $alias-colors) {
-  $env_key: map.get($items, "env_key");
-  .btn-#{$name} {
-    background-color: var(--#{$env_key});
-    border-color: var(--#{$env_key});
-    color: var(--on-#{$env_key});
+@each $key, $value in $color-envs {
+  .btn-#{$key} {
+    background-color: var(--#{$value});
+    border-color: var(--#{$value});
+    color: var(--on-#{$value});
 
     &:hover {
-      background-color: var(--#{$env_key}-strong);
-      border-color: var(--#{$env_key}-strong);
+      background-color: var(--#{$value}-strong);
+      border-color: var(--#{$value}-strong);
       text-decoration: underline;
     }
 
     &:active {
-      background-color: var(--#{$env_key}-strong);
-      border-color: var(--#{$env_key}-strong);
+      background-color: var(--#{$value}-strong);
+      border-color: var(--#{$value}-strong);
       box-shadow: none !important;
     }
 
     &:focus {
       color: var(--accent);
-      background-color: var(--#{$env_key}-strong);
+      background-color: var(--#{$value}-strong);
       border-color: var(--accent);
       text-decoration: underline;
       box-shadow: none !important;
@@ -32,28 +31,28 @@
     }
   }
 
-  .btn-outline-#{$name} {
+  .btn-outline-#{$key} {
     background: none;
-    color: var(--#{$env_key});
-    border-color: var(--#{$env_key});
+    color: var(--#{$value});
+    border-color: var(--#{$value});
 
     &:hover {
-      color: var(--#{$env_key}-strong);
-      border-color: var(--#{$env_key}-strong);
+      color: var(--#{$value}-strong);
+      border-color: var(--#{$value}-strong);
       text-decoration: underline;
       background: none;
     }
 
     &:active {
-      color: var(--#{$env_key}-strong);
-      border-color: var(--#{$env_key}-strong);
+      color: var(--#{$value}-strong);
+      border-color: var(--#{$value}-strong);
       box-shadow: none !important;
       background: none;
     }
 
     &:focus {
-      color: var(--#{$env_key}-strong);
-      border-color: var(--#{$env_key}-strong);
+      color: var(--#{$value}-strong);
+      border-color: var(--#{$value}-strong);
       text-decoration: underline;
       box-shadow: none !important;
       background: none;
@@ -65,26 +64,26 @@
     }
   }
 
-  .btn-#{$name}-container {
-    background-color: var(--#{$env_key}-container);
-    border-color: var(--#{$env_key}-container);
-    color: var(--on-#{$env_key}-container);
+  .btn-#{$key}-container {
+    background-color: var(--#{$value}-container);
+    border-color: var(--#{$value}-container);
+    color: var(--on-#{$value}-container);
 
     &:hover {
-      background-color: var(--#{$env_key}-container-strong);
-      border-color: var(--#{$env_key}-container-strong);
+      background-color: var(--#{$value}-container-strong);
+      border-color: var(--#{$value}-container-strong);
       text-decoration: underline;
     }
 
     &:active {
-      background-color: var(--#{$env_key}-container-strong);
-      border-color: var(--#{$env_key}-container-strong);
+      background-color: var(--#{$value}-container-strong);
+      border-color: var(--#{$value}-container-strong);
       box-shadow: none !important;
     }
 
     &:focus {
       color: var(--accent);
-      background-color: var(--#{$env_key}-container-strong);
+      background-color: var(--#{$value}-container-strong);
       border-color: var(--accent);
       text-decoration: underline;
       box-shadow: none !important;
@@ -97,28 +96,28 @@
     }
   }
 
-  .btn-outline-#{$name}-container {
+  .btn-outline-#{$key}-container {
     background: none;
-    color: var(--#{$env_key}-container);
-    border-color: var(--#{$env_key}-container);
+    color: var(--#{$value}-container);
+    border-color: var(--#{$value}-container);
 
     &:hover {
-      color: var(--#{$env_key}-container-strong);
-      border-color: var(--#{$env_key}-container-strong);
+      color: var(--#{$value}-container-strong);
+      border-color: var(--#{$value}-container-strong);
       text-decoration: underline;
       background: none;
     }
 
     &:active {
-      color: var(--#{$env_key}-container-strong);
-      border-color: var(--#{$env_key}-container-strong);
+      color: var(--#{$value}-container-strong);
+      border-color: var(--#{$value}-container-strong);
       box-shadow: none !important;
       background: none;
     }
 
     &:focus {
-      color: var(--#{$env_key}-container-strong);
-      border-color: var(--#{$env_key}-container-strong);
+      color: var(--#{$value}-container-strong);
+      border-color: var(--#{$value}-container-strong);
       text-decoration: underline;
       box-shadow: none !important;
       background: none;

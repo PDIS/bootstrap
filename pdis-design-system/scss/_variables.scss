@@ -65,7 +65,6 @@ $black: #000 !default;
 
 $colors: (
   "brand": (
-    "env_key": "brand",
     "base": (
       "normal": $brand,
       "strong": $brand-strong,
@@ -78,7 +77,6 @@ $colors: (
     ),
   ),
   "accent": (
-    "env_key": "accent",
     "base": (
       "normal": $accent,
       "strong": $accent-strong,
@@ -91,7 +89,6 @@ $colors: (
     ),
   ),
   "positive": (
-    "env_key": "positive",
     "base": (
       "normal": $positive,
       "strong": $positive-strong,
@@ -104,7 +101,6 @@ $colors: (
     ),
   ),
   "negative": (
-    "env_key": "negative",
     "base": (
       "normal": $negative,
       "strong": $negative-strong,
@@ -117,7 +113,6 @@ $colors: (
     ),
   ),
   "information": (
-    "env_key": "information",
     "base": (
       "normal": $information,
       "strong": $information-strong,
@@ -130,7 +125,6 @@ $colors: (
     ),
   ),
   "warning": (
-    "env_key": "warning",
     "base": (
       "normal": $warning,
       "strong": $warning-strong,
@@ -144,10 +138,16 @@ $colors: (
   ),
 );
 
-$alias-colors: (
-  "primary": map.get($colors, "brand"),
-  "secondary": map.get($colors, "accent"),
-  "success": map.get($colors, "positive"),
-  "danger": map.get($colors, "negative"),
-  "info": map.get($colors, "information"),
+$color-envs: (
+  "brand": "brand",
+  "accent": "accent",
+  "positive": "positive",
+  "negative": "negative",
+  "information": "information",
+  "warning": "warning",
+  "primary": "brand",
+  "secondary": "accent",
+  "success": "positive",
+  "danger": "negative",
+  "info": "information",
 );

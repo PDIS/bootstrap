@@ -1,13 +1,16 @@
-@each $name, $items in map.merge($colors, $alias-colors) {
-  $env_key: map.get($items, "env_key");
-  .bg-#{$name} {
-    background-color: var(--#{$env_key}) !important;
+@each $key, $value in $color-envs {
+  .bg-#{$key} {
+    background-color: var(--#{$value}) !important;
+    color: var(--on-#{$value});
+  }
+  .bg-#{$key}-container {
+    background-color: var(--#{$value}-container) !important;
+    color: var(--on-#{$value}-container);
   }
 }
 
-@each $name, $items in map.merge($colors, $alias-colors) {
-  $env_key: map.get($items, "env_key");
-  .text-#{$name} {
-    color: var(--#{$env_key});
+@each $key, $value in $color-envs {
+  .text-#{$key} {
+    color: var(--#{$value});
   }
 }
