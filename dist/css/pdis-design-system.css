@@ -49,6 +49,16 @@
   --bs-font-sans-serif: "Noto Sans", "Noto Sans TC", sans-serif;
 }
 
+.accordion .accordion-button::after {
+  color: var(--brand);
+}
+.accordion .accordion-button:not(.collapsed) {
+  background-color: var(--brand);
+  color: var(--on-brand);
+}
+.accordion .accordion-button:not(.collapsed)::after {
+  color: var(--on-brand);
+}
 .accordion .accordion-button:active {
   box-shadow: none !important;
 }
@@ -57,16 +67,16 @@
 }
 .accordion .accordion-button-base:not(.collapsed)::after {
   background-image: none;
-  content: "\f068";
+  content: "\f63b";
   /* fa-minus */
-  font-family: "FontAwesome";
+  font-family: "bootstrap-icons";
   text-align: center;
 }
 .accordion .accordion-button-base::after {
   background-image: none;
-  content: "\f067";
+  content: "\f64d";
   /* fa-add */
-  font-family: "FontAwesome";
+  font-family: "bootstrap-icons";
   text-align: center;
 }
 .accordion .accordion-button-base-second-layer {
