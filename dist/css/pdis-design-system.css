@@ -51,6 +51,11 @@
 
 .accordion .accordion-button::after {
   color: var(--brand);
+  background-image: none;
+  content: "\f64d";
+  /* plus */
+  font-family: "bootstrap-icons";
+  text-align: center;
 }
 .accordion .accordion-button:not(.collapsed) {
   background-color: var(--brand);
@@ -58,6 +63,11 @@
 }
 .accordion .accordion-button:not(.collapsed)::after {
   color: var(--on-brand);
+  background-image: none;
+  content: "\f63b";
+  /* dash */
+  font-family: "bootstrap-icons";
+  text-align: center;
 }
 .accordion .accordion-button:active {
   box-shadow: none !important;
@@ -65,40 +75,68 @@
 .accordion .accordion-button:focus {
   box-shadow: none !important;
 }
-.accordion .accordion-button-base:not(.collapsed)::after {
+.accordion .accordion-button-chevron:not(.collapsed)::after {
   background-image: none;
-  content: "\f63b";
-  /* fa-minus */
+  content: "\f282";
+  /* Chevron down */
   font-family: "bootstrap-icons";
   text-align: center;
 }
-.accordion .accordion-button-base::after {
+.accordion .accordion-button-chevron::after {
   background-image: none;
-  content: "\f64d";
-  /* fa-add */
+  content: "\f282";
+  /* Chevron down */
   font-family: "bootstrap-icons";
   text-align: center;
 }
-.accordion .accordion-button-base-second-layer {
+.accordion .second-layer .accordion-body {
   padding-left: 3rem;
 }
-.accordion .accordion-button-base-second-layer:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' class='bi bi-dash-square' viewBox='0 0 16 16'%3e%3cpath d='M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z'/%3e%3cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3e%3c/svg%3e");
-}
-.accordion .accordion-button-base-second-layer::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%232c5ab4' class='bi bi-plus-square' viewBox='0 0 16 16'%3e %3cpath d='M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z'/%3e%3cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3e%3c/svg%3e");
-}
-.accordion .accordion-button-second-layer {
+.accordion .second-layer .accordion-button {
   padding-left: 3rem;
 }
-.accordion .accordion-button-second-layer:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' class='bi bi-caret-down-fill' viewBox='0 0 16 16'%3e%3cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3e%3c/svg%3e");
+.accordion .second-layer .accordion-button::after {
+  color: var(--brand);
+  background-image: none;
+  content: "\f4fd";
+  /* plus-square */
+  font-family: "bootstrap-icons";
+  text-align: center;
 }
-.accordion .accordion-button-second-layer::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%232c5ab4' class='bi bi-caret-down' viewBox='0 0 16 16'%3e%3cpath d='M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z'/%3e%3c/svg%3e");
+.accordion .second-layer .accordion-button:not(.collapsed) {
+  background-color: var(--brand);
+  color: var(--on-brand);
 }
-.accordion .accordion-body-second-layer {
+.accordion .second-layer .accordion-button:not(.collapsed)::after {
+  color: var(--on-brand);
+  background-image: none;
+  content: "\f2e9";
+  /* dash-square */
+  font-family: "bootstrap-icons";
+  text-align: center;
+}
+.accordion .second-layer .accordion-button-chevron {
   padding-left: 3rem;
+}
+.accordion .second-layer .accordion-button-chevron::after {
+  color: var(--brand);
+  background-image: none;
+  content: "\f22c";
+  /* caret-down */
+  font-family: "bootstrap-icons";
+  text-align: center;
+}
+.accordion .second-layer .accordion-button-chevron:not(.collapsed) {
+  background-color: var(--brand);
+  color: var(--on-brand);
+}
+.accordion .second-layer .accordion-button-chevron:not(.collapsed)::after {
+  color: var(--on-brand);
+  background-image: none;
+  content: "\f229";
+  /* caret-down-fill */
+  font-family: "bootstrap-icons";
+  text-align: center;
 }
 
 .badge, .sidebar-button-badge, .sidebar-button-badge-round, .time-list .list-item-date-badge, .time-list .list-item-badge {
