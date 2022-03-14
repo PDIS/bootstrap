@@ -7,19 +7,21 @@
     &:hover {
       background-color: var(--#{$value}-strong);
       border-color: var(--#{$value}-strong);
+      color: var(--on-#{$value});
       text-decoration: underline;
     }
 
     &:active {
       background-color: var(--#{$value}-strong);
       border-color: var(--#{$value}-strong);
+      color: var(--on-#{$value});
       box-shadow: none !important;
     }
 
     &:focus {
-      color: var(--accent);
       background-color: var(--#{$value}-strong);
       border-color: var(--accent);
+      color: var(--on-#{$value});
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -72,17 +74,19 @@
     &:hover {
       background-color: var(--#{$value}-container-strong);
       border-color: var(--#{$value}-container-strong);
+      color: var(--on-#{$value}-container);
       text-decoration: underline;
     }
 
     &:active {
       background-color: var(--#{$value}-container-strong);
       border-color: var(--#{$value}-container-strong);
+      color: var(--on-#{$value}-container);
       box-shadow: none !important;
     }
 
     &:focus {
-      color: var(--accent);
+      color: var(--on-#{$value}-container);
       background-color: var(--#{$value}-container-strong);
       border-color: var(--accent);
       text-decoration: underline;
@@ -92,39 +96,6 @@
     &:disabled {
       background-color: var(--bs-gray-200);
       border-color: var(--bs-gray-200);
-      color: var(--bs-gray-500);
-    }
-  }
-
-  .btn-outline-#{$key}-container {
-    background: none;
-    color: var(--#{$value}-container);
-    border-color: var(--#{$value}-container);
-
-    &:hover {
-      color: var(--#{$value}-container-strong);
-      border-color: var(--#{$value}-container-strong);
-      text-decoration: underline;
-      background: none;
-    }
-
-    &:active {
-      color: var(--#{$value}-container-strong);
-      border-color: var(--#{$value}-container-strong);
-      box-shadow: none !important;
-      background: none;
-    }
-
-    &:focus {
-      color: var(--#{$value}-container-strong);
-      border-color: var(--#{$value}-container-strong);
-      text-decoration: underline;
-      box-shadow: none !important;
-      background: none;
-    }
-
-    &:disabled {
-      border-color: var(--bs-gray-500);
       color: var(--bs-gray-500);
     }
   }
