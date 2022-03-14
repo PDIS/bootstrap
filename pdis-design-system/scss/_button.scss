@@ -68,19 +68,19 @@
 
   .btn-#{$key}-container {
     background-color: var(--#{$value}-container);
-    border-color: var(--#{$value}-container);
+    border-color: var(--on-#{$value}-container);
     color: var(--on-#{$value}-container);
 
     &:hover {
       background-color: var(--#{$value}-container-strong);
-      border-color: var(--#{$value}-container-strong);
+      border-color: var(--on-#{$value}-container);
       color: var(--on-#{$value}-container);
       text-decoration: underline;
     }
 
     &:active {
       background-color: var(--#{$value}-container-strong);
-      border-color: var(--#{$value}-container-strong);
+      border-color: var(--on-#{$value}-container);
       color: var(--on-#{$value}-container);
       box-shadow: none !important;
     }
@@ -88,7 +88,7 @@
     &:focus {
       color: var(--on-#{$value}-container);
       background-color: var(--#{$value}-container-strong);
-      border-color: var(--accent);
+      border-color: var(--on-#{$value}-container);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -98,5 +98,12 @@
       border-color: var(--bs-gray-200);
       color: var(--bs-gray-500);
     }
+  }
+}
+
+.btn-link {
+  color: var(--brand);
+  &:hover, &:active, &:focus {
+    color: var(--brand-strong);
   }
 }
