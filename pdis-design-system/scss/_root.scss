@@ -14,7 +14,10 @@
   --bs-info: var(--information);
   --bs-warning: var(--warning);
   --bs-danger: var(--negative);
-  /*   --bs-dark: var(--bs-text-primary) !important;
-  --bs-body-color: var(--bs-text-primary) !important; */
+  --bs-background: $background;
+  --bs-on-background: $on-background;
+  --bs-dark: var(--bs-on-background);
+  --bs-body-bg: var(--bs-background);
+  --bs-body-color: var(--bs-on-background);
   --bs-font-sans-serif: "Noto Sans", "Noto Sans TC", sans-serif;
 }

@@ -424,8 +424,8 @@ group: components
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="card text-card border-dark text-white card-bg-img">
-      <div class="card-body">
+    <div class="card text-card border-dark text-white">
+      <div class="card-body" style='background-image: url("/docs/5.1/assets/img/bg-text-card.png")'>
         <h4 class="card-title">服務項目</h4>
         <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
       </div>
