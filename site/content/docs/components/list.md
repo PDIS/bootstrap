@@ -415,7 +415,7 @@ toc: true
     <ul class="list time-list">
       <li class="list-item">
         <div class="list-item-date">2021-10-25</div>
-        <span class="list-item-badge bg-red-400 text-white">Primary</span>
+        <span class="badge bg-brand">Primary</span>
         <div class="list-item-content text-truncate">
           歡迎來部落走走 交通部觀光局邀您來當「部落客」！
         </div>
@@ -432,7 +432,7 @@ toc: true
         <div class="list-item-content text-truncate">
           歡迎來部落走走 交通部觀光局邀您來當「部落客」！
         </div>
-        <span class="list-item-badge bg-red-400 text-white">Primary</span>
+        <span class="badge bg-brand">Primary</span>
       </li>
     </ul>
   </div>
@@ -442,7 +442,8 @@ toc: true
   <div class="col">
     <ul class="list time-list">
       <li class="list-item-multiline">
-        <div class="list-item-date">2021-10-25<span class="list-item-date-badge bg-red-400 text-white">Primary</span></div>
+        <div class="list-item-date d-inline">2021-10-25</div>
+        <span class="badge bg-brand">Primary</span>
         <div class="list-item-content text-truncate">
           歡迎來部落走走 交通部觀光局邀您來當「部落客」！
           <p class="list-item-subheader">交通部觀光局(以下稱觀光局)為宣傳部落特色及觀光成果，自103年起已連續8年舉辦「台灣部落觀光嘉年華」</p>
