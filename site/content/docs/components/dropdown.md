@@ -42,12 +42,12 @@ toc: true
 {{< example >}}
 
 <div class="dropdown">
-  <button class="dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
     服務項目名稱
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
     <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
-    <li><a class="dropdown-item" href="#">寬度隨最長的內容文字調整</a></li>
+    <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
     <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
     <li><a class="dropdown-item" href="#">服務項目子項目</a></li>
     <li><a class="dropdown-item" href="#">服務項目子項目</a></li>

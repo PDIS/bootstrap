@@ -1,42 +1,70 @@
 .dropdown {
   .dropdown-toggle {
-    &:active,
-    &:focus {
-      color: var(--accent) !important;
-      background-color: var(--brand) !important;
-    }
+    color: var(--on-surface);
+    //background-color: var(--surface);
+    text-decoration: underline;
+    font-weight: 500;
+
     &::after {
-      width: 0.5rem;
-      height: 0.5rem;
-      border-top: 0;
-      border-right: 0.1rem solid;
-      border-bottom: 0.1rem solid;
-      border-left: 0;
-      transform: rotate(45deg);
-      margin-left: 0.5em;
+      background-image: none;
+      content: "\F282"; /* Chevron down */
+      font-family: "bootstrap-icons";
+      text-align: center;
+      display: inline-block;
+      margin-left: 1rem;
+      vertical-align: bottom;
+      border: 0;
+  
     }
-  }
-  .dropdown-btn {
+
+    &:hover {
+      color: var(--information);
+    }
+
     &:active,
     &:focus {
-      color: var(--bs-secondary-light);
-      background-color: var(--bs-primary);
+      background-color: var(--accent-smooth);
+      box-shadow: none !important;
+
+      &::after {
+        background-image: none;
+        content: "\F286"; /* Chevron down */
+        font-family: "bootstrap-icons";
+        text-align: center;
+        display: inline-block;
+        margin-left: 1rem;
+        vertical-align: bottom;
+        border: 0;
+    
+      }
     }
-  }
-  .dropdown-menu {
-    border-left:1px var(--bs-primary) solid;
-    border-radius: 0;
   }
 
-  .dropdown-item {
-    color: var(--bs-primary);
-    &:hover {
-      color: var(--bs-primary-dark);
+  .dropdown-menu {
+    border-radius: 0;
+    background-color: var(--surface);
+    
+    .dropdown-item {
+      color: var(--information);
+
+      &:hover {
+        color: var(--information-strong);
+        background-color: none;
+      }
+      &:active,
+      &:focus {
+        color: var(--on-information-smooth);
+        background-color: var(--accent-smooth);
+      }
     }
+  }
+
+  /*   .dropdown-btn {
     &:active,
     &:focus {
       color: var(--bs-secondary-light);
       background-color: var(--bs-primary);
     }
-  }
+  } */
+
 }

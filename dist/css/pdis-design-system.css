@@ -1026,37 +1026,63 @@
   margin-bottom: 0.5rem;
 }
 
-.dropdown .dropdown-toggle:active, .dropdown .dropdown-toggle:focus {
-  color: var(--accent) !important;
-  background-color: var(--brand) !important;
+.dropdown {
+  /*   .dropdown-btn {
+    &:active,
+    &:focus {
+      color: var(--bs-secondary-light);
+      background-color: var(--bs-primary);
+    }
+  } */
+}
+.dropdown .dropdown-toggle {
+  color: var(--on-surface);
+  text-decoration: underline;
+  font-weight: 500;
 }
 .dropdown .dropdown-toggle::after {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-top: 0;
-  border-right: 0.1rem solid;
-  border-bottom: 0.1rem solid;
-  border-left: 0;
-  transform: rotate(45deg);
-  margin-left: 0.5em;
+  background-image: none;
+  content: "\f282";
+  /* Chevron down */
+  font-family: "bootstrap-icons";
+  text-align: center;
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: bottom;
+  border: 0;
 }
-.dropdown .dropdown-btn:active, .dropdown .dropdown-btn:focus {
-  color: var(--bs-secondary-light);
-  background-color: var(--bs-primary);
+.dropdown .dropdown-toggle:hover {
+  color: var(--information);
+}
+.dropdown .dropdown-toggle:active, .dropdown .dropdown-toggle:focus {
+  background-color: var(--accent-smooth);
+  box-shadow: none !important;
+}
+.dropdown .dropdown-toggle:active::after, .dropdown .dropdown-toggle:focus::after {
+  background-image: none;
+  content: "\f286";
+  /* Chevron down */
+  font-family: "bootstrap-icons";
+  text-align: center;
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: bottom;
+  border: 0;
 }
 .dropdown .dropdown-menu {
-  border-left: 1px var(--bs-primary) solid;
   border-radius: 0;
+  background-color: var(--surface);
 }
-.dropdown .dropdown-item {
-  color: var(--bs-primary);
+.dropdown .dropdown-menu .dropdown-item {
+  color: var(--information);
 }
-.dropdown .dropdown-item:hover {
-  color: var(--bs-primary-dark);
+.dropdown .dropdown-menu .dropdown-item:hover {
+  color: var(--information-strong);
+  background-color: none;
 }
-.dropdown .dropdown-item:active, .dropdown .dropdown-item:focus {
-  color: var(--bs-secondary-light);
-  background-color: var(--bs-primary);
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:focus {
+  color: var(--on-information-smooth);
+  background-color: var(--accent-smooth);
 }
 
 footer .nav {
