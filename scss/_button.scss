@@ -8,22 +8,15 @@
       background-color: var(--#{$value}-strong);
       border-color: var(--#{$value}-strong);
       color: var(--on-#{$value});
-      text-decoration: underline;
+      //text-decoration: underline;
     }
-
-/*     &:active {
-      background-color: var(--#{$value}-strong);
-      border-color: var(--#{$value}-strong);
-      color: var(--on-#{$value});
-      box-shadow: none !important;
-    } */
 
     &:focus, &:active {
       background-color: var(--#{$value}-strong);
       border-color: var(--accent);
       color: var(--on-#{$value});
-      text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--#{$value}-container);
+      //text-decoration: underline;
+      box-shadow: 0 0 0 2px var(--#{$value}-smooth);
     }
 
     &:disabled {
@@ -45,18 +38,11 @@
       background: none;
     }
 
-/*     &:active {
-      color: var(--#{$value}-strong);
-      border-color: var(--#{$value}-strong);
-      box-shadow: none !important;
-      background: none;
-    } */
-
     &:focus, &:active {
       color: var(--#{$value}-strong);
       border-color: var(--#{$value}-strong);
       text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--#{$value}-container);
+      box-shadow: 0 0 0 2px var(--#{$value}-smooth);
       background: none;
     }
 
@@ -66,29 +52,22 @@
     }
   }
 
-  .btn-#{$key}-container {
-    background-color: var(--#{$value}-container);
-    border-color: var(--#{$value}-container);
-    color: var(--on-#{$value}-container);
+  .btn-#{$key}-smooth {
+    background-color: var(--#{$value}-smooth);
+    border-color: var(--#{$value}-smooth);
+    color: var(--on-#{$value}-smooth);
 
     &:hover {
-      background-color: var(--#{$value}-container-strong);
-      border-color: var(--on-#{$value}-container);
-      color: var(--on-#{$value}-container);
+      background-color: var(--#{$value}-smooth-strong);
+      border-color: var(--on-#{$value}-smooth);
+      color: var(--on-#{$value}-smooth);
       text-decoration: underline;
     }
 
-/*     &:active {
-      background-color: var(--#{$value}-container-strong);
-      border-color: var(--on-#{$value}-container);
-      color: var(--on-#{$value}-container);
-      box-shadow: none !important;
-    } */
-
     &:focus, &:active {
-      color: var(--on-#{$value}-container);
-      background-color: var(--#{$value}-container-strong);
-      border-color: var(--on-#{$value}-container);
+      color: var(--on-#{$value}-smooth);
+      background-color: var(--#{$value}-smooth-strong);
+      border-color: var(--on-#{$value}-smooth);
       text-decoration: underline;
       box-shadow: none !important;
     }
