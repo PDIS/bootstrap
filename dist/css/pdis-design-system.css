@@ -963,6 +963,10 @@
   color: var(--brand-strong);
 }
 
+.card {
+  background: var(--surface);
+  border: 1px solid var(--outline);
+}
 .card .card-header {
   background-color: var(--bs-gray-400);
   font-weight: 500;
@@ -1414,18 +1418,11 @@ a:focus {
 .form-select {
   color: var(--on-surface);
   background: var(--surface);
-  /*   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: right 0.75rem center;
-    background-size: 16px 12px;
-    border: 1px solid var(--outline); */
-}
-.form-select::after {
-  background-image: none;
-  content: "\f282";
-  /* Chevron down */
-  font-family: "bootstrap-icons";
-  text-align: center;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  border: 1px solid var(--outline);
 }
 .form-select:hover {
   background: var(--surface-1);
@@ -1451,13 +1448,13 @@ a:focus {
 }
 
 option {
-  background: var(--bs-gray-100);
-  color: var(--bs-on-background) !important;
+  background: var(--surface);
+  color: var(--on-surface) !important;
 }
 
 optgroup {
-  background: var(--bs-gray-100);
-  color: var(--bs-text-secondary) !important;
+  background: var(--surface);
+  color: var(--on-surface-variant) !important;
   font-weight: normal !important;
   font-size: 16px !important;
 }
@@ -1681,9 +1678,9 @@ optgroup {
   color: var(--on-brand);
 }
 
-.bg-brand-container {
-  background-color: var(--brand-container) !important;
-  color: var(--on-brand-container);
+.bg-brand-smooth {
+  background-color: var(--brand-smooth) !important;
+  color: var(--on-brand-smooth);
 }
 
 .bg-accent {
@@ -1691,9 +1688,9 @@ optgroup {
   color: var(--on-accent);
 }
 
-.bg-accent-container {
-  background-color: var(--accent-container) !important;
-  color: var(--on-accent-container);
+.bg-accent-smooth {
+  background-color: var(--accent-smooth) !important;
+  color: var(--on-accent-smooth);
 }
 
 .bg-positive {
@@ -1701,9 +1698,9 @@ optgroup {
   color: var(--on-positive);
 }
 
-.bg-positive-container {
-  background-color: var(--positive-container) !important;
-  color: var(--on-positive-container);
+.bg-positive-smooth {
+  background-color: var(--positive-smooth) !important;
+  color: var(--on-positive-smooth);
 }
 
 .bg-negative {
@@ -1711,9 +1708,9 @@ optgroup {
   color: var(--on-negative);
 }
 
-.bg-negative-container {
-  background-color: var(--negative-container) !important;
-  color: var(--on-negative-container);
+.bg-negative-smooth {
+  background-color: var(--negative-smooth) !important;
+  color: var(--on-negative-smooth);
 }
 
 .bg-information {
@@ -1721,9 +1718,9 @@ optgroup {
   color: var(--on-information);
 }
 
-.bg-information-container {
-  background-color: var(--information-container) !important;
-  color: var(--on-information-container);
+.bg-information-smooth {
+  background-color: var(--information-smooth) !important;
+  color: var(--on-information-smooth);
 }
 
 .bg-warning {
@@ -1731,9 +1728,9 @@ optgroup {
   color: var(--on-warning);
 }
 
-.bg-warning-container {
-  background-color: var(--warning-container) !important;
-  color: var(--on-warning-container);
+.bg-warning-smooth {
+  background-color: var(--warning-smooth) !important;
+  color: var(--on-warning-smooth);
 }
 
 .bg-primary {
@@ -1741,9 +1738,9 @@ optgroup {
   color: var(--on-brand);
 }
 
-.bg-primary-container {
-  background-color: var(--brand-container) !important;
-  color: var(--on-brand-container);
+.bg-primary-smooth {
+  background-color: var(--brand-smooth) !important;
+  color: var(--on-brand-smooth);
 }
 
 .bg-secondary {
@@ -1751,9 +1748,9 @@ optgroup {
   color: var(--on-accent);
 }
 
-.bg-secondary-container {
-  background-color: var(--accent-container) !important;
-  color: var(--on-accent-container);
+.bg-secondary-smooth {
+  background-color: var(--accent-smooth) !important;
+  color: var(--on-accent-smooth);
 }
 
 .bg-success {
@@ -1761,9 +1758,9 @@ optgroup {
   color: var(--on-positive);
 }
 
-.bg-success-container {
-  background-color: var(--positive-container) !important;
-  color: var(--on-positive-container);
+.bg-success-smooth {
+  background-color: var(--positive-smooth) !important;
+  color: var(--on-positive-smooth);
 }
 
 .bg-danger {
@@ -1771,9 +1768,9 @@ optgroup {
   color: var(--on-negative);
 }
 
-.bg-danger-container {
-  background-color: var(--negative-container) !important;
-  color: var(--on-negative-container);
+.bg-danger-smooth {
+  background-color: var(--negative-smooth) !important;
+  color: var(--on-negative-smooth);
 }
 
 .bg-info {
@@ -1781,9 +1778,9 @@ optgroup {
   color: var(--on-information);
 }
 
-.bg-info-container {
-  background-color: var(--information-container) !important;
-  color: var(--on-information-container);
+.bg-info-smooth {
+  background-color: var(--information-smooth) !important;
+  color: var(--on-information-smooth);
 }
 
 .text-brand {

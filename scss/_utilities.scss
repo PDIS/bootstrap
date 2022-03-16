@@ -3,9 +3,9 @@
     background-color: var(--#{$value}) !important;
     color: var(--on-#{$value});
   }
-  .bg-#{$key}-container {
-    background-color: var(--#{$value}-container) !important;
-    color: var(--on-#{$value}-container);
+  .bg-#{$key}-smooth {
+    background-color: var(--#{$value}-smooth) !important;
+    color: var(--on-#{$value}-smooth);
   }
 }
 

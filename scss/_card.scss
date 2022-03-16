@@ -1,4 +1,6 @@
 .card {
+  background: var(--surface);
+  border: 1px solid var(--outline);
   .card-header {
     background-color: var(--bs-gray-400);
     font-weight: 500;
