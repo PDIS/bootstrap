@@ -11,19 +11,19 @@
       text-decoration: underline;
     }
 
-    &:active {
+/*     &:active {
       background-color: var(--#{$value}-strong);
       border-color: var(--#{$value}-strong);
       color: var(--on-#{$value});
       box-shadow: none !important;
-    }
+    } */
 
-    &:focus {
+    &:focus, &:active {
       background-color: var(--#{$value}-strong);
       border-color: var(--accent);
       color: var(--on-#{$value});
       text-decoration: underline;
-      box-shadow: none !important;
+      box-shadow: 0 0 0 2px var(--#{$value}-container);
     }
 
     &:disabled {
@@ -45,18 +45,18 @@
       background: none;
     }
 
-    &:active {
+/*     &:active {
       color: var(--#{$value}-strong);
       border-color: var(--#{$value}-strong);
       box-shadow: none !important;
       background: none;
-    }
+    } */
 
-    &:focus {
+    &:focus, &:active {
       color: var(--#{$value}-strong);
       border-color: var(--#{$value}-strong);
       text-decoration: underline;
-      box-shadow: none !important;
+      box-shadow: 0 0 0 2px var(--#{$value}-container);
       background: none;
     }
 
@@ -68,7 +68,7 @@
 
   .btn-#{$key}-container {
     background-color: var(--#{$value}-container);
-    border-color: var(--on-#{$value}-container);
+    border-color: var(--#{$value}-container);
     color: var(--on-#{$value}-container);
 
     &:hover {
@@ -78,14 +78,14 @@
       text-decoration: underline;
     }
 
-    &:active {
+/*     &:active {
       background-color: var(--#{$value}-container-strong);
       border-color: var(--on-#{$value}-container);
       color: var(--on-#{$value}-container);
       box-shadow: none !important;
-    }
+    } */
 
-    &:focus {
+    &:focus, &:active {
       color: var(--on-#{$value}-container);
       background-color: var(--#{$value}-container-strong);
       border-color: var(--on-#{$value}-container);
