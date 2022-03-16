@@ -188,7 +188,7 @@
 .btn-brand:disabled {
   background-color: var(--bs-gray-200);
   border-color: var(--bs-gray-200);
-  color: var(--bs-gray-500);
+  color: var(--outline);
 }
 
 .btn-outline-brand {
@@ -257,7 +257,7 @@
 .btn-accent:disabled {
   background-color: var(--bs-gray-200);
   border-color: var(--bs-gray-200);
-  color: var(--bs-gray-500);
+  color: var(--outline);
 }
 
 .btn-outline-accent {
@@ -326,7 +326,7 @@
 .btn-positive:disabled {
   background-color: var(--bs-gray-200);
   border-color: var(--bs-gray-200);
-  color: var(--bs-gray-500);
+  color: var(--outline);
 }
 
 .btn-outline-positive {
@@ -395,7 +395,7 @@
 .btn-negative:disabled {
   background-color: var(--bs-gray-200);
   border-color: var(--bs-gray-200);
-  color: var(--bs-gray-500);
+  color: var(--outline);
 }
 
 .btn-outline-negative {
@@ -464,7 +464,7 @@
 .btn-information:disabled {
   background-color: var(--bs-gray-200);
   border-color: var(--bs-gray-200);
-  color: var(--bs-gray-500);
+  color: var(--outline);
 }
 
 .btn-outline-information {
@@ -533,7 +533,7 @@
 .btn-warning:disabled {
   background-color: var(--bs-gray-200);
   border-color: var(--bs-gray-200);
-  color: var(--bs-gray-500);
+  color: var(--outline);
 }
 
 .btn-outline-warning {
@@ -602,7 +602,7 @@
 .btn-primary:disabled {
   background-color: var(--bs-gray-200);
   border-color: var(--bs-gray-200);
-  color: var(--bs-gray-500);
+  color: var(--outline);
 }
 
 .btn-outline-primary {
@@ -671,7 +671,7 @@
 .btn-secondary:disabled {
   background-color: var(--bs-gray-200);
   border-color: var(--bs-gray-200);
-  color: var(--bs-gray-500);
+  color: var(--outline);
 }
 
 .btn-outline-secondary {
@@ -740,7 +740,7 @@
 .btn-success:disabled {
   background-color: var(--bs-gray-200);
   border-color: var(--bs-gray-200);
-  color: var(--bs-gray-500);
+  color: var(--outline);
 }
 
 .btn-outline-success {
@@ -809,7 +809,7 @@
 .btn-danger:disabled {
   background-color: var(--bs-gray-200);
   border-color: var(--bs-gray-200);
-  color: var(--bs-gray-500);
+  color: var(--outline);
 }
 
 .btn-outline-danger {
@@ -878,7 +878,7 @@
 .btn-info:disabled {
   background-color: var(--bs-gray-200);
   border-color: var(--bs-gray-200);
-  color: var(--bs-gray-500);
+  color: var(--outline);
 }
 
 .btn-outline-info {
@@ -926,6 +926,34 @@
   background-color: var(--bs-gray-200);
   border-color: var(--bs-gray-200);
   color: var(--bs-gray-500);
+}
+
+.btn-secondary {
+  background: none;
+  color: var(--brand-strong);
+  border-color: var(--outline);
+}
+.btn-secondary:hover {
+  background: var(--surface-1);
+}
+.btn-secondary:focus, .btn-secondary:active {
+  box-shadow: 0 0 0 2px var(--brand-smooth);
+  background: var(--surface-1);
+}
+.btn-secondary:disabled {
+  color: var(--outline);
+}
+
+.btn-tertiary {
+  background: none;
+  color: var(--brand-strong);
+  border-color: var(--outline);
+}
+.btn-tertiary:focus, .btn-tertiary:active {
+  box-shadow: 0 0 0 2px var(--brand-smooth);
+}
+.btn-tertiary:disabled {
+  color: var(--outline);
 }
 
 .btn-link {

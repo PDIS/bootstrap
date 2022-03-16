@@ -90,7 +90,7 @@
   }
 
   &:focus, &:active {
-    box-shadow: 0 0 0 2px var(--#{$value}-smooth);
+    box-shadow: 0 0 0 2px var(--brand-smooth);
     background: var(--surface-1);
   }
 
@@ -105,7 +105,7 @@
   border-color: var(--outline);
 
   &:focus, &:active {
-    box-shadow: 0 0 0 2px var(--#{$value}-smooth);
+    box-shadow: 0 0 0 2px var(--brand-smooth);
   }
 
   &:disabled {
