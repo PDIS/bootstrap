@@ -181,7 +181,7 @@
   border-color: var(--accent);
   color: var(--on-brand);
   text-decoration: underline;
-  box-shadow: 2px var(--brand-container);
+  box-shadow: 0 0 0 2px var(--brand-container);
 }
 .btn-brand:disabled {
   background-color: var(--bs-gray-200);
@@ -210,7 +210,7 @@
   color: var(--brand-strong);
   border-color: var(--brand-strong);
   text-decoration: underline;
-  box-shadow: none !important;
+  box-shadow: 0 0 0 2px var(--brand-container);
   background: none;
 }
 .btn-outline-brand:disabled {
@@ -270,7 +270,7 @@
   border-color: var(--accent);
   color: var(--on-accent);
   text-decoration: underline;
-  box-shadow: 2px var(--accent-container);
+  box-shadow: 0 0 0 2px var(--accent-container);
 }
 .btn-accent:disabled {
   background-color: var(--bs-gray-200);
@@ -299,7 +299,7 @@
   color: var(--accent-strong);
   border-color: var(--accent-strong);
   text-decoration: underline;
-  box-shadow: none !important;
+  box-shadow: 0 0 0 2px var(--accent-container);
   background: none;
 }
 .btn-outline-accent:disabled {
@@ -359,7 +359,7 @@
   border-color: var(--accent);
   color: var(--on-positive);
   text-decoration: underline;
-  box-shadow: 2px var(--positive-container);
+  box-shadow: 0 0 0 2px var(--positive-container);
 }
 .btn-positive:disabled {
   background-color: var(--bs-gray-200);
@@ -388,7 +388,7 @@
   color: var(--positive-strong);
   border-color: var(--positive-strong);
   text-decoration: underline;
-  box-shadow: none !important;
+  box-shadow: 0 0 0 2px var(--positive-container);
   background: none;
 }
 .btn-outline-positive:disabled {
@@ -448,7 +448,7 @@
   border-color: var(--accent);
   color: var(--on-negative);
   text-decoration: underline;
-  box-shadow: 2px var(--negative-container);
+  box-shadow: 0 0 0 2px var(--negative-container);
 }
 .btn-negative:disabled {
   background-color: var(--bs-gray-200);
@@ -477,7 +477,7 @@
   color: var(--negative-strong);
   border-color: var(--negative-strong);
   text-decoration: underline;
-  box-shadow: none !important;
+  box-shadow: 0 0 0 2px var(--negative-container);
   background: none;
 }
 .btn-outline-negative:disabled {
@@ -537,7 +537,7 @@
   border-color: var(--accent);
   color: var(--on-information);
   text-decoration: underline;
-  box-shadow: 2px var(--information-container);
+  box-shadow: 0 0 0 2px var(--information-container);
 }
 .btn-information:disabled {
   background-color: var(--bs-gray-200);
@@ -566,7 +566,7 @@
   color: var(--information-strong);
   border-color: var(--information-strong);
   text-decoration: underline;
-  box-shadow: none !important;
+  box-shadow: 0 0 0 2px var(--information-container);
   background: none;
 }
 .btn-outline-information:disabled {
@@ -626,7 +626,7 @@
   border-color: var(--accent);
   color: var(--on-warning);
   text-decoration: underline;
-  box-shadow: 2px var(--warning-container);
+  box-shadow: 0 0 0 2px var(--warning-container);
 }
 .btn-warning:disabled {
   background-color: var(--bs-gray-200);
@@ -655,7 +655,7 @@
   color: var(--warning-strong);
   border-color: var(--warning-strong);
   text-decoration: underline;
-  box-shadow: none !important;
+  box-shadow: 0 0 0 2px var(--warning-container);
   background: none;
 }
 .btn-outline-warning:disabled {
@@ -715,7 +715,7 @@
   border-color: var(--accent);
   color: var(--on-brand);
   text-decoration: underline;
-  box-shadow: 2px var(--brand-container);
+  box-shadow: 0 0 0 2px var(--brand-container);
 }
 .btn-primary:disabled {
   background-color: var(--bs-gray-200);
@@ -744,7 +744,7 @@
   color: var(--brand-strong);
   border-color: var(--brand-strong);
   text-decoration: underline;
-  box-shadow: none !important;
+  box-shadow: 0 0 0 2px var(--brand-container);
   background: none;
 }
 .btn-outline-primary:disabled {
@@ -804,7 +804,7 @@
   border-color: var(--accent);
   color: var(--on-accent);
   text-decoration: underline;
-  box-shadow: 2px var(--accent-container);
+  box-shadow: 0 0 0 2px var(--accent-container);
 }
 .btn-secondary:disabled {
   background-color: var(--bs-gray-200);
@@ -833,7 +833,7 @@
   color: var(--accent-strong);
   border-color: var(--accent-strong);
   text-decoration: underline;
-  box-shadow: none !important;
+  box-shadow: 0 0 0 2px var(--accent-container);
   background: none;
 }
 .btn-outline-secondary:disabled {
@@ -893,7 +893,7 @@
   border-color: var(--accent);
   color: var(--on-positive);
   text-decoration: underline;
-  box-shadow: 2px var(--positive-container);
+  box-shadow: 0 0 0 2px var(--positive-container);
 }
 .btn-success:disabled {
   background-color: var(--bs-gray-200);
@@ -922,7 +922,7 @@
   color: var(--positive-strong);
   border-color: var(--positive-strong);
   text-decoration: underline;
-  box-shadow: none !important;
+  box-shadow: 0 0 0 2px var(--positive-container);
   background: none;
 }
 .btn-outline-success:disabled {
@@ -982,7 +982,7 @@
   border-color: var(--accent);
   color: var(--on-negative);
   text-decoration: underline;
-  box-shadow: 2px var(--negative-container);
+  box-shadow: 0 0 0 2px var(--negative-container);
 }
 .btn-danger:disabled {
   background-color: var(--bs-gray-200);
@@ -1011,7 +1011,7 @@
   color: var(--negative-strong);
   border-color: var(--negative-strong);
   text-decoration: underline;
-  box-shadow: none !important;
+  box-shadow: 0 0 0 2px var(--negative-container);
   background: none;
 }
 .btn-outline-danger:disabled {
@@ -1071,7 +1071,7 @@
   border-color: var(--accent);
   color: var(--on-information);
   text-decoration: underline;
-  box-shadow: 2px var(--information-container);
+  box-shadow: 0 0 0 2px var(--information-container);
 }
 .btn-info:disabled {
   background-color: var(--bs-gray-200);
@@ -1100,7 +1100,7 @@
   color: var(--information-strong);
   border-color: var(--information-strong);
   text-decoration: underline;
-  box-shadow: none !important;
+  box-shadow: 0 0 0 2px var(--information-container);
   background: none;
 }
 .btn-outline-info:disabled {
@@ -1773,30 +1773,29 @@ optgroup {
 .nav-tabs {
   border-bottom: 0;
 }
-.nav-tabs .nav-tabs-wrapper {
-  white-space: nowrap;
-  display: flex;
-  overflow: hidden;
-}
 .nav-tabs .nav-item {
   display: inline-block;
 }
 .nav-tabs .nav-link {
   border: 0;
   text-decoration: none;
+  border-bottom: none;
+  color: var(--brand);
 }
 .nav-tabs .nav-link.active {
-  color: var(--bs-primary);
-  border-bottom: 1px solid var(--bs-primary);
+  color: var(--brand-strong);
+  border-bottom: 1px solid var(--brand);
+  margin-bottom: 1px;
 }
 
 .nav-pills .nav-link {
   text-decoration: none;
+  color: var(--brand);
 }
 .nav-pills .nav-link.active {
-  color: var(--bs-primary);
+  color: var(--brand-strong);
   background: none;
-  border: 1px solid var(--bs-primary);
+  border: 1px solid var(--brand);
 }
 
 .tab-content {
@@ -1804,6 +1803,14 @@ optgroup {
 }
 
 .nav-scroll {
+  display: flex;
+}
+.nav-scroll .nav-scroll-wrapper {
+  white-space: nowrap;
+  display: flex;
+  overflow: hidden;
+}
+.nav-scroll .nav-scroll-wrapper .nav {
   flex-wrap: nowrap;
 }
 
