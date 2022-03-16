@@ -24,9 +24,9 @@
 // Happy Bootstrapping!
 
 // Load Bootstrap variables and mixins
-@import "../../../scss/functions";
-@import "../../../scss/variables";
-@import "../../../scss/mixins";
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
 
 /* // fusv-disable
 $enable-grid-classes: false; // stylelint-disable-line scss/dollar-variable-default
