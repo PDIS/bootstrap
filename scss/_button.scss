@@ -16,12 +16,10 @@
       border-color: var(--#{$value}-strong);
       color: var(--on-#{$value});
       //text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--#{$value}-smooth);
+      box-shadow: 0 0 0 2px var(--#{$value}-smooth) !important;
     }
 
     &:disabled {
-      background-color: var(--bs-gray-200);
-      border-color: var(--bs-gray-200);
       color: var(--outline);
     }
   }
