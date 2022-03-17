@@ -1125,6 +1125,21 @@ footer .social-container {
   }
 }
 
+.form-control {
+  color: var(--outline);
+  background-color: var(--surface);
+  border: 1px solid var(--outline);
+}
+.form-control:focus {
+  color: var(--on-surface);
+  box-shadow: 0 0 0 2px var(--brand-smooth-strong);
+}
+.form-control:disabled {
+  color: var(--surface-variant);
+  background-color: var(--surface);
+  border: 1px solid var(--surface-variant);
+}
+
 a, .btn {
   text-underline-offset: 0.1em;
 }
@@ -1167,10 +1182,6 @@ a:focus {
   margin-right: 0.5rem;
 }
 
-.bg-custom {
-  background-color: #005aa8 !important;
-}
-
 .logo {
   margin: 1rem 0.5rem 1rem 0.75rem;
 }
@@ -1197,10 +1208,6 @@ a:focus {
 .horizontal-label {
   width: -webkit-fill-available;
   margin-bottom: 0;
-}
-
-.hide {
-  display: none;
 }
 
 /* PDIS's local docs style */
