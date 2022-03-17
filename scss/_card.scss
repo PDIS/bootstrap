@@ -1,87 +1,85 @@
 .card {
   background: var(--surface);
   border: 1px solid var(--outline);
-  
+
   .card-header {
-    background-color: var(--bs-gray-400);
+    color: var(--on-surface);
+    background-color: var(--surface-variant);
     font-weight: 500;
     padding: 1rem 1.5rem 1rem 1.5rem;
   }
 
   .card-body {
     padding: 1rem 1.5rem 1.5rem 1.5rem;
-  }
 
-  .card-title {
-    margin-bottom: 1rem;
-    font-weight: 500;
-  }
-
-  .card-text {
-    color: var(--bs-text-secondary);
-  }
-
-  .card-bg-gary {
-    background-color: var(--bs-gray-100);
+    .card-title {
+      color: var(--on-surface);
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+  
+    .card-text {
+      color: var(--on-surface-variant);
+    }
   }
 }
 
 .text-card {
   .card-body {
     padding: 1.5rem;
-  }
 
-  .card-title {
-    font-weight: 900;
-    margin-bottom: 1rem;
-  }
-
-  .card-text {
-    color: #121212;
-    margin-bottom: 0;
+    .card-title {
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+  
+    .card-text {
+      margin-bottom: 0;
+    }
   }
 }
 
 .list-card {
   .card-body {
+    background-color: var(--surface-1);
     padding: 1.5rem;
-  }
 
-  .card-title {
-    font-weight: 900;
-    margin-bottom: 1rem;
-  }
-
-  .card-text {
-    color: #121212;
-    margin-bottom: 1rem;
-  }
-
-  .card-extra-link {
-    margin: 0 0.5rem;
-
-    &:first-child {
-      margin-left: 0;
+    .card-title {
+      font-weight: 900;
+      margin-bottom: 1rem;
     }
-    &:last-child {
-      margin-right: 0;
+  
+    .card-text {
+      margin-bottom: 1rem;
     }
   }
 
   .list-group {
+    background-color: var(--surface);
+
     .list-group-item {
+      background-color: var(--surface);
       padding: 0.75rem 1.5rem;
-    }
 
-    .list-group-item-subheader {
-      display: inline;
-      margin-left: 0.5rem;
-      color: #6b6b6b;
-    }
+      a {
+        margin: 0 0.5rem;
+    
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
 
-    .list-group-item.border-0 {
-      &:last-child {
-        margin-bottom: 0.5rem;
+      i + a {
+        margin-left: 0;
+      }
+
+      &.border-0 {
+        &:last-child {
+          margin-bottom: 0.5rem;
+        }
       }
     }
   }

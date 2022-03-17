@@ -968,63 +968,63 @@
   border: 1px solid var(--outline);
 }
 .card .card-header {
-  background-color: var(--bs-gray-400);
+  color: var(--on-surface);
+  background-color: var(--surface-variant);
   font-weight: 500;
   padding: 1rem 1.5rem 1rem 1.5rem;
 }
 .card .card-body {
   padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
-.card .card-title {
+.card .card-body .card-title {
+  color: var(--on-surface);
   margin-bottom: 1rem;
   font-weight: 500;
 }
-.card .card-text {
-  color: var(--bs-text-secondary);
-}
-.card .card-bg-gary {
-  background-color: var(--bs-gray-100);
+.card .card-body .card-text {
+  color: var(--on-surface-variant);
 }
 
 .text-card .card-body {
   padding: 1.5rem;
 }
-.text-card .card-title {
+.text-card .card-body .card-title {
   font-weight: 900;
   margin-bottom: 1rem;
 }
-.text-card .card-text {
-  color: #121212;
+.text-card .card-body .card-text {
   margin-bottom: 0;
 }
 
 .list-card .card-body {
+  background-color: var(--surface-1);
   padding: 1.5rem;
 }
-.list-card .card-title {
+.list-card .card-body .card-title {
   font-weight: 900;
   margin-bottom: 1rem;
 }
-.list-card .card-text {
-  color: #121212;
+.list-card .card-body .card-text {
   margin-bottom: 1rem;
 }
-.list-card .card-extra-link {
-  margin: 0 0.5rem;
-}
-.list-card .card-extra-link:first-child {
-  margin-left: 0;
-}
-.list-card .card-extra-link:last-child {
-  margin-right: 0;
+.list-card .list-group {
+  background-color: var(--surface);
 }
 .list-card .list-group .list-group-item {
+  background-color: var(--surface);
   padding: 0.75rem 1.5rem;
 }
-.list-card .list-group .list-group-item-subheader {
-  display: inline;
-  margin-left: 0.5rem;
-  color: #6b6b6b;
+.list-card .list-group .list-group-item a {
+  margin: 0 0.5rem;
+}
+.list-card .list-group .list-group-item a:first-child {
+  margin-left: 0;
+}
+.list-card .list-group .list-group-item a:last-child {
+  margin-right: 0;
+}
+.list-card .list-group .list-group-item i + a {
+  margin-left: 0;
 }
 .list-card .list-group .list-group-item.border-0:last-child {
   margin-bottom: 0.5rem;
@@ -1130,20 +1130,20 @@ a, .btn {
 }
 
 a {
-  color: var(--brand);
+  color: var(--information);
 }
 a:visited {
   color: var(--accent-strong);
 }
 a:hover {
-  color: var(--brand-strong);
+  color: var(--information-strong);
 }
 a:active {
-  color: var(--brand-strong);
+  color: var(--information-strong);
 }
 a:focus {
-  background-color: var(--accent);
-  color: var(--brand-strong);
+  background-color: var(--accent-smooth);
+  color: var(--information-strong);
 }
 
 .language-switch {
@@ -1165,10 +1165,6 @@ a:focus {
 
 .icon {
   margin-right: 0.5rem;
-}
-
-.display-inline {
-  display: inline;
 }
 
 .bg-custom {
@@ -1433,6 +1429,7 @@ a:focus {
   color: var(--surface-variant);
   background-color: var(--surface);
   border: 1px solid var(--outline);
+  box-shadow: none !important;
 }
 
 option {
@@ -1772,47 +1769,47 @@ optgroup {
 }
 
 .text-brand {
-  color: var(--brand);
+  color: var(--brand) !important;
 }
 
 .text-accent {
-  color: var(--accent);
+  color: var(--accent) !important;
 }
 
 .text-positive {
-  color: var(--positive);
+  color: var(--positive) !important;
 }
 
 .text-negative {
-  color: var(--negative);
+  color: var(--negative) !important;
 }
 
 .text-information {
-  color: var(--information);
+  color: var(--information) !important;
 }
 
 .text-warning {
-  color: var(--warning);
+  color: var(--warning) !important;
 }
 
 .text-primary {
-  color: var(--brand);
+  color: var(--brand) !important;
 }
 
 .text-secondary {
-  color: var(--accent);
+  color: var(--accent) !important;
 }
 
 .text-success {
-  color: var(--positive);
+  color: var(--positive) !important;
 }
 
 .text-danger {
-  color: var(--negative);
+  color: var(--negative) !important;
 }
 
 .text-info {
-  color: var(--information);
+  color: var(--information) !important;
 }
 
 /*# sourceMappingURL=pdis-design-system.css.map */

@@ -6,23 +6,23 @@ a, .btn {
 }
 
 a {
-  color: var(--brand);
+  color: var(--information);
 
   &:visited {
     color: var(--accent-strong);
   }
 
   &:hover {
-    color: var(--brand-strong);
+    color: var(--information-strong);
   }
 
   &:active {
-    color: var(--brand-strong);
+    color: var(--information-strong);
   }
 
   &:focus {
-    background-color: var(--accent);
-    color: var(--brand-strong);
+    background-color: var(--accent-smooth);
+    color: var(--information-strong);
   }
 }
 
@@ -47,10 +47,6 @@ a {
 
 .icon {
   margin-right: 0.5rem;
-}
-
-.display-inline {
-  display: inline;
 }
 
 .bg-custom {

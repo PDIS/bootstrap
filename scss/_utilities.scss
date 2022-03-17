@@ -11,6 +11,6 @@
 
 @each $key, $value in $color-envs {
   .text-#{$key} {
-    color: var(--#{$value});
+    color: var(--#{$value}) !important;
   }
 }
