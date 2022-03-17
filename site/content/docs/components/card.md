@@ -203,7 +203,7 @@ group: components
         <h5 class="card-title">
           標題文字            
           </h5>
-            <button class="btn text-primary icon-btn">
+            <button class="btn text-information icon-btn">
               <i class="bi bi-arrow-right"></i>
             </button></div>
         <p class="card-text">此部分為卡片之內文。</p>
@@ -227,10 +227,10 @@ group: components
       <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
       <div class="card-body">
         <div class="badge-collections">
-          <span class="badge bg-secondary">標籤</span>
-          <span class="badge bg-secondary">標籤</span>
-          <span class="badge bg-secondary">標籤</span>
-          <span class="badge bg-secondary">標籤</span>
+          <span class="badge bg-secondary-smooth">標籤</span>
+          <span class="badge bg-secondary-smooth">標籤</span>
+          <span class="badge bg-secondary-smooth">標籤</span>
+          <span class="badge bg-secondary-smooth">標籤</span>
         </div>
         <p class="card-text">110-10-31</p>
         <h5 class="card-title">標題文字</h5>
@@ -246,7 +246,7 @@ group: components
         <div class="d-flex justify-content-between">
           <p class="card-text">110-10-31</p>
           <div>
-            <span class="badge bg-secondary">標籤</span>
+            <span class="badge bg-secondary-smooth">標籤</span>
           </div>
         </div>
         <h5 class="card-title">標題文字</h5>
@@ -272,9 +272,9 @@ group: components
         <div class="d-flex justify-content-between">
           <p class="card-text">110-10-31</p>
           <div class="badge-collections">
-            <span class="badge bg-secondary">標籤</span>
-            <span class="badge bg-secondary">標籤</span>
-            <span class="badge bg-secondary">標籤</span>
+            <span class="badge bg-secondary-smooth">標籤</span>
+            <span class="badge bg-secondary-smooth">標籤</span>
+            <span class="badge bg-secondary-smooth">標籤</span>
           </div>
         </div>
         <h5 class="card-title">標題文字</h5>
@@ -293,7 +293,7 @@ group: components
         <h5 class="card-title">
           標題文字            
         </h5>
-        <button class="btn text-primary icon-btn">
+        <button class="btn text-information icon-btn">
           <i class="bi bi-arrow-right"></i>
         </button></div>
         <p class="card-text">此部分為卡片之內文。</p>
@@ -303,7 +303,7 @@ group: components
         <div class="d-flex justify-content-between">
           <p class="card-text">110-10-31</p>
           <div>
-            <span class="badge bg-secondary">標籤</span>
+            <span class="badge bg-secondary-smooth">標籤</span>
           </div>
         </div>
       </div>
@@ -357,8 +357,8 @@ group: components
             <div class="d-flex justify-content-between">
               <p class="card-text">110-10-31</p>
               <div>
-                <span class="badge bg-secondary">標籤</span>
-                <span class="badge bg-secondary">標籤</span>
+                <span class="badge bg-secondary-smooth">標籤</span>
+                <span class="badge bg-secondary-smooth">標籤</span>
               </div>
             </div>
             <h5 class="card-title">標題文字</h5>
@@ -384,16 +384,16 @@ group: components
               <h5 class="card-title">
                 標題文字            
               </h5>
-              <button class="btn text-primary icon-btn">
+              <button class="btn text-information icon-btn">
                 <i class="bi bi-arrow-right"></i>
               </button>
             </div>
             <p class="card-text">此部分為卡片之內文。</p>
             <div class="badge-collections">
-              <span class="badge bg-secondary">標籤</span>
-              <span class="badge bg-secondary">標籤</span>
-              <span class="badge bg-secondary">標籤</span>
-              <span class="badge bg-secondary">標籤</span>
+              <span class="badge bg-secondary-smooth">標籤</span>
+              <span class="badge bg-secondary-smooth">標籤</span>
+              <span class="badge bg-secondary-smooth">標籤</span>
+              <span class="badge bg-secondary-smooth">標籤</span>
             </div>
             <p class="card-text">110-10-31</p>
           </div>
@@ -413,7 +413,7 @@ group: components
 
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="card text-card border-dark bg-white">
+    <div class="card text-card">
       <div class="card-body">
         <h4 class="card-title">服務項目</h4>
         <p class="card-text">此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
@@ -424,9 +424,9 @@ group: components
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="card text-card border-dark text-white bg-brand-strong">
-      <div class="card-body">
-        <h4 class="card-title">服務項目</h4>
+    <div class="card text-card">
+      <div class="card-body text-white" style='background-image: url("/docs/5.1/assets/img/bg-text-card.png")'>
+        <h4 class="card-title text-white">服務項目</h4>
         <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
       </div>
     </div>
@@ -435,20 +435,9 @@ group: components
 <br/>
 <div class="row d-flex justify-content-center">
   <div class="col-6">
-    <div class="card text-card border-dark text-white card-bg-img">
-      <div class="card-body">
-        <h4 class="card-title">服務項目</h4>
-        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
-      </div>
-    </div>
-  </div>
-</div>
-<br/>
-<div class="row d-flex justify-content-center">
-  <div class="col-6">
-    <div class="card text-card border-dark">
+    <div class="card text-card">
       <div class="card-header">服務項目類別</div>
-      <div class="card-body text-black">
+      <div class="card-body">
         <h4 class="card-title">服務項目</h4>
         <p class="card-text">此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
       </div>
@@ -456,6 +445,144 @@ group: components
   </div>
 </div>
 
+{{< /example >}}
+
+#### 純色文字卡 Masonry card
+{{< example >}}
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-brand text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Brand Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-accent text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Accent Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-positive text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Positive Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-negative text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Negative Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-information text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Information Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-warning text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Warning Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{< /example >}}
+
+#### 淡色文字卡 Masonry card
+{{< example >}}
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-brand-container text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Brand Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-accent-container text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Accent Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-positive-container text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Positive Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-negative-container text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Negative Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-information-container text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Information Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-6">
+    <div class="card bg-warning-container text-card border-dark">
+      <div class="card-body">
+        <h4 class="card-title">Warning Card</h4>
+        <p>此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明，此部分為服務項目之說明。</p>
+      </div>
+    </div>
+  </div>
+</div>
 {{< /example >}}
 
 #### 卡片加列表 Card with list group
@@ -476,10 +603,10 @@ group: components
         <a href="#" class="btn btn-primary">按鈕</a>
       </div>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
       </ul>
     </div>
   </div>
@@ -494,10 +621,10 @@ group: components
         <a href="#" class="btn btn-primary">按鈕</a>
       </div>
       <ul class="list-group border-0">
-        <li class="list-group-item border-0"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item border-0"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item border-0"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item border-0"><i class="bi bi-award text-primary icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item border-0"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item border-0"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item border-0"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item border-0"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
       </ul>
     </div>
   </div>
@@ -518,7 +645,7 @@ group: components
         <li class="list-group-item">列表</li>
         <li class="list-group-item">列表</li>
         <li class="list-group-item">列表</li>
-        <li class="list-group-item"><a href="#" class="card-extra-link">額外連結</a><a href="#" class="card-extra-link">額外連結</a><a href="#" class="card-extra-link">額外連結</a></li>
+        <li class="list-group-item"><a href="#">額外連結</a><a href="#">額外連結</a><a href="#">額外連結</a></li>
       </ul>
     </div>
   </div>
@@ -534,11 +661,11 @@ group: components
         <a href="#" class="btn btn-primary">按鈕</a>
       </div>
       <ul class="list-group border-0">
-        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
-        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
-        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
-        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="display-inline">列表</p></li>
-        <li class="list-group-item border-0"><a href="#" class="card-extra-link">額外連結</a><a href="#" class="card-extra-link">額外連結</a><a href="#" class="card-extra-link">額外連結</a></li>
+        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="d-inline">列表</p></li>
+        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="d-inline">列表</p></li>
+        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="d-inline">列表</p></li>
+        <li class="list-group-item border-0"><i class="bi bi-award icon"></i><p class="d-inline">列表</p></li>
+        <li class="list-group-item border-0"><a href="#">額外連結</a><a href="#">額外連結</a><a href="#">額外連結</a></li>
       </ul>
     </div>
   </div>

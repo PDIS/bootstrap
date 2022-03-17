@@ -1,0 +1,37 @@
+.form-select {
+  color: var(--on-surface);
+  background-color: var(--surface);
+  border: 1px solid var(--outline);
+
+  
+  &:hover {
+    background-color: var(--surface-1);
+    border: 1px solid var(--outline);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--surface-1);
+    border: 1px solid var(--outline);
+    box-shadow: 0 0 0 2px var(--brand-smooth-strong);
+  }
+
+  &:disabled {
+    color: var(--surface-variant);
+    background-color: var(--surface);
+    border: 1px solid var(--outline);
+    box-shadow: none !important;
+  }
+}
+
+option {
+  background: var(--surface);
+  color: var(--on-surface) !important;
+}
+
+optgroup {
+  background: var(--surface);
+  color: var(--on-surface-variant) !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+}

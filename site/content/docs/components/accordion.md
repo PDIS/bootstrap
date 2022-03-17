@@ -39,7 +39,7 @@ toc: true
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         有參加農保，以後可以領老農津貼嗎？要怎麼申請？每個月可以領多少錢？
       </button>
     </h2>
@@ -60,7 +60,7 @@ toc: true
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         請領要件
       </button>
     </h2>
@@ -71,7 +71,7 @@ toc: true
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         Household Registration Act 戶籍法英譯本
       </button>
     </h2>
@@ -82,7 +82,7 @@ toc: true
   </div>
    <div class="accordion-item">
     <h2 class="accordion-header" id="headingFour">
-      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
         戶籍法施行細則（104.07.10 修正）
       </button>
     </h2>
@@ -96,7 +96,7 @@ toc: true
 <div class="accordion" id="accordionExample2">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne2">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+      <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
         有參加農保，以後可以領老農津貼嗎？要怎麼申請？每個月可以領多少錢？
       </button>
     </h2>
@@ -117,7 +117,7 @@ toc: true
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo2">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+      <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
         請領要件
       </button>
     </h2>
@@ -128,7 +128,7 @@ toc: true
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree2">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+      <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
         Household Registration Act 戶籍法英譯本
       </button>
     </h2>
@@ -139,7 +139,7 @@ toc: true
   </div>
    <div class="accordion-item">
     <h2 class="accordion-header" id="headingFour2">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
+      <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
         戶籍法施行細則（104.07.10 修正）
       </button>
     </h2>
@@ -161,7 +161,7 @@ toc: true
 <div class="accordion" id="accordionExample3">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne3">
-      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+      <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
         有參加農保，以後可以領老農津貼嗎？要怎麼申請？每個月可以領多少錢？
       </button>
     </h2>
@@ -182,32 +182,32 @@ toc: true
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo3">
-      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
+      <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
         請領要件
       </button>
     </h2>
     <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3" data-bs-parent="#accordionExample3">
-      <div class="accordion" id="accordionSecondLayer">
+      <div class="accordion second-layer" id="accordionSecondLayer">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSecondLayerOne">
-            <button class="accordion-button-base-second-layer collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerOne" aria-expanded="true" aria-controls="collapseSecondLayerOne">
+            <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerOne" aria-expanded="true" aria-controls="collapseSecondLayerOne">
               勞保生育給付
             </button>
           </h2>
           <div id="collapseSecondLayerOne" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerOne" data-bs-parent="#accordionSecondLayer">
-            <div class="accordion-body-second-layer">
+            <div class="accordion-body">
               <p>按被保險人分娩或 ...</p>
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSecondLayerTwo">
-            <button class="accordion-button-base-second-layer collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerTwo" aria-expanded="true" aria-controls="collapseSecondLayerTwo">
+            <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerTwo" aria-expanded="true" aria-controls="collapseSecondLayerTwo">
               國保生育給付
             </button>
           </h2>
           <div id="collapseSecondLayerTwo" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerTwo" data-bs-parent="#accordionSecondLayer">
-            <div class="accordion-body-second-layer">
+            <div class="accordion-body">
               <p>按被保險人分娩或 ...</p>
             </div>
           </div>
@@ -217,7 +217,7 @@ toc: true
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree3">
-      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+      <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
         Household Registration Act 戶籍法英譯本
       </button>
     </h2>
@@ -228,7 +228,7 @@ toc: true
   </div>
    <div class="accordion-item">
     <h2 class="accordion-header" id="headingFour3">
-      <button class="accordion-button-base collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour3" aria-expanded="false" aria-controls="collapseFour3">
+      <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour3" aria-expanded="false" aria-controls="collapseFour3">
         戶籍法施行細則（104.07.10 修正）
       </button>
     </h2>
@@ -268,27 +268,27 @@ toc: true
       </button>
     </h2>
     <div id="collapseTwo4" class="accordion-collapse collapse" aria-labelledby="headingTwo4" data-bs-parent="#accordionExample4">
-      <div class="accordion" id="accordionSecondLayer2">
+      <div class="accordion second-layer" id="accordionSecondLayer2">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSecondLayerOne2">
-            <button class="accordion-button-second-layer collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerOne2" aria-expanded="true" aria-controls="collapseSecondLayerOne2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerOne2" aria-expanded="true" aria-controls="collapseSecondLayerOne2">
               勞保生育給付
             </button>
           </h2>
           <div id="collapseSecondLayerOne2" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerOne2" data-bs-parent="#accordionSecondLayer2">
-            <div class="accordion-body-second-layer">
+            <div class="accordion-body">
               <p>按被保險人分娩或 ...</p>
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSecondLayerTwo2">
-            <button class="accordion-button-second-layer collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerTwo2" aria-expanded="true" aria-controls="collapseSecondLayerTwo2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerTwo2" aria-expanded="true" aria-controls="collapseSecondLayerTwo2">
               國保生育給付
             </button>
           </h2>
           <div id="collapseSecondLayerTwo2" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerTw2o" data-bs-parent="#accordionSecondLayer2">
-            <div class="accordion-body-second-layer">
+            <div class="accordion-body">
               <p>按被保險人分娩或 ...</p>
             </div>
           </div>
