@@ -39,11 +39,11 @@
   --warning-smooth-strong: #ffb593;
   --on-warning-smooth: #360f00;
   --surface: #FAFDF9;
-  --surface-1: linear-gradient(0deg, rgba(44, 90, 180, 0.05), rgba(44, 90, 180, 0.05)), #FAFDF9;
-  --surface-2: linear-gradient(0deg, rgba(44, 90, 180, 0.08), rgba(44, 90, 180, 0.08)), #FAFDF9;
-  --surface-3: linear-gradient(0deg, rgba(44, 90, 180, 0.11), rgba(44, 90, 180, 0.11)), #FAFDF9;
-  --surface-4: linear-gradient(0deg, rgba(44, 90, 180, 0.12), rgba(44, 90, 180, 0.12)), #FAFDF9;
-  --surface-5: linear-gradient(0deg, rgba(44, 90, 180, 0.14), rgba(44, 90, 180, 0.14)), #FAFDF9;
+  --surface-1: #F0F5F6;
+  --surface-2: #EAF0F3;
+  --surface-3: #E3EBF1;
+  --surface-4: #E1E9F1;
+  --surface-5: #DDE6EF;
   --on-surface: #191C1B;
   --surface-variant: #E2E2EC;
   --on-surface-variant: #44464E;
@@ -1417,34 +1417,22 @@ a:focus {
 
 .form-select {
   color: var(--on-surface);
-  background: var(--surface);
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-size: 16px 12px;
+  background-color: var(--surface);
   border: 1px solid var(--outline);
 }
 .form-select:hover {
-  background: var(--surface-1);
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-size: 16px 12px;
+  background-color: var(--surface-1);
   border: 1px solid var(--outline);
 }
 .form-select:active, .form-select:focus {
-  background: var(--surface-1);
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-size: 16px 12px;
+  background-color: var(--surface-1);
   border: 1px solid var(--outline);
   box-shadow: 0 0 0 2px var(--brand-smooth-strong);
 }
 .form-select:disabled {
-  color: var(--bs-text-secondary);
-  background-color: var(--bs-gray-100);
-  border: 1px solid #CED4DA;
+  color: var(--surface-variant);
+  background-color: var(--surface);
+  border: 1px solid var(--outline);
 }
 
 option {
