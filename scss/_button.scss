@@ -13,7 +13,7 @@
 
     &:focus, &:active {
       background-color: var(--#{$value}-strong);
-      border-color: var(--accent);
+      border-color: var(--#{$value}-strong);
       color: var(--on-#{$value});
       //text-decoration: underline;
       box-shadow: 0 0 0 2px var(--#{$value}-smooth);
@@ -86,12 +86,16 @@
   border-color: var(--outline);
 
   &:hover {
+    color: var(--on-brand-smooth);
     background: var(--surface-1);
+    border-color: var(--outline);
   }
 
   &:focus, &:active {
-    box-shadow: 0 0 0 2px var(--brand-smooth);
+    color: var(--on-brand-smooth);
+    box-shadow: 0 0 0 2px var(--brand-smooth) !important;
     background: var(--surface-1);
+    border-color: var(--outline);
   }
 
   &:disabled {
@@ -104,6 +108,8 @@
   color: var(--on-brand-smooth);
 
   &:focus, &:active {
+    background: none;
+    color: var(--on-brand-smooth);
     box-shadow: 0 0 0 2px var(--brand-smooth);
   }
 
