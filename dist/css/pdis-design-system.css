@@ -183,11 +183,9 @@
   background-color: var(--brand-strong);
   border-color: var(--brand-strong);
   color: var(--on-brand);
-  box-shadow: 0 0 0 2px var(--brand-smooth);
+  box-shadow: 0 0 0 2px var(--brand-smooth) !important;
 }
 .btn-brand:disabled {
-  background-color: var(--bs-gray-200);
-  border-color: var(--bs-gray-200);
   color: var(--outline);
 }
 
@@ -252,11 +250,9 @@
   background-color: var(--accent-strong);
   border-color: var(--accent-strong);
   color: var(--on-accent);
-  box-shadow: 0 0 0 2px var(--accent-smooth);
+  box-shadow: 0 0 0 2px var(--accent-smooth) !important;
 }
 .btn-accent:disabled {
-  background-color: var(--bs-gray-200);
-  border-color: var(--bs-gray-200);
   color: var(--outline);
 }
 
@@ -321,11 +317,9 @@
   background-color: var(--positive-strong);
   border-color: var(--positive-strong);
   color: var(--on-positive);
-  box-shadow: 0 0 0 2px var(--positive-smooth);
+  box-shadow: 0 0 0 2px var(--positive-smooth) !important;
 }
 .btn-positive:disabled {
-  background-color: var(--bs-gray-200);
-  border-color: var(--bs-gray-200);
   color: var(--outline);
 }
 
@@ -390,11 +384,9 @@
   background-color: var(--negative-strong);
   border-color: var(--negative-strong);
   color: var(--on-negative);
-  box-shadow: 0 0 0 2px var(--negative-smooth);
+  box-shadow: 0 0 0 2px var(--negative-smooth) !important;
 }
 .btn-negative:disabled {
-  background-color: var(--bs-gray-200);
-  border-color: var(--bs-gray-200);
   color: var(--outline);
 }
 
@@ -459,11 +451,9 @@
   background-color: var(--information-strong);
   border-color: var(--information-strong);
   color: var(--on-information);
-  box-shadow: 0 0 0 2px var(--information-smooth);
+  box-shadow: 0 0 0 2px var(--information-smooth) !important;
 }
 .btn-information:disabled {
-  background-color: var(--bs-gray-200);
-  border-color: var(--bs-gray-200);
   color: var(--outline);
 }
 
@@ -528,11 +518,9 @@
   background-color: var(--warning-strong);
   border-color: var(--warning-strong);
   color: var(--on-warning);
-  box-shadow: 0 0 0 2px var(--warning-smooth);
+  box-shadow: 0 0 0 2px var(--warning-smooth) !important;
 }
 .btn-warning:disabled {
-  background-color: var(--bs-gray-200);
-  border-color: var(--bs-gray-200);
   color: var(--outline);
 }
 
@@ -597,11 +585,9 @@
   background-color: var(--brand-strong);
   border-color: var(--brand-strong);
   color: var(--on-brand);
-  box-shadow: 0 0 0 2px var(--brand-smooth);
+  box-shadow: 0 0 0 2px var(--brand-smooth) !important;
 }
 .btn-primary:disabled {
-  background-color: var(--bs-gray-200);
-  border-color: var(--bs-gray-200);
   color: var(--outline);
 }
 
@@ -666,11 +652,9 @@
   background-color: var(--accent-strong);
   border-color: var(--accent-strong);
   color: var(--on-accent);
-  box-shadow: 0 0 0 2px var(--accent-smooth);
+  box-shadow: 0 0 0 2px var(--accent-smooth) !important;
 }
 .btn-secondary:disabled {
-  background-color: var(--bs-gray-200);
-  border-color: var(--bs-gray-200);
   color: var(--outline);
 }
 
@@ -735,11 +719,9 @@
   background-color: var(--positive-strong);
   border-color: var(--positive-strong);
   color: var(--on-positive);
-  box-shadow: 0 0 0 2px var(--positive-smooth);
+  box-shadow: 0 0 0 2px var(--positive-smooth) !important;
 }
 .btn-success:disabled {
-  background-color: var(--bs-gray-200);
-  border-color: var(--bs-gray-200);
   color: var(--outline);
 }
 
@@ -804,11 +786,9 @@
   background-color: var(--negative-strong);
   border-color: var(--negative-strong);
   color: var(--on-negative);
-  box-shadow: 0 0 0 2px var(--negative-smooth);
+  box-shadow: 0 0 0 2px var(--negative-smooth) !important;
 }
 .btn-danger:disabled {
-  background-color: var(--bs-gray-200);
-  border-color: var(--bs-gray-200);
   color: var(--outline);
 }
 
@@ -873,11 +853,9 @@
   background-color: var(--information-strong);
   border-color: var(--information-strong);
   color: var(--on-information);
-  box-shadow: 0 0 0 2px var(--information-smooth);
+  box-shadow: 0 0 0 2px var(--information-smooth) !important;
 }
 .btn-info:disabled {
-  background-color: var(--bs-gray-200);
-  border-color: var(--bs-gray-200);
   color: var(--outline);
 }
 
