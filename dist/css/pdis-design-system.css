@@ -1123,6 +1123,12 @@ footer .social-container {
   border: 1px solid var(--surface-variant);
 }
 
+.input-group .input-group-text {
+  color: var(--bs-white);
+  background-color: var(--brand);
+  border: 1px solid var(--outline);
+}
+
 a, .btn {
   text-underline-offset: 0.1em;
 }
@@ -1230,6 +1236,9 @@ a:focus {
 }
 
 /* END PDIS's local docs style */
+.navbar {
+  background-color: var(--surface);
+}
 @media (max-width: 768px) {
   .navbar {
     padding-top: 0;
@@ -1250,17 +1259,8 @@ a:focus {
   }
 }
 
-.navbar-nav .nav-link {
-  color: var(--bs-primary) !important;
-}
-
 .navbar-toggler {
-  background: var(--bs-primary) !important;
-  color: white !important;
   border-radius: 0;
-}
-.navbar-toggler:active, .navbar-toggler:focus {
-  background: var(--bs-primary-dark) !important;
 }
 .navbar-toggler:active .navbar-toggler-icon, .navbar-toggler:focus .navbar-toggler-icon {
   background-image: none;

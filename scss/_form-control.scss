@@ -14,3 +14,11 @@
     border: 1px solid var(--surface-variant);
   }
 }
+
+.input-group {
+  .input-group-text {
+    color: var(--bs-white);
+    background-color: var(--brand);
+    border: 1px solid var(--outline);
+  }
+}
