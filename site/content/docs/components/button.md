@@ -37,8 +37,11 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-brand">圓角按鈕</button>
-    <button type="button" class="btn rounded-0 btn-brand">方角按鈕</button>
+    <button type="button" class="btn btn-primary">圓角按鈕</button>
+    <button type="button" class="btn rounded-0 btn-primary">方角按鈕</button>
+    <button type="button" class="btn btn-secondary">圓角按鈕</button>
+    <button type="button" class="btn btn-semi-secondary">圓角按鈕</button>
+    <button type="button" class="btn btn-tertiary">圓角按鈕</button>
   </div>
 </div>
 {{< /example >}}
@@ -50,9 +53,9 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-brand btn-sm">預設按鈕 小</button>
-    <button type="button" class="btn btn-brand">預設按鈕 預設</button>
-    <button type="button" class="btn btn-brand btn-lg">預設按鈕 大</button>
+    <button type="button" class="btn btn-primary btn-sm">預設按鈕 小</button>
+    <button type="button" class="btn btn-primary">預設按鈕 預設</button>
+    <button type="button" class="btn btn-primary btn-lg">預設按鈕 大</button>
   </div>
 </div>
 {{< /example >}}
@@ -64,7 +67,7 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-brand">主色按鈕</button>
+    <button type="button" class="btn btn-primary">主色按鈕</button>
     <button type="button" class="btn btn-positive">正面按鈕</button>
     <button type="button" class="btn btn-negative">負面按鈕</button>
   </div>
@@ -78,7 +81,7 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-brand-smooth">主色按鈕</button>
+    <button type="button" class="btn btn-primary-smooth">主色按鈕</button>
     <button type="button" class="btn btn-positive-smooth">正面按鈕</button>
     <button type="button" class="btn btn-negative-smooth">負面按鈕</button>
   </div>
@@ -109,8 +112,8 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-brand">圖標在右<i class="bi bi-arrow-counterclockwise"></i></button>
-    <button type="button" class="btn btn-brand"><i class="bi bi-arrow-counterclockwise"></i>圖標在左</button>
+    <button type="button" class="btn btn-primary">圖標在右<i class="bi bi-arrow-counterclockwise"></i></button>
+    <button type="button" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i>圖標在左</button>
   </div>
 </div>
 {{< /example >}}
