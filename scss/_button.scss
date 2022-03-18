@@ -21,7 +21,7 @@
         border-color: var(--#{$value}-strong);
         color: var(--on-#{$value});
         //text-decoration: underline;
-        box-shadow: 0 0 0 2px var(--#{$value}-smooth) !important;
+        box-shadow: 0 0 0 2px var(--#{$value}-flat) !important;
       }
   
       &:disabled {
@@ -45,7 +45,7 @@
         color: var(--#{$value}-strong);
         border-color: var(--#{$value}-strong);
         text-decoration: underline;
-        box-shadow: 0 0 0 2px var(--#{$value}-smooth);
+        box-shadow: 0 0 0 2px var(--#{$value}-flat);
         background: none;
       }
   
@@ -55,22 +55,22 @@
       }
     }
   
-    .btn-#{$key}-smooth {
-      background-color: var(--#{$value}-smooth);
-      border-color: var(--#{$value}-smooth);
-      color: var(--on-#{$value}-smooth);
+    .btn-#{$key}-flat {
+      background-color: var(--#{$value}-flat);
+      border-color: var(--#{$value}-flat);
+      color: var(--on-#{$value}-flat);
   
       &:hover {
-        background-color: var(--#{$value}-smooth-strong);
-        border-color: var(--on-#{$value}-smooth);
-        color: var(--on-#{$value}-smooth);
+        background-color: var(--#{$value}-flat-strong);
+        border-color: var(--on-#{$value}-flat);
+        color: var(--on-#{$value}-flat);
         text-decoration: underline;
       }
   
       &:focus, &:active {
-        color: var(--on-#{$value}-smooth);
-        background-color: var(--#{$value}-smooth-strong);
-        border-color: var(--on-#{$value}-smooth);
+        color: var(--on-#{$value}-flat);
+        background-color: var(--#{$value}-flat-strong);
+        border-color: var(--on-#{$value}-flat);
         text-decoration: underline;
         box-shadow: none !important;
       }
@@ -84,21 +84,21 @@
   }
   
   &.btn-secondary {
-    background: var(--brand-smooth);
-    color: var(--on-brand-smooth);
+    background: var(--brand-flat);
+    color: var(--on-brand-flat);
     border: none;
 
     &:hover {
-      color: var(--on-brand-smooth);
-      background: var(--brand-smooth-strong);
+      color: var(--on-brand-flat);
+      background: var(--brand-flat-strong);
       border: none;
     }
   
     &:focus, &:active {
-      color: var(--on-brand-smooth);
-      background: var(--brand-smooth-strong);
+      color: var(--on-brand-flat);
+      background: var(--brand-flat-strong);
       border: none;
-      box-shadow: 0 0 0 2px var(--brand-smooth) !important;
+      box-shadow: 0 0 0 2px var(--brand-flat) !important;
     }
   
     &:disabled {
@@ -109,19 +109,19 @@
   
   
   &.btn-semi-secondary {
-    color: var(--on-brand-smooth);
+    color: var(--on-brand-flat);
     background-color: var(--surface);
     border-color: var(--outline);
   
     &:hover {
-      color: var(--on-brand-smooth);
+      color: var(--on-brand-flat);
       background: var(--surface-1);
       border-color: var(--outline);
     }
   
     &:focus, &:active {
-      color: var(--on-brand-smooth);
-      box-shadow: 0 0 0 2px var(--brand-smooth-strong) !important;
+      color: var(--on-brand-flat);
+      box-shadow: 0 0 0 2px var(--brand-flat-strong) !important;
       background: var(--surface-1);
       border-color: var(--outline);
     }
@@ -135,17 +135,17 @@
   
   &.btn-tertiary {
     background: none;
-    color: var(--on-brand-smooth);
+    color: var(--on-brand-flat);
   
     &:hover {
       background-color: var(--surface);
-      color: var(--on-brand-smooth);
+      color: var(--on-brand-flat);
     }
   
     &:focus, &:active {
       background-color: var(--surface);
-      color: var(--on-brand-smooth);
-      box-shadow: 0 0 0 2px var(--brand-smooth);
+      color: var(--on-brand-flat);
+      box-shadow: 0 0 0 2px var(--brand-flat);
     }
   
     &:disabled {
@@ -179,7 +179,7 @@
     &:last-child {
       margin-right: 0;
     }
-    
+
   }
 }
 

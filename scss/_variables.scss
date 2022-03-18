@@ -1,44 +1,44 @@
 $brand: #2c5ab4;
 $brand-strong: #03429c;
 $on-brand: #ffffff;
-$brand-smooth: #d8e2ff;
-$brand-smooth-strong: #afc6ff;
-$on-brand-smooth: #001847;
+$brand-flat: #d8e2ff;
+$brand-flat-strong: #afc6ff;
+$on-brand-flat: #001847;
 
 $accent: #705d00;
 $accent-strong: #554600;
 $on-accent: #ffffff;
-$accent-smooth: #ffe25b;
-$accent-smooth-strong: #e7c400;
-$on-accent-smooth: #221b00;
+$accent-flat: #ffe25b;
+$accent-flat-strong: #e7c400;
+$on-accent-flat: #221b00;
 
 $positive: #286b2a;
 $positive-strong: #085314;
 $on-positive: #ffffff;
-$positive-smooth: #acf5a3;
-$positive-smooth-strong: #90d889;
-$on-positive-smooth: #012104;
+$positive-flat: #acf5a3;
+$positive-flat-strong: #90d889;
+$on-positive-flat: #012104;
 
 $negative: #ba1b1b;
 $negative-strong: #930006;
 $on-negative: #ffffff;
-$negative-smooth: #ffdad4;
-$negative-smooth-strong: #ffb4a9;
-$on-negative-smooth: #410001;
+$negative-flat: #ffdad4;
+$negative-flat-strong: #ffb4a9;
+$on-negative-flat: #410001;
 
 $information: #006687;
 $information-strong: #004d67;
 $on-information: #ffffff;
-$information-smooth: #bee8ff;
-$information-smooth-strong: #6bd2ff;
-$on-information-smooth: #001e2b;
+$information-flat: #bee8ff;
+$information-flat-strong: #6bd2ff;
+$on-information-flat: #001e2b;
 
 $warning: #a53d00;
 $warning-strong: #7d2c00;
 $on-warning: #ffffff;
-$warning-smooth: #ffdbcb;
-$warning-smooth-strong: #ffb593;
-$on-warning-smooth: #360f00;
+$warning-flat: #ffdbcb;
+$warning-flat-strong: #ffb593;
+$on-warning-flat: #360f00;
 
 $background: #FAFDF9;
 $on-background: #191C1B;
@@ -86,10 +86,10 @@ $colors: (
       "strong": $brand-strong,
       "on": $on-brand,
     ),
-    "smooth": (
-      "normal": $brand-smooth,
-      "strong": $brand-smooth-strong,
-      "on": $on-brand-smooth,
+    "flat": (
+      "normal": $brand-flat,
+      "strong": $brand-flat-strong,
+      "on": $on-brand-flat,
     ),
   ),
   "accent": (
@@ -98,10 +98,10 @@ $colors: (
       "strong": $accent-strong,
       "on": $on-accent,
     ),
-    "smooth": (
-      "normal": $accent-smooth,
-      "strong": $accent-smooth-strong,
-      "on": $on-accent-smooth,
+    "flat": (
+      "normal": $accent-flat,
+      "strong": $accent-flat-strong,
+      "on": $on-accent-flat,
     ),
   ),
   "positive": (
@@ -110,10 +110,10 @@ $colors: (
       "strong": $positive-strong,
       "on": $on-positive,
     ),
-    "smooth": (
-      "normal": $positive-smooth,
-      "strong": $positive-smooth-strong,
-      "on": $on-positive-smooth,
+    "flat": (
+      "normal": $positive-flat,
+      "strong": $positive-flat-strong,
+      "on": $on-positive-flat,
     ),
   ),
   "negative": (
@@ -122,10 +122,10 @@ $colors: (
       "strong": $negative-strong,
       "on": $on-negative,
     ),
-    "smooth": (
-      "normal": $negative-smooth,
-      "strong": $negative-smooth-strong,
-      "on": $on-negative-smooth,
+    "flat": (
+      "normal": $negative-flat,
+      "strong": $negative-flat-strong,
+      "on": $on-negative-flat,
     ),
   ),
   "information": (
@@ -134,10 +134,10 @@ $colors: (
       "strong": $information-strong,
       "on": $on-information,
     ),
-    "smooth": (
-      "normal": $information-smooth,
-      "strong": $information-smooth-strong,
-      "on": $on-information-smooth,
+    "flat": (
+      "normal": $information-flat,
+      "strong": $information-flat-strong,
+      "on": $on-information-flat,
     ),
   ),
   "warning": (
@@ -146,10 +146,10 @@ $colors: (
       "strong": $warning-strong,
       "on": $on-warning,
     ),
-    "smooth": (
-      "normal": $warning-smooth,
-      "strong": $warning-smooth-strong,
-      "on": $on-warning-smooth,
+    "flat": (
+      "normal": $warning-flat,
+      "strong": $warning-flat-strong,
+      "on": $on-warning-flat,
     ),
   ),
 );

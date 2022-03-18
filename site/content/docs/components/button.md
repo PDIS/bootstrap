@@ -83,9 +83,9 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-primary-smooth">主色按鈕</button>
-    <button type="button" class="btn btn-positive-smooth">正面按鈕</button>
-    <button type="button" class="btn btn-negative-smooth">負面按鈕</button>
+    <button type="button" class="btn btn-primary-flat">主色按鈕</button>
+    <button type="button" class="btn btn-positive-flat">正面按鈕</button>
+    <button type="button" class="btn btn-negative-flat">負面按鈕</button>
   </div>
 </div>
 {{< /example >}}

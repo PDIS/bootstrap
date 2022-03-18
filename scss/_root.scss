@@ -3,9 +3,9 @@
     --#{$name}: #{map.get($items, "base", "normal")};
     --#{$name}-strong: #{map.get($items, "base", "strong")};
     --on-#{$name}: #{map.get($items, "base", "on")};
-    --#{$name}-smooth: #{map.get($items, "smooth", "normal")};
-    --#{$name}-smooth-strong: #{map.get($items, "smooth", "strong")};
-    --on-#{$name}-smooth: #{map.get($items, "smooth", "on")};
+    --#{$name}-flat: #{map.get($items, "flat", "normal")};
+    --#{$name}-flat-strong: #{map.get($items, "flat", "strong")};
+    --on-#{$name}-flat: #{map.get($items, "flat", "on")};
   }
 
   @each $name, $attr in $surfaces {
