@@ -173,6 +173,7 @@
   background-color: var(--brand);
   border-color: var(--brand);
   color: var(--on-brand);
+  border-radius: 10px;
 }
 .btn-brand:hover {
   background-color: var(--brand-strong);
@@ -240,6 +241,7 @@
   background-color: var(--accent);
   border-color: var(--accent);
   color: var(--on-accent);
+  border-radius: 10px;
 }
 .btn-accent:hover {
   background-color: var(--accent-strong);
@@ -307,6 +309,7 @@
   background-color: var(--positive);
   border-color: var(--positive);
   color: var(--on-positive);
+  border-radius: 10px;
 }
 .btn-positive:hover {
   background-color: var(--positive-strong);
@@ -374,6 +377,7 @@
   background-color: var(--negative);
   border-color: var(--negative);
   color: var(--on-negative);
+  border-radius: 10px;
 }
 .btn-negative:hover {
   background-color: var(--negative-strong);
@@ -441,6 +445,7 @@
   background-color: var(--information);
   border-color: var(--information);
   color: var(--on-information);
+  border-radius: 10px;
 }
 .btn-information:hover {
   background-color: var(--information-strong);
@@ -508,6 +513,7 @@
   background-color: var(--warning);
   border-color: var(--warning);
   color: var(--on-warning);
+  border-radius: 10px;
 }
 .btn-warning:hover {
   background-color: var(--warning-strong);
@@ -575,6 +581,7 @@
   background-color: var(--brand);
   border-color: var(--brand);
   color: var(--on-brand);
+  border-radius: 10px;
 }
 .btn-primary:hover {
   background-color: var(--brand-strong);
@@ -642,6 +649,7 @@
   background-color: var(--accent);
   border-color: var(--accent);
   color: var(--on-accent);
+  border-radius: 10px;
 }
 .btn-secondary:hover {
   background-color: var(--accent-strong);
@@ -709,6 +717,7 @@
   background-color: var(--positive);
   border-color: var(--positive);
   color: var(--on-positive);
+  border-radius: 10px;
 }
 .btn-success:hover {
   background-color: var(--positive-strong);
@@ -776,6 +785,7 @@
   background-color: var(--negative);
   border-color: var(--negative);
   color: var(--on-negative);
+  border-radius: 10px;
 }
 .btn-danger:hover {
   background-color: var(--negative-strong);
@@ -843,6 +853,7 @@
   background-color: var(--information);
   border-color: var(--information);
   color: var(--on-information);
+  border-radius: 10px;
 }
 .btn-info:hover {
   background-color: var(--information-strong);
@@ -907,36 +918,66 @@
 }
 
 .btn-secondary {
-  background: none;
+  background: var(--brand-smooth);
   color: var(--on-brand-smooth);
-  border-color: var(--outline);
+  border: none;
+  border-radius: 10px;
 }
 .btn-secondary:hover {
   color: var(--on-brand-smooth);
-  background: var(--surface-1);
-  border-color: var(--outline);
+  background: var(--brand-smooth-strong);
+  border: none;
 }
 .btn-secondary:focus, .btn-secondary:active {
   color: var(--on-brand-smooth);
+  background: var(--brand-smooth-strong);
+  border: none;
   box-shadow: 0 0 0 2px var(--brand-smooth) !important;
-  background: var(--surface-1);
-  border-color: var(--outline);
 }
 .btn-secondary:disabled {
   color: var(--outline);
+  background-color: var(--surface);
+}
+
+.btn-semi-secondary {
+  color: var(--on-brand-smooth);
+  background-color: var(--surface);
+  border-color: var(--outline);
+  border-radius: 10px;
+}
+.btn-semi-secondary:hover {
+  color: var(--on-brand-smooth);
+  background: var(--surface-1);
+  border-color: var(--outline);
+}
+.btn-semi-secondary:focus, .btn-semi-secondary:active {
+  color: var(--on-brand-smooth);
+  box-shadow: 0 0 0 2px var(--brand-smooth-strong) !important;
+  background: var(--surface-1);
+  border-color: var(--outline);
+}
+.btn-semi-secondary:disabled {
+  color: var(--outline);
+  background-color: var(--surface);
+  border: 0;
 }
 
 .btn-tertiary {
   background: none;
   color: var(--on-brand-smooth);
 }
+.btn-tertiary:hover {
+  background-color: var(--surface);
+  color: var(--on-brand-smooth);
+}
 .btn-tertiary:focus, .btn-tertiary:active {
-  background: none;
+  background-color: var(--surface);
   color: var(--on-brand-smooth);
   box-shadow: 0 0 0 2px var(--brand-smooth);
 }
 .btn-tertiary:disabled {
   color: var(--outline);
+  background-color: var(--surface);
 }
 
 .btn-link {
@@ -1236,9 +1277,6 @@ a:focus {
 }
 
 /* END PDIS's local docs style */
-.navbar {
-  background-color: var(--surface);
-}
 @media (max-width: 768px) {
   .navbar {
     padding-top: 0;
@@ -1259,8 +1297,17 @@ a:focus {
   }
 }
 
+.navbar-nav .nav-link {
+  color: var(--bs-primary) !important;
+}
+
 .navbar-toggler {
+  background: var(--bs-primary) !important;
+  color: white !important;
   border-radius: 0;
+}
+.navbar-toggler:active, .navbar-toggler:focus {
+  background: var(--bs-primary-dark) !important;
 }
 .navbar-toggler:active .navbar-toggler-icon, .navbar-toggler:focus .navbar-toggler-icon {
   background-image: none;
