@@ -5,39 +5,39 @@
   --brand: #2c5ab4;
   --brand-strong: #03429c;
   --on-brand: #ffffff;
-  --brand-smooth: #d8e2ff;
-  --brand-smooth-strong: #afc6ff;
-  --on-brand-smooth: #001847;
+  --brand-flat: #d8e2ff;
+  --brand-flat-strong: #afc6ff;
+  --on-brand-flat: #001847;
   --accent: #705d00;
   --accent-strong: #554600;
   --on-accent: #ffffff;
-  --accent-smooth: #ffe25b;
-  --accent-smooth-strong: #e7c400;
-  --on-accent-smooth: #221b00;
+  --accent-flat: #ffe25b;
+  --accent-flat-strong: #e7c400;
+  --on-accent-flat: #221b00;
   --positive: #286b2a;
   --positive-strong: #085314;
   --on-positive: #ffffff;
-  --positive-smooth: #acf5a3;
-  --positive-smooth-strong: #90d889;
-  --on-positive-smooth: #012104;
+  --positive-flat: #acf5a3;
+  --positive-flat-strong: #90d889;
+  --on-positive-flat: #012104;
   --negative: #ba1b1b;
   --negative-strong: #930006;
   --on-negative: #ffffff;
-  --negative-smooth: #ffdad4;
-  --negative-smooth-strong: #ffb4a9;
-  --on-negative-smooth: #410001;
+  --negative-flat: #ffdad4;
+  --negative-flat-strong: #ffb4a9;
+  --on-negative-flat: #410001;
   --information: #006687;
   --information-strong: #004d67;
   --on-information: #ffffff;
-  --information-smooth: #bee8ff;
-  --information-smooth-strong: #6bd2ff;
-  --on-information-smooth: #001e2b;
+  --information-flat: #bee8ff;
+  --information-flat-strong: #6bd2ff;
+  --on-information-flat: #001e2b;
   --warning: #a53d00;
   --warning-strong: #7d2c00;
   --on-warning: #ffffff;
-  --warning-smooth: #ffdbcb;
-  --warning-smooth-strong: #ffb593;
-  --on-warning-smooth: #360f00;
+  --warning-flat: #ffdbcb;
+  --warning-flat-strong: #ffb593;
+  --on-warning-flat: #360f00;
   --surface: #FAFDF9;
   --surface-1: #F0F5F6;
   --surface-2: #EAF0F3;
@@ -76,7 +76,7 @@ a:active {
   color: var(--information-strong);
 }
 a:focus {
-  background-color: var(--accent-smooth);
+  background-color: var(--accent-flat);
   color: var(--information-strong);
 }
 
@@ -195,9 +195,9 @@ a:focus {
   color: var(--on-brand);
 }
 
-.bg-brand-smooth {
-  background-color: var(--brand-smooth) !important;
-  color: var(--on-brand-smooth);
+.bg-brand-flat {
+  background-color: var(--brand-flat) !important;
+  color: var(--on-brand-flat);
 }
 
 .bg-accent {
@@ -205,9 +205,9 @@ a:focus {
   color: var(--on-accent);
 }
 
-.bg-accent-smooth {
-  background-color: var(--accent-smooth) !important;
-  color: var(--on-accent-smooth);
+.bg-accent-flat {
+  background-color: var(--accent-flat) !important;
+  color: var(--on-accent-flat);
 }
 
 .bg-positive {
@@ -215,9 +215,9 @@ a:focus {
   color: var(--on-positive);
 }
 
-.bg-positive-smooth {
-  background-color: var(--positive-smooth) !important;
-  color: var(--on-positive-smooth);
+.bg-positive-flat {
+  background-color: var(--positive-flat) !important;
+  color: var(--on-positive-flat);
 }
 
 .bg-negative {
@@ -225,9 +225,9 @@ a:focus {
   color: var(--on-negative);
 }
 
-.bg-negative-smooth {
-  background-color: var(--negative-smooth) !important;
-  color: var(--on-negative-smooth);
+.bg-negative-flat {
+  background-color: var(--negative-flat) !important;
+  color: var(--on-negative-flat);
 }
 
 .bg-information {
@@ -235,9 +235,9 @@ a:focus {
   color: var(--on-information);
 }
 
-.bg-information-smooth {
-  background-color: var(--information-smooth) !important;
-  color: var(--on-information-smooth);
+.bg-information-flat {
+  background-color: var(--information-flat) !important;
+  color: var(--on-information-flat);
 }
 
 .bg-warning {
@@ -245,9 +245,9 @@ a:focus {
   color: var(--on-warning);
 }
 
-.bg-warning-smooth {
-  background-color: var(--warning-smooth) !important;
-  color: var(--on-warning-smooth);
+.bg-warning-flat {
+  background-color: var(--warning-flat) !important;
+  color: var(--on-warning-flat);
 }
 
 .bg-primary {
@@ -255,9 +255,9 @@ a:focus {
   color: var(--on-brand);
 }
 
-.bg-primary-smooth {
-  background-color: var(--brand-smooth) !important;
-  color: var(--on-brand-smooth);
+.bg-primary-flat {
+  background-color: var(--brand-flat) !important;
+  color: var(--on-brand-flat);
 }
 
 .bg-secondary {
@@ -265,9 +265,9 @@ a:focus {
   color: var(--on-accent);
 }
 
-.bg-secondary-smooth {
-  background-color: var(--accent-smooth) !important;
-  color: var(--on-accent-smooth);
+.bg-secondary-flat {
+  background-color: var(--accent-flat) !important;
+  color: var(--on-accent-flat);
 }
 
 .bg-success {
@@ -275,9 +275,9 @@ a:focus {
   color: var(--on-positive);
 }
 
-.bg-success-smooth {
-  background-color: var(--positive-smooth) !important;
-  color: var(--on-positive-smooth);
+.bg-success-flat {
+  background-color: var(--positive-flat) !important;
+  color: var(--on-positive-flat);
 }
 
 .bg-danger {
@@ -285,9 +285,9 @@ a:focus {
   color: var(--on-negative);
 }
 
-.bg-danger-smooth {
-  background-color: var(--negative-smooth) !important;
-  color: var(--on-negative-smooth);
+.bg-danger-flat {
+  background-color: var(--negative-flat) !important;
+  color: var(--on-negative-flat);
 }
 
 .bg-info {
@@ -295,9 +295,9 @@ a:focus {
   color: var(--on-information);
 }
 
-.bg-info-smooth {
-  background-color: var(--information-smooth) !important;
-  color: var(--on-information-smooth);
+.bg-info-flat {
+  background-color: var(--information-flat) !important;
+  color: var(--on-information-flat);
 }
 
 .text-brand {
@@ -470,7 +470,7 @@ a:focus {
       color: var(--brand-strong);
       border-color: var(--brand-strong);
       text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--brand-smooth);
+      box-shadow: 0 0 0 2px var(--brand-flat);
       background: none;
     }
 
@@ -480,22 +480,22 @@ a:focus {
     }
   }
 
-  .btn-brand-smooth {
-    background-color: var(--brand-smooth);
-    border-color: var(--brand-smooth);
-    color: var(--on-brand-smooth);
+  .btn-brand-flat {
+    background-color: var(--brand-flat);
+    border-color: var(--brand-flat);
+    color: var(--on-brand-flat);
 
     &:hover {
-      background-color: var(--brand-smooth-strong);
-      border-color: var(--on-brand-smooth);
-      color: var(--on-brand-smooth);
+      background-color: var(--brand-flat-strong);
+      border-color: var(--on-brand-flat);
+      color: var(--on-brand-flat);
       text-decoration: underline;
     }
 
     &:focus, &:active {
-      color: var(--on-brand-smooth);
-      background-color: var(--brand-smooth-strong);
-      border-color: var(--on-brand-smooth);
+      color: var(--on-brand-flat);
+      background-color: var(--brand-flat-strong);
+      border-color: var(--on-brand-flat);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -522,7 +522,7 @@ a:focus {
       color: var(--accent-strong);
       border-color: var(--accent-strong);
       text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--accent-smooth);
+      box-shadow: 0 0 0 2px var(--accent-flat);
       background: none;
     }
 
@@ -532,22 +532,22 @@ a:focus {
     }
   }
 
-  .btn-accent-smooth {
-    background-color: var(--accent-smooth);
-    border-color: var(--accent-smooth);
-    color: var(--on-accent-smooth);
+  .btn-accent-flat {
+    background-color: var(--accent-flat);
+    border-color: var(--accent-flat);
+    color: var(--on-accent-flat);
 
     &:hover {
-      background-color: var(--accent-smooth-strong);
-      border-color: var(--on-accent-smooth);
-      color: var(--on-accent-smooth);
+      background-color: var(--accent-flat-strong);
+      border-color: var(--on-accent-flat);
+      color: var(--on-accent-flat);
       text-decoration: underline;
     }
 
     &:focus, &:active {
-      color: var(--on-accent-smooth);
-      background-color: var(--accent-smooth-strong);
-      border-color: var(--on-accent-smooth);
+      color: var(--on-accent-flat);
+      background-color: var(--accent-flat-strong);
+      border-color: var(--on-accent-flat);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -574,7 +574,7 @@ a:focus {
       color: var(--positive-strong);
       border-color: var(--positive-strong);
       text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--positive-smooth);
+      box-shadow: 0 0 0 2px var(--positive-flat);
       background: none;
     }
 
@@ -584,22 +584,22 @@ a:focus {
     }
   }
 
-  .btn-positive-smooth {
-    background-color: var(--positive-smooth);
-    border-color: var(--positive-smooth);
-    color: var(--on-positive-smooth);
+  .btn-positive-flat {
+    background-color: var(--positive-flat);
+    border-color: var(--positive-flat);
+    color: var(--on-positive-flat);
 
     &:hover {
-      background-color: var(--positive-smooth-strong);
-      border-color: var(--on-positive-smooth);
-      color: var(--on-positive-smooth);
+      background-color: var(--positive-flat-strong);
+      border-color: var(--on-positive-flat);
+      color: var(--on-positive-flat);
       text-decoration: underline;
     }
 
     &:focus, &:active {
-      color: var(--on-positive-smooth);
-      background-color: var(--positive-smooth-strong);
-      border-color: var(--on-positive-smooth);
+      color: var(--on-positive-flat);
+      background-color: var(--positive-flat-strong);
+      border-color: var(--on-positive-flat);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -626,7 +626,7 @@ a:focus {
       color: var(--negative-strong);
       border-color: var(--negative-strong);
       text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--negative-smooth);
+      box-shadow: 0 0 0 2px var(--negative-flat);
       background: none;
     }
 
@@ -636,22 +636,22 @@ a:focus {
     }
   }
 
-  .btn-negative-smooth {
-    background-color: var(--negative-smooth);
-    border-color: var(--negative-smooth);
-    color: var(--on-negative-smooth);
+  .btn-negative-flat {
+    background-color: var(--negative-flat);
+    border-color: var(--negative-flat);
+    color: var(--on-negative-flat);
 
     &:hover {
-      background-color: var(--negative-smooth-strong);
-      border-color: var(--on-negative-smooth);
-      color: var(--on-negative-smooth);
+      background-color: var(--negative-flat-strong);
+      border-color: var(--on-negative-flat);
+      color: var(--on-negative-flat);
       text-decoration: underline;
     }
 
     &:focus, &:active {
-      color: var(--on-negative-smooth);
-      background-color: var(--negative-smooth-strong);
-      border-color: var(--on-negative-smooth);
+      color: var(--on-negative-flat);
+      background-color: var(--negative-flat-strong);
+      border-color: var(--on-negative-flat);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -678,7 +678,7 @@ a:focus {
       color: var(--information-strong);
       border-color: var(--information-strong);
       text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--information-smooth);
+      box-shadow: 0 0 0 2px var(--information-flat);
       background: none;
     }
 
@@ -688,22 +688,22 @@ a:focus {
     }
   }
 
-  .btn-information-smooth {
-    background-color: var(--information-smooth);
-    border-color: var(--information-smooth);
-    color: var(--on-information-smooth);
+  .btn-information-flat {
+    background-color: var(--information-flat);
+    border-color: var(--information-flat);
+    color: var(--on-information-flat);
 
     &:hover {
-      background-color: var(--information-smooth-strong);
-      border-color: var(--on-information-smooth);
-      color: var(--on-information-smooth);
+      background-color: var(--information-flat-strong);
+      border-color: var(--on-information-flat);
+      color: var(--on-information-flat);
       text-decoration: underline;
     }
 
     &:focus, &:active {
-      color: var(--on-information-smooth);
-      background-color: var(--information-smooth-strong);
-      border-color: var(--on-information-smooth);
+      color: var(--on-information-flat);
+      background-color: var(--information-flat-strong);
+      border-color: var(--on-information-flat);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -730,7 +730,7 @@ a:focus {
       color: var(--warning-strong);
       border-color: var(--warning-strong);
       text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--warning-smooth);
+      box-shadow: 0 0 0 2px var(--warning-flat);
       background: none;
     }
 
@@ -740,22 +740,22 @@ a:focus {
     }
   }
 
-  .btn-warning-smooth {
-    background-color: var(--warning-smooth);
-    border-color: var(--warning-smooth);
-    color: var(--on-warning-smooth);
+  .btn-warning-flat {
+    background-color: var(--warning-flat);
+    border-color: var(--warning-flat);
+    color: var(--on-warning-flat);
 
     &:hover {
-      background-color: var(--warning-smooth-strong);
-      border-color: var(--on-warning-smooth);
-      color: var(--on-warning-smooth);
+      background-color: var(--warning-flat-strong);
+      border-color: var(--on-warning-flat);
+      color: var(--on-warning-flat);
       text-decoration: underline;
     }
 
     &:focus, &:active {
-      color: var(--on-warning-smooth);
-      background-color: var(--warning-smooth-strong);
-      border-color: var(--on-warning-smooth);
+      color: var(--on-warning-flat);
+      background-color: var(--warning-flat-strong);
+      border-color: var(--on-warning-flat);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -782,7 +782,7 @@ a:focus {
       color: var(--brand-strong);
       border-color: var(--brand-strong);
       text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--brand-smooth);
+      box-shadow: 0 0 0 2px var(--brand-flat);
       background: none;
     }
 
@@ -792,22 +792,22 @@ a:focus {
     }
   }
 
-  .btn-primary-smooth {
-    background-color: var(--brand-smooth);
-    border-color: var(--brand-smooth);
-    color: var(--on-brand-smooth);
+  .btn-primary-flat {
+    background-color: var(--brand-flat);
+    border-color: var(--brand-flat);
+    color: var(--on-brand-flat);
 
     &:hover {
-      background-color: var(--brand-smooth-strong);
-      border-color: var(--on-brand-smooth);
-      color: var(--on-brand-smooth);
+      background-color: var(--brand-flat-strong);
+      border-color: var(--on-brand-flat);
+      color: var(--on-brand-flat);
       text-decoration: underline;
     }
 
     &:focus, &:active {
-      color: var(--on-brand-smooth);
-      background-color: var(--brand-smooth-strong);
-      border-color: var(--on-brand-smooth);
+      color: var(--on-brand-flat);
+      background-color: var(--brand-flat-strong);
+      border-color: var(--on-brand-flat);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -834,7 +834,7 @@ a:focus {
       color: var(--accent-strong);
       border-color: var(--accent-strong);
       text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--accent-smooth);
+      box-shadow: 0 0 0 2px var(--accent-flat);
       background: none;
     }
 
@@ -844,22 +844,22 @@ a:focus {
     }
   }
 
-  .btn-secondary-smooth {
-    background-color: var(--accent-smooth);
-    border-color: var(--accent-smooth);
-    color: var(--on-accent-smooth);
+  .btn-secondary-flat {
+    background-color: var(--accent-flat);
+    border-color: var(--accent-flat);
+    color: var(--on-accent-flat);
 
     &:hover {
-      background-color: var(--accent-smooth-strong);
-      border-color: var(--on-accent-smooth);
-      color: var(--on-accent-smooth);
+      background-color: var(--accent-flat-strong);
+      border-color: var(--on-accent-flat);
+      color: var(--on-accent-flat);
       text-decoration: underline;
     }
 
     &:focus, &:active {
-      color: var(--on-accent-smooth);
-      background-color: var(--accent-smooth-strong);
-      border-color: var(--on-accent-smooth);
+      color: var(--on-accent-flat);
+      background-color: var(--accent-flat-strong);
+      border-color: var(--on-accent-flat);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -886,7 +886,7 @@ a:focus {
       color: var(--positive-strong);
       border-color: var(--positive-strong);
       text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--positive-smooth);
+      box-shadow: 0 0 0 2px var(--positive-flat);
       background: none;
     }
 
@@ -896,22 +896,22 @@ a:focus {
     }
   }
 
-  .btn-success-smooth {
-    background-color: var(--positive-smooth);
-    border-color: var(--positive-smooth);
-    color: var(--on-positive-smooth);
+  .btn-success-flat {
+    background-color: var(--positive-flat);
+    border-color: var(--positive-flat);
+    color: var(--on-positive-flat);
 
     &:hover {
-      background-color: var(--positive-smooth-strong);
-      border-color: var(--on-positive-smooth);
-      color: var(--on-positive-smooth);
+      background-color: var(--positive-flat-strong);
+      border-color: var(--on-positive-flat);
+      color: var(--on-positive-flat);
       text-decoration: underline;
     }
 
     &:focus, &:active {
-      color: var(--on-positive-smooth);
-      background-color: var(--positive-smooth-strong);
-      border-color: var(--on-positive-smooth);
+      color: var(--on-positive-flat);
+      background-color: var(--positive-flat-strong);
+      border-color: var(--on-positive-flat);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -938,7 +938,7 @@ a:focus {
       color: var(--negative-strong);
       border-color: var(--negative-strong);
       text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--negative-smooth);
+      box-shadow: 0 0 0 2px var(--negative-flat);
       background: none;
     }
 
@@ -948,22 +948,22 @@ a:focus {
     }
   }
 
-  .btn-danger-smooth {
-    background-color: var(--negative-smooth);
-    border-color: var(--negative-smooth);
-    color: var(--on-negative-smooth);
+  .btn-danger-flat {
+    background-color: var(--negative-flat);
+    border-color: var(--negative-flat);
+    color: var(--on-negative-flat);
 
     &:hover {
-      background-color: var(--negative-smooth-strong);
-      border-color: var(--on-negative-smooth);
-      color: var(--on-negative-smooth);
+      background-color: var(--negative-flat-strong);
+      border-color: var(--on-negative-flat);
+      color: var(--on-negative-flat);
       text-decoration: underline;
     }
 
     &:focus, &:active {
-      color: var(--on-negative-smooth);
-      background-color: var(--negative-smooth-strong);
-      border-color: var(--on-negative-smooth);
+      color: var(--on-negative-flat);
+      background-color: var(--negative-flat-strong);
+      border-color: var(--on-negative-flat);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -990,7 +990,7 @@ a:focus {
       color: var(--information-strong);
       border-color: var(--information-strong);
       text-decoration: underline;
-      box-shadow: 0 0 0 2px var(--information-smooth);
+      box-shadow: 0 0 0 2px var(--information-flat);
       background: none;
     }
 
@@ -1000,22 +1000,22 @@ a:focus {
     }
   }
 
-  .btn-info-smooth {
-    background-color: var(--information-smooth);
-    border-color: var(--information-smooth);
-    color: var(--on-information-smooth);
+  .btn-info-flat {
+    background-color: var(--information-flat);
+    border-color: var(--information-flat);
+    color: var(--on-information-flat);
 
     &:hover {
-      background-color: var(--information-smooth-strong);
-      border-color: var(--on-information-smooth);
-      color: var(--on-information-smooth);
+      background-color: var(--information-flat-strong);
+      border-color: var(--on-information-flat);
+      color: var(--on-information-flat);
       text-decoration: underline;
     }
 
     &:focus, &:active {
-      color: var(--on-information-smooth);
-      background-color: var(--information-smooth-strong);
-      border-color: var(--on-information-smooth);
+      color: var(--on-information-flat);
+      background-color: var(--information-flat-strong);
+      border-color: var(--on-information-flat);
       text-decoration: underline;
       box-shadow: none !important;
     }
@@ -1041,7 +1041,7 @@ a:focus {
   background-color: var(--brand-strong);
   border-color: var(--brand-strong);
   color: var(--on-brand);
-  box-shadow: 0 0 0 2px var(--brand-smooth) !important;
+  box-shadow: 0 0 0 2px var(--brand-flat) !important;
 }
 .btn.btn-brand:disabled {
   color: var(--outline);
@@ -1060,7 +1060,7 @@ a:focus {
   background-color: var(--accent-strong);
   border-color: var(--accent-strong);
   color: var(--on-accent);
-  box-shadow: 0 0 0 2px var(--accent-smooth) !important;
+  box-shadow: 0 0 0 2px var(--accent-flat) !important;
 }
 .btn.btn-accent:disabled {
   color: var(--outline);
@@ -1079,7 +1079,7 @@ a:focus {
   background-color: var(--positive-strong);
   border-color: var(--positive-strong);
   color: var(--on-positive);
-  box-shadow: 0 0 0 2px var(--positive-smooth) !important;
+  box-shadow: 0 0 0 2px var(--positive-flat) !important;
 }
 .btn.btn-positive:disabled {
   color: var(--outline);
@@ -1098,7 +1098,7 @@ a:focus {
   background-color: var(--negative-strong);
   border-color: var(--negative-strong);
   color: var(--on-negative);
-  box-shadow: 0 0 0 2px var(--negative-smooth) !important;
+  box-shadow: 0 0 0 2px var(--negative-flat) !important;
 }
 .btn.btn-negative:disabled {
   color: var(--outline);
@@ -1117,7 +1117,7 @@ a:focus {
   background-color: var(--information-strong);
   border-color: var(--information-strong);
   color: var(--on-information);
-  box-shadow: 0 0 0 2px var(--information-smooth) !important;
+  box-shadow: 0 0 0 2px var(--information-flat) !important;
 }
 .btn.btn-information:disabled {
   color: var(--outline);
@@ -1136,7 +1136,7 @@ a:focus {
   background-color: var(--warning-strong);
   border-color: var(--warning-strong);
   color: var(--on-warning);
-  box-shadow: 0 0 0 2px var(--warning-smooth) !important;
+  box-shadow: 0 0 0 2px var(--warning-flat) !important;
 }
 .btn.btn-warning:disabled {
   color: var(--outline);
@@ -1155,7 +1155,7 @@ a:focus {
   background-color: var(--brand-strong);
   border-color: var(--brand-strong);
   color: var(--on-brand);
-  box-shadow: 0 0 0 2px var(--brand-smooth) !important;
+  box-shadow: 0 0 0 2px var(--brand-flat) !important;
 }
 .btn.btn-primary:disabled {
   color: var(--outline);
@@ -1174,7 +1174,7 @@ a:focus {
   background-color: var(--accent-strong);
   border-color: var(--accent-strong);
   color: var(--on-accent);
-  box-shadow: 0 0 0 2px var(--accent-smooth) !important;
+  box-shadow: 0 0 0 2px var(--accent-flat) !important;
 }
 .btn.btn-secondary:disabled {
   color: var(--outline);
@@ -1193,7 +1193,7 @@ a:focus {
   background-color: var(--positive-strong);
   border-color: var(--positive-strong);
   color: var(--on-positive);
-  box-shadow: 0 0 0 2px var(--positive-smooth) !important;
+  box-shadow: 0 0 0 2px var(--positive-flat) !important;
 }
 .btn.btn-success:disabled {
   color: var(--outline);
@@ -1212,7 +1212,7 @@ a:focus {
   background-color: var(--negative-strong);
   border-color: var(--negative-strong);
   color: var(--on-negative);
-  box-shadow: 0 0 0 2px var(--negative-smooth) !important;
+  box-shadow: 0 0 0 2px var(--negative-flat) !important;
 }
 .btn.btn-danger:disabled {
   color: var(--outline);
@@ -1231,44 +1231,44 @@ a:focus {
   background-color: var(--information-strong);
   border-color: var(--information-strong);
   color: var(--on-information);
-  box-shadow: 0 0 0 2px var(--information-smooth) !important;
+  box-shadow: 0 0 0 2px var(--information-flat) !important;
 }
 .btn.btn-info:disabled {
   color: var(--outline);
 }
 .btn.btn-secondary {
-  background: var(--brand-smooth);
-  color: var(--on-brand-smooth);
+  background: var(--brand-flat);
+  color: var(--on-brand-flat);
   border: none;
 }
 .btn.btn-secondary:hover {
-  color: var(--on-brand-smooth);
-  background: var(--brand-smooth-strong);
+  color: var(--on-brand-flat);
+  background: var(--brand-flat-strong);
   border: none;
 }
 .btn.btn-secondary:focus, .btn.btn-secondary:active {
-  color: var(--on-brand-smooth);
-  background: var(--brand-smooth-strong);
+  color: var(--on-brand-flat);
+  background: var(--brand-flat-strong);
   border: none;
-  box-shadow: 0 0 0 2px var(--brand-smooth) !important;
+  box-shadow: 0 0 0 2px var(--brand-flat) !important;
 }
 .btn.btn-secondary:disabled {
   color: var(--outline);
   background-color: var(--surface);
 }
 .btn.btn-semi-secondary {
-  color: var(--on-brand-smooth);
+  color: var(--on-brand-flat);
   background-color: var(--surface);
   border-color: var(--outline);
 }
 .btn.btn-semi-secondary:hover {
-  color: var(--on-brand-smooth);
+  color: var(--on-brand-flat);
   background: var(--surface-1);
   border-color: var(--outline);
 }
 .btn.btn-semi-secondary:focus, .btn.btn-semi-secondary:active {
-  color: var(--on-brand-smooth);
-  box-shadow: 0 0 0 2px var(--brand-smooth-strong) !important;
+  color: var(--on-brand-flat);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong) !important;
   background: var(--surface-1);
   border-color: var(--outline);
 }
@@ -1279,16 +1279,16 @@ a:focus {
 }
 .btn.btn-tertiary {
   background: none;
-  color: var(--on-brand-smooth);
+  color: var(--on-brand-flat);
 }
 .btn.btn-tertiary:hover {
   background-color: var(--surface);
-  color: var(--on-brand-smooth);
+  color: var(--on-brand-flat);
 }
 .btn.btn-tertiary:focus, .btn.btn-tertiary:active {
   background-color: var(--surface);
-  color: var(--on-brand-smooth);
-  box-shadow: 0 0 0 2px var(--brand-smooth);
+  color: var(--on-brand-flat);
+  box-shadow: 0 0 0 2px var(--brand-flat);
 }
 .btn.btn-tertiary:disabled {
   color: var(--outline);
@@ -1417,7 +1417,7 @@ a:focus {
   color: var(--information);
 }
 .dropdown .dropdown-toggle:active, .dropdown .dropdown-toggle:focus {
-  background-color: var(--accent-smooth);
+  background-color: var(--accent-flat);
   box-shadow: none !important;
 }
 .dropdown .dropdown-toggle:active::after, .dropdown .dropdown-toggle:focus::after {
@@ -1443,8 +1443,8 @@ a:focus {
   background-color: none;
 }
 .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:focus {
-  color: var(--on-information-smooth);
-  background-color: var(--accent-smooth);
+  color: var(--on-information-flat);
+  background-color: var(--accent-flat);
 }
 
 footer .nav {
@@ -1490,7 +1490,7 @@ footer .social-container {
 }
 .form-control:focus {
   color: var(--on-surface);
-  box-shadow: 0 0 0 2px var(--brand-smooth-strong);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong);
 }
 .form-control:disabled {
   color: var(--surface-variant);
@@ -1681,7 +1681,7 @@ footer .social-container {
 .form-select:active, .form-select:focus {
   background-color: var(--surface-1);
   border: 1px solid var(--outline);
-  box-shadow: 0 0 0 2px var(--brand-smooth-strong);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong);
 }
 .form-select:disabled {
   color: var(--surface-variant);
@@ -1770,7 +1770,7 @@ optgroup {
   border: 0;
 }
 .sidebar-link:active {
-  background-color: var(--accent);
+  background-color: var(--accent-flat);
   color: var(--brand-strong);
 }
 .sidebar-link:hover {
@@ -1789,7 +1789,7 @@ optgroup {
 
 .active.sidebar-link {
   color: var(--brand-strong);
-  background-color: var(--accent);
+  background-color: var(--accent-flat);
   border-left: solid;
   padding-left: calc(3rem - 3px);
 }
