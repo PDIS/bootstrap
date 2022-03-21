@@ -72,3 +72,19 @@
     }
   }
 }
+
+.tabs-sm {
+  .nav-item {
+    .nav-link {
+      @extend .label-text-sm;
+    }
+  }
+}
+
+.tabs-lg {
+  .nav-item {
+    .nav-link {
+      @extend .label-text-lg;
+    }
+  }
+}
