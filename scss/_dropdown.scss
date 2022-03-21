@@ -23,7 +23,7 @@
 
     &:active,
     &:focus {
-      background-color: var(--accent-smooth);
+      background-color: var(--accent-flat);
       box-shadow: none !important;
 
       &::after {
@@ -53,8 +53,8 @@
       }
       &:active,
       &:focus {
-        color: var(--on-information-smooth);
-        background-color: var(--accent-smooth);
+        color: var(--on-information-flat);
+        background-color: var(--accent-flat);
       }
     }
   }

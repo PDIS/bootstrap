@@ -1,4 +1,6 @@
 .navbar {
+  background-color: var(--surface);
+  
   @media (max-width: 768px) {
     padding-top: 0;
     padding-bottom: 0;
@@ -22,18 +24,18 @@
 .navbar-nav {
   .nav-link 
   {
-    color: var(--bs-primary) !important;
+    //color: var(--bs-primary) !important;
   }
 }
 
 .navbar-toggler {
-  background: var(--bs-primary) !important;
-  color: white !important;
+  // background: var(--bs-primary) !important;
+  // color: white !important;
   border-radius: 0;
 
   &:active,
   &:focus {
-    background: var(--bs-primary-dark) !important;
+    //background: var(--bs-primary-dark) !important;
     .navbar-toggler-icon {
       background-image: none;
       width: auto;

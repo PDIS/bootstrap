@@ -82,7 +82,7 @@
   font-weight: 500;
   border: 0;
   &:active {
-    background-color: var(--accent);
+    background-color: var(--accent-flat);
     color: var(--brand-strong);
   }
   &:hover {
@@ -103,7 +103,7 @@
 
 .active.sidebar-link {
   color: var(--brand-strong);
-  background-color: var(--accent);
+  background-color: var(--accent-flat);
   border-left: solid;
   padding-left: calc(3rem - 3px);
 }

@@ -5,12 +5,20 @@
 
   &:focus {
     color: var(--on-surface);
-    box-shadow: 0 0 0 2px var(--brand-smooth-strong);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong);
   }
 
   &:disabled {
     color: var(--surface-variant);
     background-color: var(--surface);
     border: 1px solid var(--surface-variant);
+  }
+}
+
+.input-group {
+  .input-group-text {
+    color: var(--bs-white);
+    background-color: var(--brand);
+    border: 1px solid var(--outline);
   }
 }
