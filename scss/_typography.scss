@@ -19,10 +19,24 @@
     background-color: var(--surface-1);
     box-shadow: 0 0 0 2px var(--brand-flat-strong);
   }
-
-    
+  
   &:disabled {
     color: var(--outline);
+  }
+  
+  i {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -48,9 +62,23 @@
     box-shadow: 0 0 0 2px var(--brand-flat-strong);
   }
 
-    
   &:disabled {
     color: var(--outline);
+  }
+
+  i {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -76,8 +104,22 @@
     box-shadow: 0 0 0 2px var(--brand-flat-strong);
   }
 
-    
   &:disabled {
     color: var(--outline);
+  }
+
+  i {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
