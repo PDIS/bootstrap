@@ -171,11 +171,11 @@ a:focus {
 .label-text, .nav-pills .nav-link, .nav-tabs .nav-item .nav-link, .btn {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.625rem;
+  padding: 0.5rem 1.125rem;
   letter-spacing: 0.1px;
-  border-radius: 10px;
-  padding: 8px 18px;
   color: var(--on-background);
   background: none;
 }
@@ -191,53 +191,89 @@ a:focus {
 .label-text:disabled, .nav-pills .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .btn:disabled {
   color: var(--outline);
 }
+.label-text i, .nav-pills .nav-link i, .nav-tabs .nav-item .nav-link i, .btn i {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.label-text i:first-child, .nav-pills .nav-link i:first-child, .nav-tabs .nav-item .nav-link i:first-child, .btn i:first-child {
+  margin-left: 0;
+}
+.label-text i:last-child, .nav-pills .nav-link i:last-child, .nav-tabs .nav-item .nav-link i:last-child, .btn i:last-child {
+  margin-right: 0;
+}
 
-.label-text-sm, .btn.btn-sm {
+.label-text-sm, .tabs-sm .nav-item .nav-link, .btn.btn-sm {
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   letter-spacing: 0.5px;
-  padding: 8px 16px;
-  border-radius: 8px;
   color: var(--on-background);
   background: none;
 }
-.label-text-sm:hover, .btn.btn-sm:hover {
+.label-text-sm:hover, .tabs-sm .nav-item .nav-link:hover, .btn.btn-sm:hover {
   color: var(--on-background);
   background-color: var(--surface);
 }
-.label-text-sm:focus, .btn.btn-sm:focus, .label-text-sm:active, .btn.btn-sm:active {
+.label-text-sm:focus, .tabs-sm .nav-item .nav-link:focus, .btn.btn-sm:focus, .label-text-sm:active, .tabs-sm .nav-item .nav-link:active, .btn.btn-sm:active {
   color: var(--on-background);
   background-color: var(--surface-1);
   box-shadow: 0 0 0 2px var(--brand-flat-strong);
 }
-.label-text-sm:disabled, .btn.btn-sm:disabled {
+.label-text-sm:disabled, .tabs-sm .nav-item .nav-link:disabled, .btn.btn-sm:disabled {
   color: var(--outline);
+}
+.label-text-sm i, .tabs-sm .nav-item .nav-link i, .btn.btn-sm i {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.label-text-sm i:first-child, .tabs-sm .nav-item .nav-link i:first-child, .btn.btn-sm i:first-child {
+  margin-left: 0;
+}
+.label-text-sm i:last-child, .tabs-sm .nav-item .nav-link i:last-child, .btn.btn-sm i:last-child {
+  margin-right: 0;
 }
 
-.label-text-lg, .btn.btn-lg {
+.label-text-lg, .tabs-lg .nav-item .nav-link, .btn.btn-lg {
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.75rem;
   letter-spacing: 0.1px;
-  padding: 8px 20px;
-  border-radius: 12px;
   color: var(--on-background);
   background: none;
 }
-.label-text-lg:hover, .btn.btn-lg:hover {
+.label-text-lg:hover, .tabs-lg .nav-item .nav-link:hover, .btn.btn-lg:hover {
   color: var(--on-background);
   background-color: var(--surface);
 }
-.label-text-lg:focus, .btn.btn-lg:focus, .label-text-lg:active, .btn.btn-lg:active {
+.label-text-lg:focus, .tabs-lg .nav-item .nav-link:focus, .btn.btn-lg:focus, .label-text-lg:active, .tabs-lg .nav-item .nav-link:active, .btn.btn-lg:active {
   color: var(--on-background);
   background-color: var(--surface-1);
   box-shadow: 0 0 0 2px var(--brand-flat-strong);
 }
-.label-text-lg:disabled, .btn.btn-lg:disabled {
+.label-text-lg:disabled, .tabs-lg .nav-item .nav-link:disabled, .btn.btn-lg:disabled {
   color: var(--outline);
+}
+.label-text-lg i, .tabs-lg .nav-item .nav-link i, .btn.btn-lg i {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.label-text-lg i:first-child, .tabs-lg .nav-item .nav-link i:first-child, .btn.btn-lg i:first-child {
+  margin-left: 0;
+}
+.label-text-lg i:last-child, .tabs-lg .nav-item .nav-link i:last-child, .btn.btn-lg i:last-child {
+  margin-right: 0;
 }
 
 .bg-brand {
@@ -1342,19 +1378,6 @@ a:focus {
   color: var(--outline);
   background-color: var(--surface);
 }
-.btn i {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.btn i:first-child {
-  margin-left: 0;
-}
-.btn i:last-child {
-  margin-right: 0;
-}
-
 /* .btn-link {
   color: var(--brand);
   &:hover, &:active, &:focus {
