@@ -1,0 +1,83 @@
+.label-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  border-radius: 10px;
+  padding: 8px 18px;
+  color: var(--on-background);
+  background: none;
+
+  &:hover {
+    color: var(--on-background);
+    background-color: var(--surface);
+  }
+
+  &:focus, &:active {
+    color: var(--on-background);
+    background-color: var(--surface-1);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+  }
+
+    
+  &:disabled {
+    color: var(--outline);
+  }
+}
+
+.label-text-sm {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: var(--on-background);
+  background: none;
+
+  &:hover {
+    color: var(--on-background);
+    background-color: var(--surface);
+  }
+
+  &:focus, &:active {
+    color: var(--on-background);
+    background-color: var(--surface-1);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+  }
+
+    
+  &:disabled {
+    color: var(--outline);
+  }
+}
+
+.label-text-lg {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  padding: 8px 20px;
+  border-radius: 12px;
+  color: var(--on-background);
+  background: none;
+
+  &:hover {
+    color: var(--on-background);
+    background-color: var(--surface);
+  }
+
+  &:focus, &:active {
+    color: var(--on-background);
+    background-color: var(--surface-1);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+  }
+
+    
+  &:disabled {
+    color: var(--outline);
+  }
+}

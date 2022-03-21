@@ -65,7 +65,9 @@ $surfaces:
 'on-surface' $on-surface, 
 'surface-variant' $surface-variant,
 'on-surface-variant' $on-surface-variant,
-'outline' $outline;
+'outline' $outline,
+'background' $background,
+'on-background' $on-background;
 
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
