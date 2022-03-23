@@ -1,7 +1,95 @@
-.btn {
+.button-text {
   @extend .label-text;
-  // border-radius: 10px;
-  // padding: 8px 18px;
+
+  &:hover {
+    color: var(--on-background);
+    background-color: var(--surface);
+  }
+
+  &:focus, &:active {
+    color: var(--on-background);
+    background-color: var(--surface-1);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+  }
+
+  i {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.button-text-sm {
+  @extend .label-text-sm;
+
+  &:hover {
+    color: var(--on-background);
+    background-color: var(--surface);
+  }
+
+  &:focus, &:active {
+    color: var(--on-background);
+    background-color: var(--surface-1);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+  }
+
+  i {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.button-text-lg {
+  @extend .label-text-lg;
+
+  &:hover {
+    color: var(--on-background);
+    background-color: var(--surface);
+  }
+
+  &:focus, &:active {
+    color: var(--on-background);
+    background-color: var(--surface-1);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+  }
+
+  i {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.btn {
+  @extend .button-text;
 
   @each $key, $value in $color-envs {
     &.btn-#{$key} {
@@ -155,15 +243,11 @@
   }
   
   &.btn-sm {
-    @extend .label-text-sm;
-    // padding: 8px 16px;
-    // border-radius: 8px;
+    @extend .button-text-sm;
   }
   
   &.btn-lg {
-    @extend .label-text-lg;
-    // padding: 8px 20px;
-    // border-radius: 12px;
+    @extend .button-text-lg;
   }
 
   .badge {

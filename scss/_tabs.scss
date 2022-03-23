@@ -1,10 +1,101 @@
+.tab-text {
+  @extend .label-text;
+
+  &:hover {
+    color: var(--on-background);
+    background-color: var(--surface);
+  }
+
+  &:focus, &:active {
+    color: var(--on-background);
+    background-color: var(--surface-1);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+  }
+
+  i {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.tab-text-sm {
+  @extend .label-text-sm;
+
+  &:hover {
+    color: var(--on-background);
+    background-color: var(--surface);
+  }
+
+  &:focus, &:active {
+    color: var(--on-background);
+    background-color: var(--surface-1);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+  }
+
+  i {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.tab-text-lg {
+  @extend .label-text-lg;
+
+  &:hover {
+    color: var(--on-background);
+    background-color: var(--surface);
+  }
+
+  &:focus, &:active {
+    color: var(--on-background);
+    background-color: var(--surface-1);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+  }
+
+  i {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
 .nav-tabs {
   border-bottom: 0;
   .nav-item {
     display: inline-block;
 
     .nav-link {
-      @extend .label-text;
+      @extend .tab-text;
       border: 0;
       text-decoration: none;
       border-radius: 8px 8px 0px 0px;
@@ -34,7 +125,7 @@
 
 .nav-pills {
   .nav-link {
-    @extend .label-text;
+    @extend .tab-text;
     text-decoration: none;
     margin-left: 2px;
     margin-right: 2px;
@@ -76,7 +167,7 @@
 .tabs-sm {
   .nav-item {
     .nav-link {
-      @extend .label-text-sm;
+      @extend .tab-text-sm;
     }
   }
 }
@@ -84,7 +175,7 @@
 .tabs-lg {
   .nav-item {
     .nav-link {
-      @extend .label-text-lg;
+      @extend .tab-text-lg;
     }
   }
 }

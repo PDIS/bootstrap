@@ -8,35 +8,9 @@
   letter-spacing: 0.1px;
   color: var(--on-background);
   background: none;
-
-  &:hover {
-    color: var(--on-background);
-    background-color: var(--surface);
-  }
-
-  &:focus, &:active {
-    color: var(--on-background);
-    background-color: var(--surface-1);
-    box-shadow: 0 0 0 2px var(--brand-flat-strong);
-  }
   
   &:disabled {
     color: var(--outline);
-  }
-  
-  i {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-    font-size: 1.125rem;
-    font-weight: 500;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 
@@ -51,34 +25,8 @@
   color: var(--on-background);
   background: none;
 
-  &:hover {
-    color: var(--on-background);
-    background-color: var(--surface);
-  }
-
-  &:focus, &:active {
-    color: var(--on-background);
-    background-color: var(--surface-1);
-    box-shadow: 0 0 0 2px var(--brand-flat-strong);
-  }
-
   &:disabled {
     color: var(--outline);
-  }
-
-  i {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-    font-size: 1rem;
-    font-weight: 500;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 
@@ -93,33 +41,8 @@
   color: var(--on-background);
   background: none;
 
-  &:hover {
-    color: var(--on-background);
-    background-color: var(--surface);
-  }
-
-  &:focus, &:active {
-    color: var(--on-background);
-    background-color: var(--surface-1);
-    box-shadow: 0 0 0 2px var(--brand-flat-strong);
-  }
-
   &:disabled {
     color: var(--outline);
   }
 
-  i {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-    font-size: 1.25rem;
-    font-weight: 500;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
 }

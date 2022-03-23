@@ -168,7 +168,7 @@ a:focus {
 }
 
 /* END PDIS's local docs style */
-.label-text, .nav-pills .nav-link, .nav-tabs .nav-item .nav-link, .btn, .badge, .sidebar-button-badge, .sidebar-button-badge-round {
+.label-text, .tab-text, .nav-pills .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .badge, .sidebar-button-badge, .sidebar-button-badge-round {
   font-style: normal;
   font-weight: 500;
   font-size: 0.875rem;
@@ -179,32 +179,11 @@ a:focus {
   color: var(--on-background);
   background: none;
 }
-.label-text:hover, .nav-pills .nav-link:hover, .nav-tabs .nav-item .nav-link:hover, .btn:hover, .badge:hover, .sidebar-button-badge:hover, .sidebar-button-badge-round:hover {
-  color: var(--on-background);
-  background-color: var(--surface);
-}
-.label-text:focus, .nav-pills .nav-link:focus, .nav-tabs .nav-item .nav-link:focus, .btn:focus, .badge:focus, .sidebar-button-badge:focus, .sidebar-button-badge-round:focus, .label-text:active, .nav-pills .nav-link:active, .nav-tabs .nav-item .nav-link:active, .btn:active, .badge:active, .sidebar-button-badge:active, .sidebar-button-badge-round:active {
-  color: var(--on-background);
-  background-color: var(--surface-1);
-  box-shadow: 0 0 0 2px var(--brand-flat-strong);
-}
-.label-text:disabled, .nav-pills .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .btn:disabled, .badge:disabled, .sidebar-button-badge:disabled, .sidebar-button-badge-round:disabled {
+.label-text:disabled, .tab-text:disabled, .nav-pills .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .badge:disabled, .sidebar-button-badge:disabled, .sidebar-button-badge-round:disabled {
   color: var(--outline);
 }
-.label-text i, .nav-pills .nav-link i, .nav-tabs .nav-item .nav-link i, .btn i, .badge i, .sidebar-button-badge i, .sidebar-button-badge-round i {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  font-size: 1.125rem;
-  font-weight: 500;
-}
-.label-text i:first-child, .nav-pills .nav-link i:first-child, .nav-tabs .nav-item .nav-link i:first-child, .btn i:first-child, .badge i:first-child, .sidebar-button-badge i:first-child, .sidebar-button-badge-round i:first-child {
-  margin-left: 0;
-}
-.label-text i:last-child, .nav-pills .nav-link i:last-child, .nav-tabs .nav-item .nav-link i:last-child, .btn i:last-child, .badge i:last-child, .sidebar-button-badge i:last-child, .sidebar-button-badge-round i:last-child {
-  margin-right: 0;
-}
 
-.label-text-sm, .tabs-sm .nav-item .nav-link, .btn.btn-sm, .badge-sm {
+.label-text-sm, .tab-text-sm, .tabs-sm .nav-item .nav-link, .button-text-sm, .btn.btn-sm, .badge-sm {
   font-style: normal;
   font-weight: 500;
   font-size: 0.75rem;
@@ -215,32 +194,11 @@ a:focus {
   color: var(--on-background);
   background: none;
 }
-.label-text-sm:hover, .tabs-sm .nav-item .nav-link:hover, .btn.btn-sm:hover, .badge-sm:hover {
-  color: var(--on-background);
-  background-color: var(--surface);
-}
-.label-text-sm:focus, .tabs-sm .nav-item .nav-link:focus, .btn.btn-sm:focus, .badge-sm:focus, .label-text-sm:active, .tabs-sm .nav-item .nav-link:active, .btn.btn-sm:active, .badge-sm:active {
-  color: var(--on-background);
-  background-color: var(--surface-1);
-  box-shadow: 0 0 0 2px var(--brand-flat-strong);
-}
-.label-text-sm:disabled, .tabs-sm .nav-item .nav-link:disabled, .btn.btn-sm:disabled, .badge-sm:disabled {
+.label-text-sm:disabled, .tab-text-sm:disabled, .tabs-sm .nav-item .nav-link:disabled, .button-text-sm:disabled, .btn.btn-sm:disabled, .badge-sm:disabled {
   color: var(--outline);
 }
-.label-text-sm i, .tabs-sm .nav-item .nav-link i, .btn.btn-sm i, .badge-sm i {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.label-text-sm i:first-child, .tabs-sm .nav-item .nav-link i:first-child, .btn.btn-sm i:first-child, .badge-sm i:first-child {
-  margin-left: 0;
-}
-.label-text-sm i:last-child, .tabs-sm .nav-item .nav-link i:last-child, .btn.btn-sm i:last-child, .badge-sm i:last-child {
-  margin-right: 0;
-}
 
-.label-text-lg, .tabs-lg .nav-item .nav-link, .btn.btn-lg, .badge-lg {
+.label-text-lg, .tab-text-lg, .tabs-lg .nav-item .nav-link, .button-text-lg, .btn.btn-lg, .badge-lg {
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -251,29 +209,8 @@ a:focus {
   color: var(--on-background);
   background: none;
 }
-.label-text-lg:hover, .tabs-lg .nav-item .nav-link:hover, .btn.btn-lg:hover, .badge-lg:hover {
-  color: var(--on-background);
-  background-color: var(--surface);
-}
-.label-text-lg:focus, .tabs-lg .nav-item .nav-link:focus, .btn.btn-lg:focus, .badge-lg:focus, .label-text-lg:active, .tabs-lg .nav-item .nav-link:active, .btn.btn-lg:active, .badge-lg:active {
-  color: var(--on-background);
-  background-color: var(--surface-1);
-  box-shadow: 0 0 0 2px var(--brand-flat-strong);
-}
-.label-text-lg:disabled, .tabs-lg .nav-item .nav-link:disabled, .btn.btn-lg:disabled, .badge-lg:disabled {
+.label-text-lg:disabled, .tab-text-lg:disabled, .tabs-lg .nav-item .nav-link:disabled, .button-text-lg:disabled, .btn.btn-lg:disabled, .badge-lg:disabled {
   color: var(--outline);
-}
-.label-text-lg i, .tabs-lg .nav-item .nav-link i, .btn.btn-lg i, .badge-lg i {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-.label-text-lg i:first-child, .tabs-lg .nav-item .nav-link i:first-child, .btn.btn-lg i:first-child, .badge-lg i:first-child {
-  margin-left: 0;
-}
-.label-text-lg i:last-child, .tabs-lg .nav-item .nav-link i:last-child, .btn.btn-lg i:last-child, .badge-lg i:last-child {
-  margin-right: 0;
 }
 
 .bg-brand {
@@ -536,9 +473,89 @@ a:focus {
   padding: 0 0.5rem;
   border-radius: 0.5rem;
 }
+.badge.bg-secondary-flat, .bg-secondary-flat.sidebar-button-badge, .bg-secondary-flat.sidebar-button-badge-round {
+  color: var(--on-surface);
+  background-color: var(--surface) !important;
+}
+
+.badge-sm.badge-numerical {
+  padding: 0 0.375rem;
+  border-radius: 0.375rem;
+}
+
+.badge-lg.badge-numerical {
+  padding: 0 0.625rem;
+  border-radius: 0.625rem;
+}
 
 .badge-collections {
   margin-bottom: 1rem;
+}
+
+.button-text:hover, .btn:hover {
+  color: var(--on-background);
+  background-color: var(--surface);
+}
+.button-text:focus, .btn:focus, .button-text:active, .btn:active {
+  color: var(--on-background);
+  background-color: var(--surface-1);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong);
+}
+.button-text i, .btn i {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.button-text i:first-child, .btn i:first-child {
+  margin-left: 0;
+}
+.button-text i:last-child, .btn i:last-child {
+  margin-right: 0;
+}
+
+.button-text-sm:hover, .btn.btn-sm:hover {
+  color: var(--on-background);
+  background-color: var(--surface);
+}
+.button-text-sm:focus, .btn.btn-sm:focus, .button-text-sm:active, .btn.btn-sm:active {
+  color: var(--on-background);
+  background-color: var(--surface-1);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong);
+}
+.button-text-sm i, .btn.btn-sm i {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.button-text-sm i:first-child, .btn.btn-sm i:first-child {
+  margin-left: 0;
+}
+.button-text-sm i:last-child, .btn.btn-sm i:last-child {
+  margin-right: 0;
+}
+
+.button-text-lg:hover, .btn.btn-lg:hover {
+  color: var(--on-background);
+  background-color: var(--surface);
+}
+.button-text-lg:focus, .btn.btn-lg:focus, .button-text-lg:active, .btn.btn-lg:active {
+  color: var(--on-background);
+  background-color: var(--surface-1);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong);
+}
+.button-text-lg i, .btn.btn-lg i {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.button-text-lg i:first-child, .btn.btn-lg i:first-child {
+  margin-left: 0;
+}
+.button-text-lg i:last-child, .btn.btn-lg i:last-child {
+  margin-right: 0;
 }
 
 .btn {
@@ -1941,6 +1958,72 @@ optgroup {
 
 .sidebar-button-badge-round {
   padding: 0.25rem;
+}
+
+.tab-text:hover, .nav-pills .nav-link:hover, .nav-tabs .nav-item .nav-link:hover {
+  color: var(--on-background);
+  background-color: var(--surface);
+}
+.tab-text:focus, .nav-pills .nav-link:focus, .nav-tabs .nav-item .nav-link:focus, .tab-text:active, .nav-pills .nav-link:active, .nav-tabs .nav-item .nav-link:active {
+  color: var(--on-background);
+  background-color: var(--surface-1);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong);
+}
+.tab-text i, .nav-pills .nav-link i, .nav-tabs .nav-item .nav-link i {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.tab-text i:first-child, .nav-pills .nav-link i:first-child, .nav-tabs .nav-item .nav-link i:first-child {
+  margin-left: 0;
+}
+.tab-text i:last-child, .nav-pills .nav-link i:last-child, .nav-tabs .nav-item .nav-link i:last-child {
+  margin-right: 0;
+}
+
+.tab-text-sm:hover, .tabs-sm .nav-item .nav-link:hover {
+  color: var(--on-background);
+  background-color: var(--surface);
+}
+.tab-text-sm:focus, .tabs-sm .nav-item .nav-link:focus, .tab-text-sm:active, .tabs-sm .nav-item .nav-link:active {
+  color: var(--on-background);
+  background-color: var(--surface-1);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong);
+}
+.tab-text-sm i, .tabs-sm .nav-item .nav-link i {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.tab-text-sm i:first-child, .tabs-sm .nav-item .nav-link i:first-child {
+  margin-left: 0;
+}
+.tab-text-sm i:last-child, .tabs-sm .nav-item .nav-link i:last-child {
+  margin-right: 0;
+}
+
+.tab-text-lg:hover, .tabs-lg .nav-item .nav-link:hover {
+  color: var(--on-background);
+  background-color: var(--surface);
+}
+.tab-text-lg:focus, .tabs-lg .nav-item .nav-link:focus, .tab-text-lg:active, .tabs-lg .nav-item .nav-link:active {
+  color: var(--on-background);
+  background-color: var(--surface-1);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong);
+}
+.tab-text-lg i, .tabs-lg .nav-item .nav-link i {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.tab-text-lg i:first-child, .tabs-lg .nav-item .nav-link i:first-child {
+  margin-left: 0;
+}
+.tab-text-lg i:last-child, .tabs-lg .nav-item .nav-link i:last-child {
+  margin-right: 0;
 }
 
 .nav-tabs {

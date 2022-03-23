@@ -16,14 +16,29 @@
     padding: 0 0.5rem;
     border-radius: 0.5rem;
   }
+
+  &.bg-secondary-flat {
+    color: var(--on-surface);
+    background-color: var(--surface) !important;
+  }
 }
 
 .badge-sm {
   @extend .label-text-sm;
+
+  &.badge-numerical {
+    padding: 0 0.375rem;
+    border-radius: 0.375rem;
+  }
 }
 
 .badge-lg {
-  @extend .label-text-lg
+  @extend .label-text-lg;
+
+  &.badge-numerical {
+    padding: 0 0.625rem;
+    border-radius: 0.625rem;
+  }
 }
 
 .badge-collections {
