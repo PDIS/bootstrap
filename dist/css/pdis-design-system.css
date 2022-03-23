@@ -168,7 +168,7 @@ a:focus {
 }
 
 /* END PDIS's local docs style */
-.label-text, .nav-pills .nav-link, .nav-tabs .nav-item .nav-link, .btn {
+.label-text, .nav-pills .nav-link, .nav-tabs .nav-item .nav-link, .btn, .badge, .sidebar-button-badge, .sidebar-button-badge-round {
   font-style: normal;
   font-weight: 500;
   font-size: 0.875rem;
@@ -179,32 +179,32 @@ a:focus {
   color: var(--on-background);
   background: none;
 }
-.label-text:hover, .nav-pills .nav-link:hover, .nav-tabs .nav-item .nav-link:hover, .btn:hover {
+.label-text:hover, .nav-pills .nav-link:hover, .nav-tabs .nav-item .nav-link:hover, .btn:hover, .badge:hover, .sidebar-button-badge:hover, .sidebar-button-badge-round:hover {
   color: var(--on-background);
   background-color: var(--surface);
 }
-.label-text:focus, .nav-pills .nav-link:focus, .nav-tabs .nav-item .nav-link:focus, .btn:focus, .label-text:active, .nav-pills .nav-link:active, .nav-tabs .nav-item .nav-link:active, .btn:active {
+.label-text:focus, .nav-pills .nav-link:focus, .nav-tabs .nav-item .nav-link:focus, .btn:focus, .badge:focus, .sidebar-button-badge:focus, .sidebar-button-badge-round:focus, .label-text:active, .nav-pills .nav-link:active, .nav-tabs .nav-item .nav-link:active, .btn:active, .badge:active, .sidebar-button-badge:active, .sidebar-button-badge-round:active {
   color: var(--on-background);
   background-color: var(--surface-1);
   box-shadow: 0 0 0 2px var(--brand-flat-strong);
 }
-.label-text:disabled, .nav-pills .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .btn:disabled {
+.label-text:disabled, .nav-pills .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .btn:disabled, .badge:disabled, .sidebar-button-badge:disabled, .sidebar-button-badge-round:disabled {
   color: var(--outline);
 }
-.label-text i, .nav-pills .nav-link i, .nav-tabs .nav-item .nav-link i, .btn i {
+.label-text i, .nav-pills .nav-link i, .nav-tabs .nav-item .nav-link i, .btn i, .badge i, .sidebar-button-badge i, .sidebar-button-badge-round i {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
   font-size: 1.125rem;
   font-weight: 500;
 }
-.label-text i:first-child, .nav-pills .nav-link i:first-child, .nav-tabs .nav-item .nav-link i:first-child, .btn i:first-child {
+.label-text i:first-child, .nav-pills .nav-link i:first-child, .nav-tabs .nav-item .nav-link i:first-child, .btn i:first-child, .badge i:first-child, .sidebar-button-badge i:first-child, .sidebar-button-badge-round i:first-child {
   margin-left: 0;
 }
-.label-text i:last-child, .nav-pills .nav-link i:last-child, .nav-tabs .nav-item .nav-link i:last-child, .btn i:last-child {
+.label-text i:last-child, .nav-pills .nav-link i:last-child, .nav-tabs .nav-item .nav-link i:last-child, .btn i:last-child, .badge i:last-child, .sidebar-button-badge i:last-child, .sidebar-button-badge-round i:last-child {
   margin-right: 0;
 }
 
-.label-text-sm, .tabs-sm .nav-item .nav-link, .btn.btn-sm {
+.label-text-sm, .tabs-sm .nav-item .nav-link, .btn.btn-sm, .badge-sm {
   font-style: normal;
   font-weight: 500;
   font-size: 0.75rem;
@@ -215,32 +215,32 @@ a:focus {
   color: var(--on-background);
   background: none;
 }
-.label-text-sm:hover, .tabs-sm .nav-item .nav-link:hover, .btn.btn-sm:hover {
+.label-text-sm:hover, .tabs-sm .nav-item .nav-link:hover, .btn.btn-sm:hover, .badge-sm:hover {
   color: var(--on-background);
   background-color: var(--surface);
 }
-.label-text-sm:focus, .tabs-sm .nav-item .nav-link:focus, .btn.btn-sm:focus, .label-text-sm:active, .tabs-sm .nav-item .nav-link:active, .btn.btn-sm:active {
+.label-text-sm:focus, .tabs-sm .nav-item .nav-link:focus, .btn.btn-sm:focus, .badge-sm:focus, .label-text-sm:active, .tabs-sm .nav-item .nav-link:active, .btn.btn-sm:active, .badge-sm:active {
   color: var(--on-background);
   background-color: var(--surface-1);
   box-shadow: 0 0 0 2px var(--brand-flat-strong);
 }
-.label-text-sm:disabled, .tabs-sm .nav-item .nav-link:disabled, .btn.btn-sm:disabled {
+.label-text-sm:disabled, .tabs-sm .nav-item .nav-link:disabled, .btn.btn-sm:disabled, .badge-sm:disabled {
   color: var(--outline);
 }
-.label-text-sm i, .tabs-sm .nav-item .nav-link i, .btn.btn-sm i {
+.label-text-sm i, .tabs-sm .nav-item .nav-link i, .btn.btn-sm i, .badge-sm i {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
   font-size: 1rem;
   font-weight: 500;
 }
-.label-text-sm i:first-child, .tabs-sm .nav-item .nav-link i:first-child, .btn.btn-sm i:first-child {
+.label-text-sm i:first-child, .tabs-sm .nav-item .nav-link i:first-child, .btn.btn-sm i:first-child, .badge-sm i:first-child {
   margin-left: 0;
 }
-.label-text-sm i:last-child, .tabs-sm .nav-item .nav-link i:last-child, .btn.btn-sm i:last-child {
+.label-text-sm i:last-child, .tabs-sm .nav-item .nav-link i:last-child, .btn.btn-sm i:last-child, .badge-sm i:last-child {
   margin-right: 0;
 }
 
-.label-text-lg, .tabs-lg .nav-item .nav-link, .btn.btn-lg {
+.label-text-lg, .tabs-lg .nav-item .nav-link, .btn.btn-lg, .badge-lg {
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -251,28 +251,28 @@ a:focus {
   color: var(--on-background);
   background: none;
 }
-.label-text-lg:hover, .tabs-lg .nav-item .nav-link:hover, .btn.btn-lg:hover {
+.label-text-lg:hover, .tabs-lg .nav-item .nav-link:hover, .btn.btn-lg:hover, .badge-lg:hover {
   color: var(--on-background);
   background-color: var(--surface);
 }
-.label-text-lg:focus, .tabs-lg .nav-item .nav-link:focus, .btn.btn-lg:focus, .label-text-lg:active, .tabs-lg .nav-item .nav-link:active, .btn.btn-lg:active {
+.label-text-lg:focus, .tabs-lg .nav-item .nav-link:focus, .btn.btn-lg:focus, .badge-lg:focus, .label-text-lg:active, .tabs-lg .nav-item .nav-link:active, .btn.btn-lg:active, .badge-lg:active {
   color: var(--on-background);
   background-color: var(--surface-1);
   box-shadow: 0 0 0 2px var(--brand-flat-strong);
 }
-.label-text-lg:disabled, .tabs-lg .nav-item .nav-link:disabled, .btn.btn-lg:disabled {
+.label-text-lg:disabled, .tabs-lg .nav-item .nav-link:disabled, .btn.btn-lg:disabled, .badge-lg:disabled {
   color: var(--outline);
 }
-.label-text-lg i, .tabs-lg .nav-item .nav-link i, .btn.btn-lg i {
+.label-text-lg i, .tabs-lg .nav-item .nav-link i, .btn.btn-lg i, .badge-lg i {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
   font-size: 1.25rem;
   font-weight: 500;
 }
-.label-text-lg i:first-child, .tabs-lg .nav-item .nav-link i:first-child, .btn.btn-lg i:first-child {
+.label-text-lg i:first-child, .tabs-lg .nav-item .nav-link i:first-child, .btn.btn-lg i:first-child, .badge-lg i:first-child {
   margin-left: 0;
 }
-.label-text-lg i:last-child, .tabs-lg .nav-item .nav-link i:last-child, .btn.btn-lg i:last-child {
+.label-text-lg i:last-child, .tabs-lg .nav-item .nav-link i:last-child, .btn.btn-lg i:last-child, .badge-lg i:last-child {
   margin-right: 0;
 }
 
@@ -522,15 +522,19 @@ a:focus {
 
 .badge, .sidebar-button-badge, .sidebar-button-badge-round {
   margin: 0 0.25rem;
-  padding: 0.5rem;
-  color: var(--bs-on-background);
-  background-color: var(--brand-base);
+  padding: 0.125rem 0.625rem;
+  color: var(--on-brand-flat);
+  background-color: var(--brand-flat);
 }
 .badge:first-child, .sidebar-button-badge:first-child, .sidebar-button-badge-round:first-child {
   margin-left: 0;
 }
 .badge:last-child, .sidebar-button-badge:last-child, .sidebar-button-badge-round:last-child {
   margin-right: 0;
+}
+.badge.badge-numerical, .badge-numerical.sidebar-button-badge, .badge-numerical.sidebar-button-badge-round {
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .badge-collections {
@@ -1378,6 +1382,10 @@ a:focus {
   color: var(--outline);
   background-color: var(--surface);
 }
+.btn .badge, .btn .sidebar-button-badge, .btn .sidebar-button-badge-round {
+  top: 0;
+}
+
 /* .btn-link {
   color: var(--brand);
   &:hover, &:active, &:focus {
