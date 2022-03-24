@@ -46,3 +46,42 @@
   }
 
 }
+
+.body-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+  color: var(--on-background);
+
+  &:disabled {
+    color: var(--outline);
+  }
+}
+
+.body-text-sm {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.25px;
+  color: var(--on-background);
+
+  &:disabled {
+    color: var(--outline);
+  }
+}
+
+.body-text-lg {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  letter-spacing: 0.75px;
+  color: var(--on-background);
+
+  &:disabled {
+    color: var(--outline);
+  }
+}
