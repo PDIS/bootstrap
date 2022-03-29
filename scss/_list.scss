@@ -1,10 +1,10 @@
 .list-group {
-
   .list-group-item {
     @extend .body-text;
     display: flex;
     align-items: center;
     border: none;
+    padding: 1rem;
 
     .list-group-item-subheader {
       @extend .body-text-sm;
@@ -24,6 +24,10 @@
       &:last-child {
         margin-right: 0;
       }
+    }
+
+    a {
+      text-decoration: none;
     }
 
     &:hover, &:focus, &:active {
@@ -65,7 +69,7 @@
   }
 }
 
-
+/* 
 .list {
   .list-item {
     display: block;
@@ -140,3 +144,4 @@
   }
 
 }
+ */

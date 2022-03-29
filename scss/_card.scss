@@ -1,44 +1,93 @@
 .card {
-  background: var(--surface);
   border: 1px solid var(--outline);
-
-  .card-header {
-    color: var(--on-surface);
-    background-color: var(--surface-variant);
-    font-weight: 500;
-    padding: 1rem 1.5rem 1rem 1.5rem;
-  }
+  border-radius: 0.5rem;
 
   .card-body {
-    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    padding: 1rem;
 
     .card-title {
+      @extend .title-text;
       color: var(--on-surface);
-      margin-bottom: 1rem;
-      font-weight: 500;
+      margin-bottom: 0;
     }
   
     .card-text {
+      @extend .body-text;
       color: var(--on-surface-variant);
+      //margin-bottom: 1rem;
+    }
+
+  }
+
+  .card-actions {
+    padding: 1rem
+  }
+
+  .card-img-top {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+  }
+
+  img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .card-image {
+    width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 100%;
+    aspect-ratio: 2/3;
+
+    @media (max-width: 768px) {
+      aspect-ratio: 1/1;
+    }
+  }
+
+  &.elevated {
+    background: var(--surface);
+
+    .card-actions {
+      background: var(--surface);
     }
   }
 }
 
-.text-card {
+.masonry-card {
+  .card-header {
+    @extend .title-text;
+    color: var(--on-surface);
+    background-color: var(--surface-2);
+    padding: 1rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+  }
+
   .card-body {
-    padding: 1.5rem;
+    background-color: var(--surface);
 
     .card-title {
-      font-weight: 900;
+      @extend .heading-text;
       margin-bottom: 1rem;
     }
-  
-    .card-text {
+    
+    ul, ol {
       margin-bottom: 0;
     }
   }
-}
 
+  .card-actions {
+    background: var(--surface);
+  }
+
+  .list-group {
+    &:last-child {
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+  }
+}
+/* 
 .list-card {
   .card-body {
     background-color: var(--surface-1);
@@ -83,4 +132,4 @@
       }
     }
   }
-}
+} */
