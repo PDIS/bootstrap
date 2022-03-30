@@ -40,19 +40,23 @@ toc: true
 {{< example >}}
 
 <div class="row">
-  <div class="col">
+  <div class="col-6">
     <ul class="list-group twoline">
       <li class="list-group-item"><i class="bi bi-arrow-counterclockwise"></i><div>列表主要文字<div class="list-group-item-subheader">列表補充文字內容</div></div><i class="bi bi-arrow-counterclockwise"></i></li>
-      <li class="list-group-item"><div>列表主要文字<div class="list-group-item-subheader">列表補充文字內容</div></div></li>
+      <li class="list-group-item"><div class="d-grid"><div class="text-truncate">列表主要文字列表主要文字列表主要文字列表主要文字</div><div class="list-group-item-subheader text-truncate">列表補充文字內容列表補充文字內容列表補充文字內容列表補充文字內容列表補充文字內容列表補充文字內容</div></div></li>
       <li class="list-group-item"><span class="badge">badge</span><div>列表主要文字<div class="list-group-item-subheader">列表補充文字內容</div></div></li>
+      <li class="list-group-item"><span class="badge bg-accent-flat">04-22</span><div>列表主要文字</div><i class="bi bi-exclamation-triangle-fill"></i></li>
     </ul>
   </div>
 </div>
 <br/>
 <div class="row">
   <div class="col">
+   <ul class="list-group twoline">
+      	<li class="list-group-item">列表主要文字<div class="list-group-item-subheader">列表補充文字內容</div></li>
+      </ul>
     <ul class="list-group">
-      <li class="list-group-item">標題</li>
+          	<li class="list-group-item"><div class="list-group-item-header">列表主要文字</div><div class="list-group-item-subheader d-inline-block text-truncate">列表補充文字內容列表補充文字內容列表補充文字內容列表補充文字內容列表補充文字內容列表補充文字內容列表補充文字內容</div></li>
       <li class="list-group-item">標題</li>
       <li class="list-group-item">標題</li>
     </ul>
@@ -61,8 +65,8 @@ toc: true
 <div class="row">
   <div class="col">
     <ul class="list-group">
-      <li class="list-group-item"><span>標題</span><i class="bi bi-arrow-counterclockwise"></i></li>
-      <li class="list-group-item"><i class="bi bi-arrow-counterclockwise"></i><span>標題</span></li>
+      <a href="#" class="list-group-item"><span>標題</span><i class="bi bi-arrow-counterclockwise"></i></a>
+      <a href="#" class="list-group-item"><i class="bi bi-arrow-counterclockwise"></i><span>標題</span></a>
       <li class="list-group-item"><span class="badge">badge</span><span>標題</span></li>
     </ul>
   </div>

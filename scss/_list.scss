@@ -4,11 +4,16 @@
     display: flex;
     align-items: center;
     border: none;
-    padding: 1rem;
+    padding: 0.75rem;
 
     .list-group-item-subheader {
       @extend .body-text-sm;
       margin-left: 0.5rem;
+      color: var(--on-surface-variant);
+    }
+
+    .list-group-item-header {
+      min-width: max-content;
     }
 
     i {
@@ -30,8 +35,12 @@
       text-decoration: none;
     }
 
-    &:hover, &:focus, &:active {
+    &:hover {
       background-color: var(--surface);
+    }
+
+    &:focus, &:active {
+      background-color: var(--surface-1);
     }
   }
 
