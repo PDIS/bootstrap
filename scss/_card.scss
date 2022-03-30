@@ -14,7 +14,7 @@
     .card-text {
       @extend .body-text;
       color: var(--on-surface-variant);
-      //margin-bottom: 1rem;
+      margin: 0.5rem 0;
     }
 
   }
@@ -37,7 +37,7 @@
     background-size: cover !important;
     background-position: center !important;
     height: 100%;
-    aspect-ratio: 2/3;
+    aspect-ratio: 3/4;
 
     @media (max-width: 768px) {
       aspect-ratio: 1/1;
@@ -46,9 +46,27 @@
 
   &.elevated {
     background: var(--surface);
-
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
     .card-actions {
       background: var(--surface);
+    }
+  }
+
+  &.clickable {
+    cursor: pointer;
+  }
+  
+  &.text-center {
+    list-style-position: inside;
+
+    ul, ol {
+      margin-bottom: 0;
+      padding-left: 0 !important;
+    }
+
+    .list-group {
+      align-items: center !important
     }
   }
 }
@@ -57,14 +75,18 @@
   .card-header {
     @extend .title-text;
     color: var(--on-surface);
-    background-color: var(--surface-2);
+    background-color: var(--surface);
     padding: 1rem;
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
   }
 
   .card-body {
-    background-color: var(--surface);
+
+    &:last-child {
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
 
     .card-title {
       @extend .heading-text;
@@ -73,6 +95,7 @@
     
     ul, ol {
       margin-bottom: 0;
+      padding-left: 1.5rem;
     }
   }
 
@@ -81,55 +104,22 @@
   }
 
   .list-group {
+    border: none;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+
     &:last-child {
       border-bottom-left-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
     }
   }
+
+  hr {
+    margin: 0;
+    color: var(--outline);
+  }
+
+  img {
+    margin-bottom: 0.5rem;
+  }
 }
-/* 
-.list-card {
-  .card-body {
-    background-color: var(--surface-1);
-    padding: 1.5rem;
-
-    .card-title {
-      font-weight: 900;
-      margin-bottom: 1rem;
-    }
-  
-    .card-text {
-      margin-bottom: 1rem;
-    }
-  }
-
-  .list-group {
-    background-color: var(--surface);
-
-    .list-group-item {
-      background-color: var(--surface);
-      padding: 0.75rem 1.5rem;
-
-      a {
-        margin: 0 0.5rem;
-    
-        &:first-child {
-          margin-left: 0;
-        }
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-
-      i + a {
-        margin-left: 0;
-      }
-
-      &.border-0 {
-        &:last-child {
-          margin-bottom: 0.5rem;
-        }
-      }
-    }
-  }
-} */

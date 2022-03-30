@@ -115,10 +115,7 @@
       text-decoration: none;
       border-radius: 8px 8px 0px 0px;
       border-bottom: 2px solid var(--surface-variant);
-
-      // &:hover {
-      //   background-color: var(--surface);
-      // }
+      padding: 0.5rem 0.875rem;
 
       &:focus, &:active {
         box-shadow: none !important;
@@ -144,10 +141,6 @@
     @extend .tab-text;
     text-decoration: none;
     border: 2px solid transparent;
-    // &:hover {
-    //   color: var(--on-background);
-    //   background-color: var(--surface);
-    // }
 
     &:disabled {
       background: none;
@@ -159,6 +152,10 @@
       background-color: var(--surface-1);
       box-shadow: none !important;
       border: 2px solid var(--brand-flat-strong);
+    }
+
+    &:active, &.focus {
+      box-shadow: none !important;
     }
   }
 }

@@ -48,14 +48,27 @@ group: components
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
-    <div class="card">
+    <div class="card clickable" onclick="location.href='#'">
       <img src="/docs/5.1/assets/img/bg-card.png" class="image card-img-top" alt="...">  
       <div class="card-body">
         <div class="card-title">標題文字</div>
+        <div class="badge-group">
+          <span class="badge">主題標籤</span><span class="badge">主題標籤</span><span class="badge">主題標籤</span>
+        </div>
         <div class="card-text">此部分為卡片之內文部分文字或副標題內容</div>
       </div>
-      <div class="card-actions">
-        <button type="button" class="btn btn-primary">預設按鈕</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4">
+    <div class="card masonry-card" onclick="location.href='#'">
+      <div class="card-header">服務項目類別</div>
+      <div class="card-body">
+        <div class="card-title">標題</div>
+        <div class="card-text">卡片內文或補充說明。 </div>
       </div>
     </div>
   </div>
@@ -73,8 +86,6 @@ group: components
           <div class="card-body">
             <div class="card-title">標題文字</div>
             <div class="card-text">此部分為卡片之內文部分文字或副標題內容</div>
-          </div>
-          <div class="card-actions">
             <button type="button" class="btn btn-primary">預設按鈕</button>
           </div>
         </div>
@@ -88,6 +99,7 @@ group: components
     <div class="card masonry-card">
       <div class="card-header">服務項目類別</div>
       <div class="card-body">
+        <img src="/docs/5.1/assets/img/bg-list-card.png" class="img-fluid" alt="...">  
         <div class="card-title">標題</div>
         <div class="card-text">卡片內文或補充說明。
           <ol>
@@ -95,15 +107,13 @@ group: components
             <li>文字列表</li>
           </ol>
         </div>
-      </div>
-      <div class="card-actions">
-        <button type="button" class="btn btn-primary">預設按鈕</button>
+        <hr>
       </div>
       <ul class="list-group">
-        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
-        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+        <a href="#" class="list-group-item"><i class="bi bi-bell-fill"></i><div>列表主要文字</div></a>
+        <a href="#" class="list-group-item"><i class="bi bi-bell-fill"></i><div>列表主要文字</div></a>
+        <a href="#" class="list-group-item"><i class="bi bi-bell-fill"></i><div>列表主要文字</div></a>
+        <a href="#" class="list-group-item"><i class="bi bi-bell-fill"></i><div>列表主要文字</div></a>
       </ul>
     </div>
   </div>

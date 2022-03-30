@@ -206,7 +206,7 @@ group: components
 <div class="row">
   <div class="col-12">
     <div class="nav-scroll">
-      <button type="button" class="btn" onclick="Prev(this)"><i class="bi bi-caret-left"></i></button>
+      <button type="button" class="btn btn-tertiary" onclick="Prev(this)"><i class="bi bi-chevron-left"></i></button>
       <div class="nav-scroll-wrapper">
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item" role="presentation">
@@ -241,7 +241,7 @@ group: components
           </li>
         </ul>
       </div>
-      <button class="btn" onclick="Next(this)"><i class="bi bi-caret-right"></i></button>
+      <button class="btn btn-tertiary" onclick="Next(this)"><i class="bi bi-chevron-right"></i></button>
     </div>
     <div class="tab-content" id="tabContent-scrollable">
       <div class="tab-pane fade show active" id="scroll-content1" role="tabpanel" aria-labelledby="scroll-tab1">頁籤內容1</div>
@@ -261,7 +261,7 @@ group: components
 <div class="row">
   <div class="col-12">
     <div class="nav-scroll">
-      <button type="button" class="btn" onclick="Prev(this)"><i class="bi bi-caret-left"></i></button>
+      <button type="button" class="btn btn-tertiary" onclick="Prev(this)"><i class="bi bi-chevron-left"></i></button>
       <div class="nav-scroll-wrapper">
         <ul class="nav nav-pills" role="tablist">
           <li class="nav-item" role="presentation">
@@ -296,7 +296,7 @@ group: components
           </li>
         </ul>
       </div>
-      <button class="btn" onclick="Next(this)"><i class="bi bi-caret-right"></i></button>
+      <button class="btn btn-tertiary" onclick="Next(this)"><i class="bi bi-chevron-right"></i></button>
     </div>
     <div class="tab-content" id="tabContent-scrollable">
       <div class="tab-pane fade show active" id="scroll-pills-content1" role="tabpanel" aria-labelledby="scroll-pills-tab1">頁籤內容1</div>
