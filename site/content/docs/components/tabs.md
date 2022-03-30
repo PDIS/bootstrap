@@ -63,7 +63,7 @@ group: components
         <button class="nav-link" id="tab2" data-bs-toggle="tab" data-bs-target="#content2" type="button" role="tab" aria-controls="tab2" aria-selected="false">頁籤項目</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab3" data-bs-toggle="tab" data-bs-target="#content3" type="button" role="tab" aria-controls="tab3" aria-selected="false">頁籤項目</button>
+        <button class="nav-link" disabled id="tab3" data-bs-toggle="tab" data-bs-target="#content3" type="button" role="tab" aria-controls="tab3" aria-selected="false">頁籤項目</button>
       </li>
     </ul>
     <div class="tab-content" id="tabContent">
@@ -157,10 +157,10 @@ group: components
   <div class="col-12">
     <ul class="nav nav-tabs" id="tab-icon" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="tab1-icon" data-bs-toggle="tab" data-bs-target="#content1-icon" type="button" role="tab" aria-controls="tab1-icon" aria-selected="true"><i class="bi bi-box-seam icon"></i>寄包裹</button>
+        <button class="nav-link active" id="tab1-icon" data-bs-toggle="tab" data-bs-target="#content1-icon" type="button" role="tab" aria-controls="tab1-icon" aria-selected="true"><i class="bi bi-house-door"></i><span>寄包裹</span></button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab2-icon" data-bs-toggle="tab" data-bs-target="#content2-icon" type="button" role="tab" aria-controls="tab2-icon" aria-selected="false"><i class="bi bi-envelope icon"></i>寄信件</button>
+        <button class="nav-link" id="tab2-icon" data-bs-toggle="tab" data-bs-target="#content2-icon" type="button" role="tab" aria-controls="tab2-icon" aria-selected="false"><i class="bi bi-info-circle"></i><span>寄信件</span></button>
       </li>
     </ul>
     <div class="tab-content" id="tabContent-icon">
