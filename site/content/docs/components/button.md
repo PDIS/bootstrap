@@ -37,6 +37,8 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
+    <button type="button" class="btn btn-primary"><span>圓角按鈕</span><span class="badge badge-numerical">2</span></button>
+    <button type="button" class="btn btn-primary"><span>圓角按鈕</span><span class="badge">Brand</span></button>
     <button type="button" class="btn btn-primary">圓角按鈕</button>
     <button type="button" class="btn btn-secondary">圓角按鈕</button>
     <button type="button" class="btn btn-semi-secondary">圓角按鈕</button>

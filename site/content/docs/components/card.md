@@ -49,14 +49,92 @@ group: components
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
     <div class="card">
-    <img src="/docs/5.1/assets/img/bg-card.png" class="card-img-top" alt="...">  
+      <img src="/docs/5.1/assets/img/bg-card.png" class="image card-img-top" alt="...">  
       <div class="card-body">
-        <h5 class="card-title">標題文字</h5>
-        <p class="card-text">此部分為卡片之內文。</p>
+        <div class="card-title">標題文字</div>
+        <div class="card-text">此部分為卡片之內文部分文字或副標題內容</div>
+      </div>
+      <div class="card-actions">
+        <button type="button" class="btn btn-primary">預設按鈕</button>
       </div>
     </div>
   </div>
 </div>
+
+
+<div class="row d-flex justify-content-center">
+  <div class="col">
+    <div class="card">
+      <div class="row align-items-center">
+        <div class="col-lg-4">
+          <div class="card-image rounded-start" style="background: url('/docs/5.1/assets/img/bg-card.png')"></div>  
+        </div>
+        <div class="col-lg-8">
+          <div class="card-body">
+            <div class="card-title">標題文字</div>
+            <div class="card-text">此部分為卡片之內文部分文字或副標題內容</div>
+          </div>
+          <div class="card-actions">
+            <button type="button" class="btn btn-primary">預設按鈕</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-md-5">
+    <div class="card masonry-card">
+      <div class="card-header">服務項目類別</div>
+      <div class="card-body">
+        <div class="card-title">標題</div>
+        <div class="card-text">卡片內文或補充說明。
+          <ol>
+            <li>文字列表</li>
+            <li>文字列表</li>
+          </ol>
+        </div>
+      </div>
+      <div class="card-actions">
+        <button type="button" class="btn btn-primary">預設按鈕</button>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<br/>
+<div class="row d-flex justify-content-center">
+  <div class="col-md-5">
+    <div class="card masonry-card">
+      <div class="card-header">服務項目類別</div>
+      <div class="card-body">
+        <div class="card-title">標題</div>
+        <div class="card-text">卡片內文或補充說明。
+          <ol>
+            <li>文字列表</li>
+            <li>文字列表</li>
+          </ol>
+        </div>
+      </div>
+      <div class="card-actions">
+        <button type="button" class="btn btn-primary">預設按鈕</button>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+        <li class="list-group-item"><i class="bi bi-award text-information icon"></i><a href="#">列表</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 
 {{< /example >}}
 
