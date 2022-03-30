@@ -1,11 +1,19 @@
 @each $key, $value in $color-envs {
   .bg-#{$key} {
     background-color: var(--#{$value}) !important;
-    color: var(--on-#{$value});
+    color: var(--on-#{$value}) !important;
   }
   .bg-#{$key}-flat {
     background-color: var(--#{$value}-flat) !important;
-    color: var(--on-#{$value}-flat);
+    color: var(--on-#{$value}-flat) !important;
+  }
+  .bg-#{$key}-strong {
+    background-color: var(--#{$value}-strong) !important;
+    color: var(--on-#{$value}-strong) !important;
+  }
+  .bg-#{$key}-flat-strong {
+    background-color: var(--#{$value}-flat-strong) !important;
+    color: var(--on-#{$value}-flat-strong) !important;
   }
 }
 
