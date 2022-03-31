@@ -41,6 +41,17 @@
   }
 }
 
+.badge-date {
+  @extend .label-text-sm;
+
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  padding: 0 0.25rem;
+  border-radius: 0.5rem;
+}
+
 .badge-group {
   margin-top: 0.55rem;
 }
+

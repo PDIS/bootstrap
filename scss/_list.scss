@@ -1,4 +1,6 @@
 .list-group {
+  border-radius: 0.5rem;
+
   .list-group-item {
     @extend .body-text;
     display: flex;
@@ -48,6 +50,10 @@
     .list-group-item {
       border-bottom: 1px solid var(--outline);
       border-radius: 0;
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
   }
 
@@ -73,6 +79,7 @@
 
       .list-group-item-subheader {
         margin-left: 0;
+        margin-top: 0.25rem;
       }
     }
   }

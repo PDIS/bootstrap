@@ -48,7 +48,7 @@ group: components
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
-    <div class="card clickable" onclick="location.href='#'">
+    <div class="card">
       <img src="/docs/5.1/assets/img/bg-card.png" class="image card-img-top" alt="...">  
       <div class="card-body">
         <div class="card-title">標題文字</div>
@@ -56,6 +56,9 @@ group: components
           <span class="badge">主題標籤</span><span class="badge">主題標籤</span><span class="badge">主題標籤</span>
         </div>
         <div class="card-text">此部分為卡片之內文部分文字或副標題內容</div>
+        <div class="card-actions">
+          <button type="button" class="btn btn-primary">預設按鈕</button>
+        </div>
       </div>
     </div>
   </div>

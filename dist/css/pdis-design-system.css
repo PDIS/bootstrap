@@ -159,7 +159,7 @@ a:focus {
 }
 
 /* END PDIS's local docs style */
-.label-text, .tab-text, .nav-pills .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .badge {
+.label-text, .tab-text, .nav-pills .nav-item .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .badge {
   font-style: normal;
   font-weight: 500;
   font-size: 0.875rem;
@@ -170,11 +170,11 @@ a:focus {
   color: var(--on-background);
   background: none;
 }
-.label-text:disabled, .tab-text:disabled, .nav-pills .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .badge:disabled {
+.label-text:disabled, .tab-text:disabled, .nav-pills .nav-item .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .badge:disabled {
   color: var(--outline);
 }
 
-.label-text-sm, .tab-text-sm, .tabs-sm .nav-item .nav-link, .button-text-sm, .btn.btn-sm, .badge-sm {
+.label-text-sm, .tab-text-sm, .tabs-sm .nav-item .nav-link, .button-text-sm, .btn.btn-sm, .badge-date, .badge-sm {
   font-style: normal;
   font-weight: 500;
   font-size: 0.75rem;
@@ -185,7 +185,7 @@ a:focus {
   color: var(--on-background);
   background: none;
 }
-.label-text-sm:disabled, .tab-text-sm:disabled, .tabs-sm .nav-item .nav-link:disabled, .button-text-sm:disabled, .btn.btn-sm:disabled, .badge-sm:disabled {
+.label-text-sm:disabled, .tab-text-sm:disabled, .tabs-sm .nav-item .nav-link:disabled, .button-text-sm:disabled, .btn.btn-sm:disabled, .badge-date:disabled, .badge-sm:disabled {
   color: var(--outline);
 }
 
@@ -613,6 +613,14 @@ a:focus {
 .badge-lg.badge-numerical {
   padding: 0 0.625rem;
   border-radius: 0.625rem;
+}
+
+.badge-date {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  padding: 0 0.25rem;
+  border-radius: 0.5rem;
 }
 
 .badge-group {
@@ -1550,6 +1558,9 @@ a:focus {
     color: var(--brand-strong);
   }
 } */
+.list-group {
+  border-radius: 0.5rem;
+}
 .list-group .list-group-item {
   display: flex;
   align-items: center;
@@ -1588,6 +1599,9 @@ a:focus {
   border-bottom: 1px solid var(--outline);
   border-radius: 0;
 }
+.list-group.divider .list-group-item:last-child {
+  border-bottom: none;
+}
 .list-group.border {
   border: 1px solid var(--outline) !important;
 }
@@ -1604,6 +1618,7 @@ a:focus {
 }
 .list-group.twoline .list-group-item .list-group-item-subheader {
   margin-left: 0;
+  margin-top: 0.25rem;
 }
 
 .card {
@@ -1622,7 +1637,7 @@ a:focus {
   margin: 0.5rem 0;
 }
 .card .card-actions {
-  padding: 1rem;
+  margin-top: 0.25rem;
 }
 .card .card-img-top {
   border-top-right-radius: 0.5rem;
@@ -1683,9 +1698,6 @@ a:focus {
   margin-bottom: 0;
   padding-left: 1.5rem;
 }
-.masonry-card .card-actions {
-  background: var(--surface);
-}
 .masonry-card .list-group {
   border: none;
   padding: 0 1rem;
@@ -1703,29 +1715,29 @@ a:focus {
   margin-bottom: 0.5rem;
 }
 
-.tab-text:hover, .nav-pills .nav-link:hover, .nav-tabs .nav-item .nav-link:hover {
+.tab-text:hover, .nav-pills .nav-item .nav-link:hover, .nav-tabs .nav-item .nav-link:hover {
   color: var(--on-background);
   background-color: var(--surface);
 }
-.tab-text:focus, .nav-pills .nav-link:focus, .nav-tabs .nav-item .nav-link:focus, .tab-text:active, .nav-pills .nav-link:active, .nav-tabs .nav-item .nav-link:active {
+.tab-text:focus, .nav-pills .nav-item .nav-link:focus, .nav-tabs .nav-item .nav-link:focus, .tab-text:active, .nav-pills .nav-item .nav-link:active, .nav-tabs .nav-item .nav-link:active {
   color: var(--on-background);
   background-color: var(--surface-1);
   box-shadow: 0 0 0 2px var(--brand-flat-strong);
 }
-.tab-text i, .nav-pills .nav-link i, .nav-tabs .nav-item .nav-link i {
+.tab-text i, .nav-pills .nav-item .nav-link i, .nav-tabs .nav-item .nav-link i {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
   font-size: 1.125rem;
   font-weight: 500;
   vertical-align: middle;
 }
-.tab-text i:first-child, .nav-pills .nav-link i:first-child, .nav-tabs .nav-item .nav-link i:first-child {
+.tab-text i:first-child, .nav-pills .nav-item .nav-link i:first-child, .nav-tabs .nav-item .nav-link i:first-child {
   margin-left: 0;
 }
-.tab-text i:last-child, .nav-pills .nav-link i:last-child, .nav-tabs .nav-item .nav-link i:last-child {
+.tab-text i:last-child, .nav-pills .nav-item .nav-link i:last-child, .nav-tabs .nav-item .nav-link i:last-child {
   margin-right: 0;
 }
-.tab-text span, .nav-pills .nav-link span, .nav-tabs .nav-item .nav-link span {
+.tab-text span, .nav-pills .nav-item .nav-link span, .nav-tabs .nav-item .nav-link span {
   vertical-align: middle;
 }
 
@@ -1786,6 +1798,7 @@ a:focus {
 }
 .nav-tabs .nav-item {
   display: inline-block;
+  margin: 0.25rem 0;
 }
 .nav-tabs .nav-item .nav-link {
   border: 0;
@@ -1808,21 +1821,42 @@ a:focus {
   margin-bottom: 1px;
 }
 
-.nav-pills .nav-link {
+.nav-pills .nav-item {
+  margin: 0.25rem 0.125rem;
+}
+.nav-pills .nav-item:first-child {
+  margin-left: 0;
+}
+.nav-pills .nav-item:last-child {
+  margin-right: 0;
+}
+.nav-pills .nav-item .nav-link {
   text-decoration: none;
   border: 2px solid transparent;
 }
-.nav-pills .nav-link:disabled {
+.nav-pills .nav-item .nav-link:first-child {
+  margin-left: 0;
+}
+.nav-pills .nav-item .nav-link:last-child {
+  margin-right: 0;
+}
+.nav-pills .nav-item .nav-link:disabled {
   background: none;
   color: var(--outline);
 }
-.nav-pills .nav-link.active {
+.nav-pills .nav-item .nav-link.active {
   color: var(--on-background);
-  background-color: var(--surface-1);
+  background-color: var(--surface-3);
   box-shadow: none !important;
+}
+.nav-pills .nav-item .nav-link.active:hover {
+  background-color: var(--surface-5);
+}
+.nav-pills .nav-item .nav-link.active:active, .nav-pills .nav-item .nav-link.active:focus {
+  background-color: var(--surface-5);
   border: 2px solid var(--brand-flat-strong);
 }
-.nav-pills .nav-link:active, .nav-pills .nav-link.focus {
+.nav-pills .nav-item .nav-link:active, .nav-pills .nav-item .nav-link:focus {
   box-shadow: none !important;
 }
 
@@ -1840,6 +1874,15 @@ a:focus {
 }
 .nav-scroll .nav-scroll-wrapper .nav {
   flex-wrap: nowrap;
+}
+.nav-scroll button {
+  margin: 0 0.5rem;
+}
+.nav-scroll button:first-child {
+  margin-left: 0;
+}
+.nav-scroll button:last-child {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=pdis-design-system.css.map */
