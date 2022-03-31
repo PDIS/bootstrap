@@ -108,6 +108,7 @@
   border-bottom: 0;
   .nav-item {
     display: inline-block;
+    margin: 0.25rem 0;
 
     .nav-link {
       @extend .tab-text;
@@ -137,25 +138,54 @@
 }
 
 .nav-pills {
-  .nav-link {
-    @extend .tab-text;
-    text-decoration: none;
-    border: 2px solid transparent;
+  .nav-item {
+    margin: 0.25rem 0.125rem;
 
-    &:disabled {
-      background: none;
-      color: var(--outline);
+    &:first-child {
+      margin-left: 0;
     }
 
-    &.active {
-      color: var(--on-background);
-      background-color: var(--surface-1);
-      box-shadow: none !important;
-      border: 2px solid var(--brand-flat-strong);
+    &:last-child {
+      margin-right: 0;
     }
 
-    &:active, &.focus {
-      box-shadow: none !important;
+    .nav-link {
+      @extend .tab-text;
+      text-decoration: none;
+      border: 2px solid transparent;
+  
+  
+      &:first-child {
+        margin-left: 0;
+      }
+  
+      &:last-child {
+        margin-right: 0;
+      }
+  
+      &:disabled {
+        background: none;
+        color: var(--outline);
+      }
+  
+      &.active {
+        color: var(--on-background);
+        background-color: var(--surface-3);
+        box-shadow: none !important;
+        //border: 2px solid var(--brand-flat-strong);
+        &:hover {
+          background-color: var(--surface-5);
+        }
+
+        &:active, &:focus {
+          background-color: var(--surface-5);
+          border: 2px solid var(--brand-flat-strong);
+        }
+      }
+  
+      &:active, &:focus {
+        box-shadow: none !important;
+      }
     }
   }
 }
@@ -173,6 +203,17 @@
 
     .nav {
       flex-wrap: nowrap;
+    }
+  }
+  button {
+    margin: 0 0.5rem;
+    
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

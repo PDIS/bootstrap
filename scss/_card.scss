@@ -20,7 +20,7 @@
   }
 
   .card-actions {
-    padding: 1rem
+    margin-top: 0.25rem;
   }
 
   .card-img-top {
@@ -97,10 +97,6 @@
       margin-bottom: 0;
       padding-left: 1.5rem;
     }
-  }
-
-  .card-actions {
-    background: var(--surface);
   }
 
   .list-group {
