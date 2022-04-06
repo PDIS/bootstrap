@@ -1567,6 +1567,12 @@ a:focus {
   border: none;
   padding: 0.75rem;
 }
+.list-group .list-group-item:first-child {
+  border-radius: 0;
+}
+.list-group .list-group-item:last-child {
+  border-radius: 0;
+}
 .list-group .list-group-item .list-group-item-subheader {
   margin-left: 0.5rem;
   color: var(--on-surface-variant);
@@ -1610,8 +1616,11 @@ a:focus {
   border-top-right-radius: 0.5rem;
 }
 .list-group.border.divider .list-group-item:last-child {
-  border-bottom: none;
-  border-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.list-group.elevation {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
 .list-group.twoline .list-group-item {
   display: flex;
@@ -1669,6 +1678,10 @@ a:focus {
 .card.clickable {
   cursor: pointer;
 }
+.card.clickable:hover {
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+}
 .card.text-center {
   list-style-position: inside;
 }
@@ -1676,8 +1689,8 @@ a:focus {
   margin-bottom: 0;
   padding-left: 0 !important;
 }
-.card.text-center .list-group {
-  align-items: center !important;
+.card.text-center .list-group-item {
+  justify-content: center !important;
 }
 
 .masonry-card .card-header {
