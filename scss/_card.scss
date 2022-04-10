@@ -95,32 +95,33 @@
 
     .card-title {
       @extend .heading-text;
-      margin-bottom: 1rem;
+      margin-bottom: 0;
     }
     
     ul, ol {
       margin-bottom: 0;
       padding-left: 1.5rem;
     }
-  }
 
-  .list-group {
-    border: none;
-    padding: 0 1rem;
-    margin-bottom: 1rem;
+    hr {
+      margin: 0.75rem 0;
+      color: var(--outline);
+    }
 
-    &:last-child {
-      border-bottom-left-radius: 0.5rem;
-      border-bottom-right-radius: 0.5rem;
+    .list-group {
+      border: none;
+      padding: 0;
+      border-radius: 0;
+
+      &.list-group-horizontal {
+        .list-group-item {
+          justify-content: center;
+        }
+      }
     }
   }
 
-  hr {
-    margin: 0;
-    color: var(--outline);
-  }
-
   img {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
   }
 }

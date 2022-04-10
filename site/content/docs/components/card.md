@@ -111,18 +111,17 @@ group: components
           </ol>
         </div>
         <hr>
-      </div>
-      <ul class="list-group">
-        <a href="#" class="list-group-item"><i class="bi bi-bell-fill"></i><div>列表主要文字</div></a>
-        <a href="#" class="list-group-item"><i class="bi bi-bell-fill"></i><div>列表主要文字</div></a>
-        <a href="#" class="list-group-item"><i class="bi bi-bell-fill"></i><div>列表主要文字</div></a>
-        <a href="#" class="list-group-item"><i class="bi bi-bell-fill"></i><div>列表主要文字</div></a>
-      </ul>
-      <ul class="list-group list-group-horizontal">
-        <a href="#" class="list-group-item flex-fill">額外連結</a>
-        <a href="#" class="list-group-item flex-fill">額外連結</a>
-        <a href="#" class="list-group-item flex-fill">額外連結</a>
-      </ul>
+        <ul class="list-group">
+          <a href="#" class="list-group-item"><i class="bi bi-bell-fill"></i><div>列表主要文字</div></a>
+          <a href="#" class="list-group-item"><i class="bi bi-bell-fill"></i><div>列表主要文字</div></a>
+          <a href="#" class="list-group-item"><i class="bi bi-bell-fill"></i><div>列表主要文字</div></a>
+          <a href="#" class="list-group-item"><i class="bi bi-bell-fill"></i><div>列表主要文字</div></a>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+          <a href="#" class="list-group-item flex-fill">額外連結</a>
+          <a href="#" class="list-group-item flex-fill">額外連結</a>
+          <a href="#" class="list-group-item flex-fill">額外連結</a>
+        </ul>
     </div>
   </div>
 </div>
