@@ -63,7 +63,7 @@
   --bs-font-sans-serif: "Noto Sans", "Noto Sans TC", sans-serif;
 }
 
-.label-text, .dropdown .dropdown-menu .dropdown-item, .tab-text, .nav-pills .nav-item .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .badge {
+.label-text, .tab-text, .nav-pills .nav-item .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .badge {
   font-style: normal;
   font-weight: 500;
   font-size: 0.875rem;
@@ -74,7 +74,7 @@
   color: var(--on-background);
   background: none;
 }
-.label-text:disabled, .dropdown .dropdown-menu .dropdown-item:disabled, .tab-text:disabled, .nav-pills .nav-item .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .badge:disabled {
+.label-text:disabled, .tab-text:disabled, .nav-pills .nav-item .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .badge:disabled {
   color: var(--outline);
 }
 
@@ -108,7 +108,7 @@
   color: var(--outline);
 }
 
-.body-text, .accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after, .accordion .accordion .accordion-item .accordion-header .accordion-button::after, .accordion .accordion-button, .card .card-body .card-text, .list-group .list-group-item, p, a {
+.body-text, .card .card-body .card-text, .list-group .list-group-item, p, a {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -116,11 +116,11 @@
   letter-spacing: 0.5px;
   color: var(--on-background);
 }
-.body-text:disabled, .accordion .accordion .accordion-item .accordion-header .accordion-button:disabled::after, .accordion .accordion-button:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled, p:disabled, a:disabled {
+.body-text:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled, p:disabled, a:disabled {
   color: var(--outline);
 }
 
-.body-text-sm, .accordion .accordion .accordion-item .accordion-body, .accordion .accordion .accordion-item .accordion-header .accordion-button, .accordion .accordion-body, .list-group .list-group-item .list-group-item-subheader {
+.body-text-sm, .list-group .list-group-item .list-group-item-subheader {
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
@@ -128,11 +128,11 @@
   letter-spacing: 0.25px;
   color: var(--on-background);
 }
-.body-text-sm:disabled, .accordion .accordion .accordion-item .accordion-body:disabled, .accordion .accordion .accordion-item .accordion-header .accordion-button:disabled, .accordion .accordion-body:disabled, .list-group .list-group-item .list-group-item-subheader:disabled {
+.body-text-sm:disabled, .list-group .list-group-item .list-group-item-subheader:disabled {
   color: var(--outline);
 }
 
-.body-text-lg, .accordion .accordion-button:not(.collapsed)::after, .accordion .accordion-button::after {
+.body-text-lg {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
@@ -140,7 +140,7 @@
   letter-spacing: 0.75px;
   color: var(--on-background);
 }
-.body-text-lg:disabled, .accordion .accordion-button:disabled::after {
+.body-text-lg:disabled {
   color: var(--outline);
 }
 
@@ -1644,6 +1644,7 @@ a:active, a:focus-visible {
 .card {
   border: 1px solid var(--outline);
   border-radius: 0.5rem;
+  background-color: var(--surface);
 }
 .card .card-body {
   padding: 1rem;
@@ -1909,179 +1910,6 @@ a:active, a:focus-visible {
 }
 .nav-scroll button:last-child {
   margin-right: 0;
-}
-
-.dropdown .btn.dropdown-toggle::after {
-  background-image: none;
-  content: "\f279";
-  /* Chevron down */
-  font-family: "bootstrap-icons";
-  text-align: center;
-  vertical-align: bottom;
-  border: 0;
-  font-size: 1.125rem;
-  margin-left: 0.25rem;
-}
-.dropdown .btn.dropdown-toggle:hover::after, .dropdown .btn.dropdown-toggle:active::after, .dropdown .btn.dropdown-toggle:focus-visible::after {
-  background-image: none;
-  content: "\f27c";
-  /* Chevron down */
-  font-family: "bootstrap-icons";
-  text-align: center;
-  vertical-align: bottom;
-  border: 0;
-  font-size: 1.125rem;
-  margin-left: 0.25rem;
-}
-.dropdown .dropdown-menu {
-  border-radius: 0.5rem;
-  padding: 0.75rem;
-  background-color: var(--surface);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-}
-.dropdown .dropdown-menu .dropdown-item {
-  color: var(--on-brand-flat);
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.5rem;
-}
-.dropdown .dropdown-menu .dropdown-item:hover {
-  color: var(--on-accent-flat);
-  background-color: var(--accent-flat);
-}
-.dropdown .dropdown-menu .dropdown-item:focus {
-  box-shadow: none !important;
-}
-.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:focus-visible {
-  color: var(--on-accent-flat-strong);
-  background-color: var(--accent-flat-strong);
-  box-shadow: none !important;
-}
-.dropdown .dropdown-menu .dropdown-item.disabled {
-  color: var(--outline);
-}
-
-.accordion .accordion-button {
-  padding: 0.75rem;
-  background-color: var(--surface);
-  box-shadow: none;
-}
-.accordion .accordion-button::after {
-  color: var(--on-background);
-  background-image: none;
-  content: "\f64d";
-  /* plus */
-  font-family: "bootstrap-icons";
-  text-align: center;
-  width: auto;
-  height: auto;
-}
-.accordion .accordion-button:not(.collapsed) {
-  color: var(--on-background);
-  background-color: var(--surface-2);
-}
-.accordion .accordion-button:not(.collapsed)::after {
-  color: var(--on-background);
-  background-image: none;
-  content: "\f64d";
-  /* plus */
-  font-family: "bootstrap-icons";
-  text-align: center;
-  transform: rotate(-45deg);
-}
-.accordion .accordion-button:not(.collapsed):hover {
-  background-color: var(--surface-3);
-}
-.accordion .accordion-button:hover {
-  background-color: var(--surface-1);
-}
-.accordion .accordion-button:active {
-  box-shadow: none !important;
-}
-.accordion .accordion-button:focus {
-  box-shadow: none !important;
-}
-.accordion .accordion-button:disabled {
-  color: var(--outline);
-}
-.accordion .accordion-body {
-  padding: 0.75rem;
-  background-color: var(--surface-2);
-}
-.accordion .accordion-body p {
-  margin-bottom: 0;
-}
-.accordion .accordion .accordion-item {
-  border-radius: 0;
-  border: 0;
-}
-.accordion .accordion .accordion-item .accordion-header::before {
-  content: "";
-  width: 0;
-  height: 3rem;
-  border-left: 1px solid var(--surface-variant);
-  position: absolute;
-  margin-left: 1.25rem;
-}
-.accordion .accordion .accordion-item .accordion-header:hover::before {
-  content: "";
-  width: 0;
-  height: 3rem;
-  border-left: 1px solid var(--surface-variant);
-  position: absolute;
-  margin-left: 1.25rem;
-}
-.accordion .accordion .accordion-item .accordion-header .accordion-button {
-  position: inherit;
-  padding: 0.75rem;
-  padding-left: 1.75rem;
-  background-color: var(--surface-2);
-  border-radius: 0;
-}
-.accordion .accordion .accordion-item .accordion-header .accordion-button::after {
-  color: var(--on-background);
-  background-image: none;
-  content: "\f4fa";
-  /* plus-circle */
-  font-family: "bootstrap-icons";
-  text-align: center;
-}
-.accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
-  background-color: var(--surface-variant);
-  padding: 0.75rem;
-  padding-left: 1.75rem;
-}
-.accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-  color: var(--on-background);
-  background-image: none;
-  content: "\f4fa";
-  /* dash-square */
-  font-family: "bootstrap-icons";
-  text-align: center;
-}
-.accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed):hover {
-  background-color: var(--surface-5);
-}
-.accordion .accordion .accordion-item .accordion-header .accordion-button:hover {
-  background-color: var(--surface-3);
-}
-.accordion .accordion .accordion-item .accordion-header .accordion-button:active {
-  box-shadow: none !important;
-}
-.accordion .accordion .accordion-item .accordion-header .accordion-button:focus {
-  box-shadow: none !important;
-}
-.accordion .accordion .accordion-item .accordion-header .accordion-button:disabled {
-  color: var(--outline);
-}
-.accordion .accordion .accordion-item .accordion-body {
-  padding: 0.75rem;
-  padding-left: 1.75rem;
-  padding-right: 2rem;
-  background-color: var(--surface-variant);
-  color: var(--on-surface-variant);
-}
-.accordion .accordion .accordion-item .accordion-body p {
-  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=pdis-design-system.css.map */
