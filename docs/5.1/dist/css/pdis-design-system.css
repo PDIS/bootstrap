@@ -64,21 +64,18 @@
 }
 
 a {
-  color: var(--information);
-  text-underline-offset: 0.1em;
+  color: var(--on-brnad-flat);
 }
 a:visited {
-  color: var(--accent-strong);
+  color: var(--on-accent-flat);
 }
 a:hover {
-  color: var(--information-strong);
+  color: var(--on-brnad-flat);
+  background-color: var(--brand-flat);
 }
-a:active {
-  color: var(--information-strong);
-}
-a:focus {
-  background-color: var(--accent-flat);
-  color: var(--information-strong);
+a:active, a:focus-visible {
+  color: var(--on-brnad-flat);
+  background-color: var(--brand-flat-strong);
 }
 
 .language-switch {
@@ -159,7 +156,7 @@ a:focus {
 }
 
 /* END PDIS's local docs style */
-.label-text, .tab-text, .nav-pills .nav-item .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .badge {
+.label-text, .dropdown .dropdown-menu .dropdown-item, .tab-text, .nav-pills .nav-item .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .badge {
   font-style: normal;
   font-weight: 500;
   font-size: 0.875rem;
@@ -170,7 +167,7 @@ a:focus {
   color: var(--on-background);
   background: none;
 }
-.label-text:disabled, .tab-text:disabled, .nav-pills .nav-item .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .badge:disabled {
+.label-text:disabled, .dropdown .dropdown-menu .dropdown-item:disabled, .tab-text:disabled, .nav-pills .nav-item .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .badge:disabled {
   color: var(--outline);
 }
 
@@ -204,7 +201,7 @@ a:focus {
   color: var(--outline);
 }
 
-.body-text, .card .card-body .card-text, .list-group .list-group-item {
+.body-text, .accordion .accordion .accordion-item .accordion-button:not(.collapsed)::after, .accordion .accordion .accordion-item .accordion-button::after, .accordion .accordion-button, .card .card-body .card-text, .list-group .list-group-item, a {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -212,11 +209,11 @@ a:focus {
   letter-spacing: 0.5px;
   color: var(--on-background);
 }
-.body-text:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled {
+.body-text:disabled, .accordion .accordion .accordion-item .accordion-button:disabled::after, .accordion .accordion-button:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled, a:disabled {
   color: var(--outline);
 }
 
-.body-text-sm, .list-group .list-group-item .list-group-item-subheader {
+.body-text-sm, .accordion .accordion .accordion-item .accordion-body, .accordion .accordion .accordion-item .accordion-button, .accordion .accordion-body, .list-group .list-group-item .list-group-item-subheader {
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
@@ -224,11 +221,11 @@ a:focus {
   letter-spacing: 0.25px;
   color: var(--on-background);
 }
-.body-text-sm:disabled, .list-group .list-group-item .list-group-item-subheader:disabled {
+.body-text-sm:disabled, .accordion .accordion .accordion-item .accordion-body:disabled, .accordion .accordion .accordion-item .accordion-button:disabled, .accordion .accordion-body:disabled, .list-group .list-group-item .list-group-item-subheader:disabled {
   color: var(--outline);
 }
 
-.body-text-lg {
+.body-text-lg, .accordion .accordion-button:not(.collapsed)::after, .accordion .accordion-button::after {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
@@ -236,18 +233,18 @@ a:focus {
   letter-spacing: 0.75px;
   color: var(--on-background);
 }
-.body-text-lg:disabled {
+.body-text-lg:disabled, .accordion .accordion-button:disabled::after {
   color: var(--outline);
 }
 
-.title-text, .masonry-card .card-header, .card .card-body .card-title {
+.title-text, .masonry-card .card-header, .card .card-body .card-title, .list-group-title {
   font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.625rem;
   color: var(--on-background);
 }
-.title-text:disabled, .masonry-card .card-header:disabled, .card .card-body .card-title:disabled {
+.title-text:disabled, .masonry-card .card-header:disabled, .card .card-body .card-title:disabled, .list-group-title:disabled {
   color: var(--outline);
 }
 
@@ -319,12 +316,12 @@ a:focus {
 
 .bg-brand-strong {
   background-color: var(--brand-strong) !important;
-  color: var(--on-brand-strong) !important;
+  color: var(--on-brand) !important;
 }
 
 .bg-brand-flat-strong {
   background-color: var(--brand-flat-strong) !important;
-  color: var(--on-brand-flat-strong) !important;
+  color: var(--on-brand-flat) !important;
 }
 
 .bg-accent {
@@ -339,12 +336,12 @@ a:focus {
 
 .bg-accent-strong {
   background-color: var(--accent-strong) !important;
-  color: var(--on-accent-strong) !important;
+  color: var(--on-accent) !important;
 }
 
 .bg-accent-flat-strong {
   background-color: var(--accent-flat-strong) !important;
-  color: var(--on-accent-flat-strong) !important;
+  color: var(--on-accent-flat) !important;
 }
 
 .bg-positive {
@@ -359,12 +356,12 @@ a:focus {
 
 .bg-positive-strong {
   background-color: var(--positive-strong) !important;
-  color: var(--on-positive-strong) !important;
+  color: var(--on-positive) !important;
 }
 
 .bg-positive-flat-strong {
   background-color: var(--positive-flat-strong) !important;
-  color: var(--on-positive-flat-strong) !important;
+  color: var(--on-positive-flat) !important;
 }
 
 .bg-negative {
@@ -379,12 +376,12 @@ a:focus {
 
 .bg-negative-strong {
   background-color: var(--negative-strong) !important;
-  color: var(--on-negative-strong) !important;
+  color: var(--on-negative) !important;
 }
 
 .bg-negative-flat-strong {
   background-color: var(--negative-flat-strong) !important;
-  color: var(--on-negative-flat-strong) !important;
+  color: var(--on-negative-flat) !important;
 }
 
 .bg-information {
@@ -399,12 +396,12 @@ a:focus {
 
 .bg-information-strong {
   background-color: var(--information-strong) !important;
-  color: var(--on-information-strong) !important;
+  color: var(--on-information) !important;
 }
 
 .bg-information-flat-strong {
   background-color: var(--information-flat-strong) !important;
-  color: var(--on-information-flat-strong) !important;
+  color: var(--on-information-flat) !important;
 }
 
 .bg-warning {
@@ -419,12 +416,12 @@ a:focus {
 
 .bg-warning-strong {
   background-color: var(--warning-strong) !important;
-  color: var(--on-warning-strong) !important;
+  color: var(--on-warning) !important;
 }
 
 .bg-warning-flat-strong {
   background-color: var(--warning-flat-strong) !important;
-  color: var(--on-warning-flat-strong) !important;
+  color: var(--on-warning-flat) !important;
 }
 
 .bg-primary {
@@ -439,12 +436,12 @@ a:focus {
 
 .bg-primary-strong {
   background-color: var(--brand-strong) !important;
-  color: var(--on-brand-strong) !important;
+  color: var(--on-brand) !important;
 }
 
 .bg-primary-flat-strong {
   background-color: var(--brand-flat-strong) !important;
-  color: var(--on-brand-flat-strong) !important;
+  color: var(--on-brand-flat) !important;
 }
 
 .bg-secondary {
@@ -459,12 +456,12 @@ a:focus {
 
 .bg-secondary-strong {
   background-color: var(--accent-strong) !important;
-  color: var(--on-accent-strong) !important;
+  color: var(--on-accent) !important;
 }
 
 .bg-secondary-flat-strong {
   background-color: var(--accent-flat-strong) !important;
-  color: var(--on-accent-flat-strong) !important;
+  color: var(--on-accent-flat) !important;
 }
 
 .bg-success {
@@ -479,12 +476,12 @@ a:focus {
 
 .bg-success-strong {
   background-color: var(--positive-strong) !important;
-  color: var(--on-positive-strong) !important;
+  color: var(--on-positive) !important;
 }
 
 .bg-success-flat-strong {
   background-color: var(--positive-flat-strong) !important;
-  color: var(--on-positive-flat-strong) !important;
+  color: var(--on-positive-flat) !important;
 }
 
 .bg-danger {
@@ -499,12 +496,12 @@ a:focus {
 
 .bg-danger-strong {
   background-color: var(--negative-strong) !important;
-  color: var(--on-negative-strong) !important;
+  color: var(--on-negative) !important;
 }
 
 .bg-danger-flat-strong {
   background-color: var(--negative-flat-strong) !important;
-  color: var(--on-negative-flat-strong) !important;
+  color: var(--on-negative-flat) !important;
 }
 
 .bg-info {
@@ -519,12 +516,12 @@ a:focus {
 
 .bg-info-strong {
   background-color: var(--information-strong) !important;
-  color: var(--on-information-strong) !important;
+  color: var(--on-information) !important;
 }
 
 .bg-info-flat-strong {
   background-color: var(--information-flat-strong) !important;
-  color: var(--on-information-flat-strong) !important;
+  color: var(--on-information-flat) !important;
 }
 
 .text-brand {
@@ -624,14 +621,17 @@ a:focus {
 }
 
 .badge-group {
-  margin-top: 0.55rem;
+  margin-top: 0.5rem;
 }
 
 .button-text:hover, .btn:hover {
   color: var(--on-background);
   background-color: var(--surface);
 }
-.button-text:focus, .btn:focus, .button-text:active, .btn:active {
+.button-text:focus, .btn:focus {
+  box-shadow: none;
+}
+.button-text:focus-visible, .btn:focus-visible, .button-text:active, .btn:active {
   color: var(--on-background);
   background-color: var(--surface-1);
   box-shadow: 0 0 0 2px var(--brand-flat-strong);
@@ -653,7 +653,10 @@ a:focus {
   color: var(--on-background);
   background-color: var(--surface);
 }
-.button-text-sm:focus, .btn.btn-sm:focus, .button-text-sm:active, .btn.btn-sm:active {
+.button-text-sm:focus, .btn.btn-sm:focus {
+  box-shadow: none;
+}
+.button-text-sm:focus-visible, .btn.btn-sm:focus-visible, .button-text-sm:active, .btn.btn-sm:active {
   color: var(--on-background);
   background-color: var(--surface-1);
   box-shadow: 0 0 0 2px var(--brand-flat-strong);
@@ -675,7 +678,10 @@ a:focus {
   color: var(--on-background);
   background-color: var(--surface);
 }
-.button-text-lg:focus, .btn.btn-lg:focus, .button-text-lg:active, .btn.btn-lg:active {
+.button-text-lg:focus, .btn.btn-lg:focus {
+  box-shadow: none;
+}
+.button-text-lg:focus-visible, .btn.btn-lg:focus-visible, .button-text-lg:active, .btn.btn-lg:active {
   color: var(--on-background);
   background-color: var(--surface-1);
   box-shadow: 0 0 0 2px var(--brand-flat-strong);
@@ -1284,7 +1290,7 @@ a:focus {
   border-color: var(--brand-strong);
   color: var(--on-brand);
 }
-.btn.btn-brand:focus, .btn.btn-brand:active {
+.btn.btn-brand:focus-visible, .btn.btn-brand:active {
   background-color: var(--brand-strong);
   border-color: var(--brand-strong);
   color: var(--on-brand);
@@ -1303,7 +1309,7 @@ a:focus {
   border-color: var(--accent-strong);
   color: var(--on-accent);
 }
-.btn.btn-accent:focus, .btn.btn-accent:active {
+.btn.btn-accent:focus-visible, .btn.btn-accent:active {
   background-color: var(--accent-strong);
   border-color: var(--accent-strong);
   color: var(--on-accent);
@@ -1322,7 +1328,7 @@ a:focus {
   border-color: var(--positive-strong);
   color: var(--on-positive);
 }
-.btn.btn-positive:focus, .btn.btn-positive:active {
+.btn.btn-positive:focus-visible, .btn.btn-positive:active {
   background-color: var(--positive-strong);
   border-color: var(--positive-strong);
   color: var(--on-positive);
@@ -1341,7 +1347,7 @@ a:focus {
   border-color: var(--negative-strong);
   color: var(--on-negative);
 }
-.btn.btn-negative:focus, .btn.btn-negative:active {
+.btn.btn-negative:focus-visible, .btn.btn-negative:active {
   background-color: var(--negative-strong);
   border-color: var(--negative-strong);
   color: var(--on-negative);
@@ -1360,7 +1366,7 @@ a:focus {
   border-color: var(--information-strong);
   color: var(--on-information);
 }
-.btn.btn-information:focus, .btn.btn-information:active {
+.btn.btn-information:focus-visible, .btn.btn-information:active {
   background-color: var(--information-strong);
   border-color: var(--information-strong);
   color: var(--on-information);
@@ -1379,7 +1385,7 @@ a:focus {
   border-color: var(--warning-strong);
   color: var(--on-warning);
 }
-.btn.btn-warning:focus, .btn.btn-warning:active {
+.btn.btn-warning:focus-visible, .btn.btn-warning:active {
   background-color: var(--warning-strong);
   border-color: var(--warning-strong);
   color: var(--on-warning);
@@ -1398,7 +1404,7 @@ a:focus {
   border-color: var(--brand-strong);
   color: var(--on-brand);
 }
-.btn.btn-primary:focus, .btn.btn-primary:active {
+.btn.btn-primary:focus-visible, .btn.btn-primary:active {
   background-color: var(--brand-strong);
   border-color: var(--brand-strong);
   color: var(--on-brand);
@@ -1417,7 +1423,7 @@ a:focus {
   border-color: var(--accent-strong);
   color: var(--on-accent);
 }
-.btn.btn-secondary:focus, .btn.btn-secondary:active {
+.btn.btn-secondary:focus-visible, .btn.btn-secondary:active {
   background-color: var(--accent-strong);
   border-color: var(--accent-strong);
   color: var(--on-accent);
@@ -1436,7 +1442,7 @@ a:focus {
   border-color: var(--positive-strong);
   color: var(--on-positive);
 }
-.btn.btn-success:focus, .btn.btn-success:active {
+.btn.btn-success:focus-visible, .btn.btn-success:active {
   background-color: var(--positive-strong);
   border-color: var(--positive-strong);
   color: var(--on-positive);
@@ -1455,7 +1461,7 @@ a:focus {
   border-color: var(--negative-strong);
   color: var(--on-negative);
 }
-.btn.btn-danger:focus, .btn.btn-danger:active {
+.btn.btn-danger:focus-visible, .btn.btn-danger:active {
   background-color: var(--negative-strong);
   border-color: var(--negative-strong);
   color: var(--on-negative);
@@ -1474,7 +1480,7 @@ a:focus {
   border-color: var(--information-strong);
   color: var(--on-information);
 }
-.btn.btn-info:focus, .btn.btn-info:active {
+.btn.btn-info:focus-visible, .btn.btn-info:active {
   background-color: var(--information-strong);
   border-color: var(--information-strong);
   color: var(--on-information);
@@ -1493,7 +1499,7 @@ a:focus {
   background: var(--brand-flat-strong);
   border: none;
 }
-.btn.btn-secondary:focus, .btn.btn-secondary:active {
+.btn.btn-secondary:focus-visible, .btn.btn-secondary:active {
   color: var(--on-brand-flat);
   background: var(--brand-flat-strong);
   border: none;
@@ -1513,7 +1519,7 @@ a:focus {
   background: var(--surface-1);
   border-color: var(--outline);
 }
-.btn.btn-semi-secondary:focus, .btn.btn-semi-secondary:active {
+.btn.btn-semi-secondary:focus-visible, .btn.btn-semi-secondary:active {
   color: var(--on-brand-flat);
   box-shadow: 0 0 0 2px var(--brand-flat-strong) !important;
   background: var(--surface-1);
@@ -1529,11 +1535,11 @@ a:focus {
   color: var(--on-brand-flat);
 }
 .btn.btn-tertiary:hover {
-  background-color: var(--surface);
+  background-color: var(--surface-1);
   color: var(--on-brand-flat);
 }
-.btn.btn-tertiary:focus, .btn.btn-tertiary:active {
-  background-color: var(--surface);
+.btn.btn-tertiary:focus-visible, .btn.btn-tertiary:active {
+  background-color: var(--surface-1);
   color: var(--on-brand-flat);
   box-shadow: 0 0 0 2px var(--brand-flat-strong);
 }
@@ -1566,6 +1572,13 @@ a:focus {
   align-items: center;
   border: none;
   padding: 0.75rem;
+  background-color: var(--surface);
+}
+.list-group .list-group-item:first-child {
+  border-radius: 0;
+}
+.list-group .list-group-item:last-child {
+  border-radius: 0;
 }
 .list-group .list-group-item .list-group-item-subheader {
   margin-left: 0.5rem;
@@ -1590,10 +1603,10 @@ a:focus {
   text-decoration: none;
 }
 .list-group .list-group-item:hover {
-  background-color: var(--surface);
-}
-.list-group .list-group-item:focus, .list-group .list-group-item:active {
   background-color: var(--surface-1);
+}
+.list-group .list-group-item:focus-visible, .list-group .list-group-item:active {
+  background-color: var(--surface-2);
 }
 .list-group.divider .list-group-item {
   border-bottom: 1px solid var(--outline);
@@ -1610,8 +1623,11 @@ a:focus {
   border-top-right-radius: 0.5rem;
 }
 .list-group.border.divider .list-group-item:last-child {
-  border-bottom: none;
-  border-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.list-group.elevation {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
 .list-group.twoline .list-group-item {
   display: flex;
@@ -1619,6 +1635,10 @@ a:focus {
 .list-group.twoline .list-group-item .list-group-item-subheader {
   margin-left: 0;
   margin-top: 0.25rem;
+}
+
+.list-group-title {
+  margin-bottom: 1.5rem;
 }
 
 .card {
@@ -1635,6 +1655,9 @@ a:focus {
 .card .card-body .card-text {
   color: var(--on-surface-variant);
   margin: 0.5rem 0;
+}
+.card .card-body .badge {
+  margin: 0 0.25rem;
 }
 .card .card-actions {
   margin-top: 0.25rem;
@@ -1669,6 +1692,10 @@ a:focus {
 .card.clickable {
   cursor: pointer;
 }
+.card.clickable:hover {
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+}
 .card.text-center {
   list-style-position: inside;
 }
@@ -1676,8 +1703,8 @@ a:focus {
   margin-bottom: 0;
   padding-left: 0 !important;
 }
-.card.text-center .list-group {
-  align-items: center !important;
+.card.text-center .list-group-item {
+  justify-content: center !important;
 }
 
 .masonry-card .card-header {
@@ -1692,27 +1719,26 @@ a:focus {
   border-bottom-right-radius: 0.5rem;
 }
 .masonry-card .card-body .card-title {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 .masonry-card .card-body ul, .masonry-card .card-body ol {
   margin-bottom: 0;
   padding-left: 1.5rem;
 }
-.masonry-card .list-group {
-  border: none;
-  padding: 0 1rem;
-  margin-bottom: 1rem;
-}
-.masonry-card .list-group:last-child {
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-}
-.masonry-card hr {
-  margin: 0;
+.masonry-card .card-body hr {
+  margin: 0.75rem 0;
   color: var(--outline);
 }
+.masonry-card .card-body .list-group {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+}
+.masonry-card .card-body .list-group.list-group-horizontal .list-group-item {
+  justify-content: center;
+}
 .masonry-card img {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .tab-text:hover, .nav-pills .nav-item .nav-link:hover, .nav-tabs .nav-item .nav-link:hover {
@@ -1883,6 +1909,179 @@ a:focus {
 }
 .nav-scroll button:last-child {
   margin-right: 0;
+}
+
+.dropdown .btn.dropdown-toggle::after {
+  background-image: none;
+  content: "\f279";
+  /* Chevron down */
+  font-family: "bootstrap-icons";
+  text-align: center;
+  vertical-align: bottom;
+  border: 0;
+  font-size: 1.125rem;
+  margin-left: 0.25rem;
+}
+.dropdown .btn.dropdown-toggle:hover::after, .dropdown .btn.dropdown-toggle:active::after, .dropdown .btn.dropdown-toggle:focus-visible::after {
+  background-image: none;
+  content: "\f27c";
+  /* Chevron down */
+  font-family: "bootstrap-icons";
+  text-align: center;
+  vertical-align: bottom;
+  border: 0;
+  font-size: 1.125rem;
+  margin-left: 0.25rem;
+}
+.dropdown .dropdown-menu {
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  background-color: var(--surface);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+.dropdown .dropdown-menu .dropdown-item {
+  color: var(--on-brand-flat);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+.dropdown .dropdown-menu .dropdown-item:hover {
+  color: var(--on-accent-flat);
+  background-color: var(--accent-flat);
+}
+.dropdown .dropdown-menu .dropdown-item:focus {
+  box-shadow: none !important;
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:focus-visible {
+  color: var(--on-accent-flat-strong);
+  background-color: var(--accent-flat-strong);
+  box-shadow: none !important;
+}
+.dropdown .dropdown-menu .dropdown-item.disabled {
+  color: var(--outline);
+}
+
+.accordion .accordion-button {
+  padding: 0.75rem;
+  background-color: var(--surface);
+  box-shadow: none;
+}
+.accordion .accordion-button::after {
+  color: var(--on-background);
+  background-image: none;
+  content: "\f64d";
+  /* plus */
+  font-family: "bootstrap-icons";
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+.accordion .accordion-button:not(.collapsed) {
+  color: var(--on-background);
+  background-color: var(--surface-2);
+}
+.accordion .accordion-button:not(.collapsed)::after {
+  color: var(--on-background);
+  background-image: none;
+  content: "\f64d";
+  /* plus */
+  font-family: "bootstrap-icons";
+  text-align: center;
+  transform: rotate(-45deg);
+}
+.accordion .accordion-button:not(.collapsed):hover {
+  background-color: var(--surface-3);
+}
+.accordion .accordion-button:hover {
+  background-color: var(--surface-1);
+}
+.accordion .accordion-button:active {
+  box-shadow: none !important;
+}
+.accordion .accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion .accordion-button:disabled {
+  color: var(--outline);
+}
+.accordion .accordion-body {
+  padding: 0.75rem;
+  background-color: var(--surface-2);
+}
+.accordion .accordion-body p {
+  margin-bottom: 0;
+}
+.accordion .accordion .accordion-item {
+  border-radius: 0;
+  border: 0;
+}
+.accordion .accordion .accordion-item .accordion-header::before {
+  content: "";
+  width: 0;
+  height: 3rem;
+  border-left: 1px solid var(--surface-variant);
+  position: absolute;
+  margin-left: 1.25rem;
+}
+.accordion .accordion .accordion-item .accordion-header:hover::before {
+  content: "";
+  width: 0;
+  height: 3rem;
+  border-left: 1px solid var(--surface-variant);
+  position: absolute;
+  margin-left: 1.25rem;
+}
+.accordion .accordion .accordion-item .accordion-button {
+  position: inherit;
+  padding: 0.75rem;
+  padding-left: 1.75rem;
+  background-color: var(--surface-2);
+  border-radius: 0;
+}
+.accordion .accordion .accordion-item .accordion-button::after {
+  color: var(--on-background);
+  background-image: none;
+  content: "\f4fa";
+  /* plus-circle */
+  font-family: "bootstrap-icons";
+  text-align: center;
+}
+.accordion .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: var(--surface-variant);
+  padding: 0.75rem;
+  padding-left: 1.75rem;
+}
+.accordion .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  color: var(--on-background);
+  background-image: none;
+  content: "\f4fa";
+  /* dash-square */
+  font-family: "bootstrap-icons";
+  text-align: center;
+}
+.accordion .accordion .accordion-item .accordion-button:not(.collapsed):hover {
+  background-color: var(--surface-5);
+}
+.accordion .accordion .accordion-item .accordion-button:hover {
+  background-color: var(--surface-3);
+}
+.accordion .accordion .accordion-item .accordion-button:active {
+  box-shadow: none !important;
+}
+.accordion .accordion .accordion-item .accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion .accordion .accordion-item .accordion-button:disabled {
+  color: var(--outline);
+}
+.accordion .accordion .accordion-item .accordion-body {
+  padding: 0.75rem;
+  padding-left: 1.75rem;
+  padding-right: 2rem;
+  background-color: var(--surface-variant);
+  color: var(--on-surface-variant);
+}
+.accordion .accordion .accordion-item .accordion-body p {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=pdis-design-system.css.map */
