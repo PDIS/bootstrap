@@ -15,13 +15,17 @@ layout: components-example
 		<div class="collapse navbar-collapse align-items-end" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            下拉式選單
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-            <li><a class="dropdown-item" href="#">子項目</a></li>
-            <li><a class="dropdown-item" href="#">子項目</a></li>
-            <li><a class="dropdown-item" href="#">子項目</a></li>
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">服務項目</button>
+          <div class="dropdown-menu">
+          <ul aria-labelledby="navbarDropdown1">
+            <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+            <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+            <li><a class="dropdown-item disabled">下拉選單第一層標題文字</a></li>
+          </ul>
+                 <ul aria-labelledby="navbarDropdown1">
+            <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+            <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+            <li><a class="dropdown-item disabled">下拉選單第一層標題文字</a></li>
           </ul>
         </li>
 				<li class="nav-item dropdown">

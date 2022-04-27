@@ -6,7 +6,11 @@
     background-color: var(--surface);
   }
 
-  &:focus, &:active {
+  &:focus{
+    box-shadow: none;
+  }
+  
+  &:focus-visible, &:active {
     color: var(--on-background);
     background-color: var(--surface-1);
     box-shadow: 0 0 0 2px var(--brand-flat-strong);
@@ -36,7 +40,11 @@
     background-color: var(--surface);
   }
 
-  &:focus, &:active {
+  &:focus{
+    box-shadow: none;
+  }
+
+  &:focus-visible, &:active {
     color: var(--on-background);
     background-color: var(--surface-1);
     box-shadow: 0 0 0 2px var(--brand-flat-strong);
@@ -66,7 +74,11 @@
     background-color: var(--surface);
   }
 
-  &:focus, &:active {
+  &:focus{
+    box-shadow: none;
+  }
+
+  &:focus-visible, &:active {
     color: var(--on-background);
     background-color: var(--surface-1);
     box-shadow: 0 0 0 2px var(--brand-flat-strong);
@@ -114,7 +126,7 @@
         //text-decoration: underline;
       }
   
-      &:focus, &:active {
+      &:focus-visible, &:active {
         background-color: var(--#{$value}-strong);
         border-color: var(--#{$value}-strong);
         color: var(--on-#{$value});
@@ -192,7 +204,7 @@
       border: none;
     }
   
-    &:focus, &:active {
+    &:focus-visible, &:active {
       color: var(--on-brand-flat);
       background: var(--brand-flat-strong);
       border: none;
@@ -217,7 +229,7 @@
       border-color: var(--outline);
     }
   
-    &:focus, &:active {
+    &:focus-visible, &:active {
       color: var(--on-brand-flat);
       box-shadow: 0 0 0 2px var(--brand-flat-strong) !important;
       background: var(--surface-1);
@@ -236,12 +248,12 @@
     color: var(--on-brand-flat);
   
     &:hover {
-      background-color: var(--surface);
+      background-color: var(--surface-1);
       color: var(--on-brand-flat);
     }
   
-    &:focus, &:active {
-      background-color: var(--surface);
+    &:focus-visible, &:active {
+      background-color: var(--surface-1);
       color: var(--on-brand-flat);
       box-shadow: 0 0 0 2px var(--brand-flat-strong);
     }

@@ -2,24 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap");
 
 a {
-  color: var(--information);
-  text-underline-offset: 0.1em;
+  @extend .body-text;
+  color: var(--on-brnad-flat);
+  //text-underline-offset: 0.1em;
 
   &:visited {
-    color: var(--accent-strong);
+    color: var(--on-accent-flat);
   }
 
   &:hover {
-    color: var(--information-strong);
+    color: var(--on-brnad-flat);
+    background-color: var(--brand-flat);
   }
 
-  &:active {
-    color: var(--information-strong);
-  }
-
-  &:focus {
-    background-color: var(--accent-flat);
-    color: var(--information-strong);
+  &:active, &:focus-visible {
+    color: var(--on-brnad-flat);
+    background-color: var(--brand-flat-strong);
   }
 }
 

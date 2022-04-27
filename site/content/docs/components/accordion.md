@@ -187,7 +187,7 @@ toc: true
       </button>
     </h2>
     <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3" data-bs-parent="#accordionExample3">
-      <div class="accordion second-layer" id="accordionSecondLayer">
+      <div class="accordion" id="accordionSecondLayer">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingSecondLayerOne">
             <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerOne" aria-expanded="true" aria-controls="collapseSecondLayerOne">

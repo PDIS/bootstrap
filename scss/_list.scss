@@ -7,7 +7,16 @@
     align-items: center;
     border: none;
     padding: 0.75rem;
+    background-color: var(--surface);
 
+    &:first-child {
+      border-radius: 0;
+    }
+
+    &:last-child {
+      border-radius: 0;
+    }
+    
     .list-group-item-subheader {
       @extend .body-text-sm;
       margin-left: 0.5rem;
@@ -38,11 +47,11 @@
     }
 
     &:hover {
-      background-color: var(--surface);
+      background-color: var(--surface-1);
     }
 
-    &:focus, &:active {
-      background-color: var(--surface-1);
+    &:focus-visible, &:active {
+      background-color: var(--surface-2);
     }
   }
 
@@ -67,10 +76,14 @@
       }
 
       .list-group-item:last-child {
-        border-bottom: none;
-        border-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
       }
     }
+  }
+
+  &.elevation {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
   }
 
   &.twoline {
@@ -83,4 +96,9 @@
       }
     }
   }
+}
+
+.list-group-title {
+  @extend .title-text;
+  margin-bottom: 1.5rem;
 }

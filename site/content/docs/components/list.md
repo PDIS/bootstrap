@@ -41,6 +41,7 @@ toc: true
 
 <div class="row">
   <div class="col-6">
+    <label class="list-title">標題</label>
     <ul class="list-group twoline">
       <li class="list-group-item"><i class="bi bi-arrow-counterclockwise"></i><div>列表主要文字<div class="list-group-item-subheader">列表補充文字內容</div></div><i class="bi bi-arrow-counterclockwise"></i></li>
       <li class="list-group-item"><div class="d-grid"><div class="text-truncate">列表主要文字列表主要文字列表主要文字列表主要文字</div><div class="list-group-item-subheader text-truncate">列表補充文字內容列表補充文字內容列表補充文字內容列表補充文字內容列表補充文字內容列表補充文字內容</div></div></li>
