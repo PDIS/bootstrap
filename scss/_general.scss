@@ -21,6 +21,10 @@ a {
   }
 }
 
+p {
+  @extend .body-text;
+}
+
 .language-switch {
   padding: 6px;
 }

@@ -63,99 +63,6 @@
   --bs-font-sans-serif: "Noto Sans", "Noto Sans TC", sans-serif;
 }
 
-a {
-  color: var(--on-brnad-flat);
-}
-a:visited {
-  color: var(--on-accent-flat);
-}
-a:hover {
-  color: var(--on-brnad-flat);
-  background-color: var(--brand-flat);
-}
-a:active, a:focus-visible {
-  color: var(--on-brnad-flat);
-  background-color: var(--brand-flat-strong);
-}
-
-.language-switch {
-  padding: 6px;
-}
-
-.tab-scrollable-btn:focus {
-  outline: 0;
-  box-shadow: none;
-}
-
-.icon {
-  margin-right: 0.5rem;
-}
-
-.logo {
-  margin: 1rem 0.5rem 1rem 0.75rem;
-}
-
-.social-icon {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-.social-icon:first-child {
-  margin-left: 0;
-}
-.social-icon:last-child {
-  margin-right: 0;
-}
-
-.trad-chinese-formal {
-  list-style: trad-chinese-formal;
-}
-
-.trad-chinese-informal {
-  list-style: trad-chinese-informal;
-}
-
-.horizontal-label {
-  width: -webkit-fill-available;
-  margin-bottom: 0;
-}
-
-/* PDIS's local docs style */
-/*
-@include media-breakpoint-up(md) {
-  .navbar-expand-md .navbar-collapse {
-    flex-basis: 100%;
-  }
-}*/
-.bd-navbar {
-  background-color: var(--bs-gray-100);
-}
-.bd-navbar .navbar-nav .nav-link {
-  color: rgba(44, 90, 180, 0.85);
-}
-.bd-navbar .navbar-nav .nav-link:hover, .bd-navbar .navbar-nav .nav-link:focus {
-  color: #2c5ab4;
-}
-.bd-navbar .navbar-nav .nav-link.active {
-  color: #2c5ab4;
-}
-.bd-navbar .navbar-toggler {
-  color: #000;
-}
-
-.navbar-size {
-  background-color: #e9ecef;
-}
-
-.bd-footer a {
-  color: #2c5ab4;
-  text-decoration: underline;
-}
-.bd-footer a:hover, .bd-footer a:focus {
-  color: #2c5ab4;
-  text-decoration: underline;
-}
-
-/* END PDIS's local docs style */
 .label-text, .dropdown .dropdown-menu .dropdown-item, .tab-text, .nav-pills .nav-item .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .badge {
   font-style: normal;
   font-weight: 500;
@@ -201,7 +108,7 @@ a:active, a:focus-visible {
   color: var(--outline);
 }
 
-.body-text, .accordion .accordion .accordion-item .accordion-button:not(.collapsed)::after, .accordion .accordion .accordion-item .accordion-button::after, .accordion .accordion-button, .card .card-body .card-text, .list-group .list-group-item, a {
+.body-text, .accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after, .accordion .accordion .accordion-item .accordion-header .accordion-button::after, .accordion .accordion-button, .card .card-body .card-text, .list-group .list-group-item, p, a {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -209,11 +116,11 @@ a:active, a:focus-visible {
   letter-spacing: 0.5px;
   color: var(--on-background);
 }
-.body-text:disabled, .accordion .accordion .accordion-item .accordion-button:disabled::after, .accordion .accordion-button:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled, a:disabled {
+.body-text:disabled, .accordion .accordion .accordion-item .accordion-header .accordion-button:disabled::after, .accordion .accordion-button:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled, p:disabled, a:disabled {
   color: var(--outline);
 }
 
-.body-text-sm, .accordion .accordion .accordion-item .accordion-body, .accordion .accordion .accordion-item .accordion-button, .accordion .accordion-body, .list-group .list-group-item .list-group-item-subheader {
+.body-text-sm, .accordion .accordion .accordion-item .accordion-body, .accordion .accordion .accordion-item .accordion-header .accordion-button, .accordion .accordion-body, .list-group .list-group-item .list-group-item-subheader {
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
@@ -221,7 +128,7 @@ a:active, a:focus-visible {
   letter-spacing: 0.25px;
   color: var(--on-background);
 }
-.body-text-sm:disabled, .accordion .accordion .accordion-item .accordion-body:disabled, .accordion .accordion .accordion-item .accordion-button:disabled, .accordion .accordion-body:disabled, .list-group .list-group-item .list-group-item-subheader:disabled {
+.body-text-sm:disabled, .accordion .accordion .accordion-item .accordion-body:disabled, .accordion .accordion .accordion-item .accordion-header .accordion-button:disabled, .accordion .accordion-body:disabled, .list-group .list-group-item .list-group-item-subheader:disabled {
   color: var(--outline);
 }
 
@@ -568,6 +475,99 @@ a:active, a:focus-visible {
   color: var(--information) !important;
 }
 
+a {
+  color: var(--on-brnad-flat);
+}
+a:visited {
+  color: var(--on-accent-flat);
+}
+a:hover {
+  color: var(--on-brnad-flat);
+  background-color: var(--brand-flat);
+}
+a:active, a:focus-visible {
+  color: var(--on-brnad-flat);
+  background-color: var(--brand-flat-strong);
+}
+
+.language-switch {
+  padding: 6px;
+}
+
+.tab-scrollable-btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.logo {
+  margin: 1rem 0.5rem 1rem 0.75rem;
+}
+
+.social-icon {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.social-icon:first-child {
+  margin-left: 0;
+}
+.social-icon:last-child {
+  margin-right: 0;
+}
+
+.trad-chinese-formal {
+  list-style: trad-chinese-formal;
+}
+
+.trad-chinese-informal {
+  list-style: trad-chinese-informal;
+}
+
+.horizontal-label {
+  width: -webkit-fill-available;
+  margin-bottom: 0;
+}
+
+/* PDIS's local docs style */
+/*
+@include media-breakpoint-up(md) {
+  .navbar-expand-md .navbar-collapse {
+    flex-basis: 100%;
+  }
+}*/
+.bd-navbar {
+  background-color: var(--bs-gray-100);
+}
+.bd-navbar .navbar-nav .nav-link {
+  color: rgba(44, 90, 180, 0.85);
+}
+.bd-navbar .navbar-nav .nav-link:hover, .bd-navbar .navbar-nav .nav-link:focus {
+  color: #2c5ab4;
+}
+.bd-navbar .navbar-nav .nav-link.active {
+  color: #2c5ab4;
+}
+.bd-navbar .navbar-toggler {
+  color: #000;
+}
+
+.navbar-size {
+  background-color: #e9ecef;
+}
+
+.bd-footer a {
+  color: #2c5ab4;
+  text-decoration: underline;
+}
+.bd-footer a:hover, .bd-footer a:focus {
+  color: #2c5ab4;
+  text-decoration: underline;
+}
+
+/* END PDIS's local docs style */
 /* @import "accordion";
 @import "badge";
 @import "button";
@@ -2030,14 +2030,14 @@ a:active, a:focus-visible {
   position: absolute;
   margin-left: 1.25rem;
 }
-.accordion .accordion .accordion-item .accordion-button {
+.accordion .accordion .accordion-item .accordion-header .accordion-button {
   position: inherit;
   padding: 0.75rem;
   padding-left: 1.75rem;
   background-color: var(--surface-2);
   border-radius: 0;
 }
-.accordion .accordion .accordion-item .accordion-button::after {
+.accordion .accordion .accordion-item .accordion-header .accordion-button::after {
   color: var(--on-background);
   background-image: none;
   content: "\f4fa";
@@ -2045,12 +2045,12 @@ a:active, a:focus-visible {
   font-family: "bootstrap-icons";
   text-align: center;
 }
-.accordion .accordion .accordion-item .accordion-button:not(.collapsed) {
+.accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   background-color: var(--surface-variant);
   padding: 0.75rem;
   padding-left: 1.75rem;
 }
-.accordion .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+.accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
   color: var(--on-background);
   background-image: none;
   content: "\f4fa";
@@ -2058,19 +2058,19 @@ a:active, a:focus-visible {
   font-family: "bootstrap-icons";
   text-align: center;
 }
-.accordion .accordion .accordion-item .accordion-button:not(.collapsed):hover {
+.accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed):hover {
   background-color: var(--surface-5);
 }
-.accordion .accordion .accordion-item .accordion-button:hover {
+.accordion .accordion .accordion-item .accordion-header .accordion-button:hover {
   background-color: var(--surface-3);
 }
-.accordion .accordion .accordion-item .accordion-button:active {
+.accordion .accordion .accordion-item .accordion-header .accordion-button:active {
   box-shadow: none !important;
 }
-.accordion .accordion .accordion-item .accordion-button:focus {
+.accordion .accordion .accordion-item .accordion-header .accordion-button:focus {
   box-shadow: none !important;
 }
-.accordion .accordion .accordion-item .accordion-button:disabled {
+.accordion .accordion .accordion-item .accordion-header .accordion-button:disabled {
   color: var(--outline);
 }
 .accordion .accordion .accordion-item .accordion-body {
