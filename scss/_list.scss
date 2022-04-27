@@ -7,6 +7,7 @@
     align-items: center;
     border: none;
     padding: 0.75rem;
+    background-color: var(--surface);
 
     &:first-child {
       border-radius: 0;
@@ -46,11 +47,11 @@
     }
 
     &:hover {
-      background-color: var(--surface);
+      background-color: var(--surface-1);
     }
 
     &:focus-visible, &:active {
-      background-color: var(--surface-1);
+      background-color: var(--surface-2);
     }
   }
 
@@ -95,4 +96,9 @@
       }
     }
   }
+}
+
+.list-group-title {
+  @extend .title-text;
+  margin-bottom: 1.5rem;
 }

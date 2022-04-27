@@ -9,11 +9,11 @@
   }
   .bg-#{$key}-strong {
     background-color: var(--#{$value}-strong) !important;
-    color: var(--on-#{$value}-strong) !important;
+    color: var(--on-#{$value}) !important;
   }
   .bg-#{$key}-flat-strong {
     background-color: var(--#{$value}-flat-strong) !important;
-    color: var(--on-#{$value}-flat-strong) !important;
+    color: var(--on-#{$value}-flat) !important;
   }
 }
 

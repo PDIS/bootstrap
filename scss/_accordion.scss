@@ -1,23 +1,44 @@
 .accordion {
   .accordion-button {
+    @extend .body-text;
+    padding: 0.75rem;
+    background-color: var(--surface);
+    box-shadow: none;
+
     &::after { 
-      color: var(--brand);
+      @extend .body-text-lg;
+      color: var(--on-background);
       background-image: none;
       content: "\F64D"; /* plus */
       font-family: "bootstrap-icons";
       text-align: center;
+      width: auto;
+      height: auto;
     }
+
     &:not(.collapsed) {
-      background-color: var(--brand);
-      color: var(--on-brand);
+      color: var(--on-background);
+      background-color: var(--surface-2);
+
       &::after { 
-        color: var(--on-brand);
+        @extend .body-text-lg;
+        color: var(--on-background);
         background-image: none;
-        content: "\F63B"; /* dash */
+        content: "\F64D"; /* plus */
         font-family: "bootstrap-icons";
         text-align: center;
+        transform: rotate(-45deg);
+      }
+
+      &:hover {
+        background-color: var(--surface-3);
       }
     }
+
+    &:hover {
+      background-color: var(--surface-1);
+    }
+
     &:active {
       box-shadow: none !important;
     }
@@ -25,72 +46,152 @@
     &:focus {
       box-shadow: none !important;
     }
-  }
 
-  .accordion-button-chevron {
-    &:not(.collapsed) {
-      &::after {
-        background-image: none;
-        content: "\F282"; /* Chevron down */
-        font-family: "bootstrap-icons";
-        text-align: center;
-      }
-    }
-    &::after {
-      background-image: none;
-      content: "\F282"; /* Chevron down */
-      font-family: "bootstrap-icons";
-      text-align: center;
+    &:disabled {
+      color: var(--outline);
     }
   }
 
-  .second-layer {
-    .accordion-body {
-      padding-left: 3rem;
-    }
+  .accordion-body {
+    @extend .body-text-sm;
+    padding: 0.75rem;
+    background-color: var(--surface-2);
 
-    .accordion-button {
-      padding-left: 3rem;
-      &::after { 
-        color: var(--brand);
-        background-image: none;
-        content: "\F4FD"; /* plus-square */
-        font-family: "bootstrap-icons";
-        text-align: center;
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  // .accordion-button-chevron {
+  //   &:not(.collapsed) {
+  //     &::after {
+  //       background-image: none;
+  //       content: "\F282"; /* Chevron down */
+  //       font-family: "bootstrap-icons";
+  //       text-align: center;
+  //     }
+  //   }
+  //   &::after {
+  //     background-image: none;
+  //     content: "\F282"; /* Chevron down */
+  //     font-family: "bootstrap-icons";
+  //     text-align: center;
+  //   }
+  // }
+
+  .accordion {
+    .accordion-item {
+      border-radius: 0;
+      border: 0;
+      
+      .accordion-header {
+        &::before {
+          content: '';
+          width: 0;
+          height: 3rem;
+          border-left: 1px solid var(--surface-variant);
+          position: absolute;
+          margin-left: 1.25rem;
+        }
+
+        &:hover {
+          &::before {
+            content: '';
+            width: 0;
+            height: 3rem;
+            border-left: 1px solid var(--surface-variant);
+            position: absolute;
+            margin-left: 1.25rem;
+          }
+        }
+        
+        .accordion-button {
+          @extend .body-text-sm;
+          position: inherit;
+          padding: 0.75rem;
+          padding-left: 1.75rem;
+          background-color: var(--surface-2);
+          border-radius: 0;
+    
+          &::after { 
+            @extend .body-text;
+            color: var(--on-background);
+            background-image: none;
+            content: "\F4FA"; /* plus-circle */
+            font-family: "bootstrap-icons";
+            text-align: center;
+          }
+  
+          &:not(.collapsed) {
+            background-color: var(--surface-variant);
+            padding: 0.75rem;
+            padding-left: 1.75rem;
+  
+            &::after {
+              @extend .body-text;
+              color: var(--on-background);
+              background-image: none;
+              content: "\F4FA"; /* dash-square */
+              font-family: "bootstrap-icons";
+              text-align: center;
+            }
+  
+            &:hover {
+              background-color: var(--surface-5);
+            }
+          }
+      
+          &:hover {
+            background-color: var(--surface-3);
+          }
+      
+          &:active {
+            box-shadow: none !important;
+          }
+      
+          &:focus {
+            box-shadow: none !important;
+          }
+      
+          &:disabled {
+            color: var(--outline);
+          }
+        }
       }
-      &:not(.collapsed) {
-        background-color: var(--brand);
-        color: var(--on-brand);
-        &::after { 
-          color: var(--on-brand);
-          background-image: none;
-          content: "\F2E9"; /* dash-square */
-          font-family: "bootstrap-icons";
-          text-align: center;
+
+      .accordion-body {
+        @extend .body-text-sm;
+        padding: 0.75rem;
+        padding-left: 1.75rem;
+        padding-right: 2rem;
+        background-color: var(--surface-variant);
+        color: var(--on-surface-variant);
+
+        p {
+          margin-bottom: 0;
         }
       }
     }
-
-    .accordion-button-chevron {
-      padding-left: 3rem;
-      &::after { 
-        color: var(--brand);
-        background-image: none;
-        content: "\F22C"; /* caret-down */
-        font-family: "bootstrap-icons";
-        text-align: center;
-      }
-      &:not(.collapsed) {
-        background-color: var(--brand);
-        color: var(--on-brand);
-        &::after { 
-          color: var(--on-brand);
-          background-image: none;
-          content: "\F229"; /* caret-down-fill */
-          font-family: "bootstrap-icons";
-          text-align: center;
-        }
-      }
-    }
+    // .accordion-button-chevron {
+    //   padding-left: 3rem;
+    //   &::after { 
+    //     color: var(--brand);
+    //     background-image: none;
+    //     content: "\F22C"; /* caret-down */
+    //     font-family: "bootstrap-icons";
+    //     text-align: center;
+    //   }
+    //   &:not(.collapsed) {
+    //     background-color: var(--brand);
+    //     color: var(--on-brand);
+    //     &::after { 
+    //       color: var(--on-brand);
+    //       background-image: none;
+    //       content: "\F229"; /* caret-down-fill */
+    //       font-family: "bootstrap-icons";
+    //       text-align: center;
+    //     }
+    //   }
+    // }
   }
 }

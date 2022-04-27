@@ -248,12 +248,12 @@
     color: var(--on-brand-flat);
   
     &:hover {
-      background-color: var(--surface);
+      background-color: var(--surface-1);
       color: var(--on-brand-flat);
     }
   
     &:focus-visible, &:active {
-      background-color: var(--surface);
+      background-color: var(--surface-1);
       color: var(--on-brand-flat);
       box-shadow: 0 0 0 2px var(--brand-flat-strong);
     }

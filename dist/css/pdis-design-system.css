@@ -64,22 +64,18 @@
 }
 
 a {
-  color: var(--information);
-  text-underline-offset: 0.1em;
-  /* 
-    &:focus {
-      background-color: var(--accent-flat);
-      color: var(--information-strong);
-    } */
+  color: var(--on-brnad-flat);
 }
 a:visited {
-  color: var(--accent-strong);
+  color: var(--on-accent-flat);
 }
 a:hover {
-  color: var(--information-strong);
+  color: var(--on-brnad-flat);
+  background-color: var(--brand-flat);
 }
-a:active {
-  color: var(--information-strong);
+a:active, a:focus-visible {
+  color: var(--on-brnad-flat);
+  background-color: var(--brand-flat-strong);
 }
 
 .language-switch {
@@ -160,7 +156,7 @@ a:active {
 }
 
 /* END PDIS's local docs style */
-.label-text, .tab-text, .nav-pills .nav-item .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .badge {
+.label-text, .dropdown .dropdown-menu .dropdown-item, .tab-text, .nav-pills .nav-item .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .badge {
   font-style: normal;
   font-weight: 500;
   font-size: 0.875rem;
@@ -171,7 +167,7 @@ a:active {
   color: var(--on-background);
   background: none;
 }
-.label-text:disabled, .tab-text:disabled, .nav-pills .nav-item .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .badge:disabled {
+.label-text:disabled, .dropdown .dropdown-menu .dropdown-item:disabled, .tab-text:disabled, .nav-pills .nav-item .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .badge:disabled {
   color: var(--outline);
 }
 
@@ -205,7 +201,7 @@ a:active {
   color: var(--outline);
 }
 
-.body-text, .card .card-body .card-text, .list-group .list-group-item {
+.body-text, .accordion .accordion .accordion-item .accordion-button:not(.collapsed)::after, .accordion .accordion .accordion-item .accordion-button::after, .accordion .accordion-button, .card .card-body .card-text, .list-group .list-group-item, a {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -213,11 +209,11 @@ a:active {
   letter-spacing: 0.5px;
   color: var(--on-background);
 }
-.body-text:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled {
+.body-text:disabled, .accordion .accordion .accordion-item .accordion-button:disabled::after, .accordion .accordion-button:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled, a:disabled {
   color: var(--outline);
 }
 
-.body-text-sm, .list-group .list-group-item .list-group-item-subheader {
+.body-text-sm, .accordion .accordion .accordion-item .accordion-body, .accordion .accordion .accordion-item .accordion-button, .accordion .accordion-body, .list-group .list-group-item .list-group-item-subheader {
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
@@ -225,11 +221,11 @@ a:active {
   letter-spacing: 0.25px;
   color: var(--on-background);
 }
-.body-text-sm:disabled, .list-group .list-group-item .list-group-item-subheader:disabled {
+.body-text-sm:disabled, .accordion .accordion .accordion-item .accordion-body:disabled, .accordion .accordion .accordion-item .accordion-button:disabled, .accordion .accordion-body:disabled, .list-group .list-group-item .list-group-item-subheader:disabled {
   color: var(--outline);
 }
 
-.body-text-lg {
+.body-text-lg, .accordion .accordion-button:not(.collapsed)::after, .accordion .accordion-button::after {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
@@ -237,18 +233,18 @@ a:active {
   letter-spacing: 0.75px;
   color: var(--on-background);
 }
-.body-text-lg:disabled {
+.body-text-lg:disabled, .accordion .accordion-button:disabled::after {
   color: var(--outline);
 }
 
-.title-text, .masonry-card .card-header, .card .card-body .card-title {
+.title-text, .masonry-card .card-header, .card .card-body .card-title, .list-group-title {
   font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.625rem;
   color: var(--on-background);
 }
-.title-text:disabled, .masonry-card .card-header:disabled, .card .card-body .card-title:disabled {
+.title-text:disabled, .masonry-card .card-header:disabled, .card .card-body .card-title:disabled, .list-group-title:disabled {
   color: var(--outline);
 }
 
@@ -320,12 +316,12 @@ a:active {
 
 .bg-brand-strong {
   background-color: var(--brand-strong) !important;
-  color: var(--on-brand-strong) !important;
+  color: var(--on-brand) !important;
 }
 
 .bg-brand-flat-strong {
   background-color: var(--brand-flat-strong) !important;
-  color: var(--on-brand-flat-strong) !important;
+  color: var(--on-brand-flat) !important;
 }
 
 .bg-accent {
@@ -340,12 +336,12 @@ a:active {
 
 .bg-accent-strong {
   background-color: var(--accent-strong) !important;
-  color: var(--on-accent-strong) !important;
+  color: var(--on-accent) !important;
 }
 
 .bg-accent-flat-strong {
   background-color: var(--accent-flat-strong) !important;
-  color: var(--on-accent-flat-strong) !important;
+  color: var(--on-accent-flat) !important;
 }
 
 .bg-positive {
@@ -360,12 +356,12 @@ a:active {
 
 .bg-positive-strong {
   background-color: var(--positive-strong) !important;
-  color: var(--on-positive-strong) !important;
+  color: var(--on-positive) !important;
 }
 
 .bg-positive-flat-strong {
   background-color: var(--positive-flat-strong) !important;
-  color: var(--on-positive-flat-strong) !important;
+  color: var(--on-positive-flat) !important;
 }
 
 .bg-negative {
@@ -380,12 +376,12 @@ a:active {
 
 .bg-negative-strong {
   background-color: var(--negative-strong) !important;
-  color: var(--on-negative-strong) !important;
+  color: var(--on-negative) !important;
 }
 
 .bg-negative-flat-strong {
   background-color: var(--negative-flat-strong) !important;
-  color: var(--on-negative-flat-strong) !important;
+  color: var(--on-negative-flat) !important;
 }
 
 .bg-information {
@@ -400,12 +396,12 @@ a:active {
 
 .bg-information-strong {
   background-color: var(--information-strong) !important;
-  color: var(--on-information-strong) !important;
+  color: var(--on-information) !important;
 }
 
 .bg-information-flat-strong {
   background-color: var(--information-flat-strong) !important;
-  color: var(--on-information-flat-strong) !important;
+  color: var(--on-information-flat) !important;
 }
 
 .bg-warning {
@@ -420,12 +416,12 @@ a:active {
 
 .bg-warning-strong {
   background-color: var(--warning-strong) !important;
-  color: var(--on-warning-strong) !important;
+  color: var(--on-warning) !important;
 }
 
 .bg-warning-flat-strong {
   background-color: var(--warning-flat-strong) !important;
-  color: var(--on-warning-flat-strong) !important;
+  color: var(--on-warning-flat) !important;
 }
 
 .bg-primary {
@@ -440,12 +436,12 @@ a:active {
 
 .bg-primary-strong {
   background-color: var(--brand-strong) !important;
-  color: var(--on-brand-strong) !important;
+  color: var(--on-brand) !important;
 }
 
 .bg-primary-flat-strong {
   background-color: var(--brand-flat-strong) !important;
-  color: var(--on-brand-flat-strong) !important;
+  color: var(--on-brand-flat) !important;
 }
 
 .bg-secondary {
@@ -460,12 +456,12 @@ a:active {
 
 .bg-secondary-strong {
   background-color: var(--accent-strong) !important;
-  color: var(--on-accent-strong) !important;
+  color: var(--on-accent) !important;
 }
 
 .bg-secondary-flat-strong {
   background-color: var(--accent-flat-strong) !important;
-  color: var(--on-accent-flat-strong) !important;
+  color: var(--on-accent-flat) !important;
 }
 
 .bg-success {
@@ -480,12 +476,12 @@ a:active {
 
 .bg-success-strong {
   background-color: var(--positive-strong) !important;
-  color: var(--on-positive-strong) !important;
+  color: var(--on-positive) !important;
 }
 
 .bg-success-flat-strong {
   background-color: var(--positive-flat-strong) !important;
-  color: var(--on-positive-flat-strong) !important;
+  color: var(--on-positive-flat) !important;
 }
 
 .bg-danger {
@@ -500,12 +496,12 @@ a:active {
 
 .bg-danger-strong {
   background-color: var(--negative-strong) !important;
-  color: var(--on-negative-strong) !important;
+  color: var(--on-negative) !important;
 }
 
 .bg-danger-flat-strong {
   background-color: var(--negative-flat-strong) !important;
-  color: var(--on-negative-flat-strong) !important;
+  color: var(--on-negative-flat) !important;
 }
 
 .bg-info {
@@ -520,12 +516,12 @@ a:active {
 
 .bg-info-strong {
   background-color: var(--information-strong) !important;
-  color: var(--on-information-strong) !important;
+  color: var(--on-information) !important;
 }
 
 .bg-info-flat-strong {
   background-color: var(--information-flat-strong) !important;
-  color: var(--on-information-flat-strong) !important;
+  color: var(--on-information-flat) !important;
 }
 
 .text-brand {
@@ -625,7 +621,7 @@ a:active {
 }
 
 .badge-group {
-  margin-top: 0.55rem;
+  margin-top: 0.5rem;
 }
 
 .button-text:hover, .btn:hover {
@@ -1539,11 +1535,11 @@ a:active {
   color: var(--on-brand-flat);
 }
 .btn.btn-tertiary:hover {
-  background-color: var(--surface);
+  background-color: var(--surface-1);
   color: var(--on-brand-flat);
 }
 .btn.btn-tertiary:focus-visible, .btn.btn-tertiary:active {
-  background-color: var(--surface);
+  background-color: var(--surface-1);
   color: var(--on-brand-flat);
   box-shadow: 0 0 0 2px var(--brand-flat-strong);
 }
@@ -1576,6 +1572,7 @@ a:active {
   align-items: center;
   border: none;
   padding: 0.75rem;
+  background-color: var(--surface);
 }
 .list-group .list-group-item:first-child {
   border-radius: 0;
@@ -1606,10 +1603,10 @@ a:active {
   text-decoration: none;
 }
 .list-group .list-group-item:hover {
-  background-color: var(--surface);
+  background-color: var(--surface-1);
 }
 .list-group .list-group-item:focus-visible, .list-group .list-group-item:active {
-  background-color: var(--surface-1);
+  background-color: var(--surface-2);
 }
 .list-group.divider .list-group-item {
   border-bottom: 1px solid var(--outline);
@@ -1640,6 +1637,10 @@ a:active {
   margin-top: 0.25rem;
 }
 
+.list-group-title {
+  margin-bottom: 1.5rem;
+}
+
 .card {
   border: 1px solid var(--outline);
   border-radius: 0.5rem;
@@ -1654,6 +1655,9 @@ a:active {
 .card .card-body .card-text {
   color: var(--on-surface-variant);
   margin: 0.5rem 0;
+}
+.card .card-body .badge {
+  margin: 0 0.25rem;
 }
 .card .card-actions {
   margin-top: 0.25rem;
@@ -1905,6 +1909,179 @@ a:active {
 }
 .nav-scroll button:last-child {
   margin-right: 0;
+}
+
+.dropdown .btn.dropdown-toggle::after {
+  background-image: none;
+  content: "\f279";
+  /* Chevron down */
+  font-family: "bootstrap-icons";
+  text-align: center;
+  vertical-align: bottom;
+  border: 0;
+  font-size: 1.125rem;
+  margin-left: 0.25rem;
+}
+.dropdown .btn.dropdown-toggle:hover::after, .dropdown .btn.dropdown-toggle:active::after, .dropdown .btn.dropdown-toggle:focus-visible::after {
+  background-image: none;
+  content: "\f27c";
+  /* Chevron down */
+  font-family: "bootstrap-icons";
+  text-align: center;
+  vertical-align: bottom;
+  border: 0;
+  font-size: 1.125rem;
+  margin-left: 0.25rem;
+}
+.dropdown .dropdown-menu {
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  background-color: var(--surface);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+.dropdown .dropdown-menu .dropdown-item {
+  color: var(--on-brand-flat);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+.dropdown .dropdown-menu .dropdown-item:hover {
+  color: var(--on-accent-flat);
+  background-color: var(--accent-flat);
+}
+.dropdown .dropdown-menu .dropdown-item:focus {
+  box-shadow: none !important;
+}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:focus-visible {
+  color: var(--on-accent-flat-strong);
+  background-color: var(--accent-flat-strong);
+  box-shadow: none !important;
+}
+.dropdown .dropdown-menu .dropdown-item.disabled {
+  color: var(--outline);
+}
+
+.accordion .accordion-button {
+  padding: 0.75rem;
+  background-color: var(--surface);
+  box-shadow: none;
+}
+.accordion .accordion-button::after {
+  color: var(--on-background);
+  background-image: none;
+  content: "\f64d";
+  /* plus */
+  font-family: "bootstrap-icons";
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+.accordion .accordion-button:not(.collapsed) {
+  color: var(--on-background);
+  background-color: var(--surface-2);
+}
+.accordion .accordion-button:not(.collapsed)::after {
+  color: var(--on-background);
+  background-image: none;
+  content: "\f64d";
+  /* plus */
+  font-family: "bootstrap-icons";
+  text-align: center;
+  transform: rotate(-45deg);
+}
+.accordion .accordion-button:not(.collapsed):hover {
+  background-color: var(--surface-3);
+}
+.accordion .accordion-button:hover {
+  background-color: var(--surface-1);
+}
+.accordion .accordion-button:active {
+  box-shadow: none !important;
+}
+.accordion .accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion .accordion-button:disabled {
+  color: var(--outline);
+}
+.accordion .accordion-body {
+  padding: 0.75rem;
+  background-color: var(--surface-2);
+}
+.accordion .accordion-body p {
+  margin-bottom: 0;
+}
+.accordion .accordion .accordion-item {
+  border-radius: 0;
+  border: 0;
+}
+.accordion .accordion .accordion-item .accordion-header::before {
+  content: "";
+  width: 0;
+  height: 3rem;
+  border-left: 1px solid var(--surface-variant);
+  position: absolute;
+  margin-left: 1.25rem;
+}
+.accordion .accordion .accordion-item .accordion-header:hover::before {
+  content: "";
+  width: 0;
+  height: 3rem;
+  border-left: 1px solid var(--surface-variant);
+  position: absolute;
+  margin-left: 1.25rem;
+}
+.accordion .accordion .accordion-item .accordion-button {
+  position: inherit;
+  padding: 0.75rem;
+  padding-left: 1.75rem;
+  background-color: var(--surface-2);
+  border-radius: 0;
+}
+.accordion .accordion .accordion-item .accordion-button::after {
+  color: var(--on-background);
+  background-image: none;
+  content: "\f4fa";
+  /* plus-circle */
+  font-family: "bootstrap-icons";
+  text-align: center;
+}
+.accordion .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: var(--surface-variant);
+  padding: 0.75rem;
+  padding-left: 1.75rem;
+}
+.accordion .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  color: var(--on-background);
+  background-image: none;
+  content: "\f4fa";
+  /* dash-square */
+  font-family: "bootstrap-icons";
+  text-align: center;
+}
+.accordion .accordion .accordion-item .accordion-button:not(.collapsed):hover {
+  background-color: var(--surface-5);
+}
+.accordion .accordion .accordion-item .accordion-button:hover {
+  background-color: var(--surface-3);
+}
+.accordion .accordion .accordion-item .accordion-button:active {
+  box-shadow: none !important;
+}
+.accordion .accordion .accordion-item .accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion .accordion .accordion-item .accordion-button:disabled {
+  color: var(--outline);
+}
+.accordion .accordion .accordion-item .accordion-body {
+  padding: 0.75rem;
+  padding-left: 1.75rem;
+  padding-right: 2rem;
+  background-color: var(--surface-variant);
+  color: var(--on-surface-variant);
+}
+.accordion .accordion .accordion-item .accordion-body p {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=pdis-design-system.css.map */
