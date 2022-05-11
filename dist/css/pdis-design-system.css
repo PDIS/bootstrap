@@ -108,7 +108,7 @@
   color: var(--outline);
 }
 
-.body-text, .accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after, .accordion .accordion .accordion-item .accordion-header .accordion-button::after, .accordion .accordion-button, .card .card-body .card-text, .list-group .list-group-item, p, a {
+.body-text, .accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after, .accordion .accordion .accordion-item .accordion-header .accordion-button::after, .accordion .accordion-item .accordion-button:not(.collapsed)::after, .accordion .accordion-item .accordion-button::after, .accordion .accordion-item .accordion-button, .card .card-body .card-text, .list-group .list-group-item, p, a {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -116,11 +116,11 @@
   letter-spacing: 0.5px;
   color: var(--on-background);
 }
-.body-text:disabled, .accordion .accordion .accordion-item .accordion-header .accordion-button:disabled::after, .accordion .accordion-button:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled, p:disabled, a:disabled {
+.body-text:disabled, .accordion .accordion .accordion-item .accordion-header .accordion-button:disabled::after, .accordion .accordion-item .accordion-button:disabled::after, .accordion .accordion-item .accordion-button:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled, p:disabled, a:disabled {
   color: var(--outline);
 }
 
-.body-text-sm, .accordion .accordion .accordion-item .accordion-body, .accordion .accordion .accordion-item .accordion-header .accordion-button, .accordion .accordion-body, .list-group .list-group-item .list-group-item-subheader {
+.body-text-sm, .accordion .accordion .accordion-item .accordion-body, .accordion .accordion .accordion-item .accordion-header .accordion-button, .accordion .accordion-item .accordion-body, .list-group .list-group-item .list-group-item-subheader {
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
@@ -128,11 +128,11 @@
   letter-spacing: 0.25px;
   color: var(--on-background);
 }
-.body-text-sm:disabled, .accordion .accordion .accordion-item .accordion-body:disabled, .accordion .accordion .accordion-item .accordion-header .accordion-button:disabled, .accordion .accordion-body:disabled, .list-group .list-group-item .list-group-item-subheader:disabled {
+.body-text-sm:disabled, .accordion .accordion .accordion-item .accordion-body:disabled, .accordion .accordion .accordion-item .accordion-header .accordion-button:disabled, .accordion .accordion-item .accordion-body:disabled, .list-group .list-group-item .list-group-item-subheader:disabled {
   color: var(--outline);
 }
 
-.body-text-lg, .accordion .accordion-button:not(.collapsed)::after, .accordion .accordion-button::after {
+.body-text-lg {
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
@@ -140,7 +140,7 @@
   letter-spacing: 0.75px;
   color: var(--on-background);
 }
-.body-text-lg:disabled, .accordion .accordion-button:disabled::after {
+.body-text-lg:disabled {
   color: var(--outline);
 }
 
@@ -1899,12 +1899,21 @@ a:active, a:focus-visible {
   margin-right: 0;
 }
 
-.accordion .accordion-button {
+.accordion .accordion-item {
+  border: 0;
+  margin-bottom: 0.5rem;
+}
+.accordion .accordion-item:last-child {
+  margin-bottom: 0;
+  border-radius: 0.5rem;
+}
+.accordion .accordion-item .accordion-button {
   padding: 0.75rem;
   background-color: var(--surface);
   box-shadow: none;
+  border-radius: 0.5rem;
 }
-.accordion .accordion-button::after {
+.accordion .accordion-item .accordion-button::after {
   color: var(--on-background);
   background-image: none;
   content: "\f64d";
@@ -1914,11 +1923,15 @@ a:active, a:focus-visible {
   width: auto;
   height: auto;
 }
-.accordion .accordion-button:not(.collapsed) {
+.accordion .accordion-item .accordion-button:not(.collapsed) {
   color: var(--on-background);
   background-color: var(--surface-2);
+  border-radius: 0.5rem 0.5rem 0 0;
 }
-.accordion .accordion-button:not(.collapsed)::after {
+.accordion .accordion-item .accordion-button:not(.collapsed):last-of-type {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.accordion .accordion-item .accordion-button:not(.collapsed)::after {
   color: var(--on-background);
   background-image: none;
   content: "\f64d";
@@ -1927,31 +1940,45 @@ a:active, a:focus-visible {
   text-align: center;
   transform: rotate(-45deg);
 }
-.accordion .accordion-button:not(.collapsed):hover {
+.accordion .accordion-item .accordion-button:not(.collapsed):hover {
   background-color: var(--surface-3);
 }
-.accordion .accordion-button:hover {
+.accordion .accordion-item .accordion-button:last-of-type {
+  border-radius: 0.5rem;
+}
+.accordion .accordion-item .accordion-button:hover {
   background-color: var(--surface-1);
 }
-.accordion .accordion-button:active {
+.accordion .accordion-item .accordion-button:active {
   box-shadow: none !important;
 }
-.accordion .accordion-button:focus {
+.accordion .accordion-item .accordion-button:focus {
   box-shadow: none !important;
 }
-.accordion .accordion-button:disabled {
+.accordion .accordion-item .accordion-button:disabled {
   color: var(--outline);
 }
-.accordion .accordion-body {
+.accordion .accordion-item .accordion-body {
   padding: 0.75rem;
   background-color: var(--surface-2);
+  border-radius: 0 0 0.5rem 0.5rem;
 }
-.accordion .accordion-body p {
+.accordion .accordion-item .accordion-body p {
   margin-bottom: 0;
 }
 .accordion .accordion .accordion-item {
   border-radius: 0;
   border: 0;
+  margin-bottom: 0;
+}
+.accordion .accordion .accordion-item:last-child .accordion-button {
+  border-radius: 0 0 0.5rem 0.5rem !important;
+}
+.accordion .accordion .accordion-item:last-child .accordion-button:not(.collapsed) {
+  border-radius: 0 !important;
+}
+.accordion .accordion .accordion-item:last-child .accordion-body {
+  border-radius: 0 0 0.5rem 0.5rem !important;
 }
 .accordion .accordion .accordion-item .accordion-header::before {
   content: "";
@@ -2018,6 +2045,7 @@ a:active, a:focus-visible {
   padding-right: 2rem;
   background-color: var(--surface-variant);
   color: var(--on-surface-variant);
+  border-radius: 0;
 }
 .accordion .accordion .accordion-item .accordion-body p {
   margin-bottom: 0;

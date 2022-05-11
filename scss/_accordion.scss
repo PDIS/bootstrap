@@ -1,64 +1,85 @@
 .accordion {
-  .accordion-button {
-    @extend .body-text;
-    padding: 0.75rem;
-    background-color: var(--surface);
-    box-shadow: none;
+  .accordion-item {
+    border: 0;
+    margin-bottom: 0.5rem;
 
-    &::after { 
-      @extend .body-text-lg;
-      color: var(--on-background);
-      background-image: none;
-      content: "\F64D"; /* plus */
-      font-family: "bootstrap-icons";
-      text-align: center;
-      width: auto;
-      height: auto;
+    &:last-child {
+      margin-bottom: 0;
+      border-radius: 0.5rem;
     }
-
-    &:not(.collapsed) {
-      color: var(--on-background);
-      background-color: var(--surface-2);
-
+    
+    .accordion-button {
+      @extend .body-text;
+      padding: 0.75rem;
+      background-color: var(--surface);
+      box-shadow: none;
+      border-radius: 0.5rem;
+  
       &::after { 
-        @extend .body-text-lg;
+        @extend .body-text;
         color: var(--on-background);
         background-image: none;
         content: "\F64D"; /* plus */
         font-family: "bootstrap-icons";
         text-align: center;
-        transform: rotate(-45deg);
+        width: auto;
+        height: auto;
+      }
+  
+      &:not(.collapsed) {
+        color: var(--on-background);
+        background-color: var(--surface-2);
+        border-radius: 0.5rem 0.5rem 0 0;
+  
+        &:last-of-type {
+          border-radius: 0.5rem 0.5rem 0 0;
+        }
+
+        &::after { 
+          @extend .body-text;
+          color: var(--on-background);
+          background-image: none;
+          content: "\F64D"; /* plus */
+          font-family: "bootstrap-icons";
+          text-align: center;
+          transform: rotate(-45deg);
+        }
+  
+        &:hover {
+          background-color: var(--surface-3);
+        }
       }
 
+      &:last-of-type {
+        border-radius: 0.5rem;
+      }
+  
       &:hover {
-        background-color: var(--surface-3);
+        background-color: var(--surface-1);
+      }
+  
+      &:active {
+        box-shadow: none !important;
+      }
+  
+      &:focus {
+        box-shadow: none !important;
+      }
+  
+      &:disabled {
+        color: var(--outline);
       }
     }
+  
+    .accordion-body {
+      @extend .body-text-sm;
+      padding: 0.75rem;
+      background-color: var(--surface-2);
+      border-radius: 0 0 0.5rem 0.5rem;
 
-    &:hover {
-      background-color: var(--surface-1);
-    }
-
-    &:active {
-      box-shadow: none !important;
-    }
-
-    &:focus {
-      box-shadow: none !important;
-    }
-
-    &:disabled {
-      color: var(--outline);
-    }
-  }
-
-  .accordion-body {
-    @extend .body-text-sm;
-    padding: 0.75rem;
-    background-color: var(--surface-2);
-
-    p {
-      margin-bottom: 0;
+      p {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -83,7 +104,22 @@
     .accordion-item {
       border-radius: 0;
       border: 0;
-      
+      margin-bottom: 0;
+
+      &:last-child {
+        .accordion-button {
+          border-radius: 0 0 0.5rem 0.5rem !important;
+
+          &:not(.collapsed) {
+            border-radius: 0 !important;
+          }
+        }
+        
+        .accordion-body { 
+          border-radius: 0 0 0.5rem 0.5rem !important;
+        }
+      }
+
       .accordion-header {
         &::before {
           content: '';
@@ -166,7 +202,8 @@
         padding-right: 2rem;
         background-color: var(--surface-variant);
         color: var(--on-surface-variant);
-
+        border-radius: 0;
+        
         p {
           margin-bottom: 0;
         }
