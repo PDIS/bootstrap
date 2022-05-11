@@ -9,7 +9,7 @@
   &:focus, &:active {
     color: var(--on-background);
     background-color: var(--surface-1);
-    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
   }
 
   i {
@@ -44,7 +44,7 @@
   &:focus, &:active {
     color: var(--on-background);
     background-color: var(--surface-1);
-    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
   }
 
   i {
@@ -79,7 +79,7 @@
   &:focus, &:active {
     color: var(--on-background);
     background-color: var(--surface-1);
-    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
   }
 
   i {
