@@ -3,7 +3,8 @@
 
 a {
   @extend .body-text;
-  color: var(--on-brnad-flat);
+  color: var(--on-brand-flat);
+  font-weight: 500;
   //text-underline-offset: 0.1em;
 
   &:visited {
@@ -11,12 +12,12 @@ a {
   }
 
   &:hover {
-    color: var(--on-brnad-flat);
+    color: var(--on-brand-flat);
     background-color: var(--brand-flat);
   }
 
   &:active, &:focus-visible {
-    color: var(--on-brnad-flat);
+    color: var(--on-brand-flat);
     background-color: var(--brand-flat-strong);
   }
 }

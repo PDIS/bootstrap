@@ -6,6 +6,147 @@ group: components
 toc: true
 ---
 
+{{< example >}}
+
+<div class="row">
+<div class="col-md-4">
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        手風琴選單標題文字
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        手風琴選單標題文字
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        手風琴選單標題文字
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+      </div>
+    </div>
+  </div>
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        手風琴選單標題文字
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="accordion" id="accordionExample3">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne3">
+      <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+        有參加農保，以後可以領老農津貼嗎？要怎麼申請？每個月可以領多少錢？
+      </button>
+    </h2>
+    <div id="collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne3" data-bs-parent="#accordionExample3">
+      <div class="accordion-body">
+        <p>ㄧ、您如果符合下列各項申領條件就可以領取老農津貼：</p>
+        <ol>
+          <li>年滿65歲國民，在國內設有戶籍，且於最近3年內每年居住超過183天。</li>
+          <li>申領時參加農保且年資合計15年以上者，可領取全額津貼新台幣(下同) 7,550元；103年7月17日(含當日)以前已參加農保，且持續加保，於申領時加保年資合計6個月以上未滿15年者，可領取半額津貼3,775元。</li>
+          <li>申領老農津貼之同一期間未領取政府發放之生活補助或津貼。</li>
+          <li>未領取社會保險老年給付，或已領取社會保險老年給付者，於87年11月12日以前已參加農保且加保年資未中斷。</li>
+          <li>自102年1月1日起，始申請領取老農津貼之老年農民，財稅機關提供中央主管機關公告年度之農業所得以外之個人綜合所得稅各類所得總額合計未達50萬元，且個人所有之土地及房屋價值經扣除農業用地、「尚未徵收及補償之公共設施保留地」、農舍、「無農舍且實際居住之唯一房屋及土地(最多以扣除400萬元為限)」、「未產生經濟效益之原住民保留地」及「未產生經濟效益具公用地役關係之現有道路」後合計未達500萬元者，得領取老農津貼。</li>
+        </ol>
+        <p>二、如果您符合以上申領條件，請於年滿65歲當月主動檢附國民身分證、農會信用部或郵局存簿及印章，至您所屬的基層農會提出申請。</p>
+        <p>三、經審查合格，每個月可以領取7,550元或3,775元。 </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo3">
+      <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
+        請領要件
+      </button>
+    </h2>
+    <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3" data-bs-parent="#accordionExample3">
+      <div class="accordion" id="accordionSecondLayer">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSecondLayerOne">
+            <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerOne" aria-expanded="true" aria-controls="collapseSecondLayerOne">
+              勞保生育給付
+            </button>
+          </h2>
+          <div id="collapseSecondLayerOne" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerOne" data-bs-parent="#accordionSecondLayer">
+            <div class="accordion-body">
+              <p>按被保險人分娩或 ...</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSecondLayerTwo">
+            <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerTwo" aria-expanded="true" aria-controls="collapseSecondLayerTwo">
+              國保生育給付
+            </button>
+          </h2>
+          <div id="collapseSecondLayerTwo" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerTwo" data-bs-parent="#accordionSecondLayer">
+            <div class="accordion-body">
+              <p>按被保險人分娩或 ...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree3">
+      <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+        Household Registration Act 戶籍法英譯本
+      </button>
+    </h2>
+    <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3" data-bs-parent="#accordionExample3">
+      <div class="accordion-body">
+      </div>
+    </div>
+  </div>
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour3">
+      <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour3" aria-expanded="false" aria-controls="collapseFour3">
+        戶籍法施行細則（104.07.10 修正）
+      </button>
+    </h2>
+    <div id="collapseFour3" class="accordion-collapse collapse" aria-labelledby="headingFour3" data-bs-parent="#accordionExample3">
+      <div class="accordion-body">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+{{</ example >}}
+
 ### 關於手風琴元件
 
 手風琴 (accordion) 是一種可以展開與隱藏更多資訊的列表，展開後的資訊可以是純文字、另一頁面、也可以是更深層的手風琴 (layered accordion) 。
@@ -34,7 +175,7 @@ toc: true
 
 基本款手風琴包含標題與可以點擊的展開按鈕 (+) ，展開後該按鈕則會被替換回另一個可以點擊的收納按鈕 (-) 。除了預設的正負圖標以外，您也可以使用展開與收納按鈕也可以選擇箭頭圖標。展開後的列表樣式與展開前的樣式應有差距，讓使用者可以迅速的辨認出展開或未展開狀態。
 
-{{< example >}}
+<!-- {{< example >}}
 
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
@@ -150,13 +291,13 @@ toc: true
   </div>
 </div>
 
-{{</ example >}}
+{{</ example >}} -->
 
 #### 多層手風琴 Layered accordion
 
 有的時候手風琴裡面還有一層手風琴，強烈建議不同層的手風情使用不同的圖標按鈕 (icon button) 與樣式以利區分。
 
-{{< example >}}
+<!-- {{< example >}}
 
 <div class="accordion" id="accordionExample3">
   <div class="accordion-item">
@@ -321,3 +462,4 @@ toc: true
 </div>
 
 {{</ example >}}
+ -->

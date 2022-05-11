@@ -13,7 +13,8 @@
   &:focus-visible, &:active {
     color: var(--on-background);
     background-color: var(--surface-1);
-    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
+    border-color: var(--brand-flat-strong);
   }
 
   i {
@@ -47,7 +48,8 @@
   &:focus-visible, &:active {
     color: var(--on-background);
     background-color: var(--surface-1);
-    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
+    border-color: var(--brand-flat-strong);
   }
 
   i {
@@ -81,7 +83,8 @@
   &:focus-visible, &:active {
     color: var(--on-background);
     background-color: var(--surface-1);
-    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
+    border-color: var(--brand-flat-strong);
   }
 
   i {
@@ -113,6 +116,10 @@
     margin-right: 0;
   }
 
+  &:disabled {
+    opacity: .6;
+  }
+  
   @each $key, $value in $color-envs {
     &.btn-#{$key} {
       background-color: var(--#{$value});
@@ -131,12 +138,10 @@
         border-color: var(--#{$value}-strong);
         color: var(--on-#{$value});
         //text-decoration: underline;
-        box-shadow: 0 0 0 2px var(--#{$value}-flat-strong) !important;
+        box-shadow: 0 0 0 2px var(--#{$value}-flat-strong) inset !important;
+        border-color: var(--#{$value}-flat-strong);
       }
-  
-      &:disabled {
-        color: var(--outline);
-      }
+
     }
   
     /* .btn-outline-#{$key} {
@@ -208,17 +213,18 @@
       color: var(--on-brand-flat);
       background: var(--brand-flat-strong);
       border: none;
-      box-shadow: 0 0 0 2px var(--brand-flat-strong) !important;
+      box-shadow: 0 0 0 2px var(--surface-1) inset !important;
+      border-color: var(--surface-1);
     }
   
-    &:disabled {
+/*     &:disabled {
       color: var(--outline);
       background-color: var(--surface);
-    }
+    } */
   }
   
   
-  &.btn-semi-secondary {
+  &.btn-tertiary {
     color: var(--on-brand-flat);
     background-color: var(--surface);
     border-color: var(--outline);
@@ -231,19 +237,19 @@
   
     &:focus-visible, &:active {
       color: var(--on-brand-flat);
-      box-shadow: 0 0 0 2px var(--brand-flat-strong) !important;
+      box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
       background: var(--surface-1);
-      border-color: var(--outline);
+      border-color: var(--brand-flat-strong);
     }
   
-    &:disabled {
+/*     &:disabled {
       color: var(--outline);
       background-color: var(--surface);
       border: 0;
-    }
+    } */
   }
   
-  &.btn-tertiary {
+  &.btn-less-important {
     background: none;
     color: var(--on-brand-flat);
   
@@ -255,13 +261,14 @@
     &:focus-visible, &:active {
       background-color: var(--surface-1);
       color: var(--on-brand-flat);
-      box-shadow: 0 0 0 2px var(--brand-flat-strong);
+      box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
+      border-color: var(--brand-flat-strong);
     }
   
-    &:disabled {
+/*     &:disabled {
       color: var(--outline);
       background-color: var(--surface);
-    }
+    } */
   }
   
   &.btn-sm {
