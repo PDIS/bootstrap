@@ -1,15 +1,15 @@
 footer {
   background-color: var(--surface-variant);
+  margin-top: 1.5rem;
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
-
 
   .title {
     @extend .title-text;
   }
 
   .nav {
-    margin: 0.5rem 0;
+    margin: 0.25rem 0;
 
     .nav-item {
       margin: 0.25rem 0;
@@ -17,6 +17,10 @@ footer {
 
       &:last-child {
         margin-right: 0;
+      }
+
+      i {
+        font-size: 1.5rem;
       }
     }
 
@@ -48,42 +52,11 @@ footer {
 /*   hr {
     margin: 0.75rem 0;
   } */
+
+  &.bg-brand {
+    * {
+      color: var(--on-brand);
+    }
+  }
 }
 
-// footer {
-// 	.nav {
-// 		justify-content: flex-end;
-
-// 		@media (max-width: 992px) { 
-// 			flex-direction: column;
-// 		}
-// 	}
-
-// 	.top-nav {
-// 		justify-content: center;
-
-// 		@media (max-width: 992px) { 
-// 			flex-direction: row;
-// 			justify-content: start;
-// 		}
-// 	}
-
-// 	.accessibility-container {
-// 		margin:1rem 0.5rem 1rem 0.75rem;
-// 		text-align: end;
-
-// 		@media (max-width: 992px) { 
-// 			text-align: start;
-// 		}
-// 	}
-
-// 	.social-container {
-// 		margin:1rem 0.5rem 1rem 0.75rem;
-// 		text-align: end;
-
-// 		@media (max-width: 992px) { 
-// 			text-align: start;
-// 		}
-// 	}
-	
-// }
