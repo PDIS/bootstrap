@@ -2053,6 +2053,7 @@ a:active, a:focus-visible {
 
 footer {
   background-color: var(--surface-variant);
+  margin-top: 1.5rem;
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
   /*   hr {
@@ -2060,7 +2061,7 @@ footer {
     } */
 }
 footer .nav {
-  margin: 0.5rem 0;
+  margin: 0.25rem 0;
 }
 footer .nav .nav-item {
   margin: 0.25rem 0;
@@ -2068,6 +2069,9 @@ footer .nav .nav-item {
 }
 footer .nav .nav-item:last-child {
   margin-right: 0;
+}
+footer .nav .nav-item i {
+  font-size: 1.5rem;
 }
 footer .nav.nav-secondary .nav-item {
   margin: 0.25rem 0;
@@ -2084,6 +2088,9 @@ footer .nav.nav-secondary .nav-item a {
 }
 footer p {
   margin: 0.5rem 0;
+}
+footer.bg-brand * {
+  color: var(--on-brand);
 }
 
 /*# sourceMappingURL=pdis-design-system.css.map */
