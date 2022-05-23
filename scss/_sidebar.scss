@@ -119,6 +119,22 @@
       .sidebar-button {
         padding-left: 1.75rem;
       }
+
+      .sidebar-menu {
+        .sidebar-link {
+          padding-left: 2.625rem;
+        }
+  
+        .sidebar-button {
+          padding-left: 2.625rem;
+        }
+      }
+    }
+    
+    hr {
+      color: var(--outline);
+      margin: 0.75rem;
+      opacity: 1;
     }
   }
 }
