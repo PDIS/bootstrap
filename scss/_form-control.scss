@@ -69,46 +69,54 @@
     position: absolute;
     color: var(--on-surface);
     padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    font-size: 1.5rem;
+    padding-top: 0.35rem;
+    font-size: 1.125rem;
     z-index: 10;
 
     &.input-group-icon-sm {
-      font-size: 1.25rem;
+      font-size: 1rem;
+      padding-left: 0.5rem;
+      padding-top: 0.2rem;
     }
 
-    &.input-group-icon-sm {
-      font-size: 1.75rem;
+    &.input-group-icon-lg {
+      font-size: 1.25rem;
+      padding-left: 1rem;
+      padding-top: 0.4rem;
     }
   }
 
   .input-group-icon-right {
     position: absolute;
     color: var(--on-surface);
-    font-size: 1.5rem;
+    font-size: 1.125rem;
+    padding-top: 0.35rem;
     z-index: 10;
     right: 1rem;
 
     &.input-group-icon-right-sm {
-      font-size: 1.25rem;
+      font-size: 1rem;
+      padding-top: 0.2rem;
     }
 
-    &.input-group-icon-right-sm {
-      font-size: 1.75rem;
+    &.input-group-icon-right-lg {
+      font-size: 1.25rem;
+      padding-top: 0.4rem;
     }
   }
 
   .form-control {
     width: inherit;
-    padding-left: 2.5rem;
+    padding-left: 2.25rem;
     border-radius: 0.5rem !important;
 
     &.form-control-sm {
+      padding-left: 2.25rem;
       border-radius: 0.375rem;
     }
 
     &.form-control-lg {
-      padding-left: 3rem;
+      padding-left: 2.5rem;
     }
   }
 }
