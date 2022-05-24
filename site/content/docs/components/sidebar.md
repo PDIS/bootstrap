@@ -45,6 +45,53 @@ toc: true
 基本款的側邊欄有舒適行高 (comfortable height) 與壓縮行高 (compact height) 兩種選擇，請依據網站空間自行調配。
 
 {{< example >}}
+<div class="col-md-4">
+<nav class="sidebar">
+  <div class="sidebar-header">側邊欄標題文字</div>
+  <ul class="sidebar-body">
+    <li><span class="sidebar-subheader">側邊欄分區標題文字</span></li>
+    <li><a href="#" class="sidebar-link active">第一層連結內容</a></li>
+    <li>
+      <button class="sidebar-button" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+        <i class="bi bi-signpost-split icon"></i>可展開第一層標題
+      </button>
+      <div class="collapse show" id="home-collapse">
+        <ul class="sidebar-menu">
+          <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第二層連結內容</a></li>
+          <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
+          <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
+          <li>
+            <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#second-collapse" aria-expanded="true">可展開第二層標題
+            </button>
+            <div class="collapse" id="second-collapse">
+              <ul class="sidebar-menu">
+                <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
+                <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+        可展開第一層標題
+      </button>
+      <div class="collapse" id="dashboard-collapse">
+        <ul class="sidebar-menu">
+          <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
+          <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
+          <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><hr></li>
+  </ul>
+</nav>
+</div>
+{{< /example >}}
+
+{{< example >}}
 
 <div class="row">
   <div class="col-md-6">

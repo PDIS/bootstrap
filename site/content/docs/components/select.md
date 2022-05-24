@@ -163,7 +163,7 @@ toc: true
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
-    <label for="example7" class="form-label h6">問題/標題</label>
+    <label for="example7" class="form-label">問題/標題</label>
     <select class="form-select" id="example7" aria-label="example7">
       <option  selected>請選擇一個選項</option>
       <optgroup  label="分類一">

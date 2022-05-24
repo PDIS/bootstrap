@@ -1,32 +1,40 @@
 .form-select {
+  @extend .label-text;
   color: var(--on-surface);
   background-color: var(--surface);
   border: 1px solid var(--outline);
 
   
   &:hover {
-    background-color: var(--surface-1);
+    background-color: var(--surface-2);
     border: 1px solid var(--outline);
   }
 
   &:active,
   &:focus {
-    background-color: var(--surface-1);
-    border: 1px solid var(--outline);
-    box-shadow: 0 0 0 2px var(--brand-flat-strong);
+    background-color: var(--surface-2);
+    border: 1px solid var(--brand-flat-strong);
+    box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
   }
 
   &:disabled {
-    color: var(--surface-variant);
+    color: var(--on-surface);
     background-color: var(--surface);
     border: 1px solid var(--outline);
-    box-shadow: none !important;
+    opacity: 0.6;
+  }
+
+  &.form-select-sm {
+    @extend .label-text-sm;
+  }
+
+  &.form-select-lg {
+    @extend .label-text-lg;
   }
 }
 
 option {
   background: var(--surface);
-  color: var(--on-surface) !important;
 }
 
 optgroup {

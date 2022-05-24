@@ -35,6 +35,52 @@ group: components
 可以自行選用符合網站風格的按鈕樣式。
 
 {{< example >}}
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">標題<span class="required">*</span></label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Placeholder">
+</div>
+
+<form class="needs-validation" novalidate>
+  <label for="password" class="form-label form-label-sm">密碼<span class="required">*</span></label>
+  <div class="input-group mb-3 has-validation">
+    <i class="input-group-icon input-group-icon-lg bi bi-key-fill"></i>
+    <input type="text" class="form-control form-control-lg" id="password" placeholder="Username" aria-label="password" aria-describedby="basic-addon1" required>
+    <i class="input-group-icon-right bi bi-key-fill"></i>
+    <div class="input-hint">密碼格式須包含大寫英文字母</div>
+    <div class="invalid-feedback">
+      <i class="bi bi-slash-circle icon"></i>密碼格式錯誤
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+<div class="input-group">
+<i class="input-group-icon bi bi-key-fill"></i>
+<input type="text" class="form-control" id="password" placeholder="Username" aria-label="password" aria-describedby="basic-addon1" required>
+<i class="input-group-icon-right bi bi-key-fill"></i>
+</div>
+
+<script>
+
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+
+</script>
+
 <div class="row text-center">
   <div class="col">
     <button type="button" class="btn btn-primary"><span>圓角按鈕</span><span class="badge badge-numerical">2</span></button>
