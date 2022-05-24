@@ -252,6 +252,52 @@
 <h4 id="方角按鈕-vs-圓角按鈕">方角按鈕 vs 圓角按鈕</h4>
 <p>可以自行選用符合網站風格的按鈕樣式。</p>
 <div class="bd-example">
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">標題<span class="required">*</span></label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Placeholder">
+</div>
+
+<form class="needs-validation" novalidate>
+  <label for="password" class="form-label form-label-sm">密碼<span class="required">*</span></label>
+  <div class="input-group mb-3 has-validation">
+    <i class="input-group-icon input-group-icon-lg bi bi-key-fill"></i>
+    <input type="text" class="form-control form-control-lg" id="password" placeholder="Username" aria-label="password" aria-describedby="basic-addon1" required>
+    <i class="input-group-icon-right bi bi-key-fill"></i>
+    <div class="input-hint">密碼格式須包含大寫英文字母</div>
+    <div class="invalid-feedback">
+      <i class="bi bi-slash-circle icon"></i>密碼格式錯誤
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+<div class="input-group">
+<i class="input-group-icon bi bi-key-fill"></i>
+<input type="text" class="form-control" id="password" placeholder="Username" aria-label="password" aria-describedby="basic-addon1" required>
+<i class="input-group-icon-right bi bi-key-fill"></i>
+</div>
+
+<script>
+
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+
+</script>
+
 <div class="row text-center">
   <div class="col">
     <button type="button" class="btn btn-primary"><span>圓角按鈕</span><span class="badge badge-numerical">2</span></button>
@@ -265,7 +311,53 @@
     <button type="button" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i></button>
   </div>
 </div>
-</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row text-center&#34;</span><span class="p">&gt;</span>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;mb-3&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;exampleFormControlInput1&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-label&#34;</span><span class="p">&gt;</span>標題<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;required&#34;</span><span class="p">&gt;</span>*<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;exampleFormControlInput1&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Placeholder&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">form</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;needs-validation&#34;</span> <span class="na">novalidate</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-label form-label-sm&#34;</span><span class="p">&gt;</span>密碼<span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;required&#34;</span><span class="p">&gt;</span>*<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group mb-3 has-validation&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group-icon input-group-icon-lg bi bi-key-fill&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control form-control-lg&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Username&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;basic-addon1&#34;</span> <span class="na">required</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group-icon-right bi bi-key-fill&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-hint&#34;</span><span class="p">&gt;</span>密碼格式須包含大寫英文字母<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;invalid-feedback&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-slash-circle icon&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>密碼格式錯誤
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;submit&#34;</span><span class="p">&gt;</span>Submit form<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group-icon bi bi-key-fill&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Username&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;basic-addon1&#34;</span> <span class="na">required</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group-icon-right bi bi-key-fill&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+
+
+    <span class="c1">// Fetch all the forms we want to apply custom Bootstrap validation styles to
+</span><span class="c1"></span>    <span class="kd">var</span> <span class="nx">forms</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.needs-validation&#39;</span><span class="p">)</span>
+
+    <span class="c1">// Loop over them and prevent submission
+</span><span class="c1"></span>    <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">forms</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">form</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;submit&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">form</span><span class="p">.</span><span class="nx">checkValidity</span><span class="p">())</span> <span class="p">{</span>
+            <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
+            <span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">()</span>
+          <span class="p">}</span>
+
+          <span class="nx">form</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;was-validated&#39;</span><span class="p">)</span>
+        <span class="p">},</span> <span class="kc">false</span><span class="p">)</span>
+      <span class="p">})</span>
+
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row text-center&#34;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>圓角按鈕<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge badge-numerical&#34;</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>圓角按鈕<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge&#34;</span><span class="p">&gt;</span>Brand<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
