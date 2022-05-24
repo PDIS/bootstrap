@@ -49,14 +49,15 @@ toc: true
 <nav class="sidebar">
   <div class="sidebar-header">側邊欄標題文字</div>
   <ul class="sidebar-body">
+    <li><span class="sidebar-subheader">側邊欄分區標題文字</span></li>
     <li><a href="#" class="sidebar-link active">第一層連結內容</a></li>
     <li>
       <button class="sidebar-button" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-        可展開第一層標題
+        <i class="bi bi-signpost-split icon"></i>可展開第一層標題
       </button>
       <div class="collapse show" id="home-collapse">
         <ul class="sidebar-menu">
-          <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
+          <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第二層連結內容</a></li>
           <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
           <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
           <li>
