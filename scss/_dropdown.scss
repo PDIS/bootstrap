@@ -1,5 +1,7 @@
 .dropdown {
-  .btn.dropdown-toggle {
+  .dropdown-toggle {
+    display: flex;
+
     &::after {
       background-image: none;
       content: "\F279"; /* Chevron down */
@@ -8,7 +10,11 @@
       vertical-align: bottom;
       border: 0;
       font-size: 1.125rem;
-      margin-left: 0.25rem;
+      margin-left: auto;
+
+      @media (min-width: 768px) {
+        margin-left: 0.25rem;
+      }
     }
 
     &:hover, &:active, &:focus-visible {
@@ -20,7 +26,26 @@
         vertical-align: bottom;
         border: 0;
         font-size: 1.125rem;
-        margin-left: 0.25rem;
+        margin-left: auto;
+
+        @media (min-width: 768px) {
+          margin-left: 0.25rem;
+        }
+      }
+    }
+
+    &.dropdown-toggle-iconless {
+      &::after {
+        background-image: none;
+        content: "";
+        vertical-align: bottom;
+        border: 0;
+        font-size: 1.125rem;
+        margin-left: auto;
+
+        @media (min-width: 768px) {
+          margin-left: 0.25rem;
+        }
       }
     }
     // @extend .label-text;

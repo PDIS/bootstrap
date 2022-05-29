@@ -44,7 +44,7 @@ toc: true
 
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
-    <label for="example1" class="form-label h6">問題/標題</label>
+    <label for="example1" class="form-label h6">標題</label>
     <select class="form-select" id="example1" aria-label="example1">
       <option  selected>請選擇一個選項</option>
       <option  value="1">選項一</option>
@@ -77,7 +77,7 @@ toc: true
 <div class="row d-flex justify-content-center">
   <div class="col-md-6">
     <div class="d-flex align-items-center">
-      <label for="example3" class="horizontal-label">問題/標題</label>
+      <label for="example3" class="col-form-label">問題/標題</label>
       <select class="form-select" id="example3" aria-label="example3">
         <option  selected>請選擇一個選項</option>
         <option  value="1">選項一</option>

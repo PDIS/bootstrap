@@ -1,122 +1,213 @@
 .navbar {
-  background-color: var(--surface);
-  
-  @media (max-width: 768px) {
-    padding-top: 0;
-    padding-bottom: 0;
+  padding: 0;
+  background-color: var(--brand);
+  color: var(--on-brand);
+
+  nav {
+    width: 100%;
   }
-  .container {   
-    @media (max-width: 768px) {
-      padding-right: 0;
+
+  .container {
+    flex-wrap: wrap
+  }
+
+  .navbar-brand-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 0;
     }
   }
 
   .navbar-brand {
-    @media (max-width: 768px) {
-      padding-top: 0;
-      padding-right: 0;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-    }
+    @extend .title-text-lg;
+    color: var(--on-brand);
   }
-}
 
-.navbar-nav {
-  .nav-link 
-  {
-    //color: var(--bs-primary) !important;
-  }
-}
+  .navbar-toggler {
+    @extend .btn;
+    @extend .btn-lg;
+    @extend .btn-primary;
 
-.navbar-toggler {
-  // background: var(--bs-primary) !important;
-  // color: white !important;
-  border-radius: 0;
-
-  &:active,
-  &:focus {
-    //background: var(--bs-primary-dark) !important;
     .navbar-toggler-icon {
+      color: var(--on-brand);
       background-image: none;
+      display: flex;
       width: auto;
-      font-size: 1rem;
       &::before {
-        content:  url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' fill='white' class='bi bi-x' viewBox='0 0 16 16'><path d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/></svg>");
-        vertical-align: middle;
+        content: "\F479"; /* list */
+        font-family: "bootstrap-icons";
+        text-align: center;
+        font-size: 1.25rem;
       }
       &::after {
-        margin-left: 0.25rem;
-        content: "關閉";
-        vertical-align: middle;
-      }
-    }
-  }
-
-  &.collapsed {
-    background: var(--bs-primary) !important;
-    .navbar-toggler-icon {
-      background-image: none;
-      width: auto;
-      font-size: 1rem;
-      &::before {
-        content:  url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='white' class='bi bi-list' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/></svg>");
-        vertical-align: middle;
-      }
-      &::after {
-        margin-left: 0.25rem;
         content: "選單";
-        vertical-align: middle;
+        margin-left: 0.25rem;
       }
     }
   }
 
-  .navbar-toggler-icon {
-    background-image: none;
-    width: auto;
-    font-size: 1rem;
-    &::before {
-      content:  url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='white' class='bi bi-list' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/></svg>");
-      vertical-align: middle;
+  .nav-link.dropdown-toggle {
+    @extend .btn;
+    @extend .btn-primary;
+    
+    @media (max-width: 767px) {
+      background-color: var(--surface);
+      border-color: var(--surface);
+      color: var(--on-background);
+
+      &:hover {
+        background-color: var(--surface-1);
+        border-color: var(--surface-1);
+        color: var(--on-background);
+      }
+      
     }
-    &::after {
-      content: "選單";
-      margin-left: 0.25rem;
-      vertical-align: middle;
+    
+  }
+
+  .navbar-collapse{
+    background-color: var(--surface);
+    padding-bottom: 1rem;
+    
+    @media (min-width: 768px) {
+      background-color: var(--brand);
+    }
+
+    .search-menu {
+      span {
+        @extend .label-text;
+      }
     }
   }
 }
 
-.navbar-title {
-  margin-bottom: 0;
-  margin-left: 0.5rem;
-}
 
-.searching {
-  @media (max-width: 768px) {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-}
+// .navbar {
+//   background-color: var(--surface);
+  
+//   @media (max-width: 768px) {
+//     padding-top: 0;
+//     padding-bottom: 0;
+//   }
+//   .container {   
+//     @media (max-width: 768px) {
+//       padding-right: 0;
+//     }
+//   }
 
-.hot-searching {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
+//   .navbar-brand {
+//     @media (max-width: 768px) {
+//       padding-top: 0;
+//       padding-right: 0;
+//       margin-top: 0.5rem;
+//       margin-bottom: 0.5rem;
+//     }
+//   }
+// }
 
-.nav-social-container {
-  margin: 1rem;
-}
+// .navbar-nav {
+//   .nav-link 
+//   {
+//     //color: var(--bs-primary) !important;
+//   }
+// }
 
-.nav-social-icon {
-  margin-left: 0.125rem;
-  margin-right: 0.125rem;
-  padding: 0.125rem 0.35rem;
+// .navbar-toggler {
+//   // background: var(--bs-primary) !important;
+//   // color: white !important;
+//   border-radius: 0;
 
-  &:first-child {
-    margin-left: 0;
-  }
+//   &:active,
+//   &:focus {
+//     //background: var(--bs-primary-dark) !important;
+//     .navbar-toggler-icon {
+//       background-image: none;
+//       width: auto;
+//       font-size: 1rem;
+//       &::before {
+//         content:  url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' fill='white' class='bi bi-x' viewBox='0 0 16 16'><path d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/></svg>");
+//         vertical-align: middle;
+//       }
+//       &::after {
+//         margin-left: 0.25rem;
+//         content: "關閉";
+//         vertical-align: middle;
+//       }
+//     }
+//   }
 
-  &:last-child  {
-    margin-right: 0;
-  }
-}
+//   &.collapsed {
+//     background: var(--bs-primary) !important;
+//     .navbar-toggler-icon {
+//       background-image: none;
+//       width: auto;
+//       font-size: 1rem;
+//       &::before {
+//         content:  url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='white' class='bi bi-list' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/></svg>");
+//         vertical-align: middle;
+//       }
+//       &::after {
+//         margin-left: 0.25rem;
+//         content: "選單";
+//         vertical-align: middle;
+//       }
+//     }
+//   }
+
+//   .navbar-toggler-icon {
+//     background-image: none;
+//     width: auto;
+//     font-size: 1rem;
+//     &::before {
+//       content:  url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='white' class='bi bi-list' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/></svg>");
+//       vertical-align: middle;
+//     }
+//     &::after {
+//       content: "選單";
+//       margin-left: 0.25rem;
+//       vertical-align: middle;
+//     }
+//   }
+// }
+
+// .navbar-title {
+//   margin-bottom: 0;
+//   margin-left: 0.5rem;
+// }
+
+// .searching {
+//   @media (max-width: 768px) {
+//     margin-top: 1rem;
+//     margin-bottom: 1rem;
+//   }
+// }
+
+// .hot-searching {
+//   margin-left: 0.5rem;
+//   margin-right: 0.5rem;
+// }
+
+// .nav-social-container {
+//   margin: 1rem;
+// }
+
+// .nav-social-icon {
+//   margin-left: 0.125rem;
+//   margin-right: 0.125rem;
+//   padding: 0.125rem 0.35rem;
+
+//   &:first-child {
+//     margin-left: 0;
+//   }
+
+//   &:last-child  {
+//     margin-right: 0;
+//   }
+// }
