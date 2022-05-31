@@ -64,7 +64,7 @@
   --bs-font-sans-serif: "Noto Sans", "Noto Sans TC", sans-serif;
 }
 
-.label-text, .navbar .navbar-collapse .search-menu span, .form-select, .sidebar .sidebar-body .sidebar-subheader, .invalid-feedback, .input-hint, .form-control, .form-label, .dropdown .dropdown-menu .dropdown-item, .tab-text, .nav-pills .nav-item .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .navbar .nav-link.dropdown-toggle, .navbar .navbar-toggler, .badge {
+.label-text, .form-select, .sidebar .sidebar-body .sidebar-subheader, .invalid-feedback, .input-hint, .form-control, .form-label, .dropdown .dropdown-menu .dropdown-menu-title, .dropdown .dropdown-menu .dropdown-item, .tab-text, .nav-pills .nav-item .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .navbar .nav-link.dropdown-toggle, .navbar .navbar-toggler, .badge {
   font-style: normal;
   font-weight: 500;
   font-size: 0.875rem;
@@ -75,7 +75,7 @@
   color: var(--on-background);
   background: none;
 }
-.label-text:disabled, .navbar .navbar-collapse .search-menu span:disabled, .form-select:disabled, .sidebar .sidebar-body .sidebar-subheader:disabled, .invalid-feedback:disabled, .input-hint:disabled, .form-control:disabled, .form-label:disabled, .dropdown .dropdown-menu .dropdown-item:disabled, .tab-text:disabled, .nav-pills .nav-item .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .navbar .nav-link.dropdown-toggle:disabled, .navbar .navbar-toggler:disabled, .badge:disabled {
+.label-text:disabled, .form-select:disabled, .sidebar .sidebar-body .sidebar-subheader:disabled, .invalid-feedback:disabled, .input-hint:disabled, .form-control:disabled, .form-label:disabled, .dropdown .dropdown-menu .dropdown-menu-title:disabled, .dropdown .dropdown-menu .dropdown-item:disabled, .tab-text:disabled, .nav-pills .nav-item .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .navbar .nav-link.dropdown-toggle:disabled, .navbar .navbar-toggler:disabled, .badge:disabled {
   color: var(--outline);
 }
 
@@ -1898,6 +1898,11 @@ a:active, a:focus-visible {
   margin-right: 0;
 }
 
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
 .dropdown .dropdown-toggle {
   display: flex;
 }
@@ -1933,6 +1938,19 @@ a:active, a:focus-visible {
     margin-left: 0.25rem;
   }
 }
+.dropdown .dropdown-toggle.dropdown-toggle-icon::after {
+  background-image: none;
+  content: "";
+  vertical-align: bottom;
+  border: 0;
+  font-size: 1.125rem;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .dropdown .dropdown-toggle.dropdown-toggle-icon {
+    display: none;
+  }
+}
 .dropdown .dropdown-toggle.dropdown-toggle-iconless::after {
   background-image: none;
   content: "";
@@ -1952,6 +1970,11 @@ a:active, a:focus-visible {
   background-color: var(--surface);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
+@media (min-width: 768px) {
+  .dropdown .dropdown-menu {
+    min-width: 15rem;
+  }
+}
 .dropdown .dropdown-menu .dropdown-item {
   color: var(--on-brand-flat);
   padding: 0.5rem 0.75rem;
@@ -1970,7 +1993,31 @@ a:active, a:focus-visible {
   box-shadow: none !important;
 }
 .dropdown .dropdown-menu .dropdown-item.disabled {
-  color: var(--outline);
+  opacity: 0.6;
+}
+.dropdown .dropdown-menu .dropdown-menu-title {
+  padding: 0.5rem 0.75rem;
+}
+.dropdown .dropdown-menu .dropdown-divider {
+  border-top: 1px solid var(--outline);
+  margin: 0.75rem 0.75rem;
+}
+.dropdown .dropdown-menu .input-group {
+  padding: 0.5rem 0.75rem;
+}
+.dropdown .dropdown-menu .nav {
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+}
+.dropdown .dropdown-menu .nav .nav-item {
+  margin: 0.25rem 0;
+  margin-right: 1.25rem;
+}
+.dropdown .dropdown-menu .nav .nav-item:last-child {
+  margin-right: 0;
+}
+.dropdown .dropdown-menu .nav .nav-item i {
+  font-size: 1.5rem;
 }
 
 .accordion .accordion-item {
@@ -2219,7 +2266,12 @@ footer.bg-brand * {
   background: none !important;
 }
 
-.input-group .input-group-icon {
+.input-group .input-group-append .btn, .input-group .input-group-append .navbar .nav-link.dropdown-toggle, .navbar .input-group .input-group-append .nav-link.dropdown-toggle, .input-group .input-group-append .navbar .navbar-toggler, .navbar .input-group .input-group-append .navbar-toggler {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group-icon .input-group-prepend-icon {
   position: absolute;
   color: var(--on-surface);
   padding-left: 0.75rem;
@@ -2227,17 +2279,17 @@ footer.bg-brand * {
   font-size: 1.125rem;
   z-index: 10;
 }
-.input-group .input-group-icon.input-group-icon-sm {
+.input-group-icon .input-group-prepend-icon.input-group-prepend-icon-sm {
   font-size: 1rem;
   padding-left: 0.5rem;
   padding-top: 0.2rem;
 }
-.input-group .input-group-icon.input-group-icon-lg {
+.input-group-icon .input-group-prepend-icon.input-group-prepend-icon-lg {
   font-size: 1.25rem;
   padding-left: 1rem;
   padding-top: 0.4rem;
 }
-.input-group .input-group-icon-right {
+.input-group-icon .input-group-append-icon {
   position: absolute;
   color: var(--on-surface);
   font-size: 1.125rem;
@@ -2245,24 +2297,24 @@ footer.bg-brand * {
   z-index: 10;
   right: 1rem;
 }
-.input-group .input-group-icon-right.input-group-icon-right-sm {
+.input-group-icon .input-group-append-icon.input-group-append-icon-sm {
   font-size: 1rem;
   padding-top: 0.2rem;
 }
-.input-group .input-group-icon-right.input-group-icon-right-lg {
+.input-group-icon .input-group-append-icon.input-group-append-icon-lg {
   font-size: 1.25rem;
   padding-top: 0.4rem;
 }
-.input-group .form-control {
+.input-group-icon .form-control {
   width: inherit;
   padding-left: 2.25rem;
   border-radius: 0.5rem !important;
 }
-.input-group .form-control.form-control-sm {
+.input-group-icon .form-control.form-control-sm {
   padding-left: 2.25rem;
   border-radius: 0.375rem;
 }
-.input-group .form-control.form-control-lg {
+.input-group-icon .form-control.form-control-lg {
   padding-left: 2.5rem;
 }
 
@@ -2566,6 +2618,11 @@ optgroup {
 @media (min-width: 768px) {
   .navbar .navbar-collapse {
     background-color: var(--brand);
+  }
+}
+@media (max-width: 767px) {
+  .navbar .navbar-collapse .search-menu {
+    display: block;
   }
 }
 

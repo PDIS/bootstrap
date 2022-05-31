@@ -81,10 +81,11 @@
     }
 
     .search-menu {
-      span {
-        @extend .label-text;
+      @media (max-width: 767px) {
+        display: block;
       }
     }
+
   }
 }
 

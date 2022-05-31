@@ -16,7 +16,7 @@ layout: components-example
     <div class="navbar-collapse collapse" id="Navbar">
       <div class="container">
         <ul class="navbar-nav">
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown order-2 order-md-1">
             <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               服務項目
             </a>
@@ -28,7 +28,7 @@ layout: components-example
               <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown order-3 order-md-2">
             <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               服務項目
             </a>
@@ -40,26 +40,33 @@ layout: components-example
               <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle dropdown-toggle-iconless" href="#" id="DropdownSearch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item dropdown order-1 order-md-3">
+            <a class="nav-link dropdown-toggle dropdown-toggle-icon" href="#" id="DropdownSearch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-search"></i>
             </a>
             <div class="dropdown-menu search-menu" aria-labelledby="DropdownSearch">
-              <span>使用關鍵字搜尋網站</span>
+              <div class="dropdown-menu-title">使用關鍵字搜尋網站</div>
               <div class="input-group">
                 <input type="text" class="form-control" id="Input1" placeholder="請輸入關鍵字">
-                <span class="input-group-text" id="search">搜尋</span>
+                <div class="input-group-append">
+                  <button class="btn btn-brand" type="button">搜尋</button>
+                </div>
               </div>
-              <span>熱門關鍵字</span>
-              <ul><li><a href="">國家科學技術發展計畫</a></li><li>申辦流程</li></ul>
+              <div class="dropdown-divider"></div>
+              <div class="dropdown-menu-title">熱門關鍵字</div>
+                <ul class="nav">
+                  <li class="nav-item"><a href="#">國家科學技術發展計畫</a></li>
+                  <li class="nav-item"><a href="#">申辦流程</a></li>
+                  <li class="nav-item"><a href="#">啟動法規鬆綁</a></li>
+                </ul>
             </div>
           </li>
-          <li class="nav-item dropdown ms-auto">
+          <li class="nav-item dropdown ms-md-auto order-4 order-md-4">
             <a class="nav-link dropdown-toggle dropdown-toggle-iconless bg-brand-flat" href="#" id="DropdownSetting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-gear"></i>網站設定 / Setting
             </a>
             <ul class="dropdown-menu" aria-labelledby="DropdownSetting">
-              <li><a class="dropdown-item">下拉選單第一層標題文字<a></li>
+              <li><a class="dropdown-item">語言 Language<a></li>
               <li><a class="dropdown-item" href="#">繁體中文</a></li>
               <li><a class="dropdown-item" href="#">English (US)</a></li>
               <li><a class="dropdown-item" href="#">English (UK)</a></li>

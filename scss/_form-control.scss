@@ -65,7 +65,16 @@
 }
 
 .input-group {
-  .input-group-icon {
+  .input-group-append {
+    .btn {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
+.input-group-icon {
+  .input-group-prepend-icon {
     position: absolute;
     color: var(--on-surface);
     padding-left: 0.75rem;
@@ -73,20 +82,20 @@
     font-size: 1.125rem;
     z-index: 10;
 
-    &.input-group-icon-sm {
+    &.input-group-prepend-icon-sm {
       font-size: 1rem;
       padding-left: 0.5rem;
       padding-top: 0.2rem;
     }
 
-    &.input-group-icon-lg {
+    &.input-group-prepend-icon-lg {
       font-size: 1.25rem;
       padding-left: 1rem;
       padding-top: 0.4rem;
     }
   }
 
-  .input-group-icon-right {
+  .input-group-append-icon {
     position: absolute;
     color: var(--on-surface);
     font-size: 1.125rem;
@@ -94,12 +103,12 @@
     z-index: 10;
     right: 1rem;
 
-    &.input-group-icon-right-sm {
+    &.input-group-append-icon-sm {
       font-size: 1rem;
       padding-top: 0.2rem;
     }
 
-    &.input-group-icon-right-lg {
+    &.input-group-append-icon-lg {
       font-size: 1.25rem;
       padding-top: 0.4rem;
     }
