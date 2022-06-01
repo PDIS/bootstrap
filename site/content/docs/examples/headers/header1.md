@@ -45,20 +45,20 @@ layout: components-example
               <i class="bi bi-search"></i>
             </a>
             <div class="dropdown-menu search-menu" aria-labelledby="DropdownSearch">
-              <div class="dropdown-menu-title">使用關鍵字搜尋網站</div>
+              <div class="dropdown-menu-title d-none d-md-block">使用關鍵字搜尋網站</div>
               <div class="input-group">
                 <input type="text" class="form-control" id="Input1" placeholder="請輸入關鍵字">
                 <div class="input-group-append">
                   <button class="btn btn-brand" type="button">搜尋</button>
                 </div>
               </div>
-              <div class="dropdown-divider"></div>
-              <div class="dropdown-menu-title">熱門關鍵字</div>
-                <ul class="nav">
-                  <li class="nav-item"><a href="#">國家科學技術發展計畫</a></li>
-                  <li class="nav-item"><a href="#">申辦流程</a></li>
-                  <li class="nav-item"><a href="#">啟動法規鬆綁</a></li>
-                </ul>
+              <div class="dropdown-divider d-none d-md-block"></div>
+              <div class="dropdown-menu-title d-inline d-md-block">熱門關鍵字</div>
+              <ul class="nav">
+                <li class="nav-item"><a href="#">國家科學技術發展計畫</a></li>
+                <li class="nav-item"><a href="#">申辦流程</a></li>
+                <li class="nav-item"><a href="#">啟動法規鬆綁</a></li>
+              </ul>
             </div>
           </li>
           <li class="nav-item dropdown ms-md-auto order-4 order-md-4">

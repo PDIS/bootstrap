@@ -55,7 +55,14 @@
 
   .nav-link.dropdown-toggle {
     @extend .btn;
+    @extend .btn-lg;
     @extend .btn-primary;
+
+    @media (min-width: 768px) {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      letter-spacing: 0.1px;
+    }
     
     @media (max-width: 767px) {
       background-color: var(--surface);
