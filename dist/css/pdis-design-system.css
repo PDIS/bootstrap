@@ -2670,13 +2670,5 @@ optgroup {
     display: block;
   }
 }
-.navbar .navbar-collapse .search-menu .hot-keyword {
-  margin: 0;
-}
-@media (min-width: 768px) {
-  .navbar .navbar-collapse .search-menu .hot-keyword {
-    margin: 0.5rem 0.75rem;
-  }
-}
 
 /*# sourceMappingURL=pdis-design-system.css.map */

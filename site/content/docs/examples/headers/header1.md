@@ -28,7 +28,7 @@ layout: components-example
               <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown order-3 order-md-2">
+          <li class="nav-item dropdown order-2 order-md-1">
             <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               服務項目
             </a>
@@ -40,12 +40,36 @@ layout: components-example
               <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown order-1 order-md-3">
+          <li class="nav-item dropdown order-2 order-md-1">
+            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              服務項目
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="DropdownMenu3">
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown order-2 order-md-1">
+            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              服務項目
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="DropdownMenu4">
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown order-1 order-md-2">
             <a class="nav-link dropdown-toggle dropdown-toggle-icon" href="#" id="DropdownSearch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-search"></i>
             </a>
             <div class="dropdown-menu search-menu" aria-labelledby="DropdownSearch">
-              <div class="dropdown-menu-title d-none d-md-block">使用關鍵字搜尋網站</div>
+              <span class="dropdown-menu-title d-none d-md-block">使用關鍵字搜尋網站</span>
               <div class="input-group">
                 <input type="text" class="form-control" id="Input1" placeholder="請輸入關鍵字">
                 <div class="input-group-append">
@@ -53,17 +77,17 @@ layout: components-example
                 </div>
               </div>
               <div class="dropdown-divider d-none d-md-block"></div>
-              <div class="dropdown-menu-title d-inline d-md-block">熱門關鍵字</div>
-              <ul class="nav">
-                <li class="nav-item"><a href="#">國家科學技術發展計畫</a></li>
-                <li class="nav-item"><a href="#">申辦流程</a></li>
-                <li class="nav-item"><a href="#">啟動法規鬆綁</a></li>
-              </ul>
+              <div style="padding: 0.75rem 0.5rem">
+                <span class="d-inline d-md-block">熱門關鍵字</span>
+                <a href="#">國家科學技術發展計畫</a>
+                <a href="#">申辦流程</a>
+                <a href="#">啟動法規鬆綁</a>
+              </div>
             </div>
           </li>
-          <li class="nav-item dropdown ms-md-auto order-4 order-md-4">
+          <li class="nav-item dropdown ms-md-auto order-3">
             <a class="nav-link dropdown-toggle dropdown-toggle-iconless bg-brand-flat" href="#" id="DropdownSetting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-gear"></i>網站設定 / Setting
+              <i class="bi bi-gear"></i><span>網站設定 / Setting</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="DropdownSetting">
               <li><a class="dropdown-item">語言 Language<a></li>
