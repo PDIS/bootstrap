@@ -40,12 +40,19 @@ group: components
   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Placeholder">
 </div>
 
+<div class="input-group">
+                <input type="text" class="form-control" id="Input1" placeholder="請輸入關鍵字">
+                <div class="input-group-append">
+                  <button class="btn btn-brand" type="button">搜尋</button>
+                </div>
+              </div>
+
 <form class="needs-validation" novalidate>
   <label for="password" class="form-label form-label-sm">密碼<span class="required">*</span></label>
-  <div class="input-group mb-3 has-validation">
-    <i class="input-group-icon input-group-icon-lg bi bi-key-fill"></i>
+  <div class="input-group input-group-icon mb-3 has-validation">
+    <i class="input-group-prepend-icon input-group-prepend-icon-lg bi bi-key-fill"></i>
     <input type="text" class="form-control form-control-lg" id="password" placeholder="Username" aria-label="password" aria-describedby="basic-addon1" required>
-    <i class="input-group-icon-right bi bi-key-fill"></i>
+    <i class="input-group-append-icon bi bi-key-fill"></i>
     <div class="input-hint">密碼格式須包含大寫英文字母</div>
     <div class="invalid-feedback">
       <i class="bi bi-slash-circle icon"></i>密碼格式錯誤

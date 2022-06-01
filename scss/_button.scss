@@ -292,9 +292,8 @@
   }
 }
 
-/* .btn-link {
-  color: var(--brand);
-  &:hover, &:active, &:focus {
-    color: var(--brand-strong);
+.btn-group {
+  .btn {
+    margin: 0;
   }
-} */
+}
