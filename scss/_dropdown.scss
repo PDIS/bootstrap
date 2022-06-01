@@ -1,13 +1,4 @@
 .dropdown {
-
-  &:hover {
-    @media (min-width: 768px) {
-      .dropdown-menu {
-        display: block;
-      }
-    }
-  }
-
   .dropdown-toggle {
     @media (min-width: 768px) {
       font-size: 0.875rem;
