@@ -76,6 +76,29 @@
       }
       
     }
+
+    &.show {
+      background-color: var(--brand-strong);
+      border-color: var(--brand-strong);
+      color: var(--on-brand);
+      box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
+      border-color: var(--brand-flat-strong);
+
+      &::after {
+        background-image: none;
+        content: "\F27C"; /* Chevron down */
+        font-family: "bootstrap-icons";
+        text-align: center;
+        vertical-align: bottom;
+        border: 0;
+        font-size: 1.125rem;
+        margin-left: auto;
+
+        @media (min-width: 768px) {
+          margin-left: 0.25rem;
+        }
+      }
+    }
     
   }
 
@@ -90,6 +113,19 @@
     .search-menu {
       @media (max-width: 767px) {
         display: block;
+      }
+    }
+
+    .setting-menu {
+      @media (max-width: 767px) {
+        display: block;
+        background-color: var(--surface-3);
+      }
+    }
+
+    .btn-group {
+      @media (max-width: 767px) {
+        width: 100%;
       }
     }
 

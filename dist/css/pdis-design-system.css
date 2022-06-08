@@ -1898,11 +1898,6 @@ a:active, a:focus-visible {
   margin-right: 0;
 }
 
-@media (min-width: 768px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-}
 .dropdown .dropdown-toggle {
   display: flex;
 }
@@ -1929,7 +1924,23 @@ a:active, a:focus-visible {
     margin-left: 0.25rem;
   }
 }
-.dropdown .dropdown-toggle:hover::after, .dropdown .dropdown-toggle:active::after, .dropdown .dropdown-toggle:focus-visible::after {
+.dropdown .dropdown-toggle:hover::after {
+  background-image: none;
+  content: "\f279";
+  /* Chevron down */
+  font-family: "bootstrap-icons";
+  text-align: center;
+  vertical-align: bottom;
+  border: 0;
+  font-size: 1.125rem;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .dropdown .dropdown-toggle:hover::after {
+    margin-left: 0.25rem;
+  }
+}
+.dropdown .dropdown-toggle:active::after, .dropdown .dropdown-toggle:focus-visible::after {
   background-image: none;
   content: "\f27c";
   /* Chevron down */
@@ -1941,7 +1952,7 @@ a:active, a:focus-visible {
   margin-left: auto;
 }
 @media (min-width: 768px) {
-  .dropdown .dropdown-toggle:hover::after, .dropdown .dropdown-toggle:active::after, .dropdown .dropdown-toggle:focus-visible::after {
+  .dropdown .dropdown-toggle:active::after, .dropdown .dropdown-toggle:focus-visible::after {
     margin-left: 0.25rem;
   }
 }
@@ -2656,6 +2667,29 @@ optgroup {
     color: var(--on-background);
   }
 }
+.navbar .nav-link.dropdown-toggle.show {
+  background-color: var(--brand-strong);
+  border-color: var(--brand-strong);
+  color: var(--on-brand);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
+  border-color: var(--brand-flat-strong);
+}
+.navbar .nav-link.dropdown-toggle.show::after {
+  background-image: none;
+  content: "\f27c";
+  /* Chevron down */
+  font-family: "bootstrap-icons";
+  text-align: center;
+  vertical-align: bottom;
+  border: 0;
+  font-size: 1.125rem;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .navbar .nav-link.dropdown-toggle.show::after {
+    margin-left: 0.25rem;
+  }
+}
 .navbar .navbar-collapse {
   background-color: var(--surface);
   padding-bottom: 1rem;
@@ -2668,6 +2702,17 @@ optgroup {
 @media (max-width: 767px) {
   .navbar .navbar-collapse .search-menu {
     display: block;
+  }
+}
+@media (max-width: 767px) {
+  .navbar .navbar-collapse .setting-menu {
+    display: block;
+    background-color: var(--surface-3);
+  }
+}
+@media (max-width: 767px) {
+  .navbar .navbar-collapse .btn-group {
+    width: 100%;
   }
 }
 

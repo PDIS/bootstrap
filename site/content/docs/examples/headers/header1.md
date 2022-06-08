@@ -86,18 +86,24 @@ layout: components-example
             </div>
           </li>
           <li class="nav-item dropdown ms-md-auto order-3">
-            <a class="nav-link dropdown-toggle dropdown-toggle-iconless bg-brand-flat" href="#" id="DropdownSetting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle dropdown-toggle-iconless bg-brand-flat d-none d-md-block" href="#" id="DropdownSetting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-gear"></i><span>網站設定 / Setting</span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="DropdownSetting">
+            <ul class="dropdown-menu setting-menu" aria-labelledby="DropdownSetting">
+              <li><a class="dropdown-item d-block d-md-none">網站設定 Setting<a></li>
               <li><a class="dropdown-item">語言 Language<a></li>
-              <li><a class="dropdown-item" href="#">繁體中文</a></li>
-              <li><a class="dropdown-item" href="#">English (US)</a></li>
-              <li><a class="dropdown-item" href="#">English (UK)</a></li>
-              <li><a class="dropdown-item" href="#">Japanese</a></li>
-              <li><a class="dropdown-item" href="#">Thai</a></li>
+              <li>
+                <select class="form-select" id="LanguageSelect" aria-label="LanguageSelect">
+                  <option  selected>請選擇一個選項</option>
+                  <option  value="zh-tw">繁體中文</option>
+                  <option  value="en-us">English (US</option>
+                  <option  value="en-uk">English (UK)</option>
+                  <option  value="jp">Japanese</option>
+                  <option  value="th">Thai</option>
+                </select>
+              </li>
               <li><a class="dropdown-item">文字大小<a></li>
-              <li class="text-center">
+              <li>
                 <div class="btn-group" role="group" aria-label="Font size">
                   <button type="button" class="btn btn-brand">小</button>
                   <button type="button" class="btn btn-brand">預設</button>

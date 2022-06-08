@@ -23,7 +23,24 @@
       }
     }
 
-    &:hover, &:active, &:focus-visible {
+    &:hover {
+      &::after {
+        background-image: none;
+        content: "\F279"; /* Chevron down */
+        font-family: "bootstrap-icons";
+        text-align: center;
+        vertical-align: bottom;
+        border: 0;
+        font-size: 1.125rem;
+        margin-left: auto;
+
+        @media (min-width: 768px) {
+          margin-left: 0.25rem;
+        }
+      }
+    }
+
+    &:active, &:focus-visible {
       &::after {
         background-image: none;
         content: "\F27C"; /* Chevron down */
