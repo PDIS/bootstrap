@@ -28,6 +28,26 @@
   .navbar-brand {
     @extend .title-text-lg;
     color: var(--on-brand);
+
+    .navbar-brand-title {
+      vertical-align: center;
+      margin-left: 0.5rem;
+
+      @media (min-width: 768px) {
+        vertical-align: top;
+      }
+    }
+
+    .navbar-brand-subtitle {
+      @extend .title-text;
+      margin-top: 0.5rem;
+      vertical-align: center;
+      margin-left: 0.5rem;
+
+      @media (min-width: 768px) {
+        vertical-align: top;
+      }
+    }
   }
 
   .navbar-toggler {
@@ -78,15 +98,21 @@
     }
 
     &.show {
-      background-color: var(--brand-strong);
-      border-color: var(--brand-strong);
-      color: var(--on-brand);
+      background-color: var(--surface-1);
+      border-color: var(--surface-1);
+      color: var(--on-background);
       box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
-      border-color: var(--brand-flat-strong);
+
+      @media (min-width: 768px) {
+        background-color: var(--brand-strong);
+        color: var(--on-brand);
+        box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
+        border-color: var(--brand-flat-strong);
+      }
 
       &::after {
         background-image: none;
-        content: "\F27C"; /* Chevron down */
+        content: "\f286"; /* Chevron down */
         font-family: "bootstrap-icons";
         text-align: center;
         vertical-align: bottom;
@@ -120,138 +146,142 @@
       @media (max-width: 767px) {
         display: block;
         background-color: var(--surface-3);
+
+        li > * {
+          &:not(.form-select) {
+            padding: 0;
+          }
+        }
       }
     }
 
     .btn-group {
+      padding: 0.5rem 0.75rem;
       @media (max-width: 767px) {
         width: 100%;
+        padding-top: 0.5rem !important;
       }
+    }
+
+    .dropdown-item-header {
+      padding: 1rem 0 !important;
+      display: block;
+
+      @media (min-width: 768px) {
+        display: none;
+
+      }
+    }
+
+    
+    .dropdown-item-title {
+      @media (max-width: 767px) {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.25rem !important;
+      }
+    }
+  }
+
+  &.bg-surface {
+    background-color: var(--surface);
+
+    .navbar-brand {
+      color: var(--on-surface);
+      background-color: var(--surface);
+    }
+
+    .navbar-toggler {
+      background-color: var(--surface);
+      border-color:  var(--surface);
+
+      .navbar-toggler-icon {
+        color: var(--on-brand-flat);
+      }
+    }
+
+    .nav-link.dropdown-toggle {
+      color: var(--on-brand-flat);
+      background-color: var(--surface);
+
+      &:hover {
+        color: var(--on-brand-flat);
+        background-color: var(--surface-1);
+      }
+
+      &:active, &:focus-visible {
+        color: var(--on-brand-flat);
+        background-color: var(--surface-1);
+        box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
+        border-color: var(--brand-flat-strong);
+      } 
+    }
+
+    .navbar-collapse{
+      background-color: var(--surface);
+    }
+  }
+
+  &.bg-brand-flat {
+    .navbar-brand {
+      color: var(--on-surface);
+      background-color: var(--brand-flat);
+    }
+
+    .navbar-toggler {
+      background-color: var(--brand-flat);
+      border-color: var(--brand-flat);
+
+      .navbar-toggler-icon {
+        color: var(--on-brand-flat);
+      }
+    }
+
+    .nav-link.dropdown-toggle {
+      color: var(--on-brand-flat);
+      background-color: var(--surface);
+
+      &:hover {
+        color: var(--on-brand-flat);
+        background-color: var(--surface-1);
+      }
+
+      &:active, &:focus-visible {
+        color: var(--on-brand-flat);
+        background-color: var(--surface-1);
+        box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
+        border-color: var(--brand-flat-strong);
+      } 
+      @media (min-width: 768px) {  
+        color: var(--on-brand-flat);
+        background-color: var(--brand-flat);
+  
+        &:hover {
+          color: var(--on-brand-flat);
+          background-color: var(--brand-flat-strong);
+        }
+  
+        &:active, &:focus-visible {
+          color: var(--on-brand-flat);
+          background-color: var(--brand-flat-strong);
+          box-shadow: 0 0 0 2px var(--brand) inset !important;
+          border-color: var(--brand);
+        } 
+      }
+    }
+
+    .navbar-collapse{
+      background-color: var(--surface);
+    
+      @media (min-width: 768px) {     
+        background-color: var(--brand-flat);
+      }
+    }
+  }
+
+  &.single-row {
+    nav {
+      display: flex;
     }
 
   }
 }
-
-
-// .navbar {
-//   background-color: var(--surface);
-  
-//   @media (max-width: 768px) {
-//     padding-top: 0;
-//     padding-bottom: 0;
-//   }
-//   .container {   
-//     @media (max-width: 768px) {
-//       padding-right: 0;
-//     }
-//   }
-
-//   .navbar-brand {
-//     @media (max-width: 768px) {
-//       padding-top: 0;
-//       padding-right: 0;
-//       margin-top: 0.5rem;
-//       margin-bottom: 0.5rem;
-//     }
-//   }
-// }
-
-// .navbar-nav {
-//   .nav-link 
-//   {
-//     //color: var(--bs-primary) !important;
-//   }
-// }
-
-// .navbar-toggler {
-//   // background: var(--bs-primary) !important;
-//   // color: white !important;
-//   border-radius: 0;
-
-//   &:active,
-//   &:focus {
-//     //background: var(--bs-primary-dark) !important;
-//     .navbar-toggler-icon {
-//       background-image: none;
-//       width: auto;
-//       font-size: 1rem;
-//       &::before {
-//         content:  url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' fill='white' class='bi bi-x' viewBox='0 0 16 16'><path d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/></svg>");
-//         vertical-align: middle;
-//       }
-//       &::after {
-//         margin-left: 0.25rem;
-//         content: "關閉";
-//         vertical-align: middle;
-//       }
-//     }
-//   }
-
-//   &.collapsed {
-//     background: var(--bs-primary) !important;
-//     .navbar-toggler-icon {
-//       background-image: none;
-//       width: auto;
-//       font-size: 1rem;
-//       &::before {
-//         content:  url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='white' class='bi bi-list' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/></svg>");
-//         vertical-align: middle;
-//       }
-//       &::after {
-//         margin-left: 0.25rem;
-//         content: "選單";
-//         vertical-align: middle;
-//       }
-//     }
-//   }
-
-//   .navbar-toggler-icon {
-//     background-image: none;
-//     width: auto;
-//     font-size: 1rem;
-//     &::before {
-//       content:  url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='white' class='bi bi-list' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/></svg>");
-//       vertical-align: middle;
-//     }
-//     &::after {
-//       content: "選單";
-//       margin-left: 0.25rem;
-//       vertical-align: middle;
-//     }
-//   }
-// }
-
-// .navbar-title {
-//   margin-bottom: 0;
-//   margin-left: 0.5rem;
-// }
-
-// .searching {
-//   @media (max-width: 768px) {
-//     margin-top: 1rem;
-//     margin-bottom: 1rem;
-//   }
-// }
-
-// .hot-searching {
-//   margin-left: 0.5rem;
-//   margin-right: 0.5rem;
-// }
-
-// .nav-social-container {
-//   margin: 1rem;
-// }
-
-// .nav-social-icon {
-//   margin-left: 0.125rem;
-//   margin-right: 0.125rem;
-//   padding: 0.125rem 0.35rem;
-
-//   &:first-child {
-//     margin-left: 0;
-//   }
-
-//   &:last-child  {
-//     margin-right: 0;
-//   }
-// }

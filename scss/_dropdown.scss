@@ -6,11 +6,16 @@
       letter-spacing: 0.1px;
     }
 
+    @media (max-width: 767px) {
+      margin: 0.25rem 0 !important;
+      padding: 0.75rem !important;
+    }
+
     display: flex;
 
     &::after {
       background-image: none;
-      content: "\F279"; /* Chevron down */
+      content: "\f282"; /* Chevron down */
       font-family: "bootstrap-icons";
       text-align: center;
       vertical-align: bottom;
@@ -26,7 +31,7 @@
     &:hover {
       &::after {
         background-image: none;
-        content: "\F279"; /* Chevron down */
+        content: "\f282"; /* Chevron down */
         font-family: "bootstrap-icons";
         text-align: center;
         vertical-align: bottom;
@@ -43,39 +48,9 @@
     &:active, &:focus-visible {
       &::after {
         background-image: none;
-        content: "\F27C"; /* Chevron down */
+        content: "\f286"; /* Chevron down */
         font-family: "bootstrap-icons";
         text-align: center;
-        vertical-align: bottom;
-        border: 0;
-        font-size: 1.125rem;
-        margin-left: auto;
-
-        @media (min-width: 768px) {
-          margin-left: 0.25rem;
-        }
-      }
-    }
-
-    &.dropdown-toggle-icon {
-      &::after {
-        background-image: none;
-        content: "";
-        vertical-align: bottom;
-        border: 0;
-        font-size: 1.125rem;
-        margin-left: auto;
-      }
-      
-      @media (max-width: 767px) {
-        display: none;
-      }
-    }
-
-    &.dropdown-toggle-iconless {
-      &::after {
-        background-image: none;
-        content: "";
         vertical-align: bottom;
         border: 0;
         font-size: 1.125rem;
@@ -96,10 +71,25 @@
     
     @media (min-width: 768px) {
       min-width: 15rem;
+
+      li > * {
+        &:not(.form-select) {
+          padding: 0.5rem 0.75rem;
+        }
+      }
+
+      .form-select {
+        margin: 0.5rem 0.75rem;
+        width: auto;
+      }
     }
 
     @media (max-width: 767px) {
       border: 0;
+
+      .form-select {
+        margin: 0.5rem 0;
+      }
     }
     
     .dropdown-item {
@@ -109,10 +99,10 @@
         font-size: 0.875rem;
         line-height: 1.25rem;
         letter-spacing: 0.1px;
+        padding: 0.5rem 0.75rem;
       }
 
       color: var(--on-brand-flat);
-      padding: 0.5rem 0.75rem;
       border-radius: 0.5rem;
 
       &:hover {
@@ -133,6 +123,14 @@
 
       &.disabled {
         opacity: 0.6;
+      }
+
+      &.unclickable {
+        cursor: default;
+
+        &:hover {
+          background: none;
+        }
       }
     }
 
