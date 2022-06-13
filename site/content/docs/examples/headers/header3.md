@@ -3,18 +3,23 @@ layout: components-example
 ---
 
 {{< example >}}
-<header class="navbar navbar-expand-md single-row">
+<header class="navbar navbar-expand-md bg-brand-flat">
   <nav aria-label="Main navigation">
     <div class="container navbar-brand-container">
       <a class="navbar-brand" href="/" aria-label="PDIS">
       網站名稱
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="Navbar" aria-expanded="true" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
-    <div class="navbar-collapse collapse" id="Navbar">
-      <div class="container">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="container">
+      <div class="offcanvas-header">
+        <span class="offcanvas-title" id="offcanvasNavbarLabel">網站名稱</span>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
         <ul class="navbar-nav">
           <li class="nav-item dropdown order-2 order-md-1">
             <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -113,6 +118,7 @@ layout: components-example
             </ul>
           </li>
         </ul>
+      </div>
       </div>
     </div>
   </nav>

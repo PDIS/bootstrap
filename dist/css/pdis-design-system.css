@@ -237,14 +237,14 @@ sub {
   color: var(--outline);
 }
 
-.title-text-lg, .navbar .navbar-brand, .sidebar .sidebar-header {
+.title-text-lg, .navbar .offcanvas .offcanvas-header, .navbar .navbar-brand, .sidebar .sidebar-header {
   font-style: normal;
   font-weight: 500;
   font-size: 1.375rem;
   line-height: 1.75rem;
   color: var(--on-background);
 }
-.title-text-lg:disabled, .navbar .navbar-brand:disabled, .sidebar .sidebar-header:disabled {
+.title-text-lg:disabled, .navbar .offcanvas .offcanvas-header:disabled, .navbar .navbar-brand:disabled, .sidebar .sidebar-header:disabled {
   color: var(--outline);
 }
 
@@ -639,19 +639,6 @@ a:active, a:focus-visible {
 }
 
 /* END PDIS's local docs style */
-/* @import "accordion";
-@import "badge";
-@import "button";
-@import "card";
-@import "dropdown";
-@import "footer";
-@import "form-control"; 
-@import "header";
-@import "list";
-@import "offcanvas";
-@import "select";
-@import "sidebar";
-@import "tabs"; */
 .badge {
   margin: 0 0.5rem;
   padding: 0.125rem 0.625rem;
@@ -2676,6 +2663,8 @@ optgroup {
 }
 .navbar nav {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .navbar .container {
   flex-wrap: wrap;
@@ -2792,39 +2781,39 @@ optgroup {
   }
 }
 @media (max-width: 767px) {
-  .navbar .navbar-collapse .search-menu {
+  .navbar .search-menu {
     display: block;
   }
 }
 @media (max-width: 767px) {
-  .navbar .navbar-collapse .setting-menu {
+  .navbar .setting-menu {
     display: block;
     background-color: var(--surface-3);
   }
-  .navbar .navbar-collapse .setting-menu li > *:not(.form-select) {
+  .navbar .setting-menu li > *:not(.form-select) {
     padding: 0;
   }
 }
-.navbar .navbar-collapse .btn-group {
+.navbar .btn-group {
   padding: 0.5rem 0.75rem;
 }
 @media (max-width: 767px) {
-  .navbar .navbar-collapse .btn-group {
+  .navbar .btn-group {
     width: 100%;
     padding-top: 0.5rem !important;
   }
 }
-.navbar .navbar-collapse .dropdown-item-header {
+.navbar .dropdown-item-header {
   padding: 1rem 0 !important;
   display: block;
 }
 @media (min-width: 768px) {
-  .navbar .navbar-collapse .dropdown-item-header {
+  .navbar .dropdown-item-header {
     display: none;
   }
 }
 @media (max-width: 767px) {
-  .navbar .navbar-collapse .dropdown-item-title {
+  .navbar .dropdown-item-title {
     padding-top: 0.5rem !important;
     padding-bottom: 0.25rem !important;
   }
@@ -2859,6 +2848,11 @@ optgroup {
 }
 .navbar.bg-surface .navbar-collapse {
   background-color: var(--surface);
+}
+@media (min-width: 768px) {
+  .navbar.bg-surface .offcanvas-body {
+    background-color: var(--surface) !important;
+  }
 }
 .navbar.bg-brand-flat .navbar-brand {
   color: var(--on-surface);
@@ -2909,8 +2903,29 @@ optgroup {
     background-color: var(--brand-flat);
   }
 }
+.navbar.bg-brand-flat .offcanvas-body {
+  background-color: var(--surface);
+}
+@media (min-width: 768px) {
+  .navbar.bg-brand-flat .offcanvas-body {
+    background-color: var(--brand-flat) !important;
+  }
+}
 .navbar.single-row nav {
   display: flex;
+}
+.navbar .offcanvas .offcanvas-header {
+  background-color: var(--surface);
+  color: var(--on-surface);
+}
+.navbar .offcanvas .offcanvas-body {
+  background-color: var(--surface);
+  padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .navbar .offcanvas .offcanvas-body {
+    background-color: var(--brand);
+  }
 }
 
 /*# sourceMappingURL=pdis-design-system.css.map */

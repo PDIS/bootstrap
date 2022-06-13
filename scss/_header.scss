@@ -5,6 +5,8 @@
 
   nav {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap
   }
 
   .container {
@@ -125,7 +127,6 @@
         }
       }
     }
-    
   }
 
   .navbar-collapse{
@@ -135,50 +136,50 @@
     @media (min-width: 768px) {
       background-color: var(--brand);
     }
+  }
 
-    .search-menu {
-      @media (max-width: 767px) {
-        display: block;
-      }
+  .search-menu {
+    @media (max-width: 767px) {
+      display: block;
     }
+  }
 
-    .setting-menu {
-      @media (max-width: 767px) {
-        display: block;
-        background-color: var(--surface-3);
+  .setting-menu {
+    @media (max-width: 767px) {
+      display: block;
+      background-color: var(--surface-3);
 
-        li > * {
-          &:not(.form-select) {
-            padding: 0;
-          }
+      li > * {
+        &:not(.form-select) {
+          padding: 0;
         }
       }
     }
+  }
 
-    .btn-group {
-      padding: 0.5rem 0.75rem;
-      @media (max-width: 767px) {
-        width: 100%;
-        padding-top: 0.5rem !important;
-      }
+  .btn-group {
+    padding: 0.5rem 0.75rem;
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-top: 0.5rem !important;
     }
+  }
 
-    .dropdown-item-header {
-      padding: 1rem 0 !important;
-      display: block;
+  .dropdown-item-header {
+    padding: 1rem 0 !important;
+    display: block;
 
-      @media (min-width: 768px) {
-        display: none;
+    @media (min-width: 768px) {
+      display: none;
 
-      }
     }
+  }
 
-    
-    .dropdown-item-title {
-      @media (max-width: 767px) {
-        padding-top: 0.5rem !important;
-        padding-bottom: 0.25rem !important;
-      }
+  
+  .dropdown-item-title {
+    @media (max-width: 767px) {
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.25rem !important;
     }
   }
 
@@ -218,6 +219,12 @@
 
     .navbar-collapse{
       background-color: var(--surface);
+    }
+
+    .offcanvas-body {
+      @media (min-width: 768px) {
+        background-color: var(--surface) !important;
+      }
     }
   }
 
@@ -276,6 +283,14 @@
         background-color: var(--brand-flat);
       }
     }
+
+    .offcanvas-body {
+      background-color: var(--surface);
+      
+      @media (min-width: 768px) {
+        background-color: var(--brand-flat) !important;
+      }
+    }
   }
 
   &.single-row {
@@ -283,5 +298,22 @@
       display: flex;
     }
 
+  }
+
+  .offcanvas {
+    .offcanvas-header {
+      @extend .title-text-lg;
+      background-color: var(--surface);
+      color: var(--on-surface);
+    }
+
+    .offcanvas-body {
+      background-color: var(--surface);
+      padding-bottom: 1rem;
+
+      @media (min-width: 768px) {
+        background-color: var(--brand);
+      }
+    }
   }
 }
