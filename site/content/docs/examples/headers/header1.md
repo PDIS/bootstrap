@@ -3,18 +3,16 @@ layout: components-example
 ---
 
 {{< example >}}
-<header class="navbar navbar-expand-xxl">
-  <nav aria-label="Main navigation">
-    <div class="container navbar-brand-container">
+<header>
+  <nav class="navbar navbar-expand-xxl">
+    <div class="container">
       <a class="navbar-brand" href="/" aria-label="PDIS">
       網站名稱
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="Navbar" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    </div>
-    <div class="navbar-collapse collapse" id="Navbar">
-      <div class="container">
+      <div class="navbar-collapse collapse" id="Navbar">
         <ul class="navbar-nav">
           <li class="nav-item dropdown order-2 order-md-1">
             <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -65,7 +63,7 @@ layout: components-example
             </ul>
           </li>
           <li class="nav-item dropdown order-1 order-md-2">
-            <a class="nav-link dropdown-toggle dropdown-toggle-icon d-none d-md-block" href="#" id="DropdownSearch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle d-none d-md-block" href="#" id="DropdownSearch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-search"></i>
             </a>
             <div class="dropdown-menu search-menu" aria-labelledby="DropdownSearch">
@@ -73,11 +71,11 @@ layout: components-example
               <div class="input-group">
                 <input type="text" class="form-control" id="Input1" placeholder="請輸入關鍵字">
                 <div class="input-group-append">
-                  <button class="btn btn-brand" type="button"><i class="bi bi-search"></i></button>
+                  <button class="btn btn-secondary" type="button"><i class="bi bi-search"></i></button>
                 </div>
               </div>
               <div class="dropdown-divider d-none d-md-block"></div>
-              <div style="padding: 0.75rem 0.5rem">
+              <div class="hot-searching">
                 <span class="d-inline d-md-block">熱門關鍵字</span>
                 <a href="#">國家科學技術發展計畫</a>
                 <a href="#">申辦流程</a>
@@ -90,8 +88,8 @@ layout: components-example
               <i class="bi bi-gear"></i><span>網站設定 / Setting</span>
             </a>
             <ul class="dropdown-menu setting-menu" aria-labelledby="DropdownSetting">
-              <li><a class="dropdown-item dropdown-item-header unclickable">網站設定 Setting</a></li>
-              <li><a class="dropdown-item dropdown-item-title unclickable">語言 Language</a></li>
+              <li><a class="dropdown-item dropdown-item-header">網站設定 Setting</a></li>
+              <li><a class="dropdown-item dropdown-item-title">語言 Language</a></li>
               <li>
                 <select class="form-select" id="LanguageSelect" aria-label="LanguageSelect">
                   <option selected>請選擇一個選項</option>
@@ -102,12 +100,12 @@ layout: components-example
                   <option value="th">Thai</option>
                 </select>
               </li>
-              <li><a class="dropdown-item dropdown-item-title unclickable">文字大小</a></li>
+              <li><a class="dropdown-item dropdown-item-title">文字大小</a></li>
               <li>
                 <div class="btn-group" role="group" aria-label="Font size">
-                  <button type="button" class="btn btn-brand">小</button>
-                  <button type="button" class="btn btn-brand">預設</button>
-                  <button type="button" class="btn btn-brand">大</button>
+                  <button type="button" class="btn btn-secondary">小</button>
+                  <button type="button" class="btn btn-secondary">預設</button>
+                  <button type="button" class="btn btn-secondary">大</button>
                 </div>
               </li>
             </ul>
