@@ -1,17 +1,12 @@
 .navbar {
-  padding: 0;
   background-color: var(--brand);
   color: var(--on-brand);
-
-  nav {
-    width: 100%;
-  }
 
   .container {
     flex-wrap: wrap
   }
 
-  .navbar-brand-container {
+  /* .navbar-brand-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -24,7 +19,7 @@
       padding-bottom: 0;
     }
   }
-
+ */
   .navbar-brand {
     @extend .title-text-lg;
     color: var(--on-brand);
@@ -32,6 +27,7 @@
     .navbar-brand-title {
       vertical-align: center;
       margin-left: 0.5rem;
+      color: var(--on-brand);
 
       @media (min-width: 768px) {
         vertical-align: top;
@@ -43,6 +39,7 @@
       margin-top: 0.5rem;
       vertical-align: center;
       margin-left: 0.5rem;
+      color: var(--on-brand);
 
       @media (min-width: 768px) {
         vertical-align: top;
@@ -125,59 +122,102 @@
         }
       }
     }
-    
   }
 
   .navbar-collapse{
-    background-color: var(--surface);
+    width: 100%;
+    //background-color: var(--surface);
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
     
-    @media (min-width: 768px) {
+    /* @media (min-width: 768px) {
+      background-color: var(--brand);
+    } */
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .search-menu {
+    @media (max-width: 767px) {
+      display: block;
+      padding: 0;
       background-color: var(--brand);
     }
 
-    .search-menu {
-      @media (max-width: 767px) {
-        display: block;
-      }
-    }
+    .hot-searching {
+      padding: 0.75rem 0.5rem;
 
-    .setting-menu {
       @media (max-width: 767px) {
-        display: block;
-        background-color: var(--surface-3);
+        color: var(--on-brand);
 
-        li > * {
-          &:not(.form-select) {
-            padding: 0;
-          }
+        * {
+          color: var(--on-brand);
         }
       }
     }
 
-    .btn-group {
-      padding: 0.5rem 0.75rem;
-      @media (max-width: 767px) {
-        width: 100%;
-        padding-top: 0.5rem !important;
+  }
+
+  .setting-menu {
+    @media (max-width: 767px) {
+      display: block;
+      margin-top: 1rem;
+      background-color: var(--brand-strong);
+      color: var(--on-brand);
+
+      li > * {
+        &:not(.form-select) {
+          padding: 0;
+          color: var(--on-brand);
+        }
       }
     }
+  }
 
-    .dropdown-item-header {
+  .btn-group {
+    padding: 0.5rem 0.75rem;
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-top: 0.5rem !important;
+    }
+  }
+
+  .dropdown-menu-title {
+    @extend .label-text-lg;
+    padding: 0;
+
+    @media (min-width: 768px) {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      letter-spacing: 0.1px;
+      padding: 0.5rem 0.75rem;
+    }
+  }
+
+  .dropdown-item-header {
+    @extend .unclickable;
+    display: none;
+
+    @media (max-width: 767px) {
       padding: 1rem 0 !important;
       display: block;
 
-      @media (min-width: 768px) {
-        display: none;
-
+      &:hover {
+        color: var(--on-brand) !important;
       }
     }
+  }
 
-    
-    .dropdown-item-title {
-      @media (max-width: 767px) {
-        padding-top: 0.5rem !important;
-        padding-bottom: 0.25rem !important;
+  .dropdown-item-title {
+    @extend .unclickable;
+    @media (max-width: 767px) {
+      padding-top: 0.5rem !important;
+      padding-bottom: 0.25rem !important;
+
+      &:hover {
+        color: var(--on-brand) !important;
       }
     }
   }
@@ -188,6 +228,14 @@
     .navbar-brand {
       color: var(--on-surface);
       background-color: var(--surface);
+
+      .navbar-brand-title {
+        color: var(--on-surface);
+      }
+  
+      .navbar-brand-subtitle {
+        color: var(--on-surface);
+      }
     }
 
     .navbar-toggler {
@@ -219,12 +267,26 @@
     .navbar-collapse{
       background-color: var(--surface);
     }
+
+    .offcanvas-body {
+      @media (min-width: 768px) {
+        background-color: var(--surface) !important;
+      }
+    }
   }
 
   &.bg-brand-flat {
     .navbar-brand {
       color: var(--on-surface);
       background-color: var(--brand-flat);
+
+      .navbar-brand-title {
+        color: var(--on-surface);
+      }
+  
+      .navbar-brand-subtitle {
+        color: var(--on-surface);
+      }
     }
 
     .navbar-toggler {
@@ -276,12 +338,38 @@
         background-color: var(--brand-flat);
       }
     }
+
+    .offcanvas-body {
+      background-color: var(--surface);
+      
+      @media (min-width: 768px) {
+        background-color: var(--brand-flat) !important;
+      }
+    }
   }
 
   &.single-row {
-    nav {
-      display: flex;
+
+  }
+
+  .offcanvas {
+    @media (min-width: 768px) {
+      width: 100%;
     }
 
+    .offcanvas-header {
+      @extend .title-text-lg;
+      background-color: var(--surface);
+      color: var(--on-surface);
+    }
+
+    .offcanvas-body {
+      background-color: var(--surface);
+      padding-bottom: 1rem;
+
+      @media (min-width: 768px) {
+        background-color: var(--brand);
+      }
+    }
   }
 }

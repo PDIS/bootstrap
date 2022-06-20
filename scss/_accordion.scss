@@ -68,6 +68,7 @@
   
       &:disabled {
         color: var(--outline);
+        background-color: var(--surface);
       }
     }
   
@@ -191,6 +192,7 @@
       
           &:disabled {
             color: var(--outline);
+            background-color: var(--surface-2);
           }
         }
       }

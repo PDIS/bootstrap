@@ -124,9 +124,7 @@
       }
 
       &:disabled {
-        background: none;
-        border-bottom: 2px solid var(--surface);
-        color: var(--outline);
+        opacity: 0.6;
       }
 
       &.active {
@@ -139,7 +137,9 @@
 
 .nav-pills {
   .nav-item {
-    margin: 0.25rem 0.125rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    margin-right: 0.25rem;
 
     &:first-child {
       margin-left: 0;
@@ -164,8 +164,7 @@
       }
   
       &:disabled {
-        background: none;
-        color: var(--outline);
+        opacity: 0.6;
       }
   
       &.active {

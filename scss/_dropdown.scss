@@ -124,26 +124,6 @@
       &.disabled {
         opacity: 0.6;
       }
-
-      &.unclickable {
-        cursor: default;
-
-        &:hover {
-          background: none;
-        }
-      }
-    }
-
-    .dropdown-menu-title {
-      @extend .label-text-lg;
-      padding: 0;
-
-      @media (min-width: 768px) {
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-        letter-spacing: 0.1px;
-        padding: 0.5rem 0.75rem;
-      }
     }
 
     .dropdown-divider {
@@ -185,3 +165,10 @@
   }
 }
 
+.unclickable {
+  cursor: default;
+
+  &:hover {
+    background: none !important;
+  }
+}
