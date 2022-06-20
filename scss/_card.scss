@@ -18,10 +18,6 @@
       margin: 0.5rem 0;
     }
 
-    .badge {
-      margin: 0 0.25rem;
-    }
-
   }
 
   .card-actions {
@@ -42,7 +38,7 @@
     background-size: cover !important;
     background-position: center !important;
     height: 100%;
-    aspect-ratio: 3/4;
+    aspect-ratio: 4/3;
 
     @media (max-width: 768px) {
       aspect-ratio: 1/1;
