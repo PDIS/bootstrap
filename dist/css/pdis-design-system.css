@@ -1780,6 +1780,9 @@ footer.bg-brand * {
   border-radius: 0.5rem;
   color: var(--on-surface);
   border: 1px solid var(--outline);
+  /*   &:valid, &:invalid {
+      background: white !important;
+    } */
 }
 .form-control.form-control-sm {
   padding: 0.375rem 0.5rem;
@@ -1799,9 +1802,6 @@ footer.bg-brand * {
   color: var(--outline);
   background-color: var(--surface);
   border: 1px solid var(--outline);
-}
-.form-control:valid, .form-control:invalid {
-  background: white !important;
 }
 
 .input-group .input-group-append .btn, .input-group .input-group-append .navbar .nav-link.dropdown-toggle, .navbar .input-group .input-group-append .nav-link.dropdown-toggle, .input-group .input-group-append .navbar .navbar-toggler, .navbar .input-group .input-group-append .navbar-toggler {
@@ -1870,6 +1870,9 @@ footer.bg-brand * {
   padding: 0;
   margin-top: 0.25rem;
   color: var(--on-surface-variant);
+}
+.input-hint .icon {
+  margin-right: 0.375rem;
 }
 
 .invalid-feedback {
@@ -2059,6 +2062,7 @@ footer.bg-brand * {
 }
 
 .form-select {
+  padding: 0.5rem 0.75rem;
   padding-right: 2.5rem;
   color: var(--on-surface);
   background-color: var(--surface);
@@ -2066,6 +2070,7 @@ footer.bg-brand * {
   background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22currentColor%22%20class%3D%22bi%20bi-chevron-down%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M1.646%204.646a.5.5%200%200%201%20.708%200L8%2010.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708z%22%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
+  border-radius: 0.5rem;
 }
 .form-select:hover {
   background-color: var(--surface-2);
@@ -2082,6 +2087,53 @@ footer.bg-brand * {
   border: 1px solid var(--outline);
   opacity: 0.6;
 }
+.form-select.form-select-sm {
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.375rem;
+  background-color: var(--surface);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22currentColor%22%20class%3D%22bi%20bi-chevron-down%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M1.646%204.646a.5.5%200%200%201%20.708%200L8%2010.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708z%22%2F%3E%0A%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+}
+.form-select.form-select-sm:hover {
+  background-color: var(--surface-2);
+  border: 1px solid var(--outline);
+}
+.form-select.form-select-sm:active, .form-select.form-select-sm:focus {
+  background-color: var(--surface-2);
+  border: 1px solid var(--brand-flat-strong);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
+}
+.form-select.form-select-sm:disabled {
+  color: var(--on-surface);
+  background-color: var(--surface);
+  border: 1px solid var(--outline);
+  opacity: 0.6;
+}
+.form-select.form-select-lg {
+  padding: 0.625rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--surface);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22currentColor%22%20class%3D%22bi%20bi-chevron-down%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M1.646%204.646a.5.5%200%200%201%20.708%200L8%2010.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708z%22%2F%3E%0A%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+.form-select.form-select-lg:hover {
+  background-color: var(--surface-2);
+  border: 1px solid var(--outline);
+}
+.form-select.form-select-lg:active, .form-select.form-select-lg:focus {
+  background-color: var(--surface-2);
+  border: 1px solid var(--brand-flat-strong);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
+}
+.form-select.form-select-lg:disabled {
+  color: var(--on-surface);
+  background-color: var(--surface);
+  border: 1px solid var(--outline);
+  opacity: 0.6;
+}
+
 option {
   background: var(--surface);
 }

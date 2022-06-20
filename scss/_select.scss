@@ -1,5 +1,6 @@
 .form-select {
   @extend .label-text;
+  padding: 0.5rem 0.75rem;
   padding-right: 2.5rem;
   color: var(--on-surface);
   background-color: var(--surface);
@@ -7,6 +8,7 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22currentColor%22%20class%3D%22bi%20bi-chevron-down%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M1.646%204.646a.5.5%200%200%201%20.708%200L8%2010.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708z%22%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
+  border-radius: 0.5rem;
 
   &:hover {
     background-color: var(--surface-2);
@@ -29,10 +31,60 @@
 
   &.form-select-sm {
     @extend .label-text-sm;
+    padding: 0.375rem 0.5rem;
+    border-radius: 0.375rem;
+    background-color: var(--surface);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22currentColor%22%20class%3D%22bi%20bi-chevron-down%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M1.646%204.646a.5.5%200%200%201%20.708%200L8%2010.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708z%22%2F%3E%0A%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+
+    &:hover {
+      background-color: var(--surface-2);
+      border: 1px solid var(--outline);
+    }
+  
+    &:active,
+    &:focus {
+      background-color: var(--surface-2);
+      border: 1px solid var(--brand-flat-strong);
+      box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
+    }
+  
+    &:disabled {
+      color: var(--on-surface);
+      background-color: var(--surface);
+      border: 1px solid var(--outline);
+      opacity: 0.6;
+    }
   }
 
   &.form-select-lg {
     @extend .label-text-lg;
+    padding: 0.625rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--surface);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22currentColor%22%20class%3D%22bi%20bi-chevron-down%22%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M1.646%204.646a.5.5%200%200%201%20.708%200L8%2010.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708z%22%2F%3E%0A%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+
+    &:hover {
+      background-color: var(--surface-2);
+      border: 1px solid var(--outline);
+    }
+  
+    &:active,
+    &:focus {
+      background-color: var(--surface-2);
+      border: 1px solid var(--brand-flat-strong);
+      box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
+    }
+  
+    &:disabled {
+      color: var(--on-surface);
+      background-color: var(--surface);
+      border: 1px solid var(--outline);
+      opacity: 0.6;
+    }
   }
 }
 
