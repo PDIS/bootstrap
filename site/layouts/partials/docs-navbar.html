@@ -1,59 +1,42 @@
-<div class=navbar-size>
-  <ul class="container-xxl text-end my-0">
-    <li class="d-inline px-2" style="font-size: larger">
-      <a href="#">A</a>
-    </li>
-    <li class="d-inline px-2">
-      <a href="#">A</a>
-    </li>
-    <li class="d-inline px-2" style="font-size: smaller">
-      <a href="#">A</a>
-    </li>
-    <li class="d-inline px-2">
-      <a href="#">English <i class="bi-chevron-down"></i> </a>
-    </li>
-  </ul>
-</div>
+<header class="navbar navbar-expand-md bg-surface">
+  <nav class="container" aria-label="Main navigation">
 
-<header class="navbar navbar-expand-md navbar-dark bd-navbar">
-  <nav class="container flex-wrap my-md-2" aria-label="Main navigation">
-
-    <a class="navbar-brand my-4" href="/" aria-label="brand">
+    <a class="navbar-brand" href="/" aria-label="brand">
       {{- $image := resources.Get "img/pdis-logo-final-inverse.png" -}}
       <img class="rounded" src="{{ $image.RelPermalink }}" width=40 height=40 alt="pdis logo">
-      <span class="ms-2 text-black"> 設計系統 </span>
+      <span class="navbar-brand-title">設計系統</span>
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar"
       aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
-      {{ partial "icons/hamburger.svg" (dict "class" "bi" "width" "32" "height" "32") }}
+      <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse my-md-2" id="bdNavbar">
-      <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
-        <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if eq .Page.RelPermalink "/intro/" }} active" aria-current="true{{ end }}"
+    <div class="collapse navbar-collapse" id="bdNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link {{ if eq .Page.RelPermalink "/intro/" }} active" aria-current="true{{ end }}"
             href="/intro/">介紹</a>
         </li>
-        <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if in .Page.CurrentSection "style" }} active" aria-current="true{{ end }}"
+        <li class="nav-item">
+          <a class="nav-link {{ if in .Page.CurrentSection "style" }} active" aria-current="true{{ end }}"
             href="/docs/style/">風格</a>
         </li>
-        <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if in .Page.CurrentSection "components" }} active" aria-current="true{{ end }}"
+        <li class="nav-item">
+          <a class="nav-link {{ if in .Page.CurrentSection "components" }} active" aria-current="true{{ end }}"
             href="/docs/components/">元件</a>
         </li>
-        <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2{{ if eq .Page.RelPermalink "/manual/" }} active" aria-current="true{{ end }}"
+        <li class="nav-item">
+          <a class="nav-link {{ if eq .Page.RelPermalink "/manual/" }} active" aria-current="true{{ end }}"
             href="/manual/">使用說明</a>
         </li>
-        <li class="nav-item col-6 col-md-auto">
-          <a class="nav-link p-2 disabled text-muted"
+        <li class="nav-item">
+          <a class="nav-link disabled text-muted"
             href="/docs/">製作過程</a>
         </li>
       </ul>
 
-      <hr class="d-md-none text-white-50">
+      <!-- <hr class="d-md-none text-white-50"> -->
 <!--
       <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
         <li class="nav-item col-6 col-md-auto">
@@ -82,10 +65,10 @@
         </li>
       </ul>
  -->
-      <form class="bd-search position-relative ms-auto">
+      <!-- <form class="bd-search position-relative ms-auto">
         <input type="search" class="form-control" id="search-input" placeholder="Search docs..."
           aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="{{ .Site.Params.docs_version }}">
-      </form>
+      </form> -->
     </div>
   </nav>
 </header>
