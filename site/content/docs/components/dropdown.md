@@ -41,6 +41,46 @@ toc: true
 
 {{< example >}}
 
+<header class="navbar navbar-expand-md">
+  <nav aria-label="Main navigation">
+    <div class="container navbar-brand-container">
+      <a class="navbar-brand" href="/" aria-label="PDIS">
+      網站名稱
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="Navbar" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="Navbar">
+      <div class="container">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              服務項目
+            </a>
+            <ul class="dropdown-menu dropdown-menu-horizontal" aria-labelledby="DropdownMenu1">
+              <li class="row">
+                <ul class="col-md-6">
+                  <li><a class="dropdown-item dropdown-item-title unclickable">副標題名稱</a></li>
+                  <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+                  <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+                  <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+                </ul>
+                <ul class="col-md-6">
+                  <li><a class="dropdown-item dropdown-item-title unclickable">副標題名稱</a></li>
+                  <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+                  <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+                  <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
 <div class="dropdown">
   <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
     服務項目名稱

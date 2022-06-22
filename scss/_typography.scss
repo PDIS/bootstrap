@@ -66,7 +66,6 @@ sub {
   padding: 0.5rem 1.125rem;
   letter-spacing: 0.1px;
   color: var(--on-background);
-  background: none;
   
   &:disabled {
     color: var(--outline);
@@ -82,7 +81,6 @@ sub {
   border-radius: 0.5rem;
   letter-spacing: 0.5px;
   color: var(--on-background);
-  background: none;
 
   &:disabled {
     color: var(--outline);
@@ -98,7 +96,6 @@ sub {
   border-radius: 0.75rem;
   letter-spacing: 0.1px;
   color: var(--on-background);
-  background: none;
 
   &:disabled {
     color: var(--outline);

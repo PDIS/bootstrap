@@ -68,12 +68,36 @@
         margin-left: 0.25rem;
       }
     }
+
+    &:not(.collapsed) {
+      background-color: var(--brand-strong);
+      border-color: var(--brand-strong);
+      box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
+      border-color: var(--brand-flat-strong);
+      .navbar-toggler-icon {
+        color: var(--on-brand);
+        background-image: none;
+        display: flex;
+        width: auto;
+        &::before {
+          content: "\F62A"; /* x */
+          font-family: "bootstrap-icons";
+          text-align: center;
+          font-size: 1.25rem;
+        }
+        &::after {
+          content: "選單";
+          margin-left: 0.25rem;
+        }
+      }
+    }
   }
 
   .nav-link.dropdown-toggle {
     @extend .btn;
     @extend .btn-lg;
     @extend .btn-primary;
+    padding: 0.375rem 0.875rem;
 
     @media (min-width: 768px) {
       font-size: 0.875rem;
@@ -114,13 +138,21 @@
         text-align: center;
         vertical-align: bottom;
         border: 0;
-        font-size: 1.125rem;
+        font-size: 0.75rem;
         margin-left: auto;
 
         @media (min-width: 768px) {
           margin-left: 0.25rem;
         }
       }
+    }
+
+    &.dropdown-toggle-icon {
+      font-size: 1.125rem;
+    }
+
+    i {
+      font-size: 1.125rem;
     }
   }
 
@@ -144,6 +176,7 @@
       display: block;
       padding: 0;
       background-color: var(--brand);
+      box-shadow: none;
     }
 
     .hot-searching {
@@ -154,6 +187,7 @@
 
         * {
           color: var(--on-brand);
+          margin-right: 0.5rem;
         }
       }
     }
@@ -166,6 +200,7 @@
       margin-top: 1rem;
       background-color: var(--brand-strong);
       color: var(--on-brand);
+      box-shadow: none;
 
       li > * {
         &:not(.form-select) {
@@ -264,6 +299,53 @@
       } 
     }
 
+    .search-menu {
+      @media (max-width: 767px) {
+        background-color: var(--surface);
+      }
+  
+      .hot-searching {
+        @media (max-width: 767px) {
+          color: var(--on-brand-flat);
+  
+          * {
+            color: var(--on-brand-flat);
+          }
+        }
+      }
+  
+    }
+  
+    .setting-menu {
+      @media (max-width: 767px) {
+        background-color: var(--surface-1);
+        color: var(--on-surface);
+  
+        li > * {
+          &:not(.form-select) {
+            padding: 0;
+            color: var(--on-surface);
+          }
+        }
+      }
+    }
+
+    .dropdown-item-header {
+      @media (max-width: 767px) {
+        &:hover {
+          color: var(--on-surface) !important;
+        }
+      }
+    }
+  
+    .dropdown-item-title {
+      @media (max-width: 767px) {
+        &:hover {
+          color: var(--on-surface) !important;
+        }
+      }
+    }
+
     .navbar-collapse{
       background-color: var(--surface);
     }
@@ -331,25 +413,66 @@
       }
     }
 
-    .navbar-collapse{
-      background-color: var(--surface);
-    
-      @media (min-width: 768px) {     
-        background-color: var(--brand-flat);
+    .dropdown-item-header {
+      @media (max-width: 767px) {
+        &:hover {
+          color: var(--on-surface) !important;
+        }
+      }
+    }
+  
+    .dropdown-item-title {
+      @media (max-width: 767px) {
+        &:hover {
+          color: var(--on-surface) !important;
+        }
       }
     }
 
-    .offcanvas-body {
-      background-color: var(--surface);
-      
-      @media (min-width: 768px) {
-        background-color: var(--brand-flat) !important;
+    .search-menu {
+      @media (max-width: 767px) {
+        background-color: var(--brand-flat);
       }
+  
+      .hot-searching {
+        @media (max-width: 767px) {
+          color: var(--on-brand-flat);
+  
+          * {
+            color: var(--on-brand-flat);
+          }
+        }
+      }
+  
+    }
+  
+    .setting-menu {
+      @media (max-width: 767px) {
+        background-color: var(--brand-flat-strong);
+        color: var(--on-surface);
+  
+        li > * {
+          &:not(.form-select) {
+            padding: 0;
+            color: var(--on-surface);
+          }
+        }
+      }
+    }
+
+    .navbar-collapse{
+      background-color: var(--brand-flat);
+    }
+
+    .offcanvas-body {
+      background-color: var(--brand-flat);  
     }
   }
 
   &.single-row {
-
+    .container {
+      flex-wrap: nowrap
+    }
   }
 
   .offcanvas {

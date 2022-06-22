@@ -69,6 +69,7 @@
     .btn {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
+      padding: 0.5rem 0.75rem;
     }
   }
 }
@@ -78,7 +79,7 @@
     position: absolute;
     color: var(--on-surface);
     padding-left: 0.75rem;
-    padding-top: 0.35rem;
+    padding-top: 0.55rem;
     font-size: 1.125rem;
     z-index: 10;
 
@@ -105,12 +106,12 @@
 
     &.input-group-append-icon-sm {
       font-size: 1rem;
-      padding-top: 0.2rem;
+      padding-top: 0.4rem;
     }
 
     &.input-group-append-icon-lg {
       font-size: 1.25rem;
-      padding-top: 0.4rem;
+      padding-top: 0.75rem;
     }
   }
 
