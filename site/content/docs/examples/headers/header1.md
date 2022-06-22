@@ -4,12 +4,12 @@ layout: components-example
 
 {{< example >}}
 <header>
-  <nav class="navbar navbar-expand-xxl">
+  <nav class="navbar navbar-expand-md single-row">
     <div class="container">
       <a class="navbar-brand" href="/" aria-label="PDIS">
       網站名稱
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="Navbar" aria-expanded="true" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="Navbar" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="navbar-collapse collapse" id="Navbar">

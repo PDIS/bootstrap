@@ -142,7 +142,6 @@ sub {
   padding: 0.5rem 1.125rem;
   letter-spacing: 0.1px;
   color: var(--on-background);
-  background: none;
 }
 .label-text:disabled, .form-select:disabled, .sidebar .sidebar-body .sidebar-subheader:disabled, .invalid-feedback:disabled, .input-hint:disabled, .form-control:disabled, .form-label:disabled, .tab-text:disabled, .nav-pills .nav-item .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .navbar .nav-link.dropdown-toggle:disabled, .navbar .navbar-toggler:disabled, .badge-date:disabled, .badge:disabled {
   color: var(--outline);
@@ -157,7 +156,6 @@ sub {
   border-radius: 0.5rem;
   letter-spacing: 0.5px;
   color: var(--on-background);
-  background: none;
 }
 .label-text-sm:disabled, .form-select.form-select-sm:disabled, .invalid-feedback.invalid-feedback-sm:disabled, .input-hint.input-hint-sm:disabled, .form-control.form-control-sm:disabled, .form-label.form-label-sm:disabled, .tab-text-sm:disabled, .tabs-sm .nav-item .nav-link:disabled, .button-text-sm:disabled, .btn.btn-sm:disabled, .navbar .btn-sm.nav-link.dropdown-toggle:disabled, .navbar .btn-sm.navbar-toggler:disabled, .badge-sm:disabled {
   color: var(--outline);
@@ -172,7 +170,6 @@ sub {
   border-radius: 0.75rem;
   letter-spacing: 0.1px;
   color: var(--on-background);
-  background: none;
 }
 .label-text-lg:disabled, .navbar .dropdown-menu-title:disabled, .form-select.form-select-lg:disabled, .sidebar .sidebar-body .sidebar-button:disabled, .sidebar .sidebar-body .sidebar-link:disabled, .sidebar .sidebar-body:disabled, .invalid-feedback.invalid-feedback-lg:disabled, .input-hint.input-hint-lg:disabled, .form-control.form-control-lg:disabled, .form-label.form-label-lg:disabled, .dropdown .dropdown-menu .dropdown-item:disabled, .tab-text-lg:disabled, .tabs-lg .nav-item .nav-link:disabled, .button-text-lg:disabled, .btn.btn-lg:disabled, .navbar .nav-link.dropdown-toggle:disabled, .navbar .navbar-toggler:disabled, .badge-lg:disabled {
   color: var(--outline);
@@ -1804,6 +1801,7 @@ footer.bg-brand * {
 .input-group .input-group-append .btn, .input-group .input-group-append .navbar .nav-link.dropdown-toggle, .navbar .input-group .input-group-append .nav-link.dropdown-toggle, .input-group .input-group-append .navbar .navbar-toggler, .navbar .input-group .input-group-append .navbar-toggler {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  padding: 0.5rem 0.75rem;
 }
 
 .input-group-icon .input-group-prepend-icon {
@@ -2217,6 +2215,29 @@ optgroup {
   content: "選單";
   margin-left: 0.25rem;
 }
+.navbar .navbar-toggler:not(.collapsed) {
+  background-color: var(--brand-strong);
+  border-color: var(--brand-strong);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
+  border-color: var(--brand-flat-strong);
+}
+.navbar .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  color: var(--on-brand);
+  background-image: none;
+  display: flex;
+  width: auto;
+}
+.navbar .navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  content: "\f62a";
+  /* x */
+  font-family: "bootstrap-icons";
+  text-align: center;
+  font-size: 1.25rem;
+}
+.navbar .navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  content: "選單";
+  margin-left: 0.25rem;
+}
 @media (min-width: 768px) {
   .navbar .nav-link.dropdown-toggle {
     font-size: 0.875rem;
@@ -2293,6 +2314,7 @@ optgroup {
   }
   .navbar .search-menu .hot-searching * {
     color: var(--on-brand);
+    margin-right: 0.5rem;
   }
 }
 @media (max-width: 767px) {
@@ -2382,6 +2404,39 @@ optgroup {
   box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
   border-color: var(--brand-flat-strong);
 }
+@media (max-width: 767px) {
+  .navbar.bg-surface .search-menu {
+    background-color: var(--surface);
+  }
+}
+@media (max-width: 767px) {
+  .navbar.bg-surface .search-menu .hot-searching {
+    color: var(--on-brand-flat);
+  }
+  .navbar.bg-surface .search-menu .hot-searching * {
+    color: var(--on-brand-flat);
+  }
+}
+@media (max-width: 767px) {
+  .navbar.bg-surface .setting-menu {
+    background-color: var(--surface-1);
+    color: var(--on-surface);
+  }
+  .navbar.bg-surface .setting-menu li > *:not(.form-select) {
+    padding: 0;
+    color: var(--on-surface);
+  }
+}
+@media (max-width: 767px) {
+  .navbar.bg-surface .dropdown-item-header:hover {
+    color: var(--on-surface) !important;
+  }
+}
+@media (max-width: 767px) {
+  .navbar.bg-surface .dropdown-item-title:hover {
+    color: var(--on-surface) !important;
+  }
+}
 .navbar.bg-surface .navbar-collapse {
   background-color: var(--surface);
 }
@@ -2437,21 +2492,47 @@ optgroup {
     border-color: var(--brand);
   }
 }
-.navbar.bg-brand-flat .navbar-collapse {
-  background-color: var(--surface);
+@media (max-width: 767px) {
+  .navbar.bg-brand-flat .dropdown-item-header:hover {
+    color: var(--on-surface) !important;
+  }
 }
-@media (min-width: 768px) {
-  .navbar.bg-brand-flat .navbar-collapse {
+@media (max-width: 767px) {
+  .navbar.bg-brand-flat .dropdown-item-title:hover {
+    color: var(--on-surface) !important;
+  }
+}
+@media (max-width: 767px) {
+  .navbar.bg-brand-flat .search-menu {
     background-color: var(--brand-flat);
   }
 }
-.navbar.bg-brand-flat .offcanvas-body {
-  background-color: var(--surface);
-}
-@media (min-width: 768px) {
-  .navbar.bg-brand-flat .offcanvas-body {
-    background-color: var(--brand-flat) !important;
+@media (max-width: 767px) {
+  .navbar.bg-brand-flat .search-menu .hot-searching {
+    color: var(--on-brand-flat);
   }
+  .navbar.bg-brand-flat .search-menu .hot-searching * {
+    color: var(--on-brand-flat);
+  }
+}
+@media (max-width: 767px) {
+  .navbar.bg-brand-flat .setting-menu {
+    background-color: var(--brand-flat-strong);
+    color: var(--on-surface);
+  }
+  .navbar.bg-brand-flat .setting-menu li > *:not(.form-select) {
+    padding: 0;
+    color: var(--on-surface);
+  }
+}
+.navbar.bg-brand-flat .navbar-collapse {
+  background-color: var(--brand-flat);
+}
+.navbar.bg-brand-flat .offcanvas-body {
+  background-color: var(--brand-flat);
+}
+.navbar.single-row .container {
+  flex-wrap: nowrap;
 }
 @media (min-width: 768px) {
   .navbar .offcanvas {
