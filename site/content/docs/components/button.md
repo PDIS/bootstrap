@@ -40,12 +40,10 @@ group: components
   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Placeholder">
 </div>
 
-<div class="input-group">
-                <input type="text" class="form-control" id="Input1" placeholder="請輸入關鍵字">
-                <div class="input-group-append">
-                  <button class="btn btn-brand" type="button">搜尋</button>
-                </div>
-              </div>
+<div class="input-group input-group-icon">
+  <i class="input-group-prepend-icon bi bi-key-fill"></i>
+  <input type="text" class="form-control form-control" id="Input2" placeholder="請輸入密碼" aria-label="Input2" aria-describedby="Input2">
+</div>
 
 <form class="needs-validation" novalidate>
   <label for="password" class="form-label form-label-sm">密碼<span class="required">*</span></label>

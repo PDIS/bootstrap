@@ -45,6 +45,19 @@ toc: true
 基本款的側邊欄有舒適行高 (comfortable height) 與壓縮行高 (compact height) 兩種選擇，請依據網站空間自行調配。
 
 {{< example >}}
+<nav class="sidebar">
+        <ul class="sidebar-body">
+          <li><span class="sidebar-subheader">側邊欄分區標題文字</span></li>
+          <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+          <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+          <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+          <li class="sidebar-divider"><hr></li>
+          <li><span class="sidebar-subheader">側邊欄分區標題文字</span></li>
+          <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+          <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+          <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+        </ul>
+      </nav>
 <div class="col-md-4">
 <nav class="sidebar">
   <div class="sidebar-header">側邊欄標題文字</div>
