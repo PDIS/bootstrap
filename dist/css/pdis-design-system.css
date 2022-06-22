@@ -1391,6 +1391,7 @@ a:active, a:focus-visible {
 }
 
 .dropdown .dropdown-toggle {
+  padding: 0.375rem 0.875rem;
   display: flex;
 }
 @media (min-width: 768px) {
@@ -1414,7 +1415,7 @@ a:active, a:focus-visible {
   text-align: center;
   vertical-align: bottom;
   border: 0;
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   margin-left: auto;
 }
 @media (min-width: 768px) {
@@ -1430,7 +1431,7 @@ a:active, a:focus-visible {
   text-align: center;
   vertical-align: bottom;
   border: 0;
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   margin-left: auto;
 }
 @media (min-width: 768px) {
@@ -1446,7 +1447,7 @@ a:active, a:focus-visible {
   text-align: center;
   vertical-align: bottom;
   border: 0;
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   margin-left: auto;
 }
 @media (min-width: 768px) {
@@ -1541,6 +1542,15 @@ a:active, a:focus-visible {
 }
 .dropdown .dropdown-menu .nav .nav-item i {
   font-size: 1.5rem;
+}
+.dropdown .dropdown-menu.dropdown-menu-horizontal {
+  width: max-content;
+}
+.dropdown .dropdown-menu.dropdown-menu-horizontal .row {
+  margin: 0;
+}
+.dropdown .dropdown-menu.dropdown-menu-horizontal .row [class^=col-], .dropdown .dropdown-menu.dropdown-menu-horizontal .row [class*=" col-"] {
+  padding: 0;
 }
 
 .unclickable, .navbar .dropdown-item-title, .navbar .dropdown-item-header {
@@ -2238,6 +2248,9 @@ optgroup {
   content: "選單";
   margin-left: 0.25rem;
 }
+.navbar .nav-link.dropdown-toggle {
+  padding: 0.375rem 0.875rem;
+}
 @media (min-width: 768px) {
   .navbar .nav-link.dropdown-toggle {
     font-size: 0.875rem;
@@ -2279,13 +2292,19 @@ optgroup {
   text-align: center;
   vertical-align: bottom;
   border: 0;
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   margin-left: auto;
 }
 @media (min-width: 768px) {
   .navbar .nav-link.dropdown-toggle.show::after {
     margin-left: 0.25rem;
   }
+}
+.navbar .nav-link.dropdown-toggle.dropdown-toggle-icon {
+  font-size: 1.125rem;
+}
+.navbar .nav-link.dropdown-toggle i {
+  font-size: 1.125rem;
 }
 .navbar .navbar-collapse {
   width: 100%;
@@ -2303,6 +2322,7 @@ optgroup {
     display: block;
     padding: 0;
     background-color: var(--brand);
+    box-shadow: none;
   }
 }
 .navbar .search-menu .hot-searching {
@@ -2323,6 +2343,7 @@ optgroup {
     margin-top: 1rem;
     background-color: var(--brand-strong);
     color: var(--on-brand);
+    box-shadow: none;
   }
   .navbar .setting-menu li > *:not(.form-select) {
     padding: 0;
