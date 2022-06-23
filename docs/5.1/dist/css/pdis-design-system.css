@@ -175,7 +175,7 @@ sub {
   color: var(--outline);
 }
 
-.body-text, .accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after, .accordion .accordion .accordion-item .accordion-header .accordion-button::after, .accordion .accordion-item .accordion-button:not(.collapsed)::after, .accordion .accordion-item .accordion-button::after, .accordion .accordion-item .accordion-button, .card .card-body .card-text, .list-group .list-group-item, p, a {
+.body-text, .breadcrumb .breadcrumb-item.active, .accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after, .accordion .accordion .accordion-item .accordion-header .accordion-button::after, .accordion .accordion-item .accordion-button:not(.collapsed)::after, .accordion .accordion-item .accordion-button::after, .accordion .accordion-item .accordion-button, .card .card-body .card-text, .list-group .list-group-item, p, a {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -183,7 +183,7 @@ sub {
   letter-spacing: 0.5px;
   color: var(--on-background);
 }
-.body-text:disabled, .accordion .accordion .accordion-item .accordion-header .accordion-button:disabled::after, .accordion .accordion-item .accordion-button:disabled::after, .accordion .accordion-item .accordion-button:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled, p:disabled, a:disabled {
+.body-text:disabled, .breadcrumb .breadcrumb-item.active:disabled, .accordion .accordion .accordion-item .accordion-header .accordion-button:disabled::after, .accordion .accordion-item .accordion-button:disabled::after, .accordion .accordion-item .accordion-button:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled, p:disabled, a:disabled {
   color: var(--outline);
 }
 
@@ -2577,6 +2577,17 @@ optgroup {
   .navbar .offcanvas .offcanvas-body {
     background-color: var(--brand);
   }
+}
+
+.breadcrumb .breadcrumb-item a {
+  font-weight: 400;
+}
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  font-family: "bootstrap-icons";
+  content: "\f285";
+  /* Chevron right */
+  font-size: 1rem;
+  color: var(--outline);
 }
 
 /*# sourceMappingURL=pdis-design-system.css.map */
