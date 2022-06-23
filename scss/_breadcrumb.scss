@@ -1,0 +1,19 @@
+.breadcrumb {
+  .breadcrumb-item {
+    a {
+      font-weight: 400;
+    }
+
+    + .breadcrumb-item {
+      &::before {
+        font-family: "bootstrap-icons";
+        content: "\f285"; /* Chevron right */
+        font-size: 1rem;
+        color: var(--outline);
+      }
+    }
+    &.active {
+      @extend .body-text;
+    }
+  }
+}
