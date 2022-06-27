@@ -1,21 +1,105 @@
 ---
 layout: docs
-title: 顏色 (Color)
+title: 顏色 Colours
+description: 顏色常用來溝通意象，我們提供可客製化的顏色系統。
 group: style
 toc: true
 ---
 
-## 規範
+### 關於顏色
 
-### 色彩對比度
+#### 符合近用性的顏色系統
 
-在替所製作的數位系統選用色彩時，我們必須符合色彩對比度 WCAG AA 等級或更高級別。以下列出幾個可以用來檢查對比度是否足夠的工具：
-[Snook.ca 顏色對比檢查](https://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333)，[Webaim 顏色對比檢查器](https://webaim.org/resources/contrastchecker/)、[TPG 顏色對比分析器](https://www.tpgi.com/color-contrast-checker/)、[對比度網站-Contrast ratio](https://contrast-ratio.com) 或 [Android 無障礙掃描工具](https://support.google.com/accessibility/android/answer/6376570?hl=en-GB)。
+在選擇顏色時，選擇符合近用性的顏色系統是非常重要的。依據<a href="https://accessibility.ncc.gov.tw/Home/Info">國發會的網頁無障礙指引</a>，要達到 AA 等級的色彩對比度標準詳列在<a href="https://accessibility.ncc.gov.tw/Accessible/Detail/4461?Category=68#1.4.3">成功準則1.4.3：對比值(最小) (檢測等級AA)</a>，文字與背景色彩對比值必須充分，衡量標準整理如下：
 
-要注意的是，字型大小也會是影響對比度的變因。舉例來說，有時雖然文字色與背景色通過上述色彩對比度檢測，但若文字的字型縮小時，雖顏色不變，可能必須得將字重加大才能通過對比度檢測。您可以使用下列工具來檢查：[Adobe 色彩對比度分析器](https://color.adobe.com/create/color-contrast-analyzer)。
+- 大尺寸文字(及影像文字)與文字後面的背景間，至少有 3:1 的對比值
+- 文字(及影像文字)與文字後面的背景間，至少有 4.5:1 的對比值
 
-## 參考顏色
+要注意的是，字型大小也會是影響對比度的變因。舉例來說，有時雖然文字色與背景色通過上述色彩對比度檢測，但若文字的字型縮小時，雖顏色不變，可能必須得將字重加大才能通過對比度檢測。
 
-我們沿用 Bootstrap 的所有色票，並加上一組由台灣元素發想的色票。所有的顏色組合皆符合色彩對比度的規定。
+在替所製作的數位系統選擇顏色時，我們必須符合色彩對比度 WCAG AA 等級或更高級別。舉例來說，文字內容與背景的色彩對比度要到 4.5 : 1，而大尺寸文字要到 3:1，以確保使用者能迅速的辨識內容，以達成無障礙的視覺體驗。
 
-<img class="img-fluid" src="https://i.imgur.com/CJlbEVO.png" >
+一般的設計系統皆在選色時大量使用輔助工具如 <a href="https://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333">Snook.ca</a> 顏色對比檢查、<a href="https://webaim.org/resources/contrastchecker/">Webaim 顏色對比檢查器</a>、<a href="https://www.tpgi.com/color-contrast-checker/"> TPG 顏色對比分析器等等</a>，確保該設計系統所選擇的顏色系統符合近用性。
+
+#### 可客製化的顏色系統
+
+在機關製作數位系統時，顏色的選用常代表著一個機關想要對外呈現的意象。每個機關想要溝通的意象不盡相同，因此我們將 PDIS 設計系統的顏色設置為一個**可客製化的顏色系統**。
+
+### 範例：卡片元件
+
+舉例來說，若選擇藍色系的 #2C5AB4 作為品牌色，黃色系的 #705D00 作為次品牌色，卡片元件將會如圖所示。若替換成另一組品牌色，卡片元件上的元件分佈將依原有邏輯自動替換。可以發現，背景色與文字色也將各自替換成符合近用性標準的色階，符合無障礙的視覺體驗。
+
+<img class="img-fluid" src="/docs/5.1/assets/img/colour-demo.png">
+
+### 顏色系統 Colour System
+
+#### PDIS 顏色系統
+
+PDIS 提供一套顏色系統，包含由七大主色 (Key colour) 與十三色階條 (Tonal strip) 所組成的色階盤 (Colour palette)、以及從色階盤上挑選定義形成的色彩配置 (Colour Scheme)。
+
+我們提供的是可客製化的顏色系統，也就是說機關與製作廠商可以自由的選擇最具代表性的主題色作為主色。我們參考 <a href="https://m3.material.io/">Material Design 3</a> 的選色原則，從主題色 (theme colour)、系統色 (system colour)、中和色 (neutral colour) 三個主色 (key colour) 類別的挑選開始。並建議各機關使用 <a href="https://material-foundation.github.io/material-theme-builder/#/custom">Material Theme Builder</a>，將顏色的色階展開，作為顏色系統的起始基礎。這些工具的使用非常方便，可以直接看到顏色系統的選色結果並自行調整。如此一來，機關與廠商既能自由選色，方便的製作出一套實用的色階盤。
+
+定義出色階盤之後的下一步便是產生色彩配置，在色彩配置中，每個顏色有其意義與適用的情境，而此設計系統中的所有元件都遵守這些使用情境指派色彩，並且遵守近用性的視覺體驗。
+
+也就是說，這樣環環相扣的設計，能夠幫助您自行選擇的色階盤自動套用到我們所設計的所有元件上，又能符合近用性規範以達成無障礙的視覺體驗。
+
+接下來，我們會提供一套示範的色階盤，同時一步步說明您可以如何定調個人化的顏色系統。
+
+### 示範產生色階盤：以 PDIS 色階盤為例
+
+色階盤 (Colour palette) 由七大主色 (Key colour) 與十三色階條 (Tonal strip) 所組成，建構出一個共 91 個色票的調色盤。
+
+#### 主色選定
+
+- 品牌色 Brand Colour
+
+品牌色也是一般的主題色，是一個系統的整體給人第一印象的主題顏色。我們的顏色系統允許兩個主題色，一個為主要品牌色，一個為次要品牌色。品牌色會分布在各式各樣的元件上，最常出現在需要使用者互動或是給予注意的地方，例如送出按鈕、頁籤面板上被選定的頁籤等等。
+
+- 中和色 Neutral Colour
+
+中和色常是用來生成元件背景色或是整個頁面的背景色的顏色。通常由彩度較低、灰色含量較多的低彩度顏色組成。我們的顏色系統僅包含一個中和色。
+
+- 系統色 System Colour
+
+系統色是功能型顏色，我們的顏色系統中會需要定義四種系統色，分別帶有正向 (Positive)、負向 (Negative)、資訊 (Information) 與警告 (Warning) 的功能。
+
+#### 色階條
+
+色階條由十三個色階組成，包含黑色與白色。色階 100 代表白色，色階 0 則代表黑色。在這之間的其他十一個顏色，個別代表了該主色在 0 到 100 之間相對應色階位置的明度。也就是說，的色階數值反應了該主色的明度。
+
+<img class="img-fluid" src="/docs/5.1/assets/img/palette.png">
+
+### 從主色到色階盤
+
+每個主色的選擇皆可以自動生成 0 到 100 共十三個色階的色階條。將每個主色都跑過一次這個流程，便能將 7 個主色各生成十三個色階的色階條，總共便產生 91 個色票的色階盤。
+
+<img class="img-fluid" src="/docs/5.1/assets/img/Colour-Palettes.png">
+
+### 定調客製化的顏色系統
+
+到這一個步驟，您若想要客製化屬於您的顏色系統，已經可以著手製作了。細節步驟請參考：<a href="https://color.pdis.tw">客製化色階盤</a>。
+
+### 從色階盤到色彩配置
+
+色階盤上的顏色基本上是可以運用的，同時間我們的元件接遵守某一種特定的色彩配置，指派適合的顏色到元件的不同位置上以符合進用性的色彩對比度。您可以調整色階將對比度拉大，但不建議選擇會讓對比度減少的顏色組合。色彩配置的用意在於將顏色的角色的定義出來，方便將特定色階的色彩配置到適合的元件位置上。
+
+### 示範產生色彩配置：以 PDIS 色彩配置為例
+
+<img class="img-fluid" src="/docs/5.1/assets/img/color-schemes.png">
+
+以品牌色 (Brand colour) 來說，
+
+- Brand： 品牌色，用在重要的動作提示上（如：送出按鈕）。
+- On-brand：用在重要動作上的文字（如：「送出」字樣）
+- Brand flat：用在比起重要動作稍微次要的提示（如：取消按鈕）
+- On brand flat：用在次要動作提示上的文字（如：「取消」字樣） 
+
+中和色 (Neutral) 常用於背景色或是區塊型元件的底色，例如卡片的底色。 在色彩配置的命名上，我們用背景色 (Background) 與底色 (Surface) 來區分。On-Surface 與 On Background 則用高對比度的中和色為基礎，常用在文字或是文字圖標上。
+
+色彩配置賦予了色階盤上每個顏色的角色並位置命名。這樣的做法就像是發給每個顏色一個令牌 (token) ，並讓令牌名稱上意涵的角色寄託到個別顏色上。這樣的做法比起直接寫定色碼到元件上更有系統也添加了色彩替換的彈性。這樣的做法常用在可以客製化的色彩系統中，或是在處理亮暗色系 (light mode and dark mode) 的情境。在 PDIS 的色彩系統中，我們沿用 Material Design 3 的邏輯，詳細考慮色彩的客製化與網站近用性規範，讓開發團隊既可自行選色、自動套用到所有元件，又能符合近用性規範以達成無障礙的視覺體驗。
+
+### 客製化色階盤 Customised Colour Palletes
+
+藉由互動選色器，您可以自訂品牌色並定調客製化的色階盤。
+
+<a href="https://color.pdis.tw">請點我</a>

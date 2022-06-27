@@ -16,159 +16,88 @@ group: components
 重要的行為應該用按鈕來顯示，例如「確認」、「下載」、「下一步」、「註冊」、「登出」等。
 
 #### 何時該考慮使用其他元件
-- 頁面之間的連結。當純粹想要從一個頁面連結到另外一個頁面時，請用一般的連結即可。
-- 當行為的重要性沒那麼高時。當某一行為的重要性在該頁面上沒那麼高時，可以使用文字連結按鈕，視覺上跟連結一樣，但操作上仍為按鈕。
+
+- **頁面之間的連結。** 當純粹想要從一個頁面連結到另外一個頁面時，請用一般的連結即可。
+- **當行為的重要性沒那麼高時。** 當某一行為的重要性在該頁面上沒那麼高時，可以使用文字連結按鈕，視覺上跟連結一樣，但操作上仍為按鈕。
 
 #### 按鈕易用性
-- 避免一頁中出現太多按鈕。按鈕的出現應該是該頁面中比較重要的行為，且按下之後會帶領使用者到另一個頁面，因此一頁中的按鈕不宜過多。
-- 按鈕文字應以動詞或動作為主。按鈕是引導使用者質性某重要行為的地方，因此請盡量用簡短明瞭的動作文字作為按鈕文字，如「送出」、「取消」等。
-- 可以選擇使用圖標。某些按鈕適合用圖標作為提示，例如「開新視窗」、「下載」等，但請適度使用。
-- 按鈕文字應保持在同一行。請勿將按鈕文字放到第二行。
+
+- **避免一頁中出現太多按鈕。** 按鈕的出現應該是該頁面中比較重要的行為，且按下之後會帶領使用者到另一個頁面，因此一頁中的按鈕不宜過多。
+- **按鈕文字應以動詞或動作為主。** 按鈕是引導使用者質性某重要行為的地方，因此請盡量用簡短明瞭的動作文字作為按鈕文字，如「送出」、「取消」等。
+- **可以選擇使用圖標。** 某些按鈕適合用圖標作為提示，例如「開新視窗」、「下載」等，但請適度使用。
+- **按鈕文字應保持在同一行。** 請勿將按鈕文字放到第二行。
+- 按鈕的位階選擇可以依據主要、次要、邊框、文字的順序做搭配。詳見「角色」區塊
 
 #### 按鈕近用性
-- 報讀軟體觸發按鈕與連結的方式不同。在使用報讀軟體時，按下空白鍵會觸發按鈕，按下 Enter 鍵會觸發連結。
 
-### 設計元件
+- **報讀軟體觸發按鈕與連結的方式不同。** 在使用報讀軟體時，按下空白鍵會觸發按鈕，按下 Enter 鍵會觸發連結。
 
-#### 方角按鈕 vs 圓角按鈕
+### 元件設計
 
-可以自行選用符合網站風格的按鈕樣式。
+#### 基本款按鈕 Basic Button
+
+基本款的按鈕以品牌色為背景，吸引使用者注意。使用者可以依據頁面上的資訊決定是否點擊進行下一步。
 
 {{< example >}}
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">標題<span class="required">*</span></label>
-  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Placeholder">
-</div>
-
-<div class="input-group input-group-icon">
-  <i class="input-group-prepend-icon bi bi-key-fill"></i>
-  <input type="text" class="form-control form-control" id="Input2" placeholder="請輸入密碼" aria-label="Input2" aria-describedby="Input2">
-</div>
-
-<form class="needs-validation" novalidate>
-  <label for="password" class="form-label form-label-sm">密碼<span class="required">*</span></label>
-  <div class="input-group input-group-icon mb-3 has-validation">
-    <i class="input-group-prepend-icon input-group-prepend-icon-lg bi bi-key-fill"></i>
-    <input type="text" class="form-control form-control-lg" id="password" placeholder="Username" aria-label="password" aria-describedby="basic-addon1" required>
-    <i class="input-group-append-icon bi bi-key-fill"></i>
-    <div class="input-hint">密碼格式須包含大寫英文字母</div>
-    <div class="invalid-feedback">
-      <i class="bi bi-slash-circle icon"></i>密碼格式錯誤
-    </div>
-  </div>
-  <button class="btn btn-primary" type="submit">Submit form</button>
-</form>
-
-<div class="input-group">
-<i class="input-group-icon bi bi-key-fill"></i>
-<input type="text" class="form-control" id="password" placeholder="Username" aria-label="password" aria-describedby="basic-addon1" required>
-<i class="input-group-icon-right bi bi-key-fill"></i>
-</div>
-
-<script>
-
-
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-
-          form.classList.add('was-validated')
-        }, false)
-      })
-
-</script>
 
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-primary"><span>圓角按鈕</span><span class="badge badge-numerical">2</span></button>
-    <button type="button" class="btn btn-primary"><span>圓角按鈕</span><span class="badge">Brand</span></button>
-    <button type="button" class="btn btn-primary">圓角按鈕</button>
-    <button type="button" class="btn btn-secondary">圓角按鈕</button>
-    <button type="button" class="btn btn-semi-secondary">圓角按鈕</button>
-    <button type="button" class="btn btn-tertiary">圓角按鈕</button>
-    <button type="button" class="btn btn-negative">圓角按鈕</button>
-    <button type="button" class="btn btn-positive">圓角按鈕</button>
-    <button type="button" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i></button>
+    <button type="button" class="btn btn-primary">預設按鈕</button>
   </div>
 </div>
+
 {{< /example >}}
 
-#### 按鈕大小
+#### 角色 Role
 
-我們提供大、中、小三種不同尺寸的按鈕。
+從基本款按鈕的樣式延伸，共六種不同角色的按鈕，由左至右分別為：主要、次要、邊框、文字、正向、負向按鈕。在做按鈕的位階選擇時，可以依據主要、次要、邊框、文字的順序做搭配。例如可以選擇主要按鈕作為預設動作的進入點，搭配文字按鈕作為其他動作的進入點，讓頁面視覺上明顯有位階順序，幫助使用者理解兩個並排按鈕的關係。
 
 {{< example >}}
+
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-primary btn-sm">預設按鈕 小</button>
-    <button type="button" class="btn btn-primary">預設按鈕 預設</button>
-    <button type="button" class="btn btn-primary btn-lg">預設按鈕 大</button>
+    <button type="button" class="btn btn-primary">預設按鈕</button>
+    <button type="button" class="btn btn-secondary">預設按鈕</button>
+    <button type="button" class="btn btn-semi-secondary">預設按鈕</button>
+    <button type="button" class="btn btn-tertiary">預設按鈕</button>
+    <button type="button" class="btn btn-positive">預設按鈕</button>
+    <button type="button" class="btn btn-negative">預設按鈕</button>
   </div>
 </div>
+
+{{< /example >}}
+
+#### 大小 Size
+
+三種不同大小的按鈕。
+
+{{< example >}}
+
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-primary btn-sm">預設按鈕</button>
+    <button type="button" class="btn btn-primary">預設按鈕</button>
+    <button type="button" class="btn btn-primary btn-lg">預設按鈕</button>
+  </div>
+</div>
+
 {{< /example >}}
 
 
-#### 功能性按鈕
-我們提供兩種功能性按鈕：正向與危險按鈕。
+#### 圖示 Icon
+
+按鈕中可以使用圖示 (icon) 輔助文字說明。圖示可以在文字左邊或是右邊。有些圖示所代表的意義已經約定成俗，在某些特殊情況下則可以只留下圖示。
 
 {{< example >}}
+
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-primary">主色按鈕</button>
-    <button type="button" class="btn btn-positive">正面按鈕</button>
-    <button type="button" class="btn btn-negative">負面按鈕</button>
+    <button type="button" class="btn btn-primary">預設按鈕</button>
+    <button type="button" class="btn btn-primary"><i class="bi bi-download"></i><span>左圖標按鈕</span></button>
+    <button type="button" class="btn btn-primary"><span>右圖標按鈕</span><i class="bi bi-download"></i></button>
+    <button type="button" class="btn btn-primary"><i class="bi bi-download"></i></button>
+    <button type="button" class="btn btn-primary"><span>圓角按鈕</span><span class="badge badge-sm badge-numerical">2</span></button>
   </div>
 </div>
-{{< /example >}}
 
-#### 淺色功能性按鈕
-
-我們提供兩種功能性按鈕：正向與危險按鈕。
-
-{{< example >}}
-<div class="row text-center">
-  <div class="col">
-    <button type="button" class="btn btn-primary-flat">主色按鈕</button>
-    <button type="button" class="btn btn-positive-flat">正面按鈕</button>
-    <button type="button" class="btn btn-negative-flat">負面按鈕</button>
-  </div>
-</div>
-{{< /example >}}
-
-
-#### 框線樣式按鈕  vs 連結字按鈕
-
-同個頁面中，可以選用框線樣式的按鈕，與預設填滿顏色的按鈕作為區隔。當按鈕的行為重要性沒那麼高時，可以將樣式視覺上做得跟連結一樣。
-
-{{< example >}}
-<div class="row text-center">
-  <div class="col">
-    <button type="button" class="btn btn-outline-brand">主色按鈕</button>
-    <button type="button" class="btn btn-outline-positive">正面按鈕</button>
-    <button type="button" class="btn btn-outline-negative">負面按鈕</button>
-    <button type="button" class="btn btn-link">連結字</button>
-  </div>
-</div>
-{{< /example >}}
-
-
-#### 文字按鈕加圖標
-
-按鈕中放有圖標時，可以選用圖標在左或是圖標在右的按鈕樣式。
-
-{{< example >}}
-<div class="row text-center">
-  <div class="col">
-    <button type="button" class="btn btn-primary"><span>圖標在右</span><i class="bi bi-arrow-counterclockwise"></i></button>
-    <button type="button" class="btn btn-primary"><i class="bi bi-arrow-counterclockwise"></i><span>圖標在左</span></button>
-  </div>
-</div>
 {{< /example >}}
