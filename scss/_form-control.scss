@@ -72,6 +72,11 @@
       padding: 0.5rem 0.75rem;
     }
   }
+  .form-select + .form-control {
+    width: 1%; 
+    border-top-left-radius:0 !important; 
+    border-bottom-left-radius:0 !important;
+  }
 }
 
 .input-group-icon {
@@ -100,18 +105,18 @@
     position: absolute;
     color: var(--on-surface);
     font-size: 1.125rem;
-    padding-top: 0.35rem;
+    padding-top: 0.55rem;
     z-index: 10;
     right: 1rem;
 
     &.input-group-append-icon-sm {
       font-size: 1rem;
-      padding-top: 0.4rem;
+      padding-top: 0.2rem;
     }
 
     &.input-group-append-icon-lg {
       font-size: 1.25rem;
-      padding-top: 0.75rem;
+      padding-top: 0.4rem;
     }
   }
 

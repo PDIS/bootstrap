@@ -1,40 +1,56 @@
 # This file holds all sidebar menu's entries.
 # The logic for the sidebar generation is in "site/layouts/partials/docs-sidebar.html".
 
+- title: 概述
+  name: overview
+  pages:
+    - title: 介紹
+      name: introduction
+    - title: 設計規範
+      name: guildline
+    - title: 可近用性
+      name: accessibility
+    - title: 安裝教學
+      name: setup
+
 - title: 風格
   name: style
   pages:
-    - title: 無障礙
-      name: accessibility
     - title: 顏色
       name: color
-    - title: 版面配置
-      name: layout
     - title: 文字屬性
       name: typography
-    - title: 間距
-      name: spacing
+    - title: 圖標
+      name: icons
+    - title: 排版
+      name: layout  
 
 - title: 元件
   name: components
   pages:
-    - title: 頁首
-      name: header
+    - title: 按鈕
+      name: button
+    - title: 標籤
+      name: badge
     - title: 卡片
       name: card
     - title: 列表
       name: list
+    - title: 頁籤
+      name: tabs
     - title: 手風琴
       name: accordion
+    - title: 輸入欄位
+      name: input
+    - title: 選擇功能表
+      name: select
     - title: 側邊欄
       name: sidebar
-    - title: 下拉式選單
-      name: select
-    - title: 行動導覽
-      name: mobilenavigation
-    - title: 頁籤面板
-      name: tabs
+    - title: 麵包屑
+      name: breadcrumb
+    - title: 導覽列下拉選單
+      name: dropdown
+    - title: 頁首
+      name: header
     - title: 頁尾
       name: footer
-    - title: 按鈕
-      name: button
