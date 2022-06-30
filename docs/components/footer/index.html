@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="頁尾服務的是那些已到達頁面底部卻一無所獲的使用者。">
+<meta name="description" content="所有頁面都共用的網頁尾端資訊。">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
 
@@ -42,13 +42,13 @@
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
 <meta name="twitter:title" content="頁尾 Footer">
-<meta name="twitter:description" content="頁尾服務的是那些已到達頁面底部卻一無所獲的使用者。">
+<meta name="twitter:description" content="所有頁面都共用的網頁尾端資訊。">
 <meta name="twitter:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
 <meta property="og:url" content="https://design.pdis.tw/docs/components/footer/">
 <meta property="og:title" content="頁尾 Footer">
-<meta property="og:description" content="頁尾服務的是那些已到達頁面底部卻一無所獲的使用者。">
+<meta property="og:description" content="所有頁面都共用的網頁尾端資訊。">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
@@ -83,7 +83,7 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link "
-            href="/intro/">介紹</a>
+            href="/docs/overview/">概述</a>
         </li>
         <li class="nav-item">
           <a class="nav-link "
@@ -93,14 +93,7 @@
           <a class="nav-link  active" aria-current="true"
             href="/docs/components/">元件</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link "
-            href="/manual/">使用說明</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled text-muted"
-            href="/docs/">製作過程</a>
-        </li>
+
       </ul>
 
       
@@ -119,17 +112,30 @@
     <nav class="sidebar" id="sidebar">
   <ul class="sidebar-body">
     <li>
+      <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overview-collapse" aria-expanded="false"
+       aria-controls="overview-collapse" id="overview-header">
+        概述
+      </button>
+      <div class="collapse  collapse" aria-labelledby="overview-header" data-bs-parent="#sidebar" id="overview-collapse">
+        <ul class="sidebar-menu">
+          <li><a href="/docs/overview/introduction/" class="sidebar-link " >介紹</a></li>
+          <li><a href="/docs/overview/guildline/" class="sidebar-link " >設計規範</a></li>
+          <li><a href="/docs/overview/accessibility/" class="sidebar-link " >可近用性</a></li>
+          <li><a href="/docs/overview/setup/" class="sidebar-link " >安裝教學</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
       <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="false"
        aria-controls="style-collapse" id="style-header">
         風格
       </button>
       <div class="collapse  collapse" aria-labelledby="style-header" data-bs-parent="#sidebar" id="style-collapse">
         <ul class="sidebar-menu">
-          <li><a href="/docs/style/accessibility/" class="sidebar-link " >無障礙</a></li>
           <li><a href="/docs/style/color/" class="sidebar-link " >顏色</a></li>
-          <li><a href="/docs/style/layout/" class="sidebar-link " >版面配置</a></li>
           <li><a href="/docs/style/typography/" class="sidebar-link " >文字屬性</a></li>
-          <li><a href="/docs/style/spacing/" class="sidebar-link " >間距</a></li>
+          <li><a href="/docs/style/icons/" class="sidebar-link " >圖標</a></li>
+          <li><a href="/docs/style/layout/" class="sidebar-link " >排版</a></li>
         </ul>
       </div>
     </li>
@@ -140,16 +146,19 @@
       </button>
       <div class="collapse  show collapse" aria-labelledby="components-header" data-bs-parent="#sidebar" id="components-collapse">
         <ul class="sidebar-menu">
-          <li><a href="/docs/components/header/" class="sidebar-link "  aria-current="true" >頁首</a></li>
+          <li><a href="/docs/components/button/" class="sidebar-link "  aria-current="true" >按鈕</a></li>
+          <li><a href="/docs/components/badge/" class="sidebar-link "  aria-current="true" >標籤</a></li>
           <li><a href="/docs/components/card/" class="sidebar-link "  aria-current="true" >卡片</a></li>
           <li><a href="/docs/components/list/" class="sidebar-link "  aria-current="true" >列表</a></li>
+          <li><a href="/docs/components/tabs/" class="sidebar-link "  aria-current="true" >頁籤</a></li>
           <li><a href="/docs/components/accordion/" class="sidebar-link "  aria-current="true" >手風琴</a></li>
+          <li><a href="/docs/components/input/" class="sidebar-link "  aria-current="true" >輸入欄位</a></li>
+          <li><a href="/docs/components/select/" class="sidebar-link "  aria-current="true" >選擇功能表</a></li>
           <li><a href="/docs/components/sidebar/" class="sidebar-link "  aria-current="true" >側邊欄</a></li>
-          <li><a href="/docs/components/select/" class="sidebar-link "  aria-current="true" >下拉式選單</a></li>
-          <li><a href="/docs/components/mobilenavigation/" class="sidebar-link "  aria-current="true" >行動導覽</a></li>
-          <li><a href="/docs/components/tabs/" class="sidebar-link "  aria-current="true" >頁籤面板</a></li>
+          <li><a href="/docs/components/breadcrumb/" class="sidebar-link "  aria-current="true" >麵包屑</a></li>
+          <li><a href="/docs/components/dropdown/" class="sidebar-link "  aria-current="true" >導覽列下拉選單</a></li>
+          <li><a href="/docs/components/header/" class="sidebar-link "  aria-current="true" >頁首</a></li>
           <li><a href="/docs/components/footer/" class="sidebar-link active"  aria-current="true" >頁尾</a></li>
-          <li><a href="/docs/components/button/" class="sidebar-link "  aria-current="true" >按鈕</a></li>
         </ul>
       </div>
     </li>
@@ -159,12 +168,14 @@
   </aside>
 
   <main class="bd-main order-1">
-    <div class="bd-intro ps-lg-4"><h5 style="font-weight: 400; margin-bottom: 0.25rem;">元件</h5><div class="d-md-flex flex-md-row align-items-left justify-content-between">
+    <div class="bd-intro ps-lg-4">
+
+      <div class="d-md-flex flex-md-row align-items-left justify-content-between">
         
-        <h1 id="content" style="font-weight: 900; margin-bottom: 0;">頁尾 Footer</h1>
+        <h1 id="content">頁尾 Footer</h1>
       </div>
-      <h2 style="font-weight: 400; margin-top: 1.5rem; margin-bottom: 1.5rem;">頁尾服務的是那些已到達頁面底部卻一無所獲的使用者。</h2>
-      <hr style="margin: 1.5rem 0;">
+      <p style="font-size: 1.5rem">所有頁面都共用的網頁尾端資訊。</p>
+      <hr>
     </div>
 
         
@@ -177,67 +188,38 @@
     <div class="bd-content ps-lg-4">
       
 
-      <h3 id="關於頁尾元件">關於頁尾元件</h3>
+      <h2 id="關於頁尾">關於頁尾</h2>
 <p>頁尾是網站使用者查找服務的最後一站。當整個頁面或網站上的導覽仍舊無法引導使用者到他想要使用的服務時，這是使用者可以來到頁尾做最後的尋找。</p>
-<h3 id="使用規範">使用規範</h3>
-<h4 id="何時該使用頁尾">何時該使用頁尾</h4>
+<h2 id="使用規範">使用規範</h2>
+<h3 id="何時該使用頁尾">何時該使用頁尾</h3>
 <p>每個網站都應該有頁尾。</p>
-<h4 id="如何選擇適合的頁尾">如何選擇適合的頁尾</h4>
+<h3 id="如何選擇適合的頁尾">如何選擇適合的頁尾</h3>
 <p><strong>基本頁尾 Basic footer</strong> 當網站本身的功能較少時，例如任務型網站，則可以選擇使用簡單的基本頁尾即可。您可以依情況加上標章或是社群連結。
 <strong>展開頁尾 Extended footer</strong> 當網站本身的服務項目較多時，例如是一個機關的主要官網，則可以選擇展開頁尾。您可以依情況加上「回上方」的功能，並將項目連結選擇性展開或收納。</p>
-<h4 id="頁尾易用性">頁尾易用性</h4>
+<h3 id="頁尾易用性">頁尾易用性</h3>
 <p><strong>規劃您的頁尾。</strong> 頁尾的內容應該能夠回答使用者關於一個網站或頁面的剩餘的問題（主要問題應都能在頁面內容中得到解答）。請謹慎的規劃頁尾的內容，設想使用者到達頁尾時還可能有哪些疑問，善加利用頁尾作為最後的解惑機會。
 <strong>頁尾不是頁首的拷貝。</strong> 頁尾的內容並不是將頁首所有連結拷貝下來即可，尤其在大型網站上，頁首已經含有許多且極大部分的連結了，請避免將所有連結再次複製到頁尾。
 <strong>避免放不常更新的社群媒體。</strong> 許多機關會在頁尾放社群媒體連結，但若你的有些社群媒體帳號已經不常更新，請避免將它再放到頁尾上，讓使用者做不必要的查找。
 <strong>使用簡短易懂的文字。</strong> 使用簡短的文字，避免使用一般人難以理解的行話或術語。</p>
-<h3 id="設計元件">設計元件</h3>
-<h4 id="基本頁尾-base-footer">基本頁尾 Base footer</h4>
+<h2 id="元件設計">元件設計</h2>
+<h3 id="基本頁尾-base-footer">基本頁尾 Base footer</h3>
+<p>基本款的頁尾由網站基本資訊快速連結與無障礙標章所組成。</p>
 <p><a href="/docs/examples/footers/footer1">範例連結</a></p>
-<h4 id="基本頁尾加連結-base-footer-with-links">基本頁尾加連結 Base footer with links</h4>
-<p><a href="/docs/examples/footers/footer2">範例連結</a></p>
-<h4 id="基本頁尾加標章-base-footer-with-labels">基本頁尾加標章 Base footer with labels</h4>
-<p><a href="/docs/examples/footers/footer3">範例連結</a></p>
-<h4 id="基本頁尾加社群連結-base-footer-with-socials">基本頁尾加社群連結 Base footer with socials</h4>
-<p><a href="/docs/examples/footers/footer4">範例連結</a></p>
-<h4 id="頁尾加服務項目連結-footer-with-service-links">頁尾加服務項目連結 Footer with service links</h4>
+<h3 id="顏色-color">顏色 Color</h3>
+<p>我們提供三種背景色的樣式供選擇。若要自選背景色請注意網站近用性規範。</p>
+<p><a href="/docs/examples/footers/footer2">範例連結</a><br>
+<a href="/docs/examples/footers/footer3">範例連結</a><br>
+<a href="/docs/examples/footers/footer4">範例連結</a></p>
+<h3 id="社群媒體圖示-social-media-icon">社群媒體圖示 Social Media Icon</h3>
+<p>社群媒體可加可不加</p>
 <p><a href="/docs/examples/footers/footer5">範例連結</a></p>
-<h4 id="頁尾加回上方控制-footer-with-back-to-top-control">頁尾加回上方控制 Footer with back to top control</h4>
-<p><a href="/docs/examples/footers/footer6">範例連結</a></p>
-<h4 id="展開頁尾-extended-footer">展開頁尾 Extended Footer</h4>
-<p><a href="/docs/examples/footers/footer7">範例連結</a></p>
 
     </div>
   </main>
 </div>
 
 
-    <footer class="bd-footer py-4 mt-4 bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="d-inline-flex align-items-center mb-2 col-lg-6">
-        <a class="link-dark text-decoration-none" href="/" aria-label="Bootstrap"><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=100 height=100 alt="pdis logo">
-        </a>
-        <div class="d-flex flex-column ms-2">
-          <div class="fs-3 fw-bold"> Public Digital Innovation Space </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <ul class="d-flex justify-content-end align-items-end h-100">
-          <li class="d-inline mx-1">
-            <a href="#">隱私權及資訊安全政策</a>
-          </li>
-          <li class="d-inline mx-1">
-            <a href="#">政府網站資料開放宣告</a>
-          </li>
-          <li class="d-inline mx-1"><img src="/img/accessibility.jpg" width="100" alt="accessibility">
-          </li>
-        </ul>
-      </div>
-      
-    </div>
-  </div>
-</footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>

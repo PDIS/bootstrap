@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="The most popular HTML, CSS, and JS library in the world.">
+<meta name="description" content="顏色常用來溝通意象，我們提供可客製化的顏色系統。">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.1">
 
-<title>顏色 (Color) · PDIS Design System v5.1</title>
+<title>顏色 Colours · PDIS Design System v5.1</title>
 
 <link rel="canonical" href="https://design.pdis.tw/docs/style/color/">
 
@@ -41,14 +41,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="顏色 (Color)">
-<meta name="twitter:description" content="The most popular HTML, CSS, and JS library in the world.">
+<meta name="twitter:title" content="顏色 Colours">
+<meta name="twitter:description" content="顏色常用來溝通意象，我們提供可客製化的顏色系統。">
 <meta name="twitter:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
 <meta property="og:url" content="https://design.pdis.tw/docs/style/color/">
-<meta property="og:title" content="顏色 (Color)">
-<meta property="og:description" content="The most popular HTML, CSS, and JS library in the world.">
+<meta property="og:title" content="顏色 Colours">
+<meta property="og:description" content="顏色常用來溝通意象，我們提供可客製化的顏色系統。">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
@@ -83,7 +83,7 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link "
-            href="/intro/">介紹</a>
+            href="/docs/overview/">概述</a>
         </li>
         <li class="nav-item">
           <a class="nav-link  active" aria-current="true"
@@ -93,14 +93,7 @@
           <a class="nav-link "
             href="/docs/components/">元件</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link "
-            href="/manual/">使用說明</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled text-muted"
-            href="/docs/">製作過程</a>
-        </li>
+
       </ul>
 
       
@@ -119,17 +112,30 @@
     <nav class="sidebar" id="sidebar">
   <ul class="sidebar-body">
     <li>
+      <button class="sidebar-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#overview-collapse" aria-expanded="false"
+       aria-controls="overview-collapse" id="overview-header">
+        概述
+      </button>
+      <div class="collapse  collapse" aria-labelledby="overview-header" data-bs-parent="#sidebar" id="overview-collapse">
+        <ul class="sidebar-menu">
+          <li><a href="/docs/overview/introduction/" class="sidebar-link " >介紹</a></li>
+          <li><a href="/docs/overview/guildline/" class="sidebar-link " >設計規範</a></li>
+          <li><a href="/docs/overview/accessibility/" class="sidebar-link " >可近用性</a></li>
+          <li><a href="/docs/overview/setup/" class="sidebar-link " >安裝教學</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
       <button class="sidebar-button " type="button" data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="true"
        aria-current="true"  aria-controls="style-collapse" id="style-header">
         風格
       </button>
       <div class="collapse  show collapse" aria-labelledby="style-header" data-bs-parent="#sidebar" id="style-collapse">
         <ul class="sidebar-menu">
-          <li><a href="/docs/style/accessibility/" class="sidebar-link "  aria-current="true" >無障礙</a></li>
           <li><a href="/docs/style/color/" class="sidebar-link active"  aria-current="true" >顏色</a></li>
-          <li><a href="/docs/style/layout/" class="sidebar-link "  aria-current="true" >版面配置</a></li>
           <li><a href="/docs/style/typography/" class="sidebar-link "  aria-current="true" >文字屬性</a></li>
-          <li><a href="/docs/style/spacing/" class="sidebar-link "  aria-current="true" >間距</a></li>
+          <li><a href="/docs/style/icons/" class="sidebar-link "  aria-current="true" >圖標</a></li>
+          <li><a href="/docs/style/layout/" class="sidebar-link "  aria-current="true" >排版</a></li>
         </ul>
       </div>
     </li>
@@ -140,16 +146,19 @@
       </button>
       <div class="collapse  collapse" aria-labelledby="components-header" data-bs-parent="#sidebar" id="components-collapse">
         <ul class="sidebar-menu">
-          <li><a href="/docs/components/header/" class="sidebar-link " >頁首</a></li>
+          <li><a href="/docs/components/button/" class="sidebar-link " >按鈕</a></li>
+          <li><a href="/docs/components/badge/" class="sidebar-link " >標籤</a></li>
           <li><a href="/docs/components/card/" class="sidebar-link " >卡片</a></li>
           <li><a href="/docs/components/list/" class="sidebar-link " >列表</a></li>
+          <li><a href="/docs/components/tabs/" class="sidebar-link " >頁籤</a></li>
           <li><a href="/docs/components/accordion/" class="sidebar-link " >手風琴</a></li>
+          <li><a href="/docs/components/input/" class="sidebar-link " >輸入欄位</a></li>
+          <li><a href="/docs/components/select/" class="sidebar-link " >選擇功能表</a></li>
           <li><a href="/docs/components/sidebar/" class="sidebar-link " >側邊欄</a></li>
-          <li><a href="/docs/components/select/" class="sidebar-link " >下拉式選單</a></li>
-          <li><a href="/docs/components/mobilenavigation/" class="sidebar-link " >行動導覽</a></li>
-          <li><a href="/docs/components/tabs/" class="sidebar-link " >頁籤面板</a></li>
+          <li><a href="/docs/components/breadcrumb/" class="sidebar-link " >麵包屑</a></li>
+          <li><a href="/docs/components/dropdown/" class="sidebar-link " >導覽列下拉選單</a></li>
+          <li><a href="/docs/components/header/" class="sidebar-link " >頁首</a></li>
           <li><a href="/docs/components/footer/" class="sidebar-link " >頁尾</a></li>
-          <li><a href="/docs/components/button/" class="sidebar-link " >按鈕</a></li>
         </ul>
       </div>
     </li>
@@ -159,12 +168,14 @@
   </aside>
 
   <main class="bd-main order-1">
-    <div class="bd-intro ps-lg-4"><h5 style="font-weight: 400; margin-bottom: 0.25rem;">風格</h5><div class="d-md-flex flex-md-row align-items-left justify-content-between">
+    <div class="bd-intro ps-lg-4">
+
+      <div class="d-md-flex flex-md-row align-items-left justify-content-between">
         
-        <h1 id="content" style="font-weight: 900; margin-bottom: 0;">顏色 (Color)</h1>
+        <h1 id="content">顏色 Colours</h1>
       </div>
-      <h2 style="font-weight: 400; margin-top: 1.5rem; margin-bottom: 1.5rem;"></h2>
-      <hr style="margin: 1.5rem 0;">
+      <p style="font-size: 1.5rem">顏色常用來溝通意象，我們提供可客製化的顏色系統。</p>
+      <hr>
     </div>
 
         
@@ -177,47 +188,74 @@
     <div class="bd-content ps-lg-4">
       
 
-      <h2 id="規範">規範</h2>
-<h3 id="色彩對比度">色彩對比度</h3>
-<p>在替所製作的數位系統選用色彩時，我們必須符合色彩對比度 WCAG AA 等級或更高級別。以下列出幾個可以用來檢查對比度是否足夠的工具：
-<a href="https://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333">Snook.ca 顏色對比檢查</a>，<a href="https://webaim.org/resources/contrastchecker/">Webaim 顏色對比檢查器</a>、<a href="https://www.tpgi.com/color-contrast-checker/">TPG 顏色對比分析器</a>、<a href="https://contrast-ratio.com">對比度網站-Contrast ratio</a> 或 <a href="https://support.google.com/accessibility/android/answer/6376570?hl=en-GB">Android 無障礙掃描工具</a>。</p>
-<p>要注意的是，字型大小也會是影響對比度的變因。舉例來說，有時雖然文字色與背景色通過上述色彩對比度檢測，但若文字的字型縮小時，雖顏色不變，可能必須得將字重加大才能通過對比度檢測。您可以使用下列工具來檢查：<a href="https://color.adobe.com/create/color-contrast-analyzer">Adobe 色彩對比度分析器</a>。</p>
-<h2 id="參考顏色">參考顏色</h2>
-<p>我們沿用 Bootstrap 的所有色票，並加上一組由台灣元素發想的色票。所有的顏色組合皆符合色彩對比度的規定。</p>
-<p><img class="img-fluid" src="https://i.imgur.com/CJlbEVO.png" ></p>
+      <h3 id="關於顏色">關於顏色</h3>
+<h4 id="符合近用性的顏色系統">符合近用性的顏色系統</h4>
+<p>在選擇顏色時，選擇符合近用性的顏色系統是非常重要的。依據<a href="https://accessibility.ncc.gov.tw/Home/Info">國發會的網頁無障礙指引</a>，要達到 AA 等級的色彩對比度標準詳列在<a href="https://accessibility.ncc.gov.tw/Accessible/Detail/4461?Category=68#1.4.3">成功準則1.4.3：對比值(最小) (檢測等級AA)</a>，文字與背景色彩對比值必須充分，衡量標準整理如下：</p>
+<ul>
+<li>大尺寸文字(及影像文字)與文字後面的背景間，至少有 3:1 的對比值</li>
+<li>文字(及影像文字)與文字後面的背景間，至少有 4.5:1 的對比值</li>
+</ul>
+<p>要注意的是，字型大小也會是影響對比度的變因。舉例來說，有時雖然文字色與背景色通過上述色彩對比度檢測，但若文字的字型縮小時，雖顏色不變，可能必須得將字重加大才能通過對比度檢測。</p>
+<p>在替所製作的數位系統選擇顏色時，我們必須符合色彩對比度 WCAG AA 等級或更高級別。舉例來說，文字內容與背景的色彩對比度要到 4.5 : 1，而大尺寸文字要到 3:1，以確保使用者能迅速的辨識內容，以達成無障礙的視覺體驗。</p>
+<p>一般的設計系統皆在選色時大量使用輔助工具如 <a href="https://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333">Snook.ca</a> 顏色對比檢查、<a href="https://webaim.org/resources/contrastchecker/">Webaim 顏色對比檢查器</a>、<a href="https://www.tpgi.com/color-contrast-checker/"> TPG 顏色對比分析器等等</a>，確保該設計系統所選擇的顏色系統符合近用性。</p>
+<h4 id="可客製化的顏色系統">可客製化的顏色系統</h4>
+<p>在機關製作數位系統時，顏色的選用常代表著一個機關想要對外呈現的意象。每個機關想要溝通的意象不盡相同，因此我們將 PDIS 設計系統的顏色設置為一個<strong>可客製化的顏色系統</strong>。</p>
+<h3 id="範例卡片元件">範例：卡片元件</h3>
+<p>舉例來說，若選擇藍色系的 #2C5AB4 作為品牌色，黃色系的 #705D00 作為次品牌色，卡片元件將會如圖所示。若替換成另一組品牌色，卡片元件上的元件分佈將依原有邏輯自動替換。可以發現，背景色與文字色也將各自替換成符合近用性標準的色階，符合無障礙的視覺體驗。</p>
+<img class="img-fluid" src="/docs/5.1/assets/img/colour-demo.png">
+<h3 id="顏色系統-colour-system">顏色系統 Colour System</h3>
+<h4 id="pdis-顏色系統">PDIS 顏色系統</h4>
+<p>PDIS 提供一套顏色系統，包含由七大主色 (Key colour) 與十三色階條 (Tonal strip) 所組成的色階盤 (Colour palette)、以及從色階盤上挑選定義形成的色彩配置 (Colour Scheme)。</p>
+<p>我們提供的是可客製化的顏色系統，也就是說機關與製作廠商可以自由的選擇最具代表性的主題色作為主色。我們參考 <a href="https://m3.material.io/">Material Design 3</a> 的選色原則，從主題色 (theme colour)、系統色 (system colour)、中和色 (neutral colour) 三個主色 (key colour) 類別的挑選開始。並建議各機關使用 <a href="https://material-foundation.github.io/material-theme-builder/#/custom">Material Theme Builder</a>，將顏色的色階展開，作為顏色系統的起始基礎。這些工具的使用非常方便，可以直接看到顏色系統的選色結果並自行調整。如此一來，機關與廠商既能自由選色，方便的製作出一套實用的色階盤。</p>
+<p>定義出色階盤之後的下一步便是產生色彩配置，在色彩配置中，每個顏色有其意義與適用的情境，而此設計系統中的所有元件都遵守這些使用情境指派色彩，並且遵守近用性的視覺體驗。</p>
+<p>也就是說，這樣環環相扣的設計，能夠幫助您自行選擇的色階盤自動套用到我們所設計的所有元件上，又能符合近用性規範以達成無障礙的視覺體驗。</p>
+<p>接下來，我們會提供一套示範的色階盤，同時一步步說明您可以如何定調個人化的顏色系統。</p>
+<h3 id="示範產生色階盤以-pdis-色階盤為例">示範產生色階盤：以 PDIS 色階盤為例</h3>
+<p>色階盤 (Colour palette) 由七大主色 (Key colour) 與十三色階條 (Tonal strip) 所組成，建構出一個共 91 個色票的調色盤。</p>
+<h4 id="主色選定">主色選定</h4>
+<ul>
+<li>品牌色 Brand Colour</li>
+</ul>
+<p>品牌色也是一般的主題色，是一個系統的整體給人第一印象的主題顏色。我們的顏色系統允許兩個主題色，一個為主要品牌色，一個為次要品牌色。品牌色會分布在各式各樣的元件上，最常出現在需要使用者互動或是給予注意的地方，例如送出按鈕、頁籤面板上被選定的頁籤等等。</p>
+<ul>
+<li>中和色 Neutral Colour</li>
+</ul>
+<p>中和色常是用來生成元件背景色或是整個頁面的背景色的顏色。通常由彩度較低、灰色含量較多的低彩度顏色組成。我們的顏色系統僅包含一個中和色。</p>
+<ul>
+<li>系統色 System Colour</li>
+</ul>
+<p>系統色是功能型顏色，我們的顏色系統中會需要定義四種系統色，分別帶有正向 (Positive)、負向 (Negative)、資訊 (Information) 與警告 (Warning) 的功能。</p>
+<h4 id="色階條">色階條</h4>
+<p>色階條由十三個色階組成，包含黑色與白色。色階 100 代表白色，色階 0 則代表黑色。在這之間的其他十一個顏色，個別代表了該主色在 0 到 100 之間相對應色階位置的明度。也就是說，的色階數值反應了該主色的明度。</p>
+<img class="img-fluid" src="/docs/5.1/assets/img/palette.png">
+<h3 id="從主色到色階盤">從主色到色階盤</h3>
+<p>每個主色的選擇皆可以自動生成 0 到 100 共十三個色階的色階條。將每個主色都跑過一次這個流程，便能將 7 個主色各生成十三個色階的色階條，總共便產生 91 個色票的色階盤。</p>
+<img class="img-fluid" src="/docs/5.1/assets/img/Colour-Palettes.png">
+<h3 id="定調客製化的顏色系統">定調客製化的顏色系統</h3>
+<p>到這一個步驟，您若想要客製化屬於您的顏色系統，已經可以著手製作了。細節步驟請參考：<a href="https://color.pdis.tw">客製化色階盤</a>。</p>
+<h3 id="從色階盤到色彩配置">從色階盤到色彩配置</h3>
+<p>色階盤上的顏色基本上是可以運用的，同時間我們的元件接遵守某一種特定的色彩配置，指派適合的顏色到元件的不同位置上以符合進用性的色彩對比度。您可以調整色階將對比度拉大，但不建議選擇會讓對比度減少的顏色組合。色彩配置的用意在於將顏色的角色的定義出來，方便將特定色階的色彩配置到適合的元件位置上。</p>
+<h3 id="示範產生色彩配置以-pdis-色彩配置為例">示範產生色彩配置：以 PDIS 色彩配置為例</h3>
+<img class="img-fluid" src="/docs/5.1/assets/img/color-schemes.png">
+<p>以品牌色 (Brand colour) 來說，</p>
+<ul>
+<li>Brand： 品牌色，用在重要的動作提示上（如：送出按鈕）。</li>
+<li>On-brand：用在重要動作上的文字（如：「送出」字樣）</li>
+<li>Brand flat：用在比起重要動作稍微次要的提示（如：取消按鈕）</li>
+<li>On brand flat：用在次要動作提示上的文字（如：「取消」字樣）</li>
+</ul>
+<p>中和色 (Neutral) 常用於背景色或是區塊型元件的底色，例如卡片的底色。 在色彩配置的命名上，我們用背景色 (Background) 與底色 (Surface) 來區分。On-Surface 與 On Background 則用高對比度的中和色為基礎，常用在文字或是文字圖標上。</p>
+<p>色彩配置賦予了色階盤上每個顏色的角色並位置命名。這樣的做法就像是發給每個顏色一個令牌 (token) ，並讓令牌名稱上意涵的角色寄託到個別顏色上。這樣的做法比起直接寫定色碼到元件上更有系統也添加了色彩替換的彈性。這樣的做法常用在可以客製化的色彩系統中，或是在處理亮暗色系 (light mode and dark mode) 的情境。在 PDIS 的色彩系統中，我們沿用 Material Design 3 的邏輯，詳細考慮色彩的客製化與網站近用性規範，讓開發團隊既可自行選色、自動套用到所有元件，又能符合近用性規範以達成無障礙的視覺體驗。</p>
+<h3 id="客製化色階盤-customised-colour-palletes">客製化色階盤 Customised Colour Palletes</h3>
+<p>藉由互動選色器，您可以自訂品牌色並定調客製化的色階盤。</p>
+<p><a href="https://color.pdis.tw">請點我</a></p>
 
     </div>
   </main>
 </div>
 
 
-    <footer class="bd-footer py-4 mt-4 bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="d-inline-flex align-items-center mb-2 col-lg-6">
-        <a class="link-dark text-decoration-none" href="/" aria-label="Bootstrap"><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=100 height=100 alt="pdis logo">
-        </a>
-        <div class="d-flex flex-column ms-2">
-          <div class="fs-3 fw-bold"> Public Digital Innovation Space </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <ul class="d-flex justify-content-end align-items-end h-100">
-          <li class="d-inline mx-1">
-            <a href="#">隱私權及資訊安全政策</a>
-          </li>
-          <li class="d-inline mx-1">
-            <a href="#">政府網站資料開放宣告</a>
-          </li>
-          <li class="d-inline mx-1"><img src="/img/accessibility.jpg" width="100" alt="accessibility">
-          </li>
-        </ul>
-      </div>
-      
-    </div>
-  </div>
-</footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>

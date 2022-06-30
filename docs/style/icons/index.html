@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="文字是溝通的基調，它的無所不在也承載了整個產品的基本質感。">
+<meta name="description" content="在文字的附近，協助其溝通意涵。">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.1">
 
-<title>文字屬性 Typography · PDIS Design System v5.1</title>
+<title>圖標 Icons · PDIS Design System v5.1</title>
 
-<link rel="canonical" href="https://design.pdis.tw/docs/style/typography/">
+<link rel="canonical" href="https://design.pdis.tw/docs/style/icons/">
 
 
 
@@ -41,14 +41,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="文字屬性 Typography">
-<meta name="twitter:description" content="文字是溝通的基調，它的無所不在也承載了整個產品的基本質感。">
+<meta name="twitter:title" content="圖標 Icons">
+<meta name="twitter:description" content="在文字的附近，協助其溝通意涵。">
 <meta name="twitter:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://design.pdis.tw/docs/style/typography/">
-<meta property="og:title" content="文字屬性 Typography">
-<meta property="og:description" content="文字是溝通的基調，它的無所不在也承載了整個產品的基本質感。">
+<meta property="og:url" content="https://design.pdis.tw/docs/style/icons/">
+<meta property="og:title" content="圖標 Icons">
+<meta property="og:description" content="在文字的附近，協助其溝通意涵。">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
@@ -133,8 +133,8 @@
       <div class="collapse  show collapse" aria-labelledby="style-header" data-bs-parent="#sidebar" id="style-collapse">
         <ul class="sidebar-menu">
           <li><a href="/docs/style/color/" class="sidebar-link "  aria-current="true" >顏色</a></li>
-          <li><a href="/docs/style/typography/" class="sidebar-link active"  aria-current="true" >文字屬性</a></li>
-          <li><a href="/docs/style/icons/" class="sidebar-link "  aria-current="true" >圖標</a></li>
+          <li><a href="/docs/style/typography/" class="sidebar-link "  aria-current="true" >文字屬性</a></li>
+          <li><a href="/docs/style/icons/" class="sidebar-link active"  aria-current="true" >圖標</a></li>
           <li><a href="/docs/style/layout/" class="sidebar-link "  aria-current="true" >排版</a></li>
         </ul>
       </div>
@@ -172,9 +172,9 @@
 
       <div class="d-md-flex flex-md-row align-items-left justify-content-between">
         
-        <h1 id="content">文字屬性 Typography</h1>
+        <h1 id="content">圖標 Icons</h1>
       </div>
-      <p style="font-size: 1.5rem">文字是溝通的基調，它的無所不在也承載了整個產品的基本質感。</p>
+      <p style="font-size: 1.5rem">在文字的附近，協助其溝通意涵。</p>
       <hr>
     </div>
 
@@ -188,156 +188,111 @@
     <div class="bd-content ps-lg-4">
       
 
-      <h2 id="關於文字屬性">關於文字屬性</h2>
-<p>文字是最常出現的元素，它的無所不在也代表了整個產品的基本質感。在數位系統中，文字的出現常常代表著頁面上 80% - 90% 的資訊，其他 10% - 20% 可能是視覺引導。雖然文字所承載的的資訊量存在於文字內容而非樣式，但文字的樣式與屬性卻可以大大的影響使用者的閱讀舒適度、閱讀時的情緒。文字屬性乘載著數位產品的溝通基調，而政府網站的文字屬性應該是明確的、理性的、清晰的。</p>
-<p>在設計數位系統時，文字內容中的每行字句（例如標題、副標題與內文）的樣式會呈現出所謂的文字情緒、文字聲音與文字氛圍。文字屬性的重要性在於給出一個架構，例如讓同樣層級的文字帶有同樣的樣式，保持整體介面的易讀性。PDIS 設計系統所採用的文字屬性著重於使用者的可讀性與介面整體的易讀性，我們注意一個頁面中標題與內文的可辨認性、段落與段落之間保持可以換氣、呼吸的空間，並注意跨頁面之間標題樣式的一致性、內文樣式的一致性。</p>
-<h2 id="預設字型家族-font-family">預設字型家族 Font Family</h2>
-<p>市面上有許多開源的字體是適合螢幕使用的，本設計系統預設採用的中文字體是 <code>Noto Sans TC</code>，英文字體則是 <code>Noto Sans</code>。</p>
-<h2 id="修改字型家族">修改字型家族</h2>
-<p>您可以自由選用適合的字體，方式如下：</p>
-<p>我們沿用bootstrap variable的設定</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="na">--bs-body-font-family</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-font-sans-serif</span><span class="p">);</span>
-</code></pre></div><p>其中 <code>--bs-body-font-family</code> 為 bootstrap 定義的變數，更改此參數即可改變網站的字體設定，而由上述程式碼所知 <code>--bs-body-font-family</code> 的值為 <code>--bs-font-sans-serif</code>，因此只需在<code>css</code>裡覆蓋掉變數 <code>--bs-font-sans-serif</code> 即可。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">//範例
-</span><span class="c1"></span><span class="na">--bs-font-sans-serif</span><span class="o">:</span> <span class="s2">&#34;Noto Sans&#34;</span><span class="o">,</span> <span class="s2">&#34;Noto Sans TC&#34;</span><span class="o">,</span> <span class="ni">sans-serif</span><span class="p">;</span>
-</code></pre></div><p>需注意的是，我們跟隨國發會的建議，避免使用標楷體，原因如下：</p>
-<p>根據國發會網站管理規範指出：政府機關的文件習慣以標楷體編排，但小字型的標楷體在螢幕顯示往往不夠清楚，建議網頁設計者或網頁內容維護者在製作網頁時，取消原訂公文的標楷體格式，檔案或列印版本的公文則另行提供。</p>
-<h3 id="字級系統-typescale">字級系統 Typescale</h3>
-<p>這個示範性的字級系統全數使用 Noto Sans TC 字體（英文則使用 Noto Sans)。</p>
-<table class="table">
-<thead>
-<tr>
-<th>Design Token</th>
-<th>font-size</th>
-<th>font-weight</th>
-<th>line-height</th>
-<th>example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Display/Large</td>
-<td>3.5625rem</td>
-<td>400</td>
-<td>4rem</td>
-<td><div class="display-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Display/Medium</td>
-<td>2.8125rem</td>
-<td>400</td>
-<td>3.25rem</td>
-<td><div class="display-text">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Display/Small</td>
-<td>2.25rem</td>
-<td>400</td>
-<td>2.75rem</td>
-<td><div class="display-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Heading/Large</td>
-<td>2rem</td>
-<td>400</td>
-<td>2.5rem</td>
-<td><div class="heading-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Heading/Medium</td>
-<td>1.75rem</td>
-<td>400</td>
-<td>2.25rem</td>
-<td><div class="heading-text">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Heading/Small</td>
-<td>1.5rem</td>
-<td>400</td>
-<td>2rem</td>
-<td><div class="heading-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Title/Large</td>
-<td>1.375rem</td>
-<td>500</td>
-<td>1.75rem</td>
-<td><div class="title-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Title/Medium</td>
-<td>1.125rem</td>
-<td>500</td>
-<td>1.5rem</td>
-<td><div class="title-text">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Title/Small</td>
-<td>1rem</td>
-<td>500</td>
-<td>1.25rem</td>
-<td><div class="title-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Body/Large</td>
-<td>1.125rem</td>
-<td>400</td>
-<td>1.6875rem</td>
-<td><div class="body-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Body/Medium</td>
-<td>1rem</td>
-<td>400</td>
-<td>1.5rem</td>
-<td><div class="body-text">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Body/Small</td>
-<td>0.75rem</td>
-<td>400</td>
-<td>100%</td>
-<td><div class="body-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Body/Medium(Links)</td>
-<td>1rem</td>
-<td>500</td>
-<td>1.5rem</td>
-<td><a href="#">人皆生而自由；在尊嚴及權利上均各平等。</a></td>
-</tr>
-<tr>
-<td>Body/Medium(SecondaryLinks)</td>
-<td>1rem</td>
-<td>400</td>
-<td>1.5rem</td>
-<td><a href="#">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Label/Large</td>
-<td>1rem</td>
-<td>500</td>
-<td>1.5rem</td>
-<td><div class="label-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Label/Medium</td>
-<td>0.875rem</td>
-<td>500</td>
-<td>1.25rem</td>
-<td><div class="label-text">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-<tr>
-<td>Label/Small</td>
-<td>0.75rem</td>
-<td>500</td>
-<td>1rem</td>
-<td><div class="label-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
-</tr>
-</tbody>
-</table>
-
-
+      <h2 id="關於圖示">關於圖示</h2>
+<p>圖示是一種在文字附近的視覺加強，通常用來幫助重述文字的意涵。除此之外，圖示也可以用來表達目前狀態或引導使用者進行某個動作，或是給予使用者動作之後的回饋。</p>
+<h2 id="預設圖示">預設圖示</h2>
+<p>本設計系統元件直接沿用 <a href="https://icons.getbootstrap.com">Bootstrap Icons</a>，您可自行選用其他圖示庫 (icon library) 或自製 Icon 替換。在為元件替換 Icon 時請參考元件頁面的圖示大小 (size) 設計，注意不要放過大或過小的 Icon。</p>
+<h2 id="圖示易用性">圖示易用性</h2>
+<p><strong>風格一致性</strong> 讓您製作的整個網站使用類似風格的圖示，能降低使用者的學習成本，幫助他們更順利的使用您的網站。</p>
+<p><strong>站內圖示一致性</strong> 試著注意在您的網站上不同位置、頁面所使用的圖示一致性，這能減少使用者的認知負荷，幫助他們看過幾次圖示便能記得其代表的意涵。</p>
+<h2 id="範例圖示一致性">範例：圖示一致性</h2>
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4 g-3">
+    <div class="card elevated">
+      <img
+        src="/docs/5.1/assets/img/Icon_02.png"
+        class="card-img-top"
+        alt="..." style="aspect-ratio: 3/2;"
+      />
+      <div class="card-body">
+        <div class="badge-group">
+            <span class="badge bg-positive-flat"><i class="bi bi-check-lg"></i><span>Do</span></span>
+        </div>
+        <div class="card-text">圖示用來輔助文字的溝通。</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 g-3">
+    <div class="card elevated">
+      <img
+        src="/docs/5.1/assets/img/Icon_01.png"
+        class="card-img-top"
+        alt="..." style="aspect-ratio: 3/2"
+      />
+      <div class="card-body">
+        <div class="badge-group">
+            <span class="badge bg-negative-flat"><i class="bi bi-x-lg"></i><span>Don't</span></span>
+        </div>
+        <div class="card-text">過多的圖示變化反而容易加重認知負荷</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row d-flex justify-content-center">
+  <div class="col-md-4 g-3">
+    <div class="card elevated">
+      <img
+        src="/docs/5.1/assets/img/Icon_04.png"
+        class="card-img-top"
+        alt="..." style="aspect-ratio: 4/3;"
+      />
+      <div class="card-body">
+        <div class="badge-group">
+            <span class="badge bg-positive-flat"><i class="bi bi-check-lg"></i><span>Do</span></span>
+        </div>
+        <div class="card-text">類似意涵的地方用一樣的圖示有助於引導使用者迅速判斷。</div>
+      </div>
+    </div>
+  </div>
+    <div class="col-md-4 g-3">
+    <div class="card elevated">
+      <img
+        src="/docs/5.1/assets/img/Icon_03.png"
+        class="card-img-top"
+        alt="..." style="aspect-ratio: 4/3"
+      />
+      <div class="card-body">
+        <div class="badge-group">
+            <span class="badge bg-negative-flat"><i class="bi bi-x-lg"></i><span>Don't</span></span>
+        </div>
+        <div class="card-text">用有些許差別的圖示表示類似的意涵容易加重認知負荷。</div>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="範例圖示風格一致性">範例：圖示風格一致性</h2>
+<div class="row d-flex justify-content-center">
+  <div class="col-md-6 g-3">
+    <div class="card elevated">
+      <img
+        src="/docs/5.1/assets/img/Icon_05.png"
+        class="card-img-top"
+        alt="..." style="aspect-ratio: 3/1;"
+      />
+      <div class="card-body">
+        <div class="badge-group">
+            <span class="badge bg-positive-flat"><i class="bi bi-check-lg"></i><span>Do</span></span>
+        </div>
+        <div class="card-text">Icon 風格都用視覺上一致的框線風格，且四個 Icon 的留白處比例都差不多。</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 g-3">
+    <div class="card elevated">
+      <img
+        src="/docs/5.1/assets/img/Icon_06.png"
+        class="card-img-top"
+        alt="..." style="aspect-ratio: 3/1"
+      />
+      <div class="card-body">
+        <div class="badge-group">
+            <span class="badge bg-negative-flat"><i class="bi bi-x-lg"></i><span>Don't</span></span>
+        </div>
+        <div class="card-text">有的 Icon 使用黑色填滿風格，有的 Icon 使用無填滿框線風格。</div>
+      </div>
+    </div>
+  </div>
+</div>
     </div>
   </main>
 </div>

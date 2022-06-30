@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="一個網站的第一印象，提供一目瞭然的整理架構。">
+<meta name="description" content="麵包屑協助導航，幫助使用者知道自己現在正在瀏覽整個網站中的哪個頁面。">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="5.1">
 
-<title>頁首 Header · PDIS Design System v5.1</title>
+<title>麵包屑 Breadcrumb · PDIS Design System v5.1</title>
 
-<link rel="canonical" href="https://design.pdis.tw/docs/components/header/">
+<link rel="canonical" href="https://design.pdis.tw/docs/components/breadcrumb/">
 
 
 
@@ -41,14 +41,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
-<meta name="twitter:title" content="頁首 Header">
-<meta name="twitter:description" content="一個網站的第一印象，提供一目瞭然的整理架構。">
+<meta name="twitter:title" content="麵包屑 Breadcrumb">
+<meta name="twitter:description" content="麵包屑協助導航，幫助使用者知道自己現在正在瀏覽整個網站中的哪個頁面。">
 <meta name="twitter:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://design.pdis.tw/docs/components/header/">
-<meta property="og:title" content="頁首 Header">
-<meta property="og:description" content="一個網站的第一印象，提供一目瞭然的整理架構。">
+<meta property="og:url" content="https://design.pdis.tw/docs/components/breadcrumb/">
+<meta property="og:title" content="麵包屑 Breadcrumb">
+<meta property="og:description" content="麵包屑協助導航，幫助使用者知道自己現在正在瀏覽整個網站中的哪個頁面。">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
@@ -155,9 +155,9 @@
           <li><a href="/docs/components/input/" class="sidebar-link "  aria-current="true" >輸入欄位</a></li>
           <li><a href="/docs/components/select/" class="sidebar-link "  aria-current="true" >選擇功能表</a></li>
           <li><a href="/docs/components/sidebar/" class="sidebar-link "  aria-current="true" >側邊欄</a></li>
-          <li><a href="/docs/components/breadcrumb/" class="sidebar-link "  aria-current="true" >麵包屑</a></li>
+          <li><a href="/docs/components/breadcrumb/" class="sidebar-link active"  aria-current="true" >麵包屑</a></li>
           <li><a href="/docs/components/dropdown/" class="sidebar-link "  aria-current="true" >導覽列下拉選單</a></li>
-          <li><a href="/docs/components/header/" class="sidebar-link active"  aria-current="true" >頁首</a></li>
+          <li><a href="/docs/components/header/" class="sidebar-link "  aria-current="true" >頁首</a></li>
           <li><a href="/docs/components/footer/" class="sidebar-link "  aria-current="true" >頁尾</a></li>
         </ul>
       </div>
@@ -172,44 +172,64 @@
 
       <div class="d-md-flex flex-md-row align-items-left justify-content-between">
         
-        <h1 id="content">頁首 Header</h1>
+        <h1 id="content">麵包屑 Breadcrumb</h1>
       </div>
-      <p style="font-size: 1.5rem">一個網站的第一印象，提供一目瞭然的整理架構。</p>
+      <p style="font-size: 1.5rem">麵包屑協助導航，幫助使用者知道自己現在正在瀏覽整個網站中的哪個頁面。</p>
       <hr>
     </div>
 
         
-    <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted" style="visibility: hidden;">
-      <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
-      
-    </div>
-    
 
     <div class="bd-content ps-lg-4">
       
 
-      <h2 id="關於頁首元件">關於頁首元件</h2>
-<p>頁首是一個網站的第一印象，一個好的頁首能提供使用者一目瞭然的整理，幫助使用者對網站的架構與規模有概念。清楚的架構能夠幫助使用者辨認出所在位置，並且被迅速地引導到達特定頁面。另一方面，頁首也扮演者當使用者迷路時可以總是找到並回到的地方。</p>
+      <h2 id="關於麵包屑">關於麵包屑</h2>
+<p>麵包屑標示的是目前正在瀏覽的頁面在整個網站架構中的位置。他看起來像是個可以回到首頁的路徑，指引出若想要回到首頁，中間會經過的各個頁面。使用者也可以直接從麵包屑上直接回到首頁，不必透過「回上頁」一層層回溯。麵包屑的主要功能是導航用，協助使用者在除了導覽列以外的輔助性導覽機制。</p>
 <h2 id="使用規範">使用規範</h2>
-<h3 id="何時該使用頁首">何時該使用頁首</h3>
-<p>每個網站都應該有頁首。</p>
-<h3 id="頁首易用性">頁首易用性</h3>
-<p><strong>只將最重要的部分放在頁首。</strong> 組織結構、服務一覽或是使用者較不常用但也存在的服務建議放在頁尾。
-<strong>避免組織結構導航。</strong> 不要在頁首直接列出您的機構的組織結構。相反地，根據由使用者最常用服務、最常點的連結來建構您的頁首。
-<strong>使用簡短易懂的文字。</strong> 使用簡短的文字，避免使用一般人難以理解的行話或術語。</p>
+<h3 id="何時該使用麵包屑">何時該使用麵包屑</h3>
+<ul>
+<li><strong>網站架構佔有某種重要的意義。</strong> 有時候使用者是透過站內搜尋或是外部連結到達網站內的某一頁面，當這個頁面是存在與整個網站的介曾架構，且其架構涵有其本質上的意義時，適合使用麵包屑來輔助導航。</li>
+<li><strong>輔助導航。</strong> 麵包屑的存在可以幫助使用者更直接的了解整個網站的層級架構，特別在規模較大、層級較為複雜的網站，妥善地使用麵包屑可以加強宣導網站的架構與期規劃背後的邏輯。</li>
+</ul>
+<h3 id="何時該考慮使用其他元件">何時該考慮使用其他元件</h3>
+<ul>
+<li><strong>簡易網站。</strong> 當網站是非常簡單的架構時，使用麵包屑的意義不大。</li>
+<li><strong>首頁。</strong> 首頁不適合使用麵包屑。</li>
+<li><strong>導覽元件清楚。</strong> 網頁導覽已經非常清楚時，使用麵包屑的意義不大。</li>
+<li><strong>顯示連貫步驟。</strong> 若是要顯示第一步驟、第二步驟這樣的線性動作，請考慮使用 stepper 類型的元件。麵包屑適合的是層級關係的展現，不是線性動作的說明。</li>
+</ul>
+<h3 id="近用性">近用性</h3>
+<ul>
+<li>用 <code>&lt;nav&gt;</code> 標籤，易於讀報軟體閱讀。</li>
+<li>在 <code>&lt;nav</code>&gt; 裡面加 <code>aria-label=&quot;Breadcrumbs&quot;</code>，當頁加上 <code>aria-current=&quot;page&quot;</code></li>
+<li>用 <code>aria-label=&quot;true&quot;</code> 將分隔器隱藏，不讓讀報軟體讀到。</li>
+</ul>
 <h2 id="元件設計">元件設計</h2>
-<h3 id="基本頁首-basic-header">基本頁首 Basic Header</h3>
-<p>基本頁首包括網站名稱、服務項目下拉式選單與內容連結、以及搜尋列與網站設定。預設的語言設定選單是多語言。調整視窗寬度檢視響應式 (RWD) 設計，或從手機觀看此網頁檢視效果。值得注意的是，手機上的頁首會將搜尋列的部分放置在最上方，這是依循一般手機使用者的習慣。</p>
-<p><a href="/docs/examples/headers/header1">範例連結</a></p>
-<h3 id="語言設定-language-setting">語言設定 Language Setting</h3>
-<p>雙語或多語選單</p>
-<p><a href="/docs/examples/headers/header2">範例連結</a><br>
-<a href="/docs/examples/headers/header3">範例連結</a></p>
-<h3 id="頁底色-background-color">頁底色 Background Color</h3>
-<p>三種不同底色</p>
-<p><a href="/docs/examples/headers/header4">範例連結</a><br>
-<a href="/docs/examples/headers/header5">範例連結</a><br>
-<a href="/docs/examples/headers/header6">範例連結</a><br></p>
+<h3 id="基本麵包屑-basic-breadcrumb">基本麵包屑 Basic Breadcrumb</h3>
+<p>基本麵包屑從首頁開始，顯示從首頁到當前頁面的路徑，並用分隔器隔開。當前頁面是不可點的。</p>
+<div class="bd-example">
+<div class="row">
+  <div class="col">
+    <nav aria-label="breadcrumb" aria-label="Breadcrumbs">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">首頁</a></li>
+        <li class="breadcrumb-item"><a href="#">學習專區</a></li>
+        <li class="breadcrumb-item active" aria-current="page">公務人員人力訓練初階課程</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;breadcrumb&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Breadcrumbs&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">ol</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;breadcrumb&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;breadcrumb-item&#34;</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>首頁<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;breadcrumb-item&#34;</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>學習專區<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;breadcrumb-item active&#34;</span> <span class="na">aria-current</span><span class="o">=</span><span class="s">&#34;page&#34;</span><span class="p">&gt;</span>公務人員人力訓練初階課程<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 
     </div>
   </main>
