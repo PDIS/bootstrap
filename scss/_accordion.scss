@@ -1,4 +1,6 @@
 .accordion {
+  border-radius: 0.5rem;
+  
   .accordion-item {
     border: 0;
     margin-bottom: 0.5rem;
@@ -102,6 +104,8 @@
   // }
 
   .accordion {
+    border-radius: 0;
+
     .accordion-item {
       border-radius: 0;
       border: 0;

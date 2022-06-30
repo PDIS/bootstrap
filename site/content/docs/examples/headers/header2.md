@@ -4,7 +4,7 @@ layout: components-example
 
 {{< example >}}
 <header>
-  <nav class="navbar navbar-expand-md bg-brand-flat">
+  <nav class="navbar navbar-expand-md">
     <div class="container">
       <a class="navbar-brand" href="/" aria-label="PDIS">
       網站名稱
@@ -71,7 +71,7 @@ layout: components-example
               <div class="input-group">
                 <input type="text" class="form-control" id="Input1" placeholder="請輸入關鍵字">
                 <div class="input-group-append">
-                  <button class="btn btn-brand" type="button"><i class="bi bi-search"></i></button>
+                  <button class="btn btn-secondary" type="button"><i class="bi bi-search"></i></button>
                 </div>
               </div>
               <div class="dropdown-divider d-none d-md-block"></div>
@@ -91,21 +91,17 @@ layout: components-example
               <li><a class="dropdown-item dropdown-item-header">網站設定 Setting</a></li>
               <li><a class="dropdown-item dropdown-item-title">語言 Language</a></li>
               <li>
-                <select class="form-select" id="LanguageSelect" aria-label="LanguageSelect">
-                  <option selected>請選擇一個選項</option>
-                  <option value="zh-tw">繁體中文</option>
-                  <option value="en-us">English (US</option>
-                  <option value="en-uk">English (UK)</option>
-                  <option value="jp">Japanese</option>
-                  <option value="th">Thai</option>
-                </select>
+                <div class="btn-group" role="group" aria-label="Font size">
+                  <button type="button" class="btn btn-secondary">繁體中文</button>
+                  <button type="button" class="btn btn-secondary">English</button>
+                </div>
               </li>
               <li><a class="dropdown-item dropdown-item-title">文字大小</a></li>
               <li>
                 <div class="btn-group" role="group" aria-label="Font size">
-                  <button type="button" class="btn btn-brand">小</button>
-                  <button type="button" class="btn btn-brand">預設</button>
-                  <button type="button" class="btn btn-brand">大</button>
+                  <button type="button" class="btn btn-secondary">小</button>
+                  <button type="button" class="btn btn-secondary">預設</button>
+                  <button type="button" class="btn btn-secondary">大</button>
                 </div>
               </li>
             </ul>

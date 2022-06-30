@@ -20,20 +20,9 @@ a {
     color: var(--on-brand-flat);
     background-color: var(--brand-flat-strong);
   }
-}
 
-p {
-  @extend .body-text;
-}
-
-.language-switch {
-  padding: 6px;
-}
-
-.tab-scrollable-btn {
-  &:focus {
-    outline: 0;
-    box-shadow: none;
+  &.disabled {
+    opacity: 0.6;
   }
 }
 

@@ -138,8 +138,6 @@ sub {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  border-radius: 0.625rem;
-  padding: 0.5rem 1.125rem;
   letter-spacing: 0.1px;
   color: var(--on-background);
 }
@@ -152,8 +150,6 @@ sub {
   font-weight: 500;
   font-size: 0.75rem;
   line-height: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
   letter-spacing: 0.5px;
   color: var(--on-background);
 }
@@ -166,8 +162,6 @@ sub {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
-  padding: 0.5rem 1.25rem;
-  border-radius: 0.75rem;
   letter-spacing: 0.1px;
   color: var(--on-background);
 }
@@ -175,7 +169,7 @@ sub {
   color: var(--outline);
 }
 
-.body-text, .accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after, .accordion .accordion .accordion-item .accordion-header .accordion-button::after, .accordion .accordion-item .accordion-button:not(.collapsed)::after, .accordion .accordion-item .accordion-button::after, .accordion .accordion-item .accordion-button, .card .card-body .card-text, .list-group .list-group-item, p, a {
+.body-text, .accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after, .accordion .accordion .accordion-item .accordion-header .accordion-button::after, .accordion .accordion-item .accordion-button:not(.collapsed)::after, .accordion .accordion-item .accordion-button::after, .accordion .accordion-item .accordion-button, .card .card-body .card-text, .list-group .list-group-item, a {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -183,7 +177,7 @@ sub {
   letter-spacing: 0.5px;
   color: var(--on-background);
 }
-.body-text:disabled, .accordion .accordion .accordion-item .accordion-header .accordion-button:disabled::after, .accordion .accordion-item .accordion-button:disabled::after, .accordion .accordion-item .accordion-button:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled, p:disabled, a:disabled {
+.body-text:disabled, .accordion .accordion .accordion-item .accordion-header .accordion-button:disabled::after, .accordion .accordion-item .accordion-button:disabled::after, .accordion .accordion-item .accordion-button:disabled, .card .card-body .card-text:disabled, .list-group .list-group-item:disabled, a:disabled {
   color: var(--outline);
 }
 
@@ -276,6 +270,30 @@ sub {
 }
 .heading-text-lg:disabled {
   color: var(--outline);
+}
+
+.display-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8125rem;
+  line-height: 3.25rem;
+  color: var(--on-background);
+}
+
+.display-text-lg {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.56255rem;
+  line-height: 4rem;
+  color: var(--on-background);
+}
+
+.display-text-sm {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  color: var(--on-background);
 }
 
 .bg-brand {
@@ -557,14 +575,8 @@ a:active, a:focus-visible {
   color: var(--on-brand-flat);
   background-color: var(--brand-flat-strong);
 }
-
-.language-switch {
-  padding: 6px;
-}
-
-.tab-scrollable-btn:focus {
-  outline: 0;
-  box-shadow: none;
+a.disabled {
+  opacity: 0.6;
 }
 
 .icon {
@@ -654,6 +666,16 @@ a:active, a:focus-visible {
   color: var(--on-surface) !important;
   background-color: var(--surface-1) !important;
 }
+.badge i {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.badge i:first-child {
+  margin-left: 0;
+}
+.badge i:last-child {
+  margin-right: 0;
+}
 
 .badge-sm {
   padding: 0.125 0.5rem;
@@ -663,6 +685,16 @@ a:active, a:focus-visible {
   padding: 0 0.3125rem;
   border-radius: 0.25rem;
 }
+.badge-sm i {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.badge-sm i:first-child {
+  margin-left: 0;
+}
+.badge-sm i:last-child {
+  margin-right: 0;
+}
 
 .badge-lg {
   padding: 0.125 0.75rem;
@@ -671,6 +703,16 @@ a:active, a:focus-visible {
 .badge-lg.badge-numerical {
   padding: 0 0.4375rem;
   border-radius: 0.375rem;
+}
+.badge-lg i {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.badge-lg i:first-child {
+  margin-left: 0;
+}
+.badge-lg i:last-child {
+  margin-right: 0;
 }
 
 .badge-date {
@@ -1069,6 +1111,9 @@ a:active, a:focus-visible {
 .list-group .list-group-item .list-group-item-header {
   min-width: max-content;
 }
+.list-group .list-group-item .badge:last-child {
+  margin-left: 0.5rem;
+}
 .list-group .list-group-item i {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1227,6 +1272,10 @@ a:active, a:focus-visible {
   margin-bottom: 0.75rem;
 }
 
+.tab-text, .nav-pills .nav-item .nav-link, .nav-tabs .nav-item .nav-link {
+  border-radius: 0.625rem;
+  padding: 0.5rem 1.125rem;
+}
 .tab-text:hover, .nav-pills .nav-item .nav-link:hover, .nav-tabs .nav-item .nav-link:hover {
   color: var(--on-background);
   background-color: var(--surface);
@@ -1253,6 +1302,10 @@ a:active, a:focus-visible {
   vertical-align: middle;
 }
 
+.tab-text-sm, .tabs-sm .nav-item .nav-link {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
 .tab-text-sm:hover, .tabs-sm .nav-item .nav-link:hover {
   color: var(--on-background);
   background-color: var(--surface);
@@ -1279,6 +1332,10 @@ a:active, a:focus-visible {
   vertical-align: middle;
 }
 
+.tab-text-lg, .tabs-lg .nav-item .nav-link {
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.75rem;
+}
 .tab-text-lg:hover, .tabs-lg .nav-item .nav-link:hover {
   color: var(--on-background);
   background-color: var(--surface);
@@ -1461,6 +1518,9 @@ a:active, a:focus-visible {
     margin-left: 0.25rem;
   }
 }
+.dropdown .dropdown-toggle.disabled {
+  opacity: 0.6;
+}
 .dropdown .dropdown-menu {
   margin-top: 0;
   border-radius: 0.5rem;
@@ -1487,6 +1547,9 @@ a:active, a:focus-visible {
   .dropdown .dropdown-menu .form-select {
     margin: 0.5rem 0;
   }
+}
+.dropdown .dropdown-menu ul, .dropdown .dropdown-menu ol {
+  list-style: none;
 }
 .dropdown .dropdown-menu .dropdown-item {
   color: var(--on-brand-flat);
@@ -1565,6 +1628,9 @@ a:active, a:focus-visible {
   background: none !important;
 }
 
+.accordion {
+  border-radius: 0.5rem;
+}
 .accordion .accordion-item {
   border: 0;
   margin-bottom: 0.5rem;
@@ -1632,6 +1698,9 @@ a:active, a:focus-visible {
 }
 .accordion .accordion-item .accordion-body p {
   margin-bottom: 0;
+}
+.accordion .accordion {
+  border-radius: 0;
 }
 .accordion .accordion .accordion-item {
   border-radius: 0;
@@ -1818,6 +1887,11 @@ footer.bg-brand * {
   border-bottom-left-radius: 0;
   padding: 0.5rem 0.75rem;
 }
+.input-group .form-select + .form-control {
+  width: 1%;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
 
 .input-group-icon .input-group-prepend-icon {
   position: absolute;
@@ -1841,17 +1915,17 @@ footer.bg-brand * {
   position: absolute;
   color: var(--on-surface);
   font-size: 1.125rem;
-  padding-top: 0.35rem;
+  padding-top: 0.55rem;
   z-index: 10;
   right: 1rem;
 }
 .input-group-icon .input-group-append-icon.input-group-append-icon-sm {
   font-size: 1rem;
-  padding-top: 0.4rem;
+  padding-top: 0.2rem;
 }
 .input-group-icon .input-group-append-icon.input-group-append-icon-lg {
   font-size: 1.25rem;
-  padding-top: 0.75rem;
+  padding-top: 0.4rem;
 }
 .input-group-icon .form-control {
   width: inherit;

@@ -29,6 +29,12 @@
       min-width: max-content;
     }
 
+    .badge {
+      &:last-child {
+        margin-left: 0.5rem;
+      }
+    }
+
     i {
       margin-left: 0.5rem;
       margin-right: 0.5rem;

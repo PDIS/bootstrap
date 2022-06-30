@@ -1,91 +1,63 @@
 ---
 layout: docs
-title: 文字屬性 (Typography)
+title: 文字屬性 Typography
+description: 文字是溝通的基調，它的無所不在也承載了整個產品的基本質感。
 group: style
 toc: true
 ---
 
-## 字體 (Typeface)
+## 關於文字屬性
 
-沒有規定字體，但建議不採用標楷體。
+文字是最常出現的元素，它的無所不在也代表了整個產品的基本質感。在數位系統中，文字的出現常常代表著頁面上 80% - 90% 的資訊，其他 10% - 20% 可能是視覺引導。雖然文字所承載的的資訊量存在於文字內容而非樣式，但文字的樣式與屬性卻可以大大的影響使用者的閱讀舒適度、閱讀時的情緒。文字屬性乘載著數位產品的溝通基調，而政府網站的文字屬性應該是明確的、理性的、清晰的。
 
-根據國發會網站管理規範指出：政府機關的文件習慣以標楷體編排，但小字型的標楷體 在螢幕顯示往往不夠清楚，建議網頁設計者或網頁內容維護者在製作網頁時，取消原訂公文的標楷體格式，檔案或列印版本的公文則另行提供。
+在設計數位系統時，文字內容中的每行字句（例如標題、副標題與內文）的樣式會呈現出所謂的文字情緒、文字聲音與文字氛圍。文字屬性的重要性在於給出一個架構，例如讓同樣層級的文字帶有同樣的樣式，保持整體介面的易讀性。PDIS 設計系統所採用的文字屬性著重於使用者的可讀性與介面整體的易讀性，我們注意一個頁面中標題與內文的可辨認性、段落與段落之間保持可以換氣、呼吸的空間，並注意跨頁面之間標題樣式的一致性、內文樣式的一致性。
 
-本設計系統採用的中文字體是 [Noto Sans TC](https://fonts.google.com/noto/specimen/Noto+Sans+TC?query=Noto+Sans)，英文字體則是 [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans?query=Noto+Sans)。
+## 預設字型家族 Font Family
 
-## 字型 (Font)
+市面上有許多開源的字體是適合螢幕使用的，本設計系統預設採用的中文字體是 `Noto Sans TC`，英文字體則是 `Noto Sans`。
 
-### 標題 (Heading)
+## 修改字型家族
+您可以自由選用適合的字體，方式如下：
 
-are used in product-based UI designs such as panels, cards, and menus.
-<img class="img-fluid" src="https://i.imgur.com/sakrJ0R.png">
+我們沿用bootstrap variable的設定
 
-### 段落 (Paragraph)
-
-The default paragraph font size is 16px on large screens and 14px on small screens.
-<img class="img-fluid" src="https://i.imgur.com/WjYWk1X.png">
-
-:::warning
-[will update]
-ps. What are the paragraph line height settings in Bootstrap? 1.5
-:::
-
-```
-$line-height-1:            1;
-$line-height-base:            1.5; ***
-$line-height-sm:              1.25;
-$line-height-lg:              2;
-
-"line-height": (
-      property: line-height,
-      class: lh,
-      values: (
-        1: 1,
-        sm: $line-height-sm,
-        base: $line-height-base,
-        lg: $line-height-lg,
-      )
-    ),
+```scss
+--bs-body-font-family: var(--bs-font-sans-serif);
 ```
 
-### 字重 (Font weight)
+其中 `--bs-body-font-family` 為 bootstrap 定義的變數，更改此參數即可改變網站的字體設定，而由上述程式碼所知 `--bs-body-font-family` 的值為 `--bs-font-sans-serif`，因此只需在`css`裡覆蓋掉變數 `--bs-font-sans-serif` 即可。
 
-As with the font size, you can add a font weight override class to any other typographic class or element to change the font weight to regular or bold weight.
+```scss
+//範例
+--bs-font-sans-serif: "Noto Sans", "Noto Sans TC", sans-serif;
+```
 
-#### Bold text
+需注意的是，我們跟隨國發會的建議，避免使用標楷體，原因如下：
 
-You can use bold to emphasise particular words in a transaction. Use it to highlight critical information that users need to refer to or you’ve seen them miss.
+根據國發會網站管理規範指出：政府機關的文件習慣以標楷體編排，但小字型的標楷體在螢幕顯示往往不夠清楚，建議網頁設計者或網頁內容維護者在製作網頁時，取消原訂公文的標楷體格式，檔案或列印版本的公文則另行提供。
 
-For example, “Your reference number is ABC12345678. Use this to track your application. Updates will be sent to name@example.com“
+### 字級系統 Typescale
 
-Use bold sparingly. Overuse will make it difficult for users to know which parts of your content they need to pay the most attention to.
-<img class="img-fluid" src="https://i.imgur.com/8HMPKoe.png" >
+這個示範性的字級系統全數使用 Noto Sans TC 字體（英文則使用 Noto Sans)。
 
-### 顏色 (Color)
-
-The Goldman Sachs Design System has several pre-built color tokens that should be used for most text colors. If other colors need to be used, the color choice should consider accessiblity and legibility. Reference the Color foundation section for additional guidance.
-<img class="img-fluid" src="https://i.imgur.com/9CERV1v.png" >
-
-### 連結 (Links)
-
-Text links provide a way to navigate to another section or page and can displayed as standalone items or displayed inline within a sentence or paragraph.
-
-<img class="img-fluid" src="https://i.imgur.com/UFUHY3b.png" >
-
-<img class="img-fluid" src="https://i.imgur.com/MUhoduJ.png" >
-
-### 列表 (Lists)
-
-Bulleted lists are used when items should be grouped together but have no inherent order. When using a bulleted list, it is recommended that the text for each bullet is not longer than two sentences.
-
-#### 項目符號列表 (unordered list)
-
-<img class="img-fluid" src="https://i.imgur.com/yEzTwvl.png" >
-
-#### 編號列表 (Numbered)
-
-<img class="img-fluid" src="https://i.imgur.com/mqr2hPb.png" >
-
-### 所有字型大小 (All font sizes)
-
-<img class="img-fluid" src="https://i.imgur.com/0j3Twki.png" >
+{{< bs-table "table" >}}
+| Design Token | font-size | font-weight | line-height | example |
+|---|---|---|---|---|
+| Display/Large | 3.5625rem | 400 | 4rem | <div class="display-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Display/Medium | 2.8125rem | 400 | 3.25rem | <div class="display-text">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Display/Small | 2.25rem | 400 | 2.75rem | <div class="display-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Heading/Large | 2rem | 400 | 2.5rem | <div class="heading-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Heading/Medium | 1.75rem | 400 | 2.25rem | <div class="heading-text">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Heading/Small | 1.5rem | 400 | 2rem | <div class="heading-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Title/Large | 1.375rem | 500 | 1.75rem | <div class="title-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Title/Medium | 1.125rem | 500 | 1.5rem | <div class="title-text">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Title/Small | 1rem | 500 | 1.25rem | <div class="title-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Body/Large | 1.125rem | 400 | 1.6875rem | <div class="body-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Body/Medium | 1rem | 400 | 1.5rem | <div class="body-text">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Body/Small | 0.75rem | 400 | 100% | <div class="body-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Body/Medium(Links) | 1rem | 500 | 1.5rem | <a href="#">人皆生而自由；在尊嚴及權利上均各平等。</a> |
+| Body/Medium(SecondaryLinks) | 1rem | 400 | 1.5rem | <a href="#">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Label/Large | 1rem | 500 | 1.5rem | <div class="label-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Label/Medium | 0.875rem | 500 | 1.25rem | <div class="label-text">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+| Label/Small | 0.75rem | 500 | 1rem | <div class="label-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div> |
+{{< /bs-table >}}
