@@ -2327,7 +2327,7 @@ optgroup {
   content: "選單";
   margin-left: 0.25rem;
 }
-.navbar .nav-link.dropdown-toggle {
+.navbar .nav-link {
   padding: 0.375rem 0.875rem;
 }
 @media (min-width: 768px) {
