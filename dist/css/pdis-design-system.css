@@ -723,7 +723,7 @@ a.disabled {
   border-radius: 0.375rem;
 }
 
-.badge-group {
+.badge-group .badge {
   margin-top: 0.5rem;
 }
 
