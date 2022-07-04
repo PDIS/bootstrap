@@ -1,71 +1,12 @@
-<footer class="bd-footer py-4 mt-4 bg-light">
+<footer>
   <div class="container">
-    <div class="row">
-      <div class="d-inline-flex align-items-center mb-2 col-lg-6">
-        <a class="link-dark text-decoration-none" href="/" aria-label="Bootstrap">
-          {{- $image := resources.Get "img/pdis-logo-final-inverse.png" -}}
-          <img class="rounded" src="{{ $image.RelPermalink }}" width=100 height=100 alt="pdis logo">
-        </a>
-        <div class="d-flex flex-column ms-2">
-          <div class="fs-3 fw-bold"> Public Digital Innovation Space </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <ul class="d-flex justify-content-end align-items-end h-100">
-          <li class="d-inline mx-1">
-            <a href="#">隱私權及資訊安全政策</a>
-          </li>
-          <li class="d-inline mx-1">
-            <a href="#">政府網站資料開放宣告</a>
-          </li>
-          <li class="d-inline mx-1">
-            {{- $image := resources.Get "img/accessibility.jpg" -}}
-            <img src="{{ $image.RelPermalink }}" width="100" alt="accessibility">
-          </li>
-        </ul>
-      </div>
-      <!--
-      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-        <h5>Links</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="/">Home</a></li>
-          <li class="mb-2"><a href="/docs/{{ .Site.Params.docs_version }}/">Docs</a></li>
-          <li class="mb-2"><a href="/docs/{{ .Site.Params.docs_version }}/examples/">Examples</a></li>
-          <li class="mb-2"><a href="{{ .Site.Params.themes }}">Themes</a></li>
-          <li class="mb-2"><a href="{{ .Site.Params.blog }}">Blog</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>Guides</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="/docs/{{ .Site.Params.docs_version }}/getting-started/">Getting started</a></li>
-          <li class="mb-2"><a href="/docs/{{ .Site.Params.docs_version }}/examples/starter-template/">Starter template</a></li>
-          <li class="mb-2"><a href="/docs/{{ .Site.Params.docs_version }}/getting-started/webpack/">Webpack</a></li>
-          <li class="mb-2"><a href="/docs/{{ .Site.Params.docs_version }}/getting-started/parcel/">Parcel</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>Projects</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="{{ .Site.Params.github_org }}/bootstrap">Bootstrap 5</a></li>
-          <li class="mb-2"><a href="{{ .Site.Params.github_org }}/bootstrap/tree/v4-dev">Bootstrap 4</a></li>
-          <li class="mb-2"><a href="{{ .Site.Params.github_org }}/icons">Icons</a></li>
-          <li class="mb-2"><a href="{{ .Site.Params.github_org }}/rfs">RFS</a></li>
-          <li class="mb-2"><a href="{{ .Site.Params.github_org }}/bootstrap-npm-starter">npm starter</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2 mb-3">
-        <h5>Community</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="{{ .Site.Params.github_org }}/bootstrap/issues">Issues</a></li>
-          <li class="mb-2"><a href="{{ .Site.Params.github_org }}/bootstrap/discussions">Discussions</a></li>
-          <li class="mb-2"><a href="https://github.com/sponsors/twbs">Corporate sponsors</a></li>
-          <li class="mb-2"><a href="{{ .Site.Params.opencollective }}">Open Collective</a></li>
-          <li class="mb-2"><a href="{{ .Site.Params.slack }}">Slack</a></li>
-          <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5">Stack Overflow</a></li>
-        </ul>
-      </div>
--->
-    </div>
+    <p>PDIS 設計系統的目的在於提供協助製作政府網站設計與開發的團隊一套工具，更有效率地做出對使用者友善的數位服務。</p>
+    <p>本站除另有標示外，內容以創用 CC BY 4.0 授權條款釋出。</p>
+    <ul class="nav">
+      <li class="nav-item"><a href="https://pdis.tw">PDIS 官網</a></li>
+      <li class="nav-item"><a href="https://github.com/PDIS/design-system">PDIS 設計系統原始碼</a></li>
+      <li class="nav-item"><a href="https://github.com/PDIS/design-system/tree/main/site">本站原始碼</a></li>
+      <li class="nav-item"><a href="mailto:hello@pdis.tw">聯絡我們</a></li>
+    </ul>
   </div>
 </footer>

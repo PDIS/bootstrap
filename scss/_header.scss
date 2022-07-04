@@ -93,66 +93,86 @@
     }
   }
 
-  .nav-link.dropdown-toggle {
-    @extend .btn;
-    @extend .btn-lg;
-    @extend .btn-primary;
-    padding: 0.375rem 0.875rem;
+  .nav-item {
+    margin: 0.25rem 0;
+    margin-right:1.25rem;
 
-    @media (min-width: 768px) {
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-      letter-spacing: 0.1px;
-    }
-    
-    @media (max-width: 767px) {
-      background-color: var(--surface);
-      border-color: var(--surface);
-      color: var(--on-background);
-
-      &:hover {
-        background-color: var(--surface-1);
-        border-color: var(--surface-1);
-        color: var(--on-background);
-      }
-      
+    a {
+      text-decoration: none;
     }
 
-    &.show {
-      background-color: var(--surface-1);
-      border-color: var(--surface-1);
-      color: var(--on-background);
-      box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
-
-      @media (min-width: 768px) {
-        background-color: var(--brand-strong);
-        color: var(--on-brand);
-        box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
-        border-color: var(--brand-flat-strong);
-      }
-
-      &::after {
-        background-image: none;
-        content: "\f286"; /* Chevron down */
-        font-family: "bootstrap-icons";
-        text-align: center;
-        vertical-align: bottom;
-        border: 0;
-        font-size: 0.75rem;
-        margin-left: auto;
-
-        @media (min-width: 768px) {
-          margin-left: 0.25rem;
-        }
-      }
-    }
-
-    &.dropdown-toggle-icon {
-      font-size: 1.125rem;
+    &:last-child {
+      margin-right: 0;
     }
 
     i {
-      font-size: 1.125rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .nav-link {
+    padding: 0.375rem 0.875rem;
+
+    &.dropdown-toggle {
+      @extend .btn;
+      @extend .btn-lg;
+      @extend .btn-primary;
+
+      @media (min-width: 768px) {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        letter-spacing: 0.1px;
+      }
+      
+      @media (max-width: 767px) {
+        background-color: var(--surface);
+        border-color: var(--surface);
+        color: var(--on-background);
+  
+        &:hover {
+          background-color: var(--surface-1);
+          border-color: var(--surface-1);
+          color: var(--on-background);
+        }
+        
+      }
+  
+      &.show {
+        background-color: var(--surface-1);
+        border-color: var(--surface-1);
+        color: var(--on-background);
+        box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
+  
+        @media (min-width: 768px) {
+          background-color: var(--brand-strong);
+          color: var(--on-brand);
+          box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
+          border-color: var(--brand-flat-strong);
+        }
+  
+        &::after {
+          background-image: none;
+          content: "\f286"; /* Chevron down */
+          font-family: "bootstrap-icons";
+          text-align: center;
+          vertical-align: bottom;
+          border: 0;
+          font-size: 0.75rem;
+          margin-left: auto;
+  
+          @media (min-width: 768px) {
+            margin-left: 0.25rem;
+          }
+        }
+      }
+  
+      &.dropdown-toggle-icon {
+        font-size: 1.125rem;
+      }
+  
+      i {
+        font-size: 1.125rem;
+      }
     }
   }
 

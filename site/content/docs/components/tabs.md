@@ -328,7 +328,7 @@ group: components
 <div class="row py-5">
   <div class="col-9">
     <div class="nav-scroll">
-      <button type="button" class="btn btn-less-important" onclick="Prev(this)"><i class="bi bi-chevron-left"></i></button>
+      <button type="button" class="btn btn-less-important" onclick="Prev(this)" alt="Previous"><i class="bi bi-chevron-left"></i></button>
       <div class="nav-scroll-wrapper">
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item" role="presentation">
@@ -363,7 +363,7 @@ group: components
           </li>
         </ul>
       </div>
-      <button class="btn btn-less-important" onclick="Next(this)"><i class="bi bi-chevron-right"></i></button>
+      <button class="btn btn-less-important" onclick="Next(this)" alt="Next"><i class="bi bi-chevron-right"></i></button>
     </div>
     <div class="tab-content" id="tabContent-scrollable">
       <div class="tab-pane fade show active" id="scroll-content1" role="tabpanel" aria-labelledby="scroll-tab1">頁籤 01 滾動式頁籤列表展示，點擊左右方向符號做橫向滾動瀏覽。</div>
@@ -382,7 +382,7 @@ group: components
 <div class="row py-5">
   <div class="col-9">
     <div class="nav-scroll">
-      <button type="button" class="btn btn-less-important" onclick="Prev(this)"><i class="bi bi-chevron-left"></i></button>
+      <button type="button" class="btn btn-less-important" onclick="Prev(this)" alt="Previous"><i class="bi bi-chevron-left"></i></button>
       <div class="nav-scroll-wrapper">
         <ul class="nav nav-pills" role="tablist">
           <li class="nav-item" role="presentation">
@@ -417,7 +417,7 @@ group: components
           </li>
         </ul>
       </div>
-      <button class="btn btn-less-important" onclick="Next(this)"><i class="bi bi-chevron-right"></i></button>
+      <button class="btn btn-less-important" onclick="Next(this)" alt="Next"><i class="bi bi-chevron-right"></i></button>
     </div>
     <div class="tab-content" id="tabContent-scrollable">
       <div class="tab-pane fade show active" id="scroll-pills-content1" role="tabpanel" aria-labelledby="scroll-pills-tab1">頁籤 01 滾動式頁籤列表展示，點擊左右方向符號做橫向滾動瀏覽。</div>
