@@ -29,7 +29,7 @@ toc: true
 
 舉例來說，若選擇藍色系的 #2C5AB4 作為品牌色，黃色系的 #705D00 作為次品牌色，卡片元件將會如圖所示。若替換成另一組品牌色，卡片元件上的元件分佈將依原有邏輯自動替換。可以發現，背景色與文字色也將各自替換成符合近用性標準的色階，符合無障礙的視覺體驗。
 
-<img class="img-fluid" src="/docs/5.1/assets/img/colour-demo.png">
+<img class="img-fluid" src="/docs/5.1/assets/img/colour-demo.png" alt="colour-demo">
 
 ### 顏色系統 Colour System
 

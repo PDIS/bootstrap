@@ -256,7 +256,7 @@ group: components
         </div>
         <div class="card-text">此部分為卡片之內文部分文字或副標題內容</div>
         <div class="text-end">
-          <button class="btn btn-less-important">
+          <button class="btn btn-less-important" alt="...">
             <i class="bi bi-arrow-right"></i>
           </button>
         </div>

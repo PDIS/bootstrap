@@ -93,9 +93,9 @@ group: components
 <div class="row text-center">
   <div class="col">
     <button type="button" class="btn btn-primary">預設按鈕</button>
-    <button type="button" class="btn btn-primary"><i class="bi bi-download"></i><span>左圖標按鈕</span></button>
-    <button type="button" class="btn btn-primary"><span>右圖標按鈕</span><i class="bi bi-download"></i></button>
-    <button type="button" class="btn btn-primary"><i class="bi bi-download"></i></button>
+    <button type="button" class="btn btn-primary" alt="..."><i class="bi bi-download"></i><span>左圖標按鈕</span></button>
+    <button type="button" class="btn btn-primary" alt="..."><span>右圖標按鈕</span><i class="bi bi-download"></i></button>
+    <button type="button" class="btn btn-primary" alt="..."><i class="bi bi-download"></i></button>
     <button type="button" class="btn btn-primary"><span>圓角按鈕</span><span class="badge badge-sm badge-numerical">2</span></button>
   </div>
 </div>
