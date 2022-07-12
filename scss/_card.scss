@@ -1,5 +1,6 @@
 .card {
-  border: 1px solid var(--outline);
+  border: unset;
+  box-shadow: 0 0 0 1px var(--outline);
   border-radius: 0.5rem;
   background-color: var(--surface);
 
