@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 輸入欄位 Input
+title: 輸入欄位
 description: 在表單協助使用者輸入格式正確的資訊。
 group: components
 toc: true

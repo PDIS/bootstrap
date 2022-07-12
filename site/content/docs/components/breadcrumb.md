@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 麵包屑 Breadcrumb
+title: 麵包屑
 description: 麵包屑協助導航，幫助使用者知道自己現在正在瀏覽整個網站中的哪個頁面。
 group: components
 ---

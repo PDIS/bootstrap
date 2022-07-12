@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 頁籤 Tab
+title: 頁籤
 description: 將內容分群管理的切換器。
 group: components
 ---

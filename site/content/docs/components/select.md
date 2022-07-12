@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 選擇功能表 Select
+title: 選擇功能表
 description: 讓使用者從清單選項中做一個選擇。
 group: components
 toc: true

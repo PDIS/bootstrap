@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 頁首 Header
+title: 頁首
 description: 一個網站的第一印象，提供一目瞭然的整理架構。
 group: components
 toc: true

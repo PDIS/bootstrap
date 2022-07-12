@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 標籤 Badge
+title: 標籤
 description: 標籤可以為其他元件新增說明文字或數字。
 group: components
 ---
@@ -116,22 +116,22 @@ group: components
 
 <div class="row text-center" ontouchstart="">
   <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-primary"><span>預設按鈕</span><span class="badge badge-numerical">2</span></button>
+    <button type="button" class="btn btn-primary"><span>報名活動</span><span class="badge badge-numerical">136</span></button>
   </div>
   <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-secondary"><span>預設按鈕</span><span class="badge badge-numerical bg-secondary-flat">2</span></button>
+    <button type="button" class="btn btn-secondary"><span>下載</span><span class="badge badge-numerical bg-secondary-flat">251</span></button>
   </div>
   <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-semi-secondary"><span>預設按鈕</span><span class="badge badge-numerical">2</span></button>
+    <button type="button" class="btn btn-tertiary"><span>登記</span><span class="badge badge-numerical">20</span></button>
   </div>
   <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-tertiary"><span>預設按鈕</span><span class="badge badge-numerical">2</span></button>
+    <button type="button" class="btn btn-emi-secondary"><span>投票</span><span class="badge badge-numerical">10</span></button>
   </div>
   <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-positive"><span>預設按鈕</span><span class="badge badge-numerical bg-positive-flat">2</span></button>
+    <button type="button" class="btn btn-positive"><span>送出</span><span class="badge badge-numerical bg-positive-flat">3</span></button>
   </div>
   <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-negative"><span>預設按鈕</span><span class="badge badge-numerical bg-negative-flat">2</span></button>
+    <button type="button" class="btn btn-negative"><span>移除</span><span class="badge badge-numerical bg-negative-flat">30</span></button>
   </div>
 </div>
 

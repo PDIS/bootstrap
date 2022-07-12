@@ -678,7 +678,7 @@ a.disabled {
 }
 
 .badge-sm {
-  padding: 0.125 0.5rem;
+  padding: 0.125rem 0.5rem;
   border-radius: 0.25rem;
 }
 .badge-sm.badge-numerical {
@@ -697,7 +697,7 @@ a.disabled {
 }
 
 .badge-lg {
-  padding: 0.125 0.75rem;
+  padding: 0.125rem 0.75rem;
   border-radius: 0.375rem;
 }
 .badge-lg.badge-numerical {
@@ -1088,6 +1088,7 @@ a.disabled {
 
 .list-group {
   border-radius: 0.5rem;
+  overflow: hidden;
 }
 .list-group .list-group-item {
   display: flex;
@@ -1095,14 +1096,7 @@ a.disabled {
   border: none;
   padding: 0.75rem;
   background-color: var(--surface);
-}
-.list-group .list-group-item:first-child {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-.list-group .list-group-item:last-child {
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  box-shadow: 0 0 0 1px var(--surface);
 }
 .list-group .list-group-item .list-group-item-subheader {
   margin-left: 0.5rem;
@@ -1131,33 +1125,21 @@ a.disabled {
 }
 .list-group .list-group-item:hover {
   background-color: var(--surface-1);
+  box-shadow: 0 0 0 1px var(--surface-1);
 }
 .list-group .list-group-item:focus-visible, .list-group .list-group-item:active {
   background-color: var(--surface-2);
+  box-shadow: 0 0 0 1px var(--surface-2);
 }
 .list-group.divider .list-group-item {
   border-bottom: 1px solid var(--outline);
   border-radius: 0;
 }
-.list-group.divider .list-group-item:first-child {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
 .list-group.divider .list-group-item:last-child {
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
   border-bottom: none;
 }
 .list-group.border {
   border: 1px solid var(--outline) !important;
-}
-.list-group.border.divider .list-group-item:first-child {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-}
-.list-group.border.divider .list-group-item:last-child {
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
 }
 .list-group.elevation {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
@@ -1171,7 +1153,7 @@ a.disabled {
 }
 
 .list-group-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .card {
