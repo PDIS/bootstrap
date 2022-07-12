@@ -125,7 +125,7 @@ group: components
   </div>
   <div class="col-lg-8">
     <div class="card">
-      <div class="row align-items-center">
+      <div class="row">
         <div class="col-lg-4">
           <div class="card-image rounded-start" style="background: url('/docs/5.1/assets/img/bg-card.png')"></div>
         </div>
@@ -256,7 +256,7 @@ group: components
         </div>
         <div class="card-text">此部分為卡片之內文部分文字或副標題內容</div>
         <div class="text-end">
-          <button class="btn btn-less-important">
+          <button class="btn btn-less-important" alt="...">
             <i class="bi bi-arrow-right"></i>
           </button>
         </div>
