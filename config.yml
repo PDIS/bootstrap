@@ -1,6 +1,6 @@
 languageCode:           "zh-tw"
 title:                  "PDIS Design System"
-baseURL:                "https://design.pdis.tw"
+baseURL:                ""
 enableInlineShortcodes: true
 
 markup:
