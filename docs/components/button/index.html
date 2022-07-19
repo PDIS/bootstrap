@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="按鈕是個引人注意的可選擇區塊，引導使用者執行重要的行為。">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.88.1">
+
+<meta name="docsearch:language" content="en">
+<meta name="docsearch:version" content="5.1">
+
+<title>按鈕 · PDIS Design System v5.1</title>
+
+<link rel="canonical" href="https://design.pdis.tw/docs/components/button/">
+
+
+
+<!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link href="/docs/5.1/assets/css/docs.css" rel="stylesheet">
+<link href="/docs/5.1/dist/css/pdis-design-system.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@getbootstrap">
+<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:title" content="按鈕">
+<meta name="twitter:description" content="按鈕是個引人注意的可選擇區塊，引導使用者執行重要的行為。">
+<meta name="twitter:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
+
+<!-- Facebook -->
+<meta property="og:url" content="https://design.pdis.tw/docs/components/button/">
+<meta property="og:title" content="按鈕">
+<meta property="og:description" content="按鈕是個引人注意的可選擇區塊，引導使用者執行重要的行為。">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
+
+
+
+  </head>
+  <body>
+    <div class="skippy visually-hidden-focusable overflow-hidden">
+  <div class="container-xl">
+    <a class="d-inline-flex p-2 m-1" href="#content">Skip to main content</a>
+    <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a>
+  </div>
+</div>
+
+
+    <header class="navbar navbar-expand-md bg-brand-flat">
+  <nav class="container" aria-label="Main navigation">
+    <div><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=40 height=40 alt="pdis logo">
+      <a class="navbar-brand" href="/" aria-label="brand">
+        
+        <span class="navbar-brand-title">PDIS 設計系統</span>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar"
+      aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="bdNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class=""
+            href="/docs/overview/">概述</a>
+        </li>
+        <li class="nav-item">
+          <a class=""
+            href="/docs/style/">風格</a>
+        </li>
+        <li class="nav-item">
+          <a class=" active" aria-current="true"
+            href="/docs/components/">元件</a>
+        </li>
+        <li class="nav-item">
+          <a class="disabled"
+            href="/docs/pattern/">模版</a>
+        </li>
+      </ul>
+
+      
+
+      
+    </div>
+  </nav>
+</header>
+
+
+    
+
+
+<div class="container my-md-4 bd-layout">
+  <aside class="bd-sidebar">
+    <nav class="sidebar" id="sidebar">
+  <ul class="sidebar-body">
+ 
+ 
+    <li><a href="/docs/components/button/" class="sidebar-link active"  aria-current="true" >按鈕</a></li>
+    <li><a href="/docs/components/badge/" class="sidebar-link "  aria-current="true" >標籤</a></li>
+    <li><a href="/docs/components/card/" class="sidebar-link "  aria-current="true" >卡片</a></li>
+    <li><a href="/docs/components/list/" class="sidebar-link "  aria-current="true" >列表</a></li>
+    <li><a href="/docs/components/tabs/" class="sidebar-link "  aria-current="true" >頁籤</a></li>
+    <li><a href="/docs/components/accordion/" class="sidebar-link "  aria-current="true" >手風琴</a></li>
+    <li><a href="/docs/components/input/" class="sidebar-link "  aria-current="true" >輸入欄位</a></li>
+    <li><a href="/docs/components/select/" class="sidebar-link "  aria-current="true" >選擇功能表</a></li>
+    <li><a href="/docs/components/sidebar/" class="sidebar-link "  aria-current="true" >側邊欄</a></li>
+    <li><a href="/docs/components/breadcrumb/" class="sidebar-link "  aria-current="true" >麵包屑</a></li>
+    <li><a href="/docs/components/dropdown/" class="sidebar-link "  aria-current="true" >導覽列下拉選單</a></li>
+    <li><a href="/docs/components/header/" class="sidebar-link "  aria-current="true" >頁首</a></li>
+    <li><a href="/docs/components/footer/" class="sidebar-link "  aria-current="true" >頁尾</a></li>
+ 
+</ul>
+</nav>
+
+  </aside>
+
+  <main class="bd-main order-1">
+    <div class="bd-intro ps-lg-4">
+
+      <div class="d-md-flex flex-md-row align-items-left justify-content-between">
+        
+        <h1 id="content">按鈕</h1>
+      </div>
+      <p style="font-size: 1.5rem">按鈕是個引人注意的可選擇區塊，引導使用者執行重要的行為。</p>
+      <hr>
+    </div>
+
+        
+
+    <div class="bd-content ps-lg-4">
+      
+
+      <h2 id="關於按鈕">關於按鈕</h2>
+<p>按鈕在視覺上是一個頁面上重要行為的引導，在動作是多個頁面間關鍵行為的集合。</p>
+<h2 id="使用規範">使用規範</h2>
+<h3 id="何時該使用按鈕">何時該使用按鈕</h3>
+<p>重要的行為應該用按鈕來顯示，例如「確認」、「下載」、「下一步」、「註冊」、「登出」等。</p>
+<h3 id="何時該考慮使用其他元件">何時該考慮使用其他元件</h3>
+<ul>
+<li><strong>頁面之間的連結。</strong> 當純粹想要從一個頁面連結到另外一個頁面時，請用一般的連結即可。</li>
+<li><strong>當行為的重要性沒那麼高時。</strong> 當某一行為的重要性在該頁面上沒那麼高時，可以使用文字連結按鈕，視覺上跟連結一樣，但操作上仍為按鈕。</li>
+</ul>
+<h3 id="按鈕易用性">按鈕易用性</h3>
+<ul>
+<li><strong>避免一頁中出現太多按鈕。</strong> 按鈕的出現應該是該頁面中比較重要的行為，且按下之後會帶領使用者到另一個頁面，因此一頁中的按鈕不宜過多。</li>
+<li><strong>按鈕文字應以動詞或動作為主。</strong> 按鈕是引導使用者質性某重要行為的地方，因此請盡量用簡短明瞭的動作文字作為按鈕文字，如「送出」、「取消」等。</li>
+<li><strong>可以選擇使用圖標。</strong> 某些按鈕適合用圖標作為提示，例如「開新視窗」、「下載」等，但請適度使用。</li>
+<li><strong>按鈕文字應保持在同一行。</strong> 請勿將按鈕文字放到第二行。</li>
+<li>按鈕的位階選擇可以依據主要、次要、邊框、文字的順序做搭配。詳見<a href="/docs/components/button/#%E8%A7%92%E8%89%B2-role">角色</a>區塊</li>
+</ul>
+<h3 id="按鈕近用性">按鈕近用性</h3>
+<ul>
+<li><strong>報讀軟體觸發按鈕與連結的方式不同。</strong> 在使用報讀軟體時，按下空白鍵會觸發按鈕，按下 Enter 鍵會觸發連結。</li>
+</ul>
+<h2 id="元件設計">元件設計</h2>
+<h3 id="基本款按鈕-basic-button">基本款按鈕 Basic Button</h3>
+<p>基本款的按鈕以品牌色為背景，吸引使用者注意。使用者可以依據頁面上的資訊決定是否點擊進行下一步。</p>
+<div class="bd-example">
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-primary">預設按鈕</button>
+  </div>
+</div>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row text-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;</span>預設按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h3 id="角色-role">角色 Role</h3>
+<p>從基本款按鈕的樣式延伸，共六種不同角色的按鈕，由左至右分別為：主要、次要、邊框、文字、正向、負向按鈕。在做按鈕的位階選擇時，可以依據主要、次要、邊框、文字的順序做搭配。例如可以選擇主要按鈕作為預設動作的進入點，搭配文字按鈕作為其他動作的進入點，讓頁面視覺上明顯有位階順序，幫助使用者理解兩個並排按鈕的關係。</p>
+<div class="bd-example">
+<!-- <style>
+  .btn {
+    margin: 0.25rem !important;
+  }
+</style> -->
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-primary">主要按鈕</button>
+    <button type="button" class="btn btn-secondary">次要按鈕</button>
+    <button type="button" class="btn btn-tertiary">邊框按鈕</button>
+    <button type="button" class="btn btn-semi-secondary">文字按鈕</button>
+    <button type="button" class="btn btn-positive">正向按鈕</button>
+    <button type="button" class="btn btn-negative">負向按鈕</button>
+  </div>
+</div>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- &lt;style&gt;
+</span><span class="c">  .btn {
+</span><span class="c">    margin: 0.25rem !important;
+</span><span class="c">  }
+</span><span class="c">&lt;/style&gt; --&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row text-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;</span>主要按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>次要按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-tertiary&#34;</span><span class="p">&gt;</span>邊框按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-semi-secondary&#34;</span><span class="p">&gt;</span>文字按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-positive&#34;</span><span class="p">&gt;</span>正向按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-negative&#34;</span><span class="p">&gt;</span>負向按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h3 id="無效-disabled">無效 Disabled</h3>
+<p>有的時候我們會在網頁上看到無效按鈕，它們的存在有其必要性，例如在使用者填寫完註冊表單之前，先加登入按鈕設定為無效按鈕的樣式。無效按鈕用的樣式一律用透明度 60% 處理，呈現如下。</p>
+<div class="bd-example">
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-primary disabled">主要按鈕</button>
+    <button type="button" class="btn btn-secondary disabled">次要按鈕</button>
+    <button type="button" class="btn btn-tertiary disabled">邊框按鈕</button>
+    <button type="button" class="btn btn-semi-secondary disabled">文字按鈕</button>
+    <button type="button" class="btn btn-positive disabled">正向按鈕</button>
+    <button type="button" class="btn btn-negative disabled">負向按鈕</button>
+  </div>
+</div>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row text-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary disabled&#34;</span><span class="p">&gt;</span>主要按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary disabled&#34;</span><span class="p">&gt;</span>次要按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-tertiary disabled&#34;</span><span class="p">&gt;</span>邊框按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-semi-secondary disabled&#34;</span><span class="p">&gt;</span>文字按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-positive disabled&#34;</span><span class="p">&gt;</span>正向按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-negative disabled&#34;</span><span class="p">&gt;</span>負向按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h3 id="大小-size">大小 Size</h3>
+<p>三種不同大小的按鈕。</p>
+<div class="bd-example">
+
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-primary btn-sm">預設按鈕</button>
+    <button type="button" class="btn btn-primary">預設按鈕</button>
+    <button type="button" class="btn btn-primary btn-lg">預設按鈕</button>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row text-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary btn-sm&#34;</span><span class="p">&gt;</span>預設按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;</span>預設按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary btn-lg&#34;</span><span class="p">&gt;</span>預設按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h3 id="圖示-icon">圖示 Icon</h3>
+<p>按鈕中可以使用圖示 (icon) 輔助文字說明。圖示可以在文字左邊或是右邊。有些圖示所代表的意義已經約定成俗，在某些特殊情況下則可以只留下圖示。</p>
+<div class="bd-example">
+
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-primary">預設按鈕</button>
+    <button type="button" class="btn btn-primary"><i class="bi bi-download"></i><span>左圖標按鈕</span></button>
+    <button type="button" class="btn btn-primary"><span>右圖標按鈕</span><i class="bi bi-download"></i></button>
+    <button type="button" class="btn btn-primary"><i class="bi bi-download"></i></button>
+    <button type="button" class="btn btn-primary"><span>預設按鈕</span><span class="badge badge-numerical">2</span></button>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row text-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;</span>預設按鈕<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-download&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>左圖標按鈕<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>右圖標按鈕<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-download&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-download&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>預設按鈕<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge badge-numerical&#34;</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+
+    </div>
+  </main>
+</div>
+
+
+    <footer>
+  <div class="container">
+    <p>PDIS 設計系統的目的在於提供協助製作政府網站設計與開發的團隊一套工具，更有效率地做出對使用者友善的數位服務。</p>
+    <p>本站除另有標示外，內容以創用 CC BY 4.0 授權條款釋出。</p>
+    <ul class="nav">
+      <li class="nav-item"><a href="https://pdis.tw">PDIS 官網</a></li>
+      <li class="nav-item"><a href="https://github.com/PDIS/design-system">PDIS 設計系統原始碼</a></li>
+      <li class="nav-item"><a href="https://github.com/PDIS/design-system/tree/main/site">本站原始碼</a></li>
+      <li class="nav-item"><a href="mailto:hello@pdis.tw">聯絡我們</a></li>
+    </ul>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+
+<script src="/docs/5.1/assets/js/docs.min.js"></script>
+
+
+    
+
+  </body>
+</html>

@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="手風琴是一種可以展開與隱藏更多資訊的列表。">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.88.1">
+
+<meta name="docsearch:language" content="en">
+<meta name="docsearch:version" content="5.1">
+
+<title>手風琴 · PDIS Design System v5.1</title>
+
+<link rel="canonical" href="https://design.pdis.tw/docs/components/accordion/">
+
+
+
+<!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link href="/docs/5.1/assets/css/docs.css" rel="stylesheet">
+<link href="/docs/5.1/dist/css/pdis-design-system.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@getbootstrap">
+<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:title" content="手風琴">
+<meta name="twitter:description" content="手風琴是一種可以展開與隱藏更多資訊的列表。">
+<meta name="twitter:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
+
+<!-- Facebook -->
+<meta property="og:url" content="https://design.pdis.tw/docs/components/accordion/">
+<meta property="og:title" content="手風琴">
+<meta property="og:description" content="手風琴是一種可以展開與隱藏更多資訊的列表。">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
+
+
+
+  </head>
+  <body>
+    <div class="skippy visually-hidden-focusable overflow-hidden">
+  <div class="container-xl">
+    <a class="d-inline-flex p-2 m-1" href="#content">Skip to main content</a>
+    <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a>
+  </div>
+</div>
+
+
+    <header class="navbar navbar-expand-md bg-brand-flat">
+  <nav class="container" aria-label="Main navigation">
+    <div><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=40 height=40 alt="pdis logo">
+      <a class="navbar-brand" href="/" aria-label="brand">
+        
+        <span class="navbar-brand-title">PDIS 設計系統</span>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar"
+      aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="bdNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class=""
+            href="/docs/overview/">概述</a>
+        </li>
+        <li class="nav-item">
+          <a class=""
+            href="/docs/style/">風格</a>
+        </li>
+        <li class="nav-item">
+          <a class=" active" aria-current="true"
+            href="/docs/components/">元件</a>
+        </li>
+        <li class="nav-item">
+          <a class="disabled"
+            href="/docs/pattern/">模版</a>
+        </li>
+      </ul>
+
+      
+
+      
+    </div>
+  </nav>
+</header>
+
+
+    
+
+
+<div class="container my-md-4 bd-layout">
+  <aside class="bd-sidebar">
+    <nav class="sidebar" id="sidebar">
+  <ul class="sidebar-body">
+ 
+ 
+    <li><a href="/docs/components/button/" class="sidebar-link "  aria-current="true" >按鈕</a></li>
+    <li><a href="/docs/components/badge/" class="sidebar-link "  aria-current="true" >標籤</a></li>
+    <li><a href="/docs/components/card/" class="sidebar-link "  aria-current="true" >卡片</a></li>
+    <li><a href="/docs/components/list/" class="sidebar-link "  aria-current="true" >列表</a></li>
+    <li><a href="/docs/components/tabs/" class="sidebar-link "  aria-current="true" >頁籤</a></li>
+    <li><a href="/docs/components/accordion/" class="sidebar-link active"  aria-current="true" >手風琴</a></li>
+    <li><a href="/docs/components/input/" class="sidebar-link "  aria-current="true" >輸入欄位</a></li>
+    <li><a href="/docs/components/select/" class="sidebar-link "  aria-current="true" >選擇功能表</a></li>
+    <li><a href="/docs/components/sidebar/" class="sidebar-link "  aria-current="true" >側邊欄</a></li>
+    <li><a href="/docs/components/breadcrumb/" class="sidebar-link "  aria-current="true" >麵包屑</a></li>
+    <li><a href="/docs/components/dropdown/" class="sidebar-link "  aria-current="true" >導覽列下拉選單</a></li>
+    <li><a href="/docs/components/header/" class="sidebar-link "  aria-current="true" >頁首</a></li>
+    <li><a href="/docs/components/footer/" class="sidebar-link "  aria-current="true" >頁尾</a></li>
+ 
+</ul>
+</nav>
+
+  </aside>
+
+  <main class="bd-main order-1">
+    <div class="bd-intro ps-lg-4">
+
+      <div class="d-md-flex flex-md-row align-items-left justify-content-between">
+        
+        <h1 id="content">手風琴</h1>
+      </div>
+      <p style="font-size: 1.5rem">手風琴是一種可以展開與隱藏更多資訊的列表。</p>
+      <hr>
+    </div>
+
+        
+    <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted" style="visibility: hidden;">
+      <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+      
+    </div>
+    
+
+    <div class="bd-content ps-lg-4">
+      
+
+      <h2 id="關於手風琴">關於手風琴</h2>
+<p>手風琴 (accordion) 是一種可以展開與隱藏更多資訊的列表，展開後的資訊可以是純文字，也可以是更深層的手風琴 (layered accordion) 。</p>
+<h2 id="使用規範">使用規範</h2>
+<h3 id="何時該使用手風琴">何時該使用手風琴</h3>
+<ul>
+<li><strong>切換隱藏或顯示大量文字內容。</strong> 當列表上的說明文字多到一個量，可以使用手風琴內部分文字收納隱藏起來，讓使用者自行點擊切換顯示更多文字內容或是隱藏部分文字內容。</li>
+<li><strong>以短句標題總結大量文字內容。</strong> 當頁面上的文字內容可以用某個短句子總結時，且使用者不一定需要這些大篇幅的文字資訊時，可以使用手風琴幫助收納資訊，讓使用者僅以短句標題先初步瀏覽總結，再自行選擇是否展開以查看更多。（列如：問答集，使用者不一定需要知道每個問題的答案，但可以透過問題本身自行選擇想要觀看某條目的答案）。</li>
+</ul>
+<h3 id="何時該考慮使用其他元件">何時該考慮使用其他元件</h3>
+<ul>
+<li><strong>標題過於豐富。</strong> 當標題內容較難以文字簡單呈現時，請考慮使用其他文件，例如可以包含標題、內文、圖片、按鈕的卡片元件 (card component) 。</li>
+<li><strong>內容過於簡單。</strong> 手風琴的互動會增加使用者的認知負荷 (cognitive load) 和互動成本 (interaction cost)，所以當內容簡短到不需要以標題做壓縮時，請考慮直接將文字排版，不需要使用手風琴收納。</li>
+<li><strong>預設使用者詳讀全文。</strong> 當您希望使用者詳讀所有內容時，請勿假設使用者會點開所有手風琴的內容，請考慮捨棄使用手風琴而改以使用簡單乾淨的文字排版，協助使用者閱讀內容。</li>
+</ul>
+<h3 id="手風琴易用性">手風琴易用性</h3>
+<ul>
+<li><strong>圖標一致性。</strong> 手風琴上的圖標按鈕應一致，展開按鈕應選用同一種，收納按鈕也應選用同一種。</li>
+<li><strong>風格差異。</strong> 使用者應要能夠容易辨識出手風琴展開時與收納時的風格差異。</li>
+</ul>
+<h2 id="元件設計">元件設計</h2>
+<h3 id="基本手風琴-basic-accordion">基本手風琴 Basic accordion</h3>
+<p>基本款的手風琴預設將內容收起。打開後有文字內容。</p>
+<div class="bd-example">
+
+<div class="row d-flex justify-content-center">
+  <div class="col-lg-4">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+        <div class="accordion-item">
+        <span class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-lg-4&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordionExample&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingOne&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseOne&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseOne&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseOne&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingOne&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionExample&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingTwo&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseTwo&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseTwo&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseTwo&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingTwo&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionExample&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingThree&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseThree&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseThree&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseThree&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingThree&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionExample&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingFour&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseFour&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseFour&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseFour&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingFour&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionExample&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h2 id="多層-multilevel">多層 Multilevel</h2>
+<p>打開有另一層可展開的內容。</p>
+<div class="bd-example">
+<div class="row d-flex justify-content-center">
+  <div class="col-lg-4">
+    <div class="accordion" id="accordionExample3">
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingOne3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne3" data-bs-parent="#accordionExample3">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingTwo3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3" data-bs-parent="#accordionExample3">
+          <div class="accordion" id="accordionSecondLayer">
+            <div class="accordion-item">
+              <span class="accordion-header" id="headingSecondLayerOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerOne" aria-expanded="true" aria-controls="collapseSecondLayerOne">
+                  內層標題文字
+                </button>
+              </span>
+              <div id="collapseSecondLayerOne" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerOne" data-bs-parent="#accordionSecondLayer">
+                <div class="accordion-body">
+                  手風琴選單第二層內容文字手風琴選單第二層內容文字手風琴選單第二層內容文字
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <span class="accordion-header" id="headingSecondLayerTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerTwo" aria-expanded="true" aria-controls="collapseSecondLayerTwo">
+                  內層標題文字
+                </button>
+              </span>
+              <div id="collapseSecondLayerTwo" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerTwo" data-bs-parent="#accordionSecondLayer">
+                <div class="accordion-body">
+                  手風琴選單第二層內容文字手風琴選單第二層內容文字手風琴選單第二層內容文字
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <span class="accordion-header" id="headingSecondLayerThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerThree" aria-expanded="true" aria-controls="collapseSecondLayerThree">
+                  內層標題文字
+                </button>
+              </span>
+              <div id="collapseSecondLayerThree" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerThree" data-bs-parent="#accordionSecondLayer">
+                <div class="accordion-body">
+                  手風琴選單第二層內容文字手風琴選單第二層內容文字手風琴選單第二層內容文字
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingThree3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3" data-bs-parent="#accordionExample3">
+          <div class="accordion-body">
+          手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+        <div class="accordion-item">
+        <span class="accordion-header" id="headingFour3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour3" aria-expanded="false" aria-controls="collapseFour3">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseFour3" class="accordion-collapse collapse" aria-labelledby="headingFour3" data-bs-parent="#accordionExample3">
+          <div class="accordion-body">
+          手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-lg-4&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordionExample3&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingOne3&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseOne3&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseOne3&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseOne3&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingOne3&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionExample3&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingTwo3&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseTwo3&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseTwo3&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseTwo3&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingTwo3&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionExample3&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordionSecondLayer&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingSecondLayerOne&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseSecondLayerOne&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseSecondLayerOne&#34;</span><span class="p">&gt;</span>
+                  內層標題文字
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseSecondLayerOne&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingSecondLayerOne&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionSecondLayer&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+                  手風琴選單第二層內容文字手風琴選單第二層內容文字手風琴選單第二層內容文字
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingSecondLayerTwo&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseSecondLayerTwo&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseSecondLayerTwo&#34;</span><span class="p">&gt;</span>
+                  內層標題文字
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseSecondLayerTwo&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingSecondLayerTwo&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionSecondLayer&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+                  手風琴選單第二層內容文字手風琴選單第二層內容文字手風琴選單第二層內容文字
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingSecondLayerThree&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseSecondLayerThree&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseSecondLayerThree&#34;</span><span class="p">&gt;</span>
+                  內層標題文字
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseSecondLayerThree&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingSecondLayerThree&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionSecondLayer&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+                  手風琴選單第二層內容文字手風琴選單第二層內容文字手風琴選單第二層內容文字
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingThree3&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseThree3&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseThree3&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseThree3&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingThree3&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionExample3&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+          手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingFour3&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseFour3&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseFour3&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseFour3&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingFour3&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionExample3&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+          手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h2 id="禁用-disabled">禁用 Disabled</h2>
+<p>將某些內容設為禁用，不可以按。</p>
+<div class="bd-example">
+
+<div class="row d-flex justify-content-center">
+  <div class="col-lg-4">
+    <div class="accordion" id="accordionExample2">
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingOne2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingTwo2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample2">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingThree2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2" disabled>
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2" data-bs-parent="#accordionExample2">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+        <div class="accordion-item">
+        <span class="accordion-header" id="headingFour2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2" disabled>
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseFour2" class="accordion-collapse collapse" aria-labelledby="headingFour2" data-bs-parent="#accordionExample2">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-lg-4&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordionExample2&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingOne2&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseOne2&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseOne2&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseOne2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingOne2&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionExample2&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingTwo2&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseTwo2&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseTwo2&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseTwo2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingTwo2&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionExample2&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingThree2&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseThree2&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseThree2&#34;</span> <span class="na">disabled</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseThree2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingThree2&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionExample2&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingFour2&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseFour2&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseFour2&#34;</span> <span class="na">disabled</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseFour2&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingFour2&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionExample2&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h2 id="總是開啟-always-open">總是開啟 Always open</h2>
+<p>在打開選單中另一個選項時，保持開啟狀態。</p>
+<div class="bd-example">
+
+<div class="row d-flex justify-content-center">
+  <div class="col-lg-4">
+    <div class="accordion" id="accordionExample4">
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingOne4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseOne4" class="accordion-collapse collapse" aria-labelledby="headingOne4">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingTwo4">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseTwo4" class="accordion-collapse collapse show" aria-labelledby="headingTwo4">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingThree4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseThree4" class="accordion-collapse collapse" aria-labelledby="headingThree4">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+        <div class="accordion-item">
+        <span class="accordion-header" id="headingFour4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseFour4" class="accordion-collapse collapse" aria-labelledby="headingFour4">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="accordion" id="accordionExample5">
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingOne5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne5" aria-expanded="true" aria-controls="collapseOne5">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseOne5" class="accordion-collapse collapse" aria-labelledby="headingOne5">
+          <div class="accordion-body">
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingTwo5">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseTwo5" class="accordion-collapse collapse show" aria-labelledby="headingTwo5" data-bs-parent="#accordionExample5">
+          <div class="accordion" id="accordionSecondLayer">
+            <div class="accordion-item">
+              <span class="accordion-header" id="headingSecondLayerOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerOne" aria-expanded="true" aria-controls="collapseSecondLayerOne">
+                  內層標題文字
+                </button>
+              </span>
+              <div id="collapseSecondLayerOne" class="accordion-collapse collapse show" aria-labelledby="headingSecondLayerOne">
+                <div class="accordion-body">
+                  手風琴選單第二層內容文字手風琴選單第二層內容文字手風琴選單第二層內容文字
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <span class="accordion-header" id="headingSecondLayerTwo">
+                <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerTwo" aria-expanded="true" aria-controls="collapseSecondLayerTwo">
+                  內層標題文字
+                </button>
+              </span>
+              <div id="collapseSecondLayerTwo" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerTwo">
+                <div class="accordion-body">
+                  手風琴選單第二層內容文字手風琴選單第二層內容文字手風琴選單第二層內容文字
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <span class="accordion-header" id="headingSecondLayerThree">
+                <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecondLayerThree" aria-expanded="true" aria-controls="collapseSecondLayerThree">
+                  內層標題文字
+                </button>
+              </span>
+              <div id="collapseSecondLayerThree" class="accordion-collapse collapse" aria-labelledby="headingSecondLayerThree">
+                <div class="accordion-body">
+                  手風琴選單第二層內容文字手風琴選單第二層內容文字手風琴選單第二層內容文字
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <span class="accordion-header" id="headingThree5">
+          <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseThree5" class="accordion-collapse collapse" aria-labelledby="headingThree5">
+          <div class="accordion-body">
+          手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+        <div class="accordion-item">
+        <span class="accordion-header" id="headingFour5">
+          <button class="accordion-button accordion-button-chevron collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour5" aria-expanded="false" aria-controls="collapseFour5">
+            手風琴選單標題文字
+          </button>
+        </span>
+        <div id="collapseFour5" class="accordion-collapse collapse" aria-labelledby="headingFour5">
+          <div class="accordion-body">
+          手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-lg-4&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordionExample4&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingOne4&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseOne4&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseOne4&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseOne4&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingOne4&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingTwo4&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseTwo4&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseTwo4&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseTwo4&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse show&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingTwo4&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingThree4&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseThree4&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseThree4&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseThree4&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingThree4&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingFour4&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseFour4&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseFour4&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseFour4&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingFour4&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-lg-4&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordionExample5&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingOne5&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseOne5&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseOne5&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseOne5&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingOne5&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+            手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingTwo5&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseTwo5&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseTwo5&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseTwo5&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse show&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingTwo5&#34;</span> <span class="na">data-bs-parent</span><span class="o">=</span><span class="s">&#34;#accordionExample5&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;accordionSecondLayer&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingSecondLayerOne&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseSecondLayerOne&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseSecondLayerOne&#34;</span><span class="p">&gt;</span>
+                  內層標題文字
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseSecondLayerOne&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse show&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingSecondLayerOne&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+                  手風琴選單第二層內容文字手風琴選單第二層內容文字手風琴選單第二層內容文字
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingSecondLayerTwo&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button accordion-button-chevron collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseSecondLayerTwo&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseSecondLayerTwo&#34;</span><span class="p">&gt;</span>
+                  內層標題文字
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseSecondLayerTwo&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingSecondLayerTwo&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+                  手風琴選單第二層內容文字手風琴選單第二層內容文字手風琴選單第二層內容文字
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingSecondLayerThree&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button accordion-button-chevron collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseSecondLayerThree&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseSecondLayerThree&#34;</span><span class="p">&gt;</span>
+                  內層標題文字
+                <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseSecondLayerThree&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingSecondLayerThree&#34;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+                  手風琴選單第二層內容文字手風琴選單第二層內容文字手風琴選單第二層內容文字
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingThree5&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button accordion-button-chevron collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseThree5&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseThree5&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseThree5&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingThree5&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+          手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-item&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-header&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;headingFour5&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-button accordion-button-chevron collapsed&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">&#34;collapse&#34;</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">&#34;#collapseFour5&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span> <span class="na">aria-controls</span><span class="o">=</span><span class="s">&#34;collapseFour5&#34;</span><span class="p">&gt;</span>
+            手風琴選單標題文字
+          <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;collapseFour5&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-collapse collapse&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;headingFour5&#34;</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;accordion-body&#34;</span><span class="p">&gt;</span>
+          手風琴選單第一層內容文字手風琴選單第一層內容文字手風琴選單第一層內容文字
+          <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+
+    </div>
+  </main>
+</div>
+
+
+    <footer>
+  <div class="container">
+    <p>PDIS 設計系統的目的在於提供協助製作政府網站設計與開發的團隊一套工具，更有效率地做出對使用者友善的數位服務。</p>
+    <p>本站除另有標示外，內容以創用 CC BY 4.0 授權條款釋出。</p>
+    <ul class="nav">
+      <li class="nav-item"><a href="https://pdis.tw">PDIS 官網</a></li>
+      <li class="nav-item"><a href="https://github.com/PDIS/design-system">PDIS 設計系統原始碼</a></li>
+      <li class="nav-item"><a href="https://github.com/PDIS/design-system/tree/main/site">本站原始碼</a></li>
+      <li class="nav-item"><a href="mailto:hello@pdis.tw">聯絡我們</a></li>
+    </ul>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+
+<script src="/docs/5.1/assets/js/docs.min.js"></script>
+
+
+    
+
+  </body>
+</html>

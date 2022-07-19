@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="在文字的附近，協助其溝通意涵。">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.88.1">
+
+<meta name="docsearch:language" content="en">
+<meta name="docsearch:version" content="5.1">
+
+<title>排版 Layout · PDIS Design System v5.1</title>
+
+<link rel="canonical" href="https://design.pdis.tw/docs/style/layout/">
+
+
+
+<!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link href="/docs/5.1/assets/css/docs.css" rel="stylesheet">
+<link href="/docs/5.1/dist/css/pdis-design-system.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@getbootstrap">
+<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:title" content="排版 Layout">
+<meta name="twitter:description" content="在文字的附近，協助其溝通意涵。">
+<meta name="twitter:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
+
+<!-- Facebook -->
+<meta property="og:url" content="https://design.pdis.tw/docs/style/layout/">
+<meta property="og:title" content="排版 Layout">
+<meta property="og:description" content="在文字的附近，協助其溝通意涵。">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
+
+
+
+  </head>
+  <body>
+    <div class="skippy visually-hidden-focusable overflow-hidden">
+  <div class="container-xl">
+    <a class="d-inline-flex p-2 m-1" href="#content">Skip to main content</a>
+    <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a>
+  </div>
+</div>
+
+
+    <header class="navbar navbar-expand-md bg-brand-flat">
+  <nav class="container" aria-label="Main navigation">
+    <div><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=40 height=40 alt="pdis logo">
+      <a class="navbar-brand" href="/" aria-label="brand">
+        
+        <span class="navbar-brand-title">PDIS 設計系統</span>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar"
+      aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="bdNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class=""
+            href="/docs/overview/">概述</a>
+        </li>
+        <li class="nav-item">
+          <a class=" active" aria-current="true"
+            href="/docs/style/">風格</a>
+        </li>
+        <li class="nav-item">
+          <a class=""
+            href="/docs/components/">元件</a>
+        </li>
+        <li class="nav-item">
+          <a class="disabled"
+            href="/docs/pattern/">模版</a>
+        </li>
+      </ul>
+
+      
+
+      
+    </div>
+  </nav>
+</header>
+
+
+    
+
+
+<div class="container my-md-4 bd-layout">
+  <aside class="bd-sidebar">
+    <nav class="sidebar" id="sidebar">
+  <ul class="sidebar-body">
+ 
+    <li><a href="/docs/style/color/" class="sidebar-link "  aria-current="true" >顏色</a></li>
+    <li><a href="/docs/style/typography/" class="sidebar-link "  aria-current="true" >文字屬性</a></li>
+    <li><a href="/docs/style/icons/" class="sidebar-link "  aria-current="true" >圖標</a></li>
+    <li><a href="/docs/style/layout/" class="sidebar-link active"  aria-current="true" >排版</a></li>
+ 
+ 
+</ul>
+</nav>
+
+  </aside>
+
+  <main class="bd-main order-1">
+    <div class="bd-intro ps-lg-4">
+
+      <div class="d-md-flex flex-md-row align-items-left justify-content-between">
+        
+        <h1 id="content">排版 Layout</h1>
+      </div>
+      <p style="font-size: 1.5rem">在文字的附近，協助其溝通意涵。</p>
+      <hr>
+    </div>
+
+        
+    <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted" style="visibility: hidden;">
+      <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+      
+    </div>
+    
+
+    <div class="bd-content ps-lg-4">
+      
+
+      <h2 id="html區塊">HTML區塊</h2>
+<p>使用語意化來區隔功能的結構，也有利於SEO搜尋。</p>
+<h3 id="網站結構">網站結構</h3>
+<p>網站結構選擇分為以下兩種，分為有aside與沒aside，排版如下</p>
+<h3 id="html範例">HTML範例</h3>
+<h4 id="沒有-aside">沒有 aside</h4>
+<div class="bd-example">
+<header>
+  Header
+  <nav class="container">Navbar</nav>
+</header>
+<div class="container">
+  <main>Main</main>
+</div>
+<footer>Footer</footer>
+
+<style>
+.bd-example > header, .bd-example > header > nav, .bd-example > .container > main, .bd-example > section, .bd-example > aside, .bd-example > footer {
+  padding: 0.5rem;
+  background-color: LightGray;
+  border: 0.2rem solid white;
+  text-align: center;
+  box-sizing: border-box;
+} 
+.bd-example > .container > main {
+  height: 200px;
+  margin: 0 -12px;
+}
+</style>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+  Header
+  <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;</span>Navbar<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>Main<span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>Footer<span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">.</span><span class="nc">bd-example</span> <span class="o">&gt;</span> <span class="nt">header</span><span class="o">,</span> <span class="p">.</span><span class="nc">bd-example</span> <span class="o">&gt;</span> <span class="nt">header</span> <span class="o">&gt;</span> <span class="nt">nav</span><span class="o">,</span> <span class="p">.</span><span class="nc">bd-example</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">container</span> <span class="o">&gt;</span> <span class="nt">main</span><span class="o">,</span> <span class="p">.</span><span class="nc">bd-example</span> <span class="o">&gt;</span> <span class="nt">section</span><span class="o">,</span> <span class="p">.</span><span class="nc">bd-example</span> <span class="o">&gt;</span> <span class="nt">aside</span><span class="o">,</span> <span class="p">.</span><span class="nc">bd-example</span> <span class="o">&gt;</span> <span class="nt">footer</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="n">LightGray</span><span class="p">;</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mf">0.2</span><span class="kt">rem</span> <span class="kc">solid</span> <span class="kc">white</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+  <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span>
+<span class="p">}</span> 
+<span class="p">.</span><span class="nc">bd-example</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">container</span> <span class="o">&gt;</span> <span class="nt">main</span> <span class="p">{</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">-12</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="有-aside">有 aside</h4>
+<div class="bd-example">
+<header>
+  Header
+  <nav class="container">nav</nav>
+</header>
+<div class="container">
+  <div class="row">
+    <aside class="col-12 col-md-4 col-lg-3">SideBar</aside>
+    <main class="col-12 col-md-8 col-lg-9">Main</main>
+  </div>
+</div>
+<footer>Footer</footer>
+
+<style>
+.bd-example > .container > div > main, .bd-example > .container > div > aside {
+  height: 200px;
+  padding: 0.5rem;
+  background-color: LightGray;
+  border: 0.2rem solid white;
+  text-align: center;
+  box-sizing: border-box;
+}
+</style>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+  Header
+  <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;</span>nav<span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">aside</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-12 col-md-4 col-lg-3&#34;</span><span class="p">&gt;</span>SideBar<span class="p">&lt;/</span><span class="nt">aside</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">main</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-12 col-md-8 col-lg-9&#34;</span><span class="p">&gt;</span>Main<span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>Footer<span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">.</span><span class="nc">bd-example</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">container</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">main</span><span class="o">,</span> <span class="p">.</span><span class="nc">bd-example</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">container</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">aside</span> <span class="p">{</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="p">:</span> <span class="mf">0.5</span><span class="kt">rem</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="n">LightGray</span><span class="p">;</span>
+  <span class="k">border</span><span class="p">:</span> <span class="mf">0.2</span><span class="kt">rem</span> <span class="kc">solid</span> <span class="kc">white</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+  <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre></div>
+<h2 id="斷點-breakpoint">斷點 Breakpoint</h2>
+<p>斷點用於控制排版如何在不同的設備大小進行響應式的變化，本設計系統沿用 Bootstrap 在斷點的設計。</p>
+<h3 id="概念">概念</h3>
+<ul>
+<li>斷點作為響應式開發的基礎。使用斷點來控制在特定尺寸或設備上調整佈局。</li>
+<li>使用 media queries 的斷點構建 CSS。 media queries 是 CSS 的一個特性，它允許您根據瀏覽器和操作系統參數有條件地套用樣式。我們最常在 media queries 中使用 min-width.</li>
+<li>在響應式開發中，主要會以行動版為優先。 Bootstrap 的 CSS 旨在使用最少的樣式來使佈局在最小的斷點處工作，然後在樣式上分層以針對較大的設備調整該設計。這樣可以優化CSS，縮短渲染時間，並為訪問者提供出色的體驗。</li>
+</ul>
+<h3 id="斷點選項">斷點選項</h3>
+<table class="table">
+<thead>
+<tr>
+<th>斷點</th>
+<th>Class 中綴</th>
+<th>寬度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X-Small</td>
+<td>無</td>
+<td>&lt;576px</td>
+</tr>
+<tr>
+<td>Small</td>
+<td>sm</td>
+<td>≥576px</td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>md</td>
+<td>≥ 768px</td>
+</tr>
+<tr>
+<td>Large</td>
+<td>lg</td>
+<td>≥ 992px</td>
+</tr>
+<tr>
+<td>Extra large</td>
+<td>xl</td>
+<td>≥ 1200px</td>
+</tr>
+<tr>
+<td>Extra extra large</td>
+<td>xxl</td>
+<td>≥1400px</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="容器-container">容器 Container</h2>
+<p>容器作為基本建構區塊，在不同大小的裝置中包含、填充和對齊你的內容</p>
+<h3 id="容器選項">容器選項</h3>
+<p>容器作為最基本的布局元素，可以在下表比較各段點</p>
+<table class="table">
+<thead>
+<tr>
+<th></th>
+<th>&lt;576px</th>
+<th>≥576px</th>
+<th>≥768px</th>
+<th>≥992px</th>
+<th>≥1200px</th>
+<th>≥1400px</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.container</code></td>
+<td><span class="text-muted">100%</span></td>
+<td>540px</td>
+<td>720px</td>
+<td>960px</td>
+<td>1140px</td>
+<td>1320px</td>
+</tr>
+<tr>
+<td><code>.container-sm</code></td>
+<td><span class="text-muted">100%</span></td>
+<td>540px</td>
+<td>720px</td>
+<td>960px</td>
+<td>1140px</td>
+<td>1320px</td>
+</tr>
+<tr>
+<td><code>.container-md</code></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td>720px</td>
+<td>960px</td>
+<td>1140px</td>
+<td>1320px</td>
+</tr>
+<tr>
+<td><code>.container-lg</code></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td>960px</td>
+<td>1140px</td>
+<td>1320px</td>
+</tr>
+<tr>
+<td><code>.container-xl</code></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td>1140px</td>
+<td>1320px</td>
+</tr>
+<tr>
+<td><code>.container-xxl</code></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td>1320px</td>
+</tr>
+<tr>
+<td><code>.container-fluid</code></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+<td><span class="text-muted">100%</span></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="容器選擇">容器選擇</h3>
+<p>Bootstrap 提供了7種container選擇，為了統一呈現效果，我們建議使用 <code>.container</code> 與 <code>.container-fluid</code>。</p>
+<h4 id="預設容器">預設容器</h4>
+<p>預設使用 <code>.container</code>，這是一個響應式、固定寬度的容器，在每個斷點處都會改變寬度。</p>
+<!-- <div class="bd-example">
+<div>
+  <div class="container">
+    .container
+  </div>
+</div>
+
+<style>
+.bd-example > div > .container {
+  background: LightGray;
+  height: 100%;
+}
+</style>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container&#34;</span><span class="p">&gt;</span>
+    .container
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">.</span><span class="nc">bd-example</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">container</span> <span class="p">{</span>
+  <span class="k">background</span><span class="p">:</span> <span class="n">LightGray</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre></div> -->
+<h4 id="全寬容器">全寬容器</h4>
+<p>使用 <code>.container-fluid</code> 全寬容器，在任何裝置寬度皆採用最大寬度。</p>
+<!-- <div class="bd-example">
+<div>
+  <div class="container-fluid">
+    .container-fluid
+  </div>
+</div>
+
+<style>
+.bd-example > div > .container-fluid {
+  background: LightGray;
+  height: 100%;
+}
+</style>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-fluid&#34;</span><span class="p">&gt;</span>
+    .container-fluid
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">.</span><span class="nc">bd-example</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">container-fluid</span> <span class="p">{</span>
+  <span class="k">background</span><span class="p">:</span> <span class="n">LightGray</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre></div> -->
+<h2 id="網格-grid">網格 Grid</h2>
+<p>網格使用 flexbox 在各種尺寸的網頁排版，包含12個欄位、6個響應式斷點</p>
+<h3 id="如何運作">如何運作</h3>
+<p>Bootstrap 的網格系統使用容器、行、列、欄來進行排版與對齊，並使用 flexbox 建構來達成響應式網站。</p>
+<div class="bd-callout bd-callout-info">
+若不熟悉 flexbox，可以閱讀 <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">flexbox 指南</a>
+</div>
+
+<div class="bd-example">
+<div class="grid-example">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <p>1/3</p>
+      </div>
+      <div class="col">
+        <p>1/3</p>
+      </div>
+      <div class="col">
+        <p>1/3</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.grid-example {
+  background: none;
+  height: 100%;
+}
+
+.bd-example > .grid-example > .container-fluid > div > div > p {
+  border-radius:10px;
+  background-color: #005AA8;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  height: 100px;
+  line-height: 100px;
+}
+</style>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid-example&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-fluid&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>1/3<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>1/3<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>1/3<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">.</span><span class="nc">grid-example</span> <span class="p">{</span>
+  <span class="k">background</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">bd-example</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">grid-example</span> <span class="o">&gt;</span> <span class="p">.</span><span class="nc">container-fluid</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="k">border-radius</span><span class="p">:</span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#005AA8</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">2</span><span class="kt">rem</span><span class="p">;</span>
+  <span class="k">height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre></div>
+<h3 id="網格選項">網格選項</h3>
+<p>Bootstrap 的網格系統會採用以下六種斷點，各斷點欄位數量皆為12，並且欄位間距為上1.5rem、左0.75rem、右0.75rem。</p>
+<div class="table-responsive">
+  <table class="table mb-4">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">
+          xs<br>
+          <span class="fw-normal">&lt;576px</span>
+        </th>
+        <th scope="col">
+          sm<br>
+          <span class="fw-normal">&ge;576px</span>
+        </th>
+        <th scope="col">
+          md<br>
+          <span class="fw-normal">&ge;768px</span>
+        </th>
+        <th scope="col">
+          lg<br>
+          <span class="fw-normal">&ge;992px</span>
+        </th>
+        <th scope="col">
+          xl<br>
+          <span class="fw-normal">&ge;1200px</span>
+        </th>
+        <th scope="col">
+          xxl<br>
+          <span class="fw-normal">&ge;1400px</span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="text-nowrap" scope="row">容器最大寬度</th>
+        <td>無(自動)</td>
+        <td>540px</td>
+        <td>720px</td>
+        <td>960px</td>
+        <td>1140px</td>
+        <td>1320px</td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row">Class 前綴</th>
+        <td><code>.col-</code></td>
+        <td><code>.col-sm-</code></td>
+        <td><code>.col-md-</code></td>
+        <td><code>.col-lg-</code></td>
+        <td><code>.col-xl-</code></td>
+        <td><code>.col-xxl-</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h3 id="使用指南">使用指南</h3>
+<p>Bootstrap 提供了六個斷點，我們建議只使用以下三種斷點作為不同大小裝置的排版與設計。</p>
+<div class="table-responsive">
+  <table class="table mb-4">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">
+          xs<br>
+          <span class="fw-normal">&lt;768px</span>
+        </th>
+        <th scope="col">
+          md<br>
+          <span class="fw-normal">&ge;768px</span>
+        </th>
+        <th scope="col">
+          lg<br>
+          <span class="fw-normal">&ge;992px</span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="text-nowrap" scope="row">class 前綴</th>
+        <td><code>.col-</code></td>
+        <td><code>.col-md-</code></td>
+        <td><code>.col-md-lg</code></td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row">裝置</th>
+        <td>手機</td>
+        <td>平板</td>
+        <td>電腦</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>在版面設計上，建議以全滿、1/2、1/3、1/4來完成排版。</p>
+<div class="table-responsive">
+  <table class="table mb-4">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">
+          全滿</span>
+        </th>
+        <th scope="col">
+          1/2</span>
+        </th>
+        <th scope="col">
+          1/3</span>
+        </th>
+        <th scope="col">
+          1/4</span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="text-nowrap" scope="row">class</th>
+        <td><code>.col-</code></td>
+        <td><code>.col-6</code></td>
+        <td><code>.col-4</code></td>
+        <td><code>.col-3</code></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<h3 id="欄位間距">欄位間距</h3>
+<p>預設欄位間距為：上1.5rem、左0.75rem、右0.75rem，並建議使用預設值，若要修改可參考 <a href="https://getbootstrap.com/docs/5.1/layout/gutters/">Bootstrap 之 Gutters 設定</a>。</p>
+<h3 id="各種寬度">各種寬度</h3>
+<h4 id="全滿">全滿</h4>
+<div class="bd-example">
+<div class="grid-example">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <p>全滿</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid-example&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-fluid&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>全滿<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="二分之一">二分之一</h4>
+<div class="bd-example">
+<div class="grid-example">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <p>1/2</p>
+      </div>
+      <div class="col-6">
+        <p>1/2</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid-example&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-fluid&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-6&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>1/2<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-6&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>1/2<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="三分之一">三分之一</h4>
+<div class="bd-example">
+<div class="grid-example">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4">
+        <p>1/3</p>
+      </div>
+      <div class="col-8">
+        <p>2/3</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid-example&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-fluid&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>1/3<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-8&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>2/3<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+<h4 id="四分之一">四分之一</h4>
+<div class="bd-example">
+<div class="grid-example">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+        <p>1/4</p>
+      </div>
+      <div class="col-9">
+        <p>3/4</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;grid-example&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-fluid&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-3&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>1/4<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-9&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>3/4<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+
+    </div>
+  </main>
+</div>
+
+
+    <footer>
+  <div class="container">
+    <p>PDIS 設計系統的目的在於提供協助製作政府網站設計與開發的團隊一套工具，更有效率地做出對使用者友善的數位服務。</p>
+    <p>本站除另有標示外，內容以創用 CC BY 4.0 授權條款釋出。</p>
+    <ul class="nav">
+      <li class="nav-item"><a href="https://pdis.tw">PDIS 官網</a></li>
+      <li class="nav-item"><a href="https://github.com/PDIS/design-system">PDIS 設計系統原始碼</a></li>
+      <li class="nav-item"><a href="https://github.com/PDIS/design-system/tree/main/site">本站原始碼</a></li>
+      <li class="nav-item"><a href="mailto:hello@pdis.tw">聯絡我們</a></li>
+    </ul>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+
+<script src="/docs/5.1/assets/js/docs.min.js"></script>
+
+
+    
+
+  </body>
+</html>

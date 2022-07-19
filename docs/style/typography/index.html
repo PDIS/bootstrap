@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="文字是溝通的基調，它的無所不在也承載了整個產品的基本質感。">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.88.1">
+
+<meta name="docsearch:language" content="en">
+<meta name="docsearch:version" content="5.1">
+
+<title>文字屬性 Typography · PDIS Design System v5.1</title>
+
+<link rel="canonical" href="https://design.pdis.tw/docs/style/typography/">
+
+
+
+<!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link href="/docs/5.1/assets/css/docs.css" rel="stylesheet">
+<link href="/docs/5.1/dist/css/pdis-design-system.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@getbootstrap">
+<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:title" content="文字屬性 Typography">
+<meta name="twitter:description" content="文字是溝通的基調，它的無所不在也承載了整個產品的基本質感。">
+<meta name="twitter:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
+
+<!-- Facebook -->
+<meta property="og:url" content="https://design.pdis.tw/docs/style/typography/">
+<meta property="og:title" content="文字屬性 Typography">
+<meta property="og:description" content="文字是溝通的基調，它的無所不在也承載了整個產品的基本質感。">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://design.pdis.tw/docs/5.1/assets/brand/bootstrap-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
+
+
+
+  </head>
+  <body>
+    <div class="skippy visually-hidden-focusable overflow-hidden">
+  <div class="container-xl">
+    <a class="d-inline-flex p-2 m-1" href="#content">Skip to main content</a>
+    <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a>
+  </div>
+</div>
+
+
+    <header class="navbar navbar-expand-md bg-brand-flat">
+  <nav class="container" aria-label="Main navigation">
+    <div><img class="rounded" src="/img/pdis-logo-final-inverse.png" width=40 height=40 alt="pdis logo">
+      <a class="navbar-brand" href="/" aria-label="brand">
+        
+        <span class="navbar-brand-title">PDIS 設計系統</span>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar"
+      aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="bdNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class=""
+            href="/docs/overview/">概述</a>
+        </li>
+        <li class="nav-item">
+          <a class=" active" aria-current="true"
+            href="/docs/style/">風格</a>
+        </li>
+        <li class="nav-item">
+          <a class=""
+            href="/docs/components/">元件</a>
+        </li>
+        <li class="nav-item">
+          <a class="disabled"
+            href="/docs/pattern/">模版</a>
+        </li>
+      </ul>
+
+      
+
+      
+    </div>
+  </nav>
+</header>
+
+
+    
+
+
+<div class="container my-md-4 bd-layout">
+  <aside class="bd-sidebar">
+    <nav class="sidebar" id="sidebar">
+  <ul class="sidebar-body">
+ 
+    <li><a href="/docs/style/color/" class="sidebar-link "  aria-current="true" >顏色</a></li>
+    <li><a href="/docs/style/typography/" class="sidebar-link active"  aria-current="true" >文字屬性</a></li>
+    <li><a href="/docs/style/icons/" class="sidebar-link "  aria-current="true" >圖標</a></li>
+    <li><a href="/docs/style/layout/" class="sidebar-link "  aria-current="true" >排版</a></li>
+ 
+ 
+</ul>
+</nav>
+
+  </aside>
+
+  <main class="bd-main order-1">
+    <div class="bd-intro ps-lg-4">
+
+      <div class="d-md-flex flex-md-row align-items-left justify-content-between">
+        
+        <h1 id="content">文字屬性 Typography</h1>
+      </div>
+      <p style="font-size: 1.5rem">文字是溝通的基調，它的無所不在也承載了整個產品的基本質感。</p>
+      <hr>
+    </div>
+
+        
+    <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted" style="visibility: hidden;">
+      <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
+      
+    </div>
+    
+
+    <div class="bd-content ps-lg-4">
+      
+
+      <h2 id="關於文字屬性">關於文字屬性</h2>
+<p>文字是最常出現的元素，它的無所不在也代表了整個產品的基本質感。在數位系統中，文字的出現常常代表著頁面上 80% - 90% 的資訊，其他 10% - 20% 可能是視覺引導。雖然文字所承載的的資訊量存在於文字內容而非樣式，但文字的樣式與屬性卻可以大大的影響使用者的閱讀舒適度、閱讀時的情緒。文字屬性乘載著數位產品的溝通基調，而政府網站的文字屬性應該是明確的、理性的、清晰的。</p>
+<p>在設計數位系統時，文字內容中的每行字句（例如標題、副標題與內文）的樣式會呈現出所謂的文字情緒、文字聲音與文字氛圍。文字屬性的重要性在於給出一個架構，例如讓同樣層級的文字帶有同樣的樣式，保持整體介面的易讀性。PDIS 設計系統所採用的文字屬性著重於使用者的可讀性與介面整體的易讀性，我們注意一個頁面中標題與內文的可辨認性、段落與段落之間保持可以換氣、呼吸的空間，並注意跨頁面之間標題樣式的一致性、內文樣式的一致性。</p>
+<h2 id="預設字型家族-font-family">預設字型家族 Font Family</h2>
+<p>市面上有許多開源的字體是適合螢幕使用的，本設計系統預設採用的中文字體是 <code>Noto Sans TC</code>，英文字體則是 <code>Noto Sans</code>。</p>
+<h2 id="修改字型家族">修改字型家族</h2>
+<p>您可以自由選用適合的字體，方式如下：</p>
+<p>我們沿用bootstrap variable的設定</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="na">--bs-body-font-family</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs-font-sans-serif</span><span class="p">);</span>
+</code></pre></div><p>其中 <code>--bs-body-font-family</code> 為 bootstrap 定義的變數，更改此參數即可改變網站的字體設定，而由上述程式碼所知 <code>--bs-body-font-family</code> 的值為 <code>--bs-font-sans-serif</code>，因此只需在<code>css</code>裡覆蓋掉變數 <code>--bs-font-sans-serif</code> 即可。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">//範例
+</span><span class="c1"></span><span class="na">--bs-font-sans-serif</span><span class="o">:</span> <span class="s2">&#34;Noto Sans&#34;</span><span class="o">,</span> <span class="s2">&#34;Noto Sans TC&#34;</span><span class="o">,</span> <span class="ni">sans-serif</span><span class="p">;</span>
+</code></pre></div><p>需注意的是，我們跟隨國發會的建議，避免使用標楷體，原因如下：</p>
+<p>根據國發會網站管理規範指出：政府機關的文件習慣以標楷體編排，但小字型的標楷體在螢幕顯示往往不夠清楚，建議網頁設計者或網頁內容維護者在製作網頁時，取消原訂公文的標楷體格式，檔案或列印版本的公文則另行提供。</p>
+<h3 id="字級系統-typescale">字級系統 Typescale</h3>
+<p>這個示範性的字級系統全數使用 Noto Sans TC 字體（英文則使用 Noto Sans)。</p>
+<table class="table">
+<thead>
+<tr>
+<th>Design Token</th>
+<th>font-size</th>
+<th>font-weight</th>
+<th>line-height</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Display/Large</td>
+<td>3.5625rem</td>
+<td>400</td>
+<td>4rem</td>
+<td><div class="display-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Display/Medium</td>
+<td>2.8125rem</td>
+<td>400</td>
+<td>3.25rem</td>
+<td><div class="display-text">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Display/Small</td>
+<td>2.25rem</td>
+<td>400</td>
+<td>2.75rem</td>
+<td><div class="display-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Heading/Large</td>
+<td>2rem</td>
+<td>400</td>
+<td>2.5rem</td>
+<td><div class="heading-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Heading/Medium</td>
+<td>1.75rem</td>
+<td>400</td>
+<td>2.25rem</td>
+<td><div class="heading-text">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Heading/Small</td>
+<td>1.5rem</td>
+<td>400</td>
+<td>2rem</td>
+<td><div class="heading-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Title/Large</td>
+<td>1.375rem</td>
+<td>500</td>
+<td>1.75rem</td>
+<td><div class="title-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Title/Medium</td>
+<td>1.125rem</td>
+<td>500</td>
+<td>1.5rem</td>
+<td><div class="title-text">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Title/Small</td>
+<td>1rem</td>
+<td>500</td>
+<td>1.25rem</td>
+<td><div class="title-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Body/Large</td>
+<td>1.125rem</td>
+<td>400</td>
+<td>1.6875rem</td>
+<td><div class="body-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Body/Medium</td>
+<td>1rem</td>
+<td>400</td>
+<td>1.5rem</td>
+<td><div class="body-text">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Body/Small</td>
+<td>0.75rem</td>
+<td>400</td>
+<td>100%</td>
+<td><div class="body-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Body/Medium(Links)</td>
+<td>1rem</td>
+<td>500</td>
+<td>1.5rem</td>
+<td><a href="#">人皆生而自由；在尊嚴及權利上均各平等。</a></td>
+</tr>
+<tr>
+<td>Body/Medium(SecondaryLinks)</td>
+<td>1rem</td>
+<td>400</td>
+<td>1.5rem</td>
+<td><a href="#">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Label/Large</td>
+<td>1rem</td>
+<td>500</td>
+<td>1.5rem</td>
+<td><div class="label-text-lg">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Label/Medium</td>
+<td>0.875rem</td>
+<td>500</td>
+<td>1.25rem</td>
+<td><div class="label-text">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+<tr>
+<td>Label/Small</td>
+<td>0.75rem</td>
+<td>500</td>
+<td>1rem</td>
+<td><div class="label-text-sm">人皆生而自由；在尊嚴及權利上均各平等。</div></td>
+</tr>
+</tbody>
+</table>
+
+
+    </div>
+  </main>
+</div>
+
+
+    <footer>
+  <div class="container">
+    <p>PDIS 設計系統的目的在於提供協助製作政府網站設計與開發的團隊一套工具，更有效率地做出對使用者友善的數位服務。</p>
+    <p>本站除另有標示外，內容以創用 CC BY 4.0 授權條款釋出。</p>
+    <ul class="nav">
+      <li class="nav-item"><a href="https://pdis.tw">PDIS 官網</a></li>
+      <li class="nav-item"><a href="https://github.com/PDIS/design-system">PDIS 設計系統原始碼</a></li>
+      <li class="nav-item"><a href="https://github.com/PDIS/design-system/tree/main/site">本站原始碼</a></li>
+      <li class="nav-item"><a href="mailto:hello@pdis.tw">聯絡我們</a></li>
+    </ul>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+
+<script src="/docs/5.1/assets/js/docs.min.js"></script>
+
+
+    
+
+  </body>
+</html>
