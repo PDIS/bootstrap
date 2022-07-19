@@ -30,17 +30,22 @@ toc: true
 
 [範例連結](/docs/examples/headers/header1)
 
+### 頁首加下拉式選單 Basic header with dropdowns
+服務項目可以是文字連結，也可以是下拉選單。
+
+[範例連結](/docs/examples/headers/header2)<br>
+
 ### 語言設定 Language Setting
 
 雙語或多語選單
 
-[範例連結](/docs/examples/headers/header2)<br>
-[範例連結](/docs/examples/headers/header3)
+[範例連結](/docs/examples/headers/header3)<br>
+[範例連結](/docs/examples/headers/header4)
 
 ### 頁底色 Background Color
 
 三種不同底色
 
-[範例連結](/docs/examples/headers/header4)<br>
 [範例連結](/docs/examples/headers/header5)<br>
 [範例連結](/docs/examples/headers/header6)<br>
+[範例連結](/docs/examples/headers/header7)<br>

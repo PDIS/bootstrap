@@ -133,7 +133,7 @@ sub {
   bottom: -0.25em;
 }
 
-.label-text, .form-select, .sidebar .sidebar-body .sidebar-subheader, .invalid-feedback, .input-hint, .form-control, .form-label, .tab-text, .nav-pills .nav-item .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .navbar .nav-link.dropdown-toggle, .navbar .navbar-toggler, .badge-date, .badge {
+.label-text, .navbar .nav-link, .form-select, .sidebar .sidebar-body .sidebar-subheader, .invalid-feedback, .input-hint, .form-control, .form-label, .tab-text, .nav-pills .nav-item .nav-link, .nav-tabs .nav-item .nav-link, .button-text, .btn, .navbar .nav-link.dropdown-toggle, .navbar .navbar-toggler, .badge-date, .badge {
   font-style: normal;
   font-weight: 500;
   font-size: 0.875rem;
@@ -141,7 +141,7 @@ sub {
   letter-spacing: 0.1px;
   color: var(--on-background);
 }
-.label-text:disabled, .form-select:disabled, .sidebar .sidebar-body .sidebar-subheader:disabled, .invalid-feedback:disabled, .input-hint:disabled, .form-control:disabled, .form-label:disabled, .tab-text:disabled, .nav-pills .nav-item .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .navbar .nav-link.dropdown-toggle:disabled, .navbar .navbar-toggler:disabled, .badge-date:disabled, .badge:disabled {
+.label-text:disabled, .navbar .nav-link:disabled, .form-select:disabled, .sidebar .sidebar-body .sidebar-subheader:disabled, .invalid-feedback:disabled, .input-hint:disabled, .form-control:disabled, .form-label:disabled, .tab-text:disabled, .nav-pills .nav-item .nav-link:disabled, .nav-tabs .nav-item .nav-link:disabled, .button-text:disabled, .btn:disabled, .navbar .navbar-toggler:disabled, .badge-date:disabled, .badge:disabled {
   color: var(--outline);
 }
 

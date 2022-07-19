@@ -16,7 +16,7 @@ layout: components-example
         <ul class="navbar-nav">
           <li class="nav-item dropdown order-2 order-md-1">
             <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              服務項目
+              關於本站
             </a>
             <ul class="dropdown-menu" aria-labelledby="DropdownMenu1">
               <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
@@ -27,20 +27,8 @@ layout: components-example
             </ul>
           </li>
           <li class="nav-item dropdown order-2 order-md-1">
-            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              服務項目
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="DropdownMenu2">
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown order-2 order-md-1">
             <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              服務項目
+              服務內容
             </a>
             <ul class="dropdown-menu" aria-labelledby="DropdownMenu3">
               <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
@@ -51,16 +39,10 @@ layout: components-example
             </ul>
           </li>
           <li class="nav-item dropdown order-2 order-md-1">
-            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              服務項目
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="DropdownMenu4">
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-            </ul>
+            <a class="nav-link" href="/">最新消息</a>
+          </li>
+          <li class="nav-item dropdown order-2 order-md-1">
+            <a class="nav-link" href="/">聯絡我們</a>
           </li>
           <li class="nav-item dropdown order-1 order-md-2">
             <a class="nav-link dropdown-toggle d-none d-md-block" href="#" id="DropdownSearch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -91,10 +73,14 @@ layout: components-example
               <li><a class="dropdown-item dropdown-item-header">網站設定 Setting</a></li>
               <li><a class="dropdown-item dropdown-item-title">語言 Language</a></li>
               <li>
-                <div class="btn-group" role="group" aria-label="Font size">
-                  <button type="button" class="btn btn-secondary">繁體中文</button>
-                  <button type="button" class="btn btn-secondary">English</button>
-                </div>
+                <select class="form-select" id="LanguageSelect" aria-label="LanguageSelect">
+                  <option selected>請選擇一個選項</option>
+                  <option value="zh-tw">繁體中文</option>
+                  <option value="en-us">English (US</option>
+                  <option value="en-uk">English (UK)</option>
+                  <option value="jp">Japanese</option>
+                  <option value="th">Thai</option>
+                </select>
               </li>
               <li><a class="dropdown-item dropdown-item-title">文字大小</a></li>
               <li>

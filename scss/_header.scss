@@ -121,6 +121,7 @@
   }
 
   .nav-link {
+    @extend .label-text;
     padding: 0.375rem 0.875rem !important;
     background-color: var(--brand);
     color: var(--on-brand);

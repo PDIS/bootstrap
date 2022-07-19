@@ -91,14 +91,10 @@ layout: components-example
               <li><a class="dropdown-item dropdown-item-header">網站設定 Setting</a></li>
               <li><a class="dropdown-item dropdown-item-title">語言 Language</a></li>
               <li>
-                <select class="form-select" id="LanguageSelect" aria-label="LanguageSelect">
-                  <option selected>請選擇一個選項</option>
-                  <option value="zh-tw">繁體中文</option>
-                  <option value="en-us">English (US</option>
-                  <option value="en-uk">English (UK)</option>
-                  <option value="jp">Japanese</option>
-                  <option value="th">Thai</option>
-                </select>
+                <div class="btn-group" role="group" aria-label="Font size">
+                  <button type="button" class="btn btn-secondary">繁體中文</button>
+                  <button type="button" class="btn btn-secondary">English</button>
+                </div>
               </li>
               <li><a class="dropdown-item dropdown-item-title">文字大小</a></li>
               <li>
