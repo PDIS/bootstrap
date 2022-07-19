@@ -1157,7 +1157,8 @@ a.disabled {
 }
 
 .card {
-  border: 1px solid var(--outline);
+  border: unset;
+  box-shadow: 0 0 0 1px var(--outline);
   border-radius: 0.5rem;
   background-color: var(--surface);
 }
@@ -2246,7 +2247,15 @@ optgroup {
   flex-wrap: wrap;
 }
 .navbar .navbar-brand {
+  padding: 0;
+  margin-top: 1rem;
   color: var(--on-brand);
+}
+@media (max-width: 767px) {
+  .navbar .navbar-brand {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 .navbar .navbar-brand .navbar-brand-title {
   vertical-align: center;
@@ -2322,8 +2331,25 @@ optgroup {
 .navbar .nav-item i {
   font-size: 1.5rem;
 }
+@media (max-width: 767px) {
+  .navbar .nav-item {
+    margin-right: 0;
+  }
+}
 .navbar .nav-link {
-  padding: 0.375rem 0.875rem;
+  padding: 0.375rem 0.875rem !important;
+  background-color: var(--brand);
+  color: var(--on-brand);
+}
+@media (max-width: 767px) {
+  .navbar .nav-link {
+    background-color: var(--surface);
+    border-color: var(--surface);
+    color: var(--on-background);
+    margin: 0.25rem 0 !important;
+    padding: 0.75rem !important;
+    border-radius: 0.5rem;
+  }
 }
 @media (min-width: 768px) {
   .navbar .nav-link.dropdown-toggle {
