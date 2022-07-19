@@ -49,3 +49,15 @@ toc: true
 [範例連結](/docs/examples/headers/header5)<br>
 [範例連結](/docs/examples/headers/header6)<br>
 [範例連結](/docs/examples/headers/header7)<br>
+
+### 一列式 Single Row
+
+將所有重要內容排成一列，不分行顯示。
+
+[範例連結](/docs/examples/headers/header8)
+
+### 長標題 Long Heading
+
+當網站名稱長度超過適當範圍時，應換行顯示
+
+[範例連結](/docs/examples/headers/header9)
