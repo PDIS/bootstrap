@@ -2,4 +2,4 @@
 # Allow crawling of all content
 User-agent: *
 Disallow:
-Sitemap: https://design.pdis.tw/sitemap.xml
+Sitemap: /sitemap.xml
