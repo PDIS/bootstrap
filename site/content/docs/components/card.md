@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 卡片 Card
+title: 卡片
 description: 卡片是一個常用來彙整或列舉資訊的呈現方式。
 group: components
 ---
@@ -125,7 +125,7 @@ group: components
   </div>
   <div class="col-lg-8">
     <div class="card">
-      <div class="row align-items-center">
+      <div class="row">
         <div class="col-lg-4">
           <div class="card-image rounded-start" style="background: url('/docs/5.1/assets/img/bg-card.png')"></div>
         </div>

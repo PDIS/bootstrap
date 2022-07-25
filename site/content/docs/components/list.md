@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 列表 List
+title: 列表
 description: 列表將資訊整理成離散但連續的文字。
 group: components
 toc: true

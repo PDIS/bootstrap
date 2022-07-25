@@ -4,7 +4,7 @@ layout: components-example
 
 {{< example >}}
 <header>
-  <nav class="navbar navbar-expand-md bg-surface">
+  <nav class="navbar navbar-expand-md">
     <div class="container">
       <a class="navbar-brand" href="/" aria-label="PDIS">
       網站名稱
@@ -71,7 +71,7 @@ layout: components-example
               <div class="input-group">
                 <input type="text" class="form-control" id="Input1" placeholder="請輸入關鍵字">
                 <div class="input-group-append">
-                  <button class="btn btn-brand" type="button"><i class="bi bi-search"></i></button>
+                  <button class="btn btn-secondary" type="button"><i class="bi bi-search"></i></button>
                 </div>
               </div>
               <div class="dropdown-divider d-none d-md-block"></div>
@@ -103,9 +103,9 @@ layout: components-example
               <li><a class="dropdown-item dropdown-item-title">文字大小</a></li>
               <li>
                 <div class="btn-group" role="group" aria-label="Font size">
-                  <button type="button" class="btn btn-brand">小</button>
-                  <button type="button" class="btn btn-brand">預設</button>
-                  <button type="button" class="btn btn-brand">大</button>
+                  <button type="button" class="btn btn-secondary">小</button>
+                  <button type="button" class="btn btn-secondary">預設</button>
+                  <button type="button" class="btn btn-secondary">大</button>
                 </div>
               </li>
             </ul>

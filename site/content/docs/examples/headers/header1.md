@@ -14,53 +14,17 @@ layout: components-example
       </button>
       <div class="navbar-collapse collapse" id="Navbar">
         <ul class="navbar-nav">
-          <li class="nav-item dropdown order-2 order-md-1">
-            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              服務項目
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="DropdownMenu1">
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-            </ul>
+          <li class="nav-item order-2 order-md-1">
+            <a class="nav-link" href="/">關於本站</a>
           </li>
           <li class="nav-item dropdown order-2 order-md-1">
-            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              服務項目
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="DropdownMenu2">
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-            </ul>
+            <a class="nav-link" href="/">服務內容</a>
           </li>
           <li class="nav-item dropdown order-2 order-md-1">
-            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              服務項目
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="DropdownMenu3">
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-            </ul>
+            <a class="nav-link" href="/">最新消息</a>
           </li>
           <li class="nav-item dropdown order-2 order-md-1">
-            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              服務項目
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="DropdownMenu4">
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
-            </ul>
+            <a class="nav-link" href="/">聯絡我們</a>
           </li>
           <li class="nav-item dropdown order-1 order-md-2">
             <a class="nav-link dropdown-toggle d-none d-md-block" href="#" id="DropdownSearch" role="button" data-bs-toggle="dropdown" aria-expanded="false">

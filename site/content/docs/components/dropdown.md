@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 導覽列下拉選單 Navigation Dropdowns
+title: 導覽列下拉選單
 description: 讓使用者從多個頁面選項中做一個或選擇，並跳轉到其選擇的頁面。
 group: components
 toc: true

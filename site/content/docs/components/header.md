@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 頁首 Header
+title: 頁首
 description: 一個網站的第一印象，提供一目瞭然的整理架構。
 group: components
 toc: true
@@ -26,21 +26,38 @@ toc: true
 
 ### 基本頁首 Basic Header
 
-基本頁首包括網站名稱、服務項目下拉式選單與內容連結、以及搜尋列與網站設定。預設的語言設定選單是多語言。調整視窗寬度檢視響應式 (RWD) 設計，或從手機觀看此網頁檢視效果。值得注意的是，手機上的頁首會將搜尋列的部分放置在最上方，這是依循一般手機使用者的習慣。
+基本頁首包括網站名稱、頁面連結、搜尋列與網站設定。預設的語言設定選單是多語言。調整視窗寬度檢視響應式 (RWD) 設計，或從手機觀看此網頁檢視效果。
 
 [範例連結](/docs/examples/headers/header1)
+
+### 頁首加下拉式選單 Basic header with dropdowns
+服務項目可以是文字連結，也可以是下拉選單。
+
+[範例連結](/docs/examples/headers/header2)<br>
 
 ### 語言設定 Language Setting
 
 雙語或多語選單
 
-[範例連結](/docs/examples/headers/header2)<br>
-[範例連結](/docs/examples/headers/header3)
+[範例連結](/docs/examples/headers/header3)<br>
+[範例連結](/docs/examples/headers/header4)
 
 ### 頁底色 Background Color
 
 三種不同底色
 
-[範例連結](/docs/examples/headers/header4)<br>
 [範例連結](/docs/examples/headers/header5)<br>
 [範例連結](/docs/examples/headers/header6)<br>
+[範例連結](/docs/examples/headers/header7)<br>
+
+### 一列式 Single Row
+
+將所有重要內容排成一列，不分行顯示。
+
+[範例連結](/docs/examples/headers/header8)
+
+### 長標題 Long Heading
+
+當網站名稱長度超過適當範圍時，應換行顯示
+
+[範例連結](/docs/examples/headers/header9)

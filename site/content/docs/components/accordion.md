@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 手風琴 Accordion
+title: 手風琴
 description: 手風琴是一種可以展開與隱藏更多資訊的列表。
 group: components
 toc: true

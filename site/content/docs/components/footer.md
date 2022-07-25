@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 頁尾 Footer
+title: 頁尾
 description: 所有頁面都共用的網頁尾端資訊。
 group: components
 toc: true

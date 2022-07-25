@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 按鈕 Button
+title: 按鈕
 description: 按鈕是個引人注意的可選擇區塊，引導使用者執行重要的行為。
 group: components
 ---
@@ -39,32 +39,50 @@ group: components
 基本款的按鈕以品牌色為背景，吸引使用者注意。使用者可以依據頁面上的資訊決定是否點擊進行下一步。
 
 {{< example >}}
-
 <div class="row text-center">
   <div class="col">
     <button type="button" class="btn btn-primary">預設按鈕</button>
   </div>
 </div>
-
 {{< /example >}}
 
-#### 角色 Role
+### 角色 Role
 
 從基本款按鈕的樣式延伸，共六種不同角色的按鈕，由左至右分別為：主要、次要、邊框、文字、正向、負向按鈕。在做按鈕的位階選擇時，可以依據主要、次要、邊框、文字的順序做搭配。例如可以選擇主要按鈕作為預設動作的進入點，搭配文字按鈕作為其他動作的進入點，讓頁面視覺上明顯有位階順序，幫助使用者理解兩個並排按鈕的關係。
 
 {{< example >}}
-
+<!-- <style>
+  .btn {
+    margin: 0.25rem !important;
+  }
+</style> -->
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-primary">預設按鈕</button>
-    <button type="button" class="btn btn-secondary">預設按鈕</button>
-    <button type="button" class="btn btn-semi-secondary">預設按鈕</button>
-    <button type="button" class="btn btn-tertiary">預設按鈕</button>
-    <button type="button" class="btn btn-positive">預設按鈕</button>
-    <button type="button" class="btn btn-negative">預設按鈕</button>
+    <button type="button" class="btn btn-primary">主要按鈕</button>
+    <button type="button" class="btn btn-secondary">次要按鈕</button>
+    <button type="button" class="btn btn-tertiary">邊框按鈕</button>
+    <button type="button" class="btn btn-semi-secondary">文字按鈕</button>
+    <button type="button" class="btn btn-positive">正向按鈕</button>
+    <button type="button" class="btn btn-negative">負向按鈕</button>
   </div>
 </div>
+{{< /example >}}
 
+### 無效 Disabled
+
+有的時候我們會在網頁上看到無效按鈕，它們的存在有其必要性，例如在使用者填寫完註冊表單之前，先加登入按鈕設定為無效按鈕的樣式。無效按鈕用的樣式一律用透明度 60% 處理，呈現如下。
+
+{{< example >}}
+<div class="row text-center">
+  <div class="col">
+    <button type="button" class="btn btn-primary disabled">主要按鈕</button>
+    <button type="button" class="btn btn-secondary disabled">次要按鈕</button>
+    <button type="button" class="btn btn-tertiary disabled">邊框按鈕</button>
+    <button type="button" class="btn btn-semi-secondary disabled">文字按鈕</button>
+    <button type="button" class="btn btn-positive disabled">正向按鈕</button>
+    <button type="button" class="btn btn-negative disabled">負向按鈕</button>
+  </div>
+</div>
 {{< /example >}}
 
 ### 大小 Size
@@ -93,10 +111,10 @@ group: components
 <div class="row text-center">
   <div class="col">
     <button type="button" class="btn btn-primary">預設按鈕</button>
-    <button type="button" class="btn btn-primary" alt="..."><i class="bi bi-download"></i><span>左圖標按鈕</span></button>
-    <button type="button" class="btn btn-primary" alt="..."><span>右圖標按鈕</span><i class="bi bi-download"></i></button>
-    <button type="button" class="btn btn-primary" alt="..."><i class="bi bi-download"></i></button>
-    <button type="button" class="btn btn-primary"><span>圓角按鈕</span><span class="badge badge-sm badge-numerical">2</span></button>
+    <button type="button" class="btn btn-primary"><i class="bi bi-download"></i><span>左圖標按鈕</span></button>
+    <button type="button" class="btn btn-primary"><span>右圖標按鈕</span><i class="bi bi-download"></i></button>
+    <button type="button" class="btn btn-primary"><i class="bi bi-download"></i></button>
+    <button type="button" class="btn btn-primary"><span>預設按鈕</span><span class="badge badge-numerical">2</span></button>
   </div>
 </div>
 
