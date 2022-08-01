@@ -8,11 +8,10 @@ layout: components-example
     <div class="container">
       <a class="navbar-brand" href="/" aria-label="PDIS">
         <img class="navbar-logo" src="/docs/5.1/assets/img/logo.png" alt="logo" height="100%">
-        <span class="navbar-brand-title d-none d-md-inline align-top">網站名稱長度超過</span>
-        <div class="d-inline-block d-md-none align-middle">
-          <span class="navbar-brand-title d-md-none d-block">網站名稱</span>
-          <span class="navbar-brand-title d-md-none">長度超過</span>
-        </div>
+<!--         <div class="d-inline-block align-top">
+          <span class="navbar-brand-title">網站名稱</span>
+          <span class="navbar-brand-title d-none d-md-block"></span>
+        </div> -->
       </a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="Navbar" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

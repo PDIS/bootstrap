@@ -42,7 +42,7 @@ toc: true
 [範例連結](/docs/examples/headers/header3)<br>
 [範例連結](/docs/examples/headers/header4)
 
-### 頁底色 Background Color
+### 底色 Background Color
 
 三種不同底色
 
@@ -61,3 +61,10 @@ toc: true
 當網站名稱長度超過適當範圍時，應換行顯示
 
 [範例連結](/docs/examples/headers/header9)
+
+### 商標 Logo
+
+可以自行決定是否在頁首內加上商標
+
+[範例連結](/docs/examples/headers/header10)<br>
+[範例連結](/docs/examples/headers/header11)
