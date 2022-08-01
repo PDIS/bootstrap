@@ -2351,6 +2351,7 @@ optgroup {
     background-color: var(--surface);
     border-color: var(--surface);
     color: var(--on-background);
+    margin: 0.25rem 0;
   }
   .navbar .nav-link:hover {
     background-color: var(--surface-1);
