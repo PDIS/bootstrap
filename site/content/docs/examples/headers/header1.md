@@ -4,7 +4,7 @@ layout: components-example
 
 {{< example >}}
 <header>
-  <nav class="navbar navbar-expand-md">
+  <nav class="navbar navbar-expand-md bg-brand-flat">
     <div class="container">
       <a class="navbar-brand" href="/" aria-label="PDIS">
       網站名稱

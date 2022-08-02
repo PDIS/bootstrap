@@ -49,9 +49,8 @@
 
     .navbar-brand-subtitle {
       @extend .title-text;
+      display: block;
       margin-top: 0.5rem;
-      vertical-align: middle;
-      margin-left: 0.5rem;
       color: var(--on-brand);
 
       @media (min-width: 768px) {
@@ -142,6 +141,7 @@
       background-color: var(--surface);
       border-color: var(--surface);
       color: var(--on-background);
+      margin: 0.25rem 0;
 
       &:hover {
         background-color: var(--surface-1);
@@ -414,10 +414,13 @@
       background-color: var(--surface);
     }
 
+    .offcanvas-header {
+      color: var(--on-surface) !important;
+      background-color: var(--surface) !important;
+    }
+
     .offcanvas-body {
-      @media (min-width: 768px) {
-        background-color: var(--surface) !important;
-      }
+      background-color: var(--surface) !important;
     }
   }
 
@@ -448,19 +451,48 @@
       color: var(--on-brand-flat);
       background-color: var(--surface);
 
+      &:hover {
+        color: var(--on-brand-flat);
+        background-color: var(--surface);
+      }
+
+      &:active, &:focus-visible {
+        color: var(--on-brand-flat);
+        background-color: var(--surface);
+        box-shadow: 0 0 0 2px var(--surface-5) inset !important;
+        border-color: var(--brand-flat-strong);
+      } 
+      
+      @media (min-width: 768px) {  
+        color: var(--on-brand-flat);
+        background-color: var(--brand-flat);
+  
+        &:hover {
+          color: var(--on-brand-flat);
+          background-color: var(--brand-flat-strong);
+        }
+  
+        &:active, &:focus-visible {
+          color: var(--on-brand-flat);
+          background-color: var(--brand-flat-strong);
+          box-shadow: 0 0 0 2px var(--surface-5) inset !important;
+          border-color: var(--brand);
+        } 
+      }
+
       .dropdown-toggle {
         color: var(--on-brand-flat);
         background-color: var(--surface);
   
         &:hover {
           color: var(--on-brand-flat);
-          background-color: var(--surface-1);
+          background-color: var(--surface);
         }
   
         &:active, &:focus-visible {
           color: var(--on-brand-flat);
-          background-color: var(--surface-1);
-          box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
+          background-color: var(--surface);
+          box-shadow: 0 0 0 2px var(--surface-5) inset !important;
           border-color: var(--brand-flat-strong);
         } 
         @media (min-width: 768px) {  
@@ -475,7 +507,7 @@
           &:active, &:focus-visible {
             color: var(--on-brand-flat);
             background-color: var(--brand-flat-strong);
-            box-shadow: 0 0 0 2px var(--brand) inset !important;
+            box-shadow: 0 0 0 2px var(--surface-5) inset !important;
             border-color: var(--brand);
           } 
         }
@@ -534,8 +566,13 @@
       background-color: var(--brand-flat);
     }
 
+    .offcanvas-header {
+      color: var(--on-brand-flat) !important;
+      background-color: var(--brand-flat) !important;
+    }
+    
     .offcanvas-body {
-      background-color: var(--brand-flat);  
+      background-color: var(--brand-flat) !important;  
     }
   }
 
@@ -562,20 +599,22 @@
     @media (min-width: 768px) {
       width: 100%;
     }
+    border-radius: 1rem;
 
     .offcanvas-header {
       @extend .title-text-lg;
-      background-color: var(--surface);
-      color: var(--on-surface);
+      //background-color: var(--surface);
+      background-color: var(--brand);
+      color: var(--on-brand);
+      border-top-left-radius: 1rem;
     }
 
     .offcanvas-body {
-      background-color: var(--surface);
+      //background-color: var(--surface);
+      background-color: var(--brand);
+      padding-top: 1.5rem;
       padding-bottom: 1rem;
-
-      @media (min-width: 768px) {
-        background-color: var(--brand);
-      }
+      border-bottom-left-radius: 1rem;
     }
   }
 }

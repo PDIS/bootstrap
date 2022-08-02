@@ -42,7 +42,7 @@ toc: true
 [範例連結](/docs/examples/headers/header3)<br>
 [範例連結](/docs/examples/headers/header4)
 
-### 頁底色 Background Color
+### 底色 Background Color
 
 三種不同底色
 
@@ -61,3 +61,23 @@ toc: true
 當網站名稱長度超過適當範圍時，應換行顯示
 
 [範例連結](/docs/examples/headers/header9)
+
+### 商標 Logo
+
+可以自行決定是否在頁首內加上商標
+
+[範例連結](/docs/examples/headers/header10)<br>
+[範例連結](/docs/examples/headers/header11)
+
+### 網站副標題 Sub-heading
+
+在網站名稱下方，加上副標題或是補充文字，說明網站的定位、主要功能、或服務範圍。
+
+[範例連結](/docs/examples/headers/header12)<br>
+[範例連結](/docs/examples/headers/header13)
+
+### 手機版漢堡按鈕展開方式 Hamburger Button Interaction
+
+百葉窗式向下展開或抽屜式從右滑入。
+
+[範例連結](/docs/examples/headers/header14)
