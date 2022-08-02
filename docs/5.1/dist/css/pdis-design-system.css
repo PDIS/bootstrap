@@ -2268,9 +2268,8 @@ optgroup {
   text-decoration: underline;
 }
 .navbar .navbar-brand .navbar-brand-subtitle {
+  display: block;
   margin-top: 0.5rem;
-  vertical-align: middle;
-  margin-left: 0.5rem;
   color: var(--on-brand);
 }
 @media (min-width: 768px) {
@@ -2351,6 +2350,7 @@ optgroup {
     background-color: var(--surface);
     border-color: var(--surface);
     color: var(--on-background);
+    margin: 0.25rem 0;
   }
   .navbar .nav-link:hover {
     background-color: var(--surface-1);
@@ -2575,10 +2575,12 @@ optgroup {
 .navbar.bg-surface .navbar-collapse {
   background-color: var(--surface);
 }
-@media (min-width: 768px) {
-  .navbar.bg-surface .offcanvas-body {
-    background-color: var(--surface) !important;
-  }
+.navbar.bg-surface .offcanvas-header {
+  color: var(--on-surface) !important;
+  background-color: var(--surface) !important;
+}
+.navbar.bg-surface .offcanvas-body {
+  background-color: var(--surface) !important;
 }
 .navbar.bg-brand-flat .navbar-brand {
   color: var(--on-surface);
@@ -2601,18 +2603,44 @@ optgroup {
   color: var(--on-brand-flat);
   background-color: var(--surface);
 }
+.navbar.bg-brand-flat .nav-link:hover {
+  color: var(--on-brand-flat);
+  background-color: var(--surface);
+}
+.navbar.bg-brand-flat .nav-link:active, .navbar.bg-brand-flat .nav-link:focus-visible {
+  color: var(--on-brand-flat);
+  background-color: var(--surface);
+  box-shadow: 0 0 0 2px var(--surface-5) inset !important;
+  border-color: var(--brand-flat-strong);
+}
+@media (min-width: 768px) {
+  .navbar.bg-brand-flat .nav-link {
+    color: var(--on-brand-flat);
+    background-color: var(--brand-flat);
+  }
+  .navbar.bg-brand-flat .nav-link:hover {
+    color: var(--on-brand-flat);
+    background-color: var(--brand-flat-strong);
+  }
+  .navbar.bg-brand-flat .nav-link:active, .navbar.bg-brand-flat .nav-link:focus-visible {
+    color: var(--on-brand-flat);
+    background-color: var(--brand-flat-strong);
+    box-shadow: 0 0 0 2px var(--surface-5) inset !important;
+    border-color: var(--brand);
+  }
+}
 .navbar.bg-brand-flat .nav-link .dropdown-toggle {
   color: var(--on-brand-flat);
   background-color: var(--surface);
 }
 .navbar.bg-brand-flat .nav-link .dropdown-toggle:hover {
   color: var(--on-brand-flat);
-  background-color: var(--surface-1);
+  background-color: var(--surface);
 }
 .navbar.bg-brand-flat .nav-link .dropdown-toggle:active, .navbar.bg-brand-flat .nav-link .dropdown-toggle:focus-visible {
   color: var(--on-brand-flat);
-  background-color: var(--surface-1);
-  box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
+  background-color: var(--surface);
+  box-shadow: 0 0 0 2px var(--surface-5) inset !important;
   border-color: var(--brand-flat-strong);
 }
 @media (min-width: 768px) {
@@ -2627,7 +2655,7 @@ optgroup {
   .navbar.bg-brand-flat .nav-link .dropdown-toggle:active, .navbar.bg-brand-flat .nav-link .dropdown-toggle:focus-visible {
     color: var(--on-brand-flat);
     background-color: var(--brand-flat-strong);
-    box-shadow: 0 0 0 2px var(--brand) inset !important;
+    box-shadow: 0 0 0 2px var(--surface-5) inset !important;
     border-color: var(--brand);
   }
 }
@@ -2667,8 +2695,12 @@ optgroup {
 .navbar.bg-brand-flat .navbar-collapse {
   background-color: var(--brand-flat);
 }
+.navbar.bg-brand-flat .offcanvas-header {
+  color: var(--on-brand-flat) !important;
+  background-color: var(--brand-flat) !important;
+}
 .navbar.bg-brand-flat .offcanvas-body {
-  background-color: var(--brand-flat);
+  background-color: var(--brand-flat) !important;
 }
 .navbar.single-row .container {
   flex-wrap: nowrap;
@@ -2685,23 +2717,24 @@ optgroup {
     flex-wrap: wrap;
   }
 }
+.navbar .offcanvas {
+  border-radius: 1rem;
+}
 @media (min-width: 768px) {
   .navbar .offcanvas {
     width: 100%;
   }
 }
 .navbar .offcanvas .offcanvas-header {
-  background-color: var(--surface);
-  color: var(--on-surface);
+  background-color: var(--brand);
+  color: var(--on-brand);
+  border-top-left-radius: 1rem;
 }
 .navbar .offcanvas .offcanvas-body {
-  background-color: var(--surface);
+  background-color: var(--brand);
+  padding-top: 1.5rem;
   padding-bottom: 1rem;
-}
-@media (min-width: 768px) {
-  .navbar .offcanvas .offcanvas-body {
-    background-color: var(--brand);
-  }
+  border-bottom-left-radius: 1rem;
 }
 
 .breadcrumb .breadcrumb-item a {
