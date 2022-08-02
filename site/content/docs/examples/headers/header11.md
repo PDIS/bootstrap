@@ -8,10 +8,10 @@ layout: components-example
     <div class="container">
       <a class="navbar-brand" href="/" aria-label="PDIS">
         <img class="navbar-logo" src="/docs/5.1/assets/img/logo.png" alt="logo" height="100%">
-<!--         <div class="d-inline-block align-top">
+        <div class="d-inline-block align-top">
           <span class="navbar-brand-title">網站名稱</span>
           <span class="navbar-brand-title d-none d-md-block"></span>
-        </div> -->
+        </div>
       </a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="Navbar" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

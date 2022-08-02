@@ -4,27 +4,66 @@ layout: components-example
 
 {{< example >}}
 <header>
-  <nav class="navbar navbar-expand-md bg-brand-flat">
+  <nav class="navbar navbar-expand-md">
     <div class="container">
       <a class="navbar-brand" href="/" aria-label="PDIS">
-      網站名稱
+        <div class="d-inline-block align-middle">
+          <span class="navbar-brand-title">網站名稱</span>
+          <span class="navbar-brand-subtitle">網站副標題</span>
+        </div>
       </a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar" aria-controls="Navbar" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="navbar-collapse collapse" id="Navbar">
         <ul class="navbar-nav">
-          <li class="nav-item order-2 order-md-1">
-            <a class="nav-link" href="/">關於本站</a>
+          <li class="nav-item dropdown order-2 order-md-1">
+            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              服務項目
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="DropdownMenu1">
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown order-2 order-md-1">
-            <a class="nav-link" href="/">服務內容</a>
+            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              服務項目
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="DropdownMenu2">
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown order-2 order-md-1">
-            <a class="nav-link" href="/">最新消息</a>
+            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              服務項目
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="DropdownMenu3">
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown order-2 order-md-1">
-            <a class="nav-link" href="/">聯絡我們</a>
+            <a class="nav-link dropdown-toggle" href="#" id="DropdownMenu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              服務項目
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="DropdownMenu4">
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+              <li><a class="dropdown-item" href="#">下拉選單第一層標題文字</a></li>
+            </ul>
           </li>
           <li class="nav-item dropdown order-1 order-md-2">
             <a class="nav-link dropdown-toggle d-none d-md-block" href="#" id="DropdownSearch" role="button" data-bs-toggle="dropdown" aria-expanded="false">
