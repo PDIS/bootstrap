@@ -31,6 +31,12 @@
       margin-bottom: 1rem;
     }
 
+    &.logo {
+      @media (max-width: 767px) {
+        height: 30px;
+      }
+    }
+
     .navbar-brand-title {
       @extend .title-text-lg;
       vertical-align: middle;

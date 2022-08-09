@@ -2255,6 +2255,11 @@ optgroup {
     margin-bottom: 1rem;
   }
 }
+@media (max-width: 767px) {
+  .navbar .navbar-brand.logo {
+    height: 30px;
+  }
+}
 .navbar .navbar-brand .navbar-brand-title {
   vertical-align: middle;
   color: var(--on-brand);
