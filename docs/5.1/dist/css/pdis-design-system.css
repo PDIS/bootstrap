@@ -1096,7 +1096,6 @@ a.disabled {
   border: none;
   padding: 0.75rem;
   background-color: var(--surface);
-  box-shadow: 0 0 0 1px var(--surface);
 }
 .list-group .list-group-item .list-group-item-subheader {
   margin-left: 0.5rem;
@@ -1125,11 +1124,9 @@ a.disabled {
 }
 .list-group .list-group-item:hover {
   background-color: var(--surface-1);
-  box-shadow: 0 0 0 1px var(--surface-1);
 }
 .list-group .list-group-item:focus-visible, .list-group .list-group-item:active {
   background-color: var(--surface-2);
-  box-shadow: 0 0 0 1px var(--surface-2);
 }
 .list-group.divider .list-group-item {
   border-bottom: 1px solid var(--outline);
@@ -1139,10 +1136,15 @@ a.disabled {
   border-bottom: none;
 }
 .list-group.border {
-  border: 1px solid var(--outline) !important;
+  border: none !important;
+  box-shadow: 0 0 0 1px var(--outline);
 }
 .list-group.elevation {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+.list-group.elevation.border {
+  border: none !important;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0 0 0 1px var(--outline);
 }
 .list-group.twoline .list-group-item {
   display: flex;
@@ -1617,6 +1619,8 @@ a.disabled {
 .accordion .accordion-item {
   border: 0;
   margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--background);
 }
 .accordion .accordion-item:last-child {
   margin-bottom: 0;
@@ -1627,6 +1631,7 @@ a.disabled {
   background-color: var(--surface);
   box-shadow: none;
   border-radius: 0.5rem;
+  transition: color 0.22s ease-in-out, background-color 0.22s ease-in-out, border-color 0.22s ease-in-out, box-shadow 0.22s ease-in-out, border-radius 0.22s ease;
 }
 .accordion .accordion-item .accordion-button::after {
   color: var(--on-background);
