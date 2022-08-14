@@ -152,13 +152,35 @@ group: components
         <div class="card-title">海外志工交流沙龍</div>
         <div class="badge-group">
           <span class="badge">國際參與</span
-          ><span class="badge">報名中</span
+          ><span class="badge bg-positive-flat">報名中</span
           >
         </div>
         <div class="card-text">歡迎15-35歲關心在地事務、對社區事務懷有夢想及想法之青年報名參加，
 透過在地課程，讓你進一步了解青年社區參與行動！</div>
         <div class="card-actions">
           <button type="button" class="btn btn-primary">立即報名</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="card">
+      <img
+        src="/docs/5.1/assets/img/car_test_img_2.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <div class="card-title">大專女學生領導力培訓營</div>
+        <div class="badge-group">
+          <span class="badge">職場體驗</span
+          ><span class="badge bg-negative-flat">已截止</span
+          >
+        </div>
+        <div class="card-text">即日起至6/6(一)23:59截止</div>
+        <div class="card-actions">
+          <button type="button" class="btn btn-primary disabled">已額滿</button>
         </div>
       </div>
     </div>
