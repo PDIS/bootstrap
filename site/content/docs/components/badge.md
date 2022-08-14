@@ -116,6 +116,17 @@ group: components
     <span class="badge bg-brand-flat badge-lg">Badge</span>
   </div>
 </div>
+<div class="row text-center">
+ <div class="col">
+    <button type="button" class="btn btn-primary badge-sm"><span>小按鈕</span><span class="badge badge-numerical">2</span></button>
+  </div>
+  <div class="col">
+    <button type="button" class="btn btn-primary"><span>中按鈕</span><span class="badge badge-numerical">2</span></button>
+  </div>
+  <div class="col">
+    <button type="button" class="btn btn-primary badge-large"><span>大按鈕</span><span class="badge badge-numerical">2</span></button>
+  </div>
+</div>
 
 {{< /example >}}
 
