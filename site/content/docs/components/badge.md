@@ -158,20 +158,21 @@ group: components
   <div class="col-md-4">
     <div class="card">
       <img
-        src="/docs/5.1/assets/img/bg-card.png"
+        src="/docs/5.1/assets/img/card_test_img_1.jpg"
         class="card-img-top"
         alt="..."
       />
       <div class="card-body">
-        <div class="card-title">標題文字</div>
+        <div class="card-title">海外志工交流沙龍</div>
         <div class="badge-group">
-          <span class="badge">主題標籤</span
-          ><span class="badge">主題標籤</span
-          ><span class="badge">主題標籤</span>
+          <span class="badge">國際參與</span
+          ><span class="badge">報名中</span
+          >
         </div>
-        <div class="card-text">此部分為卡片之內文部分文字或副標題內容</div>
+        <div class="card-text">歡迎15-35歲關心在地事務、對社區事務懷有夢想及想法之青年報名參加，
+透過在地課程，讓你進一步了解青年社區參與行動！</div>
         <div class="card-actions">
-          <button type="button" class="btn btn-primary">預設按鈕</button>
+          <button type="button" class="btn btn-primary">立即報名</button>
         </div>
       </div>
     </div>
