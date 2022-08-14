@@ -131,20 +131,6 @@ group: components
 {{< /example >}}
 
 
-### 文字或計數 Text or Counter
-
-標籤內容常有兩種：文字或計數。
-
-{{< example >}}
-
-<div class="row text-center">
-  <div class="col">
-    <span class="badge bg-brand-flat">Badge</span>
-    <span class="badge bg-brand-flat badge-numerical">2</span>
-  </div>
-</div>
-
-{{< /example >}}
 
 ## 範例
 
