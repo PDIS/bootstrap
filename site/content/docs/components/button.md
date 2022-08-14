@@ -101,9 +101,13 @@ group: components
 {{< /example >}}
 
 
-### 圖示 Icon
+### 圖示與標籤 Icon and badge
 
 按鈕中可以使用圖示 (icon) 輔助文字說明。圖示可以在文字左邊或是右邊。有些圖示所代表的意義已經約定成俗，在某些特殊情況下則可以只留下圖示。
+
+[標籤](/docs/components/badge)的顏色在設計上會依據按鈕的預設顏色改變，邏輯上皆用按鈕底色的 flat color，唯一例外是，當按鈕底色已經是 flat ，則用 surface color。關於顏色系統的詳細規則請見顏色。
+
+若您需要改變標籤的[顏色](docs/style/color)，則需要自行覆寫 (overwrite)。
 
 {{< example >}}
 
