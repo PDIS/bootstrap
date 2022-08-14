@@ -70,9 +70,38 @@ group: components
 
 {{< /example >}}
 
+### 計數標籤 Counter
+計數標籤相對於文字標籤來說， 設計上 padding 的設定有依據數字的視覺特性微調過。這是因為計數標籤比較常與其他元件相配和，通常作為計數器，將技術標籤的 padding 做視覺調整會讓整體視覺看起來更平衡。例如在按鈕中。
+
+
+{{< example >}}
+
+<div class="row text-center" ontouchstart="">
+  <div class="col-4 col-xl-2 gy-3">
+    <button type="button" class="btn btn-primary"><span>報名活動</span><span class="badge badge-numerical">136</span></button>
+  </div>
+  <div class="col-4 col-xl-2 gy-3">
+    <button type="button" class="btn btn-secondary"><span>下載</span><span class="badge badge-numerical bg-secondary-flat">251</span></button>
+  </div>
+  <div class="col-4 col-xl-2 gy-3">
+    <button type="button" class="btn btn-tertiary"><span>登記</span><span class="badge badge-numerical">20</span></button>
+  </div>
+  <div class="col-4 col-xl-2 gy-3">
+    <button type="button" class="btn btn-emi-secondary"><span>like</span><span class="badge badge-numerical">10</span></button>
+  </div>
+  <div class="col-4 col-xl-2 gy-3">
+    <button type="button" class="btn btn-negative"><span>反對</span><span class="badge badge-numerical bg-negative-flat">3</span></button>
+  </div>
+  <div class="col-4 col-xl-2 gy-3">
+    <button type="button" class="btn btn-positive"><span>贊成</span><span class="badge badge-numerical bg-positive-flat">30</span></button>
+  </div>
+</div>
+
+{{< /example >}}
+
 ### 大小 Size
 
-三種不同大小的標籤。
+三種不同大小的標籤。目前本設計系統中都是用中標籤，但依據美感您可以自行搭配使用大或小標籤。在與其他元件配合時，若該元件有分大小 Size，標籤通常會配合其大小。例如在大按鈕中的標籤常用大標籤，中按鈕中的標籤常用中標籤，小按鈕中的標籤常用小標籤。
 
 {{< example >}}
 
@@ -107,35 +136,6 @@ group: components
 {{< /example >}}
 
 ## 範例
-
-### 含有標籤的按鈕 Button with badge
-
-標籤可以是按鈕的一部分，常作為計數器。
-
-{{< example >}}
-
-<div class="row text-center" ontouchstart="">
-  <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-primary"><span>報名活動</span><span class="badge badge-numerical">136</span></button>
-  </div>
-  <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-secondary"><span>下載</span><span class="badge badge-numerical bg-secondary-flat">251</span></button>
-  </div>
-  <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-tertiary"><span>登記</span><span class="badge badge-numerical">20</span></button>
-  </div>
-  <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-emi-secondary"><span>投票</span><span class="badge badge-numerical">10</span></button>
-  </div>
-  <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-positive"><span>送出</span><span class="badge badge-numerical bg-positive-flat">3</span></button>
-  </div>
-  <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-negative"><span>移除</span><span class="badge badge-numerical bg-negative-flat">30</span></button>
-  </div>
-</div>
-
-{{< /example >}}
 
 ### 含有標籤的卡片 Card with badge
 
