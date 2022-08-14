@@ -107,7 +107,7 @@ group: components
 
 [標籤](/docs/components/badge)的顏色在設計上會依據按鈕的預設顏色改變，邏輯上皆用按鈕底色的 flat color，唯一例外是，當按鈕底色已經是 flat ，則用 surface color。關於顏色系統的詳細規則請見顏色。
 
-若您需要改變標籤的[顏色](docs/style/color)，則需要自行覆寫 (overwrite)。
+若您需要改變標籤的[顏色](/docs/style/color)，則需要自行覆寫 (overwrite)。
 
 {{< example >}}
 
