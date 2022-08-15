@@ -32,7 +32,7 @@ group: components
 
 <div class="row text-center">
   <div class="col">
-    <span class="badge bg-brand-flat">Badge</span>
+    <span class="badge bg-brand-flat">標籤</span>
   </div>
 </div>
 
@@ -46,25 +46,25 @@ group: components
 
 <div class="row text-center">
   <div class="col g-3">
-    <span class="badge bg-brand-flat">Brand</span>
+    <span class="badge bg-brand-flat">主要</span>
   </div>
   <div class="col g-3">
-    <span class="badge bg-accent-flat">Accent</span>
+    <span class="badge bg-accent-flat">強調</span>
   </div>
   <div class="col g-3">
-    <span class="badge bg-secondary-flat">Secondary</span>
+    <span class="badge bg-secondary-flat">次要</span>
   </div>
   <div class="col g-3">
-    <span class="badge bg-positive-flat">Postive</span>
+    <span class="badge bg-positive-flat">正向</span>
   </div>
   <div class="col g-3">
-    <span class="badge bg-negative-flat">Negative</span>
+    <span class="badge bg-negative-flat">負向</span>
   </div>
   <div class="col g-3">
-    <span class="badge bg-info-flat">Info</span>
+    <span class="badge bg-info-flat">資訊</span>
   </div>
   <div class="col g-3">
-    <span class="badge bg-warning-flat">Warning</span>
+    <span class="badge bg-warning-flat">警告</span>
   </div>
 </div>
 
@@ -107,13 +107,13 @@ group: components
 
 <div class="row text-center">
  <div class="col">
-    <span class="badge bg-brand-flat badge-sm">Badge</span>
+    <span class="badge bg-brand-flat badge-sm">標籤</span>
   </div>
   <div class="col">
-    <span class="badge bg-brand-flat">Badge</span>
+    <span class="badge bg-brand-flat">標籤</span>
   </div>
   <div class="col">
-    <span class="badge bg-brand-flat badge-lg">Badge</span>
+    <span class="badge bg-brand-flat badge-lg">標籤</span>
   </div>
 </div>
 <div class="row text-center">
