@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 標籤
+title: 標籤 Badge
 description: 標籤可以為其他元件新增說明文字或數字。
 group: components
 ---
