@@ -326,3 +326,7 @@ for (const link of document.querySelectorAll(".sidebar-link")) {
 }
 </script>
 {{< /example >}}
+
+
+## 範例
+關於側邊欄在響應式設計中的變形，以及側邊欄與頁首搭配時的見識使用方式，請詳見[模板 (Navigation Starter)](/docs/pattern/navigation_starter)。
