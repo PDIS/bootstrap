@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 按鈕
+title: 按鈕 Button
 description: 按鈕是個引人注意的可選擇區塊，引導使用者執行重要的行為。
 group: components
 ---
