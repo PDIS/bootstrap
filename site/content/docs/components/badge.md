@@ -78,13 +78,13 @@ group: components
 
 <div class="row text-center">
  <div class="col">
-    <span class="badge bg-brand-flat badge-sm">Badge</span>
+    <span class="badge bg-brand-flat badge-sm">標籤</span>
   </div>
   <div class="col">
-    <span class="badge bg-brand-flat">Badge</span>
+    <span class="badge bg-brand-flat">標籤</span>
   </div>
   <div class="col">
-    <span class="badge bg-brand-flat badge-lg">Badge</span>
+    <span class="badge bg-brand-flat badge-lg">標籤</span>
   </div>
 </div>
 
