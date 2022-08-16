@@ -3,17 +3,6 @@
   border-radius: 0.625rem;
   padding: 0.5rem 1.125rem;
 
-  &:hover {
-    color: var(--on-background);
-    background-color: var(--surface);
-  }
-
-  &:focus, &:active {
-    color: var(--on-background);
-    background-color: var(--surface-1);
-    box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
-  }
-
   i {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
@@ -40,17 +29,6 @@
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
 
-  &:hover {
-    color: var(--on-background);
-    background-color: var(--surface);
-  }
-
-  &:focus, &:active {
-    color: var(--on-background);
-    background-color: var(--surface-1);
-    box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
-  }
-
   i {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
@@ -76,17 +54,6 @@
   @extend .label-text-lg;
   padding: 0.5rem 1.25rem;
   border-radius: 0.75rem;
-  
-  &:hover {
-    color: var(--on-background);
-    background-color: var(--surface);
-  }
-
-  &:focus, &:active {
-    color: var(--on-background);
-    background-color: var(--surface-1);
-    box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
-  }
 
   i {
     margin-left: 0.25rem;
@@ -114,7 +81,7 @@
   border-bottom: 0;
   .nav-item {
     display: inline-block;
-    margin: 0.25rem 0;
+    margin-bottom: 0.5rem;
 
     .nav-link {
       @extend .tab-text;
@@ -122,14 +89,21 @@
       text-decoration: none;
       border-radius: 8px 8px 0px 0px;
       border-bottom: 2px solid var(--surface-variant);
-      padding: 0.5rem 0.875rem;
+      transition: color .22s ease-in-out,background-color .22s ease-in-out,border-color .22s ease-in-out;
 
+      &:hover {
+        color: var(--on-background);
+        background-color: var(--surface);
+      }
+    
       &:focus, &:active {
+        color: var(--on-background);
+        background-color: var(--surface-1);
         box-shadow: none !important;
         border-bottom: 2px solid var(--brand-flat-strong);
       }
 
-      &:disabled {
+      &.disabled {
         opacity: 0.6;
       }
 
@@ -143,8 +117,7 @@
 
 .nav-pills {
   .nav-item {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
     margin-right: 0.25rem;
 
     &:first-child {
@@ -159,7 +132,18 @@
       @extend .tab-text;
       text-decoration: none;
       border: 2px solid transparent;
+      transition: color .22s ease-in-out,background-color .22s ease-in-out,border-color .22s ease-in-out;
   
+      &:hover {
+        color: var(--on-background);
+        background-color: var(--surface);
+      }
+    
+      &:focus, &:active {
+        color: var(--on-background);
+        background-color: var(--surface-1);
+        box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
+      }
   
       &:first-child {
         margin-left: 0;
@@ -169,7 +153,7 @@
         margin-right: 0;
       }
   
-      &:disabled {
+      &.disabled {
         opacity: 0.6;
       }
   
@@ -196,7 +180,7 @@
 }
 
 .tab-content {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .nav-scroll {
@@ -237,4 +221,8 @@
       @extend .tab-text-lg;
     }
   }
+}
+
+.fade {
+  transition: opacity .3s linear;
 }

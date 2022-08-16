@@ -67,7 +67,7 @@ group: components
         <button class="nav-link" id="tab4" data-bs-toggle="tab" data-bs-target="#content4" type="button" role="tab" aria-controls="tab4" aria-selected="false">頁籤 04 寬度依文字長</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab5" data-bs-toggle="tab" data-bs-target="#content5" type="button" role="tab" aria-controls="tab5" aria-selected="false" disabled>頁籤 05</button>
+        <button class="nav-link disabled" id="tab5" data-bs-toggle="tab" data-bs-target="#content5" type="button" role="tab" aria-controls="tab5" aria-selected="false">頁籤 05</button>
       </li>
     </ul>
     <div class="tab-content" id="tabContent">
@@ -113,7 +113,7 @@ group: components
         <button class="nav-link" id="pills-tab7" data-bs-toggle="pill" data-bs-target="#pills-content7" type="button" role="tab" aria-controls="pills-tab7" aria-selected="false">頁籤 07</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-tab8" data-bs-toggle="pill" data-bs-target="#pills-content8" type="button" role="tab" aria-controls="pills-tab8" aria-selected="false" disabled>頁籤 08</button>
+        <button class="nav-link disabled" id="pills-tab8" data-bs-toggle="pill" data-bs-target="#pills-content8" type="button" role="tab" aria-controls="pills-tab8" aria-selected="false">頁籤 08</button>
       </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
@@ -153,7 +153,7 @@ group: components
         <button class="nav-link" id="pills-tab4-fill" data-bs-toggle="pill" data-bs-target="#pills-content4-fill" type="button" role="tab" aria-controls="pills-tab4-fill" aria-selected="false">頁籤 04 </button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-tab5-fill" data-bs-toggle="pill" data-bs-target="#pills-content5-fill" type="button" role="tab" aria-controls="pills-tab5-fill" aria-selected="false" disabled>頁籤 05</button>
+        <button class="nav-link disabled" id="pills-tab5-fill" data-bs-toggle="pill" data-bs-target="#pills-content5-fill" type="button" role="tab" aria-controls="pills-tab5-fill" aria-selected="false">頁籤 05</button>
       </li>
     </ul>
     <div class="tab-content" id="pills-tabContent-fill">
@@ -181,7 +181,7 @@ group: components
         <button class="nav-link" id="tab4-fill" data-bs-toggle="tab" data-bs-target="#content4-fill" type="button" role="tab" aria-controls="tab4-fill" aria-selected="false">頁籤 04 </button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab5-fill" data-bs-toggle="tab" data-bs-target="#content5-fill" type="button" role="tab" aria-controls="tab5-fill" aria-selected="false" disabled>頁籤 05</button>
+        <button class="nav-link disabled" id="tab5-fill" data-bs-toggle="tab" data-bs-target="#content5-fill" type="button" role="tab" aria-controls="tab5-fill" aria-selected="false">頁籤 05</button>
       </li>
     </ul>
     <div class="tab-content" id="tabContent-fill">
@@ -218,7 +218,7 @@ group: components
         <button class="nav-link" id="pills-tab4-icon2" data-bs-toggle="pill" data-bs-target="#pills-content4-icon2" type="button" role="tab" aria-controls="pills-tab4-icon2" aria-selected="false"><i class="bi bi-joystick"></i><span>頁籤 04</span></button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-tab5-icon2" data-bs-toggle="pill" data-bs-target="#pills-content5-icon2" type="button" role="tab" aria-controls="pills-tab5-icon2" aria-selected="false" disabled><i class="bi bi-journal-arrow-down"></i><span>頁籤 05</span></button>
+        <button class="nav-link disabled" id="pills-tab5-icon2" data-bs-toggle="pill" data-bs-target="#pills-content5-icon2" type="button" role="tab" aria-controls="pills-tab5-icon2" aria-selected="false"><i class="bi bi-journal-arrow-down"></i><span>頁籤 05</span></button>
       </li>
     </ul>
     <div class="tab-content" id="pills-tabContent-icon2">
@@ -246,7 +246,7 @@ group: components
         <button class="nav-link" id="tab4-icon" data-bs-toggle="tab" data-bs-target="#content4-icon" type="button" role="tab" aria-controls="tab4-icon" aria-selected="false"><i class="bi bi-joystick"></i><span>頁籤 04</span></button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab5-icon" data-bs-toggle="tab" data-bs-target="#content5-icon" type="button" role="tab" aria-controls="tab5-icon" aria-selected="false" disabled><i class="bi bi-journal-arrow-down"></i><span>頁籤 05</span></button>
+        <button class="nav-link disabled" id="tab5-icon" data-bs-toggle="tab" data-bs-target="#content5-icon" type="button" role="tab" aria-controls="tab5-icon" aria-selected="false"><i class="bi bi-journal-arrow-down"></i><span>頁籤 05</span></button>
       </li>
     </ul>
     <div class="tab-content" id="tabContent-icon">
@@ -274,7 +274,7 @@ group: components
         <button class="nav-link" id="pills-tab4-icon" data-bs-toggle="pill" data-bs-target="#pills-content4-icon" type="button" role="tab" aria-controls="pills-tab4-icon" aria-selected="false"><span>頁籤 04</span><i class="bi bi-joystick"></i></button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-tab5-icon" data-bs-toggle="pill" data-bs-target="#pills-content5-icon" type="button" role="tab" aria-controls="pills-tab5-icon" aria-selected="false" disabled><span>頁籤 05</span><i class="bi bi-journal-arrow-down"></i></button>
+        <button class="nav-link disabled" id="pills-tab5-icon" data-bs-toggle="pill" data-bs-target="#pills-content5-icon" type="button" role="tab" aria-controls="pills-tab5-icon" aria-selected="false"><span>頁籤 05</span><i class="bi bi-journal-arrow-down"></i></button>
       </li>
     </ul>
     <div class="tab-content" id="pills-tabContent-icon">
@@ -302,7 +302,7 @@ group: components
         <button class="nav-link" id="tab4-icon2" data-bs-toggle="tab" data-bs-target="#content4-icon2" type="button" role="tab" aria-controls="tab4-icon2" aria-selected="false"><span>頁籤 04</span><i class="bi bi-joystick"></i></button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="tab5-icon2" data-bs-toggle="tab" data-bs-target="#content5-icon2" type="button" role="tab" aria-controls="tab5-icon2" aria-selected="false" disabled><span>頁籤 05</span><i class="bi bi-journal-arrow-down"></i></button>
+        <button class="nav-link disabled" id="tab5-icon2" data-bs-toggle="tab" data-bs-target="#content5-icon2" type="button" role="tab" aria-controls="tab5-icon2" aria-selected="false"><span>頁籤 05</span><i class="bi bi-journal-arrow-down"></i></button>
       </li>
     </ul>
     <div class="tab-content" id="tabContent-icon">

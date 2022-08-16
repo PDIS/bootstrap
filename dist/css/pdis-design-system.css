@@ -1261,15 +1261,6 @@ a.disabled {
   border-radius: 0.625rem;
   padding: 0.5rem 1.125rem;
 }
-.tab-text:hover, .nav-pills .nav-item .nav-link:hover, .nav-tabs .nav-item .nav-link:hover {
-  color: var(--on-background);
-  background-color: var(--surface);
-}
-.tab-text:focus, .nav-pills .nav-item .nav-link:focus, .nav-tabs .nav-item .nav-link:focus, .tab-text:active, .nav-pills .nav-item .nav-link:active, .nav-tabs .nav-item .nav-link:active {
-  color: var(--on-background);
-  background-color: var(--surface-1);
-  box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
-}
 .tab-text i, .nav-pills .nav-item .nav-link i, .nav-tabs .nav-item .nav-link i {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1291,15 +1282,6 @@ a.disabled {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
 }
-.tab-text-sm:hover, .tabs-sm .nav-item .nav-link:hover {
-  color: var(--on-background);
-  background-color: var(--surface);
-}
-.tab-text-sm:focus, .tabs-sm .nav-item .nav-link:focus, .tab-text-sm:active, .tabs-sm .nav-item .nav-link:active {
-  color: var(--on-background);
-  background-color: var(--surface-1);
-  box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
-}
 .tab-text-sm i, .tabs-sm .nav-item .nav-link i {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1320,15 +1302,6 @@ a.disabled {
 .tab-text-lg, .tabs-lg .nav-item .nav-link {
   padding: 0.5rem 1.25rem;
   border-radius: 0.75rem;
-}
-.tab-text-lg:hover, .tabs-lg .nav-item .nav-link:hover {
-  color: var(--on-background);
-  background-color: var(--surface);
-}
-.tab-text-lg:focus, .tabs-lg .nav-item .nav-link:focus, .tab-text-lg:active, .tabs-lg .nav-item .nav-link:active {
-  color: var(--on-background);
-  background-color: var(--surface-1);
-  box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
 }
 .tab-text-lg i, .tabs-lg .nav-item .nav-link i {
   margin-left: 0.25rem;
@@ -1352,20 +1325,26 @@ a.disabled {
 }
 .nav-tabs .nav-item {
   display: inline-block;
-  margin: 0.25rem 0;
+  margin-bottom: 0.5rem;
 }
 .nav-tabs .nav-item .nav-link {
   border: 0;
   text-decoration: none;
   border-radius: 8px 8px 0px 0px;
   border-bottom: 2px solid var(--surface-variant);
-  padding: 0.5rem 0.875rem;
+  transition: color 0.22s ease-in-out, background-color 0.22s ease-in-out, border-color 0.22s ease-in-out;
+}
+.nav-tabs .nav-item .nav-link:hover {
+  color: var(--on-background);
+  background-color: var(--surface);
 }
 .nav-tabs .nav-item .nav-link:focus, .nav-tabs .nav-item .nav-link:active {
+  color: var(--on-background);
+  background-color: var(--surface-1);
   box-shadow: none !important;
   border-bottom: 2px solid var(--brand-flat-strong);
 }
-.nav-tabs .nav-item .nav-link:disabled {
+.nav-tabs .nav-item .nav-link.disabled {
   opacity: 0.6;
 }
 .nav-tabs .nav-item .nav-link.active {
@@ -1374,8 +1353,7 @@ a.disabled {
 }
 
 .nav-pills .nav-item {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   margin-right: 0.25rem;
 }
 .nav-pills .nav-item:first-child {
@@ -1387,6 +1365,16 @@ a.disabled {
 .nav-pills .nav-item .nav-link {
   text-decoration: none;
   border: 2px solid transparent;
+  transition: color 0.22s ease-in-out, background-color 0.22s ease-in-out, border-color 0.22s ease-in-out;
+}
+.nav-pills .nav-item .nav-link:hover {
+  color: var(--on-background);
+  background-color: var(--surface);
+}
+.nav-pills .nav-item .nav-link:focus, .nav-pills .nav-item .nav-link:active {
+  color: var(--on-background);
+  background-color: var(--surface-1);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong) inset;
 }
 .nav-pills .nav-item .nav-link:first-child {
   margin-left: 0;
@@ -1394,7 +1382,7 @@ a.disabled {
 .nav-pills .nav-item .nav-link:last-child {
   margin-right: 0;
 }
-.nav-pills .nav-item .nav-link:disabled {
+.nav-pills .nav-item .nav-link.disabled {
   opacity: 0.6;
 }
 .nav-pills .nav-item .nav-link.active {
@@ -1414,7 +1402,7 @@ a.disabled {
 }
 
 .tab-content {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .nav-scroll {
@@ -1436,6 +1424,10 @@ a.disabled {
 }
 .nav-scroll button:last-child {
   margin-right: 0;
+}
+
+.fade {
+  transition: opacity 0.3s linear;
 }
 
 .dropdown .dropdown-toggle {
