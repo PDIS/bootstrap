@@ -75,12 +75,12 @@ group: components
 {{< example >}}
 <div class="row text-center">
   <div class="col">
-    <button type="button" class="btn btn-primary disabled">主要按鈕</button>
-    <button type="button" class="btn btn-secondary disabled">次要按鈕</button>
-    <button type="button" class="btn btn-tertiary disabled">邊框按鈕</button>
-    <button type="button" class="btn btn-semi-secondary disabled">文字按鈕</button>
-    <button type="button" class="btn btn-positive disabled">正向按鈕</button>
-    <button type="button" class="btn btn-negative disabled">負向按鈕</button>
+    <button type="button" class="btn btn-primary" disabled>主要按鈕</button>
+    <button type="button" class="btn btn-secondary" disabled>次要按鈕</button>
+    <button type="button" class="btn btn-tertiary" disabled>邊框按鈕</button>
+    <button type="button" class="btn btn-semi-secondary" disabled>文字按鈕</button>
+    <button type="button" class="btn btn-positive" disabled>正向按鈕</button>
+    <button type="button" class="btn btn-negative" disabled>負向按鈕</button>
   </div>
 </div>
 {{< /example >}}
