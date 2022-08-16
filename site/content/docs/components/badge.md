@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: 標籤
+title: 標籤 Badge
 description: 標籤可以為其他元件新增說明文字或數字。
 group: components
 ---
@@ -32,7 +32,7 @@ group: components
 
 <div class="row text-center">
   <div class="col">
-    <span class="badge bg-brand-flat">Badge</span>
+    <span class="badge bg-brand-flat">標籤</span>
   </div>
 </div>
 
@@ -46,71 +46,33 @@ group: components
 
 <div class="row text-center">
   <div class="col g-3">
-    <span class="badge bg-brand-flat">Brand</span>
+    <span class="badge bg-brand-flat">主要</span>
   </div>
   <div class="col g-3">
-    <span class="badge bg-accent-flat">Accent</span>
+    <span class="badge bg-accent-flat">強調</span>
   </div>
   <div class="col g-3">
-    <span class="badge bg-secondary-flat">Secondary</span>
+    <span class="badge bg-secondary-flat">次要</span>
   </div>
   <div class="col g-3">
-    <span class="badge bg-positive-flat">Postive</span>
+    <span class="badge bg-positive-flat">正向</span>
   </div>
   <div class="col g-3">
-    <span class="badge bg-negative-flat">Negative</span>
+    <span class="badge bg-negative-flat">負向</span>
   </div>
   <div class="col g-3">
-    <span class="badge bg-info-flat">Info</span>
+    <span class="badge bg-info-flat">資訊</span>
   </div>
   <div class="col g-3">
-    <span class="badge bg-warning-flat">Warning</span>
+    <span class="badge bg-warning-flat">警告</span>
   </div>
 </div>
 
 {{< /example >}}
 
-### 大小 Size
+### 計數標籤 Counter
+計數標籤相對於文字標籤來說， 設計上 padding 的設定有依據數字的視覺特性微調過。這是因為計數標籤比較常與其他元件相配和，通常作為計數器，將技術標籤的 padding 做視覺調整會讓整體視覺看起來更平衡。例如在按鈕中。
 
-三種不同大小的標籤。
-
-{{< example >}}
-
-<div class="row text-center">
- <div class="col">
-    <span class="badge bg-brand-flat badge-sm">標籤</span>
-  </div>
-  <div class="col">
-    <span class="badge bg-brand-flat">標籤</span>
-  </div>
-  <div class="col">
-    <span class="badge bg-brand-flat badge-lg">標籤</span>
-  </div>
-</div>
-
-{{< /example >}}
-
-
-### 文字或計數 Text or Counter
-
-標籤內容常有兩種：文字或計數。
-
-{{< example >}}
-
-<div class="row text-center">
-  <div class="col">
-    <span class="badge bg-brand-flat">Badge</span>
-    <span class="badge bg-brand-flat badge-numerical">2</span>
-  </div>
-</div>
-
-{{< /example >}}
-
-## 範例
-
-### 含有標籤的按鈕 Button with badge
-
-標籤可以是按鈕的一部分，常作為計數器。
 
 {{< example >}}
 
@@ -125,17 +87,52 @@ group: components
     <button type="button" class="btn btn-tertiary"><span>登記</span><span class="badge badge-numerical">20</span></button>
   </div>
   <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-emi-secondary"><span>投票</span><span class="badge badge-numerical">10</span></button>
+    <button type="button" class="btn btn-emi-secondary"><span>like</span><span class="badge badge-numerical">10</span></button>
   </div>
   <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-positive"><span>送出</span><span class="badge badge-numerical bg-positive-flat">3</span></button>
+    <button type="button" class="btn btn-negative"><span>反對</span><span class="badge badge-numerical bg-negative-flat">3</span></button>
   </div>
   <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-negative"><span>移除</span><span class="badge badge-numerical bg-negative-flat">30</span></button>
+    <button type="button" class="btn btn-positive"><span>贊成</span><span class="badge badge-numerical bg-positive-flat">30</span></button>
   </div>
 </div>
 
 {{< /example >}}
+
+### 大小 Size
+
+三種不同大小的標籤。目前本設計系統中都是用中標籤，但依據美感您可以自行搭配使用大或小標籤。在與其他元件配合時，若該元件有分大小 Size，標籤通常會配合其大小。例如在大按鈕中的標籤常用大標籤，中按鈕中的標籤常用中標籤，小按鈕中的標籤常用小標籤。
+
+{{< example >}}
+
+<div class="row text-center">
+ <div class="col">
+    <span class="badge bg-brand-flat badge-sm">標籤</span>
+  </div>
+  <div class="col">
+    <span class="badge bg-brand-flat">標籤</span>
+  </div>
+  <div class="col">
+    <span class="badge bg-brand-flat badge-lg">標籤</span>
+  </div>
+</div>
+<div class="row text-center">
+ <div class="col">
+    <button type="button" class="btn btn-primary badge-sm"><span>小按鈕</span><span class="badge badge-numerical">2</span></button>
+  </div>
+  <div class="col">
+    <button type="button" class="btn btn-primary"><span>中按鈕</span><span class="badge badge-numerical">2</span></button>
+  </div>
+  <div class="col">
+    <button type="button" class="btn btn-primary badge-large"><span>大按鈕</span><span class="badge badge-numerical">2</span></button>
+  </div>
+</div>
+
+{{< /example >}}
+
+
+
+## 範例
 
 ### 含有標籤的卡片 Card with badge
 
@@ -147,20 +144,43 @@ group: components
   <div class="col-md-4">
     <div class="card">
       <img
-        src="/docs/5.1/assets/img/bg-card.png"
+        src="/docs/5.1/assets/img/card_test_img_1.jpg"
         class="card-img-top"
         alt="..."
       />
       <div class="card-body">
-        <div class="card-title">標題文字</div>
+        <div class="card-title">海外志工交流沙龍</div>
         <div class="badge-group">
-          <span class="badge">主題標籤</span
-          ><span class="badge">主題標籤</span
-          ><span class="badge">主題標籤</span>
+          <span class="badge">國際參與</span
+          ><span class="badge bg-positive-flat">報名中</span
+          >
         </div>
-        <div class="card-text">此部分為卡片之內文部分文字或副標題內容</div>
+        <div class="card-text">歡迎15-35歲關心在地事務、對社區事務懷有夢想及想法之青年報名參加，
+透過在地課程，讓你進一步了解青年社區參與行動！</div>
         <div class="card-actions">
-          <button type="button" class="btn btn-primary">預設按鈕</button>
+          <button type="button" class="btn btn-primary">立即報名</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="card">
+      <img
+        src="/docs/5.1/assets/img/car_test_img_2.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <div class="card-title">大專女學生領導力培訓營</div>
+        <div class="badge-group">
+          <span class="badge">職場體驗</span
+          ><span class="badge bg-negative-flat">已截止</span
+          >
+        </div>
+        <div class="card-text">即日起至6/6(一)23:59截止</div>
+        <div class="card-actions">
+          <button type="button" class="btn btn-primary disabled">已額滿</button>
         </div>
       </div>
     </div>
