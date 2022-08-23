@@ -37,8 +37,8 @@
       }
       
       &:focus-visible, &:active {
-        color: var(--on-accent-flat);
-        background-color: var(--accent-flat);
+        color: var(--on-background);
+        background: var(--surface-2);
       }
 
       &.active {
@@ -56,6 +56,9 @@
         }
       }
 
+      .badge {
+        float:right;
+      }
     }
   
     .sidebar-button {
@@ -81,6 +84,7 @@
         color: var(--on-background);
         content: "\F279"; /* Chevron down */
         font-family: "bootstrap-icons";
+        font-size: 0.875rem;
         text-align: center;
         margin-left: auto;
       }
@@ -101,9 +105,14 @@
           color: var(--on-background);
           content: "\F27C"; /* Chevron down */
           font-family: "bootstrap-icons";
+          font-size: 0.875rem;
           text-align: center;
           margin-left: auto;
         }
+      }
+
+      .badge {
+        float:right;
       }
     }
 

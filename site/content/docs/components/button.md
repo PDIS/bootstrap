@@ -51,11 +51,6 @@ group: components
 從基本款按鈕的樣式延伸，共六種不同角色的按鈕，由左至右分別為：主要、次要、邊框、文字、正向、負向按鈕。在做按鈕的位階選擇時，可以依據主要、次要、邊框、文字的順序做搭配。例如可以選擇主要按鈕作為預設動作的進入點，搭配文字按鈕作為其他動作的進入點，讓頁面視覺上明顯有位階順序，幫助使用者理解兩個並排按鈕的關係。
 
 {{< example >}}
-<!-- <style>
-  .btn {
-    margin: 0.25rem !important;
-  }
-</style> -->
 <div class="row text-center">
   <div class="col">
     <button type="button" class="btn btn-primary">主要按鈕</button>
@@ -89,7 +84,6 @@ group: components
 三種不同大小的按鈕，一般預設為中型 Medium 的大小。依據視覺上美感，在與比較大的元件搭配時可以用大的按鈕，與比較小的元件搭配時可以用小的按鈕。例如在本設計系統中，[頁首](/docs/components/header)導覽列手機版的選單按鈕因為與標題搭配，使用大的按鈕。
 
 {{< example >}}
-
 <div class="row text-center">
   <div class="col">
     <button type="button" class="btn btn-primary btn-sm">預設按鈕</button>
@@ -97,7 +91,6 @@ group: components
     <button type="button" class="btn btn-primary btn-lg">預設按鈕</button>
   </div>
 </div>
-
 {{< /example >}}
 
 
@@ -110,7 +103,6 @@ group: components
 若您需要改變標籤的[顏色](/docs/style/color)，則需要自行覆寫 (overwrite)。
 
 {{< example >}}
-
 <div class="row text-center">
   <div class="col">
     <button type="button" class="btn btn-primary">預設按鈕</button>
@@ -120,5 +112,4 @@ group: components
     <button type="button" class="btn btn-primary"><span>預設按鈕</span><span class="badge badge-numerical">2</span></button>
   </div>
 </div>
-
 {{< /example >}}

@@ -29,13 +29,11 @@ group: components
 基本款的標籤以打淡的品牌色 (Brand Flat) 為背景色。標籤是補充說明用的小塊資訊，通常用在提示分類、屬性或是計數。使用者常以標籤上的資訊作為依據，進行下一步動作。
 
 {{< example >}}
-
 <div class="row text-center">
   <div class="col">
     <span class="badge bg-brand-flat">標籤</span>
   </div>
 </div>
-
 {{< /example >}}
 
 ### 角色 Role
@@ -43,7 +41,6 @@ group: components
 從基本款按鈕的樣式延伸，共六種不同角色的標籤，由左至右分別為：主要、強調、次要、正向、負向、資訊、警告。
 
 {{< example >}}
-
 <div class="row text-center">
   <div class="col g-3">
     <span class="badge bg-brand-flat">主要</span>
@@ -67,7 +64,6 @@ group: components
     <span class="badge bg-warning-flat">警告</span>
   </div>
 </div>
-
 {{< /example >}}
 
 ### 計數標籤 Counter
@@ -75,7 +71,6 @@ group: components
 
 
 {{< example >}}
-
 <div class="row text-center" ontouchstart="">
   <div class="col-4 col-xl-2 gy-3">
     <button type="button" class="btn btn-primary"><span>報名活動</span><span class="badge badge-numerical">136</span></button>
@@ -87,7 +82,7 @@ group: components
     <button type="button" class="btn btn-tertiary"><span>登記</span><span class="badge badge-numerical">20</span></button>
   </div>
   <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-emi-secondary"><span>like</span><span class="badge badge-numerical">10</span></button>
+    <button type="button" class="btn btn-emi-secondary"><i class="bi bi-hand-thumbs-up"></i><span class="badge badge-numerical">10</span></button>
   </div>
   <div class="col-4 col-xl-2 gy-3">
     <button type="button" class="btn btn-negative"><span>反對</span><span class="badge badge-numerical bg-negative-flat">3</span></button>
@@ -96,7 +91,6 @@ group: components
     <button type="button" class="btn btn-positive"><span>贊成</span><span class="badge badge-numerical bg-positive-flat">30</span></button>
   </div>
 </div>
-
 {{< /example >}}
 
 ### 大小 Size
@@ -104,7 +98,6 @@ group: components
 三種不同大小的標籤。目前本設計系統中都是用中標籤，但依據美感您可以自行搭配使用大或小標籤。在與其他元件配合時，若該元件有分大小 Size，標籤通常會配合其大小。例如在大按鈕中的標籤常用大標籤，中按鈕中的標籤常用中標籤，小按鈕中的標籤常用小標籤。
 
 {{< example >}}
-
 <div class="row text-center">
  <div class="col">
     <span class="badge bg-brand-flat badge-sm">標籤</span>
@@ -116,7 +109,7 @@ group: components
     <span class="badge bg-brand-flat badge-lg">標籤</span>
   </div>
 </div>
-<div class="row text-center">
+<div class="row text-center py-3">
  <div class="col">
     <button type="button" class="btn btn-primary badge-sm"><span>小按鈕</span><span class="badge badge-numerical">2</span></button>
   </div>
@@ -127,7 +120,6 @@ group: components
     <button type="button" class="btn btn-primary badge-large"><span>大按鈕</span><span class="badge badge-numerical">2</span></button>
   </div>
 </div>
-
 {{< /example >}}
 
 
@@ -139,7 +131,6 @@ group: components
 標籤可以出現在卡片上，常作為主題分類或屬性文字。
 
 {{< example >}}
-
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
     <div class="card">
@@ -163,7 +154,6 @@ group: components
       </div>
     </div>
   </div>
-  
   <div class="col-md-4">
     <div class="card">
       <img
@@ -186,7 +176,6 @@ group: components
     </div>
   </div>
 </div>
-
 {{< /example >}}
 
 ### 含有標籤的列表 List with badge
@@ -194,7 +183,6 @@ group: components
 標籤可以出現在列表上，常作為屬性文字。
 
 {{< example >}}
-
 <div class="row d-flex justify-content-center">
   <div class="col-md-6">
     <div class="list-group-title">最新消息</div>
@@ -205,5 +193,4 @@ group: components
     </div>
   </div>
 </div>
-
 {{< /example >}}

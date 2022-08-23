@@ -49,18 +49,18 @@ toc: true
       <ul class="sidebar-body">
         <li>
           <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#first-collapse" aria-expanded="true">
-            <i class="bi bi-signpost-split icon"></i>可展開第一層標題
+            可展開第一層標題
           </button>
           <div class="collapse" id="first-collapse">
             <ul class="sidebar-menu">
               <li>
-                <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#second-collapse" aria-expanded="true"><i class="bi bi-signpost-split icon"></i>可展開第二層標題
+                <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#second-collapse" aria-expanded="true">可展開第二層標題
                 </button>
                 <div class="collapse" id="second-collapse">
                   <ul class="sidebar-menu">
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
                   </ul>
                 </div>
               </li>
@@ -69,29 +69,29 @@ toc: true
         </li>
         <li>
           <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#one-collapse" aria-expanded="true">
-            <i class="bi bi-signpost-split icon"></i>可展開第一層標題
+            可展開第一層標題
           </button>
           <div class="collapse" id="one-collapse">
             <ul class="sidebar-menu">
               <li>
-                <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#two-collapse" aria-expanded="true"><i class="bi bi-signpost-split icon"></i>可展開第二層標題
+                <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#two-collapse" aria-expanded="true">可展開第二層標題
                 </button>
                 <div class="collapse" id="two-collapse">
                   <ul class="sidebar-menu">
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
                   </ul>
                 </div>
               </li>
               <li>
-                <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#three-collapse" aria-expanded="true"><i class="bi bi-signpost-split icon"></i>可展開第二層標題
+                <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#three-collapse" aria-expanded="true">可展開第二層標題
                 </button>
                 <div class="collapse" id="three-collapse">
                   <ul class="sidebar-menu">
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
                   </ul>
                 </div>
               </li>
@@ -100,18 +100,18 @@ toc: true
         </li>
         <li>
           <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#four-collapse" aria-expanded="true">
-            <i class="bi bi-signpost-split icon"></i>可展開第一層標題
+            可展開第一層標題
           </button>
           <div class="collapse" id="four-collapse">
             <ul class="sidebar-menu">
               <li>
-                <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#five-collapse" aria-expanded="true"><i class="bi bi-signpost-split icon"></i>可展開第二層標題
+                <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#five-collapse" aria-expanded="true">可展開第二層標題
                 </button>
                 <div class="collapse" id="five-collapse">
                   <ul class="sidebar-menu">
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
                   </ul>
                 </div>
               </li>
@@ -144,12 +144,12 @@ for (const link of document.querySelectorAll(".sidebar-link")) {
   <div class="col-lg-6">
     <nav class="sidebar">
       <ul class="sidebar-body">
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
       </ul>
     </nav>
   </div>
@@ -175,42 +175,42 @@ for (const link of document.querySelectorAll(".sidebar-link")) {
   <div class="col-md-6">
     <nav class="sidebar">
       <ul class="sidebar-body">
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
         <li>
           <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#multi-collapse" aria-expanded="true">
-            <i class="bi bi-signpost-split icon"></i>可展開第一層標題
+            可展開第一層標題
           </button>
           <div class="collapse" id="multi-collapse">
             <ul class="sidebar-menu">
-              <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第二層連結內容</a></li>
-              <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第二層連結內容</a></li>
-              <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第二層連結內容</a></li>
+              <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
+              <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
+              <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
             </ul>
           </div>
         </li>
         <li>
           <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#multi-collapse2" aria-expanded="true">
-            <i class="bi bi-signpost-split icon"></i>可展開第一層標題
+            可展開第一層標題
           </button>
           <div class="collapse" id="multi-collapse2">
             <ul class="sidebar-menu">
-              <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第二層連結內容</a></li>
-              <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第二層連結內容</a></li>
-              <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第二層連結內容</a></li>
+              <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
+              <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
+              <li><a href="#" class="sidebar-link">第二層連結內容</a></li>
               <li>
-                <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#multi-collapse3" aria-expanded="true"><i class="bi bi-signpost-split icon"></i>可展開第二層標題
+                <button class="sidebar-button collapsed" data-bs-toggle="collapse" data-bs-target="#multi-collapse3" aria-expanded="true">可展開第二層標題
                 </button>
                 <div class="collapse" id="multi-collapse3">
                   <ul class="sidebar-menu">
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
-                    <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
+                    <li><a href="#" class="sidebar-link">第三層連結內容</a></li>
                   </ul>
                 </div>
               </li>
             </ul>
           </div>
         </li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
       </ul>
     </nav>
   </div>
@@ -237,14 +237,14 @@ for (const link of document.querySelectorAll(".sidebar-link")) {
     <nav class="sidebar">
       <ul class="sidebar-body">
         <li><span class="sidebar-subheader">側邊欄分區標題文字</span></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
         <li class="sidebar-divider"><hr></li>
         <li><span class="sidebar-subheader">側邊欄分區標題文字</span></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
       </ul>
     </nav>
   </div>
@@ -270,8 +270,39 @@ for (const link of document.querySelectorAll(".sidebar-link")) {
   <div class="col-lg-6">
     <nav class="sidebar">
       <ul class="sidebar-body">
-        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<script>
+for (const link of document.querySelectorAll(".sidebar-link")) {
+  link.addEventListener("click", () => {
+    for (const a of document.querySelectorAll(".sidebar-link")) {
+      a.classList.remove("active")
+    }
+    link.classList.add("active")
+  });
+}
+</script>
+{{< /example >}}
+
+### 徽章  Badge
+
+可以用 badge 顯示某一連結項目的狀態。這樣的做法可以呈現出 stepper 的樣式。
+
+{{< example >}}
+<div class="row d-flex justify-content-center">
+  <div class="col-lg-6">
+    <nav class="sidebar">
+      <ul class="sidebar-body">
+        <li><a href="#" class="sidebar-link">第一層連結內容<span class="badge bg-positive-flat">已完成</span></a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容<span class="badge bg-negative-flat badge-numerical">2</span></a></li>
         <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
         <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
         <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
@@ -303,14 +334,14 @@ for (const link of document.querySelectorAll(".sidebar-link")) {
       <div class="sidebar-header">側邊欄標題文字</div>
       <ul class="sidebar-body">
         <li><span class="sidebar-subheader">側邊欄分區標題文字</span></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
         <li class="sidebar-divider"><hr></li>
         <li><span class="sidebar-subheader">側邊欄分區標題文字</span></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
-        <li><a href="#" class="sidebar-link"><i class="bi bi-signpost-split icon"></i>第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
+        <li><a href="#" class="sidebar-link">第一層連結內容</a></li>
       </ul>
     </nav>
   </div>
