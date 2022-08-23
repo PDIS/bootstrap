@@ -166,13 +166,11 @@
 <h3 id="基本款標籤-basic-badge">基本款標籤 Basic badge</h3>
 <p>基本款的標籤以打淡的品牌色 (Brand Flat) 為背景色。標籤是補充說明用的小塊資訊，通常用在提示分類、屬性或是計數。使用者常以標籤上的資訊作為依據，進行下一步動作。</p>
 <div class="bd-example">
-
 <div class="row text-center">
   <div class="col">
     <span class="badge bg-brand-flat">標籤</span>
   </div>
 </div>
-
 </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row text-center&#34;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge bg-brand-flat&#34;</span><span class="p">&gt;</span>標籤<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
@@ -181,7 +179,6 @@
 <h3 id="角色-role">角色 Role</h3>
 <p>從基本款按鈕的樣式延伸，共六種不同角色的標籤，由左至右分別為：主要、強調、次要、正向、負向、資訊、警告。</p>
 <div class="bd-example">
-
 <div class="row text-center">
   <div class="col g-3">
     <span class="badge bg-brand-flat">主要</span>
@@ -205,7 +202,6 @@
     <span class="badge bg-warning-flat">警告</span>
   </div>
 </div>
-
 </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row text-center&#34;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col g-3&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge bg-brand-flat&#34;</span><span class="p">&gt;</span>主要<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
@@ -232,7 +228,6 @@
 <h3 id="計數標籤-counter">計數標籤 Counter</h3>
 <p>計數標籤相對於文字標籤來說， 設計上 padding 的設定有依據數字的視覺特性微調過。這是因為計數標籤比較常與其他元件相配和，通常作為計數器，將技術標籤的 padding 做視覺調整會讓整體視覺看起來更平衡。例如在按鈕中。</p>
 <div class="bd-example">
-
 <div class="row text-center" ontouchstart="">
   <div class="col-4 col-xl-2 gy-3">
     <button type="button" class="btn btn-primary"><span>報名活動</span><span class="badge badge-numerical">136</span></button>
@@ -244,7 +239,7 @@
     <button type="button" class="btn btn-tertiary"><span>登記</span><span class="badge badge-numerical">20</span></button>
   </div>
   <div class="col-4 col-xl-2 gy-3">
-    <button type="button" class="btn btn-emi-secondary"><span>like</span><span class="badge badge-numerical">10</span></button>
+    <button type="button" class="btn btn-emi-secondary"><i class="bi bi-hand-thumbs-up"></i><span class="badge badge-numerical">10</span></button>
   </div>
   <div class="col-4 col-xl-2 gy-3">
     <button type="button" class="btn btn-negative"><span>反對</span><span class="badge badge-numerical bg-negative-flat">3</span></button>
@@ -253,7 +248,6 @@
     <button type="button" class="btn btn-positive"><span>贊成</span><span class="badge badge-numerical bg-positive-flat">30</span></button>
   </div>
 </div>
-
 </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row text-center&#34;</span> <span class="na">ontouchstart</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4 col-xl-2 gy-3&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary&#34;</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>報名活動<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge badge-numerical&#34;</span><span class="p">&gt;</span>136<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
@@ -265,7 +259,7 @@
     <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-tertiary&#34;</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>登記<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge badge-numerical&#34;</span><span class="p">&gt;</span>20<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4 col-xl-2 gy-3&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-emi-secondary&#34;</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>like<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge badge-numerical&#34;</span><span class="p">&gt;</span>10<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-emi-secondary&#34;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;bi bi-hand-thumbs-up&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge badge-numerical&#34;</span><span class="p">&gt;</span>10<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-4 col-xl-2 gy-3&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-negative&#34;</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>反對<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge badge-numerical bg-negative-flat&#34;</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
@@ -277,7 +271,6 @@
 <h3 id="大小-size">大小 Size</h3>
 <p>三種不同大小的標籤。目前本設計系統中都是用中標籤，但依據美感您可以自行搭配使用大或小標籤。在與其他元件配合時，若該元件有分大小 Size，標籤通常會配合其大小。例如在大按鈕中的標籤常用大標籤，中按鈕中的標籤常用中標籤，小按鈕中的標籤常用小標籤。</p>
 <div class="bd-example">
-
 <div class="row text-center">
  <div class="col">
     <span class="badge bg-brand-flat badge-sm">標籤</span>
@@ -289,7 +282,7 @@
     <span class="badge bg-brand-flat badge-lg">標籤</span>
   </div>
 </div>
-<div class="row text-center">
+<div class="row text-center py-3">
  <div class="col">
     <button type="button" class="btn btn-primary badge-sm"><span>小按鈕</span><span class="badge badge-numerical">2</span></button>
   </div>
@@ -300,7 +293,6 @@
     <button type="button" class="btn btn-primary badge-large"><span>大按鈕</span><span class="badge badge-numerical">2</span></button>
   </div>
 </div>
-
 </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row text-center&#34;</span><span class="p">&gt;</span>
  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge bg-brand-flat badge-sm&#34;</span><span class="p">&gt;</span>標籤<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
@@ -312,7 +304,7 @@
     <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge bg-brand-flat badge-lg&#34;</span><span class="p">&gt;</span>標籤<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row text-center&#34;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row text-center py-3&#34;</span><span class="p">&gt;</span>
  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-primary badge-sm&#34;</span><span class="p">&gt;&lt;</span><span class="nt">span</span><span class="p">&gt;</span>小按鈕<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge badge-numerical&#34;</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
@@ -327,7 +319,6 @@
 <h3 id="含有標籤的卡片-card-with-badge">含有標籤的卡片 Card with badge</h3>
 <p>標籤可以出現在卡片上，常作為主題分類或屬性文字。</p>
 <div class="bd-example">
-
 <div class="row d-flex justify-content-center">
   <div class="col-md-4">
     <div class="card">
@@ -351,7 +342,6 @@
       </div>
     </div>
   </div>
-  
   <div class="col-md-4">
     <div class="card">
       <img
@@ -374,7 +364,6 @@
     </div>
   </div>
 </div>
-
 </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-4&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;card&#34;</span><span class="p">&gt;</span>
@@ -398,7 +387,6 @@
       <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-4&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;card&#34;</span><span class="p">&gt;</span>
       <span class="p">&lt;</span><span class="nt">img</span>
@@ -424,7 +412,6 @@
 <h3 id="含有標籤的列表-list-with-badge">含有標籤的列表 List with badge</h3>
 <p>標籤可以出現在列表上，常作為屬性文字。</p>
 <div class="bd-example">
-
 <div class="row d-flex justify-content-center">
   <div class="col-md-6">
     <div class="list-group-title">最新消息</div>
@@ -435,7 +422,6 @@
     </div>
   </div>
 </div>
-
 </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row d-flex justify-content-center&#34;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;list-group-title&#34;</span><span class="p">&gt;</span>最新消息<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
