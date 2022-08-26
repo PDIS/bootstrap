@@ -65,24 +65,24 @@
 }
 
 h1, .h1 {
-  font-size: 4.125rem;
-  line-height: 4.5rem;
+  font-size: 2.375rem;
+  line-height: 3rem;
   margin-top: 1.5rem;
   margin-bottom: 3rem;
 }
 
 h2, .h2 {
-  font-size: 2.5625rem;
+  font-size: 1.75rem;
   line-height: 3rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 h3, .h3 {
-  font-size: 1.625rem;
-  line-height: 3rem;
+  font-size: 1.3125rem;
+  line-height: 1.5rem;
   margin-top: 1.5rem;
-  margin-bottom: 0rem;
+  margin-bottom: 1.5rem;
 }
 
 h4, .h4 {
@@ -109,7 +109,6 @@ ul ul, ol ol, ul ol, ol ul {
   margin-bottom: 0rem;
 }
 
-/* Let's make sure all's aligned */
 hr, .hr {
   border: 1px solid;
   margin: -1px 0;
@@ -1364,7 +1363,6 @@ a.disabled {
 }
 .nav-pills .nav-item .nav-link {
   text-decoration: none;
-  border: 2px solid transparent;
   transition: color 0.22s ease-in-out, background-color 0.22s ease-in-out, border-color 0.22s ease-in-out;
 }
 .nav-pills .nav-item .nav-link:hover {
@@ -1388,14 +1386,13 @@ a.disabled {
 .nav-pills .nav-item .nav-link.active {
   color: var(--on-background);
   background-color: var(--surface-3);
-  box-shadow: none !important;
 }
 .nav-pills .nav-item .nav-link.active:hover {
   background-color: var(--surface-5);
 }
 .nav-pills .nav-item .nav-link.active:active, .nav-pills .nav-item .nav-link.active:focus {
   background-color: var(--surface-5);
-  border: 2px solid var(--brand-flat-strong);
+  box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
 }
 .nav-pills .nav-item .nav-link:active, .nav-pills .nav-item .nav-link:focus {
   box-shadow: none !important;
@@ -1986,8 +1983,8 @@ footer.bg-brand * {
   background: var(--surface-1);
 }
 .sidebar .sidebar-body .sidebar-link:focus-visible, .sidebar .sidebar-body .sidebar-link:active {
-  color: var(--on-accent-flat);
-  background-color: var(--accent-flat);
+  color: var(--on-background);
+  background: var(--surface-2);
 }
 .sidebar .sidebar-body .sidebar-link.active {
   color: var(--on-accent-flat);
@@ -2000,6 +1997,9 @@ footer.bg-brand * {
 .sidebar .sidebar-body .sidebar-link.active:focus-visible, .sidebar .sidebar-body .sidebar-link.active:active {
   color: var(--on-accent);
   background-color: var(--accent);
+}
+.sidebar .sidebar-body .sidebar-link .badge {
+  float: right;
 }
 .sidebar .sidebar-body .sidebar-button {
   padding: 0.75rem;
@@ -2023,6 +2023,7 @@ footer.bg-brand * {
   content: "\f279";
   /* Chevron down */
   font-family: "bootstrap-icons";
+  font-size: 0.875rem;
   text-align: center;
   margin-left: auto;
 }
@@ -2041,8 +2042,12 @@ footer.bg-brand * {
   content: "\f27c";
   /* Chevron down */
   font-family: "bootstrap-icons";
+  font-size: 0.875rem;
   text-align: center;
   margin-left: auto;
+}
+.sidebar .sidebar-body .sidebar-button .badge {
+  float: right;
 }
 .sidebar .sidebar-body .sidebar-menu {
   list-style: none;
