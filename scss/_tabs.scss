@@ -131,7 +131,6 @@
     .nav-link {
       @extend .tab-text;
       text-decoration: none;
-      border: 2px solid transparent;
       transition: color .22s ease-in-out,background-color .22s ease-in-out,border-color .22s ease-in-out;
   
       &:hover {
@@ -160,15 +159,13 @@
       &.active {
         color: var(--on-background);
         background-color: var(--surface-3);
-        box-shadow: none !important;
-        //border: 2px solid var(--brand-flat-strong);
         &:hover {
           background-color: var(--surface-5);
         }
 
         &:active, &:focus {
           background-color: var(--surface-5);
-          border: 2px solid var(--brand-flat-strong);
+          box-shadow: 0 0 0 2px var(--brand-flat-strong) inset !important;
         }
       }
   
